@@ -1,0 +1,67 @@
+---
+import Base from "../layouts/Base.astro";
+import SectionTitle from "../components/SectionTitle.astro";
+import ProductCard, { type Product } from "../components/ProductCard.astro";
+import productData from "../content/products.json";
+
+/**
+ * Tek liste — tür bazlı gruplama yok.
+ *
+ * Eklenti ve web aracı ayrımı kullanıcı için değer üretmiyordu; ürünün ne
+ * olduğu zaten kartın kendisinde (uyumluluk satırı, sürüm, durum) yazıyor.
+ */
+const products = productData.urunler as Product[];
+
+const site = Astro.site ?? new URL("https://www.ufuksen.com");
+---
+
+<Base
+  title="Ürünler | Ufuk Şen"
+  description="FloorStudio, Kitchen Studio ve PanelCut Studio — geliştirdiğim eklentiler ve araçlar."
+  path="/urunler"
+  jsonLd={{
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    name: "Ufuk Şen ürünleri",
+    numberOfItems: products.length,
+    itemListElement: products.map((product, index) => ({
+      "@type": "ListItem",
+      position: index + 1,
+      item: {
+        "@type": "SoftwareApplication",
+        name: product.ad,
+        applicationCategory: "DesignApplication",
+        ...(product.surum ? { softwareVersion: product.surum } : {}),
+        ...(product.uyumluluk.length ? { operatingSystem: product.uyumluluk.join(", ") } : {}),
+        url: new URL("/urunler", site).href,
+      },
+    })),
+  }}
+>
+  <SectionTitle
+    title="Ürünler"
+    as="h1"
+    note="Geliştirdiğim eklentiler ve araçlar."
+  />
+
+  <div class="grid">
+    {products.map((product) => <ProductCard product={product} />)}
+  </div>
+</Base>
+
+<style>
+  .grid {
+    display: grid;
+    gap: var(--s-6);
+    grid-template-columns: 1fr;
+  }
+  @media (min-width: 900px) {
+    .grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    /* Tanıtım görseli olan ürün tam genişlik alır; görsel küçülmesin. */
+    .grid > :global(.product:has(.product__shot)) {
+      grid-column: 1 / -1;
+    }
+  }
+</style>

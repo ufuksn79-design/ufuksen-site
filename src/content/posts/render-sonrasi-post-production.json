@@ -1,0 +1,53 @@
+{
+  "legacyId": 2109,
+  "slug": "render-sonrasi-post-production",
+  "legacyUrl": "/render-sonrasi-post-production.html",
+  "url": "/render-sonrasi-post-production.html",
+  "title": "Render Sonrası Post Production",
+  "excerpt": "Render Sonrası Post Production işlemleri , ham görüntünün Photoshop veya alternatif programlar sayesinde  işlenerek en son final görüntüsüyle sonuçlandırılmasına denir.Bu işlemler esnasında ışık, renk, contrast, ve sonradan eklenecek objelerin konumları ve sahneyle olan uyumları ayarlanır. Bu işlemlere gelmeden daha önceki konularımız olan Modelleme, Kaplama ve Işık konularına mutlaka bakmalısınız. Peki bu işlemleri yaparken projeye nasıl …",
+  "contentHtml": "<p><strong><a href=\"/render-sonrasi-post-production.html\" rel=\"attachment wp-att-2110\"><img loading=\"lazy\" decoding=\"async\" class=\"alignleft size-medium wp-image-2110\" src=\"/media/2017/12/Render-Sonrası-Post-Production-258x300.jpg\" alt=\"Render Sonrası Post Production\" width=\"258\" height=\"300\" srcset=\"/media/2017/12/Render-Sonrası-Post-Production-258x300.jpg 258w, /media/2017/12/Render-Sonrası-Post-Production-361x420.jpg 361w, /media/2017/12/Render-Sonrası-Post-Production.jpg 450w\" sizes=\"auto, (max-width: 258px) 100vw, 258px\" /></a>Render Sonrası Post Production işlemleri </strong>, ham görüntünün Photoshop veya alternatif programlar sayesinde  işlenerek en son final görüntüsüyle sonuçlandırılmasına denir.Bu işlemler esnasında ışık, renk, contrast, ve sonradan eklenecek objelerin konumları ve sahneyle olan uyumları ayarlanır.</p>\n<p>Bu işlemlere gelmeden daha önceki konularımız olan <a href=\"/modelleme.html\"><strong>Modelleme</strong></a>, <strong><a href=\"/kaplama-secimi-malzeme-hazirlama.html\" target=\"_blank\" rel=\"noopener\">Kaplama</a></strong> ve <a href=\"/render-motorlarinda-isiklarin-secimi.html\"><strong>Işık</strong></a> konularına mutlaka bakmalısınız.</p>\n<p>Peki bu işlemleri yaparken projeye nasıl yaklaşmak gerekiyor ? Render öncesi hangi objelerin Photoshop&#8217;ta hangilerinin 3D programda eklenmesine daha önceden belirlemelisiniz.</p>\n<p><strong>Unutmayın Düzenli ve organize bir çalışma başarıyı getirir.</strong></p>\n<h2><strong>Render Sonrası Post Production</strong></h2>\n<p>Aslına bu işlemlere başlamadan önce neler yapacağınızı render öncesi karar vermelisiniz.</p>\n<p>Işık, renk, contrast ayarlamaları baskın hale getirmek için render sonrasında photoshop programına ihtiyacımız vardır. Render aldığınızda oluşan ham görüntü bu veya buna benzer programlar ile işlenmelidir.</p>\n<p>Bu konuda ücretsiz olarak GİMP programınıda kullanabilirsiniz.</p>\n<p>Bir diğer konuda sahneye eklenecek objelerin 3d model esnasında mı ? yoksa sonradan mı ekleneceğini önceden belirlemelisiniz. Yani önceden şuna karar vermelisiniz, araçları insanları ve ağaçları photoshopda ekleyeceğim.</p>\n<p>Veya bunları 3D olarak eklerim , daha sonra<br />\nIşık, renk, contrast gibi ayarlamaları yaparım. gibi bir düşünce içerisinde planlama yapılmalıdır.</p>\n<p><span style=\"color: #000080;\"><strong>Bu durum %50 oranında kullandığınız 3D yazılım ve donanımla bağlantılıdır.</strong></span></p>\n<p>Eğer objeleri <a href=\"/kategori/3d\" target=\"_blank\" rel=\"noopener\">3D</a> olarak çalışma içerisinde kullanmak isterseniz bu durum donanımı zorlayacaktır.</p>\n<p>Objeleri Render Sonrası Post Production işlemlerinde ekleyecekseniz, bu durumuda daha öncede belirlemeniz ve buna göre hareket etmelisiniz.</p>\n<p>Çalışmaya eklenecek 2D elemanlarında önceden hazırlanarak veya hazır png sitelerinden verilen şablonları kullanarak, çalışmanıza uyarlamanız gerekmektedir.</p>\n<hr />\n<p>Bu işlemlerde başarısız oluyorsanız <a href=\"/kategori/3d-egitim-setleri\" target=\"_blank\" rel=\"noopener\"><span style=\"color: #808000;\"><strong>3D Eğitim</strong></span></a> Setlerimizden faydalanabilirsiniz.</p>\n<hr />\n<h3><strong>Photoshop ve Render Sonrası Post Production işlemleri</strong></h3>\n<p>Bu işlemler sırasında en çok kullanılan Photoshop programıdır. Bu işlemleri yapmadan önce kullanıcıların yapmış olduğu bir hatadan bahsetmek istiyorum.</p>\n<p>Önemli not düşmek istiyorum illa photoshop kullanmayabilirsiniz, aslında hernekadar bu iş için en kolay photoshop programı olsada, piyasada mudaili programlar mevcuttur.</p>\n<p>Öncelikli olarak bu işlemleri yapmak için Temel anlamda Photoshop programını öğrenmelisiniz. Bu konuyla ilgili Youtube kanalllarında bir çok video mevcuttur.</p>\n<p>Eğer siz photoshop programı içerisindeki parametre ve komutların hangi amaçla kullanıldığını bilmiyorsanız, izlediğiniz veya eğitim aldığınız yerlerden<br />\n<strong>Render Sonrası Post Production</strong> işlemleri sırasında başarısız olursunuz.</p>\n<p>İlk olarak temel photoshop eğitimi alıp kendinizi geliştirmelisiniz.Daha sonra bu öğrendiklerinizi,izlediğiniz Post Production videoları ile pekiştirip devam edebilirsiniz.</p>\n<p>Unutmayın Temel Dersleri almadan, izleyeceğiniz tüm videolar için extra bir zaman kaybı yaşarsınız. Zaman konusu <strong>3D görselleştirme</strong> içerisinde en önemli konulardan biridir.</p>\n",
+  "publishedAt": "2017-12-16T07:30:11",
+  "modifiedAt": "2022-12-20T14:58:26",
+  "status": "publish",
+  "featuredImage": {
+    "legacyId": 2110,
+    "legacyUrl": "https://www.ufuksen.com/wp-content/uploads/2017/12/Render-Sonrası-Post-Production.jpg",
+    "localPath": "/media/2017/12/Render-Sonrası-Post-Production.jpg",
+    "alt": "Render Sonrası Post Production",
+    "width": 450,
+    "height": 523,
+    "mimeType": "image/jpeg",
+    "error": null
+  },
+  "inlineMedia": [
+    {
+      "legacyUrl": "http://www.ufuksen.com/wp-content/uploads/2017/12/Render-Sonrası-Post-Production-258x300.jpg",
+      "localPath": "/media/2017/12/Render-Sonrası-Post-Production-258x300.jpg",
+      "error": null
+    }
+  ],
+  "embeds": [],
+  "seo": {
+    "title": null,
+    "description": "Render Sonrası Post Production işlemlerinin, render sonrası önemini ve neler yapılması gerektiğini anlatan bir makaledir.",
+    "focusKeyword": "Render Sonrası Post Production",
+    "canonicalUrl": null,
+    "ogImage": null
+  },
+  "readingMinutes": 2,
+  "migrationChecksum": "643f87ab830b5c2194ef980b0a9edf41f3746a8cafadd90e52e96cf45d5f7372",
+  "author": {
+    "legacyId": 1,
+    "name": "UFUK ŞEN",
+    "slug": "ufuk",
+    "isGuest": false
+  },
+  "categories": [
+    {
+      "legacyId": 518,
+      "name": "3D Görselleştirme",
+      "slug": "3d-gorsellestirme"
+    }
+  ],
+  "tags": []
+}

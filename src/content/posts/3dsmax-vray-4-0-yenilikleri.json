@@ -1,0 +1,75 @@
+{
+  "legacyId": 2403,
+  "slug": "3dsmax-vray-4-0-yenilikleri",
+  "legacyUrl": "/3dsmax-vray-4-0-yenilikleri.html",
+  "url": "/3dsmax-vray-4-0-yenilikleri.html",
+  "title": "3dsmax Vray 4.0 yenilikleri",
+  "excerpt": "3dsmax için Beta Vray 4.0‘ın çıkması ile beraber, hem hız bakımından hemde birtakım özellikler vray’in gelişmesi için dönüm noktası olabilir. (özellikle GPU render atakları) Konunun aşağısında vermiş olduğum video CG Record Tarafından hazırlanmış. Vray render motoru uzun zamandan beri GPU (ekran kartı) render konusunda gelişmeler ve iyileştirmeler yapmaya çalışıyor. Özellikle Vray 3.6 içerisinde hem işlemci …",
+  "contentHtml": "<p><strong><a href=\"/3dsmax-vray-4-0-yenilikleri.html\" rel=\"attachment wp-att-2420\"><img loading=\"lazy\" decoding=\"async\" class=\"alignleft wp-image-2420\" src=\"/media/2018/01/vray-4.0.jpg\" alt=\"vray 4.0\" width=\"307\" height=\"232\" srcset=\"/media/2018/01/vray-4.0.jpg 600w, /media/2018/01/vray-4.0-300x227.jpg 300w, /media/2018/01/vray-4.0-80x60.jpg 80w, /media/2018/01/vray-4.0-556x420.jpg 556w\" sizes=\"auto, (max-width: 307px) 100vw, 307px\" /></a>3dsmax için Beta Vray 4.0</strong>&#8216;ın çıkması ile beraber, hem hız bakımından hemde birtakım özellikler vray&#8217;in gelişmesi için dönüm noktası olabilir. (özellikle <span style=\"color: #666699;\"><strong>GPU render</strong></span> atakları)</p>\n<p>Konunun aşağısında vermiş olduğum video <a class=\"yt-simple-endpoint style-scope yt-formatted-string\" href=\"https://www.youtube.com/channel/UC2mTMPpo9r6ux7lA0Ndc3AQ\" target=\"_blank\" rel=\"noopener\">CG Record</a> Tarafından hazırlanmış.</p>\n<p>Vray render motoru uzun zamandan beri GPU (ekran kartı) render konusunda gelişmeler ve iyileştirmeler yapmaya çalışıyor.</p>\n<p>Özellikle Vray 3.6 içerisinde hem işlemci hemde ekran kartı ile render almamızı sağlayan özellik ile, ilk defa kullanıcıya merhaba dedi.</p>\n<p>Bu özellik render hızı konusunda çok fark oluşturmasa da, vrayin bir sonraki sürümleri hakkında bize güzel ipuçları vermiş oldu.</p>\n<p>En son çıkan <span style=\"color: #0000ff;\"><strong>vray 3.6 hybrid rendering</strong></span> için aşağıdaki videoyu izleyebilirsiniz.</p>\n<p><iframe loading=\"lazy\" title=\"V-Ray 3.6 for 3ds Max — Hybrid Rendering\" width=\"500\" height=\"281\" src=\"https://www.youtube.com/embed/rf1MkuflH3M?feature=oembed\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" referrerpolicy=\"strict-origin-when-cross-origin\" allowfullscreen></iframe></p>\n<h2><span style=\"color: #ff00ff;\"><strong>Vray 4.0 Beta yenilikleri</strong></span></h2>\n<p>Aramız da hatırlayanlarımız vardır, ilk Vray sürümü çıktığı zaman , <strong>mental ray</strong> kullanıcıları baya bir tepki vermişlerdi bu duruma , çizgi film tonlarında fazla renkli olan vray sürümü ilerleyen sürümlerle beraber kendini çok fazla geliştirerek render piyasası konusunda hatrı sayılır bir konuma yerleşti.</p>\n<p>Bu durumun üzerinden uzun yıllar geçmesi ile birlikte, mental ray hakkın rahmetine kavuştu.</p>\n<p><a href=\"/3dsmax-vray-4-0-yenilikleri.html\" rel=\"attachment wp-att-2404\"><img loading=\"lazy\" decoding=\"async\" class=\"wp-image-2404 alignleft\" src=\"/media/2018/01/mental-ray.jpg\" alt=\"mental ray\" width=\"292\" height=\"340\" srcset=\"/media/2018/01/mental-ray.jpg 450w, /media/2018/01/mental-ray-258x300.jpg 258w, /media/2018/01/mental-ray-361x420.jpg 361w\" sizes=\"auto, (max-width: 292px) 100vw, 292px\" /></a>Hala <strong>mental ray</strong> kullanan varsa yandaki fotoğrafa bakabilirler. 😀</p>\n<p>İşin şakası bir yana , <strong>vray render</strong> motorunun bu kadar popüler olmasındaki asıl ana sebeplerden biri , hem mental ray&#8217;e göre daha kolay kullanımı hemde arayüzün kullanıcı dostu bir yapıya sahip olması olarak gösterebilirdik.</p>\n<p>Gösterebilirdik diyorum, çünkü köprünün altından çok sular geçti, zaten eskiye dönmemin ana sabeplerinden biride budur, eskiden yeniye doğru baktığımızda gerçekten vray çok yol aldı.</p>\n<p>Yakın zamanda satın aldıkları <span style=\"color: #000080;\"><strong>Corona Render Motoru</strong></span> ile, farklı bir cephede <strong>Biased</strong> vs <strong>Unbiased render</strong> olarak yoluna devam ediyor.Bu arada <strong>Corona Render</strong> hem Basied hemde unbiased olarak çalışma yeteneğine sahiptir.</p>\n<p><strong>Bu sistemler arasındaki farkı görmek için aşağıdaki videoyu izlemeniz yeterlidir.</strong></p>\n<p>https://www.youtube.com/watch?v=K-wgA08c2gU</p>\n<p>Tekrar konumuza döndüğümüz de, Vray 4.0 daki arayüzün hızlanması ve aşağıda bahsedeceğimiz bazı özelliklerin gelmesi kullanıcı açıcından büyük önem taşımaktadır.</p>\n<h3><strong>3dsmax Vray 4.0 ile Gpu render özellikleri ; </strong></h3>\n<p>Videoda gösterilen ilk özelliklerden biri, render bilgi ekranının <strong>Frame Buffer <span style=\"color: #666699;\">(render ekranı)</span></strong> kısmına alınması olarak göze çarpıyor.<a href=\"/3dsmax-vray-4-0-yenilikleri.html\" rel=\"attachment wp-att-2415\"><img loading=\"lazy\" decoding=\"async\" class=\"aligncenter size-full wp-image-2415\" src=\"/media/2018/01/fram-buffer.jpg\" alt=\"frame buffer\" width=\"600\" height=\"366\" srcset=\"/media/2018/01/fram-buffer.jpg 600w, /media/2018/01/fram-buffer-300x183.jpg 300w\" sizes=\"auto, (max-width: 600px) 100vw, 600px\" /></a>Bir diğer özellik ise yine Aynı pencere üzerinde üst kısımda , materyaller üzerindeki etkiyi anlık görebilmek için <span style=\"color: #0000ff;\"><strong>Effect Result</strong></span> kısmı eklenmiş, yani objeler üzerindeki etki ve renk halini gösteren bir kısım, bu şekilde kaplamalar üzerindeki etkiyi anlık görebiliyoruz.</p>\n<p>Videonun 2 nci bölümünde ise, <strong>Vray Gpu</strong> aktifken, <strong>Render Elements</strong> kısmına eklenen <span style=\"color: #ff6600;\"><strong>Denoiser</strong></span> (pürüz engelleme) kısmı ile denemeler yapılıyor. Yeni eklenen buton sayesinde , görüntü üzerinde denoiser işleminin ne kadar etkili olduğu görülebiliyor.</p>\n<p>Yine devamında render devam ederken, aynı corona render da olan ışık listesi üzerinden, ışıklara müdahale edilerek sahnenin ışık renk tonlarının değişmesi sağlanmış, bu değişmede anlık olarak sahnede görülüyor.</p>\n<p>Genel olarak bakıldığında Denoiser üzerinde çok fazla durulduğu görülüyor.Zaten video başlığına baktığınızda <strong>Optix denoiser</strong> kısmını göreceksiniz.</p>\n<p><span style=\"color: #000080;\"><strong>3dsmax Vray 4.0 Yenilikler Videosu ;</strong></span></p>\n<p>https://www.youtube.com/watch?v=nvA4GQAPiTc</p>\n<p>Vray 4.0 Beta için sadece video üzerindeki görüntülerde bu değişimleri görebiliyoruz.<br />\nArka planda ise Chaos Grup kendi sayfasında, betada değişen ve değişecek olan özelliklere yer vermiş.<strong><a href=\"https://docs.chaosgroup.com/display/VRAY4MAX/V-Ray+Next%2C+Beta+1+for+3ds+Max\" target=\"_blank\" rel=\"noopener\">Bu kısımdan</a></strong> bakabilirsiniz.</p>\n<p>Sizlerinde bu konuda düşünceler varsa, aşağıdaki yorum kısmında bizlerle paylaşabilirsiniz.</p>\n<p>Keyifli Renderlar !</p>\n",
+  "publishedAt": "2018-01-10T12:09:39",
+  "modifiedAt": "2022-12-20T15:02:40",
+  "status": "publish",
+  "featuredImage": {
+    "legacyId": 2420,
+    "legacyUrl": "https://www.ufuksen.com/wp-content/uploads/2018/01/vray-4.0.jpg",
+    "localPath": "/media/2018/01/vray-4.0.jpg",
+    "alt": "vray 4.0",
+    "width": 600,
+    "height": 453,
+    "mimeType": "image/jpeg",
+    "error": null
+  },
+  "inlineMedia": [
+    {
+      "legacyUrl": "http://www.ufuksen.com/wp-content/uploads/2018/01/vray-4.0.jpg",
+      "localPath": "/media/2018/01/vray-4.0.jpg",
+      "error": null
+    },
+    {
+      "legacyUrl": "http://www.ufuksen.com/wp-content/uploads/2018/01/mental-ray.jpg",
+      "localPath": "/media/2018/01/mental-ray.jpg",
+      "error": null
+    },
+    {
+      "legacyUrl": "http://www.ufuksen.com/wp-content/uploads/2018/01/fram-buffer.jpg",
+      "localPath": "/media/2018/01/fram-buffer.jpg",
+      "error": null
+    }
+  ],
+  "embeds": [
+    {
+      "provider": "youtube",
+      "externalId": "rf1MkuflH3M",
+      "originalSrc": "https://www.youtube.com/embed/rf1MkuflH3M?feature=oembed",
+      "title": null
+    }
+  ],
+  "seo": {
+    "title": null,
+    "description": "3dsmax Vray 4.0 yeniliklerinin anlatıldığı bir makaledir. Vray 4.0 ile beraber Gpu render özellikleri geliştirilerek , daha verimli bir render ekranı…",
+    "focusKeyword": "Vray 4.0",
+    "canonicalUrl": null,
+    "ogImage": null
+  },
+  "readingMinutes": 2,
+  "migrationChecksum": "4e8f41836afafb4764d23eeef91784e36f35914c6bc064453027e477f1281bf8",
+  "author": {
+    "legacyId": 1,
+    "name": "UFUK ŞEN",
+    "slug": "ufuk",
+    "isGuest": false
+  },
+  "categories": [
+    {
+      "legacyId": 538,
+      "name": "Render Motorları",
+      "slug": "render-motorlari"
+    },
+    {
+      "legacyId": 541,
+      "name": "Vray Render",
+      "slug": "vray"
+    }
+  ],
+  "tags": []
+}

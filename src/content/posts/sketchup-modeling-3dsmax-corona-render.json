@@ -1,0 +1,59 @@
+{
+  "legacyId": 6819,
+  "slug": "sketchup-modeling-3dsmax-corona-render",
+  "legacyUrl": "/sketchup-modeling-3dsmax-corona-render.html",
+  "url": "/sketchup-modeling-3dsmax-corona-render.html",
+  "title": "Sketchup Modeling 3dsmax Corona Render",
+  "excerpt": "Hello everyone! 👋 In this video, I’ll walk you through the process of taking your SketchUp model into 3ds Max and achieving stunning results using Corona Render. This is a must-watch guide, especially for those interested in architectural visualization. What will you learn in this video? How to accurately and flawlessly import your SketchUp model …",
+  "contentHtml": "<p>Hello everyone! 👋 In this video, I&#8217;ll walk you through the process of taking your SketchUp model into 3ds Max and achieving stunning results using <a href=\"/sketchup-corona-render-alma-bolum-01.html\" target=\"_blank\" rel=\"noopener\"><strong>Corona Render</strong></a>. This is a must-watch guide, especially for those interested in architectural visualization.</p>\n<p><iframe loading=\"lazy\" title=\"YouTube video player\" src=\"https://www.youtube.com/embed/HyAUWIYXV8M?si=BUarLck1AkDwEE7y\" width=\"560\" height=\"315\" frameborder=\"0\" allowfullscreen=\"allowfullscreen\"></iframe><br />\nWhat will you learn in this video? How to accurately and flawlessly import your SketchUp model into 3ds Max <strong>Corona Render</strong>.</p>\n<p>Key techniques for using <strong>Corona Render</strong>&#8216;s basic settings and lighting. Tips for applying materials and setting up your render for realistic results. Final touches to get your model ready for post-production.</p>\n<p>Who is this video for? <a href=\"https://www.sketchupturkiye.com/\" target=\"_blank\" rel=\"noopener\"><strong>SketchUp</strong></a> and <strong>3ds Max</strong> users <a href=\"https://www.mimari3d.com/\" target=\"_blank\" rel=\"noopener\"><strong>Architectural visualization</strong></a> professionals and students Anyone looking to improve their rendering techniques</p>\n<p>If you&#8217;re looking to create more effective renders with SketchUp and 3ds Max, this video is perfect for you! Don’t forget to subscribe and turn on notifications for more videos!</p>\n",
+  "publishedAt": "2024-08-29T23:45:29",
+  "modifiedAt": "2024-08-29T23:45:29",
+  "status": "publish",
+  "featuredImage": {
+    "legacyId": 6820,
+    "legacyUrl": "https://www.ufuksen.com/wp-content/uploads/2024/08/coronarender.jpg",
+    "localPath": "/media/2024/08/coronarender.jpg",
+    "alt": "corona render",
+    "width": 960,
+    "height": 540,
+    "mimeType": "image/jpeg",
+    "error": null
+  },
+  "inlineMedia": [],
+  "embeds": [
+    {
+      "provider": "youtube",
+      "externalId": "HyAUWIYXV8M",
+      "originalSrc": "https://www.youtube.com/embed/HyAUWIYXV8M?si=BUarLck1AkDwEE7y",
+      "title": null
+    }
+  ],
+  "seo": {
+    "title": null,
+    "description": "Hello everyone! 👋 In this video, I’ll walk you through the process of taking your SketchUp model into 3ds Max and achieving stunning results using Corona…",
+    "focusKeyword": "Corona Render",
+    "canonicalUrl": null,
+    "ogImage": null
+  },
+  "readingMinutes": 1,
+  "migrationChecksum": "808803262d3bdc322749e0ef62ba86c6bd7e276fb322ec4e849ea2afcd9adb97",
+  "author": {
+    "legacyId": 1,
+    "name": "UFUK ŞEN",
+    "slug": "ufuk",
+    "isGuest": false
+  },
+  "categories": [
+    {
+      "legacyId": 542,
+      "name": "Corona Render",
+      "slug": "corona"
+    },
+    {
+      "legacyId": 538,
+      "name": "Render Motorları",
+      "slug": "render-motorlari"
+    }
+  ],
+  "tags": []
+}

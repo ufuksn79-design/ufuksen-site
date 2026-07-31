@@ -1,0 +1,24 @@
+{
+  "legacyId": 551,
+  "slug": "projeler",
+  "legacyUrl": "/projeler",
+  "url": "/projeler",
+  "title": "Projeler",
+  "excerpt": "",
+  "contentHtml": "",
+  "publishedAt": "2014-11-28T14:39:16",
+  "modifiedAt": "2014-11-28T14:52:11",
+  "status": "publish",
+  "featuredImage": null,
+  "inlineMedia": [],
+  "embeds": [],
+  "seo": {
+    "title": null,
+    "description": null,
+    "focusKeyword": "",
+    "canonicalUrl": null,
+    "ogImage": null
+  },
+  "readingMinutes": 1,
+  "migrationChecksum": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+}

@@ -1,0 +1,33 @@
+{
+  "legacyId": 6125,
+  "slug": "tiehome",
+  "legacyUrl": "/",
+  "url": "/",
+  "title": "3D Eğitim Görselleştirme",
+  "excerpt": "",
+  "contentHtml": "",
+  "publishedAt": "2023-06-19T22:34:34",
+  "modifiedAt": "2023-07-02T23:34:17",
+  "status": "publish",
+  "featuredImage": {
+    "legacyId": 6194,
+    "legacyUrl": "https://www.ufuksen.com/wp-content/uploads/2023/06/ufuksen.com_.png",
+    "localPath": "/media/2023/06/ufuksen.com_.png",
+    "alt": "ufuksen.com",
+    "width": 200,
+    "height": 200,
+    "mimeType": "image/png",
+    "error": null
+  },
+  "inlineMedia": [],
+  "embeds": [],
+  "seo": {
+    "title": null,
+    "description": "3D Eğitim ve 3D görselleştirme konusunda bilgi alacağınız profesyonel bir sitedir.",
+    "focusKeyword": "3D Eğitim",
+    "canonicalUrl": null,
+    "ogImage": null
+  },
+  "readingMinutes": 1,
+  "migrationChecksum": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+}

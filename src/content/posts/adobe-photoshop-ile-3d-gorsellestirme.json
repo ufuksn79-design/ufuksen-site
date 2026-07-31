@@ -1,0 +1,54 @@
+{
+  "legacyId": 6000,
+  "slug": "adobe-photoshop-ile-3d-gorsellestirme",
+  "legacyUrl": "/adobe-photoshop-ile-3d-gorsellestirme.html",
+  "url": "/adobe-photoshop-ile-3d-gorsellestirme.html",
+  "title": "Adobe Photoshop ile 3D Görselleştirme",
+  "excerpt": "Adobe Photoshop Yapay Zeka Özelliği ile 3D Görselleştirme de ⛏️ Photoshop’ta (Beta) Generative Fill adlı yeni aracını keşfediyoruz. Yetenekleriniz ile görselleştirmeler oluştururken iş akışınızı nasıl geliştirebileceğini gösteriyorum. Bu Araç, Adobe Photoshop tarafından desteklenmektedir ve basit metin istemlerini kullanarak görüntüler oluşturmanıza, eklemenize, kaldırmanıza veya değiştirmenize olanak tanır. Kanalımıza Abone olmayı Unutmayınız ! https://www.youtube.com/@sketchupturkiye Unutma Öğrenmek Mutluluktur …",
+  "contentHtml": "<p><strong>Adobe Photoshop</strong> Yapay Zeka Özelliği ile <a href=\"https://www.mimari3d.com/\" target=\"_blank\" rel=\"noopener\"><strong>3D Görselleştirme</strong></a> de ⛏️ Photoshop&#8217;ta (Beta) Generative Fill adlı yeni aracını keşfediyoruz.</p>\n<p>Yetenekleriniz ile görselleştirmeler oluştururken iş akışınızı nasıl geliştirebileceğini gösteriyorum.<br />\nBu Araç, <a href=\"/render-sonrasi-photoshop.html\" target=\"_blank\" rel=\"noopener\"><strong>Adobe Photoshop</strong></a> tarafından desteklenmektedir ve basit metin istemlerini kullanarak görüntüler oluşturmanıza, eklemenize, kaldırmanıza veya değiştirmenize olanak tanır.</p>\n<p><iframe loading=\"lazy\" title=\"YouTube video player\" src=\"https://www.youtube.com/embed/fGs2YV7LyZI\" width=\"560\" height=\"315\" frameborder=\"0\" allowfullscreen=\"allowfullscreen\"></iframe></p>\n<p><strong>Kanalımıza Abone olmayı Unutmayınız !</strong></p>\n<p><a href=\"https://www.youtube.com/@sketchupturkiye\" target=\"_blank\" rel=\"noopener\">https://www.youtube.com/@sketchupturkiye</a></p>\n<p>Unutma Öğrenmek Mutluluktur ! Kendini geliştirmek ve Daha ileriye gitmek için kendine günde 10dk&#8217;lık zaman ayırman gerekir.Bu zamanı kanalımızda ki videoları izleyerek yapabilirsin.</p>\n<p>Günde bir video izleyerek kendini geliştirip, rakiplerinden daha ileriye gidebilirsin.</p>\n",
+  "publishedAt": "2023-06-06T09:57:48",
+  "modifiedAt": "2023-06-06T09:57:48",
+  "status": "publish",
+  "featuredImage": {
+    "legacyId": 6001,
+    "legacyUrl": "https://www.ufuksen.com/wp-content/uploads/2023/06/Adobe-Photoshop-Yapay-Zeka-.jpg",
+    "localPath": "/media/2023/06/Adobe-Photoshop-Yapay-Zeka-.jpg",
+    "alt": "Adobe Photoshop",
+    "width": 1280,
+    "height": 720,
+    "mimeType": "image/jpeg",
+    "error": null
+  },
+  "inlineMedia": [],
+  "embeds": [
+    {
+      "provider": "youtube",
+      "externalId": "fGs2YV7LyZI",
+      "originalSrc": "https://www.youtube.com/embed/fGs2YV7LyZI",
+      "title": null
+    }
+  ],
+  "seo": {
+    "title": null,
+    "description": "Adobe Photoshop Yapay Zeka Özelliği ile 3D Görselleştirme de  Photoshop'ta (Beta) Generative Fill adlı yeni aracını keşfediyoruz.",
+    "focusKeyword": "Adobe Photoshop",
+    "canonicalUrl": null,
+    "ogImage": null
+  },
+  "readingMinutes": 1,
+  "migrationChecksum": "65668d4db22025ede1401316e829521afb5b09d0ab2d100ea1cd3505352c29ac",
+  "author": {
+    "legacyId": 1,
+    "name": "UFUK ŞEN",
+    "slug": "ufuk",
+    "isGuest": false
+  },
+  "categories": [
+    {
+      "legacyId": 518,
+      "name": "3D Görselleştirme",
+      "slug": "3d-gorsellestirme"
+    }
+  ],
+  "tags": []
+}

@@ -1,0 +1,23 @@
+---
+import Base from "../layouts/Base.astro";
+import SectionTitle from "../components/SectionTitle.astro";
+import { getVisibleCategories, categoryPath } from "../lib/content";
+const categories = (await getVisibleCategories()).slice(0, 4);
+---
+<Base title="Sayfa bulunamadı | Ufuk Şen" description="Aradığınız sayfa bulunamadı. 3D görselleştirme, render ve SketchUp üzerine 430 yazılık arşive blog ve arama sayfalarından ulaşabilirsiniz." path="/404" noindex={true}>
+  <section style="display:grid;gap:var(--s-8)">
+    <SectionTitle title="404 — Bu sayfa yok" as="h1" note="Bağlantı taşınmış veya hiç var olmamış olabilir." />
+    <div style="display:flex;flex-wrap:wrap;gap:var(--s-3)">
+      <a class="btn btn--primary" href="/blog">Tüm yazılar</a>
+      <a class="btn btn--ghost" href="/arama">Arama yap</a>
+    </div>
+    <div class="tiles">
+      {categories.map((category) => (
+        <article class="tile">
+          <span class="tag">{category.postCount} yazı</span>
+          <h3><a href={categoryPath(category)} style="text-decoration:none">{category.name}</a></h3>
+        </article>
+      ))}
+    </div>
+  </section>
+</Base>

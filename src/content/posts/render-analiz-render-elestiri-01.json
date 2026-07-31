@@ -1,0 +1,59 @@
+{
+  "legacyId": 5571,
+  "slug": "render-analiz-render-elestiri-01",
+  "legacyUrl": "/render-analiz-render-elestiri-01.html",
+  "url": "/render-analiz-render-elestiri-01.html",
+  "title": "Render Analiz – Render Eleştiri 01",
+  "excerpt": "Her çarşamba yapmış olduğumuz Render Analiz videolarımızda ,sizin gelişiminiz açısından yapmış olduğunuz çalışmaları inceliyoruz.Bu render analiz videoları sizin daha iyi çalışmalar çıkarmanız için eksiklerinizi söyleyerek sizin gelişiminize katkı sağlıyoruz. Render sonuçları konusunda farklı bir çerçeve ile kendi çalışmalarınızı farklı bir gözle bakarak eleştiri almak isterseniz. Çarşamba günleri yaptığımız yayınlara çalışmalarınızı gönderebilirsiniz. Her çarşamba yaptığımız render …",
+  "contentHtml": "<p>Her çarşamba yapmış olduğumuz <a title=\"Render Analiz\" href=\"https://www.youtube.com/watch?v=VnMOrebz1vM&amp;t=103s\" target=\"_blank\" rel=\"noopener\"><strong>Render Analiz</strong></a> videolarımızda ,sizin gelişiminiz açısından yapmış olduğunuz çalışmaları inceliyoruz.Bu render analiz videoları sizin daha iyi çalışmalar çıkarmanız için eksiklerinizi söyleyerek sizin gelişiminize katkı sağlıyoruz.</p>\n<p>Render sonuçları konusunda farklı bir çerçeve ile kendi çalışmalarınızı farklı bir gözle bakarak eleştiri almak isterseniz. Çarşamba günleri yaptığımız yayınlara çalışmalarınızı gönderebilirsiniz.</p>\n<p>Her çarşamba yaptığımız render analiz için çalışmalarınızı <strong>vraydvd @ gmail.com</strong> adresine render analiz konu başlığı olarak mail atınız.</p>\n<p><iframe loading=\"lazy\" title=\"YouTube video player\" src=\"https://www.youtube.com/embed/eKZhrJvY_6Q\" width=\"560\" height=\"315\" frameborder=\"0\" allowfullscreen=\"allowfullscreen\"></iframe></p>\n",
+  "publishedAt": "2022-10-13T11:52:38",
+  "modifiedAt": "2022-12-21T11:22:14",
+  "status": "publish",
+  "featuredImage": {
+    "legacyId": 5572,
+    "legacyUrl": "https://www.ufuksen.com/wp-content/uploads/2022/10/Render-analiz-1.jpg",
+    "localPath": "/media/2022/10/Render-analiz-1.jpg",
+    "alt": "Render analiz",
+    "width": 1280,
+    "height": 720,
+    "mimeType": "image/jpeg",
+    "error": null
+  },
+  "inlineMedia": [],
+  "embeds": [
+    {
+      "provider": "youtube",
+      "externalId": "eKZhrJvY_6Q",
+      "originalSrc": "https://www.youtube.com/embed/eKZhrJvY_6Q",
+      "title": null
+    }
+  ],
+  "seo": {
+    "title": null,
+    "description": "Her çarşamba yapmış olduğumuz Render Analiz videolarımızda ,sizin gelişiminiz açısından yapmış olduğunuz çalışmaları inceliyoruz",
+    "focusKeyword": "Render Analiz",
+    "canonicalUrl": null,
+    "ogImage": null
+  },
+  "readingMinutes": 1,
+  "migrationChecksum": "1f5e11de54e51d0d89a29017eca1e4f98f4f0d88724ae691a08689356b1bf99a",
+  "author": {
+    "legacyId": 1,
+    "name": "UFUK ŞEN",
+    "slug": "ufuk",
+    "isGuest": false
+  },
+  "categories": [
+    {
+      "legacyId": 518,
+      "name": "3D Görselleştirme",
+      "slug": "3d-gorsellestirme"
+    },
+    {
+      "legacyId": 1142,
+      "name": "Render Analiz",
+      "slug": "3d-render-analizleri"
+    }
+  ],
+  "tags": []
+}

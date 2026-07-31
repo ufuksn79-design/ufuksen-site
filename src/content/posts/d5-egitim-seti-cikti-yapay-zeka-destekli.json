@@ -1,0 +1,59 @@
+{
+  "legacyId": 5051,
+  "slug": "d5-egitim-seti-cikti-yapay-zeka-destekli",
+  "legacyUrl": "/d5-egitim-seti-cikti-yapay-zeka-destekli.html",
+  "url": "/d5-egitim-seti-cikti-yapay-zeka-destekli.html",
+  "title": "D5 Eğitim Seti Çıktı – Yapay zeka destekli !",
+  "excerpt": "D5 render motoru ile yeni nesil görselleştirme tekniklerini öğrenebilirsiniz. Bu sayede 3d proje ve 3d görselleştirme alanlarında rakiplerinize fark atabilirsiniz.D5 eğitim seti sizlere aşağıdaki görsel kaliteye nasıl ulaşmanız gerektiğini öğreterek sizlerin kaliteli ve gerçekçi render almanızı sağlayacaktır. D5 renderın en büyük avantajlarından biri sizlerin eksik olduğunuz yerlerde yapay zeka devreye girerek sizlerin daha kaliteli görselleştirme …",
+  "contentHtml": "<p><strong>D5 render motoru</strong> ile yeni nesil görselleştirme tekniklerini öğrenebilirsiniz. Bu sayede <a title=\"3d proje\" href=\"https://mimari3d.com/\" target=\"_blank\" rel=\"noopener\"><strong>3d proje</strong></a> ve 3d görselleştirme alanlarında rakiplerinize fark atabilirsiniz.<strong><a href=\"https://www.3degitimsetleri.com/kurslar/d5-gercekci-kaliteli-gorsel-egitim-seti/\" target=\"_blank\" rel=\"noopener\">D5 eğitim seti</a> </strong>sizlere aşağıdaki görsel kaliteye nasıl ulaşmanız gerektiğini öğreterek sizlerin kaliteli ve <strong><a href=\"https://www.3degitimsetleri.com/\" target=\"_blank\" rel=\"noopener\">gerçekçi render</a></strong> almanızı sağlayacaktır.</p>\n<p>D5 renderın en büyük avantajlarından biri sizlerin eksik olduğunuz yerlerde yapay zeka devreye girerek sizlerin daha <strong>kaliteli görselleştirme</strong> yapmanıza olanak tanıyor.</p>\n<p>D5 içerisinde 7000 model ve 1400 den fazla kaplama ile sizlere daha fazla içerik ile görselleştirme yapmanıza olanak tanıyan bir render motoru.</p>\n<h2>D5 Eğitim Seti</h2>\n<p>Aşağıdan neden d5 render motoru ? ve d5 render motoru özelliklerini izleyebilirsiniz , detaylı bir şekilde sizlere anlattım.<br />\n<iframe loading=\"lazy\" title=\"YouTube video player\" src=\"https://www.youtube.com/embed/mm1lffeqv20\" width=\"560\" height=\"315\" frameborder=\"0\" allowfullscreen=\"allowfullscreen\"></iframe></p>\n<h2><strong>D5 eğitim seti hangi programlarla tam uyumlu ?</strong></h2>\n<p><a href=\"https://sketchupturkiye.com/\" target=\"_blank\" rel=\"noopener\"><strong>Sketchup</strong></a> , 3dsmax , Revit , Blender, Rhino , Arcihad ile tam uyumludur. Bu programlardan aldığınız dosyaları rahatlıkla d5 render ile görselleştirme işlemlerine hızlı bir şekilde başlayabilirsiniz.</p>\n<h3>Neden d5 render motorunu tercih etmeliyiz ?</h3>\n<p><strong>D5 render</strong> motorunu tercih etmemizde ki en büyük sebep , hızlı ve kolay görselleştirme yapmamıza imkan tanıyan bir yapıya sahip olması.<br />\nNvidia nın çıkardığı Ray tracing teknolojisi ile sizlere en yüksek kaliteli görseli vermeyi hedefleyen bir render motorudur.</p>\n<p>&nbsp;</p>\n",
+  "publishedAt": "2022-02-06T13:52:48",
+  "modifiedAt": "2023-07-04T06:25:43",
+  "status": "publish",
+  "featuredImage": {
+    "legacyId": 5055,
+    "legacyUrl": "https://www.ufuksen.com/wp-content/uploads/2022/02/d5renderegitim.jpg",
+    "localPath": "/media/2022/02/d5renderegitim.jpg",
+    "alt": "D5 Eğitim Seti",
+    "width": 600,
+    "height": 338,
+    "mimeType": "image/jpeg",
+    "error": null
+  },
+  "inlineMedia": [],
+  "embeds": [
+    {
+      "provider": "youtube",
+      "externalId": "mm1lffeqv20",
+      "originalSrc": "https://www.youtube.com/embed/mm1lffeqv20",
+      "title": null
+    }
+  ],
+  "seo": {
+    "title": null,
+    "description": "D5 render motoru ile yeni nesil görselleştirme tekniklerini öğrenebilirsiniz. Bu sayede 3d proje ve 3d görselleştirme alanlarında rakiplerinize fark…",
+    "focusKeyword": "D5 Eğitim Seti",
+    "canonicalUrl": null,
+    "ogImage": null
+  },
+  "readingMinutes": 1,
+  "migrationChecksum": "534e9d26829037ac228d66682c95a20c4fdc097ee8ceec9e9cd17857c814cb09",
+  "author": {
+    "legacyId": 1,
+    "name": "UFUK ŞEN",
+    "slug": "ufuk",
+    "isGuest": false
+  },
+  "categories": [
+    {
+      "legacyId": 1168,
+      "name": "D5 Render",
+      "slug": "d5-render"
+    },
+    {
+      "legacyId": 538,
+      "name": "Render Motorları",
+      "slug": "render-motorlari"
+    }
+  ],
+  "tags": []
+}

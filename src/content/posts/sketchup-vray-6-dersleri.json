@@ -1,0 +1,59 @@
+{
+  "legacyId": 5660,
+  "slug": "sketchup-vray-6-dersleri",
+  "legacyUrl": "/sketchup-vray-6-dersleri.html",
+  "url": "/sketchup-vray-6-dersleri.html",
+  "title": "Sketchup Vray 6 Dersleri",
+  "excerpt": "Sketchup Türkiye Youtube adresimizi biliyorsunuz güncel videoların ve Türkiye deki en dinamik youtube kanalı olarak sizlere Sketchup Vray 6 dersleri ve diğer render motorlarının derlserini vererek sizlerin gelişmesine katkı sağlamaya çalışıyoruz. Dersleri eklendiği sırada izlerseniz sizin için çok faydalı olacaktır.Aynı zamanda dersleri kısa tutarak diğer dersler için daha keyifli bir izlenim olanağı sağlıyoruz. Sizlerden ricamız …",
+  "contentHtml": "<p><strong>Sketchup Türkiye Youtube</strong> adresimizi biliyorsunuz güncel videoların ve Türkiye deki en dinamik youtube kanalı olarak sizlere <a title=\"Sketchup Vray 6 Dersleri\" href=\"https://www.3degitimsetleri.com/\" target=\"_blank\" rel=\"noopener\"><strong>Sketchup Vray 6 dersleri</strong></a> ve diğer render motorlarının derlserini vererek sizlerin gelişmesine katkı sağlamaya çalışıyoruz.</p>\n<p>Dersleri eklendiği sırada izlerseniz sizin için çok faydalı olacaktır.Aynı zamanda dersleri kısa tutarak diğer dersler için daha keyifli bir izlenim olanağı sağlıyoruz.</p>\n<p><em><strong>Sizlerden ricamız kanalımızı bağlı olduğunuz platformlarda paylaşmanız ve kanalımıza abone olmanızdır.</strong></em></p>\n<h2><strong>Sketchup Vray 6 Dersleri</strong></h2>\n<p>Aşağıdaki <a href=\"/\" target=\"_blank\" rel=\"noopener\"><strong>Vray Dersleri</strong></a> listesinden sürekli devam ederek eklediğimiz dersleri izleyebilirsiniz.<br />\nPlaylist üzerinden sağ alttaki <strong>Vray dersleri</strong> listesinden istediğiniz dersi seçebilirsiniz.</p>\n<p><iframe loading=\"lazy\" title=\"Vray 6 Sketchup ÇIKTI - SÜPER HIZLI YENİ ÖZELLİKLER\" width=\"500\" height=\"281\" src=\"https://www.youtube.com/embed/TZ9CiHQtylw?list=PLbcNJVR3dmPr9L_Znn6ftvfOuyYaw3_Xq\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" referrerpolicy=\"strict-origin-when-cross-origin\" allowfullscreen></iframe></p>\n<p>&nbsp;</p>\n",
+  "publishedAt": "2022-11-15T11:03:21",
+  "modifiedAt": "2022-12-21T11:27:51",
+  "status": "publish",
+  "featuredImage": {
+    "legacyId": 5662,
+    "legacyUrl": "https://www.ufuksen.com/wp-content/uploads/2022/11/sketchup-vray-6-render.jpg",
+    "localPath": "/media/2022/11/sketchup-vray-6-render.jpg",
+    "alt": "sketchup vray 6 dersleri",
+    "width": 1280,
+    "height": 720,
+    "mimeType": "image/jpeg",
+    "error": null
+  },
+  "inlineMedia": [],
+  "embeds": [
+    {
+      "provider": "youtube",
+      "externalId": "TZ9CiHQtylw",
+      "originalSrc": "https://www.youtube.com/embed/TZ9CiHQtylw?list=PLbcNJVR3dmPr9L_Znn6ftvfOuyYaw3_Xq",
+      "title": null
+    }
+  ],
+  "seo": {
+    "title": null,
+    "description": "Sketchup Vray 6 dersleri ve diğer render motorlarının derlserini vererek sizlerin gelişmesine katkı sağlamaya çalışıyoruz.",
+    "focusKeyword": "Sketchup Vray 6 Dersleri",
+    "canonicalUrl": null,
+    "ogImage": null
+  },
+  "readingMinutes": 1,
+  "migrationChecksum": "aa84417b75fdf196995a46817d50043abc6de7a53fd40da00dc9c5dc12b92922",
+  "author": {
+    "legacyId": 1,
+    "name": "UFUK ŞEN",
+    "slug": "ufuk",
+    "isGuest": false
+  },
+  "categories": [
+    {
+      "legacyId": 538,
+      "name": "Render Motorları",
+      "slug": "render-motorlari"
+    },
+    {
+      "legacyId": 541,
+      "name": "Vray Render",
+      "slug": "vray"
+    }
+  ],
+  "tags": []
+}

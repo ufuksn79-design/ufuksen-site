@@ -1,0 +1,65 @@
+{
+  "legacyId": 2626,
+  "slug": "vray-3-60-3dsmax-bitkikerini-sketchupda-kullanmak",
+  "legacyUrl": "/vray-3-60-3dsmax-bitkikerini-sketchupda-kullanmak.html",
+  "url": "/vray-3-60-3dsmax-bitkikerini-sketchupda-kullanmak.html",
+  "title": "Vray 3.60 3DSMax Bitkilerini Sketchupda kullanmak",
+  "excerpt": "Sketchup Vray 3.60 ile gelen özelliklerden biride , 3dsmax bitkilerinin sketchup da kullanılmasıdır. Bu özellik bizim dış mekan da sketchup’ın sorunu olan kaliteli bitki sorununu ortadan kaldırmaktadır. Tabi render işlemlerinde sahnedeki bitki çeşitliliği her zaman yüksek sistem ihtiyacını gerektirmektedir.Sahne de bulunan birkaç bitki sorun oluşturmayacaktır ama, sahnedeki eleman sayısı arttığında iyi bir işlemci ve yüksek …",
+  "contentHtml": "<p><a href=\"/vray-3-60-3dsmax-bitkikerini-sketchupda-kullanmak.html\" rel=\"attachment wp-att-2629\"><img loading=\"lazy\" decoding=\"async\" class=\"alignleft wp-image-2629\" src=\"/media/2018/02/vray-3.60.jpg\" alt=\"vray 3.60\" width=\"289\" height=\"278\" srcset=\"/media/2018/02/vray-3.60.jpg 400w, /media/2018/02/vray-3.60-300x289.jpg 300w\" sizes=\"auto, (max-width: 289px) 100vw, 289px\" /></a>Sketchup <strong>Vray 3.60</strong> ile gelen özelliklerden biride , <strong>3dsmax</strong> bitkilerinin sketchup da kullanılmasıdır. Bu özellik bizim dış mekan da sketchup&#8217;ın sorunu olan <span style=\"color: #0000ff;\"><strong>kaliteli bitki</strong></span> sorununu ortadan kaldırmaktadır.</p>\n<p>Tabi render işlemlerinde sahnedeki bitki çeşitliliği her zaman yüksek sistem ihtiyacını gerektirmektedir.Sahne de bulunan birkaç bitki sorun oluşturmayacaktır ama, sahnedeki eleman sayısı arttığında iyi bir işlemci ve yüksek ram ihtiyacı ortaya çıkmaktadır.</p>\n<p>Benim videoda gösterdiğim bitki sayısı 5 adet olmasına rağmen render süresinin uzun sürdüğünü belirtmek isterim.</p>\n<p>Testleri yaptığım sistem <strong>i7 4770 işlemci 16gb ram 1050ti</strong> ekran kartıdır.</p>\n<h2><span style=\"color: #0000ff;\"><strong>Sketchup Vray 3.60 versiyonunda</strong> 3DS Max bitkilerini nasıl kullanırız ?<br />\n</span></h2>\n<p>Aşağıda bu konuyla ilgili Sketchup <strong>Vray 3.60</strong> olan özellik ile 3dsmax bitkilerinin <strong>sketchup sahnesinde</strong> nasıl kullanıldığını adım adım video da gösterdim.</p>\n<p><span style=\"color: #993300;\"><strong>Dikkat ! : </strong></span> Bu özelliklerin kullanılması için bilgisayarınız da Sketchup Vray 3.60 versiyonunun kurulu olması, aynı zamanda 3dsmax programı içerisinde vray kurulu olması gerekmektedir. Eğer sizde video da gösterdiğim menüler çıkmıyor ise, bilgisayarınız da hem sketchup içerisinde hem max içerisinde vray kurulu olduğuna emin olmalısınız.</p>\n<p>3dsmax içerisinde herhangi bir max dosyasını (vray kaplamalı) kullanırken, videoda gösterdiğim gibi <span style=\"color: #0000ff;\"><strong>Asset Tracking</strong></span> özelliği ile, dosyanın kaplamalarını model üzerine atmalısınız. Bunu yapmazsanız eğer , kaplamalarınız Sketchup sahnesine gelmez.</p>\n<h3><span style=\"color: #ff00ff;\"><strong>Sketchup Vray 3.60</strong> Videosu</span></h3>\n<p>Dosyaları kaplamalarını ayarladıktan sonra , sketchup içerisinde vray menüsünde import proxy scene ile içeriye aktarım yapabilirsiniz.Dosya direk olarak hem proxy olarak hemde kaplamalı olarak gelecektir.</p>\n<p>Eğer vray 3.4 versiyonunu kullanıyorsanız bu özellik çıkmayacaktır.Bu özellik 3.6 versiyonu ile eklenmiştir.</p>\n<p>Aşağıda <strong>Sketchup Vray 3.60</strong> versiyonu ile 3DSMax Bitkilerini Sketchup da nasıl kullanırsınız bu videoyu izleyeceksiniz.<strong> (Video Teknik bir arıza yüzünden sessiz çekilmiştir)</strong></p>\n<p><iframe loading=\"lazy\" title=\"Vray 3.60 3DSMax Bitkilerini Sketchupda kullanmak\" width=\"500\" height=\"375\" src=\"https://www.youtube.com/embed/FdWhCLYEglk?feature=oembed\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" referrerpolicy=\"strict-origin-when-cross-origin\" allowfullscreen></iframe></p>\n",
+  "publishedAt": "2018-02-17T08:24:11",
+  "modifiedAt": "2022-12-21T10:29:53",
+  "status": "publish",
+  "featuredImage": {
+    "legacyId": 2629,
+    "legacyUrl": "https://www.ufuksen.com/wp-content/uploads/2018/02/vray-3.60.jpg",
+    "localPath": "/media/2018/02/vray-3.60.jpg",
+    "alt": "vray 3.60",
+    "width": 400,
+    "height": 385,
+    "mimeType": "image/jpeg",
+    "error": null
+  },
+  "inlineMedia": [
+    {
+      "legacyUrl": "http://www.ufuksen.com/wp-content/uploads/2018/02/vray-3.60.jpg",
+      "localPath": "/media/2018/02/vray-3.60.jpg",
+      "error": null
+    }
+  ],
+  "embeds": [
+    {
+      "provider": "youtube",
+      "externalId": "FdWhCLYEglk",
+      "originalSrc": "https://www.youtube.com/embed/FdWhCLYEglk?feature=oembed",
+      "title": null
+    }
+  ],
+  "seo": {
+    "title": null,
+    "description": "Vray 3.60 3DSMax Bitkilerini Sketchupda kullanmak ve bu kullanım esnasında 3dsmax içerisinde nelerin yapılması gerektiğini anlatan bir makaledir.Makale…",
+    "focusKeyword": "Vray 3.60",
+    "canonicalUrl": null,
+    "ogImage": null
+  },
+  "readingMinutes": 1,
+  "migrationChecksum": "dca99603f89cc9d3ff2154e3fb479f7009967c819b26a9d1a5d0240ec7e6fb78",
+  "author": {
+    "legacyId": 1,
+    "name": "UFUK ŞEN",
+    "slug": "ufuk",
+    "isGuest": false
+  },
+  "categories": [
+    {
+      "legacyId": 538,
+      "name": "Render Motorları",
+      "slug": "render-motorlari"
+    },
+    {
+      "legacyId": 541,
+      "name": "Vray Render",
+      "slug": "vray"
+    }
+  ],
+  "tags": []
+}

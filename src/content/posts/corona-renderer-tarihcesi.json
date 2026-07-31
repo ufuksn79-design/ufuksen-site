@@ -1,0 +1,65 @@
+{
+  "legacyId": 2540,
+  "slug": "corona-renderer-tarihcesi",
+  "legacyUrl": "/corona-renderer-tarihcesi.html",
+  "url": "/corona-renderer-tarihcesi.html",
+  "title": "Corona Renderer Tarihçesi ve Özellikleri",
+  "excerpt": "Corona Renderer, 2009 yılı Prag Çek Teknik Üniversitesi’nde bulunan Ondrej Karlik ‘in öğrenci projesi olarak isminden bahsettirdi.Ondrej eski bir Cg sanatçısı Adam Hotovy ve üniversite doçenti Jaroslav Krijvanek ile şirket kurdukan sonra bunu ticari bir projeye dönüştürdü.Ancak 2017 Ağustos ayında Chaos Grubuna dahil oldular. Peki,Chaos Group Render Legion’ı ekibe neden dahil etti ? Chaos Group …",
+  "contentHtml": "<p><a href=\"/corona-renderer-tarihcesi.html\" rel=\"attachment wp-att-2545\"><img loading=\"lazy\" decoding=\"async\" class=\"alignleft wp-image-2545\" src=\"/media/2018/01/corona-renderer.jpg\" alt=\"corona renderer\" width=\"209\" height=\"209\" srcset=\"/media/2018/01/corona-renderer.jpg 420w, /media/2018/01/corona-renderer-300x300.jpg 300w, /media/2018/01/corona-renderer-150x150.jpg 150w\" sizes=\"auto, (max-width: 209px) 100vw, 209px\" /></a>Corona Renderer, 2009 yılı Prag Çek Teknik Üniversitesi’nde bulunan Ondrej Karlik ‘in öğrenci projesi olarak isminden bahsettirdi.Ondrej eski bir Cg sanatçısı Adam Hotovy ve üniversite doçenti Jaroslav Krijvanek ile şirket kurdukan sonra bunu ticari bir projeye dönüştürdü.Ancak 2017 Ağustos ayında Chaos Grubuna dahil oldular.</p>\n<p><strong>Peki,Chaos Group Render Legion’ı ekibe neden dahil etti ?</strong></p>\n<p>Chaos Group , Render Legion grubunun çalışmalarını beğendiğini ve aynı vizyonu paylaştıklarını söyledi.Ayrıca birlikte çalışarak Vray ve Corona Renderer’i çok daha iyi yerlere taşıyabileceklerini söyledi.</p>\n<p><strong>Render Legion neden Chaos Group’a katılma kararı aldı ?</strong></p>\n<p>Corona Renderer’in benzetmek gibi olursa bebekleri gibi olduğunu, başarılı bir şekilde büyümesini istediklerini ancak ihtiyaçlarını karşılama noktasında dışarıdan yardım almak istediklerini söylediler.Bu yardım için en iyi ortağın Chaos Group olduğunu kendi bilgi ve tecrübelerinin onlara da katkı sağlayacağını söylediler.</p>\n<p>Corona Renderer,Autodesk 3ds Max için ve bağımsız bir uygulama özelliğide gösterebilen,Cinema 4D için geliştirilen gerçekçiliği yüksek ve iyi performanslı bir render motorudur.</p>\n<h2><strong><span style=\"color: #0000ff;\">Corona Renderer Özellikleri Nelerdir ?</span></strong></h2>\n<p>Corona Renderer’in kullanımı ve anlaması kolaydır.</p>\n<p>Kullanılabilirlik Corona Render’in en etkin özelliğidir.Çünkü diğer render motorlarına kıyasla öğrenmesi daha kolaydır.</p>\n<p>Ayrıca Kurulumu’da Render seçeneğine basmak kadar basit bir yoldur.Corona’nın kullanıcı sayısı gün geçtikçe artmaktadır.</p>\n<p><iframe loading=\"lazy\" title=\"Corona 1.7 for 3ds Max - New Features and Improvements\" width=\"500\" height=\"281\" src=\"https://www.youtube.com/embed/HI0LVPQkaqw?feature=oembed\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" referrerpolicy=\"strict-origin-when-cross-origin\" allowfullscreen></iframe></p>\n<p>Corona Renderer gereksiz ve doğal olmayan teknik ayarları gizleyerek render sürecini basitleştirmek için sürekli çalışmaktadır ve böylece sanatçılar amaçlarına çok daha kolay odaklanabilirler.</p>\n<p><span style=\"color: #800000;\"><strong>Corona Renderer sanatçı dostudur.</strong></span></p>\n<p>Corona Renderer sanatçı toplulukları ile işbirliği içinde geliştirilmiştir.Zaten Corona’nın yaratıcıları eski sanatçılardır.Bu yaklaşım sebebi ile sanatçılara yönelik bir gelişim süreci çağrıları vardır.</p>\n<p><span style=\"color: #ff0000;\"><strong>Corona Renderer esnektir.</strong></span></p>\n<p>Corona istediğiniz efekti elde etmeye izin veren birçok gerçeklik parametreleri vardır.Aynı zamanda esnek ışık seçeneği oldukça gelişmiştir.</p>\n<p>Işık kaynaklarını kamerada görünmez yapabilirsiniz.Ayrıca kırılmalar yansımalar vb özellikleri kapatabiliriniz.</p>\n<p>Backplates görünmez GI seçeneği ile kolayca yapılabilir ve tüm 3dsmax ışıklarını da destekler.</p>\n<h3><span style=\"color: #0000ff;\"><strong>Corona Renderer hızlıdır</strong></span></h3>\n<p>Corona renderer’in en önemli özelliklerinden biridir.Intel Embree Ray Tracing çekirdeği kullanıyor.Ayrıca sadece Corona’da Cpu Gpu kadar hızlı hale geliyor.</p>\n<p><strong>Corona Renderer’in malzemeleri ;</strong></p>\n<p>Gereksiz ve kafa karıştıran parametrelerin ayarlanması gibi özellikleri minimize ederek daha sezgisel ve esnek hale getirmiştir.</p>\n<p>Örneğin Rayswitcher malzemesi ile çok farklı sanat içerikli değişiklikler yapılabilir ve de Global Illumination(GI)’yi etkileyen malzemeler ile gerçeklilik seçenekleri opsiyon kazanır.</p>\n<p>Caustics hesaplama yöntemi seçeneği sunar.Buna en iyi örnek pencere ve cam gibi asal örneklerdir.Caustics devre dışı bırakarak render sürelerini önemli ölçüde azaltır.</p>\n<p>Ancak illaki kostik istenirse malzeme menüsündeki ‘’Caustics’’ seçeneğine seçilerek etkin hale getirilir.</p>\n",
+  "publishedAt": "2018-01-22T20:48:07",
+  "modifiedAt": "2022-12-20T15:01:31",
+  "status": "publish",
+  "featuredImage": {
+    "legacyId": 2545,
+    "legacyUrl": "https://www.ufuksen.com/wp-content/uploads/2018/01/corona-renderer.jpg",
+    "localPath": "/media/2018/01/corona-renderer.jpg",
+    "alt": "corona renderer",
+    "width": 420,
+    "height": 420,
+    "mimeType": "image/jpeg",
+    "error": null
+  },
+  "inlineMedia": [
+    {
+      "legacyUrl": "http://www.ufuksen.com/wp-content/uploads/2018/01/corona-renderer.jpg",
+      "localPath": "/media/2018/01/corona-renderer.jpg",
+      "error": null
+    }
+  ],
+  "embeds": [
+    {
+      "provider": "youtube",
+      "externalId": "HI0LVPQkaqw",
+      "originalSrc": "https://www.youtube.com/embed/HI0LVPQkaqw?feature=oembed",
+      "title": null
+    }
+  ],
+  "seo": {
+    "title": null,
+    "description": "Corona Renderer'ın nasıl kurulduğu, hangi aşamalardan sonra Chaos Group bünyesine katılma aşamalarını anlatan bir makaledir.",
+    "focusKeyword": "Corona Renderer",
+    "canonicalUrl": null,
+    "ogImage": null
+  },
+  "readingMinutes": 2,
+  "migrationChecksum": "dfb1553fb27eb3a35de761a06aef63d8133445b8bd913872416a2b24ec35dd87",
+  "author": {
+    "legacyId": 2,
+    "name": "Pınar Çakır",
+    "slug": "pcakir",
+    "isGuest": false
+  },
+  "categories": [
+    {
+      "legacyId": 542,
+      "name": "Corona Render",
+      "slug": "corona"
+    },
+    {
+      "legacyId": 538,
+      "name": "Render Motorları",
+      "slug": "render-motorlari"
+    }
+  ],
+  "tags": []
+}

@@ -1,0 +1,32 @@
+{
+  "yazi": 457,
+  "sayfa": 16,
+  "kategori": 27,
+  "etiket": 4,
+  "toplam_satir": 1418,
+  "eylem_dagilimi": {
+    "keep": 491,
+    "redirect": 914,
+    "decide": 13
+  },
+  "tip_dagilimi": {
+    "home": 1,
+    "post": 457,
+    "post-amp": 914,
+    "page": 15,
+    "category": 27,
+    "tag": 4
+  },
+  "tekrarlanan_legacy_url": [],
+  "cakisan_slug_url_cakismasi_degil": {
+    "3d-mimari-gorsellestirme": [
+      4687,
+      1816
+    ],
+    "3d-gorsellestirme": [
+      2976,
+      2522
+    ]
+  },
+  "hedefi_bos_satir": 12
+}

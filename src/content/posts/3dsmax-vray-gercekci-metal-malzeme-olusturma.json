@@ -1,0 +1,59 @@
+{
+  "legacyId": 6890,
+  "slug": "3dsmax-vray-gercekci-metal-malzeme-olusturma",
+  "legacyUrl": "/3dsmax-vray-gercekci-metal-malzeme-olusturma.html",
+  "url": "/3dsmax-vray-gercekci-metal-malzeme-olusturma.html",
+  "title": "3dsMax VRay Gerçekçi Metal malzeme oluşturma",
+  "excerpt": "Mimari render ve Mimari Görselleştirme konusunda gerçekçi doku oluşturmak çok önemlidir. 3dsMax VRay ile Ultra gerçekçi bir Metal malzeme oluşturma konusunda bu video sizlerin vray içerisinde gerçekçi doku oluşturmanızı sağlayacaktır. 3dsMax VRay Gerçekçi Metal malzeme oluşturma Videosu Bu video içerisinde vray doku oluşturma, kaliteli kaplama ve kaliteli gerçekçi metal malzemenin nasıl oluşturulacağınızı izleyeceksiniz. 3D Mimari …",
+  "contentHtml": "<p><strong>Mimari render</strong> ve <a href=\"https://www.mimari3d.com/\" target=\"_blank\" rel=\"noopener\"><em><strong>Mimari Görselleştirme</strong></em></a> konusunda gerçekçi doku oluşturmak çok önemlidir. 3dsMax VRay ile Ultra gerçekçi bir Metal malzeme oluşturma konusunda bu video sizlerin vray içerisinde gerçekçi doku oluşturmanızı sağlayacaktır.</p>\n<h2>3dsMax VRay Gerçekçi Metal malzeme oluşturma Videosu</h2>\n<p>Bu video içerisinde vray doku oluşturma, kaliteli kaplama ve kaliteli gerçekçi metal malzemenin nasıl oluşturulacağınızı izleyeceksiniz. <strong>3D Mimari</strong> Projeleriniz de gerçekçilik çok önemli bir konudur, gerçekçilik için dokuların etklili bir şekilde işlenmesi gerekmektedir.</p>\n<p>Bu dersimizde sizlere , <a href=\"/sketchup-modeling-3dsmax-corona-render.html\" target=\"_blank\" rel=\"noopener\"><strong>3dsmax vray</strong></a> kullanarak nasıl gerçekçi metal dokusu oluşturulabileceğini gösteriyoruz. Bu tekniği kullanarak bir çok kirli metal vey farklı dokular oluşturulabilir.</p>\n<p>Videoda izleyeceğiniz teknik ile bir çok ahşap ve zemin dokusu için kirli dokular oluşturulabilir.</p>\n<p><iframe loading=\"lazy\" title=\"YouTube video player\" src=\"https://www.youtube.com/embed/F4rSRvTgaTo?si=3uuWQqdAGXHPsoLU\" width=\"560\" height=\"315\" frameborder=\"0\" allowfullscreen=\"allowfullscreen\"></iframe></p>\n",
+  "publishedAt": "2024-11-14T11:45:58",
+  "modifiedAt": "2024-11-14T11:46:57",
+  "status": "publish",
+  "featuredImage": {
+    "legacyId": 6891,
+    "legacyUrl": "https://www.ufuksen.com/wp-content/uploads/2024/11/3dsmax-vray.jpg",
+    "localPath": "/media/2024/11/3dsmax-vray.jpg",
+    "alt": "3dsmax vray",
+    "width": 480,
+    "height": 360,
+    "mimeType": "image/jpeg",
+    "error": null
+  },
+  "inlineMedia": [],
+  "embeds": [
+    {
+      "provider": "youtube",
+      "externalId": "F4rSRvTgaTo",
+      "originalSrc": "https://www.youtube.com/embed/F4rSRvTgaTo?si=3uuWQqdAGXHPsoLU",
+      "title": null
+    }
+  ],
+  "seo": {
+    "title": null,
+    "description": "3dsMax VRay Gerçekçi Metal malzeme oluşturma , mimari render için gerçekçi metal malzeme oluşturun.",
+    "focusKeyword": "3dsMax VRay",
+    "canonicalUrl": null,
+    "ogImage": null
+  },
+  "readingMinutes": 1,
+  "migrationChecksum": "a40f67e4ccadb78b9610478d8255706e2ff9062cbcf5294db4bb6762cb76a260",
+  "author": {
+    "legacyId": 1,
+    "name": "UFUK ŞEN",
+    "slug": "ufuk",
+    "isGuest": false
+  },
+  "categories": [
+    {
+      "legacyId": 1169,
+      "name": "3D Programlar",
+      "slug": "3d-programlar"
+    },
+    {
+      "legacyId": 1170,
+      "name": "3ds Max",
+      "slug": "3ds-max-3d-programlar"
+    }
+  ],
+  "tags": []
+}

@@ -1,0 +1,7 @@
+# STAGING — yalnızca önizleme içindir.
+# Yönlendirme kuralları bilinçli olarak kaldırıldı: üretim kuralları sunucu
+# köküne işaret ettiği için alt klasörde WordPress'e sıçrardı.
+Options -Indexes
+DirectoryIndex index.html
+AddDefaultCharset UTF-8
+ErrorDocument 404 /yeni/404.html

@@ -1,0 +1,66 @@
+{
+  "legacyId": 2570,
+  "slug": "revitten-autocade-dosya-aktarma",
+  "legacyUrl": "/revitten-autocade-dosya-aktarma.html",
+  "url": "/revitten-autocade-dosya-aktarma.html",
+  "title": "Revit’ten Autocad’e dosya aktarma",
+  "excerpt": "Revit’ten Autocad’e dosya aktarma sırasında , Revit programı içerisinde,diğer tüm programlarda olduğu gibi export/import seçeneği mevcuttur. Revitten Autocad’e çizim aktarma en çok ihtiyaç duyulan işlemlerden biridir.Çünkü ülkemizde çıktı copy center,ozalit gibi çıktı merkezlerinde Revit programı bulunan yer neredeyse yoktur. Bu nedenle çizimleri Autocad’e dönüştürmek gerekir.Bu yazımızda basit ve hatasız bir şekilde Revitten Autocad’e dosya aktarımını …",
+  "contentHtml": "<p><a href=\"/revitten-autocade-dosya-aktarma.html\" rel=\"attachment wp-att-2576\"><img loading=\"lazy\" decoding=\"async\" class=\"alignleft size-full wp-image-2576\" src=\"/media/2018/01/revitten-autocade-dosya-aktarma.jpg\" alt=\"revitten-autocade-dosya-aktarma\" width=\"283\" height=\"283\" srcset=\"/media/2018/01/revitten-autocade-dosya-aktarma.jpg 283w, /media/2018/01/revitten-autocade-dosya-aktarma-150x150.jpg 150w\" sizes=\"auto, (max-width: 283px) 100vw, 283px\" /></a>Revit&#8217;ten Autocad&#8217;e dosya aktarma sırasında , Revit programı içerisinde,diğer tüm programlarda olduğu gibi <strong>export/import</strong> seçeneği mevcuttur.</p>\n<p>Revitten Autocad’e çizim aktarma en çok ihtiyaç duyulan işlemlerden biridir.Çünkü ülkemizde çıktı copy center,ozalit gibi çıktı merkezlerinde Revit programı bulunan yer neredeyse yoktur.</p>\n<p>Bu nedenle çizimleri Autocad’e dönüştürmek gerekir.Bu yazımızda basit ve hatasız bir şekilde Revitten Autocad’e dosya aktarımını paylaşacağız.</p>\n<p>Daha ayrıntılı bilgiye ulaşmak isterseniz yararlanılan Revit Architecture 2015 (Gökalp Baykal-Ufuk Aydın)kitabını inceleyeniz.</p>\n<p><span style=\"color: #ff00ff;\"><strong>Çalışmalarınızı Revit&#8217;ten Autocad&#8217;e dosya aktarma için aşağıdaki videoyu izleyiniz;</strong></span></p>\n<p><iframe loading=\"lazy\" title=\"Revit Tutorials Exporting from Revit to Autocad Tutorial 12\" width=\"500\" height=\"281\" src=\"https://www.youtube.com/embed/AvZx6vT0mXs?start=20&#038;feature=oembed\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" referrerpolicy=\"strict-origin-when-cross-origin\" allowfullscreen></iframe></p>\n<p>Revit programında açılmış olan çizim dosyasında</p>\n<ul>\n<li><strong>Application Menü’den &gt;Export&gt;Cad &gt;DWG</strong> seçiniz</li>\n<li>Açılan listede <strong>‘’Current View / Sheet Only’’</strong> seçili ise,bulunduğunuz pafta export edilir.(Paftayı sol önizlemede görebilirsiniz.)</li>\n<li><strong>‘’In session view/Sheet</strong>’’ set seçili ise altta etkinleşen listeden istenen paftalar seçilebileceği gibi tümü de seçilebilir.</li>\n<li>Next dedikten sonra <strong>Export CAD Formats</strong> penceresi açılır buradan dosyayı nereye kaydedeceğinizi seçerek,dosyaya isim verebilirsiniz.</li>\n<li>Eğerki diğer Cad programlarında da açılabilecek bir formata dönüştürmek istiyorsanız <strong>DXF </strong>olarak kaydetmelisiniz.</li>\n</ul>\n<p>2)Export işlemi yukarıdaki gibi basit bir işlemdir ancak çizimin istenen özelliklerde geldiğinden emin olunması için çizimde bazı düzenlemeler yapıp ayarları kaydetmek export işleminde hız kazandıracak ve hatasız aktarım sağlayacaktır.</p>\n<p>DWG Export penceresinde  <strong>…</strong> olan seçeneğe tıklandığında <strong>Modify DWG/DXF Export Setup</strong> seçeneği ekrana gelir.</p>\n<h2><strong><span style=\"color: #0000ff;\">Revit&#8217;ten Autocad&#8217;e dosya aktarma sırasında dikkat edilecek hususlar.<br />\n</span></strong></h2>\n<p><span style=\"color: #993366;\"><strong>REVİT KATMAN AYARLARI:</strong></span></p>\n<p>Revit içerisinde çalışırken görünmeyen ama aslında arka planda mutlaka bulunan katmanlar mevcuttur.Ancak bazen bu katmanları düzenlemek için üstüne tıklamak yeterlidir.</p>\n<p><strong>Layer </strong>ayarları kısmında açılan listede katmanların özellikleri için 3 ayar hazır halde bulunur.</p>\n<p><strong>Export Category properties BYLAYER and overrides BYENTITY</strong> = Nesnelerin katmanları değişmez ama yapılan değişiklikler kalır.</p>\n<p><strong>Export all BYLAYER but do not export overrides</strong> = Değişiklikler göz ardı edilir ve ilgili katmanın özelliklerini baz alır.</p>\n<p><strong>Export all properties BYLAYER and create new layers for overrides</strong> = Değişiklik yapılmış nesneler için yeni katman oluşturur.</p>\n<p>Eğer istenirse <strong>Load layers from standards</strong> listesinden katman standartları değiştirilebilir.</p>\n<p><span style=\"color: #ff00ff;\"><strong>REVİT ÇİZGİ AYARLARI:</strong></span></p>\n<p>Revit&#8217;te çizgi ayarları için aşağıdaki videoyu izleyebilirsiniz;</p>\n<p><iframe loading=\"lazy\" title=\"Setting up Line Weights, Types and Styles in Revit\" width=\"500\" height=\"281\" src=\"https://www.youtube.com/embed/c2M1OmZXc9k?feature=oembed\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" referrerpolicy=\"strict-origin-when-cross-origin\" allowfullscreen></iframe></p>\n<p>Lines sekmesinde yer alan listede çizgi tipleri ve doku gibi özellikler barınır.Eğer ki değiştirmek istenirse yanlarında yer ala <strong>Automatically generate linetype</strong> ile farklı atamalar yapılabilir</p>\n<p><strong>Scaled Linetype Definitions:</strong> Çizgi tiplerinin ölçeklerini özgün hali ile aktarır.</p>\n<p><strong>Modelspace:</strong> Autocadde LTS(ltscale)katsayısındaki özgün hallerinde, PSLTSCALE katsayısını da 0 olarak görmeyi sağlar</p>\n<p><strong>Paperspace : </strong>Autocad’de LTSCALE ve PSLTSCALE ayarlarını seçilen çizim birimine göre ölçeklendirir.</p>\n<p><span style=\"color: #993366;\"><strong>REVİT RENK AYARLARI:</strong></span></p>\n<p>Colors sekmesi ile renkler <strong>255 colors</strong> ve <strong>RGB(True Color)</strong>’a göre ayarlanır.Bu 2 seçenekten birini seçmek mümkündür.</p>\n<p><span style=\"color: #993366;\"><strong> REVİT </strong><strong>METİN AYARLARI:</strong></span></p>\n<p><strong>Text and Fonts</strong> sekmesi ile tüm yazı tiplerini listeden görmek mümkündür.Automatically map font üzerine tıklayıp yazı tiplerini değiştirmek mümkündür.Önemli olan 2 husus vardır.</p>\n<p><strong>Exact(Formatting intelligence will be lost )</strong> : Biçimlendirme yeteneği kaybedilerek aynı şekilde aktarır.</p>\n<p><strong>Approximate :</strong> Biçimlendirme işlemini saklar ve en yakın yazı tipini aktarır.</p>\n<h3><span style=\"color: #0000ff;\"><strong>REVİT GENEL AYARLAR:</strong></span></h3>\n<p><strong>General sekmesi ile;</strong></p>\n<ul>\n<li><strong>Room and area boundaries</strong> bölgesinde <strong>export room and areas as polylines</strong> işaretli ise Revit’in oda ve alan elemanları polyline olarak aktarır.</li>\n<li><strong>Non-plottable layers </strong>ta <strong>Make layers containing the following text non plottable</strong> işaretli ise altında yer alan katmanların çıktıda görünmemesini sağlar.</li>\n</ul>\n<p><strong>Options</strong> ta ise;</p>\n<ul>\n<li><strong>Hide reference planes</strong> : Referans düzlemini</li>\n<li><strong>Hide scope boxes</strong> : Scope box’ı</li>\n<li><strong>Hide unreferenced view tags</strong> : Referans verilmeyen görünüm etiketlerini gizler.</li>\n</ul>\n<p><strong>Default export options</strong> kısmında ise</p>\n<ul>\n<li><strong>Export views on sheets and links as external references</strong> işaretli ise paftalardaki görünüm ve linkler dışarıda referans olarak export edilir.</li>\n<li><strong>Export to file format</strong> ile açılan listede,export edilecek dosyanın hangi cad sürümü olduğunu belirler.</li>\n</ul>\n<p>Revit&#8217;ten export ederken yapacağınız işlemler için aşağıdaki videoyu da inceleyebilirsiniz;</p>\n<p>https://www.youtube.com/watch?v=XDiXyeqW8Kg</p>\n<p>&nbsp;</p>\n<h4><span style=\"color: #0000ff;\">Revit&#8217;ten Autocad&#8217;e dosya aktarma sırasında ayarların kaydedilmesi.<br />\n</span></h4>\n<p><strong>Revit&#8217;te Modify DWG/DXF Export Setup</strong> kutusunu kullanarak,yaptığınız değişimleri kaydederek export edeceğiniz sırada kullanabilirsiniz.</p>\n<p><strong>New Export Setup</strong> işe yeni bir ayar seti oluşur,<strong>Duplicate Export Setup</strong> ile ayarlar kopyalanır ve <strong>Rename Export Setup</strong> seçeneği ile Ayar seti ismi değiştirilebilir.</p>\n",
+  "publishedAt": "2018-01-31T20:31:42",
+  "modifiedAt": "2022-12-20T15:01:08",
+  "status": "publish",
+  "featuredImage": {
+    "legacyId": 2576,
+    "legacyUrl": "https://www.ufuksen.com/wp-content/uploads/2018/01/revitten-autocade-dosya-aktarma.jpg",
+    "localPath": "/media/2018/01/revitten-autocade-dosya-aktarma.jpg",
+    "alt": "Revit'ten Autocad'e dosya aktarma",
+    "width": 283,
+    "height": 283,
+    "mimeType": "image/jpeg",
+    "error": null
+  },
+  "inlineMedia": [
+    {
+      "legacyUrl": "http://www.ufuksen.com/wp-content/uploads/2018/01/revitten-autocade-dosya-aktarma.jpg",
+      "localPath": "/media/2018/01/revitten-autocade-dosya-aktarma.jpg",
+      "error": null
+    }
+  ],
+  "embeds": [
+    {
+      "provider": "youtube",
+      "externalId": "AvZx6vT0mXs",
+      "originalSrc": "https://www.youtube.com/embed/AvZx6vT0mXs?start=20&#038;feature=oembed",
+      "title": null
+    },
+    {
+      "provider": "youtube",
+      "externalId": "c2M1OmZXc9k",
+      "originalSrc": "https://www.youtube.com/embed/c2M1OmZXc9k?feature=oembed",
+      "title": null
+    }
+  ],
+  "seo": {
+    "title": null,
+    "description": "Revit'ten Autocad'e dosya aktarma sırasında Revit ile ilgili bilgilerin verildiği bir makaledir.Revit'ten Autocad'e nasıl dosya aktarılacağı…",
+    "focusKeyword": "Revit'ten Autocad'e dosya aktarma",
+    "canonicalUrl": null,
+    "ogImage": null
+  },
+  "readingMinutes": 3,
+  "migrationChecksum": "96d02a66bd2af0f2dde7bfdba531e9ceac5d5d93ad9b1d6bbbf7701dfb90dc1f",
+  "author": {
+    "legacyId": 2,
+    "name": "Pınar Çakır",
+    "slug": "pcakir",
+    "isGuest": false
+  },
+  "categories": [
+    {
+      "legacyId": 518,
+      "name": "3D Görselleştirme",
+      "slug": "3d-gorsellestirme"
+    }
+  ],
+  "tags": []
+}

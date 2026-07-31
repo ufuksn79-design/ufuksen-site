@@ -1,0 +1,59 @@
+{
+  "legacyId": 4931,
+  "slug": "sketchup-kesit-ve-plan-cikarin",
+  "legacyUrl": "/sketchup-kesit-ve-plan-cikarin.html",
+  "url": "/sketchup-kesit-ve-plan-cikarin.html",
+  "title": "Sketchup Kesit ve Plan Çıkarın",
+  "excerpt": "Sketchup Kesit ve Plan konusunda en randımanlı ve en hızlı programlardan biridir.Hatta Kesit için kullanılan tek program olduğunu Nirvana olduğunu söyleyebiliriz. 😀 Sketchup programında projelerinizi direk olarak 3d olarak çizdiğinizde bu size aslında plan ve kesit görünüşlerinin de otomatik olarak çıkarılacağını gösterir. Sketchup Kesit ve Plan 3D projelerinizi düzenli modelledikten sonra, çok hızlı bir şekilde …",
+  "contentHtml": "<p><strong>Sketchup Kesit ve Plan</strong> konusunda en randımanlı ve en hızlı programlardan biridir.Hatta Kesit için kullanılan tek program olduğunu Nirvana olduğunu söyleyebiliriz. 😀</p>\n<p><span class=\"style-scope yt-formatted-string\" dir=\"auto\">Sketchup programında projelerinizi direk olarak 3d olarak çizdiğinizde bu size aslında plan ve kesit görünüşlerinin de otomatik olarak çıkarılacağını gösterir.</span></p>\n<h2>Sketchup Kesit ve Plan</h2>\n<p>3D projelerinizi düzenli modelledikten sonra, çok hızlı bir şekilde videoda göstermiş olduğumuz eklenti sayesinde hızlı bir şekilde Kesitlerinizi ve Planlarınızı kolaylıkla çıkarabilirsiniz.</p>\n<p>Bu sayede zamandan kazanarak işlerinizi daha hızlı bir şekilde yapabilirsiniz.</p>\n<p>Video içerisinde kullanılan <strong>Sketchup Kesit</strong> eklentisini <strong><a href=\"https://bit.ly/3xTdi70\" target=\"_blank\" rel=\"noopener\">buraya</a></strong> tıklayarak indiriniz.</p>\n<p><iframe loading=\"lazy\" title=\"YouTube video player\" src=\"https://www.youtube.com/embed/Etwzz49Nym0\" width=\"560\" height=\"315\" frameborder=\"0\" allowfullscreen=\"allowfullscreen\"></iframe></p>\n",
+  "publishedAt": "2021-12-05T10:57:09",
+  "modifiedAt": "2023-07-04T06:52:38",
+  "status": "publish",
+  "featuredImage": {
+    "legacyId": 4934,
+    "legacyUrl": "https://www.ufuksen.com/wp-content/uploads/2021/12/sketchup-kesit.jpg",
+    "localPath": "/media/2021/12/sketchup-kesit.jpg",
+    "alt": "Sketchup Kesit ve Plan",
+    "width": 1200,
+    "height": 675,
+    "mimeType": "image/jpeg",
+    "error": null
+  },
+  "inlineMedia": [],
+  "embeds": [
+    {
+      "provider": "youtube",
+      "externalId": "Etwzz49Nym0",
+      "originalSrc": "https://www.youtube.com/embed/Etwzz49Nym0",
+      "title": null
+    }
+  ],
+  "seo": {
+    "title": null,
+    "description": "Sketchup Kesit ve Plan konusunda en randımanlı ve en hızlı programlardan biridir.Hatta Kesit için kullanılan tek program olduğunu Nirvana olduğunu…",
+    "focusKeyword": "Sketchup Kesit ve Plan",
+    "canonicalUrl": null,
+    "ogImage": null
+  },
+  "readingMinutes": 1,
+  "migrationChecksum": "aae28ca92955c79c3c538fec36f24b0761c44642f0c02baa59b2d4a151ac7041",
+  "author": {
+    "legacyId": 1,
+    "name": "UFUK ŞEN",
+    "slug": "ufuk",
+    "isGuest": false
+  },
+  "categories": [
+    {
+      "legacyId": 1169,
+      "name": "3D Programlar",
+      "slug": "3d-programlar"
+    },
+    {
+      "legacyId": 1172,
+      "name": "Sketchup",
+      "slug": "sketchup"
+    }
+  ],
+  "tags": []
+}

@@ -1,0 +1,58 @@
+{
+  "legacyId": 2551,
+  "slug": "corona-render-motoru-teknik-ozellikleri",
+  "legacyUrl": "/corona-render-motoru-teknik-ozellikleri.html",
+  "url": "/corona-render-motoru-teknik-ozellikleri.html",
+  "title": "Corona Render Motoru Teknik Özellikleri",
+  "excerpt": "Bu konu içerisinde sizlere Corona Render Teknik Özellikleri hakkında bilgiler vereceğiz. Sitemizi sürekli takip eden arkadaşlarımızı 2016 yılından sonra popüler olmaya başlayan corona render motoru için bilgiler verdiğimizi okumuşlardır. Corona Render motoru , Chaos grup (vray render motorunun sahibi) tarafından satın alındıktan sonra da hızla gelişmesini sürdüren bir render motorudur. Aşağıda bu render motorunun ana …",
+  "contentHtml": "<p><a href=\"/corona-render-motoru-teknik-ozellikleri.html\" rel=\"attachment wp-att-2555\"><img loading=\"lazy\" decoding=\"async\" class=\"alignleft wp-image-2555\" src=\"/media/2018/01/corona-render-motoru.jpg\" alt=\"corona render motoru\" width=\"227\" height=\"227\" srcset=\"/media/2018/01/corona-render-motoru.jpg 400w, /media/2018/01/corona-render-motoru-300x300.jpg 300w, /media/2018/01/corona-render-motoru-150x150.jpg 150w\" sizes=\"auto, (max-width: 227px) 100vw, 227px\" /></a>Bu konu içerisinde sizlere <strong>Corona Render Teknik Özellikleri</strong> hakkında bilgiler vereceğiz. Sitemizi sürekli takip eden arkadaşlarımızı 2016 yılından sonra popüler olmaya başlayan <strong>corona render motoru</strong> için bilgiler verdiğimizi okumuşlardır.</p>\n<p><span style=\"color: #000080;\"><strong><a href=\"/corona-render-nedir.html\" target=\"_blank\" rel=\"noopener noreferrer\">Corona Render</a> motoru</strong></span> , Chaos grup (vray render motorunun sahibi) tarafından satın alındıktan sonra da hızla gelişmesini sürdüren bir render motorudur.</p>\n<p>Aşağıda bu render motorunun ana özelliklerini bulacaksınız.</p>\n<h2><span style=\"color: #0000ff;\"><strong>Corona Render Motoru Özellikleri</strong></span></h2>\n<p><span style=\"color: #0000ff;\"><strong>RENDER ENGINE (Render motoru) :</strong></span></p>\n<p><strong>UHD Cache:</strong> İç mekanlarda daha hızlı önbellek çözümü<br />\n<strong>Denoising :</strong>Noktalanması az bir görüntü elde etmek için geçiş sayısını azaltır ve işleme süresinde de %50 ve %70 bir azalma sağlanır.Bu seçenek istenen ölçü de ayarlanabilir.</p>\n<p><strong>Adaptive Image Sampling:</strong> Uyarlamalı görüntü örnekleme ;<br />\n• Zor alanlarda kullanılacak işlem gücü için görüntü üzerindeki hesaplamaları dengeler.<br />\n• Aşamalı görüntü oluşturur.</p>\n<p>MSI seçeneği ile otomatik olarak görüntülerde doğruluk ve oluşturma hızı sağlanır.<br />\nVCM ile hızlı ve hassas deneysel motor sağlanır.<br />\nCPU tabanlıdır.</p>\n<p><span style=\"color: #0000ff;\"><strong>İNTERAKTİF RENDER:</strong></span></p>\n<p><strong>Interaktif Lightmix</strong> ile çiçeklenme ve parlama ve üretim sonrası tüm efektler dahil olmak üzere son çerçeve oluşturma özelliği<br />\nIR’de yakınlaştırma yaparken yalnızca görüntüde görünür alana odaklanma<br />\nÖrnekleme içi başlangıçta çözünürlüğü düşürür.<br />\nSonuçlar 3dsmax ve <strong>Corona VFB</strong> de gösterilir.</p>\n<p><span style=\"color: #0000ff;\"><strong>İNTERAKTİF LIGHTMIX:</strong></span></p>\n<p>İşlem süresince ve sonrasında ışıklardaki renkleri ve yoğunlukları ayarlama<br />\nTek tıklama ile kurulum ve istenirse manuel kurulum<br />\nVFB’den kontrol edilebilir.Sonuçlar sahneye eklenebilir</p>\n<p>İnce ayarlar ve gece gündüz çevirmeleri, yeniden render almadan kullanılabilir.<br />\nHer ışık geçişlerde bağımsız olarak ekinleştirme yapılır.</p>\n<p><strong>Lightmix</strong> sonucu <strong>CXR dosyası</strong> olarak kaydedilip, <strong>Corona Image Editor</strong>’de ayarlanılıp diğer kompozisyonlar için kullanılabilir.</p>\n<h3><span style=\"color: #0000ff;\"><strong>CORONA RENDER MOTORU İŞLEM SONRASI EFEKTLER:</strong></span></h3>\n<p>Ayarlar Corona kameradan ve VFB’den kontrol edilebilir.<br />\nİşlemler süreç boyunca yapılabileceği gibi sonrasında da ayarlanabilir.<br />\nGörüntü gerçek zamanlı güncel olarak görüntülenir.</p>\n<p><strong>Bloom ve Glare ;</strong><br />\n• İkisi de bağımsız olarak kontrol edilebilir.<br />\n• Parlama ışın sayısı,dönüşler ve bulanıklık<br />\n• Renk yoğunluğu ve renk ayarları</p>\n<p><span style=\"color: #0000ff;\"><strong>POZLAMA VE RENK HARİTALAMA:</strong></span></p>\n<p>İki poz kontrol modu sunar.<br />\nFotoğraf: Obtüratör hızı+ISO+F-stop<br />\nBasit pozlama için EV değeri</p>\n<p><strong>Ek ayarlar:</strong></p>\n<p>• Kontrast<br />\n• Sıkıştırma<br />\n• Gölgeler<br />\n• Renk tonu<br />\n• Beyaz dengesi<br />\n• Doyma<br />\n• Opaklık ve LUT<br />\n• Parlaklık ve kişisel RGB eğrileri<br />\n• Netleştirme ve Bulanıklaştırma</p>\n<p><span style=\"color: #0000ff;\"><strong>CORONA RENDER IŞIKLAR:</strong></span></p>\n<p><strong>CoronaSun:</strong></p>\n<p>• Bağımsız veya 3dsmax gün ışığının bir parçası<br />\n• En son teknoloji olan Hošek &amp; Wilkie emisyon modeli<br />\n• Fiziksel olmayan özellikler (boyut,renk değişimi,yansıma ayarlar vb.)</p>\n<p><strong>CoronaLight:</strong></p>\n<p>• Küre,dikdörtgen,silindir vb şekiller<br />\n• IES profilleri<br />\n• Dokulu yayıcılar<br />\n• Fiziksel birimler<br />\n• Renkli seçenekler(RGB,Kelvin sıcaklığı,Texmap)<br />\n• Fiziksel olmayan özellikler (boyut,renk değişimi,yansıma ayarlar vb.)</p>\n<p><strong>Corona Hafif Malzemeler</strong></p>\n<p>• Işık altında nesneyi görüntüleme<br />\n• CoronaLight ile karşılaştırıldığında işlem zaman farkları yoktur.<br />\nCorona render motorun da 3dsmax doğal ışıkları kullanılabilir.</p>\n<h4><span style=\"color: #0000ff;\"><strong>CORONA RENDER MALZEMELER:</strong></span></h4>\n<p><strong>CoronaMtl</strong><br />\n• Corona render motoru Yarı saydam, yansıma, kırılma, parlaklık, opaklık malzeme oluşturma gibi seçenekler sunar.<br />\n• Tam parlaklık aralığına sahip <strong>GGX</strong> <strong>BRDF</strong><br />\n• <strong>Corona render motoru</strong>, Allegorithmic&#8217;in Substance Painter ve Quixel&#8217;s Megascans gibi üçüncü parti araçlar ile uyumlu çalışır.<br />\n• Cam, değerli taşlar, vs. için dispersiyon</p>\n<p>• <strong>Bump eşlemesi</strong><br />\n• Refleks veya Şeffaflık kullanmayan mum, mermer ve diğer malzemeler için SSS modu<br />\n• Sis, sis ve renkli cam vb nesneler için hacimsel saçılma ve emme modu<br />\n• Kendinden aydınlatma<br />\n• Fresnel yansımalar, anizotropik yansımalar</p>\n<p><strong>CoronaSkinMtl</strong><br />\n• Cilt için özel malzeme<br />\n• Üç bağımsız Alt Yüzey Saçılma tabakası<br />\n• İki bağımsız Yansıma katmanı</p>\n<p><strong>CoronaHairMtl</strong><br />\n• Saç ve kürk için özel malzemeler<br />\n• Renkli ve Renksiz yansımalar<br />\n• Melanin miktarları üzerinden renk ayarları<br />\n• Ayarlanabilir parlaklıklar</p>\n<p><strong>CoronaPortalMtl</strong><br />\n• İsteğe bağlıdır.<br />\n• İç mekanlardaki aydınlatmayı küçük pencerelerde hızlandırır</p>\n<p><strong>CoronaLightMtl</strong><br />\n• CoronaLight ile aynı performansı gösterir.<br />\n• Fiziksel özellikleri ayarlayabilme<br />\n• Dokulu emisyonlar</p>\n<p><strong>CoronaShadowCatcherMtl</strong><br />\n• Özel arka dokular<br />\n• Parlak yüzeylere destek verir<br />\n• Bump Kullanımı<br />\n• Işıklar eklenebilir yada çıkarılabilir.<br />\n• 3ds Max malzemeleri<br />\n• Standart<br />\n• Harman (iç içe harmanlanmış malzemeler)<br />\n• Çoklu / Alt-Nesne<br />\n• XRef<br />\n• Kabuk<br />\n• Çift taraflı malzeme<br />\n• Üst / Alt<br />\n• DirectX Shader<br />\n• 3ds Max fiziksel materyali için destek</p>\n",
+  "publishedAt": "2018-01-26T08:55:32",
+  "modifiedAt": "2022-12-20T15:01:22",
+  "status": "publish",
+  "featuredImage": {
+    "legacyId": 2555,
+    "legacyUrl": "https://www.ufuksen.com/wp-content/uploads/2018/01/corona-render-motoru.jpg",
+    "localPath": "/media/2018/01/corona-render-motoru.jpg",
+    "alt": "corona render motoru",
+    "width": 400,
+    "height": 400,
+    "mimeType": "image/jpeg",
+    "error": null
+  },
+  "inlineMedia": [
+    {
+      "legacyUrl": "http://www.ufuksen.com/wp-content/uploads/2018/01/corona-render-motoru.jpg",
+      "localPath": "/media/2018/01/corona-render-motoru.jpg",
+      "error": null
+    }
+  ],
+  "embeds": [],
+  "seo": {
+    "title": null,
+    "description": "Bu konu içerisinde sizlere Corona Render motoru Teknik Özellikleri hakkında bilgiler vereceğiz. Sitemizi sürekli takip eden arkadaşlarımızı 2016 yılından…",
+    "focusKeyword": "corona render motoru",
+    "canonicalUrl": null,
+    "ogImage": null
+  },
+  "readingMinutes": 3,
+  "migrationChecksum": "b466e3262a9996fca8cc74f37cff9dd0a953c0eae8484ffd54c0ed1d06d1d992",
+  "author": {
+    "legacyId": 2,
+    "name": "Pınar Çakır",
+    "slug": "pcakir",
+    "isGuest": false
+  },
+  "categories": [
+    {
+      "legacyId": 542,
+      "name": "Corona Render",
+      "slug": "corona"
+    },
+    {
+      "legacyId": 538,
+      "name": "Render Motorları",
+      "slug": "render-motorlari"
+    }
+  ],
+  "tags": []
+}

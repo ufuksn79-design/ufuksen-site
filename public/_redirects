@@ -1,0 +1,100 @@
+# ÜRETİLMİŞ DOSYA — elle düzenlemeyin.
+# Kaynak: scripts/build/generate-redirects.mjs
+#
+# ADR-004: her eski URL ya birebir korunur ya da 301 alır.
+
+# --- Kaynak WordPress'te tanımlı yönlendirmeler --------------------------
+# Bunlar kaynak sistemde 301 ile çalışıyordu ve SEO değeri taşıyor.
+# Taşınmazlarsa şu anda çalışan URL'ler yeni sitede 404 olurdu.
+/3-boyutcu-olmak-veya-olmamak.html  /uc-boyutcu-olmak-veya-olmamak.html  301
+/3-boyutlu-yazicilarda-cikti-almak-icin-yapilmasi-gereken-10-adim.html  /3-boyutlu-yazicilarda-cikti-almak.html  301
+/3d-egitim-3ncu-boyuttan-para-kazanmak.html  /uc-boyutlu-programlardan-para-kazanmak.html  301
+/3d-egitim-sketchup-model-3dmax-render-egitimi.html  /sketchup-model-3dmax-render-egitimi.html  301
+/3d-egitim.html  /sketchup-model-3dmax-render-egitimi.html  301
+/3d-gorsellestirme/3d-gorsellestirme-4  /3d-gorsellestirme  301
+/3d-modelleme-de-kariyer-nasil-olmali-nelere-dikkat-edilmeli.html  /3d-modelleme-de-kariyer-nasil-olmali.html  301
+/3d-render-gorsellestirme/3d-render  /3d-render-gorsellestirme  301
+/3d-warehouse-dan-dosya-indirme.html  /3d-warehouse-dan-dosya-indirme-linkleri-ve-dikkat-edilecekler.html  301
+/3d-yazicilarin-mimaride-kullanim.html  /3d-yazicilarin-mimaride-kullanimi.html  301
+/basarili-insanlarin-gunluk-aliskanliklari-brian-tracy-turkce.html  /brian-tracy-basarili-insanlarin-gunluk-aliskanliklari.html  301
+/en-kolay-modelleme-icinen-iyi-ucretsiz-5-sketchup-plugini.html  /en-iyi-ucretsiz-5-sketchup-plugini-modellemeni-basitlestir.html  301
+/enscape-render-dis-mekan-gorsellestirme-egitimi.html  /enscape-render-dis-mekan-egitimi.html  301
+/gercek-zamanli-render-motorlarinin-gorsellestirmeye-ve-tasarima-etkileri.html  /gercek-zamanli-render-motorlari.html  301
+/gercekci-ic-mekan-gorseli-olusturmak.html  /ic-mekan-gercekci-render-gorseli-olusturmak.html  301
+/gercekci-render-almak.html  /gercekci-render-nasil-alinir.html  301
+/gercekci-render-ic-mekan-gorseli-olusturmak.html  /ic-mekan-gercekci-render-gorseli-olusturmak.html  301
+/gorsellestirmede-basarili-olmak-icin-neler-yapilmasi-gereklidir.html  /gorsellestirmede-basarili-olmak-icin-bunlari-yapmalisiniz.html  301
+/guzel-bir-hikaye.html  /sketchup-turkiye-nasil-kuruldu.html  301
+/hizlica-render-sonrasi-photoshop-duzenlemeleri.html  /render-sonrasi-photoshop.html  301
+/ilk-adim-gran-fondo-samsun-2024-kisa-parkur.html  /ilk-adim-gran-fondo-samsun-2024.html  301
+/insaport-ile-yaptigimiz-roportaj.html  /insaport-ile-yaptigimiz-3d-roportaj.html  301
+/kaliteli-gorsel-asamalari-icin-onemli-tuyolar.html  /uc-boyutlu-programlar-icin-onemli-tuyolar.html  301
+/kaliteli-kaplama-sitesi-sharetextures.html  /kaliteli-kaplama-sitesi-texturefun-com.html  301
+/kaplama  /  301
+/karagol.html  /karagol-jeositi.html  301
+/lumion-egitim-seti-bedava-17-07-2022-son.html  /lumion-egitim-seti-bedava.html  301
+/mesleki-basari-antrenmani.html  /mesleki-basari.html  301
+/mimari-gorsellestirme-nasil-yapilir-detayli-makale-01.html  /mimari-gorsellestirme.html  301
+/mimari-gorsellestirme-ve-3-boyutlu-dunya.html  /uc-boyutlu-mimari-gorsellestirme.html  301
+/mimari-gorsellestirmede-portfoy-neden-onemlidir.html  /mimari-gorsellestirme-portfoy-yapmanin-onemi.html  301
+/mimari-modelleme/mimari-modelleme-2  /mimari-modelleme  301
+/render-bilgisayari-2022-intel-islemcili-render-canavari.html  /render-bilgisayari-2022.html  301
+/render-hatalari.html  /3d-render-hatalari.html  301
+/render-motorlarinda-isiklarin-secimi-ve-kullanimi-hakkinda-bilgiler.html  /render-motorlarinda-isiklarin-secimi.html  301
+/render-motorunda-isiklar.html  /render-motorlarinda-isiklarin-secimi.html  301
+/render-pc-tavsiyeleri-2018.html  /render-pc-tavsiyeleri.html  301
+/rendering-ne-demek-render-almak-nasil-olur.html  /rendering-ne-demek.html  301
+/sikca-sorulan-sorular/3d-sikca-sorulan-sorular  /sikca-sorulan-sorular  301
+/sketchup-2017-pluginleri.html  /sketchup-pluginleri-2.html  301
+/sketchup-2018.html  /sketchup-2018-yenilikler-ve-gelismeler.html  301
+/sketchup-cati-yapimi-cati-modelleme.html  /sketchup-cati-plugini.html  301
+/sketchup-dosyasinda-verimli-calismak.html  /sketchup-dosya-verimliligi.html  301
+/sketchup-hizlandirma-sketchup-icerisinde-cok-hizli-calisin.html  /sketchup-icerisinde-cok-hizli-calisma.html  301
+/sketchup-ogrenci-surumu-ucretsiz-sketchup-kullanimi.html  /sketchup-ogrenci-surumu.html  301
+/sketchup-ozel-ders/0001_1_a-split-screen-composition-of-a-rough-ar_5jm0j7b7tjcvgbceutak-g_dtj9cl82rvixproh9fcy_g_cover  /sketchup-ozel-ders  301
+/sketchup-ozel-ders/0002_1_a-side-by-side-visualization-of-a-luxuri_bnfhtajrrhk6asqpcrfuga_lf1wjylgqhwnyk8_u7wz2a_cover  /sketchup-ozel-ders  301
+/sketchup-ozel-ders/0002_2_a-side-by-side-visualization-on-the-left_n7s3y0cxsmkr8s2wpevw2w_lf1wjylgqhwnyk8_u7wz2a  /sketchup-ozel-ders  301
+/sketchup-ozel-ders/0003_3_a-dual-image-comparison-of-a-hand-drawn-_vzh5elwesqcp9f4ibi-g1w_s4s_p-x8t82pu0mv5hdasw  /sketchup-ozel-ders  301
+/sketchup-plugin-ihtiyaclari-ve-nasil-belirlenir.html  /sketchup-plugin-ihtiyaclari.html  301
+/sketchup-vray-3-4-dvd-si-cikti.html  /sketchup-vray-3-4-egitim-seti.html  301
+/sketchup-vray-3-4-egitim-setini-alanlarin-yorumlari.html  /sketchup-vray-3-4-2.html  301
+/sketchup-vray-ic-mekan-egitim-02.html  /sketchup-vray-ic-mekan-egitim.html  301
+/sketchup-vray-ic-mekan-egitim-seti-02.html  /sketchup-vray-ic-mekan-egitim.html  301
+/twinmotion-ogrenci-surumu-sikca-sorulan-sorular-serisi.html  /twinmotion-ogrenci-surumu.html  301
+/unreal-engine-eğitim-seti.html  /unreal-engine-egitim.html  301
+/vray-ve-lumion.html  /hangi-render-motoru.html  301
+/youtubeda-buyumenin-ve-kazanmanin-sirlari.html  /youtube-icerik-ureterek-para-kazanmak.html  301
+/youtubedan-para-kazanma-sartlari-2025-guncel-rehber.html  /youtube-para-kazanma-sartlari2025.html  301
+
+# --- AMP varyantları -----------------------------------------------------
+# /{slug}.html?amp=1 : statik hosting query'yi yok sayar, kanonik sayfayı
+#                      zaten sunar; kural gerekmez.
+# /{slug}.html/amp   : joker kuralla kanonik sayfaya 301.
+/*/amp     /:splat  301
+/*/amp/    /:splat  301
+
+# --- WordPress ek-dosya (attachment) sayfaları ---------------------------
+# Kaynak sistem de bunları üst içeriğe 301'liyor.
+/*.html/*  /:splat.html  301
+
+# --- Eski site içi arama -------------------------------------------------
+/?s=:term  /arama?q=:term  301
+
+# --- Kaynakta da 404 dönen adresler --------------------------------------
+# Yönlendirme hedefi yok; 404 sayfası doğru davranıştır. Kayıt amaçlı:
+#   /3d-mimari-3d-gorsellestirme-3d-egitim/tblet
+#   /ben-kimim/ufuk-sen-3
+#   /kategori/3d
+#   /kategori/3d-egitim
+#   /kategori/3d-egitim-setleri
+#   /kategori/3d-egitim/3ds-max
+#   /kategori/3d-egitim/sketchup-egitim
+#   /kategori/3d-egitim/sketchup-vray
+#   /kategori/3d-haberler/3d-yazilimlar
+#   /kategori/3d/3d-mimari
+#   /kategori/3d/3d-proje
+#   /kategori/3d/3d-tasarim
+#   /kategori/kaliteli-gorsel
+#   /kategori/pc-tavsiyeleri/render-pc-tavsiyeleri
+#   /kategori/sketchup-dvd
+#   /nasil-gidilecegini-bilmiyorsan-neyle-gittiginin-bir-onemi-yoktur.html

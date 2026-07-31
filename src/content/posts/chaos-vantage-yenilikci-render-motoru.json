@@ -1,0 +1,64 @@
+{
+  "legacyId": 4693,
+  "slug": "chaos-vantage-yenilikci-render-motoru",
+  "legacyUrl": "/chaos-vantage-yenilikci-render-motoru.html",
+  "url": "/chaos-vantage-yenilikci-render-motoru.html",
+  "title": "Chaos Vantage : Yenilikçi Render Motoru",
+  "excerpt": "1 haziran 2021 itibarile ile Chaos firması Chaos Vantage render motorunu tanıttı. Tamamiyle gpu (ekran kartı) üzerinden çalışan bu render motoru hızlı olması ve kullanım kolaylığı bakımından D5 Render ve enscape render gibi render motorlarına benzemektedir. ; Aşağıdaki chaos videosu ile 3d yazılımın detaylarını görebiliyoruz. Chaos Vantage ile Mimari Görselleştirme Kolaylaşıyor mu ? Aslına bakarsanız …",
+  "contentHtml": "<p>1 haziran 2021 itibarile ile Chaos firması <strong>Chaos Vantage</strong> render motorunu tanıttı.<br />\nTamamiyle gpu (ekran kartı) üzerinden çalışan bu <a title=\"Render Motoru\" href=\"/render-nedir-nasil-alinir.html\" target=\"_blank\" rel=\"noopener\"><strong>render motoru</strong></a> hızlı olması ve kullanım kolaylığı bakımından <strong>D5 Render</strong> ve <strong>enscape render</strong> gibi render motorlarına benzemektedir. ;</p>\n<p>Aşağıdaki chaos videosu ile 3d yazılımın detaylarını görebiliyoruz.<br />\n<iframe loading=\"lazy\" title=\"YouTube video player\" src=\"https://www.youtube.com/embed/w9rOpZKCbVw\" width=\"560\" height=\"315\" frameborder=\"0\" allowfullscreen=\"allowfullscreen\"></iframe></p>\n<h2><strong>Chaos Vantage ile Mimari Görselleştirme Kolaylaşıyor mu ?</strong></h2>\n<p>Aslına bakarsanız kolaylaşmıyor, teknoloji hızlı bir şekilde gelişirken aslında program çeşitliliğinin artması öğrenme çeşitliliğini de beraberinde getirmektedir.<a title=\"Mimari Görselleştirme\" href=\"https://mimari3d.com/\" target=\"_blank\" rel=\"noopener\"><strong>Mimari görselleştirme</strong></a> her projeye bağlı değişkenler gösterdiği için, hangi render motorunu hangi projede kullanacağınızı bilmeniz gerekiyor.</p>\n<p>Bu konuyla alakalı <a href=\"/ihtiyaca-yonelik-render-motoru-secimi.html\" rel=\"bookmark\">İhtiyaca Yönelik Render Motoru Seçimi</a> konumuzu okumalısınız.</p>\n<h3><strong>Chaos Vantage Nasıl Çalışıyor ?</strong></h3>\n<p><strong>Vantage vrscene</strong> dosyaları üzerinden çalışıyor hem <a href=\"/\"><strong>sketchup vray</strong></a> hemde <strong>3ds max vray</strong> içerisinden sahnelerinizi vrscene olarak dışarı export etmeniz ve yazılım içerisinden açmanız yeterlidir.<br />\nBundan sonra yapacağınız her iş <strong>Chaos Vantage</strong> içerisinden gerçekleşmektedir. Işık eklemek kaplama ayarları , sahnenin bakışı ve render çıktısı alma gibi tüm ayarları vantage içerisinden yapıyorsunuz.</p>\n",
+  "publishedAt": "2021-06-01T23:32:33",
+  "modifiedAt": "2023-07-04T07:22:27",
+  "status": "publish",
+  "featuredImage": {
+    "legacyId": 4696,
+    "legacyUrl": "https://www.ufuksen.com/wp-content/uploads/2021/06/ChaosVantage.jpg",
+    "localPath": "/media/2021/06/ChaosVantage.jpg",
+    "alt": "Chaos Vantage",
+    "width": 1280,
+    "height": 720,
+    "mimeType": "image/jpeg",
+    "error": null
+  },
+  "inlineMedia": [],
+  "embeds": [
+    {
+      "provider": "youtube",
+      "externalId": "w9rOpZKCbVw",
+      "originalSrc": "https://www.youtube.com/embed/w9rOpZKCbVw",
+      "title": null
+    }
+  ],
+  "seo": {
+    "title": null,
+    "description": "1 haziran 2021 itibarile ile Chaos firması Chaos Vantage render motorunu tanıttı. Tamamiyle gpu (ekran kartı) üzerinden çalışan bu render motoru hızlı olması…",
+    "focusKeyword": "Chaos Vantage",
+    "canonicalUrl": null,
+    "ogImage": null
+  },
+  "readingMinutes": 1,
+  "migrationChecksum": "a8f0a571676bd2d9ba9d2116517bf71dcef009c57ec448c66557e2937001d41a",
+  "author": {
+    "legacyId": 1,
+    "name": "UFUK ŞEN",
+    "slug": "ufuk",
+    "isGuest": false
+  },
+  "categories": [
+    {
+      "legacyId": 1,
+      "name": "Genel",
+      "slug": "genel"
+    },
+    {
+      "legacyId": 538,
+      "name": "Render Motorları",
+      "slug": "render-motorlari"
+    },
+    {
+      "legacyId": 541,
+      "name": "Vray Render",
+      "slug": "vray"
+    }
+  ],
+  "tags": []
+}

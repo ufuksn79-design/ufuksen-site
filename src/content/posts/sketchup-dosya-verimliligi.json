@@ -1,0 +1,58 @@
+{
+  "legacyId": 1526,
+  "slug": "sketchup-dosya-verimliligi",
+  "legacyUrl": "/sketchup-dosya-verimliligi.html",
+  "url": "/sketchup-dosya-verimliligi.html",
+  "title": "Sketchup Dosyasında Verimli Çalışmak için Yapılması gerekenler",
+  "excerpt": "Sketchup Dosya Verimliliği bu program içerisinde dikkat etmemiz gereken konuların başında gelmektedir. Her program da olduğu gibi Sketchup Programınında kendine has bazı özellikleri dosya verimliliğini etkilemektedir. Peki Sketchup Dosya Verimliliği ne demek ? Dosyanız içerisinde bazı şartları düzenli olarak alışkanlık haline getirmeniz, hem revizyonlarda hem render esnasında hemde dosyanızı farklı yerlere göndermek istediğinizde çok randımanlı …",
+  "contentHtml": "<p style=\"text-align: justify;\"><a href=\"/sketchup-dosya-verimliligi.html\" rel=\"attachment wp-att-1528\"><img loading=\"lazy\" decoding=\"async\" class=\"alignleft wp-image-1528\" src=\"/media/2017/11/Sketchup-1024x683.jpg\" alt=\"Sketchup\" width=\"300\" height=\"200\" srcset=\"/media/2017/11/Sketchup-1024x683.jpg 1024w, /media/2017/11/Sketchup-300x200.jpg 300w, /media/2017/11/Sketchup-768x512.jpg 768w, /media/2017/11/Sketchup-1536x1024.jpg 1536w, /media/2017/11/Sketchup-2048x1366.jpg 2048w, /media/2017/11/Sketchup-696x464.jpg 696w, /media/2017/11/Sketchup-1068x712.jpg 1068w, /media/2017/11/Sketchup-630x420.jpg 630w\" sizes=\"auto, (max-width: 300px) 100vw, 300px\" /></a><strong>Sketchup Dosya Verimliliği</strong> bu program içerisinde dikkat etmemiz gereken konuların başında gelmektedir. Her program da olduğu gibi <a href=\"http://www.sketchupturkiye.com/\" target=\"_blank\" rel=\"noopener\"><span style=\"color: #0000ff;\"><em><strong><span style=\"text-decoration: underline;\">Sketchup</span></strong></em></span></a> Programınında kendine has bazı özellikleri dosya verimliliğini etkilemektedir.</p>\n<p>Peki <strong>Sketchup Dosya Verimliliği</strong> ne demek ? Dosyanız içerisinde bazı şartları düzenli olarak alışkanlık haline getirmeniz, hem revizyonlarda hem render esnasında hemde dosyanızı farklı yerlere göndermek istediğinizde çok randımanlı bir şekilde çalışmanıza olanak tanır.</p>\n<p>Bu çalışma şekli alışkanlığı sizin daha esnek ve verimli çalışmanıza sebep olur.Özellikle yüksek poligon sorunu olan Sketchup programı için, düzenli ve verimli şekilde çalışmak çok önemli bir konu haline gelmektedir.</p>\n<p>Aşağıda vereceğim maddeler aslında çok zor değil, sadece alışkanlık haline getirmeniz daha başarılı olmanıza sebep olacaktır.</p>\n<p>Ayrıca dosyalarınızı taşıma ve kopyalama sırasında kaplamaları bulma konusunda sıkıntı yaşamamanız anlamına gelmektedir.</p>\n<h2 style=\"text-align: justify;\"><strong><span style=\"color: #0000ff;\">Sketchup Dosya Verimliliği ile bir proje düzeni sağlamak</span></strong></h2>\n<p style=\"text-align: justify;\"><strong>1)</strong> Sketchup Dosya isimlerinde Türkçe karakter kullanmam. Bunun amacı farklı programlara gönderme yaptığımda sırf bu sebep yüzünden takılmak istemem, birde bazen bu Türkçe karakterler sketchup dosyasında da sıkıntı çıkarabiliyor.</p>\n<p>Bu yüzden dosya isimlerinde Türkçe karakter kullanmamaya özen gösterin.Özellikle unreal engine veya farklı render motorları bu Türkçe karakter konusunda çok hassaslar.</p>\n<p style=\"text-align: justify;\"><strong>2)</strong> Bir klasör açarım , klasör ismim örnek olarak &#8221; ilk calismam&#8221; olsun, bu klasör içine çalışacağım hdri dosyasından , kaplamalara ve modele <span class=\"text_exposed_show\">kadar burda tutarım, çalışmayı başka yere göndereceğim zaman sorun olmaz, ve dosyalar hızlı okunduğu için renderı hızlı alır.</span></p>\n<p>Özellikle SSD disk  üzerinde çalışırım, çalışma bitene kadar devam ederim.Çalışma bittiğinde ise komple klasörü Arşive yani farklı bir HDD ye taşırım.<br />\n(Aynı zamanda tarih bilgisi girmeniz ticari çalışmalar bakımından faydalı olacaktır)</p>\n<div class=\"text_exposed_show\">\n<p style=\"text-align: justify;\"><strong>3)</strong> Bazı modeller hazır modeller sıkıntı çıkarabilir,özellikle çok yüksek poligonlu modellerden kaçınmak gerekiyor.</p>\n<p>Bir koltuk modeli için 100 mb Sketchup sahnesinde çok fazla yer kaplamasına neden olur.Bu yüzden bu tür modelleri farklı modeller ile değiştiririm, bulamazsam modelleyerek benzetmeye çalışırım.</p>\n<p>Ne kadar çok modelleme yaparsanız çalışmanızda ki poligon sayısı az olacaktır.Buda renderı daha kısa sürece almanıza olanak tanır.</p>\n<p><strong>Çünkü bu şekilde dosya boyutu düşeceği için daha randımanlı Render alacaksınız.</strong></p>\n<h3 style=\"text-align: justify;\"><strong>Sketehcup Render Düzeni ve Sketchup Dosya Verimliliği<br />\n</strong></h3>\n<p><strong>4</strong>) Bir model de eğer tüm katlar render alınacaksa, tüm odaları farklı Sketchup dosyası olarak bölerim, bu şekilde dosya boyutu azalır render süresi kısalır.<br />\nTekrar kat planı olarak render almaya çalışacaksanız, kısa bir zahmetin ardından tekrar birleştirebilirsiniz.Ayrı ayrı çalışmak dosyadaki çalışma verimliliğini çok artıracaktır.</p>\n<p style=\"text-align: justify;\"><strong>5)</strong> Rendera başlamadan önce purge unused yaparım ve autocad ile ilgili dwg dosyaları varsa silerim, özellikle farklı dosyalardan gelen dosya parçacıkları sketchup&#8217;ın randımanlı çalışmasını etkilemektedir.</p>\n<p style=\"text-align: justify;\"><strong>6)</strong> Dış Mekanda bitki çeşitliliği bakımından sahnenin rahatlaması ve renderın hızlı başlaması bakımından bitkileri proxy dosyası haline getiririm.(Bunu yapmadan önce dosyanın son bir kayıt yedeğini almayı unutmayınız)</p>\n<p style=\"text-align: justify;\"><strong>7)</strong> Layer mantığını bir çok kişi atlamaktadır.Layer mantığı ile her katı veya bitkileri veya iç mekan objelerini farklı layerlara bölerek daha randımanlı çalışıp.Daha hızlı render testleri yapabilirsiniz.</p>\n<p style=\"text-align: justify;\"><strong>8)</strong> Programların En son sürümlerini edinerek daha hızlı ve verimli çalışma prensibi oluşturun. Ben Sketchup 2017 ve Vray 3.4 kullanıyorum.</p>\n<p>Bu şekilde hızlı render ve stabilite bakımından en randımanlı şekilde çalışmış oluyorum.Eski sürümlerin hızı ve randımanı yeni sürümlere göre %30 daha düşüktür.</p>\n<p><strong>9)</strong> Reverse Face yüzey yani ters yüzey (gri renk) olmamasına dikkat ederim.Sketchup ters yüzeyleri bu şekilde ifade ettiği için , render motorlarında ters yüzey konusunda sıkıntı yaşayabilirsiniz.</p>\n<p><strong>10)</strong> Grup ve Komponent çalışma prensibine uymaya çalışın.Buı şekilde daha düşük boyutlu çalışma dosyalarına ve daha hızlı render alabilirsiniz.</p>\n</div>\n<h3 style=\"text-align: justify;\"><strong>Sketchup Render Motorları Uyumluluğu ?</strong></h3>\n<p style=\"text-align: justify;\">Bir diğer konu ise aslında <em><strong><a href=\"https://www.sketchup.com/\" target=\"_blank\" rel=\"noopener\">Sketchup</a></strong></em> Programının Render motorları ile olan uyumluluktur.Bu uyumluluğu sağlayabilmek için biraz da bilgisayarınızın özelliklerine göre çalışmakta fayda vardır.</p>\n<p>Tüm Render motorları ilk hesaplamayı yaparken ilk olarak çalışma içerisindeki poligon hesabını yaparak render işlemine başlar.</p>\n<p>Fakat siz laptop&#8217;da çalışıyorsanız, özellikle dış mekanda büyük araziler,bitki, 3D insan modelleri, 3D araçlar gibi modelellerden kaçınmalısınız.</p>\n<p>Bu arada 3d görselleştirme için laptop modellerine <a href=\"/kategori/pc-tavsiyeleri/render-pc-tavsiyeleri\" target=\"_blank\" rel=\"noopener\"><strong><span style=\"color: #003366;\">bu kısımdan</span></strong></a> bakabilirsiniz.</p>\n<p>Bu saydığımız objeler sahne içerisinde büyük yük bindirerek laptopun çok uzun süreler render almasına ve bunun sonucunda laptoplarınızın ömrünün kısalmasına neden olur.</p>\n<p>Bu işlerle ilgili iseniz ve para kazanıyorsanız mutlaka bir masaüstü bilgisayara ihtiyacınız var demektir.</p>\n<p style=\"text-align: justify;\">Sonuç olarak yukarıda saydığımız Sketchup Dosya Verimliliği konusunda ki 10 maddeyi, çalışma alışkanlıklarınız arasına alırsanız, randımanlı bir şekilde çalışırsınız.</p>\n<p><span style=\"color: #ff6600;\"><strong>Sizinde kendinize göre çalışma prensipleriniz varsa eğer , aşağıdaki yorum kısmına yazabilirsiniz.</strong></span></p>\n",
+  "publishedAt": "2017-11-07T11:06:36",
+  "modifiedAt": "2022-12-20T14:50:02",
+  "status": "publish",
+  "featuredImage": {
+    "legacyId": 1528,
+    "legacyUrl": "https://www.ufuksen.com/wp-content/uploads/2017/11/Sketchup.jpg",
+    "localPath": "/media/2017/11/Sketchup.jpg",
+    "alt": "Sketchup",
+    "width": 2062,
+    "height": 1375,
+    "mimeType": "image/jpeg",
+    "error": null
+  },
+  "inlineMedia": [
+    {
+      "legacyUrl": "http://www.ufuksen.com/wp-content/uploads/2017/11/Sketchup-1024x683.jpg",
+      "localPath": "/media/2017/11/Sketchup-1024x683.jpg",
+      "error": null
+    }
+  ],
+  "embeds": [],
+  "seo": {
+    "title": null,
+    "description": "Sketchup Dosya Verimliliği konusunda sketchup dosyalarında çalışma prensiplerinin anlatıldığı bir makaledir.Bu makale ile Sketchup dosyalarında rahatlıkla…",
+    "focusKeyword": "Sketchup Dosya Verimliliği",
+    "canonicalUrl": null,
+    "ogImage": null
+  },
+  "readingMinutes": 3,
+  "migrationChecksum": "47e8e585912295ff4f627624fc66408eee3ed958ae4f68ca6301812a566d3fc9",
+  "author": {
+    "legacyId": 1,
+    "name": "UFUK ŞEN",
+    "slug": "ufuk",
+    "isGuest": false
+  },
+  "categories": [
+    {
+      "legacyId": 1169,
+      "name": "3D Programlar",
+      "slug": "3d-programlar"
+    },
+    {
+      "legacyId": 1172,
+      "name": "Sketchup",
+      "slug": "sketchup"
+    }
+  ],
+  "tags": []
+}

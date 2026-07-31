@@ -1,0 +1,53 @@
+{
+  "legacyId": 2028,
+  "slug": "kaplama-secimi-malzeme-hazirlama",
+  "legacyUrl": "/kaplama-secimi-malzeme-hazirlama.html",
+  "url": "/kaplama-secimi-malzeme-hazirlama.html",
+  "title": "Kaplama Seçimi Malzeme Hazırlama",
+  "excerpt": "Kaplama Seçimi Kaliteli görselleştirmeyi oluşturan ikinci diğer konudur. Malzeme ayarları ve kaliteli kaplama seçimi , gerçekçi render için önemli konulardan biridir. Birinci konumuz olan Modelleme kısmına burada değinmiştik. Eğer modelleme kısmında kendinizi zayıf hissediyorsanız eksiklerinizi görmek için o konuyu ziyaret ediniz. Kaplama Seçimi Detaylı olarak objeleriniz modelleme aşamasını bitirdiniz ve sıra geldi, kaplama aşamalarını oluşturmaya.Kaplama …",
+  "contentHtml": "<p><a href=\"/\" rel=\"attachment wp-att-2026\"><img loading=\"lazy\" decoding=\"async\" class=\"alignleft size-medium wp-image-2026\" src=\"/media/2017/12/kaplama-300x200.jpg\" alt=\"kaplama\" width=\"300\" height=\"200\" srcset=\"/media/2017/12/kaplama-300x200.jpg 300w, /media/2017/12/kaplama.jpg 400w\" sizes=\"auto, (max-width: 300px) 100vw, 300px\" /></a><strong>Kaplama</strong> Seçimi Kaliteli görselleştirmeyi oluşturan ikinci diğer konudur. Malzeme ayarları ve kaliteli kaplama seçimi , gerçekçi render için önemli konulardan biridir.</p>\n<p>Birinci konumuz olan Modelleme kısmına <em><strong><a href=\"/modelleme.html\" target=\"_blank\" rel=\"noopener noreferrer\">burada</a></strong></em> değinmiştik. Eğer modelleme kısmında kendinizi zayıf hissediyorsanız eksiklerinizi görmek için o konuyu ziyaret ediniz.</p>\n<h2><strong>Kaplama Seçimi</strong></h2>\n<p>Detaylı olarak objeleriniz modelleme aşamasını bitirdiniz ve sıra geldi, kaplama aşamalarını oluşturmaya.Kaplama aşamalarını oluşturmadaki en önemli kısım , aynı renk uyumun da olduğu gibi kaplamalarında birbirleri ile olan uyumudur.</p>\n<p>Uyumsuz sahneler direk göze çarpar ve sizin alakasız renklerle gökkuşağı renklerine bulanmış çalışmalar çıkarmanıza neden olur.</p>\n<hr />\n<p><span style=\"color: #0000ff;\"><strong><br />\nUyum sorunu ve renk seçim konusundaki kararsızlık, görselleştirme işine ilk başlayan kişilerin yaşadığı genel problemlerden biridir.<br />\n</strong></span></p>\n<hr />\n<p><strong>Bu sorunu çözmenin en büyük çözümü, örnek referans tasarımlardan faydalanmaktır.</strong></p>\n<p>Burada altını çizerek belirtmek istiyorum, eğer sıfırdan kendize ait bir tasarım yapıyorsanız o zaman zaten belirli bir aşamaya gelmiş , renk ve malzeme konularını çözmüş durumda olursunuz, bu aşamada referans resimlere ihtiyacınız olmayabilir.</p>\n<p>Modellemede olduğu gibi, malzeme seçiminde de işin için çıkamıyorsanız bir eğitim almanız gerekebilir.Eğitim önemlidir ve sizin harcadığınız sürenin %50 oranında kısalmasına neden olur.</p>\n<p><strong><span style=\"color: #ff0000;\">Bu süreci hızlandırmak için Hazırlamış olduğumuz <a href=\"/kategori/3d-egitim-setleri\" target=\"_blank\" rel=\"noopener noreferrer\">3D Eğitim setleri</a> kısmına buradan ulaşabilirsiniz.</span></strong></p>\n<p>Fakat bu kısımda , önemli bir ayrıntı vardır.Yeni başlayan biri ilk enerjisini ve eforunu kendi renk ve kaplama seçimlerine ayırırsa, geri kalan render ve ışık denemeleri gibi konularda büyük sorunlar yaşayabilir.</p>\n<p><span style=\"color: #808080;\"><strong>Bir proje üzerinde enerjinizi ve zamanı verimli kullanmakta diğer önemli husuların başında gelir.</strong></span></p>\n<h3><strong>Kaplama ve Renk Örnekleri</strong></h3>\n<p>Malzeme ve renk örnekleri konusunda aşağıdaki sitelerden, beğendiğiniz örnek görselleri ve tasarımları seçebilirsiniz.</p>\n<p>houzz.com<br />\npinterest.com<br />\narchdaily.com</p>\n<h4><strong>Render Motorlarında Kaplama Ayarları</strong></h4>\n<p>Malzeme seçimi konusunda, yukarıda verdiğimiz tavsiyeler sadece kaliteli görselleştirmeyi oluşturmak için yeterli olmamaktadır.</p>\n<p>Render motorlarının yaptığı en önemli görevlerden biride, gerçek hayatta gördüğümüz objeler üzerindeki yansıma, kırılma, kabartma, pürüzlülük gibi değerleri oluşturmamıza yardımcı olurlar.</p>\n<p>Sizler render motorları içerisindeki bu ayarlardan, zemin mazemesi için ahşap materyalinin yansımasını, kabartma olacak yerlerde bump parametresi gibi temel bazı öğeleri kullanabilirsiniz.</p>\n<p>Veya bir mermer malzemesi üzerindeki yansımanın değerini veya bir cam kaplaması yaparken kırılma oranlarını ayarlayabilirsiniz.</p>\n<p>Bu sayede aslında malzeme oluşturma kısmının en önemli can alıcı kısmını oluşturmuş olursunuz.</p>\n<p>Bu konuda ise hızlı ilerlemek için 3D eğitim setlerimizden faydalanabilirsiniz.</p>\n",
+  "publishedAt": "2017-12-14T10:02:19",
+  "modifiedAt": "2022-12-20T14:58:47",
+  "status": "publish",
+  "featuredImage": {
+    "legacyId": 2026,
+    "legacyUrl": "https://www.ufuksen.com/wp-content/uploads/2017/12/kaplama.jpg",
+    "localPath": "/media/2017/12/kaplama.jpg",
+    "alt": "kaplama",
+    "width": 400,
+    "height": 267,
+    "mimeType": "image/jpeg",
+    "error": null
+  },
+  "inlineMedia": [
+    {
+      "legacyUrl": "http://www.ufuksen.com/wp-content/uploads/2017/12/kaplama-300x200.jpg",
+      "localPath": "/media/2017/12/kaplama-300x200.jpg",
+      "error": null
+    }
+  ],
+  "embeds": [],
+  "seo": {
+    "title": null,
+    "description": "Kaplama Seçimi Malzeme Hazırlama konuları, Kaliteli Görselleştirmeyi oluşturan bir diğer konudur.Bu konu içerisinde Kaplama seçimine yer verilmiştir.",
+    "focusKeyword": "Kaplama",
+    "canonicalUrl": null,
+    "ogImage": null
+  },
+  "readingMinutes": 2,
+  "migrationChecksum": "b078755deaa22ad7e606f254442ae1932c99afe5344f32d9672d5bae56cc22ee",
+  "author": {
+    "legacyId": 1,
+    "name": "UFUK ŞEN",
+    "slug": "ufuk",
+    "isGuest": false
+  },
+  "categories": [
+    {
+      "legacyId": 518,
+      "name": "3D Görselleştirme",
+      "slug": "3d-gorsellestirme"
+    }
+  ],
+  "tags": []
+}

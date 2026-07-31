@@ -1,0 +1,44 @@
+---
+import Base from "../../layouts/Base.astro";
+import SectionTitle from "../../components/SectionTitle.astro";
+import { getSoftwareIndex } from "../../lib/discover";
+
+const index = await getSoftwareIndex();
+const groups = [
+  { kind: "modelleme", title: "Modelleme" },
+  { kind: "render", title: "Render motorları" },
+  { kind: "gercek-zamanli", title: "Gerçek zamanlı" },
+  { kind: "diger", title: "Diğer araçlar" },
+] as const;
+---
+<Base
+  title="Yazılımlar — Hangi araçla ne yapılır | Ufuk Şen"
+  description="SketchUp, V-Ray, D5 Render, Twinmotion, Enscape ve diğer araçlar üzerine yazı ve videolar."
+  path="/yazilim"
+>
+  <SectionTitle
+    title="Yazılımlar"
+    as="h1"
+    note="Arşiv, kullanılan araca göre gruplandı. Sayılar ölçüldü, tahmin değil."
+  />
+
+  {groups.map((group) => {
+    const items = index.filter((entry) => entry.tag.kind === group.kind);
+    return items.length > 0 ? (
+      <section style="margin-bottom:var(--s-12)">
+        <h2 style="font-size:var(--t-body-lg);margin-bottom:var(--s-4);color:var(--c-text-muted)">
+          {group.title}
+        </h2>
+        <div class="tiles">
+          {items.map((entry) => (
+            <article class="tile">
+              <span class="tag">{entry.posts.length} yazı · {entry.videoCount} video</span>
+              <h3>{entry.tag.name}</h3>
+              <a class="tile__link" href={`/yazilim/${entry.tag.slug}`}>İncele <i>→</i></a>
+            </article>
+          ))}
+        </div>
+      </section>
+    ) : null;
+  })}
+</Base>

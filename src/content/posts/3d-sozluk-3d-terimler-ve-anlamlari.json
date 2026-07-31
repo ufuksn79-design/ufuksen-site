@@ -1,0 +1,53 @@
+{
+  "legacyId": 2133,
+  "slug": "3d-sozluk-3d-terimler-ve-anlamlari",
+  "legacyUrl": "/3d-sozluk-3d-terimler-ve-anlamlari.html",
+  "url": "/3d-sozluk-3d-terimler-ve-anlamlari.html",
+  "title": "3D Sözlük 3D Terimler ve Anlamları",
+  "excerpt": "3D sözlük ihtiyacı , 3D programlar içerisinde kullanılan terimlerin farklı oluşu ve farklı anlamlar taşımalarından oluşmuştur. Daha önce sitemizi ziyaret edenler Mimari Terimler Sözlüğü konusunda yazmış olduğumuz yazıyı buradan okuyabilirler. Bu kısımda ise 3D mimari ve 3D görselleştirme alanında hangi terimle kullanılıyor bunların anlamlarını ve açıklamalarını vereceğiz. Aynı zamanda hangi firmaların hangi programlara sahip olduklarıda …",
+  "contentHtml": "<p><strong><a href=\"/3d-sozluk-3d-terimler-ve-anlamlari.html\" rel=\"attachment wp-att-2161\"><img loading=\"lazy\" decoding=\"async\" class=\"alignleft size-medium wp-image-2161\" src=\"/media/2017/12/3d-sozluk-300x194.jpg\" alt=\"3d sozluk\" width=\"300\" height=\"194\" srcset=\"/media/2017/12/3d-sozluk-300x194.jpg 300w, /media/2017/12/3d-sozluk.jpg 400w\" sizes=\"auto, (max-width: 300px) 100vw, 300px\" /></a>3D sözlük</strong> ihtiyacı , 3D programlar içerisinde kullanılan terimlerin farklı oluşu ve farklı anlamlar taşımalarından oluşmuştur.</p>\n<p>Daha önce sitemizi ziyaret edenler <span style=\"color: #003366;\"><strong><a style=\"color: #003366;\" href=\"/mimari-terimler-ve-detayli-aciklamalari.html\" target=\"_blank\" rel=\"noopener\">Mimari Terimler Sözlüğü</a></strong></span> konusunda yazmış olduğumuz yazıyı <a href=\"/mimari-terimler-ve-detayli-aciklamalari.html\" target=\"_blank\" rel=\"noopener\">buradan</a> okuyabilirler.</p>\n<p>Bu kısımda ise 3D mimari ve 3D görselleştirme alanında hangi terimle kullanılıyor bunların anlamlarını ve açıklamalarını vereceğiz. Aynı zamanda hangi firmaların hangi programlara sahip olduklarıda bu konu içerisinde yer alacaktır.</p>\n<h2><strong>3D Sözlük Programlar ve Eklentiler</strong></h2>\n<p><strong>SU (Sketchup)</strong>: İlk olarak Last Software tarafından geliştirilen, daha sonra sonra Google firması tarafından satın alınan ve en son evi olan Trimble firmasına devredilen popüler bir 3D programdır.</p>\n<p>Ücretsiz Eğitimlerine <a href=\"http://www.sketchupturkiye.com/\" target=\"_blank\" rel=\"noopener\">buradan</a> ulaşabilirsiniz.</p>\n<p>Özellikle <a href=\"/kategori/3d/3d-mimari\" target=\"_blank\" rel=\"noopener\">3D mimari</a> ve <a href=\"/kategori/kaliteli-gorsel\" target=\"_blank\" rel=\"noopener\"><strong>Mimari Görselleştirme</strong></a> konusunda çok basit kullanımından dolayı son 3 yılda büyük bir çıkış yapmıştır.<br />\n<strong><br />\n3Dsmax</strong>: Autodesk firmasının 1990 yılında çıkarmış olduğu, popüler 3D uygulamasıdır.<br />\n<strong>Vfsu :</strong> Vray for sketchup anlamının yani sketchup için vray cümlesinin kısaltmasıdır.<br />\n<strong>Corona: </strong>Son yıllarda çıkış yapmış popüler bir render motorudur.2017 son çeyreğinde Chaosgroup tarafından satın alınmıştır.<br />\n<strong>F-Strom</strong> : Ekran Kartları üzerinden çalışan bir render motorudur. 2017 yılında büyük sıçrama yapmış bir render motorudur.Octane render motoru ile yaşadığı dava halen devam etmektedir.<br />\n<strong>Octane</strong> : Yine Ekran kartını kullanan gelişmiş render motorudur. F-strom ile aralarındaki dava süreci devam etmektedir.<br />\n<strong>Unreal Engine</strong> : Bir Oyun Motorudur, aslında geniş içerikli Editör dememiz daha doğru. 2017 yılı içinde en fazla çıkış yapan render motorları kategorisinde ilk sırayı alıyor.<br />\n<strong>Unity</strong> : Unreal Engine gibi bir oyun motorudur.Her iki motorda mimari görselleştirme için ücretsiz kullanıma sahiptir.</p>\n<h3><strong>Hangi Firmalar Hangi Programlara sahipler</strong></h3>\n<p><strong>Autodesk : </strong>3dsMax , Autocad , Maya <span style=\"color: #999999;\">(daha fazlası mevcut)</span><strong><br />\nAdobe : </strong>Photoshop, illustrator , Premier Pro , After Effects<span style=\"color: #999999;\"> (daha fazlası mevcut)</span><strong><br />\nTrimble</strong>: Sketchup Programını Google dan satın alan ve programın şu anki sahibi.<strong><br />\nChaosgroup : </strong>Vray render motorunu 3dsmax, Sketchup , Cinema4d ve popüler birçok uygulamaya çıkaran firmadır.En son Corona render motorunu satın almıştır.<br />\n<strong>Maxon</strong> : Cinema4D ve çeşitli yardımcı programları üreten firmadır.<br />\n<strong>Simlab </strong>: Yukarıda ve bu sayfada saydığımız Tüm 3D programlar için eklenti çıkaran bir yazılım firması , aynı zamanda kendi render motoru ve çeşitli alternatifli dönüştürücüleri mevcut.</p>\n<h4><strong>3D sözlük Render Motorları ve Terimleri</strong></h4>\n<p>3d Sözlük içerisinde birde render motorları terimleri vardır ki, bu terimleri render motorlarını kullanırken sıkça duyacaksınız.</p>\n<p><strong>Proxy Nedir ?</strong>: Bir objeyi birden fazla kopyalama yöntemi sırasında matematiksel hesaplama ile ram kullanımını en aza indiren bir çoğaltma sistemidir.<span class=\"_5yl5\">Bir çoğaltma sistemidir. Objenin kendisi değil, vekili kullanır.</span></p>\n<p><strong>Vray Nedir ?</strong> :  Bir render motorudur.<strong>Sketchup</strong>, <strong>3dsmax</strong> , <strong>cinema4D</strong> ve farklı <strong>3d programlara</strong> dışardan kurulum yapılarak kullanılır.<span class=\"_5yl5\">Haricen kurulum yapılır ve çizim programına entegre olarak çalışır.</span></p>\n<p><strong>Texture Nedir ?</strong>: Kaplama anlamına gelmektedir, forum adresimiz de ve sayfalarımız da işinizle ilgili birçok kaplamayı indirebilirsiniz (ör: <strong>kumaş, metal, duvar</strong> )</p>\n<p><strong>line Nedir ? :</strong> Çizgi , çizgi çizmek anlamına gelir, bütün çizim programlarında line komutu ile çizim yaparsınız.</p>\n<p><strong>Bucket Nedir ?:</strong> Render ekranında tarama işlemi yapan küçük karelerin ismidir.Her kare işlemcinin birini temsil etmektedir. <span class=\"_5yl5\">Her bir kare bir iş parçacığınız temsil eder. İ7 işlemci kullanıyorsanız, ekranda 4+4 kare görürsünüz.</span></p>\n<p><strong>Light Nedir ?:</strong> Işık anlamına gelmektedir, her render motorunda ışıklar vasıtasıyla sahnenizi aydınlatırsınız.Farklı ışık çeşitlerini render motorlarının ışıklar menüsünden bulabilirsiniz.</p>\n<p><strong>RGB Nedir ? : </strong>Red (kırmızı) Green (Yeşil) Blue (Mavi) Kısaltmalarının birleşimidir, ve diğer renkler bu birleşimden oluşur.</p>\n<p><strong>Render Nedir ?</strong>: Türkçe karşılığı “sunmak”,  “derlemek” manasına gelen render, çizdiğimiz sahnedeki objelerin bütün hesaplamalarının yapılarak en son ki sunuş aşamasına gelmesi demektir.</p>\n<p><strong>Perspektif  Nedir ?: </strong>Perspektif, nesnelerin görünümünü 3 boyutlu olarak düz bir yüzeyde, yani 2 boyuta indirgeyerek, göstermeye yarayan bir iz düşümdür. Nesnenin gözlemciye göre olan posizyonunun ve uzaklığının etkileri esas alınarak perspektif çizimi yapılır.</p>\n<p><strong>Plugin ? : </strong>Programlara dışardan yüklenen ve işlerinizi hızlandıracak yardımcı araçlardır.</p>\n<p><strong>Ies Nedir</strong> <strong>?</strong> : 3D çalışmalar da süs ışıkları olarak tabir edilen, duvar diplerinde farklı ambians veren ışık tipleridir.</p>\n<p><strong><span class=\"_5yl5\">Post Production</span> Nedir ? </strong>: 3D programlarda, render sonucu çıkmış olan ham görüntünün photoshop veya farklı muadilli programlarla işlenmesine ve son haline getirilmesine denir.</p>\n<p>&nbsp;</p>\n",
+  "publishedAt": "2017-12-19T11:06:27",
+  "modifiedAt": "2022-12-20T14:57:52",
+  "status": "publish",
+  "featuredImage": {
+    "legacyId": 2161,
+    "legacyUrl": "https://www.ufuksen.com/wp-content/uploads/2017/12/3d-sozluk.jpg",
+    "localPath": "/media/2017/12/3d-sozluk.jpg",
+    "alt": "3d sozluk",
+    "width": 400,
+    "height": 259,
+    "mimeType": "image/jpeg",
+    "error": null
+  },
+  "inlineMedia": [
+    {
+      "legacyUrl": "http://www.ufuksen.com/wp-content/uploads/2017/12/3d-sozluk-300x194.jpg",
+      "localPath": "/media/2017/12/3d-sozluk-300x194.jpg",
+      "error": null
+    }
+  ],
+  "embeds": [],
+  "seo": {
+    "title": null,
+    "description": "3D Sözlük 3D Terimlerin, Anlamlarının ve açıklamalarının yapıldığı bir makaledir.Merak ettiğiniz Tüm 3D terimler burada açıklanmıştır.",
+    "focusKeyword": "3D Sözlük",
+    "canonicalUrl": null,
+    "ogImage": null
+  },
+  "readingMinutes": 3,
+  "migrationChecksum": "4db9a6f08446923bacc6b5f553dcfc0744570f1039536c8238aaf4606e41c9a8",
+  "author": {
+    "legacyId": 1,
+    "name": "UFUK ŞEN",
+    "slug": "ufuk",
+    "isGuest": false
+  },
+  "categories": [
+    {
+      "legacyId": 518,
+      "name": "3D Görselleştirme",
+      "slug": "3d-gorsellestirme"
+    }
+  ],
+  "tags": []
+}

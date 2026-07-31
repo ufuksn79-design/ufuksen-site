@@ -1,0 +1,54 @@
+{
+  "legacyId": 6764,
+  "slug": "gercekci-render-gorsellerinin-sirlari",
+  "legacyUrl": "/gercekci-render-gorsellerinin-sirlari.html",
+  "url": "/gercekci-render-gorsellerinin-sirlari.html",
+  "title": "Gerçekçi Render Görsellerinin Sırları",
+  "excerpt": "Merhaba arkadaşlar! Bu videoda, gerçekçi render görseller oluşturmanın püf noktalarını ve sırlarını sizlerle paylaşıyorum. Profesyonel kalitede renderlar elde etmek için hangi teknikleri kullanabileceğinizi öğrenmek için doğru yerdesiniz! 🔍 Videoda Neler Var? Temel Teknikler: Işıklandırma, gölgelendirme ve materyal kullanımı hakkında detaylı bilgiler. İleri Düzey İpuçları: Profesyonellerin kullandığı gelişmiş gerçekci render teknikleri. Render Ayarları: En iyi sonuçları …",
+  "contentHtml": "<p>Merhaba arkadaşlar!</p>\n<p>Bu videoda, <a href=\"/ic-mekanda-gercekci-render-almak.html\" target=\"_blank\" rel=\"noopener\"><strong>gerçekçi render</strong></a> görseller oluşturmanın püf noktalarını ve sırlarını sizlerle paylaşıyorum. Profesyonel kalitede renderlar elde etmek için hangi teknikleri kullanabileceğinizi öğrenmek için doğru yerdesiniz!</p>\n<p><iframe loading=\"lazy\" title=\"YouTube video player\" src=\"https://www.youtube.com/embed/tNMArgDXE3Q?si=9yQAf_KbLGopqr_6\" width=\"560\" height=\"315\" frameborder=\"0\" allowfullscreen=\"allowfullscreen\"></iframe></p>\n<p>🔍 Videoda Neler Var?</p>\n<p><strong>Temel Teknikler:</strong> Işıklandırma, gölgelendirme ve materyal kullanımı hakkında detaylı bilgiler. İleri Düzey İpuçları: Profesyonellerin kullandığı gelişmiş <a href=\"https://www.mimari3d.com/\" target=\"_blank\" rel=\"noopener\"><strong>gerçekci render</strong></a> teknikleri.</p>\n<p><strong>Render Ayarları:</strong> En iyi sonuçları almak için SketchUp ve diğer render motorlarındaki kritik ayarlar. Pratik Uygulamalar: Adım adım <strong>gerçekçi bir render</strong> nasıl oluşturulur?</p>\n<p><strong>📌 Kimler İçin?</strong></p>\n<p>Mimari görselleştirme meraklıları 3D modelleme ve render ile ilgilenenler SketchUp kullanıcıları Render kalitesini artırmak isteyen herkes</p>\n<p>Unutmayın! Videoyu beğenmeyi ve kanala abone olmayı unutmayın. Yorumlar kısmında aklınıza takılan soruları sorabilirsiniz.</p>\n<p>Hepsine cevap vermeye çalışacağım! İyi seyirler! 🎬</p>\n",
+  "publishedAt": "2024-07-22T21:37:44",
+  "modifiedAt": "2024-07-22T21:37:44",
+  "status": "publish",
+  "featuredImage": {
+    "legacyId": 6765,
+    "legacyUrl": "https://www.ufuksen.com/wp-content/uploads/2024/07/gercekcirender.webp",
+    "localPath": "/media/2024/07/gercekcirender.webp",
+    "alt": "gercekci render",
+    "width": 960,
+    "height": 540,
+    "mimeType": "image/webp",
+    "error": null
+  },
+  "inlineMedia": [],
+  "embeds": [
+    {
+      "provider": "youtube",
+      "externalId": "tNMArgDXE3Q",
+      "originalSrc": "https://www.youtube.com/embed/tNMArgDXE3Q?si=9yQAf_KbLGopqr_6",
+      "title": null
+    }
+  ],
+  "seo": {
+    "title": null,
+    "description": "Merhaba arkadaşlar! Bu videoda, gerçekçi render görseller oluşturmanın püf noktalarını ve sırlarını sizlerle paylaşıyorum.",
+    "focusKeyword": "gerçekçi render",
+    "canonicalUrl": null,
+    "ogImage": null
+  },
+  "readingMinutes": 1,
+  "migrationChecksum": "2e284a6c15d47dee73f0e76deefbe35772b60c8b34e98ef6ea1f6a63b4f193f4",
+  "author": {
+    "legacyId": 1,
+    "name": "UFUK ŞEN",
+    "slug": "ufuk",
+    "isGuest": false
+  },
+  "categories": [
+    {
+      "legacyId": 518,
+      "name": "3D Görselleştirme",
+      "slug": "3d-gorsellestirme"
+    }
+  ],
+  "tags": []
+}

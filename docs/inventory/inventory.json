@@ -1,0 +1,64 @@
+{
+  "kaynak": "https://www.ufuksen.com",
+  "sistem": {
+    "wordpress_surumu": "6.8.6",
+    "php_surumu": "PHP/7.4.33",
+    "sunucu": "cloudflare / LiteSpeed",
+    "tema": [
+      "jannah"
+    ],
+    "eklenti": [
+      "contact-form-7",
+      "greet-bubble-pro",
+      "mp-timetable",
+      "table-of-contents-plus"
+    ],
+    "seo_eklentisi": [
+      "rank-math"
+    ],
+    "analytics": []
+  },
+  "icerik_adetleri": {
+    "posts": 457,
+    "pages": 16,
+    "categories": 27,
+    "tags": 4,
+    "media": 795,
+    "comments": 1401,
+    "users": 3
+  },
+  "post_type_listesi": [
+    "attachment",
+    "guest-author",
+    "mp-column",
+    "mp-event",
+    "nav_menu_item",
+    "page",
+    "post",
+    "rm_content_editor",
+    "wp_block",
+    "wp_font_face",
+    "wp_font_family",
+    "wp_global_styles",
+    "wp_navigation",
+    "wp_template",
+    "wp_template_part"
+  ],
+  "public_url_adedi": 473,
+  "ornek_analizi": {
+    "incelenen_yazi": 40,
+    "shortcode": {},
+    "gomulu_iframe_host": {
+      "youtube.com": 35,
+      "//play.vidyard.com/4rqkkEFaz3RgxiBHTUAYCa.html?": 1,
+      "//play.vidyard.com/njGjJCDryXJuA1Ad2wyUGL.html?": 1,
+      "//play.vidyard.com/5UcFYQvQNDZrxBXnesm1Gh.html?": 1
+    },
+    "gutenberg_block": {},
+    "gorsel_host": {
+      "ufuksen.com": 37
+    },
+    "ozet_bos": 0,
+    "one_cikan_gorseli_yok": 0
+  }
+}

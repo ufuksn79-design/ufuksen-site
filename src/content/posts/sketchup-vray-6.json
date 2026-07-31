@@ -1,0 +1,59 @@
+{
+  "legacyId": 5541,
+  "slug": "sketchup-vray-6",
+  "legacyUrl": "/sketchup-vray-6.html",
+  "url": "/sketchup-vray-6.html",
+  "title": "Sketchup Vray 6",
+  "excerpt": "Sketchup Vray 6 nın bugün çıkması ile beraber, sizlere bir tanıtım videosu çekerek yenilikleri göstermek istedik arkadaşlar.Vray 6 uzun zamandır beklenen bir versiyondu. Render Motoru pazarında işler iyice kızışmaya başladıkça firmaların yenilik arayışları da giderek artarak devam ediyor. Yeni gelen özellikler ile Enscape Render malzemeleri Vray de kolayca görülüyor ve render alınabiliyor. Şu an stabilite …",
+  "contentHtml": "<p><a title=\"Sketchup Vray 6\" href=\"/sketchup-vray-6.html\" target=\"_blank\" rel=\"noopener\"><strong>Sketchup Vray 6</strong></a> nın bugün çıkması ile beraber, sizlere bir tanıtım videosu çekerek yenilikleri göstermek istedik arkadaşlar.Vray 6 uzun zamandır beklenen bir versiyondu.</p>\n<p>Render Motoru pazarında işler iyice kızışmaya başladıkça firmaların yenilik arayışları da giderek artarak devam ediyor.</p>\n<p>Yeni gelen özellikler ile Enscape Render malzemeleri Vray de kolayca görülüyor ve render alınabiliyor.</p>\n<p>Şu an stabilite ve sekronize sorunları olsa da chaos grup firması Vray ve Enscape render kısmını randımanlı bir şekilde bizlere sunacaktır. Real time kısmında encape render, fiziksel render kısmında ise vray render kısmının kullanılmasını amaçlıyorlar diye düşünüyorum.</p>\n<p>Şu an 6.0 versiyonu ilk çıktığı için hatalar ve gecikmeler söz konusun olacaktır ama vray render arayüzünün hızlı olduğunu ve Vision Render kısmının da geliştirilmiş olduğunu görüyoruz.</p>\n<p><em><strong>Tam tersi olarak şu an vray malzemeleri enscape içerisinde gözükmüyor.</strong></em></p>\n<p><strong><a title=\"Sketchup Vray 6\" href=\"https://youtu.be/TZ9CiHQtylw\" target=\"_blank\" rel=\"noopener\">Sketchup Vray 6</a></strong> ile birkaç sürüm güncellemesinden sonra güzel bir sürüm geleceği kesin.</p>\n<h2><strong>Sketchup Vray 6 Özellikleri</strong></h2>\n<p>Özellikle enscape ile ortaklık yapmalarından sonra <strong>Sketchup Vray 6</strong> nın daha stabil ve daha hızlı olduğunu söylemek isterim, sizlerde düşüncelerinizi yorum kısmında yazabilirsiniz.</p>\n<p><iframe loading=\"lazy\" title=\"Vray 6 Sketchup ÇIKTI - SÜPER HIZLI YENİ ÖZELLİKLER\" width=\"500\" height=\"281\" src=\"https://www.youtube.com/embed/TZ9CiHQtylw?feature=oembed\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" referrerpolicy=\"strict-origin-when-cross-origin\" allowfullscreen></iframe></p>\n",
+  "publishedAt": "2022-10-07T00:40:34",
+  "modifiedAt": "2022-10-07T00:43:26",
+  "status": "publish",
+  "featuredImage": {
+    "legacyId": 5542,
+    "legacyUrl": "https://www.ufuksen.com/wp-content/uploads/2022/10/vray-6-sketchup.jpg",
+    "localPath": "/media/2022/10/vray-6-sketchup.jpg",
+    "alt": "Sketchup Vray 6",
+    "width": 1920,
+    "height": 1080,
+    "mimeType": "image/jpeg",
+    "error": null
+  },
+  "inlineMedia": [],
+  "embeds": [
+    {
+      "provider": "youtube",
+      "externalId": "TZ9CiHQtylw",
+      "originalSrc": "https://www.youtube.com/embed/TZ9CiHQtylw?feature=oembed",
+      "title": null
+    }
+  ],
+  "seo": {
+    "title": null,
+    "description": "Özellikle enscape ile ortaklık yapmalarından sonra Sketchup Vray 6 nın daha stabil ve daha hızlı olduğunu söylemek isterim",
+    "focusKeyword": "Sketchup Vray 6",
+    "canonicalUrl": null,
+    "ogImage": null
+  },
+  "readingMinutes": 1,
+  "migrationChecksum": "232529973bf8c673c2b2463874e3dbb5511278b0837fbf16e88032e883de0db2",
+  "author": {
+    "legacyId": 1,
+    "name": "UFUK ŞEN",
+    "slug": "ufuk",
+    "isGuest": false
+  },
+  "categories": [
+    {
+      "legacyId": 538,
+      "name": "Render Motorları",
+      "slug": "render-motorlari"
+    },
+    {
+      "legacyId": 541,
+      "name": "Vray Render",
+      "slug": "vray"
+    }
+  ],
+  "tags": []
+}

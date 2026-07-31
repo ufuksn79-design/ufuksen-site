@@ -1,0 +1,53 @@
+{
+  "legacyId": 1615,
+  "slug": "3d-render-hatalari",
+  "legacyUrl": "/3d-render-hatalari.html",
+  "url": "/3d-render-hatalari.html",
+  "title": "3D Render Hataları",
+  "excerpt": "Modelinize başlayıp bitirme sürecine kadar bir çok hatalar ile karşılaşabilirsiniz.Bunlardan en önemlisi ise 3D Render Hataları ‘dır. Çünkü çizmiş olduğunuz modele, kaliteli render alamadığınız zaman hiç bir anlamı kalmıyor.İşte bu yüzden sizlere bu hatalar konusunda neler yapmanız gerektiği konusunda bilgiler vereceğim. Render Hataları konusunda en çok yaşananlar, ekran donmaları, rendera geç başlama, yüksek poligon kullanımı …",
+  "contentHtml": "<p style=\"text-align: justify;\"><a href=\"/3d-render-hatalari.html\" rel=\"attachment wp-att-1627\"><img loading=\"lazy\" decoding=\"async\" class=\"alignleft wp-image-1627\" src=\"/media/2017/12/render-hataları.jpg\" alt=\"3D Render\" width=\"264\" height=\"228\" srcset=\"/media/2017/12/render-hataları.jpg 495w, /media/2017/12/render-hataları-300x259.jpg 300w, /media/2017/12/render-hataları-487x420.jpg 487w\" sizes=\"auto, (max-width: 264px) 100vw, 264px\" /></a>Modelinize başlayıp bitirme sürecine kadar bir çok hatalar ile karşılaşabilirsiniz.Bunlardan en önemlisi ise <strong>3D Render Hataları </strong>&#8216;dır. Çünkü çizmiş olduğunuz modele, <span style=\"color: #0000ff;\"><a style=\"color: #0000ff;\" href=\"http://www.sketchupturkiye.com/sketchup-vray-egitimi.html\" target=\"_blank\" rel=\"noopener\"><em><strong>kaliteli render</strong></em></a></span> alamadığınız zaman hiç bir anlamı kalmıyor.İşte bu yüzden sizlere bu hatalar konusunda neler yapmanız gerektiği konusunda bilgiler vereceğim.</p>\n<p style=\"text-align: justify;\">Render Hataları konusunda en çok yaşananlar, ekran donmaları, rendera geç başlama, yüksek poligon kullanımı gibi ana başlıkları olan hatalar gelir akla.<br />\nBunların dışında oluşan hatalarıda sizlere aşağıda maddeler halinde anlatıyorum.</p>\n<h2 style=\"text-align: justify;\">En çok Yaşanan 3D Render Hataları</h2>\n<p style=\"text-align: justify;\">Bu kısımda sizlere en çok yaşadığınız Render Hatalarından bahsetmek istiyorum, bu hatalar sizlerin verimli çalışma çıkarmanızı etkileyici hatalar olabilir.<br />\nVerimli çalışma çıkaramayan bir kişinin, Render konusunda başarılı olma ihtimali her zaman düşüktür.Bu yüzden rendera başlamadan önce bazı durumları kendiniz için alışkanlık haline getirmelisiniz.</p>\n<p style=\"text-align: justify;\"><strong><span style=\"font-size: 14pt;\">Ekran donmaları ;</span></strong></p>\n<p style=\"text-align: justify;\">Bu hatanın bir çok karşılığı olabilir ama en önemli nedeni Donanım yetersizliği veya güncel olmayan sistemlerdir.<br />\nEn son Sketchup versiyonları iyi bir ekran kartı ve en son ekran kartı güncellemesini beraberinde istiyor.<br />\nAynı zamanda sahne üzerinde çok fazla bitkisel malzeme kullanımı özellikle laptop konusunda uzun süre cevap vermiyor hatasına dönüşür.<br />\nDaha fazla detay için <a href=\"http://www.sketchupturkiye.com/sketchup-2017-donma-ve-kasilma-sorunlari.html\" target=\"_blank\" rel=\"noopener\">buraya</a> tıklayınız.</p>\n<p style=\"text-align: justify;\"><span style=\"font-size: 14pt;\"><strong>Fazla Displacement Kullanımı ;</strong></span></p>\n<p style=\"text-align: justify;\">Bir model üzerinde herhangi bir yüzeyi kabartmak için <strong>Displacement</strong> denilen tekniği kullanırız.Bump özelliğine göre daha fazla ram ve sistem ihtiyaçlarını kullanır.<br />\nÇok fazla büyük alanlarda ve çok fazla model üzerinde kullandığınız Displacement kaplama özelliği , Renderın geç başlamasına neden olur.<br />\nGenelde ekranda gördüğünüz render ekranının bir türlü gelmemesi,  bu sorununun temel nedenlerinden biridir.</p>\n<p style=\"text-align: justify;\"><span style=\"font-size: 14pt;\"><strong>Transparan nesnelere kaplama atamama;</strong></span></p>\n<p style=\"text-align: justify;\">Özellikle <span style=\"color: #808000;\"><em><strong><a style=\"color: #808000;\" href=\"http://www.sketchupturkiye.com/\" target=\"_blank\" rel=\"noopener\">Sketchup</a></strong></em></span> Programın da Transparan nesneleri kaplama dışında kendi hallerine bırakırsanız sıkıntılar yaşayabilirsiniz.<br />\nKendi hallerinden kasıt, vray veya herhangi render motoru üzerinde kaplama özelliklerini vermek (reflection, refraction gibi)</p>\n<p style=\"text-align: justify;\"><strong><span style=\"font-size: 14pt;\">Çok yüksek kaliteli model ve kaplama kullanımı;<br />\n</span></strong><br />\nHer zaman diyoruz kaliteli model kullanın diye , fakat çok fazla yüksek mb&#8217;lı model kullanımı render süresini çok fazla etkileyen bir faktördür.<br />\nAynı zamanda yüksek kaliteli kaplamaların sahnenin heryerinde her kaplamada olması render süresini çok etkiler.</p>\n<h3 style=\"text-align: justify;\">3D Render Hatalarını Nasıl Engelleriz ?</h3>\n<p style=\"text-align: justify;\">Render hatalarında yeni ve eski kullanıcılar bir çok hata yapabilir.Bu normal bir durumdur.<br />\nSürekli hata alan arkadaşlarımız sabırla yollarına devam edip,kendilerini geliştirmeyedevam etmeleri gerekiyor.<br />\nHatalar bu işin tuzu biberidir,  çözümlemeyi öğrenene kadar bu durum sürekli devam edecektir.</p>\n<p style=\"text-align: justify;\">Ayrıca bu konuyla ilgili <em><strong>Sketchup Dosya Verimliliği</strong></em> konusunda çok önemli bilgiler verdim <a href=\"/sketchup-dosya-verimliligi.html\">buradan</a> bakabilirsiniz.<br />\nBu bilgilerde render konusunda sizi hatalardan kurtaracak önemli bilgiler sunmaktadır.</p>\n<p style=\"text-align: justify;\">3D görselleştime işi zor bir süreçtir, bu süreç içerisinde sabırla devam etmek gerekiyor.<br />\nÖzelliklede yeni kullanıcılar her aldıkları hatada ellerindeki projeyi bırakmadan devam etsinler.<br />\n<em><strong>Unutmayın sizin bırakmayı düşündüğünüz an dönüm noktasıdır.</strong></em></p>\n<p style=\"text-align: justify;\">Takıldığınız kısımları, aşağıdaki yorum kısmına sormaktan çekinmeyiniz.</p>\n",
+  "publishedAt": "2017-12-04T08:50:26",
+  "modifiedAt": "2022-12-20T14:46:56",
+  "status": "publish",
+  "featuredImage": {
+    "legacyId": 1627,
+    "legacyUrl": "https://www.ufuksen.com/wp-content/uploads/2017/12/render-hataları.jpg",
+    "localPath": "/media/2017/12/render-hataları.jpg",
+    "alt": "3D Render",
+    "width": 495,
+    "height": 427,
+    "mimeType": "image/jpeg",
+    "error": null
+  },
+  "inlineMedia": [
+    {
+      "legacyUrl": "http://www.ufuksen.com/wp-content/uploads/2017/12/render-hataları.jpg",
+      "localPath": "/media/2017/12/render-hataları.jpg",
+      "error": null
+    }
+  ],
+  "embeds": [],
+  "seo": {
+    "title": null,
+    "description": "3D Render Hataları Modelinize başlayıp bitirme sürecine kadar bir çok hatalar ile karşılaşabilirsiniz.Bunlardan en önemlisi ise Render Hataları'dır.",
+    "focusKeyword": "3D Render",
+    "canonicalUrl": null,
+    "ogImage": null
+  },
+  "readingMinutes": 2,
+  "migrationChecksum": "9e41cbc79c522360f447864716689944557207b6b18cfcff8aa7ccbf5300f14e",
+  "author": {
+    "legacyId": 1,
+    "name": "UFUK ŞEN",
+    "slug": "ufuk",
+    "isGuest": false
+  },
+  "categories": [
+    {
+      "legacyId": 518,
+      "name": "3D Görselleştirme",
+      "slug": "3d-gorsellestirme"
+    }
+  ],
+  "tags": []
+}

@@ -1,0 +1,54 @@
+{
+  "legacyId": 4679,
+  "slug": "render-nedir-nasil-alinir",
+  "legacyUrl": "/render-nedir-nasil-alinir.html",
+  "url": "/render-nedir-nasil-alinir.html",
+  "title": "Render nedir : Nasıl Alınır ?",
+  "excerpt": "Render nedir ?  bilgisayar yardımıyla çizilen ya da geliştirilen bir modelin render motoru denilen bilgisayar yazılımları aracılığıyla işlenerek resim veya video halini alarak sonuç ürünün çıkmasıdır. Render alma kelimesi ingilizce rendering kelimesinden türetilmiştir ve render işlemini gerçekleştirilen yazılımların tümüne renderer denilmektedir. Render nedir : Render Nasıl Ortaya Çıktı? Renderın nasıl ortaya çıktığını anlamak için görselleştirmenin …",
+  "contentHtml": "<p><a title=\"Render nedir\" href=\"/render-nedir-render-nasil-alinir.html\"><strong>Render nedir</strong></a> ?  bilgisayar yardımıyla çizilen ya da geliştirilen bir modelin <a title=\"render motoru\" href=\"/corona-render-egitim-seti.html\"><strong>render motoru</strong></a> denilen bilgisayar yazılımları aracılığıyla işlenerek resim veya video halini alarak sonuç ürünün çıkmasıdır.<br />\nRender alma kelimesi ingilizce <strong>rendering</strong> kelimesinden türetilmiştir ve render işlemini gerçekleştirilen yazılımların tümüne renderer denilmektedir.</p>\n<h2><strong>Render nedir : </strong>Render Nasıl Ortaya Çıktı?</h2>\n<p>Renderın nasıl ortaya çıktığını anlamak için görselleştirmenin tarihçesine bakmamız gerekir ki buradaki en önemli keşif rönesans döneminde perspektifin keşfidir diyebiliriz.</p>\n<p>Üç boyutlu bir çözümlemeye yarayan bu durum sanatçılar ve mimarların zaten arayışta olduğu bir kapıyı aralamış oldu.<br />\nPerspektif sayesinde derinlik ve mekân algısı önem kazandı, mimarlar tasarımlarını gerçekçi hale getirebilecek ve karşısındakine anlatabilecek bir dil bulmuş oldu.<br />\nDaha sonrasında bu durum heykeller, eskizler ve el çizimleriyle desteklendi.</p>\n<p>Teknolojinin gelişmesiyle ile eskizler ve heykeller yardımıyla yapılan bu görselleştirmeler bilgisayarlara kaymaya başladı.<br />\nAyrıca bilgisayar programlarının bolca deneme yanılmaya imkân vermesi de tercih edilebilirliklerini arttırdı.<br />\n<iframe loading=\"lazy\" title=\"YouTube video player\" src=\"https://www.youtube.com/embed/K-1ZVmxnKlk\" width=\"560\" height=\"315\" frameborder=\"0\" allowfullscreen=\"allowfullscreen\"></iframe></p>\n<h2><strong>Render neden Gereklidir?</strong></h2>\n<p>Tasarım yaparken her ne kadar model içinde çeşitli materyaller, ışık, obje gibi seçenekler yer alsa da bunlar elde edilmek istenen gerçekçi görüntüyü bize vermez. <a href=\"https://www.mimari3d.com/render-hizmeti-nedir/\" target=\"_blank\" rel=\"noopener\"><strong>Render işlemi</strong></a> sayesinde görüntü yüksek kaliteli bir hale gelerek çıktı olarak elde edilir.</p>\n<h2><strong>Render Nasıl Alınır?</strong></h2>\n<p>Renderın alınma aşaması 3d modelleme yazılımlarında temel prensipler olan, modelleme, kaplama, ışık ve ayarlardan sonra Render işlemi bir bilgisayar yazılımı aracılığıyla yani bir <a title=\"Render Motoru\" href=\"/ihtiyaca-yonelik-render-motoru-secimi.html\"><strong>render motoru</strong></a> yardımıyla yapılmaktadır.</p>\n<p>Halihazırda çeşitli render motoru bulunmaktadır ancak genel olarak bakıldığında hepsi aynı işlemi yapmaktadır.</p>\n<p>Burada önemli olan modelin kalitesini, kaplamaların kalitesini, ışık ve <strong>render motoru</strong> içindeki ayarların istenilen etkiyi verecek şekilde gerçeğe en yakın şekilde oluşturulmasıdır.</p>\n<p>Render Motorları hem işlemci üzerinden (cpu) aynı zamanda ekran kartı üzerinden (gpu) üzerinden işlem yapmaktadır.</p>\n<p>Son zamanlarda her iki işlem birimini kullanan render motorları da çıkmaya başlamaktadır.</p>\n<h3><strong>Render Çeşitleri Nelerdir?</strong></h3>\n<p><strong>Render alma</strong>  ‘<strong>Ön İşleme</strong>’ ve ‘<strong>Gerçek Zamanlı İşleme</strong>’ olarak ikiye ayrılır. Bu iki türün arasındaki en büyük fark ise hesaplama ve son görüntünün oluşturulmasındaki süre ve hızdır.</p>\n<p><strong>Real-Time <a href=\"/rendering-ne-demek.html\">Rendering</a></strong> yani Gerçek Zamanlı İşleme özelliğine sahip <strong>render motorları</strong> kullanıcının etkileşimin yüksek olduğu görüntülerin çok hızlı oluşturulmasının istediği durumlarda kullanılır.</p>\n<p>Pre-Rendering yani Ön İşleme özelliğine sahip render motorları sahnelerde hızın önemli olmadığı ortamlarda kullanılır ve bilgisayarın grafik kartı yerine çok merkezi çekirdek işleme üniteleri kullanılır.</p>\n<p><strong>Pre-Rendering işlemi</strong>, daha çok görsel gerçekliğin ön planda olduğu, animasyon ve görsel efekt uygulamalarında kullanılır.</p>\n<p>Bu makalemizde sizlere <strong>Render nedir</strong> ? nasıl alınır kısımlarını anlatmaya çalıştık. Bu konularla ilgili soracağınız sorular için hem forum adresimize hem de aşağıdaki yorum kısmına yorumlarınızı yazabilirsiniz.</p>\n",
+  "publishedAt": "2021-05-28T12:05:41",
+  "modifiedAt": "2023-07-04T07:23:41",
+  "status": "publish",
+  "featuredImage": {
+    "legacyId": 4681,
+    "legacyUrl": "https://www.ufuksen.com/wp-content/uploads/2021/05/render-nedir.jpg",
+    "localPath": "/media/2021/05/render-nedir.jpg",
+    "alt": "render nedir",
+    "width": 640,
+    "height": 360,
+    "mimeType": "image/jpeg",
+    "error": null
+  },
+  "inlineMedia": [],
+  "embeds": [
+    {
+      "provider": "youtube",
+      "externalId": "K-1ZVmxnKlk",
+      "originalSrc": "https://www.youtube.com/embed/K-1ZVmxnKlk",
+      "title": null
+    }
+  ],
+  "seo": {
+    "title": null,
+    "description": "Render nedir ? bilgisayar yardımıyla çizilen ya da geliştirilen bir modelin render motoru denilen bilgisayar yazılımları aracılığıyla işlenerek resim veya…",
+    "focusKeyword": "Render nedir",
+    "canonicalUrl": null,
+    "ogImage": null
+  },
+  "readingMinutes": 2,
+  "migrationChecksum": "f8148efab943054729bb8be28f2254fe34d66b93059b7f72300995ad7d2fdbe6",
+  "author": {
+    "legacyId": 1,
+    "name": "UFUK ŞEN",
+    "slug": "ufuk",
+    "isGuest": false
+  },
+  "categories": [
+    {
+      "legacyId": 518,
+      "name": "3D Görselleştirme",
+      "slug": "3d-gorsellestirme"
+    }
+  ],
+  "tags": []
+}

@@ -1,0 +1,53 @@
+{
+  "legacyId": 4113,
+  "slug": "adobe-photoshop-21-1-yayinlandi",
+  "legacyUrl": "/adobe-photoshop-21-1-yayinlandi.html",
+  "url": "/adobe-photoshop-21-1-yayinlandi.html",
+  "title": "Adobe Photoshop 21.1 yayınlandı",
+  "excerpt": "Photoshop‘un bu sürümünde artık İçeriğe Uygun Dolgu çalışma alanı penceresinden çıkmak zorunda kalmadan görüntünün birden çok alanını yinelemeli olarak doldurabilirsiniz . Resminizdeki bir seçim için istenen dolgu sonucunu aldıktan sonra, dolgu değişikliklerini yapmak ve çalışma alanı penceresini açık tutmak için sağ alt köşedeki yeni Uygula düğmesini tıklayın.  Dolguyu uyguladıktan sonra, doldurmak  üzere başka bir seçim yapmak için İçeriğe Uygun Dolgu çalışma alanında Kement Aracı veya Çokgen Kement Aracı‘nı kullanın. Adobe …",
+  "contentHtml": "<p><strong>Photoshop</strong>&#8216;un bu sürümünde artık <span class=\"uicontrol\">İçeriğe <strong>Uygun Dolgu</strong></span><strong> çalışma alanı</strong> penceresinden çıkmak zorunda kalmadan görüntünün birden çok alanını yinelemeli olarak doldurabilirsiniz . Resminizdeki bir seçim için istenen dolgu sonucunu aldıktan sonra, dolgu değişikliklerini yapmak ve çalışma alanı penceresini açık tutmak için sağ alt köşedeki yeni <span class=\"uicontrol\">Uygula</span> düğmesini tıklayın.  Dolguyu uyguladıktan sonra, doldurmak  üzere başka bir seçim yapmak için İçeriğe Uygun Dolgu çalışma alanında <strong><span class=\"uicontrol\">Kement Aracı</span></strong> veya <span class=\"uicontrol\"><strong>Çokgen Kement Aracı</strong>&#8216;nı</span> kullanın.</p>\n<h2><strong>Adobe Photoshop 21.1</strong></h2>\n<figure style=\"width: 800px\" class=\"wp-caption alignnone\"><img loading=\"lazy\" decoding=\"async\" class=\"size-large\" src=\"https://helpx.adobe.com/content/dam/help/en/photoshop/using/whats-new/2020-2/jcr_content/main-pars/image/ps-2020-release-content-aware-gif-short2.gif\" alt=\"Adobe Photoshop 21\" width=\"800\" height=\"401\" /><figcaption class=\"wp-caption-text\">Adobe Photoshop 21</figcaption></figure>\n<p>Ayrıca, yeni <span class=\"uicontrol\">Tüm Katmanları Örnekle</span> seçeneğini belirleyerek belgedeki tüm görünür katmanlardan kaynak pikselleri örnekleyebilirsiniz .<br />\n<span class=\"uicontrol\">Örnekleme alanı opsiyonları</span>  görünür <span class=\"uicontrol\">İçerik <strong>Duyarlı Dolgu</strong></span><strong> çalışma alanının</strong> sağ tarafındaki panelde bulunur.</p>\n<h2 id=\"lens-blur\"><strong>Geliştirilmiş Lens Bulanıklığı kalitesi</strong></h2>\n<p>Yeni <strong>Lens Bulanıklığı</strong> alogorithm artık odak düzleminin önündeki nesnelerde bulanık kenarlar, daha gerçekçi bir bokeh görünümü, <strong>CMYK</strong> ve LAB renk modları için doğru renk işleme ve daha renkli speküler vurgular için bilgisayarınızın grafik kartını (<strong>GPU</strong>) kullanıyor.</p>\n<p>Photoshop&#8217;ta grafik işlemcisini etkinleştirmek için <span class=\"uicontrol\">Düzenle</span>  (Windows) /  <a href=\"/\"><strong><span class=\"uicontrol\">Photoshop</span></strong></a> (macOS)  <span class=\"uicontrol\">&gt; Tercihler&gt; Performans&#8217;ı</span> seçin , <span class=\"uicontrol\">Tercihler</span> iletişim kutusunda <span class=\"uicontrol\">Grafik İşlemcisini Kullan&#8217;ı</span> seçin.</p>\n<h2 id=\"performance\"><strong>Performans geliştirmeleri</strong></h2>\n<p><strong>Photoshop</strong>&#8216;un kullanıcı arayüzü artık fare ve dijital kalem hareketlerine daha duyarlı. Belgelerinizde daha yumuşak kaydırma ve yakınlaştırma olduğunu fark edeceksiniz. Girdilerinize yanıt verme hızının artmasıyla, özellikle boyama veya sürükleme eylemlerinin söz konusu olduğu diğer pek çok kullanıcı arayüzü etkileşimlerinde de gelişmeler olduğunu göreceksiniz.</p>\n<p>&nbsp;</p>\n",
+  "publishedAt": "2020-02-28T15:26:11",
+  "modifiedAt": "2023-07-04T08:04:02",
+  "status": "publish",
+  "featuredImage": {
+    "legacyId": 4115,
+    "legacyUrl": "https://www.ufuksen.com/wp-content/uploads/2020/02/Adobe-Photoshop-21.1.jpg",
+    "localPath": "/media/2020/02/Adobe-Photoshop-21.1.jpg",
+    "alt": "Adobe Photoshop 21.1",
+    "width": 564,
+    "height": 410,
+    "mimeType": "image/jpeg",
+    "error": null
+  },
+  "inlineMedia": [
+    {
+      "legacyUrl": "https://helpx.adobe.com/content/dam/help/en/photoshop/using/whats-new/2020-2/jcr_content/main-pars/image/ps-2020-release-content-aware-gif-short2.gif",
+      "localPath": null,
+      "error": "uploads dışı kaynak"
+    }
+  ],
+  "embeds": [],
+  "seo": {
+    "title": null,
+    "description": "Photoshop‘un bu sürümünde artık İçeriğe Uygun Dolgu çalışma alanı penceresinden çıkmak zorunda kalmadan görüntünün birden çok alanını yinelemeli olarak…",
+    "focusKeyword": "Adobe Photoshop",
+    "canonicalUrl": null,
+    "ogImage": null
+  },
+  "readingMinutes": 1,
+  "migrationChecksum": "c0482ece0efe2ae0ebb2b42b5f7e0f7cdff7071b7fea18fce9d0c41a1cf864d8",
+  "author": {
+    "legacyId": 1,
+    "name": "UFUK ŞEN",
+    "slug": "ufuk",
+    "isGuest": false
+  },
+  "categories": [
+    {
+      "legacyId": 518,
+      "name": "3D Görselleştirme",
+      "slug": "3d-gorsellestirme"
+    }
+  ],
+  "tags": []
+}

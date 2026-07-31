@@ -1,0 +1,155 @@
+{
+  "aciklama": "Ufuk Şen'in geliştirdiği eklentiler, araçlar ve dijital ürünler.",
+  "kaynak": "FloorStudio verileri kullanıcının gönderdiği tanıtım görselinden okundu (2026-07-31).",
+  "nasilDoldurulur": [
+    "Yeni ürün eklemek için `urunler` dizisine kayıt ekleyin.",
+    "`gorsel`: public/media/urun/ altına koyup /media/urun/dosya.jpg biçiminde yazın.",
+    "`durum`: 'aktif' | 'beta' | 'arsiv'",
+    "Liste boşken /eklentiler sayfası ve ana sayfadaki bölüm hiç görünmez."
+  ],
+  "urunler": [
+    {
+      "slug": "floorstudio",
+      "ad": "FloorStudio",
+      "tur": "eklenti",
+      "durum": "aktif",
+      "surum": "3.1.5",
+      "ozet": "Profesyonel zemin desenlerini saniyeler içinde oluşturan SketchUp eklentisi.",
+      "aciklama": "Zemin modellemesi elle yapıldığında hem uzun sürer hem de derz ölçüleri tutmaz. FloorStudio, parametreleri girip tek tıkla gerçek ölçülü zemin üretmenizi sağlar.",
+      "slogan": "Zaman kazanın, kalitenizi artırın.",
+      "gorsel": null,
+      "gorselAlt": "FloorStudio eklentisinin tanıtım görseli: parametre paneli ve balıksırtı parke uygulanmış bir çocuk odası",
+      "uyumluluk": [
+        "SketchUp 2024",
+        "SketchUp 2025",
+        "SketchUp 2026"
+      ],
+      "ozellikler": [
+        {
+          "baslik": "Otomatik üretim",
+          "not": "Zeminleri tek tıklamayla oluşturun.",
+          "ikon": "bolt"
+        },
+        {
+          "baslik": "Gerçek ölçüler",
+          "not": "Fiziksel derz (gap) sistemi ile tamamen doğru sonuçlar.",
+          "ikon": "ruler"
+        },
+        {
+          "baslik": "Zengin desen kütüphanesi",
+          "not": "13+ profesyonel desen seçeneği.",
+          "ikon": "grid"
+        },
+        {
+          "baslik": "Gelişmiş parametreler",
+          "not": "Rastgele uzunluk, genişlik, renk ve yükseklik varyasyonları.",
+          "ikon": "sliders"
+        },
+        {
+          "baslik": "Kalınlık ve bevel",
+          "not": "Gerçekçi kalınlık ve bevel seçenekleri.",
+          "ikon": "layers"
+        },
+        {
+          "baslik": "UV ve malzeme yönetimi",
+          "not": "Akıllı UV hizalama ve malzeme kontrolü.",
+          "ikon": "texture"
+        }
+      ],
+      "desenler": [
+        "Wood Straight",
+        "Herringbone Single",
+        "Herringbone Double",
+        "Chevron",
+        "Tile Diamond 45°",
+        "Stack Bond"
+      ],
+      "desenNotu": "Görselde altı desen gösteriliyor; eklenti 13+ desen içeriyor.",
+      "vurgular": [
+        "Tek işlem undo — güvenli üretim",
+        "Hızlı ve verimli",
+        "Profesyonel sonuçlar"
+      ],
+      "iletisimEposta": "ufuksn79@gmail.com",
+      "satinAlmaUrl": null,
+      "yazilim": [
+        "sketchup"
+      ],
+      "gorselBekleniyor": "/media/urun/floorstudio.jpg — tanitim gorseli kullanicidan bekleniyor. Dosya bu yola konunca gorsel alanina ayni yol yazilacak."
+    },
+    {
+      "slug": "kitchen-studio",
+      "ad": "Kitchen Studio",
+      "tur": "eklenti",
+      "durum": "gelistiriliyor",
+      "ilerleme": 90,
+      "surum": null,
+      "ozet": "Mutfak modellemesi için geliştirilmekte olan SketchUp eklentisi.",
+      "aciklama": null,
+      "slogan": null,
+      "gorsel": null,
+      "gorselAlt": null,
+      "uyumluluk": [],
+      "ozellikler": [],
+      "desenler": [],
+      "desenNotu": null,
+      "vurgular": [],
+      "iletisimEposta": "ufuksn79@gmail.com",
+      "satinAlmaUrl": null,
+      "yazilim": [
+        "sketchup"
+      ],
+      "not": "Ayrıntılar kullanıcıdan gelmedi. Özellik listesi, uyumluluk ve görsel eklendiğinde bu kayıt tamamlanacak — uydurma bilgi yazılmadı (AGENTS.md §5)."
+    },
+    {
+      "slug": "panelcut-studio",
+      "ad": "PanelCut Studio",
+      "tur": "arac",
+      "durum": "alfa",
+      "surum": "0.17.0-alpha",
+      "ozet": "Tarayıcıda çalışan panel açınım, kesim listesi ve CNC hazırlama uygulaması.",
+      "aciklama": "Kurulum gerektirmez, sunucu bağımlılığı yoktur; tüm hesap istemci tarafında yapılır. Masaüstü, tablet ve telefon tarayıcılarında çalışır. Çıktı belgedir: DXF makineye gider, PDF atölyeye asılır.",
+      "slogan": "Atölyedeki adam için: doğru sayı, yanlışta susmayan yazılım.",
+      "gorsel": null,
+      "gorselAlt": null,
+      "uyumluluk": [
+        "Masaüstü tarayıcı",
+        "Tablet",
+        "Telefon"
+      ],
+      "ozellikler": [
+        {
+          "baslik": "Panel açınım",
+          "not": "Ölçüden kesim parçasına.",
+          "ikon": "grid"
+        },
+        {
+          "baslik": "Kesim listesi",
+          "not": "Atölyeye asılabilir çıktı.",
+          "ikon": "ruler"
+        },
+        {
+          "baslik": "CNC hazırlama",
+          "not": "DXF çıktısı doğrudan makineye.",
+          "ikon": "sliders"
+        },
+        {
+          "baslik": "Kurulum yok",
+          "not": "Tarayıcıda açılır, hesap istemcide yapılır.",
+          "ikon": "bolt"
+        }
+      ],
+      "desenler": [],
+      "desenNotu": null,
+      "vurgular": [
+        "Ücretsiz",
+        "Kurulum gerektirmez",
+        "Milimetre hassasiyeti"
+      ],
+      "iletisimEposta": "ufuksn79@gmail.com",
+      "satinAlmaUrl": null,
+      "yazilim": [],
+      "not": "Veriler projenin kendi PROJECT.md ve package.json dosyalarından okundu. Alfa sürümde; KompozitCut Studio adlı ücretli kompozit cephe sürümü planlanıyor."
+    }
+  ]
+}

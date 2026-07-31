@@ -1,0 +1,54 @@
+{
+  "legacyId": 5711,
+  "slug": "pazar-sohbetleri-ogrenmeyi-ogrenmek",
+  "legacyUrl": "/pazar-sohbetleri-ogrenmeyi-ogrenmek.html",
+  "url": "/pazar-sohbetleri-ogrenmeyi-ogrenmek.html",
+  "title": "Pazar Sohbetleri – Öğrenmeyi Öğrenmek",
+  "excerpt": "Öğrenmeyi Öğrenmek için yapılması gerekenler nelerdir ? Yeni bir şeyleri öğrenirken bu öğrenme sürecimizi hızlandırmak ve öğrenmemizi kolaylaştırmak için neler yapmamız gerektiğini anlattığım bir video içeriğidir. Biliyorsunuz yeni öğreneceğimiz şeyleri nasıl daha iyi öğreniriz ve bizde daha kalıcı olur bunu anlamak ve bu mantık çerçevesinde ilerlemek çok önemlidir. Aşağıdaki videoda yıllarca eğitim sürecinde öğrendiğimiz şeyleri …",
+  "contentHtml": "<p><a title=\"öğrenmeyi öğrenmek\" href=\"/pazar-sohbetleri-ogrenmeyi-ogrenmek.html\" target=\"_blank\" rel=\"noopener\"><strong>Öğrenmeyi Öğrenmek</strong></a> için yapılması gerekenler nelerdir ? Yeni bir şeyleri öğrenirken bu öğrenme sürecimizi hızlandırmak ve öğrenmemizi kolaylaştırmak için neler yapmamız gerektiğini anlattığım bir video içeriğidir.</p>\n<p>Biliyorsunuz yeni öğreneceğimiz şeyleri nasıl daha iyi öğreniriz ve bizde daha kalıcı olur bunu anlamak ve bu mantık çerçevesinde ilerlemek çok önemlidir.</p>\n<p>Aşağıdaki videoda yıllarca eğitim sürecinde öğrendiğimiz şeyleri sizlere anlatmaya çalıştım.</p>\n<p><iframe loading=\"lazy\" title=\"YouTube video player\" src=\"https://www.youtube.com/embed/rXhNSXYjnRU\" width=\"560\" height=\"315\" frameborder=\"0\" allowfullscreen=\"allowfullscreen\"></iframe></p>\n",
+  "publishedAt": "2022-12-04T19:28:27",
+  "modifiedAt": "2022-12-20T11:27:03",
+  "status": "publish",
+  "featuredImage": {
+    "legacyId": 5714,
+    "legacyUrl": "https://www.ufuksen.com/wp-content/uploads/2022/12/Ogrenmeyi-Ogrenmek.jpg",
+    "localPath": "/media/2022/12/Ogrenmeyi-Ogrenmek.jpg",
+    "alt": "Öğrenmeyi-Öğrenmek",
+    "width": 1280,
+    "height": 720,
+    "mimeType": "image/jpeg",
+    "error": null
+  },
+  "inlineMedia": [],
+  "embeds": [
+    {
+      "provider": "youtube",
+      "externalId": "rXhNSXYjnRU",
+      "originalSrc": "https://www.youtube.com/embed/rXhNSXYjnRU",
+      "title": null
+    }
+  ],
+  "seo": {
+    "title": null,
+    "description": "Öğrenmeyi Öğrenmek için yapılması gerekenler nelerdir ? Yeni bir şeyleri öğrenirken bu öğrenme sürecimizi hızlandırmak ve öğrenmemizi kolaylaştırmak için…",
+    "focusKeyword": "Öğrenmeyi Öğrenmek",
+    "canonicalUrl": null,
+    "ogImage": null
+  },
+  "readingMinutes": 1,
+  "migrationChecksum": "e2929034d519188fe94dbd43b44596b8c51a5f7ba3e57c8557730ad935a7b875",
+  "author": {
+    "legacyId": 1,
+    "name": "UFUK ŞEN",
+    "slug": "ufuk",
+    "isGuest": false
+  },
+  "categories": [
+    {
+      "legacyId": 518,
+      "name": "3D Görselleştirme",
+      "slug": "3d-gorsellestirme"
+    }
+  ],
+  "tags": []
+}

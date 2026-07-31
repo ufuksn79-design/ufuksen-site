@@ -1,0 +1,196 @@
+{
+  "aciklama": "Siteden kaldırılan yazılar. Kaynak WordPress'e DOKUNULMAZ (ADR-003); bu liste yalnızca yeni sitede üretimi engeller ve 410 Gone kuralı üretir.",
+  "karar": "Kullanıcı onayı, 2026-07-31. Ocak 2024'te toplu üretilmiş, siteyle konu ilgisi olmayan doldurma içerik (perakende kampanyaları, cihaz lansmanları, yemek tarifleri).",
+  "yontem": "410 Gone — Google'a kalıcı kaldırma sinyali. 404'ten daha nettir ve indeksten daha hızlı düşer. Bkz. ADR-017.",
+  "yazilar": [
+    {
+      "slug": "lezzetli-sokak-yemekleri-dunyasi",
+      "url": "/lezzetli-sokak-yemekleri-dunyasi.html",
+      "baslik": "Lezzetli Sokak Yemekleri Dünyası",
+      "tarih": "2023-12-06",
+      "neden": "alakasız doldurma içerik"
+    },
+    {
+      "slug": "amazon-prime-gamingin-ucretsiz-oyunlari",
+      "url": "/amazon-prime-gamingin-ucretsiz-oyunlari.html",
+      "baslik": "Amazon Prime Gaming’in Ücretsiz Oyunları",
+      "tarih": "2023-12-22",
+      "neden": "alakasız doldurma içerik"
+    },
+    {
+      "slug": "glutensiz-kahvalti-tarifleri",
+      "url": "/glutensiz-kahvalti-tarifleri.html",
+      "baslik": "Glütensiz Kahvaltı Tarifleri",
+      "tarih": "2023-12-25",
+      "neden": "alakasız doldurma içerik"
+    },
+    {
+      "slug": "kolay-brownie-tarifi",
+      "url": "/kolay-brownie-tarifi.html",
+      "baslik": "Kolay Brownie Tarifi",
+      "tarih": "2023-12-25",
+      "neden": "alakasız doldurma içerik"
+    },
+    {
+      "slug": "tavuklu-sezar-salata-tarifi",
+      "url": "/tavuklu-sezar-salata-tarifi.html",
+      "baslik": "Tavuklu Sezar Salata Tarifi",
+      "tarih": "2023-12-25",
+      "neden": "alakasız doldurma içerik"
+    },
+    {
+      "slug": "firinda-tavuklu-patates-yapilisi",
+      "url": "/firinda-tavuklu-patates-yapilisi.html",
+      "baslik": "Fırında Tavuklu Patates Yapılışı",
+      "tarih": "2024-01-04",
+      "neden": "alakasız doldurma içerik"
+    },
+    {
+      "slug": "xiaomi-12-serisi-lansmani-ve-ozellikleri",
+      "url": "/xiaomi-12-serisi-lansmani-ve-ozellikleri.html",
+      "baslik": "Xiaomi 12 Serisi Lansmanı ve Özellikleri",
+      "tarih": "2024-01-08",
+      "neden": "alakasız doldurma içerik"
+    },
+    {
+      "slug": "amazon-yeni-yil-indirimleri-ve-kampanyalari",
+      "url": "/amazon-yeni-yil-indirimleri-ve-kampanyalari.html",
+      "baslik": "Amazon Yeni Yıl İndirimleri ve Kampanyaları",
+      "tarih": "2024-01-10",
+      "neden": "alakasız doldurma içerik"
+    },
+    {
+      "slug": "bulgur-pilavi-yapimi-ve-puf-noktalari",
+      "url": "/bulgur-pilavi-yapimi-ve-puf-noktalari.html",
+      "baslik": "Bulgur Pilavı Yapımı ve Püf Noktaları",
+      "tarih": "2024-01-10",
+      "neden": "alakasız doldurma içerik"
+    },
+    {
+      "slug": "google-stadia-yeni-oyun-kutuphanesi-ve-fiyatlari",
+      "url": "/google-stadia-yeni-oyun-kutuphanesi-ve-fiyatlari.html",
+      "baslik": "Google Stadia, Yeni Oyun Kütüphanesi ve Fiyatları",
+      "tarih": "2024-01-10",
+      "neden": "alakasız doldurma içerik"
+    },
+    {
+      "slug": "kiymali-sebzeli-guvec-tarifi",
+      "url": "/kiymali-sebzeli-guvec-tarifi.html",
+      "baslik": "Kıymalı Sebzeli Güveç Tarifi",
+      "tarih": "2024-01-10",
+      "neden": "alakasız doldurma içerik"
+    },
+    {
+      "slug": "microsoft-teams-yeni-ozellikleri-ve-kullanim-alanlari",
+      "url": "/microsoft-teams-yeni-ozellikleri-ve-kullanim-alanlari.html",
+      "baslik": "Microsoft Teams Yeni Özellikleri ve Kullanım Alanları",
+      "tarih": "2024-01-10",
+      "neden": "alakasız doldurma içerik"
+    },
+    {
+      "slug": "microsoft-yeni-surface-cihazlari-tanitimi",
+      "url": "/microsoft-yeni-surface-cihazlari-tanitimi.html",
+      "baslik": "Microsoft Yeni Surface Cihazları Tanıtımı",
+      "tarih": "2024-01-10",
+      "neden": "alakasız doldurma içerik"
+    },
+    {
+      "slug": "playstation-5-icin-yeni-oyunlar-yolda",
+      "url": "/playstation-5-icin-yeni-oyunlar-yolda.html",
+      "baslik": "PlayStation 5 İçin Yeni Oyunlar Yolda",
+      "tarih": "2024-01-10",
+      "neden": "alakasız doldurma içerik"
+    },
+    {
+      "slug": "pacanga-boregi-yapilisi",
+      "url": "/pacanga-boregi-yapilisi.html",
+      "baslik": "Paçanga Böreği Yapılışı",
+      "tarih": "2024-01-11",
+      "neden": "alakasız doldurma içerik"
+    },
+    {
+      "slug": "samsungun-yeni-notebook-serisi-lansmani",
+      "url": "/samsungun-yeni-notebook-serisi-lansmani.html",
+      "baslik": "Samsung’un Yeni Notebook Serisi Lansmanı",
+      "tarih": "2024-01-11",
+      "neden": "alakasız doldurma içerik"
+    },
+    {
+      "slug": "playstation-5-oyunlari-icin-ozel-indirimler",
+      "url": "/playstation-5-oyunlari-icin-ozel-indirimler.html",
+      "baslik": "PlayStation 5 Oyunları İçin Özel İndirimler",
+      "tarih": "2024-01-13",
+      "neden": "alakasız doldurma içerik"
+    },
+    {
+      "slug": "xbox-series-x-ve-series-s-guncellemeleri",
+      "url": "/xbox-series-x-ve-series-s-guncellemeleri.html",
+      "baslik": "Xbox Series X ve Series S Güncellemeleri",
+      "tarih": "2024-01-13",
+      "neden": "alakasız doldurma içerik"
+    },
+    {
+      "slug": "epic-games-store-ucretsiz-oyun-kampanyalari",
+      "url": "/epic-games-store-ucretsiz-oyun-kampanyalari.html",
+      "baslik": "Epic Games Store Ücretsiz Oyun Kampanyaları",
+      "tarih": "2024-01-18",
+      "neden": "alakasız doldurma içerik"
+    },
+    {
+      "slug": "google-pixel-6a-lansmani-ve-ozellikleri",
+      "url": "/google-pixel-6a-lansmani-ve-ozellikleri.html",
+      "baslik": "Google Pixel 6a Lansmanı ve Özellikleri",
+      "tarih": "2024-01-18",
+      "neden": "alakasız doldurma içerik"
+    },
+    {
+      "slug": "tesla-modelin-yeni-elektrikli-arac-modelleri",
+      "url": "/tesla-modelin-yeni-elektrikli-arac-modelleri.html",
+      "baslik": "Tesla Modelin Yeni Elektrikli Araç Modelleri",
+      "tarih": "2024-01-18",
+      "neden": "alakasız doldurma içerik"
+    },
+    {
+      "slug": "windows-11-yeni-surumleri-ve-guncellemeleri",
+      "url": "/windows-11-yeni-surumleri-ve-guncellemeleri.html",
+      "baslik": "Windows 11 Yeni Sürümleri ve Güncellemeleri",
+      "tarih": "2024-01-18",
+      "neden": "alakasız doldurma içerik"
+    },
+    {
+      "slug": "amazon-prime-uyelik-avantajlari-ve-indirimler",
+      "url": "/amazon-prime-uyelik-avantajlari-ve-indirimler.html",
+      "baslik": "Amazon Prime Üyelik Avantajları ve İndirimler",
+      "tarih": "2024-01-25",
+      "neden": "alakasız doldurma içerik"
+    },
+    {
+      "slug": "mediamarkt-kis-indirimleri-devam-ediyor",
+      "url": "/mediamarkt-kis-indirimleri-devam-ediyor.html",
+      "baslik": "MediaMarkt Kış İndirimleri Devam Ediyor",
+      "tarih": "2024-01-25",
+      "neden": "alakasız doldurma içerik"
+    },
+    {
+      "slug": "playstation-store-plus-uyelikleri-icin-indirim",
+      "url": "/playstation-store-plus-uyelikleri-icin-indirim.html",
+      "baslik": "PlayStation Store Plus Üyelikleri İçin İndirim",
+      "tarih": "2024-01-25",
+      "neden": "alakasız doldurma içerik"
+    },
+    {
+      "slug": "samsungun-yeni-galaxy-tab-s8-serisi",
+      "url": "/samsungun-yeni-galaxy-tab-s8-serisi.html",
+      "baslik": "Samsung’un Yeni Galaxy Tab S8 Serisi",
+      "tarih": "2024-01-25",
+      "neden": "alakasız doldurma içerik"
+    },
+    {
+      "slug": "yeni-samsung-galaxy-watch-serisi-lansmani",
+      "url": "/yeni-samsung-galaxy-watch-serisi-lansmani.html",
+      "baslik": "Yeni Samsung Galaxy Watch Serisi Lansmanı",
+      "tarih": "2024-01-25",
+      "neden": "alakasız doldurma içerik"
+    }
+  ]
+}

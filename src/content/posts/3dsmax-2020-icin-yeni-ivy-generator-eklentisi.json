@@ -1,0 +1,59 @@
+{
+  "legacyId": 4108,
+  "slug": "3dsmax-2020-icin-yeni-ivy-generator-eklentisi",
+  "legacyUrl": "/3dsmax-2020-icin-yeni-ivy-generator-eklentisi.html",
+  "url": "/3dsmax-2020-icin-yeni-ivy-generator-eklentisi.html",
+  "title": "3DSmax 2020 için Yeni Ivy Generator eklentisi",
+  "excerpt": "3DSmax 2020 için Yeni Ivy Generator eklentisi hazırlanıyor.Bir süre önce Guillermo M Leal LLaguno, Thomas Luft Ivy Generator tarafından oluşturulan mükemmel programı maxscript’e aktarmaya karar verdi. Çalışan bir versiyon oluşturduktan sonra, bir projede kullanılmasının son derece yavaş olduğunu fark ettiğini belirtti. (Yazar yorumu : Senelerdir bu 3dsmax için ivy eklentisi çıkıyor, şimdimi anlamışlar yavaş  olduğunu …",
+  "contentHtml": "<p>3DSmax 2020 için Yeni <strong>Ivy Generator</strong> eklentisi hazırlanıyor.Bir süre önce Guillermo M Leal LLaguno, Thomas Luft <strong>Ivy Generator</strong> tarafından oluşturulan mükemmel programı maxscript&#8217;e aktarmaya karar verdi.<br />\nÇalışan bir versiyon oluşturduktan sonra, bir projede kullanılmasının son derece yavaş olduğunu fark ettiğini belirtti. (Yazar yorumu : Senelerdir bu 3dsmax için <strong>ivy eklentisi</strong> çıkıyor, şimdimi anlamışlar yavaş  olduğunu 😀 )</p>\n<p>3dsmax 2020  yeni ivy generator eklentisi için aşağıdaki videoyu izleyebilirsiniz.Hız ve performans bakımından şu ana kadar ki en iyi sarmaşık eklentisi gibi duruyor.</p>\n<h2>3DSmax 2020 için Yeni Ivy Generator eklentisi</h2>\n<p>Yazılımı geliştiren firma;</p>\n<blockquote><p>&#8220;Bu yüzden algoritmayı değiştirebildiğim yerde değiştirmeye başladım ve hızlandırmak için birkaç optimizasyon eklemeye çalıştım ama yine de çok yavaştı. Orijinal yazılımla aynı hızı elde etmek istersem farklı bir şey yapmak zorunda olduğumu biliyordum, ancak c ++ biliyorken daha önce bir eklenti yazmadım, bu yüzden bunun nasıl yazılacağını öğrenmek için iyi bir fırsat olduğuna karar verdim bir. &#8211; <strong>Guillermo M Leal LLaguno</strong>&#8220;</p></blockquote>\n<p>Aşağıda geliştirilen Yeni <strong>Ivy Generator</strong> eklentisi için bir demo videosu izleyeceksiniz. Bu videodan bile ne kadar randımanlı çalıştığını görebilirsiniz.<br />\nYorum kısmına düşüncelerinizi yazarak bizimle paylaşabilirsiniz.</p>\n<p><iframe loading=\"lazy\" title=\"vimeo-player\" src=\"https://player.vimeo.com/video/391850275\" width=\"640\" height=\"360\" frameborder=\"0\" allowfullscreen=\"allowfullscreen\"></iframe></p>\n",
+  "publishedAt": "2020-02-28T15:12:04",
+  "modifiedAt": "2022-12-21T10:58:34",
+  "status": "publish",
+  "featuredImage": {
+    "legacyId": 4111,
+    "legacyUrl": "https://www.ufuksen.com/wp-content/uploads/2020/02/3DSmax-2020-Ivy-Generator-min.jpg",
+    "localPath": "/media/2020/02/3DSmax-2020-Ivy-Generator-min.jpg",
+    "alt": "3DSmax 2020 Ivy Generator-min",
+    "width": 770,
+    "height": 455,
+    "mimeType": "image/jpeg",
+    "error": null
+  },
+  "inlineMedia": [],
+  "embeds": [
+    {
+      "provider": "other",
+      "externalId": null,
+      "originalSrc": "https://player.vimeo.com/video/391850275",
+      "title": null
+    }
+  ],
+  "seo": {
+    "title": null,
+    "description": "3DSmax 2020 için Yeni Ivy Generator eklentisi hazırlanıyor.Bir süre önce Guillermo M Leal LLaguno, Thomas Luft Ivy Generator tarafından oluşturulan mükemmel…",
+    "focusKeyword": "",
+    "canonicalUrl": null,
+    "ogImage": null
+  },
+  "readingMinutes": 1,
+  "migrationChecksum": "a719527eab2cd64a6a316ba3ace8e8cf40b14ad04b5e16f1c666bb4315399986",
+  "author": {
+    "legacyId": 1,
+    "name": "UFUK ŞEN",
+    "slug": "ufuk",
+    "isGuest": false
+  },
+  "categories": [
+    {
+      "legacyId": 1169,
+      "name": "3D Programlar",
+      "slug": "3d-programlar"
+    },
+    {
+      "legacyId": 1170,
+      "name": "3ds Max",
+      "slug": "3ds-max-3d-programlar"
+    }
+  ],
+  "tags": []
+}

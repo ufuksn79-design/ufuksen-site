@@ -1,0 +1,58 @@
+{
+  "legacyId": 3612,
+  "slug": "sketchup-vray-render-almadan-once-dikkat-edin",
+  "legacyUrl": "/sketchup-vray-render-almadan-once-dikkat-edin.html",
+  "url": "/sketchup-vray-render-almadan-once-dikkat-edin.html",
+  "title": "Sketchup Vray : Render Almadan Önce Dikkat edin !",
+  "excerpt": "Vray render motoru Vray Render Motoru kullanımı sırasında program içerisinde nelere dikkat edilmesi gerektiğini anlatan bir makaledir.Bu makale ile render motorlarını daha stabil kullanacaksınız.Vray kullanırken özellikle Sketchup içerisin de , kasılma takılma ve donma gibi durumlar yaşamamanız için bu yazdıklarımızı önemle uygulamanız gerekmektedir.Biliyorsunuz Vray Render Motoru kullanım sıralamasında en çok, Sketchup programı üzerinde kullanılmaktadır. Sketchup …",
+  "contentHtml": "\r\n<figure class=\"wp-block-image\"><img loading=\"lazy\" decoding=\"async\" width=\"1014\" height=\"387\" class=\"wp-image-3616\" src=\"/media/2019/06/vray-render-motoru-1.jpg\" alt=\"Vray render motoru\" srcset=\"/media/2019/06/vray-render-motoru-1.jpg 1014w, /media/2019/06/vray-render-motoru-1-300x114.jpg 300w, /media/2019/06/vray-render-motoru-1-768x293.jpg 768w, /media/2019/06/vray-render-motoru-1-696x266.jpg 696w\" sizes=\"auto, (max-width: 1014px) 100vw, 1014px\" />\r\n<figcaption><strong><em>Vray render motoru</em></strong></figcaption>\r\n</figure>\r\n\r\n\r\n\r\n<p><a href=\"/\"><strong>Vray Render Motoru</strong></a> kullanımı sırasında program içerisinde nelere dikkat edilmesi gerektiğini anlatan bir makaledir.Bu makale ile render motorlarını daha stabil kullanacaksınız.<br /><br />Vray kullanırken özellikle Sketchup içerisin de , kasılma takılma ve donma gibi durumlar yaşamamanız için bu yazdıklarımızı önemle uygulamanız gerekmektedir.<br /><br />Biliyorsunuz <strong>Vray Render Motoru</strong> kullanım sıralamasında en çok, Sketchup programı üzerinde kullanılmaktadır. <br /><br />Sketchup Vray kullanırken bazı önemli hususlara dikkat etmeniz, render alma esnasında sorunlar yaşamanızın önüne geçer. Birde önemli bir proje yetiştirme durumundaysanız, bu yazdıklarımıza önemle dikkat etmeniz gerekmektedir.</p>\r\n\r\n\r\n\r\n<h2 class=\"wp-block-heading\"><strong>Sketchup Programının Yeni Nesil Render Motorları ile uyumu</strong></h2>\r\n\r\n\r\n\r\n<p>Sketchup Programı, <strong>Mimari görselleştirme</strong> ve <strong>3D projeler</strong> konusunda en çok kullanılan Programların başında gelmektedir. Bu popülaritesi onun bir çok render motoruna ev sahipliği yapmasına izin veriyor.<br /><br />Sketchup için Bir çok render motorunu hızlıca ve sorunsuz bir şekilde kullanabilirsiniz. Bunlardan en çok Tercih edilen ve başı çeken render motoru <strong>Sketchup Vray render</strong> motorudur. <br /><br />Bu konudaki grafiğe bakarak en çok kullanılan render motorları sıralamasını görebilirsiniz. <br />Grafik için &#8212;-&gt; <a href=\"/epic-games-twinmotion-render-motorunu-satin-aldi.html\">/epic-games-twinmotion-render-motorunu-satin-aldi.html</a> <br /><br />Render Motorlarını kullanırken bazı önemli konulara dikkat etmeniz, hızlı ve sorunsuz render almanıza olanak tanıyacaktır.Aşağıda tüm maddeleri detaylı bir şekilde sizlere sunduk.</p>\r\n\r\n\r\n\r\n<h3 class=\"wp-block-heading\"><strong>Render Almadan Önce Dikkat edilecek önemli konular</strong></h3>\r\n\r\n\r\n\r\n<ul class=\"wp-block-list\">\r\n<li>En önemli konulardan biri olan <a href=\"https://sketchupfreemodel.com/\" target=\"_blank\" rel=\"noopener\"><strong>3D Warhouse</strong></a> dan dosya indirdiğinizde, özellikle eski modellerde kaplama sorunları ile karşılacaksınız.Bunu çözmenin en iyi yolu <strong>Vray Next</strong> ile gelen kaplama silme özelliği ile tüm kaplamayı silmek ve yeniden kaplama atamaktır. Hızlı render almanın, en önemli özelliklerden biride kaplamaların modele düzgün bir şekilde atanmış olmasıdır.Bu konuyla ilgili youtube adresimizde çektiğimiz videoyu <strong><a href=\"https://www.youtube.com/watch?v=mlv2XzLoCkw&amp;t=34s\" target=\"_blank\" rel=\"noreferrer noopener\" aria-label=\"buradan (yeni sekmede açılır)\">buradan</a></strong> izleyebilirsiniz.</li>\r\n<li>Mimari Görselleştirmede 2K (2048&#215;2048) kaplama çözünürlüğü ideal bir çözünürlüktür.Tüm sahneler için idealdir. Bunun üstü bir kaplama boyutu kullanacaksanız, sahneniz de kasılma takılma ve render süresinin uzaması gibi etkenleri göz önünde bulundurun.</li>\r\n<li>Ağaç ve bitki çeşitliliğini mutlaka proxy yapmalısınız, direk sahnede kullandığınız ağaç paketleri render süresinin çok uzamasına, aynı zamanda sahnede hareket edemez duruma gelmenize neden olur.Proxy yaparken bile hangi bitkinin proxy olmasıda çok önemli bir konudur. Her ağaç proxy olabilir, ama çok fazla poligon sayısı yine burada sorun oluşturacaktır.</li>\r\n<li>Sketchup için grup ve komponent çalışma şekillerline dikkat edin.Hiç bir objenin sağda solda boş durmasına izin vermeyin mutlaka grup veya komponent olarak çalışın.Bu çalışma şekillerini ana sayfamızdan Sketchup Temelleri videolarından izleyebilirsiniz. <a href=\"https://www.sketchupturkiye.com/\" target=\"_blank\" rel=\"noopener\">https://www.sketchupturkiye.com/</a></li>\r\n<li>Sahnede kullanılan objelerin kapladıkları, alan büyüklüğüne dikkat etmelisiniz.Çok fazla hazır obje kullanımı sahnenin ağır hareket etmesine ve render süresinin uzamasına neden olacaktır. Stabil bir kullanım ve çalışma şekli, herzaman idealdir.</li>\r\n<li>Kaplamalara mutlaka farklı isimler verin, bu sizin kaplamaları bulmanızı ve ayarlarınızı hızlı yapmanıza olanak tanıyacaktır.Her ne kadar desteklemiş olsa da, kaplama isimlerinde Türkçe karakterler kullanmaktan kaçının ör: ü,ç,ş,ö gibi.</li>\r\n<li>Dosyalarınızı bir klasör altında tutun.Bu şekilde hızlı bir çalışma şekline ulaşırsınız ve dosyalarınızı farklı kişilere gönderdiğiniz de dosyaları arama zahmetine girip zaman kaybetmezsiniz. HDRI, kaplama ve tüm kullandığınız proxy ve diğer eklentileri aynı klasörde tutmaya çalışın.</li>\r\n</ul>\r\n\r\n\r\n\r\n<h3 class=\"wp-block-heading\"><strong>Vray Render sırasında ayrıca yapmış olduğunuz bazı hatalar</strong></h3>\r\n\r\n\r\n\r\n<p>Aşağıdaki videoda, bazı örnek görseller ile genel olarak tüm kullanıcıların yapmış olduğu bazı hataların anlatıldığı bir video hazırladık.Bu video ile yapılan hatalar konusunda bazı fikirler edinerek onları, tekrar etmemiş olacaksınız. Video ve takıldığınız sorular için aşağıdaki yorum kısmını kullanınız.</p>\r\n\r\n\r\n\r\n<figure class=\"wp-block-embed-youtube wp-block-embed is-type-video is-provider-youtube wp-embed-aspect-16-9 wp-has-aspect-ratio\">\r\n<div class=\"wp-block-embed__wrapper\">https://www.youtube.com/watch?v=rZFot4Jcf_M&amp;t=380s</div>\r\n</figure>\r\n\r\n\r\n\r\n<h3 class=\"wp-block-heading\">Düzgün ve Kaliteli 3D görselleştirme hizmetleri için bizimle çalışabilirsiniz.</h3>\r\n\r\n\r\n\r\n<p>Yukarıda bahsettiğimiz konularda , profesyonel bir şekilde bizimle çalışmak isterseniz eğer projelerinizi <strong>vraydvd@gmail.com</strong> adresine yollayabilir ve anında geri dönüş alabilirsiniz.<br /><br /><strong>3D görselleştirme</strong>, <strong>3D mimari proje</strong> ve <strong>3D mimari <a href=\"http://www.3degitimsetleri.com/\" target=\"_blank\" rel=\"noopener\">3D Eğitim</a></strong> konularında bizimle yüksek kalite görseller için çalışma içerisinde olabilirsiniz. Projelerinin kaliteli görsel halinde sizlere sunuyoruz.Tek yapmanız gereken üst kısımdaki mail adresinize projelerinizi göndermeniz yeterlidir.<br /><br />İnstagramdan takip etmek için <strong><a href=\"https://www.instagram.com/ufuk_shen/\" target=\"_blank\" rel=\"noopener\">Tıklayınız</a></strong></p>\r\n",
+  "publishedAt": "2019-06-11T15:01:34",
+  "modifiedAt": "2023-07-04T08:10:54",
+  "status": "publish",
+  "featuredImage": {
+    "legacyId": 3760,
+    "legacyUrl": "https://www.ufuksen.com/wp-content/uploads/2019/06/vray-render-motoru-.jpg",
+    "localPath": "/media/2019/06/vray-render-motoru-.jpg",
+    "alt": "",
+    "width": 370,
+    "height": 297,
+    "mimeType": "image/jpeg",
+    "error": null
+  },
+  "inlineMedia": [
+    {
+      "legacyUrl": "https://www.ufuksen.com/wp-content/uploads/2019/06/vray-render-motoru-1.jpg",
+      "localPath": "/media/2019/06/vray-render-motoru-1.jpg",
+      "error": null
+    }
+  ],
+  "embeds": [],
+  "seo": {
+    "title": null,
+    "description": "Vray Render Motoru kullanımı sırasında program içerisinde nelere dikkat edilmesi gerektiğini anlatan bir makaledir.Render konularında bilgi alabilirsiniz.",
+    "focusKeyword": "Vray",
+    "canonicalUrl": null,
+    "ogImage": null
+  },
+  "readingMinutes": 3,
+  "migrationChecksum": "208403432682fd5397e89e133dfb3be1926070cd850943fffe134b1da95261ad",
+  "author": {
+    "legacyId": 1,
+    "name": "UFUK ŞEN",
+    "slug": "ufuk",
+    "isGuest": false
+  },
+  "categories": [
+    {
+      "legacyId": 538,
+      "name": "Render Motorları",
+      "slug": "render-motorlari"
+    },
+    {
+      "legacyId": 541,
+      "name": "Vray Render",
+      "slug": "vray"
+    }
+  ],
+  "tags": []
+}

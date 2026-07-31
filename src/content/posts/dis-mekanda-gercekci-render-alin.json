@@ -1,0 +1,54 @@
+{
+  "legacyId": 5894,
+  "slug": "dis-mekanda-gercekci-render-alin",
+  "legacyUrl": "/dis-mekanda-gercekci-render-alin.html",
+  "url": "/dis-mekanda-gercekci-render-alin.html",
+  "title": "DIŞ MEKANDA GERÇEKÇİ RENDER ALIN",
+  "excerpt": "Dış mekanda kaliteli ve gerçekçi render görsellerinin alınması için yapılması gerekenlerin anlatıldığı bir video içeriğidir. Dış mekan da render alınırken bir çok kişinin yapmış olduğu hatalar ve bakış açısı hatalarını anlattığım geniş içerikli ve size çok fayda sağlayacak bir video dersidir. Bir çok kişinin yaklaşım tarzı ve bakış açısı aynı olduğu için, dış mekanda kaliteli …",
+  "contentHtml": "<p>Dış mekanda kaliteli ve <a title=\"gerçekçi render\" href=\"https://www.youtube.com/watch?v=DASAaRskxo0&amp;t=37s\" target=\"_blank\" rel=\"noopener\"><strong>gerçekçi render</strong></a> görsellerinin alınması için yapılması gerekenlerin anlatıldığı bir video içeriğidir. Dış mekan da render alınırken bir çok kişinin yapmış olduğu hatalar ve bakış açısı hatalarını anlattığım geniş içerikli ve size çok fayda sağlayacak bir video dersidir.</p>\n<p>Bir çok kişinin yaklaşım tarzı ve bakış açısı aynı olduğu için, dış mekanda kaliteli ve gerçekçi render alma kısmında bir çok hata yapılmaktadır. Bu hataların toplu şekilde sizlere aktardığım çok faydalı bir içeriktir.<br />\n<iframe loading=\"lazy\" title=\"YouTube video player\" src=\"https://www.youtube.com/embed/DASAaRskxo0\" width=\"560\" height=\"315\" frameborder=\"0\" allowfullscreen=\"allowfullscreen\"></iframe></p>\n<h2>Dış mekanda gerçekçi render almak için aşağıdaki adımları takip edebilirsiniz:</h2>\n<ol>\n<li>İyi bir modelleme: <strong>Gerçekçi bir render</strong> almak için modelinizi doğru bir şekilde oluşturmanız gerekir. Dış mekanlar için, bina, ağaç, bitki örtüsü, yollar, parklar gibi öğeleri modellemeniz gerekir. Modelleme işlemi, detayların doğru bir şekilde yaratılmasını ve gerçekçi bir sonuç elde etmenizi sağlar.</li>\n<li>İyi bir ışıklandırma: Işıklandırma, render kalitesini önemli ölçüde etkileyen faktörlerden biridir. Dış mekanlar için doğal ışıklandırma kullanabilirsiniz. Güneşin açısını ve yönünü ayarlamak, gölgeleri belirlemek ve atmosferik etkileri eklemek, gerçekçi bir sonuç elde etmenize yardımcı olur.</li>\n<li>Realistik materyaller: Realistik materyaller kullanmak, render kalitesini yükseltir. Dış mekanlar için ahşap, beton, metal, cam gibi malzemeleri kullanabilirsiniz. Bu malzemelerin gerçekçi dokularını ve yansımalarını ayarlamak, gerçekçi bir sonuç elde etmenize yardımcı olur.</li>\n<li>Render motoru: Render motoru, modelinizin gerçekçi bir şekilde görünmesini sağlar. Dış mekanlar için popüler render motorları arasında V-Ray, Corona Renderer, Arnold, Octane Render bulunur. Render motoru, kaliteli bir render almanıza yardımcı olacak farklı ayarlar sunar.</li>\n<li>Post-prodüksiyon: Render işleminden sonra post-prodüksiyon süreci, render kalitesini daha da artırmanıza yardımcı olabilir. Photoshop veya benzeri bir program kullanarak renk düzeltmesi, netleştirme, ton ekleme ve diğer düzenlemeler yapabilirsiniz.</li>\n</ol>\n<p>Bu adımları takip ederek, dış mekanda gerçekçi bir render elde etmeniz mümkündür. Ancak unutmayın, <strong>gerçekçi bir render</strong> almak için sabır ve zaman gerektirir. Render süresi, render motoruna, modelin karmaşıklığına ve diğer faktörlere bağlı olarak değişebilir.</p>\n",
+  "publishedAt": "2023-02-18T22:21:53",
+  "modifiedAt": "2023-02-18T22:21:53",
+  "status": "publish",
+  "featuredImage": {
+    "legacyId": 5895,
+    "legacyUrl": "https://www.ufuksen.com/wp-content/uploads/2023/02/gerecekcirender.jpg",
+    "localPath": "/media/2023/02/gerecekcirender.jpg",
+    "alt": "gercekci render",
+    "width": 960,
+    "height": 540,
+    "mimeType": "image/jpeg",
+    "error": null
+  },
+  "inlineMedia": [],
+  "embeds": [
+    {
+      "provider": "youtube",
+      "externalId": "DASAaRskxo0",
+      "originalSrc": "https://www.youtube.com/embed/DASAaRskxo0",
+      "title": null
+    }
+  ],
+  "seo": {
+    "title": null,
+    "description": "Dış mekanda kaliteli ve gerçekçi render görsellerinin alınması için yapılması gerekenlerin anlatıldığı önemli bir içeriktir.",
+    "focusKeyword": "gerçekçi render",
+    "canonicalUrl": null,
+    "ogImage": null
+  },
+  "readingMinutes": 1,
+  "migrationChecksum": "62584cff566576af616f989c5830ad87b8195290caf903fe824feee2f8a2a919",
+  "author": {
+    "legacyId": 1,
+    "name": "UFUK ŞEN",
+    "slug": "ufuk",
+    "isGuest": false
+  },
+  "categories": [
+    {
+      "legacyId": 518,
+      "name": "3D Görselleştirme",
+      "slug": "3d-gorsellestirme"
+    }
+  ],
+  "tags": []
+}

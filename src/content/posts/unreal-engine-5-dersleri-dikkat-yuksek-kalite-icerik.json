@@ -1,0 +1,64 @@
+{
+  "legacyId": 5801,
+  "slug": "unreal-engine-5-dersleri-dikkat-yuksek-kalite-icerik",
+  "legacyUrl": "/unreal-engine-5-dersleri-dikkat-yuksek-kalite-icerik.html",
+  "url": "/unreal-engine-5-dersleri-dikkat-yuksek-kalite-icerik.html",
+  "title": "Unreal Engine 5 Dersleri Dikkat Yüksek Kalite içerik",
+  "excerpt": "Unreal Engine 5 dersleri ile vizyonumuzu daha ileri götürerek daha farklı ve daha ileri kaliteye kendimizi taşıyacağız. Yüksek kaliteli içerikler ile sizlere görselleştirme dünyasındaki en iyi içerikleri yüksek kaliteli dozlarda veriyoruz. Unreal engine kullanım alanı geniş olan  bir editör biliyorsunuz. Bilmiyorsanız da öğrenmiş oldunuz 🙂 Bu editör ile yapacaklarınızın sınırı yok arkadaşlar. Aşağıdaki Video listesinde …",
+  "contentHtml": "<p><a href=\"/unreal-engine-5-dersleri-dikkat-yuksek-kalite-icerik.html\"><strong>Unreal Engine 5 dersleri</strong></a> ile vizyonumuzu daha ileri götürerek daha farklı ve daha ileri kaliteye kendimizi taşıyacağız.</p>\n<p><strong>Yüksek kaliteli içerikler ile</strong> sizlere görselleştirme dünyasındaki en iyi içerikleri yüksek kaliteli dozlarda veriyoruz.</p>\n<p><strong>Unreal engine</strong> kullanım alanı geniş olan  bir editör biliyorsunuz. Bilmiyorsanız da öğrenmiş oldunuz 🙂</p>\n<p>Bu editör ile yapacaklarınızın sınırı yok arkadaşlar.</p>\n<h2>Aşağıdaki Video listesinde sırasıyla <strong>unreal engine 5 derslerine</strong> ulaşabilirsiniz.</h2>\n<p>En son sürüm olan <a href=\"https://www.youtube.com/watch?v=uot0a9ge3C0&amp;list=PLbcNJVR3dmPorxoZApUvxDoydorU22bCI\" target=\"_blank\" rel=\"noopener\"><strong>Unreal Engine 5.1</strong></a> ile devam ederek ,  en son gelen güncellemeler ile programın dinamiklerini en randımanlı şekilde kullanmayı hedefliyoruz.</p>\n<p>Öğrenme listesinde hem unreal engine&#8217;nin arayüzünü hem de örnekler yaparak motoru öğreniyoruz.</p>\n<p><iframe loading=\"lazy\" title=\"Unreal Engine 5 Dersleri Başlıyor !\" width=\"500\" height=\"281\" src=\"https://www.youtube.com/embed/uot0a9ge3C0?list=PLbcNJVR3dmPorxoZApUvxDoydorU22bCI\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" referrerpolicy=\"strict-origin-when-cross-origin\" allowfullscreen></iframe></p>\n",
+  "publishedAt": "2022-12-22T17:34:29",
+  "modifiedAt": "2022-12-22T17:53:20",
+  "status": "publish",
+  "featuredImage": {
+    "legacyId": 5805,
+    "legacyUrl": "https://www.ufuksen.com/wp-content/uploads/2022/12/unrealengine5dersleri.jpg",
+    "localPath": "/media/2022/12/unrealengine5dersleri.jpg",
+    "alt": "unreal engine 5dersleri",
+    "width": 1280,
+    "height": 720,
+    "mimeType": "image/jpeg",
+    "error": null
+  },
+  "inlineMedia": [],
+  "embeds": [
+    {
+      "provider": "youtube",
+      "externalId": "uot0a9ge3C0",
+      "originalSrc": "https://www.youtube.com/embed/uot0a9ge3C0?list=PLbcNJVR3dmPorxoZApUvxDoydorU22bCI",
+      "title": null
+    }
+  ],
+  "seo": {
+    "title": null,
+    "description": "Unreal Engine 5 dersleri ile vizyonumuzu daha ileri götürerek daha farklı ve daha ileri kaliteye kendimizi taşıyacağız.",
+    "focusKeyword": "Unreal Engine 5 dersleri",
+    "canonicalUrl": null,
+    "ogImage": null
+  },
+  "readingMinutes": 1,
+  "migrationChecksum": "fc4bdf341ca8a33dfc1f4d64db9daa3b8d9e2ff73953a340f1f74c06d875bb21",
+  "author": {
+    "legacyId": 1,
+    "name": "UFUK ŞEN",
+    "slug": "ufuk",
+    "isGuest": false
+  },
+  "categories": [
+    {
+      "legacyId": 1,
+      "name": "Genel",
+      "slug": "genel"
+    },
+    {
+      "legacyId": 538,
+      "name": "Render Motorları",
+      "slug": "render-motorlari"
+    },
+    {
+      "legacyId": 1174,
+      "name": "Unreal Engine",
+      "slug": "unreal-engine"
+    }
+  ],
+  "tags": []
+}

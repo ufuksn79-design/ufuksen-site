@@ -1,0 +1,34 @@
+{
+  "aciklama": "Kaynak sistemde de var olan, göç kaynaklı olmayan sorunlar. Her biri kaynağa karşı doğrulandı.",
+  "bosGovdeKaynaktaDaBos": [
+    "ne-demisler",
+    "projeler",
+    "tiehome"
+  ],
+  "medyaKaynaktaDaYok": [
+    "/media/2012/10/ücretli-işler.jpg",
+    "/media/2019/06/sketchup-vray-ic-mekan-ayarlari.jpg"
+  ],
+  "kaynaktaDa404Linkler": [
+    "/3d-mimari-3d-gorsellestirme-3d-egitim/tblet",
+    "/ben-kimim/ufuk-sen-3",
+    "/kategori/3d",
+    "/kategori/3d-egitim",
+    "/kategori/3d-egitim-setleri",
+    "/kategori/3d-egitim/3ds-max",
+    "/kategori/3d-egitim/sketchup-egitim",
+    "/kategori/3d-egitim/sketchup-vray",
+    "/kategori/3d-haberler/3d-yazilimlar",
+    "/kategori/3d/3d-mimari",
+    "/kategori/3d/3d-proje",
+    "/kategori/3d/3d-tasarim",
+    "/kategori/kaliteli-gorsel",
+    "/kategori/pc-tavsiyeleri/render-pc-tavsiyeleri",
+    "/kategori/sketchup-dvd",
+    "/nasil-gidilecegini-bilmiyorsan-neyle-gittiginin-bir-onemi-yoktur.html"
+  ],
+  "cozulemeyenLinkHatasi": [
+    "/kategori/sketchup"
+  ],
+  "not": "bosGovdeKaynaktaDaBos slug listesidir. tiehome, WordPress ana sayfa kaydidir (url=/)."
+}

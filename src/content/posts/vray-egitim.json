@@ -1,0 +1,52 @@
+{
+  "legacyId": 3985,
+  "slug": "vray-egitim",
+  "legacyUrl": "/vray-egitim.html",
+  "url": "/vray-egitim.html",
+  "title": "Sketchup Vray Eğitim",
+  "excerpt": "Sketchup Türkiye bünyesin de barındırmış olduğu 450 den fazla Sketchup eğitim videosu ve Vray Eğitim gibi çeşitli render motorları konusunda eğitimler hazırlamıştır. Bu programı ve render motorlarını en iyi şekilde öğretmeyi hedeflemiş , Türkçe 3D eğitim ve sosyal sorumluluk pojesidir. Sketchup programı hem kullanım kolaylığı ve hızı sayesinde 3 boyutlu tasarım yapan mimar ve mühendislerin …",
+  "contentHtml": "<p><strong>Sketchup Türkiye</strong> bünyesin de barındırmış olduğu 450 den fazla <strong>Sketchup eğitim videosu</strong> ve <a href=\"/\"><strong>Vray Eğitim</strong></a> gibi çeşitli render motorları konusunda eğitimler hazırlamıştır.<br />\nBu programı ve render motorlarını en iyi şekilde öğretmeyi hedeflemiş , Türkçe <strong>3D eğitim</strong> ve sosyal sorumluluk pojesidir.</p>\n<p>Sketchup programı hem kullanım kolaylığı ve hızı sayesinde 3 boyutlu tasarım yapan mimar<br />\nve mühendislerin sıklıkla kullandığı programlar arasında yerini almıştır.</p>\n<p>İlk zamanlar Google’ın bünyesin de, şimdi ise Trimble firması ile devam eden program sayesinde,<br />\nsizde tasarımlarınızı hızlıca ve kolay bir şekilde hayata geçirebilir, 3d dünyasında kendinizden söz ettirebilirsiniz.</p>\n<h2>Vray Eğitim</h2>\n<p>Vray şu an 3dsmax ve sketchup programında en çok kullanılan render motoru olma ünvanını elinde bulunduran bir render motorudur.</p>\n<p>Vray kullanım kolaylığı ve kaliteye olan yakınlığından dolayı sketchup içerisinde en çok kullanılan render motoru haline gelmiştir.</p>\n<p>Sketchup Programı diğer 3D programlara oranla, diğer programlara olan uyumluluğu ve<br />\ndışa aktarma seçenekleri ile kullanıcıların en çok tercih etmiş olduğu <a href=\"/\"><strong>mimari görselleştirme</strong></a> programı olarak kabul görür.</p>\n<p>Sitede Sketchup Türkçe derslerine ve <strong><a href=\"/\">Sketchup Vray</a> Eğitim</strong> derslerine yer verilmiştir.<br />\nAynı zamanda farklı render motolarının kullanımlarıda anlatılmıştır.</p>\n<p>Piyasada en çok kullanılan <strong>3d çizim</strong> ve <strong>render motorları</strong> seçilerek kullanıcıların bu programı zorlanmadan kullanmaları için videolu eğitimler ücretsiz olarak sunulmuştur.</p>\n<h3>Sketchup</h3>\n<p><strong>Sketchupturkiye.com</strong> sitesin de programın kullanımı , kurulumu hakkında başlangıç ve temel bilgileri vererek sizlerin sketchup programını daha iyi bir şekilde öğrenmeniz amaç edinmiştir.</p>\n<p>Bu sitede aynı zamanda sketchup derslerinin yanında , program ile ilgili Türkçe yazılı dökümanlar verilerek, kullanıcıların sketchup programını daha iyi kavramaları sağlanmıştır.</p>\n<p>Aynı zaman da site içerisinde programı indirebileceğiniz, indirme linkleri , sketchup tutorial sayfaları verilmiştir.<br />\nAynı zamanda dökümanlar sunularak, öğrenilen bilginin pekiştirilmesi ve daha hızlı öğrenilmesi sağlanmıştır.</p>\n<p>Site içerisinde <a href=\"http://www.sketchupturkiye.com/\" target=\"_blank\" rel=\"noopener\"><strong>sketchup</strong></a> programı hakkında temel ve başlangıç bilgiler verildikten sonra sketchup modelleri hakkında çizimler yapılarak model çizme ve kavrama teknikleri anlatılmıştır.</p>\n<p>Sketchup Model ve çizim teknikleri bitiminde, sizlere material atama ve kullanımı,<br />\n<strong>render alma</strong> ve ışık ayarları hakkında bilgiler sunularak, çizmiş olduğunuz modellerin daha kaliteli görünümlere kavuşturulması sağlanmıştır.</p>\n<p>Yine site içerisinde programının popüler render motorlarından olan <strong>sketchup vray render motoru</strong><br />\nhakkında bilgiler verilmiş, aynı zamanda vray kullanımının mantığı anlatılmıştır.</p>\n",
+  "publishedAt": "2020-02-16T11:20:28",
+  "modifiedAt": "2023-07-04T08:06:25",
+  "status": "publish",
+  "featuredImage": {
+    "legacyId": 3987,
+    "legacyUrl": "https://www.ufuksen.com/wp-content/uploads/2020/02/sketchup.jpg",
+    "localPath": "/media/2020/02/sketchup.jpg",
+    "alt": "Vray Eğitim",
+    "width": 600,
+    "height": 406,
+    "mimeType": "image/jpeg",
+    "error": null
+  },
+  "inlineMedia": [],
+  "embeds": [],
+  "seo": {
+    "title": null,
+    "description": "Sketchup Türkiye Vray Eğitim gibi çeşitli render motorları konusunda eğitimler hazırlamıştır.Bu programı ve render motorlarını öğretmeyi hedeflemiştir.",
+    "focusKeyword": "Vray Eğitim",
+    "canonicalUrl": null,
+    "ogImage": null
+  },
+  "readingMinutes": 2,
+  "migrationChecksum": "c73d383536b377d54c1f959c87ccfe96c5a8aa50841539e04c146cda64e4c91f",
+  "author": {
+    "legacyId": 1,
+    "name": "UFUK ŞEN",
+    "slug": "ufuk",
+    "isGuest": false
+  },
+  "categories": [
+    {
+      "legacyId": 538,
+      "name": "Render Motorları",
+      "slug": "render-motorlari"
+    },
+    {
+      "legacyId": 541,
+      "name": "Vray Render",
+      "slug": "vray"
+    }
+  ],
+  "tags": []
+}

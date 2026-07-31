@@ -1,0 +1,93 @@
+{
+  "legacyId": 3644,
+  "slug": "sketchup-vray-ic-mekan-aydinlatma-mantigi",
+  "legacyUrl": "/sketchup-vray-ic-mekan-aydinlatma-mantigi.html",
+  "url": "/sketchup-vray-ic-mekan-aydinlatma-mantigi.html",
+  "title": "Sketchup Vray: İç Mekan Aydınlatma Mantığı",
+  "excerpt": "Sketchup Vray iç mekan çalışmalarında, iç mekanda yeterli aydınlatma mantığını ayarlamak için bazı kriterlerin göz önünde bulundurulması gerekmektedir. Bu yazımız da sizlere aydınlatma mantığı olarak nasıl bir yol izlemeniz gerektiğinden bahsedeceğim. Bu mantığı tüm render motorlarında kullanabilirsiniz. Sketchup vray iç mekan çalışmalarında veya herhangi bir render motoru çalışmasında , kullanıcılar birşeylerin herzaman bir püf noktasını …",
+  "contentHtml": "\r\n<p><strong><a href=\"/\">Sketchup Vray</a> iç mekan</strong> çalışmalarında, iç mekanda yeterli aydınlatma mantığını ayarlamak için bazı kriterlerin göz önünde bulundurulması gerekmektedir. Bu yazımız da sizlere aydınlatma mantığı olarak nasıl bir yol izlemeniz gerektiğinden bahsedeceğim. <br /><br /><strong><em>Bu mantığı tüm render motorlarında kullanabilirsiniz</em></strong>. <br /><br /><strong>Sketchup vray iç mekan</strong> çalışmalarında veya herhangi bir render motoru çalışmasında , kullanıcılar birşeylerin herzaman bir püf noktasını aramışlardır. Veya <strong>&#8220;bizim bilmediğimiz mutlaka bir püf noktası</strong>&#8221; var diye düşünürler, halbuki doğal aydınlatma tekniği ve birkaç kamera ayarı ile iç mekanda yeterli ışık miktarını yakalayabilirsiniz. <br /><br />Tabi aydınlatma farklı bir konu &#8220;<strong>kaliteli görsel oluşturmak</strong>&#8221; çok farklı bir konu olduğu için, sadece ışık mantığını bilmek sizin kaliteli görsel oluşturacağınız anlamına gelmiyor. <br /><br /><strong>Görselleştirme</strong> çok kapsamlı bir konu olmakla beraber <strong><a href=\"/kategori/3d-gorsellestirme\">3D görselleştirme</a></strong> kısmında bu konuyla ilgili bir çok konuya değindik.<br /><br /><strong><em>Hepsini okuyup uygulamaya geçtiğinizde ortaya çok güzel sonuçlar çıkarabilirsiniz.</em></strong><br /><br />Render motorlarının tümünde geçerli olan bir durum vardır, render motoru içerisindeki değerleri sürekli değiştirerek, test renderları almak gerekmektedir. Bu şekilde istediğiniz aydınlatma miktarını ve kalitesini çalışma içerisinde yakalayabilirsiniz.</p>\r\n\r\n\r\n\r\n<h2 class=\"wp-block-heading\"><strong>Sketchup Vray iç mekan mantığını kavramak: Örnek Model Üzerinden</strong></h2>\r\n\r\n\r\n\r\n<p>Bu modelin render testlerinde <strong>Sketchup Vray Next Render</strong> Motorunu kullanacağız. Diğer tüm motorlarda mantık olarak aynı işlemler geçerlidir.Aynı ayarlar Sketchup Vray 3.4 ve 3.6 versiyonlarında ve diğer render motorlarında geçerlidir.<br /><br />Sırasıyla örnek bir model üzerinden giderek sizlere aydınlatmanın nasıl olacağı konusunda bilgiler vereceğim. Model dosyasını konunun en sonunda vereceğim linkten indirebilirsiniz.Adım adım giderek aydınlatmanın nasıl olacağını bu konu içerisinde belirleyeceğiz.<br /><br />İnternet üzerinden bulduğum <strong>Sketchup vray iç mekan</strong> Hazır Modelin üzerinde,çoğu modelin kaplaması yok. Bu kısımda sadece ışık kısmına değineceğim için ışık yerleşiminin ve aydınlatmanın nasıl olacağını göreceğiz.<br /><br />İsterseniz siz diğer modellerin kaplamalarınıda siz tamamlayıp, Sketchup Türkiye grup adresimizden bu konunun linkini de vererek sonuçlarınızı paylaşabilirsiniz.Grubumuzda ayrıca yapmış olduğunuz çalışma üzerinden kritik yapabilir yorum alabilir ve kendinizi daha fazla geliştirebilirsiniz.</p>\r\n\r\n\r\n\r\n<figure class=\"wp-block-image\"><img loading=\"lazy\" decoding=\"async\" width=\"1024\" height=\"313\" class=\"wp-image-3645\" src=\"/media/2019/06/sketchup-vray-ic-mekan-ders-1024x313.jpg\" alt=\"\" srcset=\"/media/2019/06/sketchup-vray-ic-mekan-ders-1024x313.jpg 1024w, /media/2019/06/sketchup-vray-ic-mekan-ders-300x92.jpg 300w, /media/2019/06/sketchup-vray-ic-mekan-ders-768x235.jpg 768w, /media/2019/06/sketchup-vray-ic-mekan-ders-696x213.jpg 696w, /media/2019/06/sketchup-vray-ic-mekan-ders-1068x327.jpg 1068w, /media/2019/06/sketchup-vray-ic-mekan-ders.jpg 1200w\" sizes=\"auto, (max-width: 1024px) 100vw, 1024px\" /></figure>\r\n\r\n\r\n\r\n<p><strong>Sketchup vray iç mekan</strong> modelimizin (üstte) soldan dış mekan görüntüsünü, sağda ise iç mekan yerleşim görüntüsünü görebilirsiniz.Bu görsel üzerinden render butonuna bastığımızda bizi siyah bir ekran karşılayacaktır. <br /><br />Çünkü sahnede pencere kısmındaki cam kaplamasını yapmadığımız için içeriye bir ışık kaynağı girmeyecektir. <br /><br />Bu yüzden ilk olarak hazır kaplama kütüphanesinden bir cam kaplamasını cam modelinin üzerine uygulayarak cam kaplaması haline getirin. Eğer bu aşamaları bilmiyorsanız ilk olarak bu kısımdaki <strong><a href=\"/sketchup-vray-next-ucretsiz-turkce-dersleri.html\"><em>Sketchup Vray Next derslerini</em></a></strong> izleyerek programa bir giriş yapınız.<br /><br />İlk olarak en doğal ışık kaynağı olarak güneş ışığını bu sahnemizde kullanarak devam edeceğiz. Güneş ışığını pencereden içeriye konumlandırmak için <strong>solar north</strong> plugini ile <strong>Scene 1</strong> bakış açısında güneşi ayarlayınız.<br /><br />Gölge ayarları için <a href=\"https://www.youtube.com/watch?v=gCFdO0gBNt4\" target=\"_blank\" rel=\"noopener\"><strong>buradaki</strong></a> videomuzu izleyebilirsiniz. <br /><br />Cam kaplamasını da, cam modeline atadıktan sonra hiç bir ayar yapmadan Render butonuna bastığınız da alacağınız görüntü aşağıdaki gibi biraz daha ışık almış şekilde olacaktır. <br /><br /><strong>Not: Sabırsızlanmayın, Aceleye gerek yok, sahneyi aydınlatmaya devam ediyoruz.</strong> 🙂</p>\r\n\r\n\r\n\r\n<figure class=\"wp-block-image\"><img loading=\"lazy\" decoding=\"async\" width=\"800\" height=\"475\" class=\"wp-image-3647\" src=\"/media/2019/06/sketchup-vray-test.jpg\" alt=\"\" srcset=\"/media/2019/06/sketchup-vray-test.jpg 800w, /media/2019/06/sketchup-vray-test-300x178.jpg 300w, /media/2019/06/sketchup-vray-test-768x456.jpg 768w, /media/2019/06/sketchup-vray-test-696x413.jpg 696w, /media/2019/06/sketchup-vray-test-707x420.jpg 707w\" sizes=\"auto, (max-width: 800px) 100vw, 800px\" /></figure>\r\n\r\n\r\n\r\n<p>Bu aşamada ışığın hala yetersiz olduğunu görebiliyoruz. Burada şimdi iki farklı yöntem kullanacağız, birinci yöntem camın dışından içeriye doğru rectangle light yani destekleyici karesel ışık kaynağı kullanmak, bu ışığı kullanırken ışık ok yönünün sahnenin içine doğru olmasına dikkat edin. <br /><br />Aynı zamanda ışık ayarlarından <strong>invisible</strong> kısmını işaretlemeyi unutmayınız.Aşağıdaki görsel yerleşim için yeterli olacaktır.</p>\r\n\r\n\r\n\r\n<figure class=\"wp-block-image\"><img loading=\"lazy\" decoding=\"async\" width=\"600\" height=\"386\" class=\"wp-image-3649\" src=\"/media/2019/06/sketchup-ışık.jpg\" alt=\"\" srcset=\"/media/2019/06/sketchup-ışık.jpg 600w, /media/2019/06/sketchup-ışık-300x193.jpg 300w\" sizes=\"auto, (max-width: 600px) 100vw, 600px\" /></figure>\r\n\r\n\r\n\r\n<p>Bundan sonraki aşama, <strong>Sketchup Vray Next</strong> ayarlarındaki kamera ayarlarını yapmak olacaktır.Aşağıda görselde görmüş olduğunuz ayarları yapabilirsiniz.Değerleri kendiniz deneyerek uygulama yaparak sahnedeki ışık miktarını artırıp azaltabilirsiniz.</p>\r\n\r\n\r\n\r\n<figure class=\"wp-block-image\"><img loading=\"lazy\" decoding=\"async\" width=\"497\" height=\"739\" class=\"wp-image-3650\" src=\"/media/2019/06/kamera-ayarlari.jpg\" alt=\"\" srcset=\"/media/2019/06/kamera-ayarlari.jpg 497w, /media/2019/06/kamera-ayarlari-202x300.jpg 202w, /media/2019/06/kamera-ayarlari-282x420.jpg 282w\" sizes=\"auto, (max-width: 497px) 100vw, 497px\" /></figure>\r\n\r\n\r\n\r\n<p>Bu <strong><a href=\"http://www.3degitimsetleri.com/\" target=\"_blank\" rel=\"noopener\">sketchup vray</a> kamera</strong> ayarlarındaki, kamera ayarlarını özellikle profesyonel fotoğraf makinası kullananlar iyi bilir, bu kısımdaki ayarları kısaca özetlemek gerekirse, <strong>Shutter Speed</strong> değeri azaldığında sahneye girecek olan ışık miktarı <strong>ARTAR</strong>. <br /><br />Dikkat ederseniz 300 olan değeri ben 60 yaparak, kameradan içeri girecek olan ışık miktarını artırdım. <br /><br />Sahnede ışık miktarının patlamasını engellemek içinde ISO değerini 160 gibi bir rakama çekerek sahnenin aşağıdaki gibi aydınlanmasını sağladım.Normal olarak ISO değerinin 200&#8217;lü değerlerde kalması idealdir. <br /><br />Üst değerlerde nois sorunu yaşayabilirsiniz.Aynı zamanda ışığı kontrol etmek zorlaşır ve modeller üzerindeki kaplama detayları kaybolur.<br /><br /><strong>Nois Nedir ?</strong> Sahnede ışık yetersizliğinden dolayı oluşan pürüzlenmelerdir.<br /><br /><strong><em>Çünkü kaplama üzerine vuracak fazla miktarda ışık detayların gözükmesini engeller ve netliği bozar.</em></strong><br /><br />Bu ayarları yaptığımızda <strong>Sketchup vray iç mekan</strong> sahneniz aşağıdaki gibi etkide olacaktır.</p>\r\n\r\n\r\n\r\n<figure class=\"wp-block-image\"><img loading=\"lazy\" decoding=\"async\" width=\"800\" height=\"475\" class=\"wp-image-3651\" src=\"/media/2019/06/vray-işik-mantiği.jpg\" alt=\"\" srcset=\"/media/2019/06/vray-işik-mantiği.jpg 800w, /media/2019/06/vray-işik-mantiği-300x178.jpg 300w, /media/2019/06/vray-işik-mantiği-768x456.jpg 768w, /media/2019/06/vray-işik-mantiği-696x413.jpg 696w, /media/2019/06/vray-işik-mantiği-707x420.jpg 707w\" sizes=\"auto, (max-width: 800px) 100vw, 800px\" /></figure>\r\n\r\n\r\n\r\n<p>Yaptığımız Vray ayarları ile sahnemizin daha fazla aydınlandığını görebilirsiniz.Yanlız sahnede hala bir kalite sorunu olduğunu görebiliyoruz.Bunun nedeni kalite ayarlarında normal kalitede render aldığımız içindir. Bu ayarı <strong>high</strong> veya <strong>very high</strong> yaptığımızda bu sorun çözülecektir. <br /><br />Ama Bu kısım şimdilik bizim için önemsiz, asıl amacımız ışık dengesini kontrollü bir şekilde ayarlamak.Şimdi yapmanız gereken diğer ayar ise, <strong>VRAY FRAME BUFFER</strong> penceresi yani render ekranında bulunan ve sol alt kısımda bulunan klasör simgesine basın. <br /><br /><strong>Show Corrections Control</strong> isimli, bu kısmına bastığımızda, pencerenin sağ kısmında aşağıdaki gibi bir menü açılacaktır.Bu kısım bizim Photoshop ile yapabileceğimiz ayarların sıralandığı bir penceredir ve bizim için çok faydalı araçları bulundurmaktadır.<br /><br />Bu kısımda sahnede eksik olan ışık dengesini kolaylıkla yapabiliriz.Aynı ayarları <strong>3dsmax <a href=\"/\">Corona Render</a></strong> Motorunda render penceresi üzerinde bulabilirsiniz.</p>\r\n\r\n\r\n\r\n<figure class=\"wp-block-image\"><img loading=\"lazy\" decoding=\"async\" width=\"1000\" height=\"633\" class=\"wp-image-3654\" src=\"/media/2019/06/sketchup-vray-buffer-1.jpg\" alt=\"\" srcset=\"/media/2019/06/sketchup-vray-buffer-1.jpg 1000w, /media/2019/06/sketchup-vray-buffer-1-300x190.jpg 300w, /media/2019/06/sketchup-vray-buffer-1-768x486.jpg 768w, /media/2019/06/sketchup-vray-buffer-1-696x441.jpg 696w, /media/2019/06/sketchup-vray-buffer-1-664x420.jpg 664w\" sizes=\"auto, (max-width: 1000px) 100vw, 1000px\" /></figure>\r\n\r\n\r\n\r\n<p>İlk görsel ile son görselde yaptığımız ayarlara baktığınızda görsel üzerinde ışık miktarının sahne üzerinde dengelendiğini görebilirsiniz.<br /><br />Vray ayarları üzerinde bu tür ayarların kişisel isteğe göre dengelenmesi farklı sonuçları ortaya çıkaracaktır.Bu ayarlar ile oynayarak sahneniz için en iyi renk ve ışık dengesini yakalamaya çalışın.<br /><br />Bazı arkadaşlarımız <strong>hazır iç mekan sahnesi</strong> ayarları aramaktadırlar.Bu ayarlar kişisel ve her sahne için farklı olduğu için, kullanmış olduğunuz <strong>hazır vray ayarları</strong>, sizin sahneniz üzerinde bir etkisi olmayacak, aksine sahne üzerinde daha fazla çalışmanıza neden olacaktır. <br /><br />Bu yüzden bir çok kişi hazır sahne ayarlarını, kendi çalışmaları üzerinde uyguladıklarında yeterli sonucu alamıyorlar.<br /><br /><strong>Sketchup vray iç mekan</strong> çalışması içerisinde, kaplamaların ayarlarının yapılmaması, düşük ayarlarda render alınması gibi durumlardan dolayı hala biraz ışık konusunda çözülmesi gereken yerler olduğunu çalışmada görebilirsiniz.Bunu çözmek çok zor değil. <br /><br />Sahne içi ayarları yüksek kalite ayarlarına getirmek (<strong>high veya very high</strong>) ve çözünürlüğü artırmak, aynı zamanda çıkan render sonucunu Photoshop gibi programlarda ışık ve renk dengesi ile oynamak çözüm olacaktır.<br /><br />Aşağıdaki görsel ile ayarlarınızı en yüksek seviyeye çıkarabilirsiniz.Bu sayede render içindeki ışık miktarı karanlık alanları daha fazla aydınlatacaktır. Tabi burada önemli bir husus ise, sahnedeki ışık miktarının doğal olmasıdır, fazla kullanılan ışıklar doğallığı bozarak çalışmanın kalitesini etkiyecektir. <br /><br /><strong><em>Bu çalışmaya örnek olarak, mutfak tezgah kısımlarında extra ışıklar kullanılarak, çalışmaya görsel zenginlik katabilirsiniz.</em></strong></p>\r\n\r\n\r\n\r\n<figure class=\"wp-block-image\"><img loading=\"lazy\" decoding=\"async\" width=\"807\" height=\"711\" class=\"wp-image-3659\" src=\"/media/2019/06/sketchup-vray-ayarlari.jpg\" alt=\"\" srcset=\"/media/2019/06/sketchup-vray-ayarlari.jpg 807w, /media/2019/06/sketchup-vray-ayarlari-300x264.jpg 300w, /media/2019/06/sketchup-vray-ayarlari-768x677.jpg 768w, /media/2019/06/sketchup-vray-ayarlari-696x613.jpg 696w, /media/2019/06/sketchup-vray-ayarlari-477x420.jpg 477w\" sizes=\"auto, (max-width: 807px) 100vw, 807px\" /></figure>\r\n\r\n\r\n\r\n<h3 class=\"wp-block-heading\"><strong>Vray İç Mekan Ayarları sonuç ?</strong></h3>\r\n\r\n\r\n\r\n<p><strong>Sketchup vray iç mekan</strong> Aydınlatma mantığını öğrenmek, <strong>değerleri değiştirerek testler yapmak</strong> ortaya çıkan sonuçları karşılaştırarak devam etmeniz sizin için iyi bir yol olmaktadır. Bu teknikler ile, daha sağlam adımlar atarak çok iyi sonuçlar çıkarabilirsiniz.<br /><br />Yukarıdaki örnek modelimizde tüm modellerin kaplamaları ayarlanmadığı için ham bir görüntü ile karşınıza çıkacaktır.Çünkü kaplama ayarları ve aşağıdaki görsel etkiler yapılmamıştır. <br /><br />Ama tüm ayarları yaptığınızda ve photoshop üzerinde yapacağınız ışık renk dengelemesi ve arka plana atacağınız görsel etkiler ile sonuç aşağıdaki gibi olacaktır.<br /><br />Render sonucunda çıkan sonucu, bu konuda değindiğimiz <strong><a href=\"/mimari-gorsellestirme-isleriniz-ici-en-iyi-photoshop-eklentileri.html\"><em>Mimari Görselleştirme işleriniz içi en iyi Photoshop Eklentileri</em></a></strong> kısmındaki programlar ile daha farklı sonuçlara getirebilirsiniz. <br /><br />Çıkan sonuçları Sketchup Türkiye gurubumuzdan yayınlayarak çalışma hakkında yorum alabilirsiniz.<br /><br />Çalışma sahnesini <strong><a href=\"http://www.sketchupfreemodel.com/sketchup-vray-free-kitchen-scene/\" target=\"_blank\" rel=\"noreferrer noopener\" aria-label=\"buradan (yeni sekmede açılır)\"><em>buradan</em></a></strong> indiriniz.Çalışma dosyası <strong> Xuân Khánh</strong> isimli kullanıcıya aittir. <br />Sosyal ortamda Free olarak paylaşıldığı için bu çalışmayı örnek olarak kullandım.</p>\r\n\r\n\r\n\r\n<figure class=\"wp-block-image\"><img loading=\"lazy\" decoding=\"async\" decoding=\"async\" class=\"wp-image-3661\" src=\"/media/2019/06/sketchup-vray-ic-mekan-ayarlari.jpg\" alt=\"\" /></figure>\r\n\r\n\r\n\r\n<p class=\"has-text-color has-background has-very-dark-gray-color has-light-green-cyan-background-color\"><strong>Sorularınız ve takıldığınız kısımlar için aşağıdaki yorum kısmını kullanınız.</strong></p>\r\n",
+  "publishedAt": "2019-06-27T16:20:00",
+  "modifiedAt": "2023-07-04T08:07:26",
+  "status": "publish",
+  "featuredImage": {
+    "legacyId": 3759,
+    "legacyUrl": "https://www.ufuksen.com/wp-content/uploads/2019/06/sketchup-vray-ic-mekan-ayarlari-.jpg",
+    "localPath": "/media/2019/06/sketchup-vray-ic-mekan-ayarlari-.jpg",
+    "alt": "Sketchup Vray: Mekan Aydınlatma Mantığı",
+    "width": 370,
+    "height": 297,
+    "mimeType": "image/jpeg",
+    "error": null
+  },
+  "inlineMedia": [
+    {
+      "legacyUrl": "https://www.ufuksen.com/wp-content/uploads/2019/06/sketchup-vray-ic-mekan-ders-1024x313.jpg",
+      "localPath": "/media/2019/06/sketchup-vray-ic-mekan-ders-1024x313.jpg",
+      "error": null
+    },
+    {
+      "legacyUrl": "https://www.ufuksen.com/wp-content/uploads/2019/06/sketchup-vray-test.jpg",
+      "localPath": "/media/2019/06/sketchup-vray-test.jpg",
+      "error": null
+    },
+    {
+      "legacyUrl": "https://www.ufuksen.com/wp-content/uploads/2019/06/sketchup-ışık.jpg",
+      "localPath": "/media/2019/06/sketchup-ışık.jpg",
+      "error": null
+    },
+    {
+      "legacyUrl": "https://www.ufuksen.com/wp-content/uploads/2019/06/kamera-ayarlari.jpg",
+      "localPath": "/media/2019/06/kamera-ayarlari.jpg",
+      "error": null
+    },
+    {
+      "legacyUrl": "https://www.ufuksen.com/wp-content/uploads/2019/06/vray-işik-mantiği.jpg",
+      "localPath": "/media/2019/06/vray-işik-mantiği.jpg",
+      "error": null
+    },
+    {
+      "legacyUrl": "https://www.ufuksen.com/wp-content/uploads/2019/06/sketchup-vray-buffer-1.jpg",
+      "localPath": "/media/2019/06/sketchup-vray-buffer-1.jpg",
+      "error": null
+    },
+    {
+      "legacyUrl": "https://www.ufuksen.com/wp-content/uploads/2019/06/sketchup-vray-ayarlari.jpg",
+      "localPath": "/media/2019/06/sketchup-vray-ayarlari.jpg",
+      "error": null
+    },
+    {
+      "legacyUrl": "https://www.ufuksen.com/wp-content/uploads/2019/06/sketchup-vray-ic-mekan-ayarlari.jpg",
+      "localPath": "/media/2019/06/sketchup-vray-ic-mekan-ayarlari.jpg",
+      "error": null
+    }
+  ],
+  "embeds": [],
+  "seo": {
+    "title": null,
+    "description": "Sketchup Vray iç mekan mantığının anlatıldığı bir konudur.Sketchup vray ile ışık yerleşimi ve sketchup tekniklerini öğrenebilirsiniz.",
+    "focusKeyword": "Sketchup Vray",
+    "canonicalUrl": null,
+    "ogImage": null
+  },
+  "readingMinutes": 6,
+  "migrationChecksum": "547baf71d9ab6464be121fe53bbf132dfe2a5e3f8aaf298cba8506684d7100c2",
+  "author": {
+    "legacyId": 1,
+    "name": "UFUK ŞEN",
+    "slug": "ufuk",
+    "isGuest": false
+  },
+  "categories": [
+    {
+      "legacyId": 538,
+      "name": "Render Motorları",
+      "slug": "render-motorlari"
+    },
+    {
+      "legacyId": 541,
+      "name": "Vray Render",
+      "slug": "vray"
+    }
+  ],
+  "tags": []
+}

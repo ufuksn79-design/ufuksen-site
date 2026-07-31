@@ -1,0 +1,58 @@
+{
+  "legacyId": 2437,
+  "slug": "sketchup-vray-4-0-gunlugu",
+  "legacyUrl": "/sketchup-vray-4-0-gunlugu.html",
+  "url": "/sketchup-vray-4-0-gunlugu.html",
+  "title": "Sketchup Vray 4.0 Günlüğü",
+  "excerpt": "Sketchup Vray 4.0 yakın zamanda chaos grup tarafından duyrulabilir. Yakın zamanda sunulan 3dsmax vray 4.0 beta ile render motoruna bir takım özellikler eklenmişti. Bu sürümle beraber Sketchup Vray 4.0 ile  bir çok değişimlerin geleceğini tahmin ediyorum. Özellikle GPU render kısmında 4.0 ile güzel gelişemelerin Sketchup Vray cehpesinde aynı özelliklerin gelmesini bekliyoruz. Özellikle 3.6 sürümünden sonra …",
+  "contentHtml": "<p><strong><a href=\"/sketchup-vray-4-0-gunlugu.html\" rel=\"attachment wp-att-2447\"><img loading=\"lazy\" decoding=\"async\" class=\"alignleft wp-image-2447\" src=\"/media/2018/01/sketchup-vray-4.jpg\" alt=\"sketchup vray 4.0\" width=\"327\" height=\"249\" srcset=\"/media/2018/01/sketchup-vray-4.jpg 450w, /media/2018/01/sketchup-vray-4-300x229.jpg 300w, /media/2018/01/sketchup-vray-4-80x60.jpg 80w\" sizes=\"auto, (max-width: 327px) 100vw, 327px\" /></a>Sketchup Vray 4.0</strong> yakın zamanda chaos grup tarafından duyrulabilir.</p>\n<p>Yakın zamanda sunulan <strong>3dsmax vray 4.0</strong> beta ile render motoruna bir takım özellikler eklenmişti. Bu sürümle beraber <span style=\"color: #0000ff;\"><strong>Sketchup Vray 4.0</strong></span> ile  bir çok değişimlerin geleceğini tahmin ediyorum.</p>\n<p>Özellikle <strong>GPU render</strong> kısmında 4.0 ile güzel gelişemelerin <strong>Sketchup Vray</strong> cehpesinde aynı özelliklerin gelmesini bekliyoruz.</p>\n<p>Özellikle 3.6 sürümünden sonra atak yapan Chaos Firması 4.0 da hem Cpu (işlemci) hemde GPU (Ekran kartı) için gelişmeler yaparak Render konusunu farklı bir boyuta taşımak için değişimler yapıyor.</p>\n<p>Vray 4.0 ile ilgili beta gelişmelerini <a href=\"/3dsmax-vray-4-0-yenilikleri.html\">bu kısımdan</a> okuyabilirsiniz.</p>\n<h2><strong>Sketchup Vray 4.0 Günlüğü</strong></h2>\n<p>Max cephesinde 4.0 beta duyrulduğu için sketchup kısmında da yakın zamanda 4.0 duyrulacaktır.</p>\n<p>O yüzden bu konunun ismini <strong>Sketchup Vray 4.0 Günlüğü</strong> olarak uygun gördüm.</p>\n<p>Gelişmeler geldikçe sizi bu konu üzerinden eklemeler yaparak haberdar edeceğim.</p>\n<p>Sketchup Vray 3.6 ile bazı güzel özellikler eklenmişti. Bunlardan biri 3dsmax ağaçlarını sahnemize export işlemleri veya sketchup da bulunan sahnenin max ortamına taşınması gibi bazı önemli özellikleri gördük.</p>\n<p>Bunlar bu sürümde çok stabil olarak çalışmasada, 4.0 versiyonu ile daha randımanlı bir seçenek sunulacağını düşünüyorum.</p>\n<p>Özellikle son zamanlarda GPU (ekran kartı) render işlemlerine önem veren chaos firması , Sketchup 4.0 ilede bizlere ekran kartı üzerinden render işlemlerini sunabilir.</p>\n<p>Benim en çok beklediğim özellik ise, yeni kaplama editörünün gelmesi.Kaplama hazırlama esnasında  kaplama editörü ile kaplama hazırlama kısmının daha hızlı ve detaylı kaplamalar hazırlanabilir.</p>\n<p>Sitemizi Takip eden arkadaşlarımız biliyorlar, Sitemde genel olarak 3D eğitimlerle ilgili konuların haberlerini bulabilirler, aynı zamanda çıkarmış olduğumuz <span style=\"color: #008000;\"><strong>3D eğitim setleri</strong></span> ile bir çok alanda Kişilerin gelişmelerine katkıda bulunduk ve bulunmaya devam ediyoruz.</p>\n<p>Sizlerde bu konu ile ilgili gelişmeleri ve düşüncelerinizi aşağıdaki yorum kısmında paylaşabilirsiniz.</p>\n",
+  "publishedAt": "2018-01-12T14:16:49",
+  "modifiedAt": "2022-12-20T15:02:20",
+  "status": "publish",
+  "featuredImage": {
+    "legacyId": 2447,
+    "legacyUrl": "https://www.ufuksen.com/wp-content/uploads/2018/01/sketchup-vray-4.jpg",
+    "localPath": "/media/2018/01/sketchup-vray-4.jpg",
+    "alt": "sketchup vray 4.0",
+    "width": 450,
+    "height": 343,
+    "mimeType": "image/jpeg",
+    "error": null
+  },
+  "inlineMedia": [
+    {
+      "legacyUrl": "http://www.ufuksen.com/wp-content/uploads/2018/01/sketchup-vray-4.jpg",
+      "localPath": "/media/2018/01/sketchup-vray-4.jpg",
+      "error": null
+    }
+  ],
+  "embeds": [],
+  "seo": {
+    "title": null,
+    "description": "Sketchup Vray 4.0 Günlüğü yani ilerde gelecek sürüm hakkında ön inceleme konusu.Sketchup Vray 4.0 ile ilgili yeniliklerin anlatıldığı bir konudur.",
+    "focusKeyword": "Sketchup Vray 4.0",
+    "canonicalUrl": null,
+    "ogImage": null
+  },
+  "readingMinutes": 1,
+  "migrationChecksum": "4218041b4f45a4421cfab6245fccb804354a0ae28dedefb7de393d16c21f00f6",
+  "author": {
+    "legacyId": 1,
+    "name": "UFUK ŞEN",
+    "slug": "ufuk",
+    "isGuest": false
+  },
+  "categories": [
+    {
+      "legacyId": 538,
+      "name": "Render Motorları",
+      "slug": "render-motorlari"
+    },
+    {
+      "legacyId": 541,
+      "name": "Vray Render",
+      "slug": "vray"
+    }
+  ],
+  "tags": []
+}

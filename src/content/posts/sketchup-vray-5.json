@@ -1,0 +1,65 @@
+{
+  "legacyId": 4416,
+  "slug": "sketchup-vray-5",
+  "legacyUrl": "/sketchup-vray-5.html",
+  "url": "/sketchup-vray-5.html",
+  "title": "Sketchup Vray 5",
+  "excerpt": "Render motorları geliştikçe karşımıza yeni özellikler ile çıkmaya devam ediyorlar. Her ne kadar yeni render motorları çıksa da , Chaos firması Sketchup Vray 5 ile bizlere yine çok farklı yenilikleri sunmaya devam ediyor. Bu yeniliklerin en önemlisi son zamanlarda çok popüler olan gerçek zamanlı olarak görselleştirebilme yetenekleridir. VRay Vision komutu ile artık bunu Sketchup Vray içerisinde …",
+  "contentHtml": "<p><a href=\"/sketchup-vray-5.html\" rel=\"attachment wp-att-4421\"><img loading=\"lazy\" decoding=\"async\" class=\"wp-image-4421 aligncenter\" src=\"/media/2020/11/sketchup-vray-5.jpg\" alt=\"sketchup vray 5\" width=\"353\" height=\"202\" srcset=\"/media/2020/11/sketchup-vray-5.jpg 890w, /media/2020/11/sketchup-vray-5-300x172.jpg 300w, /media/2020/11/sketchup-vray-5-768x439.jpg 768w\" sizes=\"auto, (max-width: 353px) 100vw, 353px\" /></a><br />\n<a href=\"/kategori/render-motorlari\" target=\"_blank\" rel=\"noopener noreferrer\"><strong>Render motorları</strong></a> geliştikçe karşımıza yeni özellikler ile çıkmaya devam ediyorlar. Her ne kadar yeni render motorları çıksa da , Chaos firması <strong>Sketchup Vray 5</strong> ile bizlere yine çok farklı yenilikleri sunmaya devam ediyor.</p>\n<p>Bu yeniliklerin en önemlisi son zamanlarda çok popüler olan gerçek zamanlı olarak görselleştirebilme yetenekleridir.</p>\n<p><strong>VRay Vision </strong>komutu ile artık bunu Sketchup Vray içerisinde yapabileceksiniz.</p>\n<h5><strong>Vray Vision&#8217;un bize sunduğu diğer özellikler ise şunlar ;</strong></h5>\n<blockquote><p>Tasarımlarınızı gerçek zamanlı olarak modellerinizin içerisinde gezin<br />\nBirden çok kamera açısından görüntü üretin hızlı bir şekilde çıktı alın<br />\n360 derece panorama görüntüleri oluşturun<br />\nAnimasyonları gerçek zamanlı olarak işleyin, yani kısa sürede animasyon oluşturun.</p></blockquote>\n<p><iframe loading=\"lazy\" src=\"https://www.youtube.com/embed/jhuAwE36ce8\" width=\"560\" height=\"315\" frameborder=\"0\" allowfullscreen=\"allowfullscreen\"></iframe></p>\n<h2><strong>Sketchup Vray  5 Yenilikleri</strong></h2>\n<p>En önemli yenilik bana göre <strong>Vray Vision</strong> özelliğinin gelmesi, tabi ki tek yenilik bu değil daha hızlı ve kaliteli kaplama oluşturma gibi özellikler sunmaktadır.</p>\n<p>Ayrıca V-Ray ve SketchUp birbirini tamamlayan mükemmel bir takımdır.</p>\n<p>Sketchup içerisinde <a href=\"/enscape-ile-gorsellestirme.html\" target=\"_blank\" rel=\"noopener noreferrer\">Enscape Render</a> ile beraber diğer en önemli uyuşan render motoru <strong>Sketchup Vray</strong> render motorudur.</p>\n<p><a href=\"http://www.sketchupturkiye.com/\" target=\"_blank\" rel=\"noopener\"><strong>SketchUp</strong></a>, mimari ve tasarım için dünyanın en yaygın kullanılan 3B modelleme yazılımıdır.<br />\nAynı zamanda V-Ray, <a href=\"/mimari-gorsellestirme-icin-en-kolay-render-motorlari.html\" target=\"_blank\" rel=\"noopener noreferrer\"><strong>mimari görselleştirme</strong></a> için dünyanın 1 numaralı işleme yazılımıdır.<br />\nİkisi birlikte, tasarımlarınızı bir sonraki seviyeye taşımak için mükemmel bir kombinasyondur.</p>\n<h3 class=\"article-title\"><strong>GELİŞTİRİLMİŞ MALZEME KİTAPLIĞI</strong></h3>\n<div class=\"article-short-desc\">\n<p>Güncellenen malzeme kitaplığı, metaller, cam, ahşap ve daha fazlası dahil olmak üzere 500&#8217;den fazla render hazır, yüksek çözünürlüklü doku ve malzemeyi uzaktan indirmenize olanak tanır. Bizimde kendi sitemiz olan <a href=\"https://texturefun.com/\" target=\"_blank\" rel=\"noopener noreferrer\"><strong>Free Texture</strong></a> sitemizden 1000+ den fazla kaplamayı indirip kullanabilirsiniz.</p>\n<h3 class=\"article-title\"><strong>GELİŞTİRİLMİŞ GÜNEŞ VE GÖKYÜZÜ MODELİ</strong></h3>\n<div class=\"article-short-desc\">\n<p>Sahnenizi günün diğer saatlerinde modelin üzerine düşen ıışıkta işleyebilirsiniz. Geliştirilmiş Güneş ve Gökyüzü modeli, güneş ufkun altına düşse bile daha iyi görünen gün doğumu ve gün batımı ile daha doğru ışık açıları yakalayarak 3d görselleştirme işlerinizde en iyi anı yakalarsınız.</p>\n<h3 class=\"article-title\"><strong>GERÇEKÇİLİK İÇİN RASTGELELİK EKLEYİN</strong></h3>\n<div class=\"article-short-desc\">\n<div>\n<p>Daha gerçekçi malzemeler oluşturmak için dokuları ve renkleri rastgele hale getiren yeni araçlar eklendi.<br />\n<strong>VRayUVWRandomizer</strong>, doku koordinatlarını rastgele seçmenize olanak tanır ve tekrar eden dokuları otomatik olarak düzelten Stokastik Döşeme içerir.<br />\nBu sayede kaplamaları doğal ortamda olduğu gibi karışık şekillerde dağıtabilirsiniz.</p>\n<h3 class=\"article-title\"><strong>Vray Kir ve Ayrışma ;</strong></h3>\n<div class=\"article-short-desc\">\n<div><strong>SketchUp</strong> modellerinize, geliştirilmiş <strong>V-Ray Dirt</strong> dokusu ile yıpranmış bir görünüm kazandırın.<br />\nKöşelerde veya tüm yüzeylerde her yere kir ve iz ekleyerek , görselleştirmede en üst kaliteye ulaşabilirsiniz.</div>\n</div>\n<p>&nbsp;</p>\n</div>\n</div>\n<p><strong>Sketchup Vray 5 <span style=\"font-size: 16px;\">V-RAY ÇEKİRDEĞİ </span>İçin daha fazlası ; </strong></p>\n<div class=\"section-title-wrapper spacing-bottom light-bg\">\n<div class=\"container\">\n<p>Daha da hızlı ve daha kararlı bir işleme deneyimi için optimize edilmiş V-Ray çekirdeği ve geliştirilmiş V-Ray GPU.</p>\n</div>\n<div class=\"thumbs-with-text-wrapper new-tumbs-with-text cf spacing-bottom light-bg\">\n<div class=\"thumbs-with-text articles-preview-wrapper container \">\n<article class=\"article-preview previews-4\">\n<div class=\"article-image\">\n<div class=\"image-container\"></div>\n</div>\n<h4 class=\"article-title\"><strong>Yeni Yazılım Mimarisi ;</strong></h4>\n<div class=\"article-short-desc\">\n<div>\n<p>Yeni yeniden düzenlenen V-Ray arka ucu sayesinde çok daha hızlı sahne yükleme ve sahne dışa aktarma.</p>\n</div>\n</div>\n</article>\n<article class=\"article-preview previews-4\">\n<div class=\"article-image\">\n<div class=\"image-container\"></div>\n</div>\n<h4 class=\"article-title\"><strong>Yeni Api araçları ; </strong></h4>\n<div class=\"article-short-desc\">\n<div>\n<p>SketchUp için V-Ray ile araçlar oluşturmak ve bağlamak isteyen geliştiriciler için, bunu olabildiğince kolaylaştırmak için tamamen belgelenmiş yeni bir API ekledik.</p>\n</div>\n</div>\n</article>\n</div>\n</div>\n</div>\n<p>&nbsp;</p>\n</div>\n</div>\n",
+  "publishedAt": "2020-11-11T10:26:47",
+  "modifiedAt": "2023-07-04T07:33:37",
+  "status": "publish",
+  "featuredImage": {
+    "legacyId": 4421,
+    "legacyUrl": "https://www.ufuksen.com/wp-content/uploads/2020/11/sketchup-vray-5.jpg",
+    "localPath": "/media/2020/11/sketchup-vray-5.jpg",
+    "alt": "sketchup vray 5",
+    "width": 890,
+    "height": 509,
+    "mimeType": "image/jpeg",
+    "error": null
+  },
+  "inlineMedia": [
+    {
+      "legacyUrl": "https://www.ufuksen.com/wp-content/uploads/2020/11/sketchup-vray-5.jpg",
+      "localPath": "/media/2020/11/sketchup-vray-5.jpg",
+      "error": null
+    }
+  ],
+  "embeds": [
+    {
+      "provider": "youtube",
+      "externalId": "jhuAwE36ce8",
+      "originalSrc": "https://www.youtube.com/embed/jhuAwE36ce8",
+      "title": null
+    }
+  ],
+  "seo": {
+    "title": null,
+    "description": "Render motorları geliştikçe karşımıza yeni özellikler ile çıkmaya devam ediyorlar. Her ne kadar yeni render motorları çıksa da , Chaos firması Sketchup Vray 5…",
+    "focusKeyword": "Sketchup Vray 5",
+    "canonicalUrl": null,
+    "ogImage": null
+  },
+  "readingMinutes": 2,
+  "migrationChecksum": "30a47784484a517d277b4fcd6b9da09bb53586dc5e1be7ba9eb313d133b2a018",
+  "author": {
+    "legacyId": 1,
+    "name": "UFUK ŞEN",
+    "slug": "ufuk",
+    "isGuest": false
+  },
+  "categories": [
+    {
+      "legacyId": 538,
+      "name": "Render Motorları",
+      "slug": "render-motorlari"
+    },
+    {
+      "legacyId": 541,
+      "name": "Vray Render",
+      "slug": "vray"
+    }
+  ],
+  "tags": []
+}

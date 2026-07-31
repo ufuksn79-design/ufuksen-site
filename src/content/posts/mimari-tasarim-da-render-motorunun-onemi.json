@@ -1,0 +1,54 @@
+{
+  "legacyId": 4827,
+  "slug": "mimari-tasarim-da-render-motorunun-onemi",
+  "legacyUrl": "/mimari-tasarim-da-render-motorunun-onemi.html",
+  "url": "/mimari-tasarim-da-render-motorunun-onemi.html",
+  "title": "Mimari Tasarım da Render Motorunun Önemi",
+  "excerpt": "Mimari Tasarımda ve Mimari görselleştirmede Render Motorunun Önemini anlattığımız bu video serimizde , sizlere en düşük render motorundan en yüksek render motoruna kadar, hangi kartların hangi sürede renderı bitirdiğini gösterdik. Tasarım ve Görselleştirmede bizim için zaman en önemli unsurlardan bir tanesidir. Mimari Tasarım Zamanı daha iyi kullanarak, tasarımlarımıza daha fazla zamana ayırabiliriz.Bu zamanla beraber hem …",
+  "contentHtml": "<p><a title=\"Mimari Tasarım\" href=\"https://mimari3d.com/\" target=\"_blank\" rel=\"noopener\"><strong>Mimari Tasarım</strong></a>da ve Mimari görselleştirmede Render Motorunun Önemini anlattığımız bu video serimizde , sizlere en düşük render motorundan en yüksek render motoruna kadar, hangi kartların hangi sürede renderı bitirdiğini gösterdik. Tasarım ve Görselleştirmede bizim için zaman en önemli unsurlardan bir tanesidir.</p>\n<h2>Mimari Tasarım</h2>\n<p>Zamanı daha iyi kullanarak, tasarımlarımıza daha fazla zamana ayırabiliriz.Bu zamanla beraber hem kendimize hem de geri kalan işlerimize daha fazla zaman ayırabilirsiniz.</p>\n<p><strong><a href=\"/enscape-render-dis-mekan-egitimi.html\" target=\"_blank\" rel=\"noopener\">Enscape render</a></strong> motorunda 3 Farklı Ekran Kartı Testi ile yaptığımız denemelerde GTX 770 &#8211; GTX 1660Ti ve RTX 3070 ekran kartlarını kullandık. Bu sayede hangi render motorunun ne kadar kısa sonuç aldığın görebilirsiniz.</p>\n<p><a title=\"Mimari Render\" href=\"https://www.mimari3d.com/\" target=\"_blank\" rel=\"noopener\"><strong>Mimari Render</strong></a> kısmında render motorunun önenimi aşağıdaki videoda izleyebilirsiniz.</p>\n<p><iframe loading=\"lazy\" title=\"YouTube video player\" src=\"https://www.youtube.com/embed/J9qBJnQk2dg\" width=\"560\" height=\"315\" frameborder=\"0\" allowfullscreen=\"allowfullscreen\"></iframe></p>\n",
+  "publishedAt": "2021-10-09T11:14:44",
+  "modifiedAt": "2023-07-26T10:34:53",
+  "status": "publish",
+  "featuredImage": {
+    "legacyId": 4829,
+    "legacyUrl": "https://www.ufuksen.com/wp-content/uploads/2021/10/mimaritasarim.jpg",
+    "localPath": "/media/2021/10/mimaritasarim.jpg",
+    "alt": "mimari tasarim",
+    "width": 1920,
+    "height": 1080,
+    "mimeType": "image/jpeg",
+    "error": null
+  },
+  "inlineMedia": [],
+  "embeds": [
+    {
+      "provider": "youtube",
+      "externalId": "J9qBJnQk2dg",
+      "originalSrc": "https://www.youtube.com/embed/J9qBJnQk2dg",
+      "title": null
+    }
+  ],
+  "seo": {
+    "title": null,
+    "description": "Mimari Tasarımda ve Mimari görselleştirmede Render Motorunun Önemini anlattığımız bu video serimizde , sizlere en düşük render motorundan en yüksek render…",
+    "focusKeyword": "Mimari Tasarım",
+    "canonicalUrl": null,
+    "ogImage": null
+  },
+  "readingMinutes": 1,
+  "migrationChecksum": "4b6ed5ad632877575a2fd1e623e08dc279c2ceba70b13e85449971ec8938c6e2",
+  "author": {
+    "legacyId": 1,
+    "name": "UFUK ŞEN",
+    "slug": "ufuk",
+    "isGuest": false
+  },
+  "categories": [
+    {
+      "legacyId": 518,
+      "name": "3D Görselleştirme",
+      "slug": "3d-gorsellestirme"
+    }
+  ],
+  "tags": []
+}

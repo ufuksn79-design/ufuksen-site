@@ -1,0 +1,53 @@
+{
+  "legacyId": 1620,
+  "slug": "3d-plan-render",
+  "legacyUrl": "/3d-plan-render.html",
+  "url": "/3d-plan-render.html",
+  "title": "3D plan render yapılması gerekenler",
+  "excerpt": "3d plan render konusunda kullanıcıların takıldıkları bir kaç önemli noktaya bu kısımda değineceğim. 3d plan render alırken özellikle modellerin poligonlarına sketchup programında dikkat etmek önemlidir. Poligonlara neden dikkat ederiz derseniz bu kısımda 3d programlarda stabil çalışmanın önemi hakkında bilgiler verdim. Çünkü her oda için kaliteli render almaya kalktığınızda kullandığınız modellerin kalitesinin farklı olması bizim işimizi …",
+  "contentHtml": "<p style=\"text-align: justify;\"><strong><a href=\"/3d-plan-render.html\" rel=\"attachment wp-att-2188\"><img loading=\"lazy\" decoding=\"async\" class=\"alignleft size-medium wp-image-2188\" src=\"/media/2017/12/3d-plan-render-300x225.jpg\" alt=\"3d-plan-render\" width=\"300\" height=\"225\" srcset=\"/media/2017/12/3d-plan-render-300x225.jpg 300w, /media/2017/12/3d-plan-render-80x60.jpg 80w, /media/2017/12/3d-plan-render-265x198.jpg 265w, /media/2017/12/3d-plan-render.jpg 400w\" sizes=\"auto, (max-width: 300px) 100vw, 300px\" /></a>3d plan render</strong> konusunda kullanıcıların takıldıkları bir kaç önemli noktaya bu kısımda değineceğim. 3d plan render alırken özellikle modellerin poligonlarına sketchup programında dikkat etmek önemlidir.</p>\n<p>Poligonlara neden dikkat ederiz derseniz <a href=\"/sketchup-dosya-verimliligi.html\" target=\"_blank\" rel=\"noopener noreferrer\">bu kısımda</a> 3d programlarda stabil çalışmanın önemi hakkında bilgiler verdim.</p>\n<p style=\"text-align: justify;\">Çünkü her oda için kaliteli render almaya kalktığınızda kullandığınız modellerin kalitesinin farklı olması bizim işimizi kolaylaştıracktır.</p>\n<p>Planlı çalışmak için 3D Plan renderı konusunda da, alacağınız renderda kullancağınız modellerin kalitesinde fark olmalıdır.</p>\n<h2 style=\"text-align: justify;\"><strong>3D plan render Düzeni</strong></h2>\n<p style=\"text-align: justify;\">Bir model de eğer tüm katlar render alacağınız zaman, tüm odaları farklı Sketchup dosyası olarak bölerek çalışmak sizin dosya üzerinde verimli çalışmanızı sağlar.</p>\n<p>Bunu yapmamızın amacı  dosya boyutu azaltmak ve render süresini kısaltmaktır.</p>\n<p>Tabi bizim amacımız 3d plan render almak olduğu için, baştan düzenimizi bu şekilde sağlamak bizim faydamıza olacaktır.</p>\n<p>Çünkü her kat içerisinde bir salon ve 2 oda olduğunu düşünürsek, banyo ve antre objeleri ile beraber yüksek kaliteli modellerle beraber tekrar kat planı olarak render almak bize pahalıya patlayacaktır.</p>\n<hr />\n<p style=\"text-align: justify;\">3d plan render konusunda bizimle çalışmak için <span style=\"color: #0000ff;\"><strong>vraydvd@gmail.com</strong></span> adresine mail atmanız yeterlidir.</p>\n<hr />\n<p><span style=\"color: #000080;\"><strong>Peki bu durumda ne yapmamız gerekiyor ?</strong></span></p>\n<p>İlk seçenek kat planını çizdikten sonra, eğer bilgisayarınızı gücüne ve kendi sabrınıza güveniyorsanız , tüm odaları render aldıktan sonra kat planı renderına geçebilirsiniz.</p>\n<p style=\"text-align: justify;\">ilk seçenek esnasında dosya boyutunun çok artması , dosyanın kasılması ve render süresinin uzun olması olası durumlardır.</p>\n<p><span style=\"color: #0000ff;\"><strong>Konuyla ilgili aşağıdaki videoyu izleyebilirsiniz ;</strong></span></p>\n<p>https://www.youtube.com/watch?v=H6kcBVrfGyM</p>\n<p>İkinci seçenek ise uzun ama daha hızlı ve stabil bir seçenek, tüm odaları ayrı ayrı modelleyip render aldıktan sonra, kat planını tekrar çizip düşük poligonlu modellerle yerleşim yapıltıkdan sonra render almak.</p>\n<p>Bu seçenekte ise, her dosya farklı olacağı için daha hızlı render, daha hızlı dosya kontrolü sağlanacaktır.</p>\n",
+  "publishedAt": "2017-12-22T12:17:56",
+  "modifiedAt": "2022-12-20T14:57:03",
+  "status": "publish",
+  "featuredImage": {
+    "legacyId": 2188,
+    "legacyUrl": "https://www.ufuksen.com/wp-content/uploads/2017/12/3d-plan-render.jpg",
+    "localPath": "/media/2017/12/3d-plan-render.jpg",
+    "alt": "3d-plan-render",
+    "width": 400,
+    "height": 300,
+    "mimeType": "image/jpeg",
+    "error": null
+  },
+  "inlineMedia": [
+    {
+      "legacyUrl": "http://www.ufuksen.com/wp-content/uploads/2017/12/3d-plan-render-300x225.jpg",
+      "localPath": "/media/2017/12/3d-plan-render-300x225.jpg",
+      "error": null
+    }
+  ],
+  "embeds": [],
+  "seo": {
+    "title": null,
+    "description": "3D plan render konusunda yapılması gerekenlerin anlatıldığı bir makaledir.Özellike 3D plan render alırken bazı hususlara 3d programlarda dikkat etmek gerekmektedir.",
+    "focusKeyword": "3D plan render",
+    "canonicalUrl": null,
+    "ogImage": null
+  },
+  "readingMinutes": 1,
+  "migrationChecksum": "e91920722b04776aafe6f6fe0d3ea7e029fa208020852200afda34f968a19eaf",
+  "author": {
+    "legacyId": 1,
+    "name": "UFUK ŞEN",
+    "slug": "ufuk",
+    "isGuest": false
+  },
+  "categories": [
+    {
+      "legacyId": 518,
+      "name": "3D Görselleştirme",
+      "slug": "3d-gorsellestirme"
+    }
+  ],
+  "tags": []
+}

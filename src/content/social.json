@@ -1,0 +1,39 @@
+{
+  "aciklama": "Sosyal medya bağlantıları. Tek kaynak — üst şerit, profil kartı ve footer buradan besleniyor.",
+  "kaynak": {
+    "youtube": "Arşivdeki videoların oEmbed sorgusuyla bulundu (40 örneklemin 32'si bu kanal).",
+    "facebook": "Eski sitenin ana sayfasından ve iletişim sayfasından okundu.",
+    "twitter": "Eski sitenin ana sayfasından okundu.",
+    "linkedin": "Kullanıcı tarafından verildi (2026-07-31). Eski sitede profil bağlantısı yoktu, yalnızca paylaşım düğmesi vardı."
+  },
+  "baglantilar": [
+    {
+      "id": "youtube",
+      "ad": "YouTube",
+      "url": "https://www.youtube.com/@sketchupturkiye",
+      "etiket": "YouTube kanalı: SketchUp Türkiye",
+      "aktif": true
+    },
+    {
+      "id": "facebook",
+      "ad": "Facebook",
+      "url": "https://www.facebook.com/SketchupTurkiye",
+      "etiket": "Facebook sayfası",
+      "aktif": true
+    },
+    {
+      "id": "linkedin",
+      "ad": "LinkedIn",
+      "url": "https://www.linkedin.com/in/ufuk-sen/",
+      "etiket": "LinkedIn profili",
+      "aktif": true
+    },
+    {
+      "id": "twitter",
+      "ad": "X",
+      "url": "https://twitter.com/u_sen",
+      "etiket": "X (Twitter) profili",
+      "aktif": true
+    }
+  ]
+}

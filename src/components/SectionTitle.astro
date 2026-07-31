@@ -1,0 +1,69 @@
+---
+/**
+ * Bölüm başlığı — ilk harf sarı bir dairenin üzerinde durur (ADR-016).
+ *
+ * İlk harf ayrı bir `<span>` içine alınır ama başlık metni bütün olarak
+ * okunur: daire `aria-hidden` bir süsleme katmanıdır, ekran okuyucu başlığı
+ * bölünmemiş şekilde görür.
+ */
+export interface Props {
+  title: string;
+  /** Başlık altındaki açıklama. */
+  note?: string | null;
+  /** `h2` varsayılan; yazı sayfalarında `h1` kullanılabilir. */
+  as?: "h1" | "h2";
+  id?: string;
+}
+
+const { title, note = null, as = "h2", id } = Astro.props;
+const first = title.slice(0, 1);
+const rest = title.slice(1);
+const Tag = as;
+---
+
+<header class="sec" id={id}>
+  <Tag class="sec__title">
+    <span class="sec__dot" aria-hidden="true"></span><span class="sec__first">{first}</span>{rest}
+  </Tag>
+  {note && <p class="sec__note">{note}</p>}
+</header>
+
+<style>
+  .sec {
+    display: grid;
+    gap: var(--s-2);
+    margin-bottom: var(--s-8);
+  }
+
+  .sec__title {
+    position: relative;
+    display: inline-block;
+    font-size: var(--t-h3);
+    padding-left: 0;
+    margin: 0;
+  }
+
+  /* Sarı daire ilk harfin arkasına yerleşir. */
+  .sec__dot {
+    position: absolute;
+    left: -0.42em;
+    top: 50%;
+    width: 1.55em;
+    height: 1.55em;
+    transform: translateY(-50%);
+    background: var(--c-accent);
+    border-radius: 50%;
+    opacity: 0.92;
+  }
+
+  .sec__first {
+    position: relative;
+    color: var(--c-on-accent);
+  }
+
+  .sec__note {
+    color: var(--c-text-muted);
+    font-size: var(--t-small);
+    max-width: 60ch;
+  }
+</style>

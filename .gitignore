@@ -1,0 +1,26 @@
+node_modules/
+dist/
+.astro/
+.next/
+.env
+.env.local
+*.log
+__pycache__/
+*.pyc
+
+# Ham WordPress snapshot'ları büyüktür; yeniden üretilebilir.
+# Ancak migration doğrulaması için arşivlenmeleri gerekiyorsa bu satırı kaldır.
+docs/inventory/raw/
+
+# Kimlik bilgileri — asla commit edilmez
+.env
+.env.local
+backups/
+
+# Dagitim arsivi (yeniden uretilebilir)
+site-yukle.zip
+
+dist-staging/
+site-yukle-staging.zip
+dist-staging-light/
+site-yukle-staging-light.zip

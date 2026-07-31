@@ -1,0 +1,87 @@
+---
+import Base from "../layouts/Base.astro";
+import SectionTitle from "../components/SectionTitle.astro";
+import CourseCard, { type Course } from "../components/CourseCard.astro";
+import courseData from "../content/courses.json";
+
+const courses = courseData.kurslar as Course[];
+
+const totalHours = courses.reduce((sum, course) => sum + course.saat, 0);
+const totalLectures = courses.reduce((sum, course) => sum + course.dersSayisi, 0);
+const totalReviews = courses.reduce((sum, course) => sum + course.yorumSayisi, 0);
+const avgRating =
+  courses.reduce((sum, course) => sum + course.puan * course.yorumSayisi, 0) / totalReviews;
+
+const site = Astro.site ?? new URL("https://www.ufuksen.com");
+---
+
+<Base
+  title={`Eğitim Setleri — ${courses.length} Udemy kursu | Ufuk Şen`}
+  description={`SketchUp, V-Ray, D5 Render, Twinmotion ve Enscape üzerine ${courses.length} eğitim seti. Toplam ${totalLectures} ders.`}
+  path="/egitimler"
+  jsonLd={{
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    name: "Ufuk Şen eğitim setleri",
+    numberOfItems: courses.length,
+    itemListElement: courses.map((course, index) => ({
+      "@type": "ListItem",
+      position: index + 1,
+      item: {
+        "@type": "Course",
+        name: course.baslik,
+        url: course.url,
+        provider: { "@type": "Organization", name: "Udemy" },
+        aggregateRating: {
+          "@type": "AggregateRating",
+          ratingValue: course.puan,
+          reviewCount: course.yorumSayisi,
+          bestRating: 5,
+        },
+      },
+    })),
+  }}
+>
+  <SectionTitle
+    title="Eğitim Setleri"
+    as="h1"
+    note="Udemy üzerinde yayında olan eğitim setleri. Veriler eğitmen profilinden okundu."
+  />
+
+  <div class="counters" style="margin-bottom:var(--s-12)">
+    <div class="counter"><b data-count={courses.length}>{courses.length}</b><span>Eğitim seti</span></div>
+    <div class="counter"><b data-count={totalLectures}>{totalLectures}</b><span>Toplam ders</span></div>
+    <div class="counter"><b>{totalHours.toLocaleString("tr-TR")}</b><span>Saat içerik</span></div>
+    <div class="counter"><b>{avgRating.toFixed(1).replace(".", ",")}</b><span>Ortalama puan</span></div>
+  </div>
+
+  <div class="courses">
+    {courses.map((course) => <CourseCard course={course} />)}
+  </div>
+
+  <p class="note">
+    Fiyatlar Udemy'de kampanyaya göre değiştiği için burada gösterilmiyor.
+    Güncel fiyatı kurs sayfasında görebilirsiniz.
+  </p>
+</Base>
+
+<style>
+  .courses {
+    display: grid;
+    gap: var(--s-6);
+    grid-template-columns: 1fr;
+  }
+  @media (min-width: 640px) {
+    .courses { grid-template-columns: repeat(2, 1fr); }
+  }
+  @media (min-width: 1080px) {
+    .courses { grid-template-columns: repeat(3, 1fr); }
+  }
+  .note {
+    margin-top: var(--s-8);
+    padding-top: var(--s-6);
+    border-top: 1px solid var(--c-line);
+    color: var(--c-text-faint);
+    font-size: var(--t-small);
+  }
+</style>

@@ -1,0 +1,59 @@
+{
+  "legacyId": 5028,
+  "slug": "sketchup-2022-cikti-yeni-ozellikler",
+  "legacyUrl": "/sketchup-2022-cikti-yeni-ozellikler.html",
+  "url": "/sketchup-2022-cikti-yeni-ozellikler.html",
+  "title": "Sketchup 2022 Çıktı Yeni Özellikler",
+  "excerpt": "SketchUp‘ı yeni öğreniyor veya daha önce kullanıyor olsanız da, SketchUp 2022 sürümünde yeni ve geliştirilmiş modelleme araçları, ek arama işlevleri ve LayOut’ta zaman kazandıran geliştirmeler dahil olmak üzere herkes için küçük bir şeyler var. Sadece birkaç değişiklik ama güzel olduğunu düşünüyorum. Sketchup 2022 Sketchup 2022 ile Bu güncellemeler, iş akışlarınızı hızlandırmaya ve basitleştirmeye yardımcı olacak, …",
+  "contentHtml": "<p><a href=\"https://sketchupturkiye.com/\" target=\"_blank\" rel=\"noopener\"><strong>SketchUp</strong></a>&#8216;ı yeni öğreniyor veya daha önce kullanıyor olsanız da, <a href=\"/sketchup-2022-cikti-yeni-ozellikler.html\" target=\"_blank\" rel=\"noopener\"><strong>SketchUp 2022</strong></a> sürümünde yeni ve geliştirilmiş modelleme araçları, ek arama işlevleri ve</p>\n<p>LayOut&#8217;ta zaman kazandıran geliştirmeler dahil olmak üzere herkes için küçük bir şeyler var. Sadece birkaç değişiklik ama güzel olduğunu düşünüyorum.</p>\n<h2><strong>Sketchup 2022</strong></h2>\n<p><strong>Sketchup 2022</strong> ile Bu güncellemeler, iş akışlarınızı hızlandırmaya ve basitleştirmeye yardımcı olacak, böylece yaratıcı vizyonunuzu hızla hayata geçirerek önemli şeylere daha fazla odaklı kalabilirsiniz.</p>\n<p><iframe loading=\"lazy\" title=\"YouTube video player\" src=\"https://www.youtube.com/embed/4Xw013okktc\" width=\"560\" height=\"315\" frameborder=\"0\" allowfullscreen=\"allowfullscreen\"></iframe></p>\n",
+  "publishedAt": "2022-01-26T19:07:15",
+  "modifiedAt": "2023-07-04T06:26:47",
+  "status": "publish",
+  "featuredImage": {
+    "legacyId": 5030,
+    "legacyUrl": "https://www.ufuksen.com/wp-content/uploads/2022/01/sketchup2022.jpg",
+    "localPath": "/media/2022/01/sketchup2022.jpg",
+    "alt": "sketchup 2022",
+    "width": 1200,
+    "height": 675,
+    "mimeType": "image/jpeg",
+    "error": null
+  },
+  "inlineMedia": [],
+  "embeds": [
+    {
+      "provider": "youtube",
+      "externalId": "4Xw013okktc",
+      "originalSrc": "https://www.youtube.com/embed/4Xw013okktc",
+      "title": null
+    }
+  ],
+  "seo": {
+    "title": null,
+    "description": "SketchUp‘ı yeni öğreniyor veya daha önce kullanıyor olsanız da, SketchUp 2022 sürümünde yeni ve geliştirilmiş modelleme araçları, ek arama işlevleri ve…",
+    "focusKeyword": "Sketchup 2022",
+    "canonicalUrl": null,
+    "ogImage": null
+  },
+  "readingMinutes": 1,
+  "migrationChecksum": "84e9874acd59176fa119bc70ab844c2536635b152b49b6cfa4bee820cd961326",
+  "author": {
+    "legacyId": 1,
+    "name": "UFUK ŞEN",
+    "slug": "ufuk",
+    "isGuest": false
+  },
+  "categories": [
+    {
+      "legacyId": 1169,
+      "name": "3D Programlar",
+      "slug": "3d-programlar"
+    },
+    {
+      "legacyId": 1172,
+      "name": "Sketchup",
+      "slug": "sketchup"
+    }
+  ],
+  "tags": []
+}

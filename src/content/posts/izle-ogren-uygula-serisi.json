@@ -1,0 +1,59 @@
+{
+  "legacyId": 4821,
+  "slug": "izle-ogren-uygula-serisi",
+  "legacyUrl": "/izle-ogren-uygula-serisi.html",
+  "url": "/izle-ogren-uygula-serisi.html",
+  "title": "İzle Öğren Uygula Serisi",
+  "excerpt": "İzle öğren uygula serisi ile sizlere Sketchup programında en basit olarak villa modelleme serisini göstereceğiz. Temel modelleme tekniklerinden başlayarak ilerleyen bu süreçte, iyi bir şekilde villa modelleme yapabileceksiniz. Cephe kısmında yapacağımız bazı önemli nüanslar ile cepheyi render için hazırlayarak en son aşamaya getireceğiz inşallah. Render kısmında bir çok özelliği bu eğitim seti ile öğrenebeilirsiniz. İzle …",
+  "contentHtml": "<p><a href=\"https://www.youtube.com/watch?v=D0kwsK518zY&amp;t=18s\" target=\"_blank\" rel=\"noopener\"><strong>İzle öğren uygula</strong></a> serisi ile sizlere Sketchup programında en basit olarak <a title=\"Villa Modelleme\" href=\"https://mimari3d.com/\" target=\"_blank\" rel=\"noopener\"><strong>villa modelleme</strong></a> serisini göstereceğiz. Temel modelleme tekniklerinden başlayarak ilerleyen bu süreçte, iyi bir şekilde <strong>villa modelleme</strong> yapabileceksiniz.</p>\n<p>Cephe kısmında yapacağımız bazı önemli nüanslar ile cepheyi render için hazırlayarak en son aşamaya getireceğiz inşallah. Render kısmında bir çok özelliği bu eğitim seti ile öğrenebeilirsiniz.</p>\n<h2>İzle Öğren Uygula Serisi</h2>\n<p>Aşağıda Youtube adresimizde yoğun bir ilgi ile izlenene , izle öğren uygula serisini izleyebilirsiniz. Bu seriyi izledikten sonra <strong>Sketchup Türkiye facebook</strong> adresimizde beni (ufuk şen) etiketleyerek çalışmalarınız için kritik isteyebilirsiniz.</p>\n<p>Bu seri ile <a href=\"https://www.3degitimsetleri.com/\" target=\"_blank\" rel=\"noopener\"><strong>enscape render</strong></a> ile görselleştirmenin nasıl yapıldığını hemde 3d modellemede bir çok tekniği öğreneceksiniz.</p>\n<p>Çalışmalarınıza yapacağım yorum ile sizlerin daha iyi işler çıkarması için yorumlarda bulunacağım.En iyi sonuç alan arkadaşımızın çalışması Facebook grubumuzda 1 hafta kapak görseli olarak kalacaktır.</p>\n<p><iframe loading=\"lazy\" title=\"İZLE ÖĞREN UYGULA : En Basit Modelleme serisi 01\" width=\"500\" height=\"281\" src=\"https://www.youtube.com/embed/D0kwsK518zY?list=PLbcNJVR3dmPqoXCp_PUazOHa5bOVPlxvh\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" referrerpolicy=\"strict-origin-when-cross-origin\" allowfullscreen></iframe></p>\n",
+  "publishedAt": "2021-10-04T23:24:16",
+  "modifiedAt": "2023-07-04T07:05:33",
+  "status": "publish",
+  "featuredImage": {
+    "legacyId": 4823,
+    "legacyUrl": "https://www.ufuksen.com/wp-content/uploads/2021/10/izle-ogren-uygula.jpg",
+    "localPath": "/media/2021/10/izle-ogren-uygula.jpg",
+    "alt": "izle ögren uygula",
+    "width": 1280,
+    "height": 720,
+    "mimeType": "image/jpeg",
+    "error": null
+  },
+  "inlineMedia": [],
+  "embeds": [
+    {
+      "provider": "youtube",
+      "externalId": "D0kwsK518zY",
+      "originalSrc": "https://www.youtube.com/embed/D0kwsK518zY?list=PLbcNJVR3dmPqoXCp_PUazOHa5bOVPlxvh",
+      "title": null
+    }
+  ],
+  "seo": {
+    "title": null,
+    "description": "İzle öğren uygula serisi ile sizlere Sketchup programında en basit olarak villa modelleme serisini göstereceğiz. Temel modelleme tekniklerinden başlayarak…",
+    "focusKeyword": "İzle Öğren Uygula",
+    "canonicalUrl": null,
+    "ogImage": null
+  },
+  "readingMinutes": 1,
+  "migrationChecksum": "269e43a22b22748f2747f6539d7d10274f8d89cb17c3f6b23444ff443e10e4ab",
+  "author": {
+    "legacyId": 1,
+    "name": "UFUK ŞEN",
+    "slug": "ufuk",
+    "isGuest": false
+  },
+  "categories": [
+    {
+      "legacyId": 1173,
+      "name": "Enscape Render",
+      "slug": "enscape-render"
+    },
+    {
+      "legacyId": 538,
+      "name": "Render Motorları",
+      "slug": "render-motorlari"
+    }
+  ],
+  "tags": []
+}

@@ -1,0 +1,266 @@
+{
+  "categories": [
+    {
+      "legacyId": 507,
+      "name": "3D Animasyon",
+      "slug": "3d-animasyon",
+      "description": "3D Animasyon kısmında mimari görselleştirme kısmında yapacağınız animasyon bilgileri konusunda bilgiler alacaksınız",
+      "postCount": 1,
+      "legacyUrl": "/kategori/3d-animasyon"
+    },
+    {
+      "legacyId": 518,
+      "name": "3D Görselleştirme",
+      "slug": "3d-gorsellestirme",
+      "description": "3d görselleştirme kısmında sizlere görselleştirme alanında detaylı bilgiler verdiğimiz kısımdır.Bu bölümde 3d görselleştirme uzmanının neler yapması ve 3d mimari projelerde öğrenmesi gereken detaylardan bahsediyoruz.3d görselleştirme fiyatları gibi mimari görselleştirmenin önemli kritik noktalarını bu kısımdan bulabilirsiniz.\r\n3d görselleştirme eğitimi ile tüm detaylı bilgileri bu kısımdan alabilirsiniz.",
+      "postCount": 110,
+      "legacyUrl": "/kategori/3d-gorsellestirme"
+    },
+    {
+      "legacyId": 1169,
+      "name": "3D Programlar",
+      "slug": "3d-programlar",
+      "description": "3D Programlar hakkında bilgilerin toplandığı bölümdür, 3dsmax, blender, sketchup gibi popüler programların bilgilerinin toplandığı kategoridir. Bu kısımda bir çok popüler 3d programlar hakkında bilgiler okuyup, videolar izleyeceksiniz.",
+      "postCount": 68,
+      "legacyUrl": "/kategori/3d-programlar"
+    },
+    {
+      "legacyId": 1178,
+      "name": "3D Proje Fiyatları",
+      "slug": "3d-proje-fiyatlari",
+      "description": "3D Proje Fiyatları konusunda sektördeki soru işaretlerini gidermek için 3d projelerin fiyatlarını sizlere, ortalama olarak sunduğumuz bir bölümdür. Bu bölümde 3d proje fiyatları hakkında bilgiler bulacaksınız.",
+      "postCount": 7,
+      "legacyUrl": "/kategori/3d-gorsellestirme/3d-proje-fiyatlari"
+    },
+    {
+      "legacyId": 1170,
+      "name": "3ds Max",
+      "slug": "3ds-max-3d-programlar",
+      "description": "3ds Max 3d modelleme ve görselleştirme programı hakkında bilgilerin olduğu kısımdır. Bu kısımda 3dsmax programı hakkında bilgileri bulacaksınız.3dsmax render motorları ve popüler eklentilerin olduğu bu kısımdan tüm bilgilere ulaşabilirsiniz.",
+      "postCount": 11,
+      "legacyUrl": "/kategori/3d-programlar/3ds-max-3d-programlar"
+    },
+    {
+      "legacyId": 231,
+      "name": "Başarılar",
+      "slug": "basarilar",
+      "description": "Başarılar",
+      "postCount": 5,
+      "legacyUrl": "/kategori/basarilar"
+    },
+    {
+      "legacyId": 1171,
+      "name": "Blender",
+      "slug": "blender3d",
+      "description": "Blender Programı hakkında bilgilerin ve Blender hakkında tüm ipuçlarını ve eklentileri bulacağınız kısımdır.Blender render ve modelleme hakkında en yeni bilgileri bu kısımda bulabilirsiniz.",
+      "postCount": 1,
+      "legacyUrl": "/kategori/3d-programlar/blender3d"
+    },
+    {
+      "legacyId": 542,
+      "name": "Corona Render",
+      "slug": "corona",
+      "description": "Corona",
+      "postCount": 7,
+      "legacyUrl": "/kategori/render-motorlari/corona"
+    },
+    {
+      "legacyId": 1168,
+      "name": "D5 Render",
+      "slug": "d5-render",
+      "description": "D5 Render Motoru hakkında , video içerikleri , detaylı anlatımları ve d5 render motoru özelliklerini bulabileceğiniz bölümdür.",
+      "postCount": 14,
+      "legacyUrl": "/kategori/render-motorlari/d5-render"
+    },
+    {
+      "legacyId": 1173,
+      "name": "Enscape Render",
+      "slug": "enscape-render",
+      "description": "Enscape Render ile igili videolar ve ayrıntılar için bu kısmı sık sık ziyaret etmeyi untumayınız.Enscape Render Dersleri ve diğer konularda bu kategori içerisindeki bilgiler sizi daha ileriye götürecektir.",
+      "postCount": 13,
+      "legacyUrl": "/kategori/render-motorlari/enscape-render"
+    },
+    {
+      "legacyId": 1,
+      "name": "Genel",
+      "slug": "genel",
+      "description": null,
+      "postCount": 34,
+      "legacyUrl": "/kategori/genel"
+    },
+    {
+      "legacyId": 220,
+      "name": "Hakkımda",
+      "slug": "hakkimda",
+      "description": "Hakkımda",
+      "postCount": 1,
+      "legacyUrl": "/kategori/hakkimda"
+    },
+    {
+      "legacyId": 555,
+      "name": "Lumion",
+      "slug": "lumion-render-motorlari",
+      "description": "Lumion",
+      "postCount": 10,
+      "legacyUrl": "/kategori/render-motorlari/lumion-render-motorlari"
+    },
+    {
+      "legacyId": 786,
+      "name": "Project Lavina",
+      "slug": "project-lavina",
+      "description": "Project Lavina",
+      "postCount": 1,
+      "legacyUrl": "/kategori/render-motorlari/project-lavina"
+    },
+    {
+      "legacyId": 529,
+      "name": "Projeler",
+      "slug": "projeler",
+      "description": "Projeler",
+      "postCount": 0,
+      "legacyUrl": "/kategori/projeler"
+    },
+    {
+      "legacyId": 1142,
+      "name": "Render Analiz",
+      "slug": "3d-render-analizleri",
+      "description": "3d render analiz videomuzun yeni bölümünde sizlerin çalışmalarını yorumlayarak eksik kısımlarınızı gidermeye çalışıyoruz. Render analiz için görsellerinizi vraydvd@gmail.com adresine yollarsanız, her çarşamba yaptığımız gibi , çalışmarınızı kanalımızda yayınlayıp sizlerin eksikleri konusunda bilgi sahibi olmanızı sağlarız.\r\n\r\n3d projelerde, kendi eksikliklerinizi dışarıdan farklı bir göz ile görmek her zaman sizin gelişiminiz için büyük önem taşımaktadır. Eksik olduğunuz konular için endişe etmeyin bunlar konusunda da sizlere yol gösterici tavsiyelerde bulunuyoruz.",
+      "postCount": 8,
+      "legacyUrl": "/kategori/3d-gorsellestirme/3d-render-analizleri"
+    },
+    {
+      "legacyId": 515,
+      "name": "Render Bilgisayarları",
+      "slug": "render-bilgisayarlari",
+      "description": "Bu bölümde sizler için render için bilgisayar tavsiyeleri verdiğimiz bölümdür.\r\nRender Bilgisayarları kısmında Render için masaüstü bilgisayar ve video render için bilgisayar tavsiyelerini bu bölümden alacaksınız. Her ne kadar tavsiye etmesek de render için dizüstü bilgisayar\r\nönerlerini sizlere bu bölümde veriyoruz.",
+      "postCount": 16,
+      "legacyUrl": "/kategori/render-bilgisayarlari"
+    },
+    {
+      "legacyId": 516,
+      "name": "Render için bilgisayar Tavsiyeleri",
+      "slug": "render-icin-bilgisayar-tavsiyeleri",
+      "description": "Render için bilgisayar Tavsiyeleri kısmında sizler için, render bilgisayarı tavsiyelerinde bulunuyoruz.",
+      "postCount": 16,
+      "legacyUrl": "/kategori/render-bilgisayarlari/render-icin-bilgisayar-tavsiyeleri"
+    },
+    {
+      "legacyId": 538,
+      "name": "Render Motorları",
+      "slug": "render-motorlari",
+      "description": "Bu bölümde 3d tasarım, 3d görselleştirme ve  3d proje konularında kullanılan Render Motorları hakkında bilgiler alacağınız bölümdür. Bu bölüm sizleri çok geliştirecektir.",
+      "postCount": 109,
+      "legacyUrl": "/kategori/render-motorlari"
+    },
+    {
+      "legacyId": 1172,
+      "name": "Sketchup",
+      "slug": "sketchup",
+      "description": "Sketchup Render Motoru, Sketchup Pluginleri ve bu programın en ince ayrıntılarını bulacağınız kısımdır.Bu kısımda Sketchup programı ile her türlü bilgiyi bulabilirsiniz.",
+      "postCount": 61,
+      "legacyUrl": "/kategori/3d-programlar/sketchup"
+    },
+    {
+      "legacyId": 1167,
+      "name": "Twinmotion",
+      "slug": "twinmotion-render",
+      "description": "Twinmotion Render Motoru hakkında tüm bilgileri bulabileceğiniz bir bölümdür.Bu bölümden Twinmotion dersleri ve render motoru hakkındaki bilgileri okuyup, dersleri izleyebilirsiniz.",
+      "postCount": 18,
+      "legacyUrl": "/kategori/render-motorlari/twinmotion-render"
+    },
+    {
+      "legacyId": 1177,
+      "name": "Ücretsiz İçerikler",
+      "slug": "ucretsiz-icerikler",
+      "description": "Bu bölümde hazır sahnelerin, kaplamaların, modellerin olduğu içerikleri bulacaksınız. Sahnenizi zenginleştirmeniz için gerekli olan tüm araçlar bu bölümde.",
+      "postCount": 10,
+      "legacyUrl": "/kategori/ucretsiz-icerikler"
+    },
+    {
+      "legacyId": 1174,
+      "name": "Unreal Engine",
+      "slug": "unreal-engine",
+      "description": "Unreal Engine Motoru hakkında bilgiler ve eğitimlerin olduğu bir bölümdür.Bu bölümde unreal engine dersleri ve içeriklerini bulacaksınız. Bu bölüm ilerlemeniz ve gelişmeniz için çok önemlidir.",
+      "postCount": 7,
+      "legacyUrl": "/kategori/render-motorlari/unreal-engine"
+    },
+    {
+      "legacyId": 541,
+      "name": "Vray Render",
+      "slug": "vray",
+      "description": "Vray",
+      "postCount": 35,
+      "legacyUrl": "/kategori/render-motorlari/vray"
+    },
+    {
+      "legacyId": 1258,
+      "name": "Yapay Zeka",
+      "slug": "yapay-zeka",
+      "description": "Yapay Zeka ile ilgili gelişmeler, yapay zeka haberleri ve gelişmeleri.",
+      "postCount": 5,
+      "legacyUrl": "/kategori/yapay-zeka"
+    },
+    {
+      "legacyId": 218,
+      "name": "Yaşam",
+      "slug": "yasam",
+      "description": "Yaşam",
+      "postCount": 120,
+      "legacyUrl": "/kategori/yasam"
+    },
+    {
+      "legacyId": 1291,
+      "name": "Youtube",
+      "slug": "youtube",
+      "description": null,
+      "postCount": 1,
+      "legacyUrl": "/kategori/youtube"
+    }
+  ],
+  "tags": [
+    {
+      "legacyId": 1254,
+      "name": "Enscape Render 3.5",
+      "slug": "enscape-render-3-5",
+      "postCount": 1
+    },
+    {
+      "legacyId": 1256,
+      "name": "kış lastiği seçimi",
+      "slug": "kis-lastigi-secimi",
+      "postCount": 1
+    },
+    {
+      "legacyId": 1255,
+      "name": "Kış lastikleri",
+      "slug": "kis-lastikleri",
+      "postCount": 1
+    },
+    {
+      "legacyId": 1257,
+      "name": "lastik seçimi",
+      "slug": "lastik-secimi",
+      "postCount": 1
+    }
+  ],
+  "authors": [
+    {
+      "legacyId": 2,
+      "name": "Pınar Çakır",
+      "slug": "pcakir",
+      "isGuest": false
+    },
+    {
+      "legacyId": 3,
+      "name": "Songül Köprüdüz",
+      "slug": "pemkopru",
+      "isGuest": false
+    },
+    {
+      "legacyId": 1,
+      "name": "UFUK ŞEN",
+      "slug": "ufuk",
+      "isGuest": false
+    }
+  ]
+}

@@ -1,0 +1,428 @@
+---
+import Base from "../layouts/Base.astro";
+import Sidebar from "../components/Sidebar.astro";
+import SectionTitle from "../components/SectionTitle.astro";
+import { buildToc, prepareBody, softwareOf } from "../lib/discover";
+import {
+  getPosts,
+  getPages,
+  getVisibleCategories,
+  getRoutableCategories,
+  getAllPosts,
+  isParked,
+  categoryPath,
+  categoryPathBySlug,
+  formatDate,
+  isoDate,
+  summarize,
+  relatedPosts,
+  type Post,
+} from "../lib/content";
+
+/**
+ * Tek catch-all rota; üç içerik türünü de üretir:
+ *   - yazı      -> /{slug}.html   (ADR-007, eski şema birebir korunur)
+ *   - sayfa     -> /{slug}
+ *   - kategori  -> kaynaktaki gerçek hiyerarşik yol
+ */
+export async function getStaticPaths() {
+  const posts = await getPosts();
+  const pages = await getPages();
+  const categories = await getRoutableCategories();
+
+  /**
+   * Kaynak sistemde bir yazının slug'ı yüzde-kodlu tutuluyor. Astro rota
+   * eşleşmesinde parametreyi çözdüğü için kodlu hâl kalıpla tutmuyor.
+   */
+  const decodeSlug = (value: string) => {
+    try {
+      return decodeURIComponent(value);
+    } catch {
+      return value;
+    }
+  };
+
+  // Park edilen yazıların da sayfası üretilir (URL ölmesin) ama noindex olur.
+  const postRoutes = (await getAllPosts()).map((post) => ({
+    params: { slug: `${decodeSlug(post.data.slug)}.html` },
+    props: { kind: "post" as const, post, posts, parked: isParked(post.data.slug) },
+  }));
+
+  const pageRoutes = pages.map((page) => ({
+    params: { slug: decodeSlug(page.data.slug) },
+    props: { kind: "page" as const, page, posts },
+  }));
+
+  const categoryRoutes = categories.map((category) => ({
+    params: { slug: decodeSlug(category.legacyUrl.replace(/^\//, "")) },
+    props: {
+      kind: "category" as const,
+      category,
+      posts: posts.filter((post) => post.data.categories.some((item) => item.slug === category.slug)),
+      allPosts: posts,
+      // Görünür yazısı kalmayan kategori: URL yaşar ama indekslenmez
+      parked: category.postCount === 0,
+    },
+  }));
+
+  return [...postRoutes, ...pageRoutes, ...categoryRoutes];
+}
+
+const props = Astro.props as
+  | { kind: "post"; post: Post; posts: Post[]; parked: boolean }
+  | { kind: "page"; page: Awaited<ReturnType<typeof getPages>>[number]; posts: Post[] }
+  | {
+      kind: "category";
+      category: Awaited<ReturnType<typeof getVisibleCategories>>[number];
+      posts: Post[];
+      allPosts: Post[];
+      parked: boolean;
+    };
+
+const site = Astro.site ?? new URL("https://www.ufuksen.com");
+
+/**
+ * Meta aciklama 165 karakteri gecerse Google kesiyor; 70'in altinda
+ * yetersiz gorunuyor. Kategori aciklamalari kaynaktan 571 karaktere
+ * kadar geliyordu - cumle sinirinda kirpiliyor.
+ */
+function kisaAciklama(metin: string, ust = 158): string {
+  const duz = metin.replace(/\s+/g, " ").trim();
+  if (duz.length <= ust) return duz;
+  const pencere = duz.slice(0, ust + 1);
+  const nokta = Math.max(pencere.lastIndexOf(". "), pencere.lastIndexOf("! "), pencere.lastIndexOf("? "));
+  if (nokta >= 100) return pencere.slice(0, nokta + 1).trim();
+  const bosluk = pencere.lastIndexOf(" ");
+  return (bosluk > 0 ? pencere.slice(0, bosluk) : pencere).replace(/[ ,;:–-]+$/, "") + "…";
+}
+const recent = (props.kind === "category" ? props.allPosts : props.posts).slice(0, 5);
+
+/**
+ * Yazı gövdesine başlık kimlikleri eklenir ve içindekiler çıkarılır.
+ * İçerik metni değişmez; yalnızca `id` özniteliği eklenir.
+ */
+const article =
+  props.kind === "post"
+    ? buildToc(props.post.data.contentHtml)
+    : { html: "", toc: [] };
+const tools = props.kind === "post" ? softwareOf(props.post) : [];
+---
+
+{
+  props.kind === "post" && (
+    <Base
+      title={props.post.data.seo.title ?? `${props.post.data.title} | Ufuk Şen`}
+      description={props.post.data.seo.description ?? summarize(props.post, 155)}
+      path={props.post.data.url}
+      ogImage={props.post.data.featuredImage?.localPath ?? props.post.data.seo.ogImage}
+      noindex={props.parked}
+      type="article"
+      publishedAt={isoDate(props.post.data.publishedAt)}
+      modifiedAt={isoDate(props.post.data.modifiedAt)}
+      jsonLd={{
+        "@context": "https://schema.org",
+        "@type": "BlogPosting",
+        headline: props.post.data.title,
+        datePublished: isoDate(props.post.data.publishedAt),
+        dateModified: isoDate(props.post.data.modifiedAt),
+        author: { "@type": "Person", name: props.post.data.author.name },
+        publisher: { "@type": "Person", name: "Ufuk Şen" },
+        mainEntityOfPage: new URL(props.post.data.url, site).href,
+        ...(props.post.data.featuredImage?.localPath
+          ? { image: new URL(props.post.data.featuredImage.localPath, site).href }
+          : {}),
+      }}
+    >
+      <div class="progress" aria-hidden="true"><i></i></div>
+      <article class="blog-grid">
+        <div>
+          {props.parked && (
+            <p class="parked-note">
+              Bu yazı sitenin ana konusu dışında kaldığı için arşive alındı ve
+              listelerde görünmüyor. Yakında ayrı bir siteye taşınacak.
+            </p>
+          )}
+
+          <header class="entry">
+            <p class="post-item__meta">
+              <time datetime={isoDate(props.post.data.publishedAt)}>
+                {formatDate(props.post.data.publishedAt)}
+              </time>
+              <span>{props.post.data.readingMinutes} dk okuma</span>
+              {props.post.data.categories.map((category) => (
+                <a href={categoryPathBySlug(category.slug)}>{category.name}</a>
+              ))}
+            </p>
+            <h1>{props.post.data.title}</h1>
+          </header>
+
+          {props.post.data.featuredImage?.localPath && (
+            <img
+              class="entry__cover"
+              src={props.post.data.featuredImage.localPath}
+              alt={props.post.data.featuredImage.alt || props.post.data.title}
+              width={props.post.data.featuredImage.width ?? undefined}
+              height={props.post.data.featuredImage.height ?? undefined}
+              fetchpriority="high"
+              decoding="async"
+            />
+          )}
+
+          {tools.length > 0 && (
+            <p class="tools" aria-label="İlgili yazılımlar">
+              {tools.map((tool) => (
+                <a href={`/yazilim/${tool.slug}`}>{tool.name}</a>
+              ))}
+            </p>
+          )}
+
+          {article.toc.length >= 3 && (
+            <nav class="toc" aria-label="İçindekiler">
+              <p class="toc__title">İçindekiler</p>
+              <ol>
+                {article.toc.map((item) => (
+                  <li data-level={item.level}>
+                    <a href={`#${item.id}`}>{item.text}</a>
+                  </li>
+                ))}
+              </ol>
+            </nav>
+          )}
+
+          <div class="prose" data-lightbox set:html={article.html} />
+
+          {relatedPosts(props.post, props.posts).length > 0 && (
+            <section class="block" style="margin-top:var(--s-12)">
+              <SectionTitle title="Benzer yazılar" />
+              <div>
+                {relatedPosts(props.post, props.posts).map((related) => (
+                  <article class="post-item">
+                    <div class="post-item__meta">
+                      <time datetime={isoDate(related.data.publishedAt)}>
+                        {formatDate(related.data.publishedAt)}
+                      </time>
+                      <span>{related.data.readingMinutes} dk</span>
+                    </div>
+                    <h3>
+                      <a href={related.data.url}>{related.data.title}</a>
+                    </h3>
+                    <p>{summarize(related, 110)}</p>
+                  </article>
+                ))}
+              </div>
+            </section>
+          )}
+        </div>
+        <Sidebar recent={recent} />
+      </article>
+    </Base>
+  )
+}
+
+{
+  props.kind === "page" && (
+    <Base
+      title={props.page.data.seo.title ?? `${props.page.data.title} | Ufuk Şen`}
+      description={props.page.data.seo.description}
+      path={props.page.data.url}
+      ogImage={props.page.data.featuredImage?.localPath ?? props.page.data.seo.ogImage}
+      jsonLd={{
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        name: props.page.data.title,
+        url: new URL(props.page.data.url, site).href,
+      }}
+    >
+      <article>
+        <SectionTitle title={props.page.data.title} as="h1" />
+        <div class="prose" data-lightbox set:html={prepareBody(props.page.data.contentHtml)} />
+      </article>
+    </Base>
+  )
+}
+
+{
+  props.kind === "category" && (
+    <Base
+      title={`${props.category.name} — ${props.category.postCount} yazı | Ufuk Şen`}
+      description={kisaAciklama(
+        props.category.description ??
+          `${props.category.name} kategorisindeki ${props.category.postCount} yazı. ` +
+            `SketchUp, V-Ray, D5 Render ve Twinmotion üzerine rehberler.`,
+      )}
+      path={categoryPath(props.category)}
+      noindex={props.parked}
+      jsonLd={{
+        "@context": "https://schema.org",
+        "@type": "CollectionPage",
+        name: props.category.name,
+        url: new URL(categoryPath(props.category), site).href,
+      }}
+    >
+      <section class="blog-grid">
+        <div>
+          <SectionTitle
+            title={props.category.name}
+            as="h1"
+            note={props.parked ? "Bu bölümdeki yazılar arşive alındı." : `${props.category.postCount} yazı`}
+          />
+          {props.parked && (
+            <p class="parked-note">
+              Bu kategorideki yazılar sitenin ana konusu dışında kaldığı için arşive
+              alındı ve yakında ayrı bir siteye taşınacak.
+            </p>
+          )}
+          {props.posts.map((post) => (
+            <article class={`post-item ${post.data.featuredImage?.localPath ? "post-item--with-thumb" : ""}`}>
+              {post.data.featuredImage?.localPath && (
+                <img
+                  class="post-item__thumb"
+                  src={post.data.featuredImage.localPath}
+                 width={post.data.featuredImage.width ?? undefined}
+                 height={post.data.featuredImage.height ?? undefined}
+                  alt={post.data.featuredImage.alt || post.data.title}
+                  loading="lazy"
+                  decoding="async"
+                />
+              )}
+              <div style="display:grid;gap:var(--s-2)">
+                <div class="post-item__meta">
+                  <time datetime={isoDate(post.data.publishedAt)}>
+                    {formatDate(post.data.publishedAt)}
+                  </time>
+                  <span>{post.data.readingMinutes} dk</span>
+                </div>
+                <h2>
+                  <a href={post.data.url}>{post.data.title}</a>
+                </h2>
+                <p>{summarize(post, 150)}</p>
+              </div>
+            </article>
+          ))}
+        </div>
+        <Sidebar recent={recent} />
+      </section>
+    </Base>
+  )
+}
+
+<style>
+  /* Okuma ilerlemesi — yalnızca yazı sayfalarında */
+  .progress {
+    position: fixed;
+    inset: 0 0 auto 0;
+    height: 3px;
+    background: transparent;
+    z-index: calc(var(--z-nav) + 1);
+    pointer-events: none;
+  }
+  .progress i {
+    display: block;
+    height: 100%;
+    width: var(--p, 0%);
+    background: var(--c-accent);
+    transition: width 80ms linear;
+  }
+
+  /* Yazılım etiketleri */
+  .tools {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--s-2);
+    margin-bottom: var(--s-6);
+    max-width: none;
+  }
+  .tools a {
+    font-family: var(--font-mono);
+    font-size: var(--t-micro);
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--c-accent);
+    border: 1px solid var(--c-accent-dim);
+    border-radius: var(--r-pill);
+    padding: 0 var(--s-3);
+    min-height: 32px;
+    display: inline-flex;
+    align-items: center;
+    text-decoration: none;
+    transition: background var(--d-fast) var(--e-out);
+  }
+  .tools a:hover,
+  .tools a:focus-visible {
+    background: var(--c-accent-wash);
+  }
+
+  /* İçindekiler */
+  .toc {
+    border: 1px solid var(--c-line);
+    border-radius: var(--r-lg);
+    background: var(--c-surface-raised);
+    padding: var(--s-6);
+    margin-bottom: var(--s-8);
+  }
+  .toc__title {
+    font-family: var(--font-mono);
+    font-size: var(--t-micro);
+    letter-spacing: var(--ls-eyebrow);
+    text-transform: uppercase;
+    color: var(--c-text-faint);
+    margin-bottom: var(--s-3);
+  }
+  .toc ol {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: grid;
+    gap: var(--s-1);
+    counter-reset: toc;
+  }
+  .toc li[data-level="3"] {
+    padding-left: var(--s-4);
+  }
+  .toc a {
+    display: block;
+    min-height: 32px;
+    padding-block: var(--s-1);
+    font-size: var(--t-small);
+    color: var(--c-text-muted);
+    text-decoration: none;
+    border-left: 2px solid transparent;
+    padding-left: var(--s-3);
+    transition: color var(--d-fast) var(--e-out), border-color var(--d-fast) var(--e-out);
+  }
+  .toc a:hover,
+  .toc a:focus-visible,
+  .toc a[aria-current="true"] {
+    color: var(--c-accent);
+    border-left-color: var(--c-accent);
+  }
+
+  .parked-note {
+    border: 1px solid var(--c-line-strong);
+    border-left: 3px solid var(--c-accent);
+    border-radius: var(--r-md);
+    background: var(--c-surface-raised);
+    padding: var(--s-4) var(--s-5, 1.25rem);
+    padding-inline: var(--s-5, 1.25rem);
+    margin-bottom: var(--s-6);
+    color: var(--c-text-muted);
+    font-size: var(--t-small);
+    max-width: none;
+  }
+
+  .entry {
+    display: grid;
+    gap: var(--s-3);
+    margin-bottom: var(--s-8);
+  }
+  .entry h1 {
+    font-size: var(--t-h2);
+  }
+  .entry__cover {
+    width: 100%;
+    height: auto;
+    border-radius: var(--r-lg);
+    border: 1px solid var(--c-line);
+    margin-bottom: var(--s-8);
+  }
+</style>

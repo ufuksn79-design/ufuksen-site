@@ -1,0 +1,65 @@
+{
+  "legacyId": 6017,
+  "slug": "sketchup-dibac-plugini-ile-cok-hizli-modelleme",
+  "legacyUrl": "/sketchup-dibac-plugini-ile-cok-hizli-modelleme.html",
+  "url": "/sketchup-dibac-plugini-ile-cok-hizli-modelleme.html",
+  "title": "Sketchup Dibac Plugini ile Çok Hızlı Modelleme",
+  "excerpt": "Sketchup Dibac, SketchUp yazılımı için bir eklenti (plugin)dir. Dibac, 2B çizim ve tasarımlarınızı 3D modellemelerle entegre etmenize olanak sağlayan bir araç setidir. Bu eklenti, iç mekan tasarımı, mimari projeler, mobilya tasarımı ve benzeri alanlarda çalışan tasarımcılar için oldukça faydalı olabilir. Sketchup Dibac’ın bazı özellikleri şunlardır: 2B çizimlerinizi hızlı bir şekilde 3D modele dönüştürme: Dibac, temel …",
+  "contentHtml": "<p><strong>Sketchup Dibac,</strong> SketchUp yazılımı için bir eklenti (plugin)dir. <em><strong>Dibac</strong></em>, 2B çizim ve tasarımlarınızı 3D modellemelerle entegre etmenize olanak sağlayan bir araç setidir. Bu eklenti, iç mekan tasarımı, <strong><a href=\"https://www.mimari3d.com/\" target=\"_blank\" rel=\"noopener\">mimari projeler</a></strong>, mobilya tasarımı ve benzeri alanlarda çalışan tasarımcılar için oldukça faydalı olabilir.</p>\n<h2><em>Sketchup Dibac&#8217;ın bazı özellikleri şunlardır:</em></h2>\n<ol>\n<li style=\"list-style-type: none;\">\n<ol>\n<li>2B çizimlerinizi hızlı bir şekilde 3D modele dönüştürme: Dibac, temel planları, kesitleri, eleveasyonları ve detayları hızlı bir şekilde çizmenize ve ardından bu çizimleri otomatik olarak 3D modele dönüştürmenize olanak tanır.</li>\n<li>Özelleştirilebilir elemanlar kütüphanesi: Dibac, çeşitli iç mekan ve <strong>mimari elemanlar</strong> için bir kütüphane sunar. Bu elemanlar, kapılar, pencereler, merdivenler, mobilyalar ve diğer aksesuarlar gibi farklı öğeleri içerir.\n<p><strong>Sketchup Dibac pluginine a</strong><em><strong>yrıca kendi özel elemanlarınızı da ekleyebilirsiniz.</strong></em></li>\n</ol>\n</li>\n</ol>\n<p><iframe loading=\"lazy\" title=\"YouTube video player\" src=\"https://www.youtube.com/embed/qHTQzpkzyYY\" width=\"560\" height=\"315\" frameborder=\"0\" allowfullscreen=\"allowfullscreen\"></iframe></p>\n<ol>\n<li style=\"list-style-type: none;\">\n<ol>\n<li>Kolay düzenleme ve güncelleme: Dibac, çizimlerinizi düzenlemek ve güncellemek için kullanıcı dostu bir arayüz sunar. Öğeleri taşıyabilir, döndürebilir, ölçülerini ayarlayabilir ve diğer düzenlemeleri yapabilirsiniz. Yapılan değişiklikler otomatik olarak 3D modele yansıtılır.</li>\n<li><strong>Sketchup Dibac İç mekan planlama</strong> özellikleri: Dibac, iç mekan tasarımıyla ilgilenen kullanıcılar için özel özellikler sunar. Duvarları, zeminleri, tavanları oluşturabilir, mobilyaları yerleştirebilir ve aydınlatma gibi detayları ekleyebilirsiniz.</li>\n</ol>\n</li>\n</ol>\n<p><iframe loading=\"lazy\" title=\"YouTube video player\" src=\"https://www.youtube.com/embed/j9jU8Dc2plA\" width=\"560\" height=\"315\" frameborder=\"0\" allowfullscreen=\"allowfullscreen\"></iframe></p>\n<ol>\n<li>İhracat seçenekleri: Dibac ile oluşturduğunuz modelleri SketchUp&#8217;tan diğer programlara veya formatlara (örneğin <em><strong>AutoCAD veya PDF</strong></em>) dışa aktarabilirsiniz.</li>\n</ol>\n<p><strong>Dibac</strong>, <a title=\"sketchup\" href=\"https://sketchupturkiye.com/\" target=\"_blank\" rel=\"noopener\"><strong>SketchUp</strong></a> kullanıcıları arasında oldukça popülerdir ve iç mekan tasarımıyla uğraşan profesyoneller ve hobiler için tasarım sürecini hızlandırmak için kullanışlı bir araçtır.</p>\n<p>Eklenti, tasarımlarınızı daha kolay ve verimli bir şekilde gerçekleştirmenize yardımcı olabilir.</p>\n",
+  "publishedAt": "2023-06-10T10:52:38",
+  "modifiedAt": "2023-06-10T10:52:38",
+  "status": "publish",
+  "featuredImage": {
+    "legacyId": 6018,
+    "legacyUrl": "https://www.ufuksen.com/wp-content/uploads/2023/06/sketchup-dibac.jpg",
+    "localPath": "/media/2023/06/sketchup-dibac.jpg",
+    "alt": "sketchup dibac",
+    "width": 960,
+    "height": 540,
+    "mimeType": "image/jpeg",
+    "error": null
+  },
+  "inlineMedia": [],
+  "embeds": [
+    {
+      "provider": "youtube",
+      "externalId": "qHTQzpkzyYY",
+      "originalSrc": "https://www.youtube.com/embed/qHTQzpkzyYY",
+      "title": null
+    },
+    {
+      "provider": "youtube",
+      "externalId": "j9jU8Dc2plA",
+      "originalSrc": "https://www.youtube.com/embed/j9jU8Dc2plA",
+      "title": null
+    }
+  ],
+  "seo": {
+    "title": null,
+    "description": "Sketchup Dibac, SketchUp yazılımı için bir eklenti (plugin)dir. Dibac, 2B çizim ve tasarımlarınızı 3D modellemelerle entegre etmenize olanak sağlayan bir araç…",
+    "focusKeyword": "Sketchup Dibac",
+    "canonicalUrl": null,
+    "ogImage": null
+  },
+  "readingMinutes": 1,
+  "migrationChecksum": "5a4d35d5d9db87656ce4c49d91f3add430fc2838117dd5df47e1467a77b44872",
+  "author": {
+    "legacyId": 1,
+    "name": "UFUK ŞEN",
+    "slug": "ufuk",
+    "isGuest": false
+  },
+  "categories": [
+    {
+      "legacyId": 1169,
+      "name": "3D Programlar",
+      "slug": "3d-programlar"
+    },
+    {
+      "legacyId": 1172,
+      "name": "Sketchup",
+      "slug": "sketchup"
+    }
+  ],
+  "tags": []
+}

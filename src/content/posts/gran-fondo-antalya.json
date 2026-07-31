@@ -1,0 +1,54 @@
+{
+  "legacyId": 5686,
+  "slug": "gran-fondo-antalya",
+  "legacyUrl": "/gran-fondo-antalya.html",
+  "url": "/gran-fondo-antalya.html",
+  "title": "Gran Fondo Antalya",
+  "excerpt": "Gran Fondo Antalya kısa parkur yarışının 1 saatlik kısmını aşağıdaki video ile izleyebilirsiniz arkadaşlar. Cumartesi gününden yağan yağmurdan dolayı yolların ıslak olması sürüşü ve ortalamayı biraz yavaşlatsa da yine de tempolu bir sürüş oldu. Yağmur yağması ve yolların ıslak olması gerçekten büyük bir risk ,sınırları bazı yerlerde zorladık ve uzun parkurda bazı kazalar yaşanması gibi …",
+  "contentHtml": "<p><a title=\"Gran Fondo Antalya\" href=\"/gran-fondo-antalya.html\" target=\"_blank\" rel=\"noopener\"><strong>Gran Fondo Antalya</strong></a> kısa parkur yarışının 1 saatlik kısmını aşağıdaki video ile izleyebilirsiniz arkadaşlar. Cumartesi gününden yağan yağmurdan dolayı yolların ıslak olması sürüşü ve ortalamayı biraz yavaşlatsa da yine de tempolu bir sürüş oldu.</p>\n<p>Yağmur yağması ve yolların ıslak olması gerçekten büyük bir risk ,sınırları bazı yerlerde zorladık ve uzun parkurda bazı kazalar yaşanması gibi olası durumlar oluştu.</p>\n<h2>Gran Fondo Antalya Yarış Videosu</h2>\n<p><a href=\"https://www.youtube.com/watch?v=6hnQH4tkxcE&amp;t=1509s\" target=\"_blank\" rel=\"noopener\"><strong>Gran Fondo Kısa parkur</strong></a> olarak çok fazla zorluk derecesi orta seviyede olmasına karşın güzel ve eğlenceli bir etap olduğunu söylemek isterim. Yağmur ve zeminin kaygan olmasından dolayı risk düzeyi biraz yüksekti ama yine de keyifli bir gran fondo yarışı koştuk.<br />\n<iframe loading=\"lazy\" title=\"YouTube video player\" src=\"https://www.youtube.com/embed/6hnQH4tkxcE\" width=\"560\" height=\"315\" frameborder=\"0\" allowfullscreen=\"allowfullscreen\"></iframe></p>\n",
+  "publishedAt": "2022-11-23T18:45:42",
+  "modifiedAt": "2022-12-21T11:27:38",
+  "status": "publish",
+  "featuredImage": {
+    "legacyId": 5691,
+    "legacyUrl": "https://www.ufuksen.com/wp-content/uploads/2022/11/granfondoantalya.jpg",
+    "localPath": "/media/2022/11/granfondoantalya.jpg",
+    "alt": "gran fondo antalya",
+    "width": 640,
+    "height": 360,
+    "mimeType": "image/jpeg",
+    "error": null
+  },
+  "inlineMedia": [],
+  "embeds": [
+    {
+      "provider": "youtube",
+      "externalId": "6hnQH4tkxcE",
+      "originalSrc": "https://www.youtube.com/embed/6hnQH4tkxcE",
+      "title": null
+    }
+  ],
+  "seo": {
+    "title": null,
+    "description": "Gran Fondo Antalya kısa parkur yarışının 1 saatlik kısmını izleyebilirsiniz.",
+    "focusKeyword": "Gran Fondo Antalya",
+    "canonicalUrl": null,
+    "ogImage": null
+  },
+  "readingMinutes": 1,
+  "migrationChecksum": "2d483d5480ebc953e4c1b98ee81724fd17487233a561dc7dc350b05f50447f51",
+  "author": {
+    "legacyId": 1,
+    "name": "UFUK ŞEN",
+    "slug": "ufuk",
+    "isGuest": false
+  },
+  "categories": [
+    {
+      "legacyId": 218,
+      "name": "Yaşam",
+      "slug": "yasam"
+    }
+  ],
+  "tags": []
+}

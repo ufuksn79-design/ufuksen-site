@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>T-003 — İki Ana Sayfa Yönü | Ufuk Şen</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600&family=Geist+Mono:wght@400&display=swap">
+<link rel="stylesheet" href="../src/styles/tokens.css">
+<style>
+  .wrap { max-width: 900px; margin-inline: auto; padding: var(--s-16) var(--gutter); display: grid; gap: var(--s-12); }
+  .lead { color: var(--c-text-muted); font-size: var(--t-body-lg); }
+  .opts { display: grid; gap: var(--s-4); }
+  @media (min-width: 720px) { .opts { grid-template-columns: 1fr 1fr; } }
+  .opt {
+    display: grid; gap: var(--s-3); align-content: start;
+    padding: var(--s-8) var(--s-6);
+    background: var(--c-surface); border: 1px solid var(--c-line); border-radius: var(--r-lg);
+    text-decoration: none; color: inherit;
+    transition: border-color var(--d-base) var(--e-out), transform var(--d-base) var(--e-out);
+  }
+  .opt:hover, .opt:focus-visible { border-color: var(--c-accent); transform: translateY(-2px); }
+  .opt h2 { font-size: var(--t-h3); }
+  .opt p { color: var(--c-text-muted); font-size: var(--t-small); }
+  .opt ul { margin: 0; padding-left: 1.1rem; color: var(--c-text-muted); font-size: var(--t-small); display: grid; gap: 4px; }
+  .swatches { display: flex; gap: var(--s-2); flex-wrap: wrap; }
+  .sw { display: grid; gap: 6px; font-family: var(--font-mono); font-size: var(--t-micro); color: var(--c-text-faint); }
+  .sw i { display: block; width: 100%; height: 44px; border-radius: var(--r-sm); border: 1px solid var(--c-line); }
+  .sw-row { display: grid; grid-template-columns: repeat(3, 1fr); gap: var(--s-3); max-width: 420px; }
+  table { border-collapse: collapse; width: 100%; font-size: var(--t-small); }
+  th, td { text-align: left; padding: var(--s-3); border-bottom: 1px solid var(--c-line); vertical-align: top; }
+  th { color: var(--c-text-faint); font-family: var(--font-mono); font-size: var(--t-micro); text-transform: uppercase; letter-spacing: 0.08em; }
+  td b { color: var(--c-accent); font-weight: 600; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header style="display:grid;gap:var(--s-4)">
+    <p class="u-eyebrow">T-003 · Faz 1 · Tasarım Yönü</p>
+    <h1 style="font-size:var(--t-h1)">İki ana sayfa yönü</h1>
+    <p class="lead">Aynı tasarım tokenları, aynı içerik iskeleti, iki farklı karakter. Amaç görsel yönü kilitlemek; ikisinden biri seçilecek veya birleştirilecek.</p>
+  </header>
+
+  <section style="display:grid;gap:var(--s-4)">
+    <h2 style="font-size:var(--t-h3)">60–30–10 renk sistemi</h2>
+    <div class="sw-row">
+      <span class="sw"><i style="background:var(--c-base)"></i>%60 zemin<br>#0B0C0E</span>
+      <span class="sw"><i style="background:var(--c-surface-raised)"></i>%30 yüzey<br>#1B1E24</span>
+      <span class="sw"><i style="background:var(--c-accent)"></i>%10 vurgu<br>#FFD400</span>
+    </div>
+  </section>
+
+  <section class="opts">
+    <a class="opt" href="direction-a.html">
+      <span class="u-eyebrow">Yön A</span>
+      <h2>Blueprint</h2>
+      <p>Mimari çizim mantığı. Numaralı bölümler, ince çizgiler, asimetrik ızgara.</p>
+      <ul>
+        <li>Tipografi: Geist + Geist Mono</li>
+        <li>Kart yok; ızgara satırları ve paneller</li>
+        <li>Sarı işaret olarak kullanılır</li>
+        <li>Hero'da parallax ızgara katmanı</li>
+      </ul>
+    </a>
+    <a class="opt" href="direction-b.html">
+      <span class="u-eyebrow">Yön B</span>
+      <h2>Atölye</h2>
+      <p>Sinematik derinlik. Katmanlı yüzeyler, ışık kuyuları, editoryal serif başlıklar.</p>
+      <ul>
+        <li>Tipografi: Fraunces + Geist + Geist Mono</li>
+        <li>Yumuşak kartlar, değişken ağırlık</li>
+        <li>Sarı ışık kaynağı olarak kullanılır</li>
+        <li>Hero'da parallax ışık katmanı</li>
+      </ul>
+    </a>
+  </section>
+
+  <section style="display:grid;gap:var(--s-4)">
+    <h2 style="font-size:var(--t-h3)">Karşılaştırma</h2>
+    <table>
+      <thead><tr><th>Ölçüt</th><th>Yön A — Blueprint</th><th>Yön B — Atölye</th></tr></thead>
+      <tbody>
+        <tr><td>Karakter</td><td>Teknik, ölçülü, mühendis</td><td>Editoryal, sıcak, stüdyo</td></tr>
+        <tr><td>Başlık fontu</td><td>Geist (sans)</td><td>Fraunces (serif)</td></tr>
+        <tr><td>Yüzey sayısı</td><td>Az — çizgi ağırlıklı</td><td>Çok — katman ağırlıklı</td></tr>
+        <tr><td>Font isteği</td><td><b>2 aile</b></td><td><b>3 aile</b> (+1 istek)</td></tr>
+        <tr><td>Blog yoğunluğuna uyum</td><td>Yüksek — 457 yazı listesi doğal durur</td><td>Orta — kart tekrarı riski</td></tr>
+        <tr><td>“AI şablonu” riski</td><td>Düşük</td><td>Orta — kart deseni tanıdık</td></tr>
+        <tr><td>Yatay taşma (320–430px)</td><td><b>Yok</b></td><td><b>Yok</b></td></tr>
+        <tr><td>44px altı dokunma hedefi</td><td><b>0</b></td><td><b>0</b></td></tr>
+      </tbody>
+    </table>
+  </section>
+
+  <p class="lead" style="font-size:var(--t-small)">Her iki prototipteki metinler yer tutucudur ve gerçek biyografi değildir.</p>
+</div>
+</body>
+</html>

@@ -1,0 +1,312 @@
+---
+/**
+ * Ürün / eklenti kartı.
+ *
+ * Veriler `src/content/products.json` içinde. Boş alanlar render edilmez —
+ * eksik bilgi "yer tutucu metin" ile doldurulmaz (AGENTS.md §5).
+ */
+export interface Product {
+  slug: string;
+  ad: string;
+  tur: "eklenti" | "arac" | "sablon";
+  durum: "aktif" | "beta" | "alfa" | "gelistiriliyor" | "arsiv";
+  ilerleme?: number;
+  surum: string | null;
+  ozet: string;
+  aciklama: string | null;
+  slogan: string | null;
+  gorsel: string | null;
+  gorselAlt: string | null;
+  uyumluluk: string[];
+  ozellikler: { baslik: string; not: string; ikon: string }[];
+  desenler: string[];
+  desenNotu: string | null;
+  vurgular: string[];
+  iletisimEposta: string | null;
+  satinAlmaUrl: string | null;
+  yazilim: string[];
+}
+
+interface Props {
+  product: Product;
+}
+
+const { product } = Astro.props;
+
+const DURUM: Record<Product["durum"], { etiket: string; ton: string }> = {
+  aktif: { etiket: "Yayında", ton: "ok" },
+  beta: { etiket: "Beta", ton: "warn" },
+  alfa: { etiket: "Alfa sürüm", ton: "warn" },
+  gelistiriliyor: { etiket: "Geliştiriliyor", ton: "warn" },
+  arsiv: { etiket: "Arşiv", ton: "muted" },
+};
+
+const durum = DURUM[product.durum];
+
+const icons: Record<string, string> = {
+  bolt: '<path d="M13 2 4.5 13.5H11l-1 8.5 8.5-11.5H12z"/>',
+  ruler: '<rect x="2.5" y="8" width="19" height="8" rx="1.5"/><path d="M7 8v3M11 8v4M15 8v3M19 8v4"/>',
+  grid: '<rect x="3.5" y="3.5" width="7" height="7" rx="1"/><rect x="13.5" y="3.5" width="7" height="7" rx="1"/><rect x="3.5" y="13.5" width="7" height="7" rx="1"/><rect x="13.5" y="13.5" width="7" height="7" rx="1"/>',
+  sliders: '<path d="M4 7h10M18 7h2M4 12h4M12 12h8M4 17h9M17 17h3"/><circle cx="16" cy="7" r="2"/><circle cx="10" cy="12" r="2"/><circle cx="15" cy="17" r="2"/>',
+  layers: '<path d="m12 3 8 4.5-8 4.5-8-4.5z"/><path d="m4 12 8 4.5 8-4.5M4 16.5 12 21l8-4.5"/>',
+  texture: '<rect x="3.5" y="3.5" width="17" height="17" rx="2"/><path d="M3.5 9h17M3.5 15h17M9 3.5v17M15 3.5v17"/>',
+};
+---
+
+<article class="product">
+  {
+    product.gorsel && (
+      <div class="product__shot">
+        <img
+          src={product.gorsel}
+          alt={product.gorselAlt ?? `${product.ad} tanıtım görseli`}
+          loading="lazy"
+          decoding="async"
+        />
+      </div>
+    )
+  }
+
+  <div class="product__body">
+    <div class="product__head">
+      <h3>{product.ad}</h3>
+      <span class:list={["state", `state--${durum.ton}`]}>
+        {durum.etiket}
+        {product.ilerleme ? ` · %${product.ilerleme}` : ""}
+      </span>
+      {product.surum && <span class="tag">v{product.surum}</span>}
+    </div>
+
+    <p class="product__lead">{product.ozet}</p>
+    {product.aciklama && <p class="product__desc">{product.aciklama}</p>}
+
+    {
+      product.uyumluluk.length > 0 && (
+        <p class="product__compat">
+          <span>Uyumluluk</span>
+          {product.uyumluluk.map((item) => (
+            <b>{item}</b>
+          ))}
+        </p>
+      )
+    }
+
+    {
+      product.ozellikler.length > 0 && (
+        <ul class="product__features">
+          {product.ozellikler.map((feature) => (
+            <li>
+              <span class="product__icon">
+                <svg viewBox="0 0 24 24" aria-hidden="true" set:html={icons[feature.ikon] ?? icons.grid} />
+              </span>
+              <span>
+                <b>{feature.baslik}</b>
+                {feature.not}
+              </span>
+            </li>
+          ))}
+        </ul>
+      )
+    }
+
+    {
+      product.desenler.length > 0 && (
+        <div class="product__patterns">
+          {product.desenler.map((name) => (
+            <span class="tag">{name}</span>
+          ))}
+          {product.desenNotu && <small>{product.desenNotu}</small>}
+        </div>
+      )
+    }
+
+    <div class="product__cta">
+      {product.satinAlmaUrl ? (
+        <a class="btn btn--primary" href={product.satinAlmaUrl} rel="noopener" target="_blank">
+          Satın al
+        </a>
+      ) : product.iletisimEposta ? (
+        <a class="btn btn--primary" href={`mailto:${product.iletisimEposta}?subject=${encodeURIComponent(product.ad + " hakkında")}`}>
+          Bilgi al
+        </a>
+      ) : null}
+      {product.yazilim.includes("sketchup") && (
+        <a class="btn btn--ghost" href="/yazilim/sketchup">SketchUp yazıları</a>
+      )}
+    </div>
+  </div>
+</article>
+
+<style>
+  .product {
+    display: grid;
+    gap: var(--s-6);
+    background: var(--c-surface-raised);
+    border: 1px solid var(--c-line);
+    border-radius: var(--r-lg);
+    overflow: hidden;
+    align-content: start;
+  }
+
+  .product__shot {
+    background: var(--c-base);
+    border-bottom: 1px solid var(--c-line);
+  }
+  .product__shot img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  .product__body {
+    display: grid;
+    gap: var(--s-3);
+    padding: 0 var(--s-6) var(--s-6);
+    align-content: start;
+  }
+  .product__shot + .product__body {
+    padding-top: 0;
+  }
+  .product:not(:has(.product__shot)) .product__body {
+    padding-top: var(--s-6);
+  }
+
+  .product__head {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: var(--s-2);
+  }
+  .product__head h3 {
+    font-size: var(--t-h3);
+    margin-right: var(--s-1);
+  }
+
+  .state {
+    font-family: var(--font-mono);
+    font-size: var(--t-micro);
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    padding: 3px var(--s-2);
+    border-radius: var(--r-pill);
+    border: 1px solid currentColor;
+  }
+  .state--ok { color: #7ddc7d; }
+  .state--warn { color: var(--c-accent); }
+  .state--muted { color: var(--c-text-faint); }
+
+  .product__lead {
+    color: var(--c-text);
+    font-size: var(--t-body-lg);
+    max-width: none;
+  }
+  .product__desc {
+    color: var(--c-text-muted);
+    font-size: var(--t-small);
+    max-width: none;
+  }
+
+  .product__compat {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--s-2);
+    align-items: center;
+    max-width: none;
+    margin-top: var(--s-1);
+  }
+  .product__compat span {
+    font-family: var(--font-mono);
+    font-size: var(--t-micro);
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--c-text-faint);
+  }
+  .product__compat b {
+    font-size: var(--t-micro);
+    font-weight: 500;
+    color: var(--c-text-muted);
+    border: 1px solid var(--c-line-strong);
+    border-radius: var(--r-sm);
+    padding: 2px var(--s-2);
+  }
+
+  .product__features {
+    display: grid;
+    gap: var(--s-3);
+    margin: var(--s-2) 0 0;
+    padding: var(--s-4) 0 0;
+    border-top: 1px solid var(--c-line);
+    list-style: none;
+  }
+  .product__features li {
+    display: grid;
+    grid-template-columns: 34px 1fr;
+    gap: var(--s-3);
+    align-items: start;
+    font-size: var(--t-small);
+    color: var(--c-text-muted);
+  }
+  .product__features b {
+    display: block;
+    color: var(--c-text);
+    font-weight: 600;
+  }
+  .product__icon {
+    width: 34px;
+    height: 34px;
+    border-radius: var(--r-md);
+    display: grid;
+    place-items: center;
+    background: var(--c-accent-wash);
+    color: var(--c-accent);
+  }
+  .product__icon svg {
+    width: 18px;
+    height: 18px;
+    fill: none;
+    stroke: currentColor;
+    stroke-width: 1.7;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+  }
+
+  .product__patterns {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--s-2);
+    align-items: center;
+    padding-top: var(--s-3);
+    border-top: 1px solid var(--c-line);
+  }
+  .product__patterns small {
+    color: var(--c-text-faint);
+    font-size: var(--t-micro);
+    width: 100%;
+  }
+
+  .product__cta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--s-3);
+    margin-top: var(--s-2);
+  }
+
+  @media (min-width: 900px) {
+    .product--wide {
+      grid-template-columns: 1.1fr 1fr;
+      align-items: start;
+    }
+    .product--wide .product__shot {
+      border-bottom: 0;
+      border-right: 1px solid var(--c-line);
+      height: 100%;
+    }
+    .product--wide .product__shot img {
+      height: 100%;
+      object-fit: cover;
+    }
+    .product--wide .product__body {
+      padding: var(--s-6);
+    }
+  }
+</style>

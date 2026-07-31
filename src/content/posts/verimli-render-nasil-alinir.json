@@ -1,0 +1,60 @@
+{
+  "legacyId": 2325,
+  "slug": "verimli-render-nasil-alinir",
+  "legacyUrl": "/verimli-render-nasil-alinir.html",
+  "url": "/verimli-render-nasil-alinir.html",
+  "title": "Verimli Render Nasıl Alınır ?",
+  "excerpt": "Verimli Render Nasıl Alınır konusu , aslında eski yeni tüm kullanıcıların kafasını karıştıran bir konudur. Verimli render alma konusunda  bizim yaptığımız bazı düzensiz çalışma şekilleri bizim render almamızı engellemektedir. Render alma işlemleri ner ne kadar bilgisayarınızın sistem gücüyle alakalı olsada , bazı durumlara dikkat etmeniz sizin verimli render almanızı hızlandıracaktır. Daha önceki yazımızda sketchup dosyasında …",
+  "contentHtml": "<p><strong><a href=\"/verimli-render-nasil-alinir.html\" rel=\"attachment wp-att-2327\"><img loading=\"lazy\" decoding=\"async\" class=\"alignleft size-full wp-image-2327\" src=\"/media/2018/01/render-nasil-alinir.jpg\" alt=\"render-nasil-alinir\" width=\"400\" height=\"291\" srcset=\"/media/2018/01/render-nasil-alinir.jpg 400w, /media/2018/01/render-nasil-alinir-300x218.jpg 300w, /media/2018/01/render-nasil-alinir-324x235.jpg 324w\" sizes=\"auto, (max-width: 400px) 100vw, 400px\" /></a>Verimli Render Nasıl Alınır</strong> konusu , aslında eski yeni tüm kullanıcıların kafasını karıştıran bir konudur. Verimli <span style=\"color: #000080;\"><strong>render alma</strong></span> konusunda  bizim yaptığımız bazı düzensiz çalışma şekilleri bizim render almamızı engellemektedir.</p>\n<p><a href=\"/kategori/kaliteli-gorsel\" target=\"_blank\" rel=\"noopener noreferrer\"><strong><span style=\"color: #0000ff;\">Render alma</span></strong></a> işlemleri ner ne kadar bilgisayarınızın sistem gücüyle alakalı olsada , bazı durumlara dikkat etmeniz sizin verimli render almanızı hızlandıracaktır.</p>\n<p>Daha önceki yazımızda <a href=\"/sketchup-dosya-verimliligi.html\" target=\"_blank\" rel=\"noopener noreferrer\"><span style=\"color: #0000ff;\"><strong>sketchup dosyasında verimli çalışma</strong></span></a> konusunda , detaylı bilgiler vermiştik. O konuya bakarak dosyalarda nasıl verimli çalışırsınız öğrenebilirsiniz.</p>\n<h2><strong>Verimli Render Nasıl Alınır ? Nelere Dikkat edilmelidir ?</strong></h2>\n<p><em><strong>Verimli render almanın püf noktaları ;</strong></em></p>\n<p>a ) Dosyalarınızın belirli bir klasör altında olması<br />\nb ) Masaüstünüz çarşamba pazarı gibi dağınık olmaması, çünkü masaüstündeki tüm objeler ram tüketimini artırır.Her çalışma klasörler altında olmalı<br />\nc )Temp klasörünü zaman zaman boşaltmalısınız, internetten indirdiğiniz dosyaların bir kısmı burada saklandığı için, zamanla bu klasör şişer.<br />\nBu klasörü <strong>C:\\Windows\\Temp</strong> altında bulabilirsiniz. Altındaki dosyaları silebilirsiniz.<br />\n<em><strong>Bazı dosyalar silinmez, onlar için endişelenmeyin.</strong></em><br />\nd ) Yukarıda çalışma dosyalarınızın bir klasör altında olmasından bahsetmiştik, aynı şekilde kaplamalar, hdri, proxy dosyaları ve bu dosyaya bağlı tüm içerikler bu klasör altında olmalıdır.<br />\ne) Grup ve Komponent çalışma şekillerine dikkat ediniz.Sahnenin tamanın grup ve komponent olması ve explode olması arasında farklar çoktur.<br />\nf) Layerlı çalışma sistemi, bir obje üzerinde hızlı şekilde reder almanızı hızlandırır.<br />\ng) Skethcup veya Diğer 3d programlarda pluginlerin render hızını etkilemesi<br />\nyüzlerce plugin yüklemeyin sadece gerekli olanlar bulunsun.<br />\nPlugin seçimi konusunda <strong><span style=\"color: #0000ff;\"><a style=\"color: #0000ff;\" href=\"/sketchup-plugin-ihtiyaclari.html\" target=\"_blank\" rel=\"noopener noreferrer\">bu konuyu</a></span></strong> okuyabilirsiniz.</p>\n<p>Verimli Render Nasıl Alınır Konusuyla,  bağlantılı olarak aşağıdaki videoyu izleyerek farklı teknikleride izleyebilirsiniz.</p>\n<p><strong>Kaliteli Görsel nasıl oluşturabilirim videosu ;</strong></p>\n<p><iframe loading=\"lazy\" src=\"https://www.youtube.com/embed/GB2uwOrS8GQ\" width=\"560\" height=\"315\" frameborder=\"0\" allowfullscreen=\"allowfullscreen\"></iframe></p>\n",
+  "publishedAt": "2018-01-04T08:28:23",
+  "modifiedAt": "2022-12-20T14:55:25",
+  "status": "publish",
+  "featuredImage": {
+    "legacyId": 2327,
+    "legacyUrl": "https://www.ufuksen.com/wp-content/uploads/2018/01/render-nasil-alinir.jpg",
+    "localPath": "/media/2018/01/render-nasil-alinir.jpg",
+    "alt": "render-nasil-alinir",
+    "width": 400,
+    "height": 291,
+    "mimeType": "image/jpeg",
+    "error": null
+  },
+  "inlineMedia": [
+    {
+      "legacyUrl": "http://www.ufuksen.com/wp-content/uploads/2018/01/render-nasil-alinir.jpg",
+      "localPath": "/media/2018/01/render-nasil-alinir.jpg",
+      "error": null
+    }
+  ],
+  "embeds": [
+    {
+      "provider": "youtube",
+      "externalId": "GB2uwOrS8GQ",
+      "originalSrc": "https://www.youtube.com/embed/GB2uwOrS8GQ",
+      "title": null
+    }
+  ],
+  "seo": {
+    "title": null,
+    "description": "Verimli Render Nasıl Alınır, render alırken nelere dikkat edilmesi gerekiyor. Render alma esnasında dosyalarda çalışma biçimlerinin anlatıldığı bir makaledir.",
+    "focusKeyword": "Render Nasıl Alınır",
+    "canonicalUrl": null,
+    "ogImage": null
+  },
+  "readingMinutes": 1,
+  "migrationChecksum": "b0f733a30dfd99f90be95e7201639cdf048bf095ab685b7d8d891772144517b2",
+  "author": {
+    "legacyId": 1,
+    "name": "UFUK ŞEN",
+    "slug": "ufuk",
+    "isGuest": false
+  },
+  "categories": [
+    {
+      "legacyId": 518,
+      "name": "3D Görselleştirme",
+      "slug": "3d-gorsellestirme"
+    }
+  ],
+  "tags": []
+}

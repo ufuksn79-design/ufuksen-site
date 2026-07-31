@@ -1,0 +1,63 @@
+{
+  "legacyId": 2734,
+  "slug": "sketchupda-performansli-calismak-icin-yapilmasi-gerekenler",
+  "legacyUrl": "/sketchupda-performansli-calismak-icin-yapilmasi-gerekenler.html",
+  "url": "/sketchupda-performansli-calismak-icin-yapilmasi-gerekenler.html",
+  "title": "Sketchupda Performanslı Çalışmak için Yapılması gerekenler",
+  "excerpt": "Sketchupda Performanslı Çalışmak için, hem donanımsal olarak hemde program içerisinde bazı kriterlere göre çalışmak gerekiyor. Burada anlatacağım bazı kısımlar ise, daha önce hiç karşılaşmadığınız durumlar ve size ilginç gelen ama çözüm olan kısımlardır. Öncelikle Sketchup programı yüksek poligon konusunda sıkıntılı bir programdır.Her ne kadar eski sürümlerden yeni sürümlere kadar dosya boyutundan dolayı rahatlamalar olsada, yinede …",
+  "contentHtml": "<p><strong>Sketchupda Performanslı Çalışmak</strong> için, hem donanımsal olarak hemde program içerisinde bazı kriterlere göre çalışmak gerekiyor. Burada anlatacağım bazı kısımlar ise, daha önce hiç karşılaşmadığınız durumlar ve size ilginç gelen ama çözüm olan kısımlardır.</p>\r\n<p>Öncelikle Sketchup programı yüksek poligon konusunda sıkıntılı bir programdır.Her ne kadar eski sürümlerden yeni sürümlere kadar dosya boyutundan dolayı rahatlamalar olsada, yinede model sayısı arttığı zaman yani dosya boyutunuz 350mb&#8217;tın üzerine çıktığında sıkıntılar başlıyor.</p>\r\n<h2><strong>Donanımsal olarak Sketchupda Performanslı Çalışmak</strong></h2>\r\n<p>İşin donanım kısmında ilk olarak , yeni ve güncel sürümlerde sketchup 2017 ve sonrasın da iyi bir ekran kartı kullanmanız gerekiyor. En azından ortalama bir ekran kartıda işinizi görecektir.</p>\r\n<p>Genel olarak laptoplarda hem anakart hemde dahili olarak 2 ekran kartı bulunur. Bunlardan anakart üzerinde olanı, sketchup&#8217;ın çalışmasına engel ve performans bakımından çok düşük kartlardır. Diğeri ise verimli olan yani yüksek güçlü ekran kartlarıdır.</p>\r\n<p>Bu yüzden İlk açılışta program üzerinde sağ tıklayıp <strong>Yüksek performanslı ekran kartı üzerinden</strong> çalıştır demelisiniz (aşağıda görseldeki gibi).Bunu yapmazsanız eğer, herzaman düşük güçlü ekran kartıdan açacaktır programı. (takılmaların büyük çoğunluğu çözer)</p>\r\n<p><a href=\"/sketchupda-performansli-calismak-icin-yapilmasi-gerekenler.html\" rel=\"attachment wp-att-2737\"><img loading=\"lazy\" decoding=\"async\" class=\"wp-image-2737 aligncenter\" src=\"/media/2018/04/sketchup-ekran-karti.jpg\" alt=\"sketchup ekran karti\" width=\"538\" height=\"449\" srcset=\"/media/2018/04/sketchup-ekran-karti.jpg 580w, /media/2018/04/sketchup-ekran-karti-300x250.jpg 300w, /media/2018/04/sketchup-ekran-karti-503x420.jpg 503w\" sizes=\"auto, (max-width: 538px) 100vw, 538px\" /></a></p>\r\n<p>Birde bunlara ek olarak bazı laptoplarda düşük güç modunda çalışmak, programlarda sorunlara neden olmaktadır. Bilgisayarınızın <strong>3D programlar</strong>da çalışırken <strong>düşük güç modunda</strong> olmadığına emin olunuz.</p>\r\n<p>Aynı zamanda çok önemli ve kullanıcıların sorununu çözen Ekran kartının son sürüme güncellenmesi ve “<em><strong>Window preferences ayarlarından Open gl Hardware</strong></em>” tikinin kaldırılması sorunun çözümünde en büyük etkenlerden biridir. (sketchup 2016 ve alt sürümler için geçerlidir)</p>\r\n<p>İyi bir ekran kartı kullananlar ise aşağıdaki kısmı işaretleyerek 4x,8x,16x yaparak daha kaliteli bir ortamda çizim yapabilirler.</p>\r\n<p><a href=\"/sketchupda-performansli-calismak-icin-yapilmasi-gerekenler.html\" rel=\"attachment wp-att-2738\"><img loading=\"lazy\" decoding=\"async\" class=\"wp-image-2738 aligncenter\" src=\"/media/2018/04/sketchup-cizim.jpg\" alt=\"sketchup cizim\" width=\"508\" height=\"442\" srcset=\"/media/2018/04/sketchup-cizim.jpg 923w, /media/2018/04/sketchup-cizim-300x261.jpg 300w, /media/2018/04/sketchup-cizim-768x669.jpg 768w, /media/2018/04/sketchup-cizim-696x606.jpg 696w, /media/2018/04/sketchup-cizim-482x420.jpg 482w\" sizes=\"auto, (max-width: 508px) 100vw, 508px\" /></a></p>\r\n<h3><strong>Yazılımsal Olarak Sketchupda Performanslı Çalışmak</strong></h3>\r\n<p>Daha önce bir kaç konuda değindiğimiz konulara burada bir özet geçerek birkaç madde olarak değinmek istiyorum.</p>\r\n<p>* <strong>Sketchup Layer</strong> sistemini kullanmak (rahat çalışmak , hızlı render alma için)<br />* Mümkün olduğunca hazır modellerden kaçınmak (dosya sisteminin küçülmesi için)<br />* Grup ve Komponent olayına dikkat etmek (düzenli çalışmak ve farklı programlara gönderimde sorun yaşamamak için)<br />* Mümkün mertebe kendi modellerinizi kendiniz çizmeniz. (poligon sayısını düşürür)<br />* Render motorlarına uyum için, indirmiş olduğunuz <strong>Sketchup Modellerini</strong> kaplamalarını yeniden atmanız.<br />* <strong>Sketchup Render</strong> konusunda sıkıntılar yaşıyorsanız, farklı programlarda render almak.</p>\r\n\r\n<p>&nbsp;</p>\r\n",
+  "publishedAt": "2018-04-20T12:42:12",
+  "modifiedAt": "2022-12-21T10:29:06",
+  "status": "publish",
+  "featuredImage": {
+    "legacyId": 2737,
+    "legacyUrl": "https://www.ufuksen.com/wp-content/uploads/2018/04/sketchup-ekran-karti.jpg",
+    "localPath": "/media/2018/04/sketchup-ekran-karti.jpg",
+    "alt": "sketchup ekran karti",
+    "width": 580,
+    "height": 484,
+    "mimeType": "image/jpeg",
+    "error": null
+  },
+  "inlineMedia": [
+    {
+      "legacyUrl": "http://www.ufuksen.com/wp-content/uploads/2018/04/sketchup-ekran-karti.jpg",
+      "localPath": "/media/2018/04/sketchup-ekran-karti.jpg",
+      "error": null
+    },
+    {
+      "legacyUrl": "http://www.ufuksen.com/wp-content/uploads/2018/04/sketchup-cizim.jpg",
+      "localPath": "/media/2018/04/sketchup-cizim.jpg",
+      "error": null
+    }
+  ],
+  "embeds": [],
+  "seo": {
+    "title": null,
+    "description": "Sketchupda Performanslı Çalışmak için Yapılması gerekenlerin anlatıldığı bir makaledir.Her programda olduğu gibi Sketchup programında da , performanslı ve…",
+    "focusKeyword": "Sketchupda Performanslı Çalışmak",
+    "canonicalUrl": null,
+    "ogImage": null
+  },
+  "readingMinutes": 2,
+  "migrationChecksum": "ed7b3ad3ab4fe9faf9de3167913e8309c3c872f0baf7a089bf50eddce5813a79",
+  "author": {
+    "legacyId": 1,
+    "name": "UFUK ŞEN",
+    "slug": "ufuk",
+    "isGuest": false
+  },
+  "categories": [
+    {
+      "legacyId": 1169,
+      "name": "3D Programlar",
+      "slug": "3d-programlar"
+    },
+    {
+      "legacyId": 1172,
+      "name": "Sketchup",
+      "slug": "sketchup"
+    }
+  ],
+  "tags": []
+}

@@ -1,0 +1,88 @@
+{
+  "legacyId": 3478,
+  "slug": "kaliteli-gorsel-icin-kaliteli-kaplama-olusturmayi-ogrenin",
+  "legacyUrl": "/kaliteli-gorsel-icin-kaliteli-kaplama-olusturmayi-ogrenin.html",
+  "url": "/kaliteli-gorsel-icin-kaliteli-kaplama-olusturmayi-ogrenin.html",
+  "title": "Kaliteli Görsel için: Kaliteli kaplama oluşturmayı öğrenin ?",
+  "excerpt": "Kaliteli Kaplama oluşturmak 3D Görselleştirme nin temel adımlarından biridir. Görselleştirme ile uğraşan bir çok arkadaşımızın, gruplar da ve sayfalarda yapılan çalışmalara bakıp oluşturulan kaplamaların detaylarını merak ettiklerini görüyoruz.Kaliteli Kaplama oluşturmak veya herhangi bir kaplama sitesinden indirdikten sonra kaplamanın kanallarını çıkarmak, 3D projeniz için çok önemli bir faktördür.Bu makalede sizlere, kaplama kanallarının görevlerini ve nerelerde kullanmanız …",
+  "contentHtml": "\r\n<p><strong>Kaliteli Kaplama</strong> oluşturmak <a href=\"/\"><strong>3D Görselleştirme</strong></a> nin temel adımlarından biridir. Görselleştirme ile uğraşan bir çok arkadaşımızın, gruplar da ve sayfalarda yapılan çalışmalara bakıp oluşturulan kaplamaların detaylarını merak ettiklerini görüyoruz.<br /><br />Kaliteli Kaplama oluşturmak veya herhangi bir <strong><a href=\"/kaliteli-kaplama-sitesi-texturefun-com.html\" target=\"_blank\" rel=\"noreferrer noopener\" aria-label=\"kaplama sitesinden (yeni sekmede açılır)\">kaplama sitesinden</a></strong> indirdikten sonra kaplamanın kanallarını çıkarmak, <strong>3D projeniz</strong> için çok önemli bir faktördür.<br /><br /><strong>Bu makalede sizlere, kaplama kanallarının görevlerini ve nerelerde kullanmanız gerektiğini anlatacağız.</strong><br /><br />Kaplama kanallarını çıkarmak ve bunlar üzerinde <strong>3D programlar</strong> üzerinde değişiklik yapmak, istediğiniz yansıma ve farklı kaplama parametreleri oluşturmak için önemlidir.</p>\r\n\r\n\r\n\r\n<h2 class=\"wp-block-heading\"><strong>PBR Material Nedir ?</strong></h2>\r\n\r\n\r\n\r\n<p><em>Fiziksel Tabanlı Render (PBR), ışığın yüzeylerle nasıl etkileşime girdiğinin daha doğru bir sunumunu sağlayan bir gölgelendirme ve işleme yöntemidir. Fiziksel Tabanlı Render (PBR) veya Fiziksel Tabanlı Gölgeleme (PBS) olarak adlandırılabilir. </em></p>\r\n\r\n\r\n\r\n<h2 class=\"wp-block-heading\"><strong>Kaplamayı Detaylandırmak neden önemlidir ?</strong></h2>\r\n\r\n\r\n\r\n<p>Eğer siz, kaplama sitelerinden indirmiş olduğunuz kaplamaları ,hiç bir ayar yapmadan çalışmanızda kullanırsanız.Mat bir görüntü elde edersiniz. <br /><br /><strong>Render sonucunda görüntü, ham ve işlenmemiş, puslu bir şekilde karşınıza çıkacaktır.</strong><br /><br />Örnek olarak aşağıdaki gibi ahşap kaplamayı ele aldığımızda, kaplamanın üzerindeki pürüzler, bölümlenmiş kısımlar ve yansıma gibi doğal özelliklere sahip olduğunu görebiliyoruz. Bu doğal özellikleri <strong>kaplama programları</strong> kullanarak rahatlıkla oluşturabiliriz.</p>\r\n\r\n\r\n\r\n<figure class=\"wp-block-image is-resized\"><img loading=\"lazy\" decoding=\"async\" class=\"wp-image-3479\" src=\"/media/2019/05/wood-textures.jpg\" alt=\"\" width=\"581\" height=\"427\" srcset=\"/media/2019/05/wood-textures.jpg 904w, /media/2019/05/wood-textures-300x220.jpg 300w, /media/2019/05/wood-textures-216x160.jpg 216w, /media/2019/05/wood-textures-768x564.jpg 768w, /media/2019/05/wood-textures-80x60.jpg 80w, /media/2019/05/wood-textures-696x511.jpg 696w, /media/2019/05/wood-textures-572x420.jpg 572w\" sizes=\"auto, (max-width: 581px) 100vw, 581px\" /></figure>\r\n\r\n\r\n\r\n<p>Alt kısımda detaylarını anlattığımız kaplama kanallarını, programlar vasıtasıyla çıkartıp, <strong>3d render</strong> motorlarında kullanarak, kaplamaların yansıma (ışığın nerelerde yansıma yaptırmasını sağlamak) , pürüzlü ve bölümleme gibi özellikler verebilirsiniz. <br /><br />Bu şekilde çalışmalarınızın çok daha kaliteli olmasını sağlayabilirsiniz.<br /><br />Çalışmalarınızın tümünde, istediğiniz kaplama çeşidi üzerinde bu kanallarını kullanabilirsiniz.Aynı zamanda, kaliteli bir etki oluşturmak, sizin render motorları içerisindeki parametreleri, ne kadar etkili kullandığınızla da ilgilidir.<br /><br />Render motorlarında kullandığınız kanalların etkisini azaltmak artırmak gibi önemli parametreler bulunmaktadır.<br /><br />Bu parametre değerlerini değiştirmek ve sürekli test aşamaları ile , kaplamanızı istediğiniz tonlamalara getirmeniz gerekir.</p>\r\n\r\n\r\n\r\n<h2 class=\"wp-block-heading\"><strong> Kaliteli Kaplama için Kaplama Kanalları</strong></h2>\r\n\r\n\r\n\r\n<p>Kaplama kanalları bizim, kaplama üzerinde kaliteli doğal etkiyi vermemiz için gereklidir. Bu kanalların aynı isimde karşıtlığı render motorlarında vardır. Aynı kanalları , aynı isimde render motorları içerisindeki kanallarda kullanmalıyız.<br /><br /><strong>Diffuse</strong> : Kaplamanın ana temel halidir. Yani üst kısımdaki verdiğimiz ahşap kaplama gibi renkli halidir.Bu kaplama diğer kaplamaların oluşturulmasını sağlar.Bu ana kaplama olmadan diğer alt kanalları oluşturamazsınız. Diffuse resmi aşağıdaki gibidir.</p>\r\n\r\n\r\n\r\n<figure class=\"wp-block-image\"><img loading=\"lazy\" decoding=\"async\" width=\"400\" height=\"400\" class=\"wp-image-3485\" src=\"/media/2019/05/diffuse.jpg\" alt=\"\" srcset=\"/media/2019/05/diffuse.jpg 400w, /media/2019/05/diffuse-300x300.jpg 300w, /media/2019/05/diffuse-150x150.jpg 150w\" sizes=\"auto, (max-width: 400px) 100vw, 400px\" /></figure>\r\n\r\n\r\n\r\n<p><strong>Ambient Occlusion</strong> : Kaplamalarınızın daha fazla belirgin ve daha fazla gölge detayına sahip olması için ideal bir kanaldır. Vray ve Corona gibi render motorlarında bu kaplamayı Diffuse kanalı ile beraber kullanmalısınız.Aşağıdaki resim <strong>Ambient Occ</strong> kanalıdır.</p>\r\n\r\n\r\n\r\n<figure class=\"wp-block-image\"><img loading=\"lazy\" decoding=\"async\" width=\"400\" height=\"400\" class=\"wp-image-3487\" src=\"/media/2019/05/ambient-occ-1.jpg\" alt=\"\" srcset=\"/media/2019/05/ambient-occ-1.jpg 400w, /media/2019/05/ambient-occ-1-300x300.jpg 300w, /media/2019/05/ambient-occ-1-150x150.jpg 150w\" sizes=\"auto, (max-width: 400px) 100vw, 400px\" /></figure>\r\n\r\n\r\n\r\n<p><strong>Reflection: </strong> Bu kanal yansımanın nerede görünmesi gerektiğini ve görünmemesi gerektiğini belirtir. Siyah beyaz oranı yansımanın nerelerde fazla nerelerde az olmasını belirler.</p>\r\n\r\n\r\n\r\n<p><strong>Glossiness</strong>: Bu kanal ile , yansımaların keskinliğini kontrol edebilirsiniz.Ne kadar yumuşak ve ne kadar keskin geçiş olacağını bu kanal ile ayarlayabilirsiniz. Aşağıdaki Kanal Glossiness kanalıdır.</p>\r\n\r\n\r\n\r\n<figure class=\"wp-block-image\"><img loading=\"lazy\" decoding=\"async\" width=\"400\" height=\"400\" class=\"wp-image-3489\" src=\"/media/2019/05/specular-1.jpg\" alt=\"\" srcset=\"/media/2019/05/specular-1.jpg 400w, /media/2019/05/specular-1-300x300.jpg 300w, /media/2019/05/specular-1-150x150.jpg 150w\" sizes=\"auto, (max-width: 400px) 100vw, 400px\" /></figure>\r\n\r\n\r\n\r\n<p><strong>Bump</strong> : 3D Yazılımlarda pürüzlü yüzey detaylarını daha fazla artırmak için kullanılan siyah beyaz bir kanaldır. Normal map ve Displacement map&#8217;e göre daha az ayrıntılı çalışır. Hız için idealdir. Diffuse kaplamasının siyah beyaz hali bump kaplamasını ifade etmektedir.</p>\r\n\r\n\r\n\r\n<p><strong>Normal Map</strong> : 3D Yazılımlarda pürüzlü yüzey detaylarını daha fazla artırmak için kullanılan mor renkli bir kanaldır.Aşağıdaki kanal Normal Map kanalıdır.</p>\r\n\r\n\r\n\r\n<figure class=\"wp-block-image\"><img loading=\"lazy\" decoding=\"async\" width=\"400\" height=\"400\" class=\"wp-image-3490\" src=\"/media/2019/05/normal.jpg\" alt=\"\" srcset=\"/media/2019/05/normal.jpg 400w, /media/2019/05/normal-300x300.jpg 300w, /media/2019/05/normal-150x150.jpg 150w\" sizes=\"auto, (max-width: 400px) 100vw, 400px\" /></figure>\r\n\r\n\r\n\r\n<p><strong>Displacement:</strong> Ana kaplamadan oluşan, siyah beyaz ton oranına göre, matematiksel olarak yüzeyde derinlik ve çöküntü yapar. Zemin, Kaya, Toprak veya çok detaya gireceğiniz yüzeylerde kullanılabilir. Aşağıdaki kanal Displacement kanalıdır.</p>\r\n\r\n\r\n\r\n<figure class=\"wp-block-image\"><img loading=\"lazy\" decoding=\"async\" width=\"400\" height=\"400\" class=\"wp-image-3491\" src=\"/media/2019/05/displacement.jpg\" alt=\"\" srcset=\"/media/2019/05/displacement.jpg 400w, /media/2019/05/displacement-300x300.jpg 300w, /media/2019/05/displacement-150x150.jpg 150w\" sizes=\"auto, (max-width: 400px) 100vw, 400px\" /></figure>\r\n\r\n\r\n\r\n<h3 class=\"wp-block-heading\">Kaplama Kanallarını 3D programlarda nasıl kullanabiliriz ?</h3>\r\n\r\n\r\n\r\n<p><strong>Blender</strong> , <strong>3dsmax Vray</strong>, <strong>Corona</strong>, <strong>Lumion</strong>, <strong>Twinmotion</strong> , <a href=\"https://www.sketchupturkiye.com/\" target=\"_blank\" rel=\"noopener\"><strong>Sketchup Vray</strong></a> ve diğer render motorlarındaki mantık ve kanalların birleştirilmesi hep aynı işleyiş ile devam eder. Hepsinde aynı kanallar mevcut olduğu için aşağıdaki <strong>3dsmax corona render</strong> görüntüsünde olduğu gibi kanalları ekleyebilirsiniz. <br /><br />En Alt kısımda vermiş olduğumuz programlardan,almış olduğunuz kanalları, ilgili render motorlarında aşağıda gösterilen yerlere ekleyebilirsiniz. Programlar ve Render motorları arası ufak tefek değişiklik olmasına karşın, mantık aynıdır.</p>\r\n\r\n\r\n\r\n<figure class=\"wp-block-image\"><img loading=\"lazy\" decoding=\"async\" width=\"909\" height=\"682\" class=\"wp-image-3494\" src=\"/media/2019/05/slate-editör.jpg\" alt=\"\" srcset=\"/media/2019/05/slate-editör.jpg 909w, /media/2019/05/slate-editör-300x225.jpg 300w, /media/2019/05/slate-editör-768x576.jpg 768w, /media/2019/05/slate-editör-80x60.jpg 80w, /media/2019/05/slate-editör-265x198.jpg 265w, /media/2019/05/slate-editör-696x522.jpg 696w, /media/2019/05/slate-editör-560x420.jpg 560w\" sizes=\"auto, (max-width: 909px) 100vw, 909px\" /></figure>\r\n\r\n\r\n\r\n<p>Tüm kaplamaları kullandığınızda sonuç aşağıdaki gibi olacaktır. Bu şekilde sahnenizde kullanacağız ışık miktarına göre farklı etkiler alabilirsiniz.</p>\r\n\r\n\r\n\r\n<p>Tüm kanalları eklenmiş ve ayarları yapılmış Ahşap zemin kaplaması</p>\r\n\r\n\r\n\r\n<figure class=\"wp-block-image is-resized\"><img loading=\"lazy\" decoding=\"async\" class=\"wp-image-3492\" src=\"/media/2019/05/wood_parquet_2.jpg\" alt=\"\" width=\"631\" height=\"631\" srcset=\"/media/2019/05/wood_parquet_2.jpg 400w, /media/2019/05/wood_parquet_2-300x300.jpg 300w, /media/2019/05/wood_parquet_2-150x150.jpg 150w\" sizes=\"auto, (max-width: 631px) 100vw, 631px\" /></figure>\r\n\r\n\r\n\r\n<h3 class=\"wp-block-heading\"><strong>Bu Kanalları Hangi Programlar ile çıkartabiliriz ?</strong></h3>\r\n\r\n\r\n\r\n<p>Aşağıda vereceğimiz 3 programında ana amacı Diffuse kanalına (ana kaplamaya) ekleyeceğiniz kaplamaların kanallarını çıkarmaktır. Programların kendi içlerinde, farklı kullanım özellikleri bulunmaktadır.<br />Kanallara eklediğiniz kaplamaların tonlamaları ile, bu programlarda rahatlıkla oynayabilirsiniz.<br /><br />Bu programların çoğu ücretli olmasına karşın bir ücretsiz ve ücretli olanı tanıtacağız.</p>\r\n\r\n\r\n\r\n<p>Ücretsiz olan <strong>Materialize</strong> Programı <strong><a href=\"http://www.boundingboxsoftware.com/materialize/downloads.php\" target=\"_blank\" rel=\"noreferrer noopener\" aria-label=\"buradan (yeni sekmede açılır)\">buradan</a></strong> indirebilirsiniz. <br />Kullanım için aşağıdaki videoyu izleyiniz.<br />Detaylı ayarları ile bir çok kaplama üzerinde istediğiniz etkiyi alırsınız.</p>\r\n\r\n\r\n\r\n<figure class=\"wp-block-embed-youtube wp-block-embed is-type-video is-provider-youtube wp-embed-aspect-16-9 wp-has-aspect-ratio\">\r\n<div class=\"wp-block-embed__wrapper\">https://www.youtube.com/watch?v=wOwkVVdhdXs&amp;fbclid=IwAR3iV8v-igTuZ_FCsHXp9aYA4P4zrhr4dWYlrmLa3eAqet0acjdKgrHphuo</div>\r\n</figure>\r\n\r\n\r\n\r\n<p><strong>Pixplant</strong> Tüm kanalları ve kanallar üzerinde etkiyi artırıp azaltmaya yarayan parametreler ile zengin bir kullanım sunmaktadır.<br />Programla ilgili detay için aşağıdaki videoyu izleyiniz. Daha pratik bir kullanıma sahiptir, ücretlidir.Deneme sürümü için <a href=\"https://www.pixplant.com/purchase.php\" target=\"_blank\" rel=\"noreferrer noopener\" aria-label=\"buradan (yeni sekmede açılır)\"><strong>buradan</strong></a> indirme yapabilirsiniz.</p>\r\n\r\n\r\n\r\n<figure class=\"wp-block-embed-youtube wp-block-embed is-type-video is-provider-youtube wp-embed-aspect-16-9 wp-has-aspect-ratio\">\r\n<div class=\"wp-block-embed__wrapper\">https://youtu.be/EbuqI0tlIzc</div>\r\n</figure>\r\n\r\n\r\n\r\n<p class=\"has-background has-luminous-vivid-amber-background-color\"><strong>Sorularınız ve Yorumlarınız bizim için önemlidir, bu konudaki sorularınız için aşağıdaki yorum kısmını kullanabilirsiniz.</strong></p>\r\n\r\n\r\n\r\n<h3 class=\"wp-block-heading\"><strong>Düzgün ve Kaliteli 3D görselleştirme hizmetleri için bizimle çalışabilirsiniz.</strong></h3>\r\n\r\n\r\n\r\n<p>Yukarıda bahsettiğimiz konularda , profesyonel bir şekilde bizimle çalışmak isterseniz eğer projelerinizi <strong>vraydvd@gmail.com</strong> adresine yollayabilir ve anında geri dönüş alabilirsiniz.<br /><br /><strong>3D görselleştirme</strong>, <strong>3D mimari proje</strong> ve <strong>3D mimari</strong> konularında bizimle yüksek kalite görseller için çalışma içerisinde olabilirsiniz. Projelerinin kaliteli görsel halinde sizlere sunuyoruz.Tek yapmanız gereken üst kısımdaki mail adresinize projelerinizi göndermeniz yeterlidir.<br /><br />İnstagramdan takip etmek için <strong><a href=\"https://www.instagram.com/ufuk_shen/\" target=\"_blank\" rel=\"noopener\">Tıklayınız</a></strong></p>\r\n",
+  "publishedAt": "2019-05-29T08:55:36",
+  "modifiedAt": "2022-12-21T10:53:05",
+  "status": "publish",
+  "featuredImage": {
+    "legacyId": 3781,
+    "legacyUrl": "https://www.ufuksen.com/wp-content/uploads/2019/05/wood_parquet-2.jpg",
+    "localPath": "/media/2019/05/wood_parquet-2.jpg",
+    "alt": "Mimari Görselleştirme işleriniz içi en iyi Photoshop Eklentileri",
+    "width": 370,
+    "height": 297,
+    "mimeType": "image/jpeg",
+    "error": null
+  },
+  "inlineMedia": [
+    {
+      "legacyUrl": "https://www.ufuksen.com/wp-content/uploads/2019/05/wood-textures.jpg",
+      "localPath": "/media/2019/05/wood-textures.jpg",
+      "error": null
+    },
+    {
+      "legacyUrl": "https://www.ufuksen.com/wp-content/uploads/2019/05/diffuse.jpg",
+      "localPath": "/media/2019/05/diffuse.jpg",
+      "error": null
+    },
+    {
+      "legacyUrl": "https://www.ufuksen.com/wp-content/uploads/2019/05/ambient-occ-1.jpg",
+      "localPath": "/media/2019/05/ambient-occ-1.jpg",
+      "error": null
+    },
+    {
+      "legacyUrl": "https://www.ufuksen.com/wp-content/uploads/2019/05/specular-1.jpg",
+      "localPath": "/media/2019/05/specular-1.jpg",
+      "error": null
+    },
+    {
+      "legacyUrl": "https://www.ufuksen.com/wp-content/uploads/2019/05/normal.jpg",
+      "localPath": "/media/2019/05/normal.jpg",
+      "error": null
+    },
+    {
+      "legacyUrl": "https://www.ufuksen.com/wp-content/uploads/2019/05/displacement.jpg",
+      "localPath": "/media/2019/05/displacement.jpg",
+      "error": null
+    },
+    {
+      "legacyUrl": "https://www.ufuksen.com/wp-content/uploads/2019/05/slate-editör.jpg",
+      "localPath": "/media/2019/05/slate-editör.jpg",
+      "error": null
+    },
+    {
+      "legacyUrl": "https://www.ufuksen.com/wp-content/uploads/2019/05/wood_parquet_2.jpg",
+      "localPath": "/media/2019/05/wood_parquet_2.jpg",
+      "error": null
+    }
+  ],
+  "embeds": [],
+  "seo": {
+    "title": null,
+    "description": "3D görselleştirmede, kaliteli kaplama kanallarının nasıl oluşturulması gerektiğini gösteren bir makaledir.Sizde bu ayarları yaparak kanalları öğrenin.",
+    "focusKeyword": "Kaliteli Kaplama",
+    "canonicalUrl": null,
+    "ogImage": null
+  },
+  "readingMinutes": 4,
+  "migrationChecksum": "82cfd311477caa43e114946ad91c914418eed872762b295839af2bd2758470a6",
+  "author": {
+    "legacyId": 1,
+    "name": "UFUK ŞEN",
+    "slug": "ufuk",
+    "isGuest": false
+  },
+  "categories": [
+    {
+      "legacyId": 518,
+      "name": "3D Görselleştirme",
+      "slug": "3d-gorsellestirme"
+    }
+  ],
+  "tags": []
+}

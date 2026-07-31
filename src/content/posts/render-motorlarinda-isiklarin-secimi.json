@@ -1,0 +1,53 @@
+{
+  "legacyId": 2086,
+  "slug": "render-motorlarinda-isiklarin-secimi",
+  "legacyUrl": "/render-motorlarinda-isiklarin-secimi.html",
+  "url": "/render-motorlarinda-isiklarin-secimi.html",
+  "title": "Render Motorlarında Işıkların seçimi",
+  "excerpt": "Render Motorunda Işıklar konusu Kaliteli Görselleştirmeyi oluşturan bir diğer önemli konudur. Bir önceki konularımızda Modelleme ve Kaplama konularına değinmiştik. Eğer bu konularda eksiğiniz varsa ise, ilk önce o konuları ziyaret etmenizi öneririm. Işık konusu ilk akla geldiğinde gerçek dünya üzerinde hangi tür ışıklar olduğu ve nerelerde kullanıldığını bilmek gerekiyor. Aynı zamanda render motorlarında olan ama …",
+  "contentHtml": "<p><strong><a href=\"/render-motorlarinda-isiklarin-secimi.html\" rel=\"attachment wp-att-2090\"><img loading=\"lazy\" decoding=\"async\" class=\"alignleft size-medium wp-image-2090\" src=\"/media/2017/12/Render-Motorunda-Işıklar-300x236.jpg\" alt=\"Render Motorunda Işıklar\" width=\"300\" height=\"236\" srcset=\"/media/2017/12/Render-Motorunda-Işıklar-300x236.jpg 300w, /media/2017/12/Render-Motorunda-Işıklar.jpg 400w\" sizes=\"auto, (max-width: 300px) 100vw, 300px\" /></a>Render Motorunda Işıklar</strong> konusu <strong><a href=\"https://www.mimari3d.com/\" target=\"_blank\" rel=\"noopener\">Kaliteli Görselleştirme</a></strong>yi oluşturan bir diğer önemli konudur.</p>\n<p>Bir önceki konularımızda <strong><a href=\"/modelleme.html\" target=\"_blank\" rel=\"noopener\"><span style=\"color: #333399;\">Modelleme</span></a></strong> ve <a href=\"/kaplama-secimi-malzeme-hazirlama.html\" target=\"_blank\" rel=\"noopener\"><span style=\"color: #000080;\"><strong>Kaplama</strong></span></a> konularına değinmiştik. Eğer bu konularda eksiğiniz varsa ise, ilk önce o konuları ziyaret etmenizi öneririm.</p>\n<p>Işık konusu ilk akla geldiğinde gerçek dünya üzerinde hangi tür ışıklar olduğu ve nerelerde kullanıldığını bilmek gerekiyor.</p>\n<p>Aynı zamanda render motorlarında olan ama gerçek dünyada olmayan <strong>Domelight</strong> benzeri ışıklarda görselleştirme kısmında bizim için önemli ışık kaynaklarıdır.</p>\n<h2>Render Motorlarında Işıkların Kullanımı</h2>\n<p>Hemen hemen her render motorunda light (ışık) sekmesinde bir takım ışık modelleri vardır.Bu ışık modelleri ile sahnenizde istediğiniz alanları aydınlatabilirsiniz.</p>\n<p>Sketchup Kullanıcıları için sahneye otomatik olarak gelen Güneş ışığı sayesinde direk bir aydınlatma sağlamak mümkündür. Vray ayarlarıdan options kısmından Light sekmesine tıklayarak güneş ayarlarını yapabilirsiniz.</p>\n<p><span style=\"color: #000080;\"><strong>Unutmayın en iyi ışık ayarlarını sürekli test aşamalarından sonra elde edersiniz.</strong></span></p>\n<p>Aynı şekilde 3dsmax kullanıcıları , Vray menüsünden  sahneye vray sun ekleyerek doğal güneş aydınlatmasını yapabilirler.Diğer render motorlarındada bu tür seçenekler mevcuttur.</p>\n<p>Aynı şekilde ayar kısmından Güneş ile ilgili birçok parametreye ulaşmak mümkündür.</p>\n<hr />\n<p>Işıkar konusunda işin içinden çıkamadığınızı düşünüyorsanız, sizin için hazırlamış olduğumuz <strong><span style=\"color: #993300;\"><a style=\"color: #993300;\" href=\"/kategori/3d-egitim-setleri\" target=\"_blank\" rel=\"noopener\">3D Eğitim</a></span></strong> Setlerinden alabilirsiniz.</p>\n<hr />\n<h3><strong>Render Motorlarında Işıkların özellikleri</strong></h3>\n<p>En çok kullanılan render motorlarından olan vray render motoru için aşağıdaki ışıkların ve yerleşimlerini okuyabilirsiniz.</p>\n<p><span style=\"color: #000080;\"><strong>Sun</strong> </span>: Güneş ışığıdır ve Sketchup programında otomatik gelir. Diğer <a href=\"/kategori/3d\" target=\"_blank\" rel=\"noopener\">3D</a> programlarda sahneye eklemek gerekiyor.<br />\n<span style=\"color: #000080;\"><strong>Vray Light</strong></span> : Her sahnede kullanılabilen bir ışık türüdür ;<br />\nİç mekanlarda pencere önünde<br />\nStudio render esnasında, tek objelerin aydınlatılmasında.<br />\nFarklı yerlerde destekleyici rolünde kullanılabilir.<br />\n<span style=\"color: #000080;\"><strong>Sphere Light</strong></span> : Dairesel ışık kaynağıdır, merkezden başlayarak dağılan bir ışık kaynağı yapısıdır.<br />\n<span style=\"color: #333399;\"><strong>Omni Light</strong></span>: Gerçek Dünyada Ampül etkisine benzer bir etki ile aydınlatma oluşturur.<br />\n<span style=\"color: #333399;\"><strong>Ies Light</strong></span>: Süs ışıkları olarak tabir edebiliriz.Dolap içlerinde, kitaplık ve duvar aydınlatma elemanlarında sıklıkla kullanılır.Dış mekanda köşe aydınlatması için idealdir.<br />\n<span style=\"color: #333399;\"><strong>Dome Light</strong></span> :Yarım küre şeklinde bir sembolü vardır, içerisinde hdri ataması yapılarak, yansıma yapan objeler üzerinde daha iyi bir ışık ve etki almak için kullanılır.</p>\n<p>Arkadaşlar ışıklar konusunda başarılı olmanın ilk kuralı gerçek hayatta kullanılan ışık modellerini iyi izlemeniz ve bu ışık kaynakları ile bol bol testler yapmanızdan geçer.</p>\n<p>Işıklar konusunu hallettiyseniz <a href=\"/render-sonrasi-post-production.html\" target=\"_blank\" rel=\"noopener\">Render sonrası Post Production</a> konusuna bakabilirsiniz.</p>\n",
+  "publishedAt": "2017-12-14T20:39:50",
+  "modifiedAt": "2023-07-04T08:46:46",
+  "status": "publish",
+  "featuredImage": {
+    "legacyId": 2090,
+    "legacyUrl": "https://www.ufuksen.com/wp-content/uploads/2017/12/Render-Motorunda-Işıklar.jpg",
+    "localPath": "/media/2017/12/Render-Motorunda-Işıklar.jpg",
+    "alt": "Render Motorunda Işıklar",
+    "width": 400,
+    "height": 314,
+    "mimeType": "image/jpeg",
+    "error": null
+  },
+  "inlineMedia": [
+    {
+      "legacyUrl": "http://www.ufuksen.com/wp-content/uploads/2017/12/Render-Motorunda-Işıklar-300x236.jpg",
+      "localPath": "/media/2017/12/Render-Motorunda-Işıklar-300x236.jpg",
+      "error": null
+    }
+  ],
+  "embeds": [],
+  "seo": {
+    "title": null,
+    "description": "Render Motorunda Işıklar ve yerleşimi, ışıkların kullanılması hakkında detaylı bilgilendirme içeriğidir.Hangi ışığın nerede kullanılacağını öğrenin.",
+    "focusKeyword": "Render Motoru",
+    "canonicalUrl": null,
+    "ogImage": null
+  },
+  "readingMinutes": 2,
+  "migrationChecksum": "d859331573312c1aad68eae3fde52ce561abe4ae1979c55908cbb2af80b51fca",
+  "author": {
+    "legacyId": 1,
+    "name": "UFUK ŞEN",
+    "slug": "ufuk",
+    "isGuest": false
+  },
+  "categories": [
+    {
+      "legacyId": 518,
+      "name": "3D Görselleştirme",
+      "slug": "3d-gorsellestirme"
+    }
+  ],
+  "tags": []
+}

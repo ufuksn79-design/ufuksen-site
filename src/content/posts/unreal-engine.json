@@ -1,0 +1,71 @@
+{
+  "legacyId": 815,
+  "slug": "unreal-engine",
+  "legacyUrl": "/unreal-engine.html",
+  "url": "/unreal-engine.html",
+  "title": "Unreal Engine",
+  "excerpt": "Unreal Engine programından yakın zamandır çokca bahsettik, nedir bu unreal engine ? yenirmi içilirmi ? neden gerek duyulur ? neden kullanmak gereklidir ? bu makale içerisinde bu merak ettiklerinize cevap vermeye çalışacağım. Oyun motoru , adı üzerinde oyun yapımı için geliştirilmiş bir program , hernekadar biz mimari görselleştirme için kullanmaya başlasak da, 1998 yılında Epic …",
+  "contentHtml": "<p><a href=\"/unreal-engine.html\" rel=\"attachment wp-att-832\"><img loading=\"lazy\" decoding=\"async\" class=\"size-medium wp-image-832 aligncenter\" src=\"/media/2016/02/unreal-engine-300x112.jpg\" alt=\"unreal engine\" width=\"300\" height=\"112\" srcset=\"/media/2016/02/unreal-engine-300x112.jpg 300w, /media/2016/02/unreal-engine-1024x381.jpg 1024w, /media/2016/02/unreal-engine-768x286.jpg 768w, /media/2016/02/unreal-engine-696x259.jpg 696w, /media/2016/02/unreal-engine-1068x398.jpg 1068w, /media/2016/02/unreal-engine-1128x420.jpg 1128w, /media/2016/02/unreal-engine.jpg 1523w\" sizes=\"auto, (max-width: 300px) 100vw, 300px\" /></a><a href=\"/unreal-engine-egitim-seti.html\"><span style=\"text-decoration: underline;\"><em><strong>Unreal Engine</strong></em></span></a> programından yakın zamandır çokca bahsettik, nedir bu unreal engine ? yenirmi içilirmi ? neden gerek duyulur ? neden kullanmak gereklidir ?</p>\n<p>bu makale içerisinde bu merak ettiklerinize cevap vermeye çalışacağım.</p>\n<p>Oyun motoru , adı üzerinde oyun yapımı için geliştirilmiş bir program , hernekadar biz mimari görselleştirme için kullanmaya başlasak da, 1998 yılında Epic games tarafından yapılan Unreal Tournement isimli oyunun ilk motorudur.</p>\n<p>Oyun motorları bu gelişimlerini <a href=\"/3d-gorsellestirme\">3D görselleştirme</a> üzerinde kullanarak, bu sektörde kendilerine bir yer kapma peşindeler.</p>\n<p><strong>Not: Bu arada <a href=\"/unreal-engine-egitim.html\">unreal engine eğitim</a> mimari görselleştirme eğitim setimiz çıkmıştır. <a href=\"/unreal-engine-egitim.html\">Bu linkten</a> detaylara bakabilirsiniz. Aynı zamanda unreal engine 2020 güncellemesi ile eğitim seti güncellenmiştir.</strong></p>\n<p style=\"text-align: justify;\">Unreal 1&#8217;in ilk oyununa aşağıdaki videodan bakabilirsiniz.</p>\n<p><iframe loading=\"lazy\" src=\"https://www.youtube.com/embed/kLMuKg57thY\" width=\"560\" height=\"315\" frameborder=\"0\" allowfullscreen=\"allowfullscreen\"></iframe></p>\n<p style=\"text-align: justify;\">Bu motor zaman içerisinde geliştirilerek farklı kod yapıları çıkarılarak Oyun firmalarına sunulmuştur.İlk zamanlar sadece konsol ve pc oyun üreten firmalara daha sonran Unreal Engine 4 Versiyonu ile son kullanıcıya yani bizlere sunulmuştur.</p>\n<p style=\"text-align: justify;\"><span style=\"color: #ff00ff;\"><strong>Unreal Engine ücretsiz olduğu zaman kendi bloğunda şu açıklama yer vermiştir.</strong></span></p>\n<p style=\"text-align: justify;\"><em>&#8220;Eğer birşeyi seviyorsan, onu ücretsiz yap!</em></p>\n<p style=\"text-align: justify;\"><em>Unreal Engine 4 artık herkese ücretsiz. Gelecekteki tüm güncellemeler de ücretsiz olacak. Unreal Engine&#8217;i indirip; oyun geliştirme, eğitim, mimarı, film ve animasyon dallarında kullanabilirsiniz. Bir oyun veya uygulamayı yayınladığınız zaman, her 3000$&#8217;da bir %5 telif hakkı ödersiniz. Bu sizin başarılı olduğunuz zaman geçerli, anlaşma basit.</em></p>\n<p style=\"text-align: justify;\"><em>Epic Games olarak biz, oyunlarımızı yaparken bu teknolojiyi kullanıyoruz. Yaptığınız projeleri boyutlandırarak yüksek kazanç sağlar. En üst düzeyde bulunan platformları destekler ve %100 olarak C++ kaynak kodlarından oluşmaktadır.</em></p>\n<p><em>Niyetimiz mutlak olarak herşeyi sizlere sağlamak. Böylece herşeyin kontrolü ve kaderi sizin elinizde olur. İhtiyacınız olan herşeyi Unreal Engine 4 Market&#8217;inde bulabilirsiniz veya kendiniz yaratabilirsiniz; ardından diğerleriyle paylaşabilirsiniz.</em></p>\n<p><em>Bir oyunu yaydığınız zaman her 3000$ satışınız karşılığında Epic Games sizlerden %5 telif hakkı istiyor. %5 Telif hakkı ise 150$&#8217;a denk geliyor.</em><br />\n<em> 3000$ kazandığınız zaman Epic Games&#8217;e 150$ veriyorsunuz,</em><br />\n<em> 6000$ kazandığınız zaman Epic Games&#8217;e 300$ veriyorsunuz.&#8221;</em><br />\n<a href=\"http://www.unrealengineturkiye.com/unreal-engine-4-artik-ucretsiz-konusu.html?pid=6903#pid6903\" target=\"_blank\" rel=\"noopener noreferrer\">Kaynak</a></p>\n<h2 style=\"text-align: justify;\"><strong>Unreal Engine Arayüz</strong></h2>\n<p style=\"text-align: justify;\">Bir programın kullanıcı dostu olması, sizin o programı çok kolay ve hızlı öğrenmenize yardımcı olur,  arayüzü çok basit ve kullanışlı olarak ayarlanması ve gereksiz hiçbir konuya izin verilmemesi ve sade bir haliyle kullanıcılara sunuması unreal engine&#8217;nin hızlı bir şekilde öğrenilmesine neden oluyor.</p>\n<p>Tabi bunların en basit haliyle programı sevmeniz gerekiyor, sevdiğiniz işleride kısa sürede hızlı bir şekilde öğreniyorsunuz ,unreal engine kendini sevdiren bir program.</p>\n<h2 style=\"text-align: justify;\"><strong>Unreal Engine Sistem Gereksinimleri</strong></h2>\n<p style=\"text-align: justify;\">Unreal engine yüksek sistem ihtiyacını seven bir program, hakkını verecek bir sistemle mimari görselleştirme yapmak istiyorsanız kısa zaman çok güzel sonuçlar alırsınız, fakat düşük sistemlerde yüksek kalite build sürelerinde en az diğer render motorlarında beklediğiniz süreler kadar beklersiniz.</p>\n<p>O yüzden diğer 3d render motorlarında olduğu gibi bu programda da yüksek sistem gereksinimi gerekli, ama ortalama bir sistem isterseniz eğer yeni nesil bir i7 işlemci, 32gb ram ve GTX7-8-9 Serisi kartlarla rahatlıkla görselleştirme yapabilirsiniz.</p>\n<h3 style=\"text-align: justify;\"><strong><a href=\"/kategori/3d-gorsellestirme\">Unreal Engine</a> Mimari Görselleştirme için Kullanılır mı ?</strong></h3>\n<p style=\"text-align: justify;\">Unreal Engine Mimari görselleştirme konusunda son 1 yılda çeşitli kullanıcılar tarafından yüksek bir çıkış yaptı bende 1 yıldır kullanıyorum , şu an piyasada çok yaygın değil, yaygın olmamasının nedenlerinden biri eğitim için kaynak yetersizliği ve yüksek sistem ihtiyacından dolayıdır.</p>\n<p>Aynı zamanda kod yapısınının geniş olması , görselleştirme yapan kişilerin ayrıca kod öğrenmeleri gerektirecek türde bilgiler içermesi , bu şekilde insanların biraz unreal engineden uzak durmasına neden oluyor.</p>\n<p>Öğrenme ve mantığı kavrama bakımından da , bolca vakit harcanacak programlar arasında başı çekmektedir.</p>\n<p style=\"text-align: justify;\">Mimari görselleştirme bakımından yol haritası aşamalarını şu şekilde açıklayabiliriz.</p>\n<p style=\"text-align: justify;\"><strong><em>Modelleme</em></strong><br />\n<em><strong>Kaplama</strong> (isterseniz unreal içerisinde yapabilirsiniz veya kullandığınız aktif programda yaparsınız ,detaylı halini unrealde yapabilirsiniz)</em><br />\n<em><strong>Modellerin UV map açılması</strong> (unreal uv olayına çok dikkat eden bir program, hatalı uvmap haritalarında, lightmap (gölge ve ışık) hataları alabilirsiniz.Yeni kullanıcıların aldıkları en çok hatalardan biridir.<br />\n<strong>Program</strong> İçerisine model aktarımı<br />\n<strong>Program</strong> içerisinde modellerin düzenlemesi<br />\n<strong>Program</strong> içerisinde detaylı kaplama ve ışık ayarları<br />\nBuild ayarları ve Animasyon aşamaları<br />\nDetaylı Dinamik sunum için Blueprint ile kodlama aşamaları diye gidiyor.<br />\n</em></p>\n<h3><strong>Unreal Engine Mimari eğitim setleri</strong></h3>\n<p style=\"text-align: justify;\">Bu konuda youtube üzerinde bir çok yabancı kaynak olsada, Türkçe kaynağın çok az olduğunu söylemek isterim.</p>\n<p>Bende bu konuda eğitim seti hazırlıklarına başladım, ülkemizde bu konuda çok ciddi bilgi sıkıntısı var özellikle unreal engine <a href=\"/kategori/3d-egitim-setleri\">mimari görselleştirme</a> konusunda bilgiler çok kısıtlı ve yetersiz, iç mekanda yakın zamanda bu konula ilgili bir set sunacağım sizlere.</p>\n<p>Benim unreal engine ile yaptığım son çalışmaya aşağıdan bakabilirsiniz.</p>\n<p><iframe loading=\"lazy\" src=\"https://www.youtube.com/embed/RCEDXIVAMuc\" width=\"640\" height=\"360\" frameborder=\"0\" allowfullscreen=\"allowfullscreen\"></iframe></p>\n<h4>Unreal Engine Makalesi ile ilgili Sözlük</h4>\n<p><span style=\"color: #ff00ff;\"><strong>Build</strong></span>: Her nekadar sözlük anlamı yapmak inşaa etmek olsa da, unreal engine içerisinde <strong> render</strong><em> olarak kullanabiliriz.<br />\n<span style=\"color: #ff00ff;\"><strong>Engine</strong></span>: Motor anlamında kullanılır, genellikle oyun motorları olarak telafuz edilir.<br />\n<span style=\"color: #ff00ff;\"><strong>Epic Game</strong></span>: Unreal Engine oyun motorunu oluşturan ve geliştiren firmanın ismidir.<br />\n<span style=\"color: #ff00ff;\"><strong>Market Place</strong></span>: Unreal Engine için yeniliklerle haberdar olduğunuz ve malzeme satın alıp, satın aldığınız malzemeleri projenize aktardığınız kısımdır.<br />\n<a href=\"https://www.unrealengine.com/what-is-unreal-engine-4\" target=\"_blank\" rel=\"noopener noreferrer\"><strong>Unreal Engine</strong></a> indirme linki : <a href=\"https://www.unrealengine.com/what-is-unreal-engine-4\" target=\"_blank\" rel=\"noopener\">https://www.unrealengine.com/what-is-unreal-engine-4</a><br />\n</em></p>\n",
+  "publishedAt": "2016-02-17T09:16:04",
+  "modifiedAt": "2022-12-20T11:33:08",
+  "status": "publish",
+  "featuredImage": {
+    "legacyId": 832,
+    "legacyUrl": "https://www.ufuksen.com/wp-content/uploads/2016/02/unreal-engine.jpg",
+    "localPath": "/media/2016/02/unreal-engine.jpg",
+    "alt": "unreal engine",
+    "width": 1523,
+    "height": 567,
+    "mimeType": "image/jpeg",
+    "error": null
+  },
+  "inlineMedia": [
+    {
+      "legacyUrl": "http://www.ufuksen.com/wp-content/uploads/2016/02/unreal-engine-300x112.jpg",
+      "localPath": "/media/2016/02/unreal-engine-300x112.jpg",
+      "error": null
+    }
+  ],
+  "embeds": [
+    {
+      "provider": "youtube",
+      "externalId": "kLMuKg57thY",
+      "originalSrc": "https://www.youtube.com/embed/kLMuKg57thY",
+      "title": null
+    },
+    {
+      "provider": "youtube",
+      "externalId": "RCEDXIVAMuc",
+      "originalSrc": "https://www.youtube.com/embed/RCEDXIVAMuc",
+      "title": null
+    }
+  ],
+  "seo": {
+    "title": null,
+    "description": "Unreal Engine real time render motoru hakkında bilgilerin verildiği bir makaledir.",
+    "focusKeyword": "Unreal Engine",
+    "canonicalUrl": null,
+    "ogImage": null
+  },
+  "readingMinutes": 4,
+  "migrationChecksum": "f1a504c4797a5ef1daf29f8af7ff8ac35dc3aa3539c8023c5fc5f20d688a16cd",
+  "author": {
+    "legacyId": 1,
+    "name": "UFUK ŞEN",
+    "slug": "ufuk",
+    "isGuest": false
+  },
+  "categories": [
+    {
+      "legacyId": 538,
+      "name": "Render Motorları",
+      "slug": "render-motorlari"
+    },
+    {
+      "legacyId": 1174,
+      "name": "Unreal Engine",
+      "slug": "unreal-engine"
+    }
+  ],
+  "tags": []
+}

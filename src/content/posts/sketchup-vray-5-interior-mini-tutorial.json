@@ -1,0 +1,59 @@
+{
+  "legacyId": 4841,
+  "slug": "sketchup-vray-5-interior-mini-tutorial",
+  "legacyUrl": "/sketchup-vray-5-interior-mini-tutorial.html",
+  "url": "/sketchup-vray-5-interior-mini-tutorial.html",
+  "title": "Sketchup Vray 5 interior Mini Tutorial",
+  "excerpt": "Merhaba arkadaşlar bu dersimizde sizlere , hazır bir model üzerinden Vray 5 üzerinden mimari görselleştirme eğitimini gösterdik.Bu tür Mini dersleri Youtube adresimizden bolca bulabilirsiniz. Vray 5 interior Derslerin sırası ve düzeni için playlist kısmını kullanabilirsiniz. Derslerin devamı için kanalımıza abone olmanız ve videolara hangi videoları istediğinize dair mesaj yazmanız bir sonraki videoyu daha rahat seçmemiz …",
+  "contentHtml": "<p>Merhaba arkadaşlar bu dersimizde sizlere , hazır bir model üzerinden <strong>Vray 5</strong> üzerinden <a title=\"Mimari Görselleştirme\" href=\"https://mimari3d.com/\" target=\"_blank\" rel=\"noopener\"><strong>mimari görselleştirme</strong></a> eğitimini gösterdik.Bu tür Mini dersleri <a href=\"https://www.youtube.com/c/sketchupturkiye_com\" target=\"_blank\" rel=\"noopener\">Youtube adresimizden</a> bolca bulabilirsiniz.</p>\n<p><strong>Vray 5 interior</strong> Derslerin sırası ve düzeni için playlist kısmını kullanabilirsiniz. Derslerin devamı için kanalımıza abone olmanız ve videolara hangi videoları istediğinize dair mesaj yazmanız bir sonraki videoyu daha rahat seçmemiz için bize zaman kazandıracaktır.</p>\n<h2><strong>Vray 5 interior Mini Tutorial</strong></h2>\n<p>Vray 5 şu an sketchup için en popüler render motorları kısmında liderliğini koruyan <strong>render motorları</strong> kısmında bulunmaktadır. <strong>Vray 5</strong> için kanalımızda hem ücretsiz hemde ücretli içeriklerimizi artırarak sizlerin daha iyi içeriklere ulaşmasını sağlamak için çalışıyoruz.</p>\n<p>Aşağıda <strong><a href=\"/\" target=\"_blank\" rel=\"noopener\">Sketchup vray</a></strong> render için hazırlamış olduğumuz vray mini ders içeriğini izleyip, sizlerde <a href=\"https://sketchupturkiye.com/\" target=\"_blank\" rel=\"noopener\">Sketchup Türkiye</a> facebook adresimizde yayınlayabilirsiniz.</p>\n<p><iframe loading=\"lazy\" title=\"YouTube video player\" src=\"https://www.youtube.com/embed/fBCUjfTlsh8\" width=\"560\" height=\"315\" frameborder=\"0\" allowfullscreen=\"allowfullscreen\"></iframe></p>\n",
+  "publishedAt": "2021-10-16T15:31:12",
+  "modifiedAt": "2023-07-04T07:00:37",
+  "status": "publish",
+  "featuredImage": {
+    "legacyId": 4843,
+    "legacyUrl": "https://www.ufuksen.com/wp-content/uploads/2021/10/Sketchup-vray-interior.jpg",
+    "localPath": "/media/2021/10/Sketchup-vray-interior.jpg",
+    "alt": "Vray 5 interior",
+    "width": 1280,
+    "height": 720,
+    "mimeType": "image/jpeg",
+    "error": null
+  },
+  "inlineMedia": [],
+  "embeds": [
+    {
+      "provider": "youtube",
+      "externalId": "fBCUjfTlsh8",
+      "originalSrc": "https://www.youtube.com/embed/fBCUjfTlsh8",
+      "title": null
+    }
+  ],
+  "seo": {
+    "title": null,
+    "description": "Merhaba arkadaşlar bu dersimizde sizlere , hazır bir model üzerinden Vray 5 üzerinden mimari görselleştirme eğitimini gösterdik.Bu tür Mini dersleri Youtube…",
+    "focusKeyword": "Vray 5 interior",
+    "canonicalUrl": null,
+    "ogImage": null
+  },
+  "readingMinutes": 1,
+  "migrationChecksum": "4923a256ce5ae95e2bc2dacd10e1bdd3019f526e7b13c377f4789d87fbe2e502",
+  "author": {
+    "legacyId": 1,
+    "name": "UFUK ŞEN",
+    "slug": "ufuk",
+    "isGuest": false
+  },
+  "categories": [
+    {
+      "legacyId": 538,
+      "name": "Render Motorları",
+      "slug": "render-motorlari"
+    },
+    {
+      "legacyId": 541,
+      "name": "Vray Render",
+      "slug": "vray"
+    }
+  ],
+  "tags": []
+}

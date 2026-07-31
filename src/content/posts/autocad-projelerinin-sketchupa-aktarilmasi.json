@@ -1,0 +1,53 @@
+{
+  "legacyId": 2712,
+  "slug": "autocad-projelerinin-sketchupa-aktarilmasi",
+  "legacyUrl": "/autocad-projelerinin-sketchupa-aktarilmasi.html",
+  "url": "/autocad-projelerinin-sketchupa-aktarilmasi.html",
+  "title": "Autocad Projelerinin Sketchupa Aktarılması",
+  "excerpt": "Autocad Projelerinin Sketchup programına Aktarılması sırasında , bazı problemler ile karşılaşırsınız.Bu yazımız da bu konuya değineceğim. Autocad projelerinde 0 Koordinat noktası bazen çizgilerin yüksekliğine göre farklılık gösterebilir. Bu durumda sketchup içerisine aldığınız autocad dosyaları farklı yüksekliklerde gelir. Bazende farklı noktalarda dağınık şekilde gelebilir. Bu sorunu sketchup içerisinde farklı bir program kullanmadan kolayca çözebiliriz. Bundan önce …",
+  "contentHtml": "<p><strong>Autocad Projelerinin Sketchup programına Aktarılması</strong> sırasında , bazı problemler ile karşılaşırsınız.Bu yazımız da bu konuya değineceğim. <br />Autocad projelerinde <strong>0 Koordinat noktası</strong> bazen çizgilerin yüksekliğine göre farklılık gösterebilir.</p>\r\n<p>Bu durumda sketchup içerisine aldığınız autocad dosyaları farklı yüksekliklerde gelir. Bazende farklı noktalarda dağınık şekilde gelebilir.</p>\r\n<p>Bu sorunu sketchup içerisinde farklı bir program kullanmadan kolayca çözebiliriz.</p>\r\n<p>Bundan önce <strong>Autocad projeleri</strong> içerisinde neler yapılması gerektiğini görelim.</p>\r\n\r\n<h2 class=\"wp-block-heading\"><strong>Autocad Projelerinin Sketchup programına Aktarılması</strong></h2>\r\n\r\n\r\n\r\n<p>Sketchup programı içerisine, autocad projelerini <strong>File / import / 2D / Dwg</strong> seçeneğini seçerek içeriye alırsınız. Bu alma işlemi <strong>Sketchup Pro</strong> versiyonları için geçerlidir. <br /><br />Eğer bu seçenek sizin programınızda yoksa, programınız demo veya make sürümü (ücretsiz sürüm) kullanıyorsunuz demektir.<br /><br />Autocad projelerini sketchup&#8217;a aktarmadan önce bazı yapılması gerekenler şunlardır;<br /><br />* Autocad Projesini gereksiz layerlardan (katmanlardan) temizleyerek çizimi temiz ve düzenli hale getiriniz. <strong><a href=\"\">3D mimari proje</a></strong> içerisinde size lazım olmayan tüm layerları kapatınız.<br /><br />* Autocad içerisinde yer alan kesit görünüş ve detay çizimlerini, sketchup programına aktarmadan önce ayırma işlemi yapınız.Bu çizimler sketchup üzerinde kasılma ve takılmalara neden olacaktır.<br /><br />* Autocad içerisinde Tüm kotların 0 Koordinat noktasında olması için tüm projeyi seçin, özellikler kısmından Line ve polyline kısımlarını seçerek Z koordinat değerlerini 0 değeri giriniz. <strong>Daha iyi anlaşılması için aşağıdaki görsele bakınız</strong>.</p>\r\n\r\n\r\n\r\n<figure class=\"wp-block-image\"><img loading=\"lazy\" decoding=\"async\" width=\"850\" height=\"983\" class=\"wp-image-3182\" src=\"/media/2019/04/sketchup-autocad.jpg\" alt=\"\" srcset=\"/media/2019/04/sketchup-autocad.jpg 850w, /media/2019/04/sketchup-autocad-259x300.jpg 259w, /media/2019/04/sketchup-autocad-768x888.jpg 768w, /media/2019/04/sketchup-autocad-696x805.jpg 696w, /media/2019/04/sketchup-autocad-363x420.jpg 363w\" sizes=\"auto, (max-width: 850px) 100vw, 850px\" />\r\n<figcaption>Sketchup Autocad</figcaption>\r\n</figure>\r\n\r\n\r\n\r\n<h3 class=\"wp-block-heading\"><strong><a href=\"http://www.sketchupturkiye.com/\" target=\"_blank\" rel=\"noopener\">Sketchup</a> İçerisinde yapılması gerekenler</strong></h3>\r\n\r\n\r\n\r\n<p>Üst kısımda Autocad projeleri içerisinde yapılması gerekenden bahsettik.Eğer elinizde Autocad programı yoksa, ve size gelen proje 0 koordinatında değilse ,bu işi kolay yoldan Sketchup içerisinden halledebilirsiniz.<br /><br />Projeyi açtınız ve tüm çizgilerin farklı koordinatlarda olduğunu gördünüz. Projeyi sketchup içerisinde üst görünüme geçip <strong>Top / Paralel View</strong> görünüş bakış kısmına geldiniz. <br /><br />Daha sorna <strong>File / Export / 2D / dwg</strong> kısmından projenizi Autocad projesi olarak dışarı çıkarıyorsunuz.<br /><br />Sketchup içerisinde Tekrar <strong>File / import / 2D / dwg</strong> ile içeri alıyorsunuz<br /><br />Bu işlemlerin sonucu olarak projeniz tüm çizgiler aynı koordinata gelerek düz bir noktada olacaktır.<br /><br />Bu konuyla ilgili sorularınızı aşağıdaki yorum kısmından sorabilirsiniz.</p>\r\n",
+  "publishedAt": "2019-04-30T09:01:07",
+  "modifiedAt": "2023-07-04T08:18:33",
+  "status": "publish",
+  "featuredImage": {
+    "legacyId": 3182,
+    "legacyUrl": "https://www.ufuksen.com/wp-content/uploads/2019/04/sketchup-autocad.jpg",
+    "localPath": "/media/2019/04/sketchup-autocad.jpg",
+    "alt": "sketchup autocad",
+    "width": 850,
+    "height": 983,
+    "mimeType": "image/jpeg",
+    "error": null
+  },
+  "inlineMedia": [
+    {
+      "legacyUrl": "https://www.ufuksen.com/wp-content/uploads/2019/04/sketchup-autocad.jpg",
+      "localPath": "/media/2019/04/sketchup-autocad.jpg",
+      "error": null
+    }
+  ],
+  "embeds": [],
+  "seo": {
+    "title": null,
+    "description": "Autocad Projelerinin Sketchupa Aktarılması sırasında dikkat edilecek hususların anlatıldığı bir makaledir.",
+    "focusKeyword": "Autocad",
+    "canonicalUrl": null,
+    "ogImage": null
+  },
+  "readingMinutes": 1,
+  "migrationChecksum": "7e19c336250abeff6ea2cdf4303e25bc4ddf376c06e2ee13cd77c679c3d20a89",
+  "author": {
+    "legacyId": 1,
+    "name": "UFUK ŞEN",
+    "slug": "ufuk",
+    "isGuest": false
+  },
+  "categories": [
+    {
+      "legacyId": 1,
+      "name": "Genel",
+      "slug": "genel"
+    }
+  ],
+  "tags": []
+}

@@ -1,0 +1,59 @@
+{
+  "legacyId": 4927,
+  "slug": "tam-1-satte-sketchup-ogrenin",
+  "legacyUrl": "/tam-1-satte-sketchup-ogrenin.html",
+  "url": "/tam-1-satte-sketchup-ogrenin.html",
+  "title": "Tam 1 satte Sketchup Öğrenin",
+  "excerpt": "Tam 1 satte Sketchup Öğrenin Eğitim seti ile , 1 saat içerisinde sketchup temel eğitimini bitireceksiniz. Sketchup Programının az bilinen ama çok önemli komutlarını ve Teknik bakış açınızın nasıl olması gerektiğini anlattım. Bu sayede hem temel sketchup bilgisi olanlar hem de orta ve ileri seviyedeki kullanıcılar için geniş çaplı bir sketchup temel dersleri için bir …",
+  "contentHtml": "<p><span class=\"style-scope yt-formatted-string\" dir=\"auto\"><strong>Tam 1 satte Sketchup Öğrenin Eğitim seti</strong> ile , 1 saat içerisinde sketchup temel eğitimini bitireceksiniz.<br />\nSketchup Programının az bilinen ama çok önemli komutlarını ve Teknik bakış açınızın nasıl olması gerektiğini anlattım. Bu sayede hem temel sketchup bilgisi olanlar hem de orta ve ileri seviyedeki kullanıcılar için geniş çaplı bir sketchup temel dersleri için bir kaynak dersi olarak düşünebilirsiniz. </span></p>\n<p><span class=\"style-scope yt-formatted-string\" dir=\"auto\">Bu sayede <em><strong><a href=\"https://sketchupturkiye.com/\" target=\"_blank\" rel=\"noopener\">Sketchup</a></strong></em> Kullanmadan önce nasıl bir yaklaşım sergilemeniz gerektiği, temelde hangi komutlarla ilerlemeniz gerektiğini bu video içerisinde bulacaksınız. </span></p>\n<h2>Tam 1 satte Sketchup Öğrenin</h2>\n<p>Bu tür videoların kanalımızda daha fazla yer alması için, videoların altındaki yorum kısmına istediğiniz dersler için mesaj bırakabilirsiniz.</p>\n<p>Sizlerin gelişimi için çekmiş olduğumuz bu videolar için , videoların altında bulunan kısımlar için yorum ve beğenilerinizi eksik etmeyiniz.</p>\n<p>&nbsp;</p>\n<p><iframe loading=\"lazy\" title=\"YouTube video player\" src=\"https://www.youtube.com/embed/VjWOzzWePyM\" width=\"560\" height=\"315\" frameborder=\"0\" allowfullscreen=\"allowfullscreen\"></iframe></p>\n",
+  "publishedAt": "2021-12-05T10:41:01",
+  "modifiedAt": "2023-07-04T06:54:49",
+  "status": "publish",
+  "featuredImage": {
+    "legacyId": 4929,
+    "legacyUrl": "https://www.ufuksen.com/wp-content/uploads/2021/12/sketchup-egitim.jpg",
+    "localPath": "/media/2021/12/sketchup-egitim.jpg",
+    "alt": "Tam 1 satte Sketchup Öğrenin",
+    "width": 1280,
+    "height": 720,
+    "mimeType": "image/jpeg",
+    "error": null
+  },
+  "inlineMedia": [],
+  "embeds": [
+    {
+      "provider": "youtube",
+      "externalId": "VjWOzzWePyM",
+      "originalSrc": "https://www.youtube.com/embed/VjWOzzWePyM",
+      "title": null
+    }
+  ],
+  "seo": {
+    "title": null,
+    "description": "Tam 1 satte Sketchup Öğrenin Eğitim seti ile , 1 saat içerisinde sketchup temel eğitimini bitireceksiniz. Sketchup Programının az bilinen ama çok önemli…",
+    "focusKeyword": "Tam 1 satte Sketchup Öğrenin",
+    "canonicalUrl": null,
+    "ogImage": null
+  },
+  "readingMinutes": 1,
+  "migrationChecksum": "c28802f88db0bf6c462290d65e589c9a6732efe30a975e1c5d315d492bf5ae00",
+  "author": {
+    "legacyId": 1,
+    "name": "UFUK ŞEN",
+    "slug": "ufuk",
+    "isGuest": false
+  },
+  "categories": [
+    {
+      "legacyId": 1169,
+      "name": "3D Programlar",
+      "slug": "3d-programlar"
+    },
+    {
+      "legacyId": 1172,
+      "name": "Sketchup",
+      "slug": "sketchup"
+    }
+  ],
+  "tags": []
+}

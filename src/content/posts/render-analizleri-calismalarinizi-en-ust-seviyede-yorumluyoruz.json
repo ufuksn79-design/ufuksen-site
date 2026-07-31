@@ -1,0 +1,59 @@
+{
+  "legacyId": 5596,
+  "slug": "render-analizleri-calismalarinizi-en-ust-seviyede-yorumluyoruz",
+  "legacyUrl": "/render-analizleri-calismalarinizi-en-ust-seviyede-yorumluyoruz.html",
+  "url": "/render-analizleri-calismalarinizi-en-ust-seviyede-yorumluyoruz.html",
+  "title": "Render Analizleri Çalışmalarınızı En üst seviyede yorumluyoruz",
+  "excerpt": "Türkiyede ilk defa yaptığımız render analizleri derslerimize kış aylarından beridir ara vermiştik. Arkadaşlarımızın göndermiş olduğu çalışmaları render kritik olarak sizlere sunuyoruz. Her çarşamba yaptığımız bu analizlere katılmak için vraydvd@gmail.com adresine mail atabilirsiniz. 3d mimari proje çıktılarınızın daha iyi yerlere gelmesi için render analiz kısmına katılabilirsiniz. Render Analizleri Render analiz videoları sizin daha iyi çalışmalar çıkarmanızı …",
+  "contentHtml": "<p>Türkiyede ilk defa yaptığımız <strong>render analizleri</strong> derslerimize kış aylarından beridir ara vermiştik.<br />\nArkadaşlarımızın göndermiş olduğu çalışmaları render kritik olarak sizlere sunuyoruz.<br />\nHer çarşamba yaptığımız bu analizlere katılmak için vraydvd@gmail.com adresine mail atabilirsiniz.</p>\n<p><a title=\"3d mimari proje\" href=\"https://www.mimari3d.com/\" target=\"_blank\" rel=\"noopener\"><strong>3d mimari proje</strong></a> çıktılarınızın daha iyi yerlere gelmesi için render analiz kısmına katılabilirsiniz.</p>\n<h2>Render Analizleri</h2>\n<p><a title=\"render analiz\" href=\"/3d-render-analiz-render-kritik-04.html\" target=\"_blank\" rel=\"noopener\"><strong>Render analiz videoları </strong></a>sizin daha iyi çalışmalar çıkarmanızı ve eksik yönlerinizi görmeniz açısından çok önemlidir.<br />\nEksik yönlerinizi görmek sizin daha iyi çalışma çıkarmanız açısından çok önemlidir.</p>\n<p>Eksik yönlerinizi video içerisinden birebir görmeniz sizin daha iyi çalışmalar yapmanız açısından bir kritik dönüm noktasıdır. Kullanıcılarımızın bize olan dönüşleri sırasında bu <strong>render</strong> yorumlarının çok faydalı olduğunu gördük.</p>\n<p><iframe loading=\"lazy\" title=\"YouTube video player\" src=\"https://www.youtube.com/embed/fofrTLu3FFs\" width=\"560\" height=\"315\" frameborder=\"0\" allowfullscreen=\"allowfullscreen\"></iframe></p>\n",
+  "publishedAt": "2022-10-13T17:03:31",
+  "modifiedAt": "2022-12-21T11:22:04",
+  "status": "publish",
+  "featuredImage": {
+    "legacyId": 5597,
+    "legacyUrl": "https://www.ufuksen.com/wp-content/uploads/2022/10/renderanalzileri.jpg",
+    "localPath": "/media/2022/10/renderanalzileri.jpg",
+    "alt": "render analizleri",
+    "width": 640,
+    "height": 360,
+    "mimeType": "image/jpeg",
+    "error": null
+  },
+  "inlineMedia": [],
+  "embeds": [
+    {
+      "provider": "youtube",
+      "externalId": "fofrTLu3FFs",
+      "originalSrc": "https://www.youtube.com/embed/fofrTLu3FFs",
+      "title": null
+    }
+  ],
+  "seo": {
+    "title": null,
+    "description": "Türkiyede ilk defa yaptığımız render analizleri derslerimize kış aylarından beridir ara vermiştik. Arkadaşlarımızın göndermiş olduğu çalışmaları render kritik…",
+    "focusKeyword": "Render Analizleri",
+    "canonicalUrl": null,
+    "ogImage": null
+  },
+  "readingMinutes": 1,
+  "migrationChecksum": "508acbdb603bc5792b28dc7633a6d138db8a1e954576e62c37f2fab2463a2571",
+  "author": {
+    "legacyId": 1,
+    "name": "UFUK ŞEN",
+    "slug": "ufuk",
+    "isGuest": false
+  },
+  "categories": [
+    {
+      "legacyId": 518,
+      "name": "3D Görselleştirme",
+      "slug": "3d-gorsellestirme"
+    },
+    {
+      "legacyId": 1142,
+      "name": "Render Analiz",
+      "slug": "3d-render-analizleri"
+    }
+  ],
+  "tags": []
+}

@@ -1,0 +1,59 @@
+{
+  "legacyId": 4253,
+  "slug": "yeni-3dsmax-plugini-proxy-textures",
+  "legacyUrl": "/yeni-3dsmax-plugini-proxy-textures.html",
+  "url": "/yeni-3dsmax-plugini-proxy-textures.html",
+  "title": "Yeni 3dsmax Plugini : Proxy Textures",
+  "excerpt": "Proxy Textures, yoğun yüklü sahnelerde çalışmanızı hızlandırmak için dokularınızın düşük çözünürlüklü sürümlerini otomatik olarak oluşturmak için bir 3dsMax eklentisidir. Eklenti, dokularınızın boyutunu geçici olarak azaltır, böylece daha az bellek tüketimi ve daha iyi görüntü alanı performansı sağlar. Daha hızlı çalışmak için orijinal dokuları yalnızca oluşturma zamanında kullanacak şekilde ayarlayabilirsiniz. Aşağıdan Proxy Textures eklentisi için en …",
+  "contentHtml": "<p><strong>Proxy Textures</strong>, yoğun yüklü sahnelerde çalışmanızı hızlandırmak için dokularınızın düşük çözünürlüklü sürümlerini otomatik olarak oluşturmak için bir <a href=\"/kategori/3d-egitim/3ds-max\"><strong>3dsMax</strong></a> eklentisidir.</p>\n<p>Eklenti, dokularınızın boyutunu geçici olarak azaltır, böylece daha az bellek tüketimi ve daha iyi görüntü alanı performansı sağlar.</p>\n<p>Daha hızlı çalışmak için orijinal dokuları yalnızca oluşturma zamanında kullanacak şekilde ayarlayabilirsiniz.</p>\n<p>Aşağıdan <strong>Proxy Textures </strong>eklentisi için en son video sürümünü izleyiniz.</p>\n<p><iframe loading=\"lazy\" title=\"vimeo-player\" src=\"https://player.vimeo.com/video/397007301\" width=\"640\" height=\"360\" frameborder=\"0\" allowfullscreen=\"allowfullscreen\"></iframe></p>\n<p>Ayrıca, render işlemlerinizi hızlandırmak için kameradan uzak olanlar gibi gereksiz büyük dokuları azaltmak için de kullanabilirsiniz.</p>\n<p>Küçük render ön izlemeleri veya testleri yapmanız gerekirse, render&#8217;larınızı hızlandırmak için tüm dokuları uygun şekilde küçültebilir ve optimize edebilirsiniz.</p>\n<p>Proxy Dokular birden fazla doku dosyasını JPG / PNG formatlarına dönüştürmenizi sağlar. Sahnedeki tüm bitmap&#8217;leri bir kerede işlemeyi veya yalnızca seçili nesnelerdeki malzemelerle çalışmayı seçebilirsiniz.</p>\n<p>Bu araç kullanımı çok basit ve gerçekten güçlü bir eklenti ! Çok sayıda yüksek çözünürlüklü doku ile karmaşık sahnelerinizi akıllıca optimize edin ve hafif ve kullanımı kolay hale getirin.</p>\n<p>Bu, <strong>Autodesk 3ds Max 2015</strong> ve üstü için ticari bir eklentidir.</p>\n<h2>Proxy Textures Özellikleri</h2>\n<p>Dokularınızın düşük çözünürlüklü kopyalarını oluşturun ve karmaşık sahnelerde çalışmanızı hızlandırmak ve basitleştirmek için RAM belleğini boşaltın.<br />\nSeçilen nesneler veya tüm sahne dokuları üzerinde aynı anda çalışın.<br />\nGörüntü küçültme boyutunu piksel veya yüzde olarak ayarlayın. Hızlı ön ayar düğmelerini kullanın.<br />\nEklentiyi, orijinal dokuları oluşturma zamanında otomatik olarak kullanacak şekilde ayarlayın veya istediğiniz zaman manuel olarak geri yükleyin.<br />\nOrijinal dokularla olan bağlantı her zaman korunur.<br />\nAğır <strong>TGA</strong> / <strong>TIFF</strong> / <strong>BMP</strong> dosyalarını değiştirmek için birden fazla dokuyu hafif JPG / PNG formatlarına dönüştürün.<br />\nDokuların boyutlarını otomatik olarak en yakın 2 güce yeniden boyutlandırın (<strong>grafik kartları</strong> / <strong>oyun motorları</strong> için optimize edilmiştir)<br />\nProxy dokularınız için özel bir klasör ayarlayın.<br />\nEn popüler render motorları için destek (<strong>Scanline</strong>, <strong>VRay</strong>, <strong>Corona</strong>,<strong> FStorm</strong>, <strong>Arnold</strong>, vb.)<br />\nBasit sürükle ve bırak kurulumu.<br />\nEklenti bağımlılığı yok.</p>\n<p>Spline Dynamics <a href=\"http://www.splinedynamics.com/proxy-textures/\" rel=\"nofollow noopener\" target=\"_blank\">Proxy Textures web sayfası</a> hakkında daha fazla bilgi alabilirsiniz.</p>\n",
+  "publishedAt": "2020-03-16T14:19:31",
+  "modifiedAt": "2023-07-04T08:02:05",
+  "status": "publish",
+  "featuredImage": {
+    "legacyId": 4255,
+    "legacyUrl": "https://www.ufuksen.com/wp-content/uploads/2020/03/proxy-textures.jpg",
+    "localPath": "/media/2020/03/proxy-textures.jpg",
+    "alt": "proxy textures",
+    "width": 792,
+    "height": 537,
+    "mimeType": "image/jpeg",
+    "error": null
+  },
+  "inlineMedia": [],
+  "embeds": [
+    {
+      "provider": "other",
+      "externalId": null,
+      "originalSrc": "https://player.vimeo.com/video/397007301",
+      "title": null
+    }
+  ],
+  "seo": {
+    "title": null,
+    "description": "Proxy Textures, yoğun yüklü sahnelerde çalışmanızı hızlandırmak için dokularınızın düşük çözünürlüklü sürümlerini otomatik olarak oluşturmak için bir 3dsMax…",
+    "focusKeyword": "Proxy Textures",
+    "canonicalUrl": null,
+    "ogImage": null
+  },
+  "readingMinutes": 1,
+  "migrationChecksum": "f464bdd1409d93dde36eedaab65cccb4715db6ba722a939a4f722301152c1a83",
+  "author": {
+    "legacyId": 1,
+    "name": "UFUK ŞEN",
+    "slug": "ufuk",
+    "isGuest": false
+  },
+  "categories": [
+    {
+      "legacyId": 1169,
+      "name": "3D Programlar",
+      "slug": "3d-programlar"
+    },
+    {
+      "legacyId": 1170,
+      "name": "3ds Max",
+      "slug": "3ds-max-3d-programlar"
+    }
+  ],
+  "tags": []
+}

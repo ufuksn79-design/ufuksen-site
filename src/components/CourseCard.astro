@@ -1,0 +1,159 @@
+---
+/**
+ * Udemy eğitim seti kartı.
+ *
+ * Veriler `src/content/courses.json` içinde ve Udemy eğitmen profilinden
+ * okundu — uydurulmuş bilgi yok.
+ *
+ * FİYAT GÖSTERİLMİYOR: Udemy fiyatları kampanyaya göre sürekli değişir.
+ * Sabit yazmak kısa sürede yanlış bilgiye dönüşür; kullanıcı fiyatı
+ * Udemy'de görür.
+ */
+export interface Course {
+  slug: string;
+  baslik: string;
+  altBaslik: string | null;
+  url: string;
+  gorsel: string;
+  puan: number;
+  yorumSayisi: number;
+  saat: number;
+  dersSayisi: number;
+  seviye: string;
+  yazilim: string[];
+}
+
+interface Props {
+  course: Course;
+}
+
+const { course } = Astro.props;
+const saat = course.saat.toLocaleString("tr-TR");
+---
+
+<article class="course">
+  <a class="course__thumb" href={course.url} rel="noopener" target="_blank">
+    <img
+      src={course.gorsel}
+      alt={`${course.baslik} eğitim seti kapağı`}
+      loading="lazy"
+      decoding="async"
+      width="750"
+      height="422"
+    />
+  </a>
+  <div class="course__body">
+    <h3>
+      <a href={course.url} rel="noopener" target="_blank">{course.baslik}</a>
+    </h3>
+    {course.altBaslik && <p class="course__sub">{course.altBaslik}</p>}
+
+    <dl class="course__stats">
+      <div>
+        <dt>Puan</dt>
+        <dd>
+          <span class="course__star" aria-hidden="true">★</span>
+          {course.puan.toLocaleString("tr-TR")}
+          <small>({course.yorumSayisi})</small>
+        </dd>
+      </div>
+      <div><dt>Süre</dt><dd>{saat} saat</dd></div>
+      <div><dt>Ders</dt><dd>{course.dersSayisi}</dd></div>
+      <div><dt>Seviye</dt><dd>{course.seviye}</dd></div>
+    </dl>
+
+    <a class="course__cta" href={course.url} rel="noopener" target="_blank">
+      Udemy'de incele <i aria-hidden="true">↗</i>
+    </a>
+  </div>
+</article>
+
+<style>
+  .course {
+    display: grid;
+    gap: var(--s-4);
+    background: var(--c-surface-raised);
+    border: 1px solid var(--c-line);
+    border-radius: var(--r-lg);
+    overflow: hidden;
+    transition: border-color var(--d-base) var(--e-out), transform var(--d-base) var(--e-out);
+  }
+  @media (hover: hover) {
+    .course:hover {
+      border-color: var(--c-accent-dim);
+      transform: translateY(-3px);
+    }
+  }
+
+  .course__thumb {
+    display: block;
+    aspect-ratio: 16 / 9;
+    background: var(--c-base);
+    overflow: hidden;
+  }
+  .course__thumb img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform var(--d-slow) var(--e-out);
+  }
+  @media (hover: hover) {
+    .course:hover .course__thumb img { transform: scale(1.04); }
+  }
+
+  .course__body {
+    display: grid;
+    gap: var(--s-3);
+    padding: 0 var(--s-5, 1.25rem) var(--s-6);
+    padding-inline: var(--s-6);
+    align-content: start;
+  }
+
+  .course h3 { font-size: var(--t-body-lg); }
+  .course h3 a { text-decoration: none; }
+  .course h3 a:hover { color: var(--c-accent); }
+
+  .course__sub {
+    color: var(--c-text-muted);
+    font-size: var(--t-small);
+  }
+
+  .course__stats {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--s-2) var(--s-4);
+    margin: 0;
+    padding-top: var(--s-3);
+    border-top: 1px solid var(--c-line);
+  }
+  .course__stats div { display: grid; gap: 2px; }
+  .course__stats dt {
+    font-family: var(--font-mono);
+    font-size: var(--t-micro);
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--c-text-faint);
+  }
+  .course__stats dd {
+    margin: 0;
+    font-size: var(--t-small);
+    color: var(--c-text);
+  }
+  .course__stats small { color: var(--c-text-faint); }
+  .course__star { color: var(--c-accent); }
+
+  .course__cta {
+    justify-self: start;
+    margin-top: var(--s-1);
+    min-height: var(--tap-min);
+    display: inline-flex;
+    align-items: center;
+    gap: var(--s-2);
+    color: var(--c-accent);
+    font-size: var(--t-small);
+    font-weight: 600;
+    text-decoration: none;
+  }
+  .course__cta i { font-style: normal; transition: transform var(--d-base) var(--e-out); }
+  .course__cta:hover i { transform: translate(2px, -2px); }
+</style>

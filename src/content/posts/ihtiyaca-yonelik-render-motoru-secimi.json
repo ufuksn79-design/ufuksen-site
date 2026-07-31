@@ -1,0 +1,63 @@
+{
+  "legacyId": 4340,
+  "slug": "ihtiyaca-yonelik-render-motoru-secimi",
+  "legacyUrl": "/ihtiyaca-yonelik-render-motoru-secimi.html",
+  "url": "/ihtiyaca-yonelik-render-motoru-secimi.html",
+  "title": "İhtiyaca Yönelik Render Motoru Seçimi",
+  "excerpt": "Nedir bu İhtiyaca yönelik render motoru ? diyebilirsiniz. Render motoru, render motorudur. İhtiyaca yöneliği olur mu ? veya bir tanesini öğrenemedik, ufuk hoca başımıza iş çıkartıp , diğerlerini de öğrenmemizi istiyor da diyebilirsiniz… Kızın sana anlatıyorum , Mustafa sen anla diyerek makalemize giriş yapalım… Mustafa kim diye soracak olursanız, elit bir iç mimarımızdır. Vizyonu tavan …",
+  "contentHtml": "<p><a href=\"/ihtiyaca-yonelik-render-motoru-secimi.html\" rel=\"attachment wp-att-4355\"><img loading=\"lazy\" decoding=\"async\" class=\"alignleft wp-image-4355\" src=\"/media/2020/09/hangi-render-motoru.jpg\" alt=\"hangi-render-motoru\" width=\"231\" height=\"132\" srcset=\"/media/2020/09/hangi-render-motoru.jpg 664w, /media/2020/09/hangi-render-motoru-300x172.jpg 300w\" sizes=\"auto, (max-width: 231px) 100vw, 231px\" /></a>Nedir bu <strong>İhtiyaca yönelik render motoru</strong> ? diyebilirsiniz. <strong>Render motoru</strong>, render motorudur. İhtiyaca yöneliği olur mu ? veya bir tanesini öğrenemedik, ufuk hoca başımıza iş çıkartıp , diğerlerini de öğrenmemizi istiyor da diyebilirsiniz&#8230;</p>\n<p>Kızın sana anlatıyorum , Mustafa sen anla diyerek makalemize giriş yapalım&#8230;</p>\n<p>Mustafa kim diye soracak olursanız, elit bir iç mimarımızdır. Vizyonu tavan yapmış, akşamları balkonda tavla oynayarak ,çukur izleyerek , çay partilerinin havada uçuştuğu bir camiadan gelmektedir.</p>\n<p>2017&#8217;nin son yıllarındaki GPU (ekran kartı) render motorlarının yükselişi ile beraber, <strong>D5  Render</strong> ve <strong>Enscape Render</strong> motorları yükselişe geçti.</p>\n<p>Bu yükseliş aslında diğer render motorlarını farklı arayışlara iterek farklı projeler üzerine yoğunlaşmasına neden oldu.</p>\n<p>Örnek olarak Vray üreticisi <strong>Chaos Group</strong> &#8216;un real time render motoru için <strong>Lavina Projesini</strong> uygulamaya almasını gösterebiliriz.</p>\n<h2><strong>Neden bir işe göre Render Motoru Seçmeliyiz ?</strong></h2>\n<p>Günümüz dünyasında hızlı istenen işler, artık gereklilik haline gelmeye başladı.</p>\n<blockquote><p><strong>Bazı işlerin hızlı bir şekilde sunuma yetiştirilmesi, bazı işlerin özel ve konsept projeler halinde gösterilmesi bizi farklı render motorlarını kullanmaya itmektedir.</strong></p></blockquote>\n<p>Bu kullanım gereksinimi içerisinde, kullanıcının hangi render motorunu hangi projede kullanması gerektiğini bilmesi gerekiyor.</p>\n<p>Tek bir render motorunu öğrenmek yetmediği gibi , render motorlarının da projeye göre hangisinin uygun olacağını iyi tespit etmek gerekiyor.</p>\n<h3><strong>Hangi Render Motoru ? Hangi işlerde ?</strong></h3>\n<p>Bu konu hakkında bir kaç örnek vermek gerekirse , hızlı görselleştirme işleri için <strong>Twinmotion</strong>, <strong>Lumion</strong> , <strong>Enscape</strong> ve <strong>D5</strong> gibi render motorlarını kullanabiliriz.</p>\n<p><strong>Enscape render motoru</strong> son yıllarda Sketchup içerisinde hızlıca ilerleyen bir render motorudur. Ayrıca Sketchup kullanıcıları bence bu konuda çok şanslı.</p>\n<p>Diğer rakiplerine oranla daha hızlı sonuç veren ve <strong>GPU</strong> (ekran kartı) üzerinden çalışan bir render motorudur.</p>\n<p>En iyi özelliklerinden biri ise Vray kalitesine yakın iç mekan animasyon alabilmenizdir.</p>\n<p>Twinmotion ve Lumion konusunda bir tercih yapmanız gerekirse ben fiyatından dolayı Twinmotion derim..</p>\n<p>Twinmotion ülkemizde 1600TL gibi bir fiyatla satılırken, Lumion en son 3000 euro (25.000 TL)  gibi bir fiyat etiketi ile satılıyordu. Karar sizin&#8230;</p>\n<p><strong>D5 Render</strong>&#8216;ı kullanma fırsatım oldu, Esncape de ortalama bir ekran kartı ile sonuç alırken D5 Render için ortalamanın üstünde bir ekran kartına sahip olmalısınız.</p>\n<p>Bu durum laptop ile çalışan <strong>3d tasarım ve görselleştirme</strong> uzmanlarını zora sokacak bir durum gibi gözüküyor.</p>\n<p><strong>Lafı uzatmadan Özetlersek eğer ; </strong></p>\n<p>İç mekan Hızlı görselleştirme için <strong>Enscape</strong> (yine iç mekan hızlı animasyon için kullanılır)<br />\nDış mekan Hızlı görselleştirme için <strong>Twinmotion</strong> veya <strong>Lumion</strong><br />\n(özellikle peyzaj için bu ikisi mutlaka tercih edilmeli aynı zamanda hızlı dış mekan animasyonu)<br />\nİç mekan ve Dış mekan kaliteli görselleştirme <strong>Corona Render</strong> ve <strong>Vray Render</strong> (ikisi içinde animasyon çok uzun ve zahmetli bir iş)<br />\nÖzel konsept projeler ve gezinme için <strong>Unreal Engine</strong> (dosya hazırlamak düzenlemek ve gezinti için hazırlamak eforlu bir iş, o yüzden özel projeler için)</p>\n<p><strong>Not: <a href=\"https://www.mimari3d.com/\" target=\"_blank\" rel=\"noopener\">İç mekan renderı</a></strong> şunda alınır, dış mekan renderı bu render motorunda alınır gibi bir ayrım söz konusu değildir.<br />\nBu makalede fiyat zaman performans oranına göre listelenme yapılmıştır.<br />\nBütün render motorlarında iç mekan veya dış mekan render görselleştirme işlemleri yapabilirsiniz.</p>\n",
+  "publishedAt": "2020-09-23T16:44:31",
+  "modifiedAt": "2023-07-04T07:36:48",
+  "status": "publish",
+  "featuredImage": {
+    "legacyId": 4355,
+    "legacyUrl": "https://www.ufuksen.com/wp-content/uploads/2020/09/hangi-render-motoru.jpg",
+    "localPath": "/media/2020/09/hangi-render-motoru.jpg",
+    "alt": "Render Motoru",
+    "width": 664,
+    "height": 380,
+    "mimeType": "image/jpeg",
+    "error": null
+  },
+  "inlineMedia": [
+    {
+      "legacyUrl": "https://www.ufuksen.com/wp-content/uploads/2020/09/hangi-render-motoru.jpg",
+      "localPath": "/media/2020/09/hangi-render-motoru.jpg",
+      "error": null
+    }
+  ],
+  "embeds": [],
+  "seo": {
+    "title": null,
+    "description": "Nedir bu İhtiyaca yönelik render motoru ? diyebilirsiniz. Render motoru, render motorudur. İhtiyaca yöneliği olur mu ? veya bir tanesini öğrenemedik, ufuk…",
+    "focusKeyword": "Render Motoru",
+    "canonicalUrl": null,
+    "ogImage": null
+  },
+  "readingMinutes": 2,
+  "migrationChecksum": "3e41a399539c79e1b0b242ed84cad09e9dd016aa8c89885789d633265b598815",
+  "author": {
+    "legacyId": 1,
+    "name": "UFUK ŞEN",
+    "slug": "ufuk",
+    "isGuest": false
+  },
+  "categories": [
+    {
+      "legacyId": 518,
+      "name": "3D Görselleştirme",
+      "slug": "3d-gorsellestirme"
+    },
+    {
+      "legacyId": 1,
+      "name": "Genel",
+      "slug": "genel"
+    },
+    {
+      "legacyId": 538,
+      "name": "Render Motorları",
+      "slug": "render-motorlari"
+    }
+  ],
+  "tags": []
+}

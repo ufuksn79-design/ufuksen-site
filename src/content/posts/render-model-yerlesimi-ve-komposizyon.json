@@ -1,0 +1,53 @@
+{
+  "legacyId": 2097,
+  "slug": "render-model-yerlesimi-ve-komposizyon",
+  "legacyUrl": "/render-model-yerlesimi-ve-komposizyon.html",
+  "url": "/render-model-yerlesimi-ve-komposizyon.html",
+  "title": "Render Model Yerleşimi ve komposizyon",
+  "excerpt": "Render Model Yerleşimi Konusu kaliteli görselleştirmeyi etkilen 4’ncü maddelerden biridir. Bu madde önemlidir ve komposizyona bağlı olarak yerleşimin nasıl olacağını etkiler. Diğer maddelerimiz olan modelleme, kaplama ve ışık konularına bu kısımlarda değindik. Eğer bu kısımlarda hatalarınız ve eksikleriniz varsa, o konuları okumanızda fayda vardır. Render Model yerleşimi konusunda en çok yapılan hatalar ; Perspektif hataları, …",
+  "contentHtml": "<p style=\"text-align: justify;\"><strong><a href=\"/render-model-yerlesimi-ve-komposizyon.html\" rel=\"attachment wp-att-2103\"><img loading=\"lazy\" decoding=\"async\" class=\"alignleft size-medium wp-image-2103\" src=\"/media/2017/12/render-model-yerleşimi-300x218.jpg\" alt=\"render model yerleşimi\" width=\"300\" height=\"218\" srcset=\"/media/2017/12/render-model-yerleşimi-300x218.jpg 300w, /media/2017/12/render-model-yerleşimi-324x235.jpg 324w, /media/2017/12/render-model-yerleşimi.jpg 400w\" sizes=\"auto, (max-width: 300px) 100vw, 300px\" /></a>Render Model Yerleşimi</strong> Konusu kaliteli görselleştirmeyi etkilen 4&#8217;ncü maddelerden biridir. Bu madde önemlidir ve komposizyona bağlı olarak yerleşimin nasıl olacağını etkiler.</p>\n<p style=\"text-align: justify;\">Diğer maddelerimiz olan <a href=\"/modelleme.html\" target=\"_blank\" rel=\"noopener\"><span style=\"color: #000080;\"><strong>modelleme</strong></span></a>, <a href=\"/kaplama-secimi-malzeme-hazirlama.html\" target=\"_blank\" rel=\"noopener\"><span style=\"color: #000080;\"><strong>kaplama</strong></span></a> ve <a href=\"/render-motorlarinda-isiklarin-secimi.html\" target=\"_blank\" rel=\"noopener\"><span style=\"color: #000080;\"><strong>ışık</strong></span></a> konularına bu kısımlarda değindik.</p>\n<p style=\"text-align: justify;\">Eğer bu kısımlarda hatalarınız ve eksikleriniz varsa, o konuları okumanızda fayda vardır.</p>\n<h2 style=\"text-align: justify;\"><strong>Render Model yerleşimi konusunda en çok yapılan hatalar ;</strong></h2>\n<p style=\"text-align: justify;\">Perspektif hataları, derinliği olmayan bakış açıların seçilmesi ve yanlış konumlandırma</p>\n<p style=\"text-align: justify;\">Modelin dikey mi, yoksa yatay çerçeve de uygun olacağının belirlenmesi , bu önemlidir.<br />\nÇünkü modelin duruşu çerçeveyi etkiler, yatay bir şekilde uzunlamasına olan bir mimari yapı için dikey render aldığınızda obje detayını göstermek için sıkıntı yaşayabilirsiniz.</p>\n<p style=\"text-align: justify;\">İç mekanda, insan göz izası yerine, çok farklı açılardan özellike kameranın önüne nesne gelecek şekilde yerleşim.</p>\n<p style=\"text-align: justify;\">Modellerin render alınırken , bir kısımlarının çıkmaması. Mesela bir bina render edilirken çatı kısmı renderın dışında kalması</p>\n<p style=\"text-align: justify;\">İç mekan renderlarında koltuk ayaklarının çıkmaması gibi hatalar.</p>\n<h3 style=\"text-align: justify;\"><strong>Render Model Yerleşimi Komposizyon</strong></h3>\n<p style=\"text-align: justify;\">Render Model Yerleşiminde komposizyon çok önemlidir.Modele bir hikaye katmak bir yaşanmışlık eklemek projenin can alıcı noktasını oluşturur.</p>\n<p style=\"text-align: justify;\">Proje üzerinde özellikle dış mekanda, yapraklar, kaldırımda yürüyen insanlar, yol kenarındaki çöpler, havalandırma ızgaraları kısaca gerçek hayata uyan detaylar modele hayat veren unsurlardır.</p>\n<p style=\"text-align: justify;\">Yine bu konularda zorluk yaşıyorsanız <strong><a href=\"/kategori/3d-egitim-setleri\" target=\"_blank\" rel=\"noopener\">3D Eğitim setleri</a></strong> ile, kendi ilerlemenize ve gelişmenize hız katabilirsiniz.</p>\n",
+  "publishedAt": "2017-12-15T11:04:45",
+  "modifiedAt": "2022-12-20T14:58:37",
+  "status": "publish",
+  "featuredImage": {
+    "legacyId": 2103,
+    "legacyUrl": "https://www.ufuksen.com/wp-content/uploads/2017/12/render-model-yerleşimi.jpg",
+    "localPath": "/media/2017/12/render-model-yerleşimi.jpg",
+    "alt": "render model yerleşimi",
+    "width": 400,
+    "height": 291,
+    "mimeType": "image/jpeg",
+    "error": null
+  },
+  "inlineMedia": [
+    {
+      "legacyUrl": "http://www.ufuksen.com/wp-content/uploads/2017/12/render-model-yerleşimi-300x218.jpg",
+      "localPath": "/media/2017/12/render-model-yerleşimi-300x218.jpg",
+      "error": null
+    }
+  ],
+  "embeds": [],
+  "seo": {
+    "title": null,
+    "description": "Render Model Yerleşimi ve komposizyon konularında bilgilerin verildiği bir makaledir.İyi bir bakış açısı için yerleşim önemlidir.",
+    "focusKeyword": "Render Model Yerleşimi",
+    "canonicalUrl": null,
+    "ogImage": null
+  },
+  "readingMinutes": 1,
+  "migrationChecksum": "19edf7918279b1bf7c6c1427e22111309550d884c67712fc1a06e2cdc9e2817c",
+  "author": {
+    "legacyId": 1,
+    "name": "UFUK ŞEN",
+    "slug": "ufuk",
+    "isGuest": false
+  },
+  "categories": [
+    {
+      "legacyId": 518,
+      "name": "3D Görselleştirme",
+      "slug": "3d-gorsellestirme"
+    }
+  ],
+  "tags": []
+}

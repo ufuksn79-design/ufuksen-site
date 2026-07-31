@@ -1,0 +1,59 @@
+{
+  "legacyId": 4988,
+  "slug": "twinmotion-2022-dis-mekan",
+  "legacyUrl": "/twinmotion-2022-dis-mekan.html",
+  "url": "/twinmotion-2022-dis-mekan.html",
+  "title": "Twinmotion 2022 Dış Mekan",
+  "excerpt": "Twinmotion 2022 ile dış mekan görselleştirme işleminin basit olduğunu göstermek için yapmış olduğumuz bir ders içeriğidir. Biliyorsunuz Twinmotion 2022 en son gelen güncellemeler ile daha güçlü bir yapı ile daha hızlı ve kaliteli dış mekan render işlemleri yapmamızı sağlıyor. Twinmotion 2022 Dış Mekan",
+  "contentHtml": "<p>Twinmotion 2022 ile <a href=\"https://www.mimari3d.com/\" target=\"_blank\" rel=\"noopener\"><strong>dış mekan görselleştirme</strong></a> işleminin basit olduğunu göstermek için yapmış olduğumuz bir ders içeriğidir.<br />\nBiliyorsunuz <em><strong><a href=\"https://www.3degitimsetleri.com/\" target=\"_blank\" rel=\"noopener\">Twinmotion 2022</a></strong></em> en son gelen güncellemeler ile daha güçlü bir yapı ile daha hızlı ve kaliteli <strong><a href=\"https://mimari3d.com/\" target=\"_blank\" rel=\"noopener\">dış mekan render</a></strong> işlemleri yapmamızı sağlıyor.</p>\n<h2>Twinmotion 2022 Dış Mekan</h2>\n<p><iframe loading=\"lazy\" title=\"YouTube video player\" src=\"https://www.youtube.com/embed/vA2uQOAW83I\" width=\"560\" height=\"315\" frameborder=\"0\" allowfullscreen=\"allowfullscreen\"></iframe></p>\n",
+  "publishedAt": "2022-01-02T15:15:40",
+  "modifiedAt": "2023-07-04T06:32:39",
+  "status": "publish",
+  "featuredImage": {
+    "legacyId": 4990,
+    "legacyUrl": "https://www.ufuksen.com/wp-content/uploads/2022/01/dis-mekanda-gorsellestirme.jpg",
+    "localPath": "/media/2022/01/dis-mekanda-gorsellestirme.jpg",
+    "alt": "Twinmotion 2022 Dış Mekan",
+    "width": 800,
+    "height": 450,
+    "mimeType": "image/jpeg",
+    "error": null
+  },
+  "inlineMedia": [],
+  "embeds": [
+    {
+      "provider": "youtube",
+      "externalId": "vA2uQOAW83I",
+      "originalSrc": "https://www.youtube.com/embed/vA2uQOAW83I",
+      "title": null
+    }
+  ],
+  "seo": {
+    "title": null,
+    "description": "Twinmotion 2022 ile dış mekan görselleştirme işleminin basit olduğunu göstermek için yapmış olduğumuz bir ders içeriğidir.",
+    "focusKeyword": "Twinmotion 2022 Dış Mekan",
+    "canonicalUrl": null,
+    "ogImage": null
+  },
+  "readingMinutes": 1,
+  "migrationChecksum": "5c57e64891cb5f4c428d411c37e78828b5a65f9c13e46d491d65539924627790",
+  "author": {
+    "legacyId": 1,
+    "name": "UFUK ŞEN",
+    "slug": "ufuk",
+    "isGuest": false
+  },
+  "categories": [
+    {
+      "legacyId": 538,
+      "name": "Render Motorları",
+      "slug": "render-motorlari"
+    },
+    {
+      "legacyId": 1167,
+      "name": "Twinmotion",
+      "slug": "twinmotion-render"
+    }
+  ],
+  "tags": []
+}

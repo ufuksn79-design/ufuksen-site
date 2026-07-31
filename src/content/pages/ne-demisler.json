@@ -1,0 +1,24 @@
+{
+  "legacyId": 535,
+  "slug": "ne-demisler",
+  "legacyUrl": "/ne-demisler",
+  "url": "/ne-demisler",
+  "title": "Ne Demişler ?",
+  "excerpt": "",
+  "contentHtml": "",
+  "publishedAt": "2014-11-12T18:42:39",
+  "modifiedAt": "2014-11-12T18:42:39",
+  "status": "publish",
+  "featuredImage": null,
+  "inlineMedia": [],
+  "embeds": [],
+  "seo": {
+    "title": null,
+    "description": null,
+    "focusKeyword": "",
+    "canonicalUrl": null,
+    "ogImage": null
+  },
+  "readingMinutes": 1,
+  "migrationChecksum": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+}

@@ -1,0 +1,127 @@
+---
+import Base from "../layouts/Base.astro";
+import SectionTitle from "../components/SectionTitle.astro";
+import { getPosts } from "../lib/content";
+const posts = await getPosts();
+---
+<Base
+  title="Arama | Ufuk Şen"
+  description={`${posts.length} yazılık arşivde başlık, kategori ve özet üzerinden arama yapın. SketchUp, V-Ray, D5 Render ve Twinmotion rehberleri.`}
+  path="/arama"
+  noindex={true}
+>
+  <section style="display:grid;gap:var(--s-8)">
+      <SectionTitle
+        title="Arama"
+        as="h1"
+        note={`${posts.length} yazı içinde başlık, kategori ve özet üzerinden arama.`}
+      />
+
+      <form class="search-form" role="search" id="search-form" style="max-width:560px">
+        <label for="q" style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)">Arama terimi</label>
+        <input id="q" name="q" type="search" placeholder="Örn. render motoru" autocomplete="off" />
+        <button class="btn btn--primary" type="submit">Ara</button>
+      </form>
+
+      <p id="status" class="u-eyebrow" role="status" aria-live="polite">Arama için bir terim yazın.</p>
+      <div id="results"></div>
+
+      <noscript>
+        <p style="color:var(--c-text-muted)">
+          Arama JavaScript gerektirir. Yazılara <a href="/blog" style="color:var(--c-accent)">blog sayfasından</a>
+          veya kategori sayfalarından ulaşabilirsiniz.
+        </p>
+      </noscript>
+  </section>
+</Base>
+
+<script>
+  const form = document.getElementById("search-form") as HTMLFormElement;
+  const input = document.getElementById("q") as HTMLInputElement;
+  const status = document.getElementById("status") as HTMLElement;
+  const results = document.getElementById("results") as HTMLElement;
+
+  type Entry = { t: string; u: string; d: string; c: string; s: string };
+  let index: Entry[] | null = null;
+
+  /** Türkçe karakterleri normalize eder: "İ/ı/ğ/ş/ç/ö/ü" duyarsız arama. */
+  const fold = (value: string) =>
+    value
+      .replace(/İ/g, "i").replace(/I/g, "i").replace(/ı/g, "i")
+      .toLocaleLowerCase("tr")
+      .normalize("NFD").replace(/[̀-ͯ]/g, "")
+      .replace(/ğ/g, "g").replace(/ş/g, "s").replace(/ç/g, "c")
+      .replace(/ö/g, "o").replace(/ü/g, "u");
+
+  async function ensureIndex(): Promise<Entry[]> {
+    if (index) return index;
+    status.textContent = "Arama indeksi yükleniyor…";
+    const response = await fetch("/search-index.json");
+    if (!response.ok) throw new Error(`Arama indeksi yüklenemedi (${response.status})`);
+    index = (await response.json()) as Entry[];
+    return index;
+  }
+
+  function render(matches: Entry[], term: string) {
+    results.innerHTML = "";
+    if (!matches.length) {
+      status.textContent = `"${term}" için sonuç bulunamadı.`;
+      return;
+    }
+    status.textContent = `${matches.length} sonuç bulundu.`;
+    const fragment = document.createDocumentFragment();
+    for (const entry of matches.slice(0, 50)) {
+      const article = document.createElement("article");
+      article.className = "post-item";
+      const meta = document.createElement("span");
+      meta.className = "post-item__meta";
+      meta.textContent = entry.d;
+      const heading = document.createElement("h3");
+      const link = document.createElement("a");
+      link.href = entry.u;
+      link.textContent = entry.t;
+      link.style.textDecoration = "none";
+      heading.append(link);
+      const summary = document.createElement("p");
+      summary.textContent = entry.s;
+      article.append(meta, heading, summary);
+      fragment.append(article);
+    }
+    results.append(fragment);
+  }
+
+  async function run(term: string) {
+    const query = term.trim();
+    if (!query) {
+      results.innerHTML = "";
+      status.textContent = "Arama için bir terim yazın.";
+      return;
+    }
+    try {
+      const entries = await ensureIndex();
+      const needle = fold(query);
+      const matches = entries.filter((entry) =>
+        fold(`${entry.t} ${entry.c} ${entry.s}`).includes(needle),
+      );
+      render(matches, query);
+    } catch (error) {
+      // Hata sessizce yutulmaz; kullanıcıya anlaşılır mesaj gösterilir.
+      status.textContent =
+        error instanceof Error ? error.message : "Arama sırasında bir hata oluştu.";
+    }
+  }
+
+  form.addEventListener("submit", (event) => {
+    event.preventDefault();
+    const url = new URL(location.href);
+    url.searchParams.set("q", input.value.trim());
+    history.replaceState(null, "", url);
+    void run(input.value);
+  });
+
+  const initial = new URLSearchParams(location.search).get("q");
+  if (initial) {
+    input.value = initial;
+    void run(initial);
+  }
+</script>

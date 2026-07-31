@@ -1,0 +1,59 @@
+{
+  "legacyId": 6882,
+  "slug": "chaos-vray-vantage-2-turkce-inceleme",
+  "legacyUrl": "/chaos-vray-vantage-2-turkce-inceleme.html",
+  "url": "/chaos-vray-vantage-2-turkce-inceleme.html",
+  "title": "Chaos Vray Vantage 2 Türkçe İnceleme",
+  "excerpt": "VRay Vantage, gerçek zamanlı ray tracing teknolojisi ile tasarımcıların ve sanatçıların projelerini hızlı ve yüksek kalitede görselleştirmelerine olanak tanıyan güçlü bir araçtır. VRay Vantage, özellikle 3ds Max ve SketchUp kullanıcıları için uyumlu çalışarak, projelerde anında geri bildirim sağlar ve yaratıcı süreci hızlandırır. Chaos Vray Vantage 2 Özellikleri Bu sayede, tasarımcılar karmaşık sahnelerde bile performans kaybı …",
+  "contentHtml": "<p><strong>VRay Vantage</strong>, gerçek zamanlı ray tracing teknolojisi ile tasarımcıların ve sanatçıların projelerini hızlı ve yüksek kalitede görselleştirmelerine olanak tanıyan güçlü bir araçtır.<br />\n<strong>VRay Vantage</strong>, özellikle 3ds Max ve <a href=\"https://sketchupturkiye.com/\" target=\"_blank\" rel=\"noopener\"><strong>SketchUp</strong></a> kullanıcıları için uyumlu çalışarak, projelerde anında geri bildirim sağlar ve yaratıcı süreci hızlandırır.</p>\n<h2><iframe loading=\"lazy\" title=\"YouTube video player\" src=\"https://www.youtube.com/embed/BKvUX7a28Iw?si=drwMwg_LCWPOvQTa\" width=\"560\" height=\"315\" frameborder=\"0\" allowfullscreen=\"allowfullscreen\"></iframe></h2>\n<h2><strong>Chaos Vray Vantage 2 Özellikleri</strong></h2>\n<p>Bu sayede, tasarımcılar karmaşık sahnelerde bile performans kaybı yaşamadan hızlı ve etkili bir şekilde çalışmalarını görebilirler. Vantage Animation özelliği, animasyon projelerinin gerçek zamanlı önizlemesini ve hızla işlenmesini sağlar, bu da sahnelerin nasıl görüneceğini ve hareketli detayların etkisini değerlendirmek açısından oldukça kullanışlıdır.</p>\n<p>3ds Max için Vantage tutorial ve <a href=\"/sketchup-vray-6-dersleri.html\" target=\"_blank\" rel=\"noopener\"><strong>SketchUp için VRay</strong></a> <strong>Vantage tutoria</strong>l gibi eğitimler, kullanıcıların yazılımı en iyi şekilde kullanmalarını sağlayacak ipuçları ve teknikler sunar. Bu eğitimler, Vantage&#8217;ın arayüzünden başlayarak, sahne optimizasyonu, ışık ayarları ve animasyon oluşturma süreçlerine kadar detaylı bir rehber niteliğindedir.</p>\n<p>Kısacası, VRay Vantage, hem 3ds Max hem de SketchUp projeleri için güçlü bir tamamlayıcı olarak, hızlı ve gerçekçi render çözümleri sunar ve özellikle animasyon projeleri için büyük bir avantaj sağlar.</p>\n",
+  "publishedAt": "2024-11-10T19:23:27",
+  "modifiedAt": "2024-11-10T19:24:19",
+  "status": "publish",
+  "featuredImage": {
+    "legacyId": 6883,
+    "legacyUrl": "https://www.ufuksen.com/wp-content/uploads/2024/11/vray-vantage.jpg",
+    "localPath": "/media/2024/11/vray-vantage.jpg",
+    "alt": "vray vantage",
+    "width": 800,
+    "height": 450,
+    "mimeType": "image/jpeg",
+    "error": null
+  },
+  "inlineMedia": [],
+  "embeds": [
+    {
+      "provider": "youtube",
+      "externalId": "BKvUX7a28Iw",
+      "originalSrc": "https://www.youtube.com/embed/BKvUX7a28Iw?si=drwMwg_LCWPOvQTa",
+      "title": null
+    }
+  ],
+  "seo": {
+    "title": null,
+    "description": "VRay Vantage, gerçek zamanlı ray tracing teknolojisi ile tasarımcıların ve sanatçıların projelerini hızlı ve yüksek kalitede görselleştirir.",
+    "focusKeyword": "VRay Vantage",
+    "canonicalUrl": null,
+    "ogImage": null
+  },
+  "readingMinutes": 1,
+  "migrationChecksum": "96dc519e7badb5549e3a7e9c91764f57791c0836acb9cab8aeae1ffc167cd703",
+  "author": {
+    "legacyId": 1,
+    "name": "UFUK ŞEN",
+    "slug": "ufuk",
+    "isGuest": false
+  },
+  "categories": [
+    {
+      "legacyId": 538,
+      "name": "Render Motorları",
+      "slug": "render-motorlari"
+    },
+    {
+      "legacyId": 541,
+      "name": "Vray Render",
+      "slug": "vray"
+    }
+  ],
+  "tags": []
+}

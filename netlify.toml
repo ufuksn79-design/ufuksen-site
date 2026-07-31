@@ -1,0 +1,42 @@
+# Netlify yapılandırması (ADR-019).
+#
+# Panelde "Yayınla" denince: GitHub'a commit atılır -> Netlify bu komutu
+# çalıştırır -> site yeniden üretilir. Kimsenin elle bir şey yapması gerekmez.
+
+[build]
+  command = "npm run build"
+  publish = "dist"
+
+[build.environment]
+  NODE_VERSION = "22"
+  # Kanonik URL'ler ve sitemap bu adrese göre üretilir.
+  SITE_URL = "https://www.ufuksen.com"
+
+# Panel arama motorlarına kapalı ve önbelleğe alınmaz.
+[[headers]]
+  for = "/admin/*"
+  [headers.values]
+    X-Robots-Tag = "noindex, nofollow"
+    Cache-Control = "no-store"
+
+# Astro hash'li asset üretir; uzun süre güvenle önbelleğe alınır.
+[[headers]]
+  for = "/_astro/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "/media/*"
+  [headers.values]
+    Cache-Control = "public, max-age=2592000"
+
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Content-Type-Options = "nosniff"
+    X-Frame-Options = "SAMEORIGIN"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+
+# NOT: 301/410 kuralları `public/_redirects` dosyasında ve build sırasında
+# `dist/_redirects` olarak çıkıyor. Netlify onu doğrudan okur; burada
+# tekrarlanmaz — iki ayrı doğruluk kaynağı olmasın.

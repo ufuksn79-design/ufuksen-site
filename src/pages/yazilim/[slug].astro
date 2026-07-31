@@ -1,0 +1,84 @@
+---
+import Base from "../../layouts/Base.astro";
+import Sidebar from "../../components/Sidebar.astro";
+import SectionTitle from "../../components/SectionTitle.astro";
+import { getSoftwareIndex, type SoftwareIndexEntry } from "../../lib/discover";
+import { formatDate, isoDate, summarize } from "../../lib/content";
+import CourseCard, { type Course } from "../../components/CourseCard.astro";
+import courseData from "../../content/courses.json";
+
+export async function getStaticPaths() {
+  const index = await getSoftwareIndex();
+  return index.map((entry) => ({ params: { slug: entry.tag.slug }, props: { entry } }));
+}
+
+const { entry } = Astro.props as { entry: SoftwareIndexEntry };
+const posts = entry.posts;
+const recent = posts.slice(0, 5);
+// Bu yazılıma ait eğitim setleri — courses.json içindeki `yazilim` alanından
+const courses = (courseData.kurslar as Course[]).filter((course) =>
+  course.yazilim.includes(entry.tag.slug),
+);
+---
+<Base
+  title={`${entry.tag.name} — ${posts.length} yazı ve rehber | Ufuk Şen`}
+  description={`${entry.tag.name} üzerine ${posts.length} yazı ve ${entry.videoCount} video.`}
+  path={`/yazilim/${entry.tag.slug}`}
+  jsonLd={{
+    "@context": "https://schema.org",
+    "@type": "CollectionPage",
+    name: `${entry.tag.name} yazıları`,
+  }}
+>
+  <section class="blog-grid">
+    <div>
+      <SectionTitle
+        title={entry.tag.name}
+        as="h1"
+        note={`${posts.length} yazı · ${entry.videoCount} video`}
+      />
+      {courses.length > 0 && (
+        <section style="margin-bottom:var(--s-12)">
+          <h2 style="font-size:var(--t-body-lg);margin-bottom:var(--s-4)">
+            {entry.tag.name} eğitim setleri
+          </h2>
+          <div class="hub-courses">
+            {courses.map((course) => <CourseCard course={course} />)}
+          </div>
+        </section>
+      )}
+
+      {posts.map((post) => (
+        <article class={`post-item ${post.data.featuredImage?.localPath ? "post-item--with-thumb" : ""}`}>
+          {post.data.featuredImage?.localPath && (
+            <img class="post-item__thumb" src={post.data.featuredImage.localPath}
+                 alt={post.data.featuredImage.alt || post.data.title}
+                 width={post.data.featuredImage.width ?? undefined}
+                 height={post.data.featuredImage.height ?? undefined}
+                 loading="lazy" decoding="async" />
+          )}
+          <div style="display:grid;gap:var(--s-2)">
+            <div class="post-item__meta">
+              <time datetime={isoDate(post.data.publishedAt)}>{formatDate(post.data.publishedAt)}</time>
+              <span>{post.data.readingMinutes} dk</span>
+            </div>
+            <h2><a href={post.data.url}>{post.data.title}</a></h2>
+            <p>{summarize(post, 150)}</p>
+          </div>
+        </article>
+      ))}
+    </div>
+    <Sidebar recent={recent} />
+  </section>
+</Base>
+
+<style>
+  .hub-courses {
+    display: grid;
+    gap: var(--s-4);
+    grid-template-columns: 1fr;
+  }
+  @media (min-width: 720px) {
+    .hub-courses { grid-template-columns: repeat(2, 1fr); }
+  }
+</style>

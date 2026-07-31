@@ -1,0 +1,52 @@
+{
+  "legacyId": 4883,
+  "slug": "unreal-engine-5-yenilikleri",
+  "legacyUrl": "/unreal-engine-5-yenilikleri.html",
+  "url": "/unreal-engine-5-yenilikleri.html",
+  "title": "Unreal Engine 5 Yenilikleri",
+  "excerpt": "Oyun motorları, oyunları geliştirmek için kullanılan yazılımlar olarak tanımlanabilir. Bu yazılımlar sayesinde oyunların grafikleri ve oynayışı gibi unsurlar belirlenir. Oyunlar bir tür bilgisayar programlarıdır. Bu programları yapan ve oyunun üretilmesini sağlayan ise oyun motorlarıdır. Oyunlar üretilirken ayrıca fizik ve grafik motorlarından da yararlanılır. Yani bir oyunu oluşturmak için birkaç yazılımın bir arada kullanılması gerekir. Oyun …",
+  "contentHtml": "<p><strong><a href=\"/\" target=\"_blank\" rel=\"noopener\">Oyun motorları</a></strong>, oyunları geliştirmek için kullanılan yazılımlar olarak tanımlanabilir. Bu yazılımlar sayesinde oyunların grafikleri ve oynayışı gibi unsurlar belirlenir. Oyunlar bir tür bilgisayar programlarıdır. Bu programları yapan ve oyunun üretilmesini sağlayan ise oyun motorlarıdır. Oyunlar üretilirken ayrıca fizik ve grafik motorlarından da yararlanılır. Yani bir oyunu oluşturmak için birkaç yazılımın bir arada kullanılması gerekir. Oyun geliştirmek için kullanılan <strong>oyun motoru</strong> yazılımlarından bir tanesi de <strong>Unreal Engine 5</strong>.</p>\n<p>Yazılım geçen yıl video ile tanıtılmış olmakla beraber büyük bir beklenti yaratmıştır. <strong>Unreal Engine</strong> oyun motorunun yeni sürümü olan <strong>Unreal Engine 5</strong> kısa bir süre önce üretici firma tarafından erken erişime açıldı. <a title=\"Unreal Engine 5\" href=\"/unreal-engine-mimari-g%c3%b6rselle%c5%9ftirme.html\" target=\"_blank\" rel=\"noopener\"><strong>Unreal Engine 5</strong></a> yazılımı yarattığı beklentiyi karşılamış ve oyun dünyasında bir şeyleri değiştirebileceğini erken erişime açılmasının ardından kanıtlamıştır.</p>\n<h2><strong>Unreal Engine 5 İle Gelen Yenilikler Neler?</strong></h2>\n<p><strong>Unreal Engine 5</strong> tanıtım vidosu ile büyük bir beklenti yaratmanın yanında oldukça merak edildi. Yazılım oyun dünyasına tıpkı diğer sürümlerinde olduğu gibi birçok değişiklik ve yenilik getiriyor. Bu özelliklerden çok göze çarpanlar ise <strong>Nanite ve Lumen</strong>.</p>\n<blockquote><p><strong>Nanite sayesinde çok daha gerçekçi oyun grafikleri yaratılabiliyor.</strong></p></blockquote>\n<p>Ayrıca optimizasyon konusunda da son derece yardımcı oluyor. Başka bir ifadeyle yeni parçacık teknolojisi sayesinde daha gerçekçi grafiklerin yaratılmasını sağalarken karakterin kapladığı alan konusunda da optimizasyon sağlıyor.</p>\n<p>Yazılımda dikkat çeken bir diğer özellik olan Lumen ise dinamik ortam aydınlatılmasında ciddi yenilikler sunuyor. Zamanla değişen dinamik aydınlatma sayesinde daha gerçekçi bir oyun ortamı oluşturmak mümkün hale geliyor. Bir örnek ile anlatmak gerekirse güneşin bulunduğu konuma göre ışıkların yansıma açıları değişiyor. Bu da oyunda gerçek hayata uygun bir deneyim sunuyor.<strong><a href=\"https://mimari3d.com/\" target=\"_blank\" rel=\"noopener\">3D görselleştirme</a></strong> alanında ise bu yeniliğin çok iyi sonuçları olacağını söyleyebiliriz.</p>\n<h3><strong>Unreal Engine 5 Ses Özellikleri Öne Çıkıyor</strong></h3>\n<p><strong>Unreal Engine 5</strong> oyun dünyasına ses anlamında da bir takım yenilikler getiriyor. Yazılım ile beraber gelen <strong>MetaSouns</strong> sayesinde ses DSP grafiklerinin üretimi konusunda tam kontrol sağlanabiliyor. Başka bir ifadeyle ses deneyimlerini her anlamda yönetme özgürlüğünü kullanıcıya veriyor. <strong>Unreal Engine 5’</strong>in yenilikleri sadece bu sayılanlarda sınırlı değil. Yazılım kullanıcılara rahat bir çalışma alanı yaratmak üzere bazı ara yüz yeniliklerini de beraberinde getiriyor. Güncellenen görsel fitil, oldukça kolaylaştırılmış iş akışları, optimize edilmiş ekran kullanımı sayesinde kullanıcılar yazılımdan maksimum verimi alabiliyor. Uygulama eskisine göre çok daha hızlı ve kullanımı daha kolay.</p>\n",
+  "publishedAt": "2021-10-31T22:13:03",
+  "modifiedAt": "2023-07-04T06:56:56",
+  "status": "publish",
+  "featuredImage": {
+    "legacyId": 4889,
+    "legacyUrl": "https://www.ufuksen.com/wp-content/uploads/2021/10/unrealengine5.jpg",
+    "localPath": "/media/2021/10/unrealengine5.jpg",
+    "alt": "unreal engine 5",
+    "width": 1280,
+    "height": 720,
+    "mimeType": "image/jpeg",
+    "error": null
+  },
+  "inlineMedia": [],
+  "embeds": [],
+  "seo": {
+    "title": null,
+    "description": "Oyun motorları, oyunları geliştirmek için kullanılan yazılımlar olarak tanımlanabilir. Bu yazılımlar sayesinde oyunların grafikleri ve oynayışı gibi unsurlar…",
+    "focusKeyword": "Unreal Engine 5",
+    "canonicalUrl": null,
+    "ogImage": null
+  },
+  "readingMinutes": 2,
+  "migrationChecksum": "d8fb07b1e6e1b3ca6776780b93f9ca5be808dff2b9162cb4b7ae957ccfd57432",
+  "author": {
+    "legacyId": 1,
+    "name": "UFUK ŞEN",
+    "slug": "ufuk",
+    "isGuest": false
+  },
+  "categories": [
+    {
+      "legacyId": 538,
+      "name": "Render Motorları",
+      "slug": "render-motorlari"
+    },
+    {
+      "legacyId": 1174,
+      "name": "Unreal Engine",
+      "slug": "unreal-engine"
+    }
+  ],
+  "tags": []
+}

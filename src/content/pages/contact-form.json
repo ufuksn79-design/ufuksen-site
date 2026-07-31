@@ -1,0 +1,24 @@
+{
+  "legacyId": 726,
+  "slug": "contact-form",
+  "legacyUrl": "/contact-form",
+  "url": "/contact-form",
+  "title": "Contact Form",
+  "excerpt": "Contact Form 7 Integration You may easily setup a contact form with the Contact Form 7 integrated support. For more information please refer to the Getting Started tutorial, that explains how to display a form on your page, and how to customize your forms and mail. Get in Touch ?",
+  "contentHtml": "\n\n\n<h3 class=\"wp-block-heading\">Contact Form 7 Integration </h3>\n\n\n\n\n\n<p> You may easily setup a contact form with the <a href=\"https://wordpress.org/plugins/contact-form-7/\" target=\"_blank\" rel=\"noopener\">Contact Form 7</a> integrated support. </p>\n\n\n\n<p>For more information please refer to the&nbsp;<a href=\"https://contactform7.com/getting-started-with-contact-form-7/\" target=\"_blank\" rel=\"noopener\">Getting Started</a>&nbsp;tutorial, that explains how to display a form on your page, and how to customize your forms and mail.</p>\n\n\n\n\n\n<hr class=\"wp-block-separator is-style-wide is-cnvs-separator-id-1574516040902\"/>\n\n\n\n\n\n<h3 class=\"wp-block-heading\">Get in Touch ?</h3>\n\n\n\n\n<p class=\"wpcf7-contact-form-not-found\"><strong>Hata:</strong> İletişim formu bulunamadı.</p>\n\n\n",
+  "publishedAt": "2018-06-25T12:27:53",
+  "modifiedAt": "2018-06-25T12:27:53",
+  "status": "publish",
+  "featuredImage": null,
+  "inlineMedia": [],
+  "embeds": [],
+  "seo": {
+    "title": null,
+    "description": "Contact Form 7 Integration You may easily setup a contact form with the Contact Form 7 integrated support. For more information please refer to the Getting…",
+    "focusKeyword": "",
+    "canonicalUrl": null,
+    "ogImage": null
+  },
+  "readingMinutes": 1,
+  "migrationChecksum": "1dd8448a3e02ccac151536f9b1c1c7c4ae6a1114408d76f7d3567762d3cd9812"
+}

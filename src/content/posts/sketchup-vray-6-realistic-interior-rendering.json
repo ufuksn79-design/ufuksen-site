@@ -1,0 +1,69 @@
+{
+  "legacyId": 6807,
+  "slug": "sketchup-vray-6-realistic-interior-rendering",
+  "legacyUrl": "/sketchup-vray-6-realistic-interior-rendering.html",
+  "url": "/sketchup-vray-6-realistic-interior-rendering.html",
+  "title": "Sketchup Vray 6 Realistic Interior Rendering",
+  "excerpt": "In this video, I demonstrate how to achieve a highly realistic interior rendering using SketchUp Vray 6. Starting with a pre-made model, I walk you through the essential steps and techniques to bring your interior designs to life with stunning detail and photorealistic quality. We’ll cover: Setting up your SketchUp model for Vray rendering Applying …",
+  "contentHtml": "<p><span class=\"yt-core-attributed-string--link-inherit-color\" dir=\"auto\">In this video, I demonstrate how to achieve a highly realistic interior rendering using SketchUp Vray 6. Starting with a pre-made model, I walk you through the essential steps and techniques to bring your interior designs to life with stunning detail and <strong>photorealistic quality.</strong></span></p>\n<p><iframe loading=\"lazy\" title=\"YouTube video player\" src=\"https://www.youtube.com/embed/7CqnmtvsZx4?si=YYHKcJggbmqmrJAE\" width=\"560\" height=\"315\" frameborder=\"0\" allowfullscreen=\"allowfullscreen\"></iframe></p>\n<p>We&#8217;ll cover: Setting up your <em><strong><a href=\"https://sketchupturkiye.com/\" target=\"_blank\" rel=\"noopener\">SketchUp</a></strong></em> model for <a href=\"/sketchup-vray-realistic-interior-rendering.html\" target=\"_blank\" rel=\"noopener\"><strong>Vray rendering</strong></a> Applying materials and textures for a realistic look Adjusting lighting to enhance the overall ambiance Fine-tuning render settings for the best results Post-processing tips to polish your final render Whether you&#8217;re a beginner or an experienced user, this tutorial will help you elevate your interior renderings to the next level.</p>\n<p>Don&#8217;t forget to like, comment, and subscribe for more tutorials and tips on SketchUp and Vray! <span class=\"yt-core-attributed-string--link-inherit-color\" dir=\"auto\"><a class=\"yt-core-attributed-string__link yt-core-attributed-string__link--call-to-action-color\" tabindex=\"0\" href=\"https://www.youtube.com/hashtag/sketchup\" target=\"\" rel=\"noopener\">#SketchUp</a></span> <span class=\"yt-core-attributed-string--link-inherit-color\" dir=\"auto\"><a class=\"yt-core-attributed-string__link yt-core-attributed-string__link--call-to-action-color\" tabindex=\"0\" href=\"https://www.youtube.com/hashtag/vray\" target=\"\" rel=\"noopener\">#Vray</a></span> <span class=\"yt-core-attributed-string--link-inherit-color\" dir=\"auto\"><a class=\"yt-core-attributed-string__link yt-core-attributed-string__link--call-to-action-color\" tabindex=\"0\" href=\"https://www.youtube.com/hashtag/sketchupvray\" target=\"\" rel=\"noopener\">#sketchupvray</a></span></p>\n",
+  "publishedAt": "2024-08-27T17:10:16",
+  "modifiedAt": "2024-08-27T17:11:42",
+  "status": "publish",
+  "featuredImage": {
+    "legacyId": 6809,
+    "legacyUrl": "https://www.ufuksen.com/wp-content/uploads/2024/08/sketchup-vray-6.jpg",
+    "localPath": "/media/2024/08/sketchup-vray-6.jpg",
+    "alt": "sketchup vray 6",
+    "width": 640,
+    "height": 360,
+    "mimeType": "image/jpeg",
+    "error": null
+  },
+  "inlineMedia": [],
+  "embeds": [
+    {
+      "provider": "youtube",
+      "externalId": "7CqnmtvsZx4",
+      "originalSrc": "https://www.youtube.com/embed/7CqnmtvsZx4?si=YYHKcJggbmqmrJAE",
+      "title": null
+    }
+  ],
+  "seo": {
+    "title": null,
+    "description": "In this video, I demonstrate how to achieve a highly realistic interior rendering using SketchUp Vray 6",
+    "focusKeyword": "SketchUp Vray 6",
+    "canonicalUrl": null,
+    "ogImage": null
+  },
+  "readingMinutes": 1,
+  "migrationChecksum": "ebd68b7c2e900041ce6486b00c515a6a3c586ff94924085d2f5f807c42afc6c1",
+  "author": {
+    "legacyId": 1,
+    "name": "UFUK ŞEN",
+    "slug": "ufuk",
+    "isGuest": false
+  },
+  "categories": [
+    {
+      "legacyId": 1169,
+      "name": "3D Programlar",
+      "slug": "3d-programlar"
+    },
+    {
+      "legacyId": 538,
+      "name": "Render Motorları",
+      "slug": "render-motorlari"
+    },
+    {
+      "legacyId": 1172,
+      "name": "Sketchup",
+      "slug": "sketchup"
+    },
+    {
+      "legacyId": 541,
+      "name": "Vray Render",
+      "slug": "vray"
+    }
+  ],
+  "tags": []
+}

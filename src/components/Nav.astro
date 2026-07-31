@@ -1,0 +1,37 @@
+---
+const path = Astro.url.pathname;
+const links = [
+  { href: "/blog", label: "Blog" },
+  { href: "/kategori/3d-gorsellestirme", label: "3D Görselleştirme" },
+  { href: "/kategori/render-motorlari", label: "Render Motorları" },
+  { href: "/kategori/sketchup", label: "SketchUp" },
+  { href: "/arama", label: "Ara" },
+];
+const isCurrent = (href: string) => path === href || path.startsWith(href + "/");
+---
+<header class="nav">
+  <div class="u-shell nav__inner">
+    <a class="nav__logo" href="/">UFUK<b>ŞEN</b></a>
+    <nav class="nav__links" aria-label="Ana menü">
+      {links.map((link) => (
+        <a class="nav__link" href={link.href} aria-current={isCurrent(link.href) ? "page" : undefined}>
+          {link.label}
+        </a>
+      ))}
+      <a class="btn btn--primary" href="/iletisim">İletişim</a>
+    </nav>
+    <button class="burger" type="button" aria-expanded="false" aria-controls="drawer" aria-label="Menüyü aç">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+  <div class="drawer" id="drawer" data-open="false">
+    <div class="drawer__inner">
+      <nav class="u-shell drawer__list" aria-label="Mobil menü">
+        {links.map((link, index) => (
+          <a href={link.href}><span>{String(index + 1).padStart(2, "0")}</span>{link.label}</a>
+        ))}
+        <a href="/iletisim"><span>{String(links.length + 1).padStart(2, "0")}</span>İletişim</a>
+      </nav>
+    </div>
+  </div>
+</header>

@@ -1,0 +1,59 @@
+{
+  "legacyId": 4936,
+  "slug": "twinmotion-exterior-render",
+  "legacyUrl": "/twinmotion-exterior-render.html",
+  "url": "/twinmotion-exterior-render.html",
+  "title": "Twinmotion Exterior Render Tutorial",
+  "excerpt": "Twinmotion Exterior Render dersimiz ile dış mekanda görselleştirme yapacağız. Twinmotion 2022 sürümü yakın zamanda çıktı biliyorsunuz.Bu sürümle beraber path trace ile beraber çok özellikleri bir arada bulundurarak kullanıcılara farklı bir deneyim kazandırma çabasındalar. Twinmotion Exterior Render Lumionu yakın markaja alan Twinmotion ve Enscape gibi motorların son zamanlardaki yükselişi, Lumionu zor durumda bırakıyor. Mimari görselleştirme ve …",
+  "contentHtml": "<p><strong>Twinmotion Exterior Render dersimiz ile dış mekanda görselleştirme yapacağız.<br />\nTwinmotion 2022</strong> sürümü yakın zamanda çıktı biliyorsunuz.Bu sürümle beraber <strong>path trace</strong> ile beraber çok özellikleri bir arada bulundurarak kullanıcılara farklı bir deneyim kazandırma çabasındalar.</p>\n<h2><strong>Twinmotion Exterior Render</strong></h2>\n<p>Lumionu yakın markaja alan <strong>Twinmotion</strong> ve <strong>Enscape</strong> gibi motorların son zamanlardaki yükselişi, Lumionu zor durumda bırakıyor.</p>\n<p><strong>Mimari görselleştirme</strong> ve <strong>3d görselleştirme</strong> alanında çok hızlı bir şekilde işlem yapabileceğiniz Twinmotion 2022 versiyonu ile <em><a title=\"gerçekçi render\" href=\"https://www.mimari3d.com/\" target=\"_blank\" rel=\"noopener\"><strong>gerçekçi render</strong></a></em> görüntüleri oluşturabilirsiniz.</p>\n<h2>Twinmotion Not ve sınırlamalar:</h2>\n<ul>\n<li>DX12 gerektirir</li>\n<li>Işın izlemeyi destekleyen GPU gerektirir.</li>\n<li>macOS&#8217;ta desteklenmez</li>\n<li>Performans GPU&#8217;ya bağlı olarak değişecektir</li>\n<li>Şu anda yakınsama tahmini yok</li>\n<li>Aşağıdaki özellikler desteklenmez:\n<ul>\n<li>Twinmotion Bulut Sunumları</li>\n<li>caustik desteklenmiyor</li>\n<li>Decaller desteklenmiyor</li>\n<li>Hava yüksekliği ve sis</li>\n<li>Hacimsel ışıklar</li>\n<li>nokta bulutları</li>\n<li>Bayrak animasyonu</li>\n<li>Güneş şekli görünürlüğü</li>\n</ul>\n</li>\n<li>Bilinen Sorunlar:\n<ul>\n<li>Görünüm penceresinde Gizmo ile etkileşim mümkün değil</li>\n<li>Not aracıyla çalışmıyor</li>\n<li>Ölçüm aracıyla çalışmıyor</li>\n<li>Bazı yelkenli teknelerin yelkeninin bir tarafı ile çalışmıyor</li>\n<li>Su malzemelerinin şeffaflığı ile çalışmamak</li>\n<li>Hava parçacıklarıyla çalışmıyor (kar ve yağmur)</li>\n<li>Google harita dokularıyla çalışmıyor</li>\n</ul>\n</li>\n</ul>\n<p><iframe loading=\"lazy\" title=\"YouTube video player\" src=\"https://www.youtube.com/embed/ebQQDRgCAfY\" width=\"560\" height=\"315\" frameborder=\"0\" allowfullscreen=\"allowfullscreen\"></iframe></p>\n",
+  "publishedAt": "2021-12-05T11:39:47",
+  "modifiedAt": "2023-07-04T06:49:51",
+  "status": "publish",
+  "featuredImage": {
+    "legacyId": 4938,
+    "legacyUrl": "https://www.ufuksen.com/wp-content/uploads/2021/12/twinmotion-2022.jpg",
+    "localPath": "/media/2021/12/twinmotion-2022.jpg",
+    "alt": "Twinmotion Exterior Render",
+    "width": 1200,
+    "height": 675,
+    "mimeType": "image/jpeg",
+    "error": null
+  },
+  "inlineMedia": [],
+  "embeds": [
+    {
+      "provider": "youtube",
+      "externalId": "ebQQDRgCAfY",
+      "originalSrc": "https://www.youtube.com/embed/ebQQDRgCAfY",
+      "title": null
+    }
+  ],
+  "seo": {
+    "title": null,
+    "description": "Twinmotion Exterior Render dersimiz ile dış mekanda görselleştirme yapacağız. Twinmotion 2022 sürümü yakın zamanda çıktı biliyorsunuz.Bu sürümle beraber path…",
+    "focusKeyword": "Twinmotion Exterior Render",
+    "canonicalUrl": null,
+    "ogImage": null
+  },
+  "readingMinutes": 1,
+  "migrationChecksum": "f39e5a80c26d35f23b94926ac2ba765cc630ceab330c3a7115ec7592666c14e3",
+  "author": {
+    "legacyId": 1,
+    "name": "UFUK ŞEN",
+    "slug": "ufuk",
+    "isGuest": false
+  },
+  "categories": [
+    {
+      "legacyId": 538,
+      "name": "Render Motorları",
+      "slug": "render-motorlari"
+    },
+    {
+      "legacyId": 1167,
+      "name": "Twinmotion",
+      "slug": "twinmotion-render"
+    }
+  ],
+  "tags": []
+}

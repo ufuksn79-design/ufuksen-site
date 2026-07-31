@@ -1,0 +1,45 @@
+---
+import { getVisibleCategories, categoryPath, formatDate, type Post } from "../lib/content";
+
+interface Props { recent: Post[] }
+const { recent } = Astro.props;
+const categories = (await getVisibleCategories()).slice(0, 8);
+---
+<aside class="aside" aria-label="Blog kenar çubuğu">
+  <section class="widget">
+    <h2>Ara</h2>
+    <form class="search-form" role="search" action="/arama" method="get">
+      <label class="u-eyebrow" for="sidebar-q" style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)">Arama</label>
+      <input id="sidebar-q" name="q" type="search" placeholder="Yazılarda ara…" />
+      <button class="btn btn--primary" type="submit">Ara</button>
+    </form>
+  </section>
+
+  <section class="widget">
+    <h2>Son yazılar</h2>
+    <ul>
+      {recent.map((post) => (
+        <li>
+          <a href={post.data.url}>
+            <span>{post.data.title}</span>
+            <em>{formatDate(post.data.publishedAt)}</em>
+          </a>
+        </li>
+      ))}
+    </ul>
+  </section>
+
+  <section class="widget">
+    <h2>Kategoriler</h2>
+    <ul>
+      {categories.map((category) => (
+        <li>
+          <a href={categoryPath(category)}>
+            <span>{category.name}</span>
+            <em>{category.postCount}</em>
+          </a>
+        </li>
+      ))}
+    </ul>
+  </section>
+</aside>

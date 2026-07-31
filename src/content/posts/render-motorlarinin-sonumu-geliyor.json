@@ -1,0 +1,52 @@
+{
+  "legacyId": 5359,
+  "slug": "render-motorlarinin-sonumu-geliyor",
+  "legacyUrl": "/render-motorlarinin-sonumu-geliyor.html",
+  "url": "/render-motorlarinin-sonumu-geliyor.html",
+  "title": "Render motorlarının sonumu geliyor ?",
+  "excerpt": "İşlemci üzerinden çalışan render motorları 2017 yılına kadar krallıklarını korurken, bu yıldan sonra GPU (ekran kartı) üzerinden çalışan render motorları yavaş yavaş piyasada kendilerini göstermeye başlarken, 2022 yılında bu sayı giderek arttı ve piyasayı şu an domine etmeye çalışıyorlar. Biliyorsunuz işlemci üzerinden render alınan render motorlarının hesaplama mantığı ile ekran kartı üzerinden render alan render …",
+  "contentHtml": "<p><strong>İşlemci</strong> üzerinden çalışan <strong>render motorları</strong> 2017 yılına kadar krallıklarını korurken, bu yıldan sonra GPU (ekran kartı) üzerinden çalışan render motorları yavaş yavaş piyasada kendilerini göstermeye başlarken, 2022 yılında bu sayı giderek arttı ve piyasayı şu an domine etmeye çalışıyorlar.</p>\n<p>Biliyorsunuz <strong>işlemci</strong> üzerinden <strong>render</strong> alınan render motorlarının hesaplama mantığı ile <strong>ekran kartı</strong> üzerinden render alan render motorlarının işlem yapma mantığı farklıdır.</p>\n<p>İşlemci üzerinden yapılan render işlemlerinde saatlerce render süresi beklenirken, ekran kartı cephesine döndüğümüzde ise, güçlü işlem hacmi ile çok hızlı bir şekilde gerçek zamanlı anlık görüntüler alabiliyoruz.</p>\n<h2><strong>Render Motorları İşlemcimi ? Ekran Kartımı ?</strong></h2>\n<p>Özellikle son zamanlarda Vray tarafından satın alınan <a href=\"https://www.3degitimsetleri.com/\" target=\"_blank\" rel=\"noopener\"><strong>Enscape render</strong></a> motorunun yüksek çıkışı ve D5 render motorunun, unreal 4 motorunu kullanarak yükselmesi, real time piyasasını kızıştırmış durumda.</p>\n<p><b>not</b> : d5 render motoru şu an , unreal 5 sistemine geçiş yapmayı planlıyor.</p>\n<p><strong>Epic games</strong> tarafından satın alınan <strong>Twinmotion</strong>&#8216;nun bu piyasadan pasta payı almak için ciddi çabaları oldu ve yavaş yavaş meyvelerini alıyor. Yaptığı yatırımlar ile 16.000 den fazla kaplama ve model eklentisi ve <strong>unreal engine</strong> içindeki <strong>path trace render işleme motorunu</strong> Twinmotion&#8217;a ekleyerek render kısmında kaliteli ve <a href=\"https://www.3degitimsetleri.com/\" target=\"_blank\" rel=\"noopener\"><strong>gerçekçi render</strong></a>ın önünü açmış oldu.</p>\n<p>Lumionun yüksek fiyat politikası da program geçişlerinde büyük bir rol oynuyor bu sektörde. En son 3000 euroluk fiyat etiketi ile devam etmeleri, kullanıcıların diğer programlara geçişinide kolaylaştırıyor.</p>\n<p>Çünkü Twinmotionun Türkiye ye özel 4800TL lik fiyat politikası, enscape renderın aylık ödemeli cazip fiyatı, D5 renderın ortalama fiyatları ve bu son dönem popüler olan bu 3 lünün kullanımını cazip kılıyor..</p>\n<h3><strong>Peki Vray cephesinde neler olacak ?</strong></h3>\n<p>Zaten Vray&#8217;in Vantage projesi var özellikle 3dsmax cephesinde o boşluğu doldurmak için real time kısmını o şekilde kapatmaya çalışıyor.</p>\n<p>Sketchup cephesinde ise <strong>Enscape Render</strong> Motorunu satın aldığı için, yine rakiplerinin gerisinden kalmadan ,akıllı yatırımlar ile devam ediyor.</p>\n<p>Fakat benim görüşüm Vray&#8217;in bu önümüzdeki 5 yıl içinde yeni gelecek olan render teknolojileri ile daha az kullanacağını düşünüyorum.</p>\n<p>Çünkü artık kimse saatlerce işlemci üzerinden render süresi beklemek istemiyor, tasarım kısmında kullanacağım zamanı, neden render süresinde harcamak isteyim ki ?</p>\n",
+  "publishedAt": "2022-06-22T20:54:07",
+  "modifiedAt": "2023-07-04T00:13:58",
+  "status": "publish",
+  "featuredImage": {
+    "legacyId": 5365,
+    "legacyUrl": "https://www.ufuksen.com/wp-content/uploads/2022/06/islemci.jpg",
+    "localPath": "/media/2022/06/islemci.jpg",
+    "alt": "render motorları",
+    "width": 640,
+    "height": 360,
+    "mimeType": "image/jpeg",
+    "error": null
+  },
+  "inlineMedia": [],
+  "embeds": [],
+  "seo": {
+    "title": null,
+    "description": "İşlemci üzerinden çalışan render motorları 2017 yılına kadar krallıklarını korurken, bu yıldan sonra GPU (ekran kartı) üzerinden çalışan render motorları…",
+    "focusKeyword": "Render motorları",
+    "canonicalUrl": null,
+    "ogImage": null
+  },
+  "readingMinutes": 2,
+  "migrationChecksum": "a8e5ab11aa134c60c5012607b616c2c269b5565dd0aa8ba6bdce250730727c86",
+  "author": {
+    "legacyId": 1,
+    "name": "UFUK ŞEN",
+    "slug": "ufuk",
+    "isGuest": false
+  },
+  "categories": [
+    {
+      "legacyId": 515,
+      "name": "Render Bilgisayarları",
+      "slug": "render-bilgisayarlari"
+    },
+    {
+      "legacyId": 516,
+      "name": "Render için bilgisayar Tavsiyeleri",
+      "slug": "render-icin-bilgisayar-tavsiyeleri"
+    }
+  ],
+  "tags": []
+}

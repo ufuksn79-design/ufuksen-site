@@ -1,0 +1,58 @@
+{
+  "legacyId": 2616,
+  "slug": "sketchup-vray-3-60-02-cikti",
+  "legacyUrl": "/sketchup-vray-3-60-02-cikti.html",
+  "url": "/sketchup-vray-3-60-02-cikti.html",
+  "title": "Sketchup Vray 3.60.02 Çıktı",
+  "excerpt": "Merhaba arkadaşlar , Sketchup Vray 3.60.02 versiyonu 15 şubat 2018 tarihi ile aktif oldu. Bu sürümle beraber uzun süredir, sketchup vray kullanan kullanıcılar en iyi sürüme sahip oldular. Burada unutmadan bir önemli husustan bahsetmek istiyorum, 3.40 Sürümü bu 3 serisi için temel bir sürümdür ve bu sürümün üstüne gelmiş olan güncellenmiş sürüm Sketchup Vray 3.60.02 …",
+  "contentHtml": "<p><a href=\"/sketchup-vray-3-60-02-cikti.html\" rel=\"attachment wp-att-2617\"><img loading=\"lazy\" decoding=\"async\" class=\"alignleft wp-image-2617\" src=\"/media/2018/02/Sketchup-Vray-3.60.02.jpg\" alt=\"Sketchup Vray 3.60.02\" width=\"279\" height=\"247\" srcset=\"/media/2018/02/Sketchup-Vray-3.60.02.jpg 493w, /media/2018/02/Sketchup-Vray-3.60.02-300x265.jpg 300w, /media/2018/02/Sketchup-Vray-3.60.02-475x420.jpg 475w\" sizes=\"auto, (max-width: 279px) 100vw, 279px\" /></a>Merhaba arkadaşlar , <span style=\"color: #ff00ff;\"><strong>Sketchup Vray 3.60.02</strong></span> versiyonu 15 şubat 2018 tarihi ile aktif oldu. Bu sürümle beraber uzun süredir, sketchup vray kullanan kullanıcılar en iyi sürüme sahip oldular.</p>\n<p>Burada unutmadan bir önemli husustan bahsetmek istiyorum, 3.40 Sürümü bu 3 serisi için temel bir sürümdür ve bu sürümün üstüne gelmiş olan güncellenmiş sürüm <strong>Sketchup Vray 3.60.02</strong> versiyonudur.</p>\n<p>Özellikle orjinal kullanan kullanıcılar bu sürüme hemen sahip oldular.</p>\n<h2><span style=\"color: #ff00ff;\"><strong>Sketchup Vray 3.60.02 için gelen en iyi özellikler</strong></span></h2>\n<p><strong>Sketchup Vray 3.60.02</strong> Optimizasyon ve İş Akışı İyileştirmeleri ;</p>\n<p>* Kamera odak noktasını hesaplamak için iki yeni mod uygulandı. Odak uzaklığı artık, sahne kamera konumu ile hedef arasındaki mesafeye veya kamera konumu ile bir 3d alan içindeki sabit nokta arasındaki mesafeye bağlı olarak belirlenebilir. Bu şekilde, toplu iş, toplu iş veya animasyon oluşturma sırasında dinamik olarak değişebilir.</p>\n<p>* <strong>V-Ray UV Tools</strong> artık bir malzeme uygulamak ve eşlemeleri aynı anda yapmak için kullanılabilir. Bu, seçilen bir malzeme ile <strong>V-Ray UV</strong> Eşleme işlevini yürütmek ve Boya Kovası (Keşif Aracı) etkin duruma getirmek suretiyle yapılabilir.</p>\n<p>*<span id=\"result_box\" class=\"\" lang=\"tr\"><span title=\"The V-Ray UV Tools / Spherical Projection modes have been improved     \">V-Ray UV Tools / Küresel Projeksiyon modları geliştirildi<br />\n</span><span title=\"Implemented Remove Materials button (in the V-Ray UV Tools sub-menu).\">Malzemeleri Kaldır düğmesi uygulanmış (<strong>V-Ray UV Tools</strong> alt menüsünde). </span><span title=\"It removes materials applied to the current selection (group, component or face) and all its child objects     \">Geçerli seçime (grup, bileşen veya yüz) uygulanan malzemeleri ve tüm alt nesnelerini kaldırır</span></span>.</p>\n<p>*<span id=\"result_box\" class=\"\" lang=\"tr\"><span title=\"It removes materials applied to the current selection (group, component or face) and all its child objects     \"> </span><span title=\"Camera Exposure can now be disabled with a toggle.\">Kamera Pozlama artık bir geçiş ile devre dışı bırakılabilir. </span><span title=\"This way the image exposure can be preserved while changing the distance between the camera and its target     \">Bu şekilde kamera ve hedef arasındaki mesafeyi değiştirirken görüntü pozlama korunabilir.</span></span></p>\n<p>*<span title=\"Implemented Multi Matte render element.\">Çok Mat render elemanı uygulandı. </span><span title=\"It works together with the V-Ray Object ID assignments in the scene.\">Sahnedeki <strong>V-Ray Object ID</strong> atamaları ile birlikte çalışır. </span><span title=\"The number of unique IDs assigned determines the number of Multi Matte elements that will be created at render time.\">Atanan benzersiz kimliklerin sayısı, oluşturma zamanında oluşturulacak Çok Matte öğelerin sayısını belirler. </span><span title=\"Each element can store three (R, G, B) masks.\">Her bir element üç (R, G, B) maske saklayabilir. </span><span title=\"The new element is supported by the GPU (Hybrid) engine     \">Yeni eleman <strong>GPU (Hybrid) motoru</strong> tarafından destekleniyor.</span></p>\n<p><span title=\"It calculates the global illumination for the entire camera path and significantly speeds up the process of rendering camera fly-through setups     \"> * </span><span title=\"Batch and Animation rendering have been improved.\">Toplu İş ve Animasyon oluşturma geliştirildi. </span><span title=\"Using small Scene Transition and Scene Delay values and rendering animation now leads to much more predictable outcome.\">Küçük Sahne Geçişi ve Sahne Gecikmesi değerlerini kullanmak ve animasyon oluşturmak artık çok daha öngörülebilir sonuçlara neden oluyor. </span><span title=\"Batch camera positions now completely match the pre-defined scene views     \">Toplu kamera konumları artık önceden tanımlanmış sahne görünümleriyle tamamen eşleşiyor.</span></p>\n<p>* <span title=\"The Water texture can now be used as bump or displacement map for animated waves with the help of the new Movement Rate parameter.\">Su dokusu artık yeni Hareket Oranı parametresinin yardımı ile hareketli dalgalar için çarpma veya yer değiştirme haritası olarak kullanılabilir. </span><span title=\"It speeds up or slows down the movement of the wave     \">Dalganın hızını hızlandırır veya yavaşlatır.</span></p>\n<p>*<strong>Sketchup Vray 3.60.02</strong> Malzeme editörün de, <span title=\"The Copy / Paste functionality has been removed due to its potential to cause discrepancies and is no longer needed thanks to the replacement functionality     \">Tutarsızlıklara neden olma potansiyeli nedeniyle Kopyala / Yapıştır işlevi kaldırılmıştır.</span></p>\n<p>*<span title=\"Materials from the Library can now be applied directly to the selected scene objects by Right-click / Apply to Selection     \">Kütüphane materyalleri doğrudan sağ tıklayarak / Seçime Uygula ile seçilen sahne nesnelerine doğrudan uygulanabilir.</span></p>\n<p>* <span title=\"Rendering animations without an output image file path specified is now possible\">Belirtilen çıktı görüntüsü dosyası yolu olmadan, animasyonlar oluşturma artık mümkün</span></p>\n<h3><span style=\"color: #ff00ff;\"><strong>Sketchup Vray 3.60.02</strong> Kullanıcı arayüzü</span></h3>\n<p>* Kamera ayarları yeniden düzenlendi</p>\n<p>* Pozlama geçişi Kamera parametrelerine eklendi</p>\n<p>* Uygulanan Kamera Odak Kaynağı açılır menüsü eklendi</p>\n<p>* İnteraktif Rendering (İnteraktif Rendering) modunun etkinleştirilmesi Progressive geçişini otomatik olarak gizler. Etkileşimli mod her zaman aşamalı olarak görüntülenir, bu nedenle seçenek gerekli değildir</p>\n<p>*Işınım Haritası, Işık Önbellek ve Caustik Disk Önbellekleme seçenekleri yeniden tasarlandı ve basitleştirildi.</p>\n<p>* Işık Yol Haritası ve Işık önbelleklerine Kamera Yolu kullan onay kutusu eklendi<br />\n<strong>VRayBRDF</strong> malzeme katmanı Ortam Geçersiz Kılma serpme yeniden düzenlendi ve basitleştirildi</p>\n<p>*<strong>Katmanlı Malzeme / Malzeme Seçenekleri / Raytrace Özellikleri</strong> kısmı eklendi. Cast Shadows ve Sadece Secondary seçeneklerinde (daha önce V-Ray 2&#8217;de mevcuttu) açıklandı</p>\n<p>* <strong>İnteraktif Rendering</strong> açıkken Camera Stereo değiştirme özelliği artık kullanılamaz<br />\nAnimasyon roll-out&#8217;u artık daha kolay erişim için Render Output çıktı alanının (üst düzey) dışında bulunuyor</p>\n<p>* <strong>Render Interactive</strong> (ve Stop versiyonu) Varlık Editörü simgeleri, demlik görüntü pozisyonunun Render Production biriyle eşleşecek şekilde yeniden tasarlandı.</p>\n<p>*Çok Katmanlı Oluşturma Elemanları listesine eklendi</p>\n<p>* Su dokusu Hareket Oranı kaydırıcısı uygulanmıştır</p>\n",
+  "publishedAt": "2018-02-16T09:11:28",
+  "modifiedAt": "2022-12-21T10:29:55",
+  "status": "publish",
+  "featuredImage": {
+    "legacyId": 2617,
+    "legacyUrl": "https://www.ufuksen.com/wp-content/uploads/2018/02/Sketchup-Vray-3.60.02.jpg",
+    "localPath": "/media/2018/02/Sketchup-Vray-3.60.02.jpg",
+    "alt": "Sketchup Vray 3.60.02",
+    "width": 493,
+    "height": 436,
+    "mimeType": "image/jpeg",
+    "error": null
+  },
+  "inlineMedia": [
+    {
+      "legacyUrl": "http://www.ufuksen.com/wp-content/uploads/2018/02/Sketchup-Vray-3.60.02.jpg",
+      "localPath": "/media/2018/02/Sketchup-Vray-3.60.02.jpg",
+      "error": null
+    }
+  ],
+  "embeds": [],
+  "seo": {
+    "title": null,
+    "description": "Sketchup Vray 3.60.02 ile bilgilerin ve mükemmel yeniliklerin anlatıldığı bir makaledir.Sketchup vray 3.60 ile beraber bir çok hata düzeltmesi ve yenilik…",
+    "focusKeyword": "Sketchup Vray 3.60",
+    "canonicalUrl": null,
+    "ogImage": null
+  },
+  "readingMinutes": 3,
+  "migrationChecksum": "c018019112e6167b44fa01ea31655c4789316f476c0214ef3d9f8999bb3b5d62",
+  "author": {
+    "legacyId": 1,
+    "name": "UFUK ŞEN",
+    "slug": "ufuk",
+    "isGuest": false
+  },
+  "categories": [
+    {
+      "legacyId": 538,
+      "name": "Render Motorları",
+      "slug": "render-motorlari"
+    },
+    {
+      "legacyId": 541,
+      "name": "Vray Render",
+      "slug": "vray"
+    }
+  ],
+  "tags": []
+}

@@ -1,0 +1,66 @@
+---
+import SocialLinks from "./SocialLinks.astro";
+const year = new Date().getFullYear();
+---
+<footer class="foot">
+  <div class="foot__top">
+    <a class="foot__brand" href="/" aria-label="Ana sayfa — Ufuk Şen">
+      <img src="/media/marka/ufuksenlogo.png" alt="Ufuk Şen" width="260" height="98" />
+    </a>
+    <SocialLinks variant="row" size="sm" />
+  </div>
+  <div class="foot__bottom">
+    <span>© {year} Ufuk Şen</span>
+    <div class="foot__links">
+      <a href="/blog">Blog</a>
+      <a href="/urunler">Ürünler</a>
+      <a href="/egitimler">Eğitimler</a>
+      <a href="/videolar">Videolar</a>
+      <a href="/yazilim">Yazılımlar</a>
+      <a href="/arama">Ara</a>
+      <a href="/iletisim">İletişim</a>
+      <a href="/rss.xml">RSS</a>
+    </div>
+  </div>
+</footer>
+
+<style>
+  .foot {
+    display: grid;
+    gap: var(--s-6);
+    padding-block: var(--s-8);
+  }
+  .foot__top {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--s-4);
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: var(--s-6);
+    border-bottom: 1px solid var(--c-line);
+  }
+  .foot__brand {
+    display: inline-flex;
+    align-items: center;
+    min-height: var(--tap-min);
+  }
+  .foot__brand img {
+    width: 130px;
+    height: auto;
+    opacity: 0.85;
+    transition: opacity var(--d-fast) var(--e-out);
+  }
+  .foot__brand:hover img,
+  .foot__brand:focus-visible img {
+    opacity: 1;
+  }
+  .foot__bottom {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--s-4);
+    justify-content: space-between;
+    align-items: center;
+    font-size: var(--t-small);
+    color: var(--c-text-faint);
+  }
+</style>

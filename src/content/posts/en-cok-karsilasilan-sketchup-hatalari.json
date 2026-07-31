@@ -1,0 +1,65 @@
+{
+  "legacyId": 2746,
+  "slug": "en-cok-karsilasilan-sketchup-hatalari",
+  "legacyUrl": "/en-cok-karsilasilan-sketchup-hatalari.html",
+  "url": "/en-cok-karsilasilan-sketchup-hatalari.html",
+  "title": "En çok Karşılaşılan Sketchup Hataları",
+  "excerpt": "En çok Karşılaşılan Sketchup Hataları konusunda, özellikle yeni başlayan kullanıcıların sıklıkla karşılaştıkları konulara değineceğiz.Özellikle ilk başlayanların karşılaştığı sorunlar, kullanıcının ilerlemesini ve motivasyonunu olumsuz yönde etkilemektedir. Bu durum ilerlemenin önüne geçerek, kullanıcının ilerlemesini yavaşlatmaktadır. Aşağıda bu durumların önüne geçebilecek çözüm önerilerini bulacaksınız. En çok Karşılaşılan Sketchup Hataları ve Çözüm yolları Autocad çizgilerinin belirli bir eksen dışında …",
+  "contentHtml": "<p><a href=\"/en-cok-karsilasilan-sketchup-hatalari.html\" rel=\"attachment wp-att-2752\"><img loading=\"lazy\" decoding=\"async\" class=\"alignleft wp-image-2752\" src=\"/media/2018/04/en-cok-karsilasilan-sketchup-hatalari.jpg\" alt=\"en cok karsilasilan sketchup hatalari\" width=\"297\" height=\"159\" srcset=\"/media/2018/04/en-cok-karsilasilan-sketchup-hatalari.jpg 797w, /media/2018/04/en-cok-karsilasilan-sketchup-hatalari-300x161.jpg 300w, /media/2018/04/en-cok-karsilasilan-sketchup-hatalari-768x411.jpg 768w, /media/2018/04/en-cok-karsilasilan-sketchup-hatalari-696x373.jpg 696w, /media/2018/04/en-cok-karsilasilan-sketchup-hatalari-784x420.jpg 784w\" sizes=\"auto, (max-width: 297px) 100vw, 297px\" /></a>En çok Karşılaşılan <strong><a href=\"/\">Sketchup</a> Hataları</strong> konusunda, özellikle yeni başlayan kullanıcıların sıklıkla karşılaştıkları konulara değineceğiz.Özellikle ilk başlayanların karşılaştığı sorunlar, kullanıcının ilerlemesini ve motivasyonunu olumsuz yönde etkilemektedir. Bu durum ilerlemenin önüne geçerek, kullanıcının ilerlemesini yavaşlatmaktadır. Aşağıda bu durumların önüne geçebilecek çözüm önerilerini bulacaksınız.</p>\n<h2><strong>En çok Karşılaşılan Sketchup Hataları ve Çözüm yolları</strong></h2>\n<ol>\n<li><strong>Autocad çizgilerinin belirli bir eksen dışında havada durması</strong> ;</li>\n</ol>\n<p>Bu sorun yeni kullanıcıların sıklıkla karşılaştıkları sorunların başında gelmektedir.Autocad üzerinden sketchup programına aktardığınız dwg dosyası, her parçası farklı yükseklikte çalışmaya gelir. Bu sorunu hiç bir ek program kullanmadan sketchup içerisinde çözebiliriz.</p>\n<p>Bu sorun için Autocad dosyanıza Sketchup içerisinde Top (üstten) bakış açısına getirip, <strong>export / dwg</strong> demeniz yeterlidir.</p>\n<p>Dosyayı tekrar <strong>import / dwg</strong> dediğinizde eksenlerin hepsinin 0 kotuna geldiğini göreceksiniz.</p>\n<p>2.<strong>Ekrana yakınlaştıkça çizimlerin kesilmesi ;</strong></p>\n<p>Çizim yapmaya başladıktan sonra, objelere yakınlaştığınız zaman bir ekran kesilmesi ile karşı karşıya kalırsınız.Bunun aslında bir çok sebebi vardır. İlk nedeni, dwg dosyalarını aktardıktan sonra çizim sırasında ufak parçaların, uzay boşluğunda çok uzak biryerde kalmasından kaynaklanır.</p>\n<p>Bu durum esas objeye yakınlaşmanızı zorlaştırır.Aynı durum hazır objelerde de geçerlidir.Sahneye indirdiğiniz ve sizin görmediğiniz bir obje çok uzak bir eksende duruyor olabilir.</p>\n<p>Bu durumu çözmenin iki yolu vardır, birincisi dosya içerisinde ufak parçaların yerini tespit edip (autocad dwg dosyası) silmek , ikinci işlem ise kesin yöntem olarak sadece model dosyasını seçip, yeni bir sketchup dosyasına aktarmaktır.</p>\n<p><span style=\"color: #0000ff;\"><strong>Bu sorunun çözümü için aşağıdaki videoyu izleyebilirsiniz.</strong></span></p>\n<p><iframe loading=\"lazy\" title=\"Fixing &quot;Clipping&quot; issues in SketchUp\" width=\"500\" height=\"281\" src=\"https://www.youtube.com/embed/KVyHjD9V934?feature=oembed\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" referrerpolicy=\"strict-origin-when-cross-origin\" allowfullscreen></iframe></p>\n<p>3.<strong>Sketchup hataları Çalışma Sahnesinin Kasılması</strong></p>\n<p>Bu sorunun ilk sebebi yüksek poligonlu dosyalarla çalışmanızdan kaynaklanmaktadır.3D warehouse model deposundan indirdiğiniz dosyaların büyüklüğüne bakmadan sahneye eklerseniz eğer , bir müddet sonra dosyanızın şiştiğiniz görürsünüz.</p>\n<p>Bu şişme sahnede kasılmalara ve render alırken takılmalara neden olur.</p>\n<p>Bunu aşmanın en iyi yolu, yüksek kaliteli ama düşük boyutlu modelleri araştırmaktan geçer.3D warehousedan dosya indirirken nelere dikkat etmeniz gerektiğini <a href=\"/3d-warehouse-dan-dosya-indirme-linkleri-ve-dikkat-edilecekler.html\" target=\"_blank\" rel=\"noopener noreferrer\">bu konuda</a> bahsetmiştik.</p>\n<p>4. <strong>Sketchup hataları Yüksek Versiyonlu Sketchup dosyalarını açmak.</strong></p>\n<p>Burada size yine güzel bir ipucu vermek istiyorum, elinizde sketchup 2015 olsun ve indirdiğiniz dosyada sketchup 2018 olsun.Böyle olduğu için, alt versiyon üst versiyon dosyasını açmayacaktır. Bu sorunu çözmeninde 2 yolu var.</p>\n<p>İlk yol, sketchup 2018 demo sürümünü indirip, save as yapıp 2015 versiyonuna çevirmektir. Diğer yol ise, <a href=\"https://3dwarehouse.sketchup.com/\" target=\"_blank\" rel=\"noopener\">https://3dwarehouse.sketchup.com/</a> adresine modeli yükleyip daha sonra indirme sırasında size hangi formatta indirileceğini soracaktır.</p>\n<p>GÜNCELLEME : Bu konuda çıkan küçük bir program sayesinde, sketchup dosayını açmadan direk olarak, daha düşük sürümlere çevirebilirsiniz. Dosyayı <strong>buradan</strong> indiriniz.</p>\n",
+  "publishedAt": "2018-04-26T13:22:20",
+  "modifiedAt": "2022-12-21T10:28:57",
+  "status": "publish",
+  "featuredImage": {
+    "legacyId": 2752,
+    "legacyUrl": "https://www.ufuksen.com/wp-content/uploads/2018/04/en-cok-karsilasilan-sketchup-hatalari.jpg",
+    "localPath": "/media/2018/04/en-cok-karsilasilan-sketchup-hatalari.jpg",
+    "alt": "en cok karsilasilan sketchup hatalari",
+    "width": 797,
+    "height": 427,
+    "mimeType": "image/jpeg",
+    "error": null
+  },
+  "inlineMedia": [
+    {
+      "legacyUrl": "http://www.ufuksen.com/wp-content/uploads/2018/04/en-cok-karsilasilan-sketchup-hatalari.jpg",
+      "localPath": "/media/2018/04/en-cok-karsilasilan-sketchup-hatalari.jpg",
+      "error": null
+    }
+  ],
+  "embeds": [
+    {
+      "provider": "youtube",
+      "externalId": "KVyHjD9V934",
+      "originalSrc": "https://www.youtube.com/embed/KVyHjD9V934?feature=oembed",
+      "title": null
+    }
+  ],
+  "seo": {
+    "title": null,
+    "description": "En çok Karşılaşılan Sketchup Hataları konusunda nelere dikkat etmeniz gerektiğini anlatan bir konudur.Sketchup kullanıcıların hatalarını içermektedir.",
+    "focusKeyword": "Sketchup Hataları",
+    "canonicalUrl": null,
+    "ogImage": null
+  },
+  "readingMinutes": 2,
+  "migrationChecksum": "aa31c34fa7a5fc4ef470ac218f2bed281cdcc9e194e499040e8a00e22b075e5c",
+  "author": {
+    "legacyId": 1,
+    "name": "UFUK ŞEN",
+    "slug": "ufuk",
+    "isGuest": false
+  },
+  "categories": [
+    {
+      "legacyId": 1169,
+      "name": "3D Programlar",
+      "slug": "3d-programlar"
+    },
+    {
+      "legacyId": 1172,
+      "name": "Sketchup",
+      "slug": "sketchup"
+    }
+  ],
+  "tags": []
+}

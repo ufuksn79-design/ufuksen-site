@@ -1,0 +1,53 @@
+{
+  "legacyId": 2723,
+  "slug": "render-nedir-render-nasil-alinir",
+  "legacyUrl": "/render-nedir-render-nasil-alinir.html",
+  "url": "/render-nedir-render-nasil-alinir.html",
+  "title": "Render Nedir: Render Nasıl Alınır ?",
+  "excerpt": "Bu makalemiz de sizlere Render Nedir, Render Nasıl Alınır ? konularına yer vereceğim. Özellikle yeni başlayan arkadaşlarımızın çok takıldığı konulardan biridir bu. İşin mantık kısmından terimlerin anlamları ile sizlere bu konuyu açıklığa kavuşturacağım. Sizlerde kendi düşünce ve görüşlerinizi aşağıdaki yorum kısmına bırakabilirsiniz. Render Nedir ? Render , Türkçemiz de derleme toparlama gibi bir anlam olarak …",
+  "contentHtml": "<p><a href=\"/render-nedir-render-nasil-alinir.html\" rel=\"attachment wp-att-2764\"><img loading=\"lazy\" decoding=\"async\" class=\"alignleft wp-image-2764\" src=\"/media/2018/06/render-nedir.jpg\" alt=\"render nedir\" width=\"269\" height=\"235\" srcset=\"/media/2018/06/render-nedir.jpg 400w, /media/2018/06/render-nedir-300x263.jpg 300w\" sizes=\"auto, (max-width: 269px) 100vw, 269px\" /></a>Bu makalemiz de sizlere <strong>Render Nedir, <a href=\"/render-nedir-render-nasil-alinir.html\" target=\"_blank\" rel=\"noopener noreferrer\">Render Nasıl Alınır</a> ?</strong> konularına yer vereceğim. Özellikle yeni başlayan arkadaşlarımızın çok takıldığı konulardan biridir bu. İşin mantık kısmından terimlerin anlamları ile sizlere bu konuyu açıklığa kavuşturacağım. Sizlerde kendi düşünce ve görüşlerinizi aşağıdaki yorum kısmına bırakabilirsiniz.</p>\r\n<h1><strong>Render Nedir ?</strong></h1>\r\n<p>Render , Türkçemiz de derleme toparlama gibi bir anlam olarak dönüşmüştür. Mana olarak aynı olmakla birlikte render motorlarındaki önemli kriterlerin toplanarak, bir araya getirilmesi ve bunun sonucunda ortaya çıkan modelin işlenmesine render diyebiliriz. Render sonucu bize resim formatı ve video formatı (animasyon) olarak verilir.</p>\r\n<p>Render işlemine geçilmeden önce, herhangi bir render motorunda modelleme, kaplama, ışık ve render ayarları gibi önemli konuların detaylandırılıp sonra işlenmesi gerekmektedir. İşte bu işlemi, render motorları yapmaktadır.</p>\r\n<h2><strong>Render Nasıl Alınır ?</strong></h2>\r\n<p>Render alabilmek için bir render motoruna ihtiyacımız vardır.Render motorları çeşitli firmalar tarafından üretilen, gerçek dünyamızdaki ışık hesaplamasını objelerin üzerindeki yansımaları ve etkileri ile birlikte bize resim çıktısı olarak verirler.</p>\r\n<p>Şu an piyasada en çok kullanılan render motoru chaosgroup firmasına ait, Vray render motorudur. Daha sonra sırasıyla corona render, unreal engine, lumion, <a href=\"/\">twinmotion</a> ve çeşitli yazılımlar gelmektedir.</p>\r\n<p>Genel olarak hepsi aynı işlemi yapmaktadır. Render motorlarını kullanırken içerisindeki komplike özelliklerden faydalanarak gerçek dünyamızdaki etkiyi almaya çalışırız.Bu etkiler bize objenin genel özelliklerini ve gerçek ışık oluşturmak gibi etkileri oluşturmamıza fayda sağlarlar.</p>\r\n<p>Kısaca özet geçecek olursak ;</p>\r\n<p><strong>Modelleme</strong><br /><strong>Kaplama</strong><br /><strong>Işık</strong><br /><strong>Render ayarları</strong> gibi</p>\r\n<p>Render almadan önce <strong><a href=\"/kategori/kaliteli-gorsel\" target=\"_blank\" rel=\"noopener noreferrer\">bu kısımda</a></strong> açıklamalarıyla birlikte verdiğim kriterlerin tek tek ele alınıp üzerinde çalışılması gerekmektedir.</p>\r\n\r\n<h3 class=\"wp-block-heading\"><strong>Render motorları ile ilgili diğer kaynaklar</strong></h3>\r\n\r\n\r\n\r\n<p class=\"has-background\" style=\"background-color: #00fa73;\"><strong>Render nasıl alınır ve Render sonuçları ile ilgili bu konuyla ilgili diğer konuları aşağıdan okuyabilirsiniz.</strong><br /><br /><a href=\"/mimari-gorsellestirme-icin-en-kolay-render-motorlari.html\"><strong>Mimarlar için en kolay render motorları</strong></a><strong><br /></strong><a href=\"/3d-gorsellestirme.html\"><strong>3D görselleştirme</strong></a><strong><br /></strong><a href=\"/mimari-gorsellestirme-portfoy-yapmanin-onemi.html\"><strong>Mimari görselleştirmede pörtföy</strong></a><strong><br /></strong><a href=\"/mimarlar-icin-en-iyi-3d-programlar.html\"><strong>Mimarlar için en iyi 3D programlar</strong></a><strong><br /></strong><a href=\"/uc-boyutlu-programlar-icin-onemli-tuyolar.html\"><strong>Kaliteli Görsel Aşamaları</strong></a><strong><br /></strong><a href=\"/gorsellestirmede-basarili-olmak-icin-bunlari-yapmalisiniz.html\"><strong>Görselleştirmede başarılı olmak</strong></a></p>\r\n",
+  "publishedAt": "2018-06-05T11:53:11",
+  "modifiedAt": "2022-12-21T10:28:52",
+  "status": "publish",
+  "featuredImage": {
+    "legacyId": 2764,
+    "legacyUrl": "https://www.ufuksen.com/wp-content/uploads/2018/06/render-nedir.jpg",
+    "localPath": "/media/2018/06/render-nedir.jpg",
+    "alt": "render nedir",
+    "width": 400,
+    "height": 350,
+    "mimeType": "image/jpeg",
+    "error": null
+  },
+  "inlineMedia": [
+    {
+      "legacyUrl": "http://www.ufuksen.com/wp-content/uploads/2018/06/render-nedir.jpg",
+      "localPath": "/media/2018/06/render-nedir.jpg",
+      "error": null
+    }
+  ],
+  "embeds": [],
+  "seo": {
+    "title": null,
+    "description": "Bu makalemiz de sizlere Render Nedir Render Nasıl Alınır ? konularına yer vereceğim. Özellikle yeni başlayan arkadaşlarımızın çok takıldığı konulardan biridir…",
+    "focusKeyword": "Render Nedir",
+    "canonicalUrl": null,
+    "ogImage": null
+  },
+  "readingMinutes": 1,
+  "migrationChecksum": "b2a4a3ef58bc940b26c97e96751a067ee7009bb726e135a80c6699388464a135",
+  "author": {
+    "legacyId": 1,
+    "name": "UFUK ŞEN",
+    "slug": "ufuk",
+    "isGuest": false
+  },
+  "categories": [
+    {
+      "legacyId": 518,
+      "name": "3D Görselleştirme",
+      "slug": "3d-gorsellestirme"
+    }
+  ],
+  "tags": []
+}

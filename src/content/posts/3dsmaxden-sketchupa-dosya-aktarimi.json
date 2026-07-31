@@ -1,0 +1,76 @@
+{
+  "legacyId": 2502,
+  "slug": "3dsmaxden-sketchupa-dosya-aktarimi",
+  "legacyUrl": "/3dsmaxden-sketchupa-dosya-aktarimi.html",
+  "url": "/3dsmaxden-sketchupa-dosya-aktarimi.html",
+  "title": "3dsmaxden sketchupa dosya aktarımı",
+  "excerpt": "3dsmaxden sketchupa dosya aktarımı konusu herzaman hem kişisel dosyalarda sıkıntı çıkarması,  hemde grup adresimizde sorulan soruların en başında gelmektedir. Tam tersi olarak Sketchup dan 3dsmax’e dosya aktarımı basittir. 3dsmax 2010 sürümünden sonra skp uzantlılı dosyaları artık direk olarak sorunsuz açabilmektedir. Dünya üzerindeki bir çok mimarlık firması Sketchup Modelleme, 3dsmax render alma şeklinde çalışmaktadır. Bizim asıl …",
+  "contentHtml": "<p><strong><a href=\"/3dsmaxden-sketchupa-dosya-aktarimi.html\" rel=\"attachment wp-att-2507\"><img loading=\"lazy\" decoding=\"async\" class=\"alignleft wp-image-2507\" src=\"/media/2018/01/3dsmaxden-sketchupa-dosya-aktarimi.jpg\" alt=\"3dsmaxden sketchupa dosya aktarimi\" width=\"323\" height=\"297\" srcset=\"/media/2018/01/3dsmaxden-sketchupa-dosya-aktarimi.jpg 456w, /media/2018/01/3dsmaxden-sketchupa-dosya-aktarimi-300x276.jpg 300w\" sizes=\"auto, (max-width: 323px) 100vw, 323px\" /></a>3dsmaxden sketchupa dosya aktarımı</strong> konusu herzaman hem kişisel dosyalarda sıkıntı çıkarması,  hemde grup adresimizde sorulan soruların en başında gelmektedir. Tam tersi olarak Sketchup dan 3dsmax&#8217;e dosya aktarımı basittir.</p>\n<p><a href=\"/kategori/3d-egitim/3ds-max\" target=\"_blank\" rel=\"noopener noreferrer\">3dsmax</a> 2010 sürümünden sonra skp uzantlılı dosyaları artık direk olarak sorunsuz açabilmektedir. Dünya üzerindeki bir çok mimarlık firması Sketchup Modelleme, 3dsmax render alma şeklinde çalışmaktadır.</p>\n<p>Bizim asıl sorunumuz <strong>3dsmaxden sketchupa dosya aktarımı</strong> konusu olduğu için buna çözüm bulmaya çalışacağız.</p>\n<h2><strong><span style=\"color: #0000ff;\">3dsmaxden sketchupa dosya aktarımı sırasında dikkat edilmesi gerekenler</span></strong></h2>\n<p>Her iki programın yani sketchup ve 3dsmax&#8217;in modelleme ve yüzey mantığı farklı olduğu için , 3dsmax içerisinde bazı işlemlerle ,  max modellerinin poligon sayısını düşürmemiz gerekiyor.Çünkü max modelleri yüksek poligona sahip olduğu için sketchup sahnesinde kasılmalara neden oluyor.</p>\n<p>ilk olarak<span style=\"color: #0000ff;\"><strong> ProOptimizer Modifier</strong></span> kullanmak ;</p>\n<p><strong>ProOptimizer</strong> Komutu 3dsmax modify listesinde olan bir komuttur.Objeler üzerindeki poligonu hesaplayarak size bir poligon rakamı verir.Sizde bu rakamı azaltarak poligon düşürürsünüz.Bu şekilde hem boyut düşer hemde sketchupda sahnenin kasılmasını engellersiniz.</p>\n<p>Burda dikkat etmeniz gereken husus, boyut düşürürken modelin kuşa dönmesini engellemeniz.</p>\n<p>Yani poligon azaldıkça , yüzeydeki edgeler (<strong>yüzeyi birleştiren çizgiler</strong>) de azalacaktır.Bu şekilde model bozulacaktır.Modeli bozmadan poligon düşürüp o şekilde hesaplama yaptırın. Zaten ekranda göreceksiniz.</p>\n<p><span style=\"color: #000080;\"><strong>Konuyla ilgili aşağıdaki videoyu izleyiniz.</strong></span></p>\n<p><iframe loading=\"lazy\" title=\"3ds Max  12-07 ProOptimizer Modifier\" width=\"500\" height=\"281\" src=\"https://www.youtube.com/embed/M0FWI7847nk?feature=oembed\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" referrerpolicy=\"strict-origin-when-cross-origin\" allowfullscreen></iframe></p>\n<p><strong>İkinci Yöntem ise MultiRes Komutu ;</strong></p>\n<p>Yine aynı mantık bu komuttada geçerli, ProOptimizer konutunda yapılan yüzey azaltma tekniği ile sketchup programına gönderme işlemleri yapılır.</p>\n<p>Aşağıda videoda birde artlantis studio kullanılmış, çünkü artlantis programı max dosyasını aldıktan sonra sketchup dosyasına çevirebiliyor.</p>\n<p><iframe loading=\"lazy\" title=\"Export 3Dmax to SketchUp ( full textures)\" width=\"500\" height=\"281\" src=\"https://www.youtube.com/embed/bEEdEQJEADs?feature=oembed\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" referrerpolicy=\"strict-origin-when-cross-origin\" allowfullscreen></iframe></p>\n<p><strong>Üçüncü Yöntem ise Simlab exporter plugini ;</strong></p>\n<p>Üçüncü yöntem ise <strong>Simlab exporter plugini</strong>, yani 3dsmax&#8217;e yüklenen bu plugin , 3dsmax dosyalarını yukarıda saydığımız işlemleri kendisi yaparak, sketchup dosyasında bize çıktı veriyor. Plugini <a href=\"http://www.simlab-soft.com/3d-plugins/SketchUp-from-3DS-main.aspx\" target=\"_blank\" rel=\"noopener noreferrer\"><span style=\"color: #3366ff;\"><strong>buradan</strong></span></a> indirebilirsiniz.</p>\n<p><span style=\"color: #ff0000;\"><strong>Demo olarak bir kullanım sunuyor, sonrasında lisanslı kullanım için 100 dolar bir fiyatı var.En son bende birkaç öncesi sürümünü kullanmıştım, çok büyük modellerde sıkıntılı olsada, iş görür bir plugin olarak düşünebiliriz.</strong></span></p>\n<p><strong><span style=\"color: #0000ff;\">Tabi en iyi geri dönüşü siz kullanıcıların modelleri üzerinde yapılmalı. Çünkü modelde sıkıntılar olduğu sürece istediğiniz kadar çevirme işlemleri yapın, iyi bir geri dönüş alamayabilirsiniz.</span></strong></p>\n",
+  "publishedAt": "2018-01-18T13:53:55",
+  "modifiedAt": "2022-12-20T15:01:44",
+  "status": "publish",
+  "featuredImage": {
+    "legacyId": 2507,
+    "legacyUrl": "https://www.ufuksen.com/wp-content/uploads/2018/01/3dsmaxden-sketchupa-dosya-aktarimi.jpg",
+    "localPath": "/media/2018/01/3dsmaxden-sketchupa-dosya-aktarimi.jpg",
+    "alt": "3dsmaxden sketchupa dosya aktarimi",
+    "width": 456,
+    "height": 419,
+    "mimeType": "image/jpeg",
+    "error": null
+  },
+  "inlineMedia": [
+    {
+      "legacyUrl": "http://www.ufuksen.com/wp-content/uploads/2018/01/3dsmaxden-sketchupa-dosya-aktarimi.jpg",
+      "localPath": "/media/2018/01/3dsmaxden-sketchupa-dosya-aktarimi.jpg",
+      "error": null
+    }
+  ],
+  "embeds": [
+    {
+      "provider": "youtube",
+      "externalId": "M0FWI7847nk",
+      "originalSrc": "https://www.youtube.com/embed/M0FWI7847nk?feature=oembed",
+      "title": null
+    },
+    {
+      "provider": "youtube",
+      "externalId": "bEEdEQJEADs",
+      "originalSrc": "https://www.youtube.com/embed/bEEdEQJEADs?feature=oembed",
+      "title": null
+    }
+  ],
+  "seo": {
+    "title": null,
+    "description": "3dsmaxden sketchupa dosya aktarımı sırasında dikkat edilecek hususlar ve 3dsmax programında yapılacak bazı önemli hususların anlatıldığı bir makaledir.",
+    "focusKeyword": "3dsmaxden sketchupa dosya aktarımı",
+    "canonicalUrl": null,
+    "ogImage": null
+  },
+  "readingMinutes": 2,
+  "migrationChecksum": "f71a903d3a452e6a3630aa62e0805b9fe18cc8a133f519c815ab2e5ec5eed38d",
+  "author": {
+    "legacyId": 1,
+    "name": "UFUK ŞEN",
+    "slug": "ufuk",
+    "isGuest": false
+  },
+  "categories": [
+    {
+      "legacyId": 1169,
+      "name": "3D Programlar",
+      "slug": "3d-programlar"
+    },
+    {
+      "legacyId": 1170,
+      "name": "3ds Max",
+      "slug": "3ds-max-3d-programlar"
+    },
+    {
+      "legacyId": 1172,
+      "name": "Sketchup",
+      "slug": "sketchup"
+    }
+  ],
+  "tags": []
+}

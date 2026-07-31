@@ -1,0 +1,249 @@
+# yaml-language-server: $schema=https://unpkg.com/@sveltia/cms/schema/sveltia-cms.json
+#
+# Yönetim paneli yapılandırması (ADR-019).
+#
+# ÖNEMLİ: Panelde bir kaydı kaydettiğinizde dosyanın TAMAMI yeniden yazılır.
+# Bu yüzden düzenlemediğiniz teknik alanlar (checksum, legacy URL, gömüler…)
+# `widget: hidden` olarak tanımlandı — tanımlanmasalardı kayıt sırasında
+# sessizce silinirlerdi ve göç doğrulaması bozulurdu.
+#
+# `repo` alanı GitHub deposu oluşturulduktan sonra doldurulacak.
+
+backend:
+  name: github
+  repo: KULLANICI/DEPO # <-- GitHub deposu açılınca doldurulacak
+  branch: main
+  commit_messages:
+    create: "içerik: {{collection}} eklendi — {{slug}}"
+    update: "içerik: {{collection}} güncellendi — {{slug}}"
+    delete: "içerik: {{collection}} silindi — {{slug}}"
+    uploadMedia: "medya: {{path}} yüklendi"
+    deleteMedia: "medya: {{path}} silindi"
+
+# Yerelde `npm run dev` çalışırken panel canlı depoya yazmasın diye
+# geliştirme sunucusu kullanılabilir. Yayında bu satır etkisizdir.
+local_backend: true
+
+media_folder: public/media/yuklenen
+public_folder: /media/yuklenen
+
+locale: tr
+
+collections:
+  # ------------------------------------------------------------------ #
+  # Blog yazıları
+  # ------------------------------------------------------------------ #
+  - name: posts
+    label: Blog Yazıları
+    label_singular: Yazı
+    folder: src/content/posts
+    extension: json
+    format: json
+    create: true
+    slug: "{{fields.slug}}"
+    identifier_field: title
+    summary: "{{title}}"
+    sortable_fields: [publishedAt, title]
+    fields:
+      - { label: Başlık, name: title, widget: string }
+      - {
+          label: URL adresi (slug),
+          name: slug,
+          widget: string,
+          hint: "Yayınlandıktan sonra DEĞİŞTİRMEYİN — arama motorundaki adres bozulur.",
+        }
+      - { label: Özet, name: excerpt, widget: text, required: false }
+      - {
+          label: İçerik,
+          name: contentHtml,
+          widget: markdown,
+          hint: "Mevcut yazılar HTML olarak geldi; düzenlerken biçimlendirme korunur.",
+        }
+      - { label: Yayın tarihi, name: publishedAt, widget: datetime, format: "YYYY-MM-DDTHH:mm:ss" }
+      - { label: Son düzenleme, name: modifiedAt, widget: datetime, format: "YYYY-MM-DDTHH:mm:ss" }
+      - label: Öne çıkan görsel
+        name: featuredImage
+        widget: object
+        required: false
+        fields:
+          - { label: Görsel, name: localPath, widget: image, required: false }
+          - { label: Alternatif metin, name: alt, widget: string, required: false }
+          - { label: Genişlik, name: width, widget: number, required: false }
+          - { label: Yükseklik, name: height, widget: number, required: false }
+          - { label: legacyId, name: legacyId, widget: hidden, required: false }
+          - { label: legacyUrl, name: legacyUrl, widget: hidden, required: false }
+          - { label: mimeType, name: mimeType, widget: hidden, required: false }
+          - { label: error, name: error, widget: hidden, required: false }
+      - label: Kategoriler
+        name: categories
+        widget: list
+        required: false
+        fields:
+          - { label: Ad, name: name, widget: string }
+          - { label: Slug, name: slug, widget: string }
+          - { label: legacyId, name: legacyId, widget: hidden }
+      - label: SEO
+        name: seo
+        widget: object
+        fields:
+          - { label: SEO başlığı, name: title, widget: string, required: false }
+          - {
+              label: Meta açıklama,
+              name: description,
+              widget: text,
+              required: false,
+              hint: "Google'da görünen açıklama. 120–160 karakter idealdir.",
+            }
+          - { label: Odak kelime, name: focusKeyword, widget: string, required: false }
+          - { label: Canonical, name: canonicalUrl, widget: hidden, required: false }
+          - { label: OG görseli, name: ogImage, widget: hidden, required: false }
+      # --- Aşağıdakiler teknik alanlar; panelde görünmez ama korunur ---
+      - { label: legacyId, name: legacyId, widget: hidden }
+      - { label: legacyUrl, name: legacyUrl, widget: hidden }
+      - { label: url, name: url, widget: hidden }
+      - { label: status, name: status, widget: hidden }
+      - { label: inlineMedia, name: inlineMedia, widget: hidden, required: false }
+      - { label: embeds, name: embeds, widget: hidden, required: false }
+      - { label: readingMinutes, name: readingMinutes, widget: hidden }
+      - { label: migrationChecksum, name: migrationChecksum, widget: hidden }
+      - { label: author, name: author, widget: hidden }
+      - { label: tags, name: tags, widget: hidden, required: false }
+
+  # ------------------------------------------------------------------ #
+  # Sabit sayfalar
+  # ------------------------------------------------------------------ #
+  - name: pages
+    label: Sayfalar
+    label_singular: Sayfa
+    folder: src/content/pages
+    extension: json
+    format: json
+    create: true
+    slug: "{{fields.slug}}"
+    identifier_field: title
+    fields:
+      - { label: Başlık, name: title, widget: string }
+      - { label: URL adresi (slug), name: slug, widget: string }
+      - { label: İçerik, name: contentHtml, widget: markdown }
+      - { label: Yayın tarihi, name: publishedAt, widget: datetime, format: "YYYY-MM-DDTHH:mm:ss" }
+      - { label: Son düzenleme, name: modifiedAt, widget: datetime, format: "YYYY-MM-DDTHH:mm:ss" }
+      - label: SEO
+        name: seo
+        widget: object
+        fields:
+          - { label: SEO başlığı, name: title, widget: string, required: false }
+          - { label: Meta açıklama, name: description, widget: text, required: false }
+          - { label: Odak kelime, name: focusKeyword, widget: hidden, required: false }
+          - { label: Canonical, name: canonicalUrl, widget: hidden, required: false }
+          - { label: OG görseli, name: ogImage, widget: hidden, required: false }
+      - { label: excerpt, name: excerpt, widget: hidden, required: false }
+      - { label: legacyId, name: legacyId, widget: hidden }
+      - { label: legacyUrl, name: legacyUrl, widget: hidden }
+      - { label: url, name: url, widget: hidden }
+      - { label: status, name: status, widget: hidden }
+      - { label: featuredImage, name: featuredImage, widget: hidden, required: false }
+      - { label: inlineMedia, name: inlineMedia, widget: hidden, required: false }
+      - { label: embeds, name: embeds, widget: hidden, required: false }
+      - { label: readingMinutes, name: readingMinutes, widget: hidden }
+      - { label: migrationChecksum, name: migrationChecksum, widget: hidden }
+
+  # ------------------------------------------------------------------ #
+  # Tek dosyalık ayarlar
+  # ------------------------------------------------------------------ #
+  - name: ayarlar
+    label: Site Ayarları
+    files:
+      - name: urunler
+        label: Ürünler ve Eklentiler
+        file: src/content/products.json
+        fields:
+          - { label: Açıklama, name: aciklama, widget: hidden }
+          - { label: Kaynak, name: kaynak, widget: hidden, required: false }
+          - { label: Nasıl doldurulur, name: nasilDoldurulur, widget: hidden, required: false }
+          - label: Ürünler
+            name: urunler
+            widget: list
+            fields:
+              - { label: Ad, name: ad, widget: string }
+              - { label: Slug, name: slug, widget: string }
+              - { label: Özet, name: ozet, widget: text }
+              - { label: Açıklama, name: aciklama, widget: text, required: false }
+              - {
+                  label: Tür,
+                  name: tur,
+                  widget: select,
+                  options: [eklenti, arac, sablon],
+                }
+              - {
+                  label: Durum,
+                  name: durum,
+                  widget: select,
+                  options: [aktif, beta, alfa, gelistiriliyor, arsiv],
+                }
+              - { label: "İlerleme (%)", name: ilerleme, widget: number, required: false }
+              - { label: Sürüm, name: surum, widget: string, required: false }
+              - { label: Slogan, name: slogan, widget: string, required: false }
+              - { label: Görsel, name: gorsel, widget: image, required: false }
+              - { label: Görsel açıklaması, name: gorselAlt, widget: string, required: false }
+              - { label: Uyumluluk, name: uyumluluk, widget: list, required: false }
+              - label: Özellikler
+                name: ozellikler
+                widget: list
+                required: false
+                fields:
+                  - { label: Başlık, name: baslik, widget: string }
+                  - { label: Açıklama, name: not, widget: string }
+                  - {
+                      label: İkon,
+                      name: ikon,
+                      widget: select,
+                      options: [bolt, ruler, grid, sliders, layers, texture],
+                    }
+              - { label: Desenler, name: desenler, widget: list, required: false }
+              - { label: Desen notu, name: desenNotu, widget: string, required: false }
+              - { label: Vurgular, name: vurgular, widget: list, required: false }
+              - { label: İletişim e-postası, name: iletisimEposta, widget: string, required: false }
+              - { label: Satın alma bağlantısı, name: satinAlmaUrl, widget: string, required: false }
+              - { label: İlgili yazılım, name: yazilim, widget: list, required: false }
+              - { label: Not, name: not, widget: hidden, required: false }
+              - { label: gorselBekleniyor, name: gorselBekleniyor, widget: hidden, required: false }
+
+      - name: sosyal
+        label: Sosyal Bağlantılar
+        file: src/content/social.json
+        fields:
+          - { label: Açıklama, name: aciklama, widget: hidden }
+          - { label: Kaynak, name: kaynak, widget: hidden }
+          - label: Bağlantılar
+            name: baglantilar
+            widget: list
+            fields:
+              - { label: Kimlik, name: id, widget: string }
+              - { label: Ad, name: ad, widget: string }
+              - { label: Adres, name: url, widget: string, required: false }
+              - { label: Etiket, name: etiket, widget: string }
+              - { label: Görünsün mü, name: aktif, widget: boolean }
+
+      - name: egitimler
+        label: Eğitim Setleri
+        file: src/content/courses.json
+        fields:
+          - { label: Kaynak, name: kaynak, widget: hidden }
+          - { label: Çekilme tarihi, name: cekilmeTarihi, widget: hidden }
+          - { label: Not, name: not, widget: hidden }
+          - label: Kurslar
+            name: kurslar
+            widget: list
+            fields:
+              - { label: Başlık, name: baslik, widget: string }
+              - { label: Alt başlık, name: altBaslik, widget: string, required: false }
+              - { label: Slug, name: slug, widget: string }
+              - { label: Udemy adresi, name: url, widget: string }
+              - { label: Kapak görseli, name: gorsel, widget: image }
+              - { label: Puan, name: puan, widget: number, value_type: float }
+              - { label: Yorum sayısı, name: yorumSayisi, widget: number }
+              - { label: Süre (saat), name: saat, widget: number, value_type: float }
+              - { label: Ders sayısı, name: dersSayisi, widget: number }
+              - { label: Seviye, name: seviye, widget: string }
+              - { label: İlgili yazılım, name: yazilim, widget: list, required: false }
+              - { label: gorselKaynak, name: gorselKaynak, widget: hidden, required: false }

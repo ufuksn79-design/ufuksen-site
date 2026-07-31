@@ -1,0 +1,37 @@
+{
+  "name": "ufuksen-platform",
+  "version": "0.0.4",
+  "private": true,
+  "description": "Ufuk Sen kisisel marka ve icerik platformu",
+  "type": "module",
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build && node scripts/build/flatten-html-routes.mjs dist",
+    "preview": "astro preview",
+    "typecheck": "astro check",
+    "verify": "node scripts/build/verify-urls.mjs",
+    "inventory": "python scripts/wordpress/inventory.py",
+    "urlmap": "python scripts/wordpress/url-map.py",
+    "migrate:dry-run": "python scripts/wordpress/migrate.py --dry-run",
+    "migrate:apply": "python scripts/wordpress/migrate.py --apply",
+    "backup:list": "node scripts/deploy/ftp-backup.mjs",
+    "backup:download": "node scripts/deploy/ftp-backup.mjs --download",
+    "deploy:plan": "node scripts/deploy/ftp-deploy.mjs",
+    "deploy:staging": "node scripts/deploy/ftp-deploy.mjs --upload",
+    "redirects": "node scripts/build/generate-redirects.mjs && node scripts/build/generate-htaccess.mjs",
+    "package": "node scripts/build/make-zip.mjs",
+    "staging": "node scripts/build/make-staging.mjs /yeni && node scripts/build/make-staging-light.mjs"
+  },
+  "devDependencies": {
+    "typescript": "5.9.2"
+  },
+  "dependencies": {
+    "@astrojs/check": "^0.9.10",
+    "@astrojs/rss": "^4.0.19",
+    "@astrojs/sitemap": "^3.7.3",
+    "@tailwindcss/vite": "^4.3.3",
+    "astro": "^7.1.6",
+    "basic-ftp": "^5.0.5",
+    "tailwindcss": "^4.3.3"
+  }
+}

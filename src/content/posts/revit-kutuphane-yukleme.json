@@ -1,0 +1,65 @@
+{
+  "legacyId": 2602,
+  "slug": "revit-kutuphane-yukleme",
+  "legacyUrl": "/revit-kutuphane-yukleme.html",
+  "url": "/revit-kutuphane-yukleme.html",
+  "title": "Revit Kütüphane yükleme",
+  "excerpt": "Revit Kütüphane yükleme ve şablon,family dosyalarını yükleme sorunu,Revit programının kurulumu sonrası sıklıkla karşılaşılan problemlerden birisidir.Bu durum kütüphaneden farklı modellerin kullanılacağı zaman kaynak konumda dosyaların bulunmaması ile farkedilir. Revit programının eksik gelen şablon ve family dosyalarının nasıl yükleneceği ve hangi yolların izlenmesi gerektiğini bu yazımızda maddeler halinde anlatacağız. Kullanılacak içeriğin yüklenip yüklenmediğini kontrol ediniz. 2. Kütüphane …",
+  "contentHtml": "<p><a href=\"/revit-kutuphane-yukleme.html\" rel=\"attachment wp-att-2607\"><img loading=\"lazy\" decoding=\"async\" class=\"alignleft size-full wp-image-2607\" src=\"/media/2018/02/badge-autodesk-revit-300x300.jpg\" alt=\"revit kütüphane yükleme\" width=\"300\" height=\"300\" srcset=\"/media/2018/02/badge-autodesk-revit-300x300.jpg 300w, /media/2018/02/badge-autodesk-revit-300x300-150x150.jpg 150w\" sizes=\"auto, (max-width: 300px) 100vw, 300px\" /></a><span style=\"color: #0000ff;\"><strong>Revit</strong></span> Kütüphane yükleme ve şablon,family dosyalarını yükleme sorunu,Revit programının kurulumu sonrası sıklıkla karşılaşılan problemlerden birisidir.Bu durum kütüphaneden farklı modellerin kullanılacağı zaman kaynak konumda dosyaların bulunmaması ile farkedilir.</p>\n<p>Revit programının eksik gelen şablon ve family dosyalarının nasıl yükleneceği ve hangi yolların izlenmesi gerektiğini bu yazımızda maddeler halinde anlatacağız.</p>\n<ol>\n<li><strong>Kullanılacak içeriğin yüklenip yüklenmediğini kontrol ediniz.</strong></li>\n</ol>\n<p>2. <strong>Kütüphane dosyanız boş ise ;</strong></p>\n<p>Autodesk Revit’in kendi sitesinde yer alan aşağıdaki linkleri isteğe bağlı ayrı ayrı indirebilirsiniz.</p>\n<h2><strong>REVİT KÜTÜPHANE İÇERİKLERİNİ YÜKLEMEK İÇİN</strong></h2>\n<p><strong>Revit Kütüphane yükleme için;</strong></p>\n<p><strong>Revit 2016</strong> için ;</p>\n<p><a href=\"https://knowledge.autodesk.com/support/revit-products/downloads/caas/downloads/content/autodesk-revit-2016-content.html\" target=\"_blank\" rel=\"noopener\"><strong>https://knowledge.autodesk.com/support/revit-products/downloads/caas/downloads/content/autodesk-revit-2016-content.html</strong></a></p>\n<p><strong>Revit 2017</strong> için ;</p>\n<p><a href=\"https://knowledge.autodesk.com/support/revit-products/downloads/caas/downloads/content/autodesk-revit-2017-content.html\" target=\"_blank\" rel=\"noopener\"><strong>https://knowledge.autodesk.com/support/revit-products/downloads/caas/downloads/content/autodesk-revit-2017-content.html</strong></a></p>\n<p><strong>Revit 2018</strong> için ;</p>\n<p><a href=\"https://knowledge.autodesk.com/support/revit-products/downloads/caas/downloads/content/autodesk-revit-2018-content.html\" target=\"_blank\" rel=\"noopener\"><strong>https://knowledge.autodesk.com/support/revit-products/downloads/caas/downloads/content/autodesk-revit-2018-content.html</strong></a></p>\n<p><a href=\"https://knowledge.autodesk.com/support/revit-products/downloads/caas/downloads/content/autodesk-revit-20181-content.html\" target=\"_blank\" rel=\"noopener\"><strong>https://knowledge.autodesk.com/support/revit-products/downloads/caas/downloads/content/autodesk-revit-20181-content.html</strong></a></p>\n<p><iframe loading=\"lazy\" title=\"Revit 2018.1 New Feature - Content for Architects\" width=\"500\" height=\"281\" src=\"https://www.youtube.com/embed/MyrziOG3nyg?feature=oembed\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" referrerpolicy=\"strict-origin-when-cross-origin\" allowfullscreen></iframe></p>\n<h3><strong>REVİT KÜTÜPHANE İNDİRME İŞLEMİ SONRASINDA AŞAĞIDAKİ ADIMLARI İZLEYİNİZ</strong>.</h3>\n<p><span style=\"color: #0000ff;\"><strong>Revit Kütüphane yükleme</strong></span> işleminde,Revit&#8217;in diğer sürümleri için,Content Library dosyalarını kaldırmanız ve tekrar yüklemeniz gerekmektedir.</p>\n<p><a href=\"/revit-kutuphane-yukleme.html\" rel=\"attachment wp-att-2605\"><img loading=\"lazy\" decoding=\"async\" class=\"alignleft wp-image-2605\" src=\"/media/2018/02/RVT1-300x200.png\" alt=\"revit-kutuphane-yukleme\" width=\"472\" height=\"314\" srcset=\"/media/2018/02/RVT1-300x200.png 300w, /media/2018/02/RVT1.png 605w\" sizes=\"auto, (max-width: 472px) 100vw, 472px\" /></a></p>\n<ul>\n<li><strong>Denetim Masası&gt;Programlar</strong>&gt;Listelenen Revit Kütüphanelerini kaldırınız.</li>\n<li>Dikkat etmeniz gereken bir diğer hususta,yükleme işlemi sırasında birden fazla <strong>Content Library</strong> indirmiş olabilirsiniz.Bu durumda listelenen tüm kütüphane içeriklerini kaldırmalısınız.</li>\n<li>Orjinal karşıdan yükleniciyi indirin ve çalıştırınız.Şimdi yükle seçeneği yoksa diğer seçeneklerden çoklu dil sayfasına geçiniz.</li>\n<li>Yükleme esnasında Revit programın kurulu olduğunu yanındaki tik işaretinden anlayabileceğiniz gibi gerekli olanlarda onay işareti olmayacaktır.Gereken kutucuğu işaretleyin.</li>\n<li>Kontrol etmek için onay kutucuğunun yanındaki açılır menüden listeleme işlemini yapabilirsiniz.</li>\n<li>Ardından ileri seçeneği ile bekleyin.Bu işlem birkaç dakika sürebileceği gibi birkaç saatte sürebilir.Bu durum ne yüklemek istediğiniz içeriklerin boyutuna göre değişiklik göstermektedir.</li>\n</ul>\n<p><span style=\"color: #0000ff;\"><strong>Revit Kütüphane</strong></span> içerikleri yüklendikten sonra aşağıdaki adımlarını takip etmeniz gereklidir.</p>\n<ul>\n<li>Revit programını açınız.</li>\n<li><strong>Revit Options</strong>&gt;<strong>File Locations’a</strong> gidiniz (Revit ayarları&gt;Dosya yeri)</li>\n<li>Yeşil renkli + işaretine tıklayınız ve istenen şablonu giriniz.(Şablonlara <strong>C:\\ProgramData\\Autodesk\\RVT ####\\Templates\\US Imperial\\</strong> kısmından ulaşabilirsiniz.)</li>\n</ul>\n<p><span style=\"color: #800080;\"><strong>NOT: #### RVT,REVİT LT,RLT,RAC olarak değiştiği için programa göre uygun kelimeyi giriniz.</strong></span></p>\n<ul>\n<li>Family dosyalarının dosya yolunu aşağıdaki gibi ayarlayabilirsiniz.<br />\n<strong>C: \\ ProgramData \\ Autodesk \\ RVT #### \\ Aile Şablonları \\ English_I</strong></li>\n<li><strong>Places</strong> seçeneğine tıklayınız.</li>\n<li>Kitaplığın dosyasını aşağıdaki gibi ayarlayın.<br />\n<strong>C:\\ProgramData\\Autodesk\\RVT ####\\Libraries\\US Imperial</strong></li>\n<li>Detay içerikleri için dosya yolunuz : <strong>C:\\ProgramData\\Autodesk\\RVT ####\\Libraries\\US</strong> <strong>Imperial\\Detail Items</strong></li>\n<li>Ardından tamam deyiniz.</li>\n</ul>\n<p><strong>Revit programı Kaldırma (Uninstall )</strong> seçeneği tamamlanamaz ise ;</p>\n<p><strong>Autodesk Uninstall</strong> seçeneği kullanınız.</p>\n<p>Eğer olmaz ise <strong>Denetim Masası&gt;Programlar</strong> yolunu izleyerek kaldırınız.</p>\n<p>Kaldırdıktan sonra tekrar <strong>Revit</strong> programını yükleyiniz.</p>\n",
+  "publishedAt": "2018-02-07T13:46:36",
+  "modifiedAt": "2022-12-21T10:30:01",
+  "status": "publish",
+  "featuredImage": {
+    "legacyId": 2607,
+    "legacyUrl": "https://www.ufuksen.com/wp-content/uploads/2018/02/badge-autodesk-revit-300x300.jpg",
+    "localPath": "/media/2018/02/badge-autodesk-revit-300x300.jpg",
+    "alt": "revit kütüphane yükleme",
+    "width": 300,
+    "height": 300,
+    "mimeType": "image/jpeg",
+    "error": null
+  },
+  "inlineMedia": [
+    {
+      "legacyUrl": "http://www.ufuksen.com/wp-content/uploads/2018/02/badge-autodesk-revit-300x300.jpg",
+      "localPath": "/media/2018/02/badge-autodesk-revit-300x300.jpg",
+      "error": null
+    },
+    {
+      "legacyUrl": "http://www.ufuksen.com/wp-content/uploads/2018/02/RVT1-300x200.png",
+      "localPath": "/media/2018/02/RVT1-300x200.png",
+      "error": null
+    }
+  ],
+  "embeds": [
+    {
+      "provider": "youtube",
+      "externalId": "MyrziOG3nyg",
+      "originalSrc": "https://www.youtube.com/embed/MyrziOG3nyg?feature=oembed",
+      "title": null
+    }
+  ],
+  "seo": {
+    "title": null,
+    "description": "Revit kütüphane yükleme konusu hakkında detaylı bilgi verilmiştir ? Revit programı sonrası yüklenmeyen family ve şablon dosyalar nasıl eklenir ve yüklenir ?",
+    "focusKeyword": "Revit Kütüphane yükleme",
+    "canonicalUrl": null,
+    "ogImage": null
+  },
+  "readingMinutes": 2,
+  "migrationChecksum": "eada3e83e0fbbaea4ca1946a3298a7fcacda931ef8e647d0865eb3e1506031a6",
+  "author": {
+    "legacyId": 2,
+    "name": "Pınar Çakır",
+    "slug": "pcakir",
+    "isGuest": false
+  },
+  "categories": [
+    {
+      "legacyId": 518,
+      "name": "3D Görselleştirme",
+      "slug": "3d-gorsellestirme"
+    }
+  ],
+  "tags": []
+}

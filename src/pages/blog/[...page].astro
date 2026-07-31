@@ -1,0 +1,57 @@
+---
+import type { GetStaticPaths, Page } from "astro";
+import Base from "../../layouts/Base.astro";
+import Sidebar from "../../components/Sidebar.astro";
+import SectionTitle from "../../components/SectionTitle.astro";
+import { getPosts, formatDate, isoDate, summarize, type Post } from "../../lib/content";
+
+export const getStaticPaths: GetStaticPaths = async ({ paginate }) => {
+  const posts = await getPosts();
+  return paginate(posts, { pageSize: 20 });
+};
+
+const { page } = Astro.props as { page: Page<Post> };
+const recent = page.data.slice(0, 5);
+const path = page.currentPage === 1 ? "/blog" : `/blog/${page.currentPage}`;
+---
+<Base
+  title={page.currentPage === 1 ? "Blog — Tüm yazılar | Ufuk Şen" : `Blog — Sayfa ${page.currentPage} | Ufuk Şen`}
+  description={`SketchUp, V-Ray, D5 Render, Twinmotion ve Enscape üzerine ${page.total} yazılık arşiv. Sayfa ${page.currentPage} / ${page.lastPage}. Rehberler, karşılaştırmalar ve video dersler.`}
+  path={path}
+>
+  <section class="blog-grid">
+    <div>
+      <SectionTitle
+        title="Blog"
+        as="h1"
+        note={`${page.total} yazı · sayfa ${page.currentPage} / ${page.lastPage}`}
+      />
+      {page.data.map((post) => (
+        <article class={`post-item ${post.data.featuredImage?.localPath ? "post-item--with-thumb" : ""}`}>
+          {post.data.featuredImage?.localPath && (
+            <img class="post-item__thumb" src={post.data.featuredImage.localPath}
+                 alt={post.data.featuredImage.alt || post.data.title}
+                 width={post.data.featuredImage.width ?? undefined}
+                 height={post.data.featuredImage.height ?? undefined}
+                 loading="lazy" decoding="async" />
+          )}
+          <div style="display:grid;gap:var(--s-2)">
+            <div class="post-item__meta">
+              <time datetime={isoDate(post.data.publishedAt)}>{formatDate(post.data.publishedAt)}</time>
+              <span>{post.data.readingMinutes} dk</span>
+            </div>
+            <h2><a href={post.data.url}>{post.data.title}</a></h2>
+            <p>{summarize(post, 150)}</p>
+          </div>
+        </article>
+      ))}
+
+      <nav class="pager" aria-label="Sayfalama">
+        {page.url.prev ? <a class="btn btn--ghost" href={page.url.prev}>← Önceki</a> : <span></span>}
+        <span class="u-eyebrow">{page.currentPage} / {page.lastPage}</span>
+        {page.url.next ? <a class="btn btn--ghost" href={page.url.next}>Sonraki →</a> : <span></span>}
+      </nav>
+    </div>
+    <Sidebar recent={recent} />
+  </section>
+</Base>

@@ -1,0 +1,342 @@
+{
+  "runAt": "2026-07-31T11:53:27",
+  "dryRun": false,
+  "source": {
+    "posts": 457,
+    "pages": 16,
+    "media": 758,
+    "categories": 27,
+    "tags": 4
+  },
+  "target": {
+    "posts": 430,
+    "pages": 16,
+    "media": 757,
+    "categories": 27,
+    "tags": 4
+  },
+  "countsMatch": true,
+  "excludedPosts": 27,
+  "expectedPosts": 430,
+  "writtenThisRun": {
+    "posts": 56,
+    "pages": 6
+  },
+  "mediaDownloaded": 757,
+  "mediaVariantsDownloaded": 0,
+  "mediaVariantFailures": [
+    {
+      "reference": "/media/2012/10/ücretli-işler.jpg",
+      "source": "https://www.ufuksen.com/wp-content/uploads/2012/10/ücretli-işler.jpg",
+      "error": "GET başarısız: https://www.ufuksen.com/wp-content/uploads/2012/10/%C3%BCcretli-i%C5%9Fler.jpg -> HTTP Error 404: Not Found"
+    },
+    {
+      "reference": "/media/2019/06/sketchup-vray-ic-mekan-ayarlari.jpg",
+      "source": "https://www.ufuksen.com/wp-content/uploads/2019/06/sketchup-vray-ic-mekan-ayarlari.jpg",
+      "error": "GET başarısız: https://www.ufuksen.com/wp-content/uploads/2019/06/sketchup-vray-ic-mekan-ayarlari.jpg -> HTTP Error 404: Not Found"
+    }
+  ],
+  "mediaVariantFallbacks": [],
+  "mediaMissingAtSource": [
+    {
+      "reference": "/media/2012/10/ücretli-işler.jpg",
+      "source": "https://www.ufuksen.com/wp-content/uploads/2012/10/ücretli-işler.jpg",
+      "error": "GET başarısız: https://www.ufuksen.com/wp-content/uploads/2012/10/%C3%BCcretli-i%C5%9Fler.jpg -> HTTP Error 404: Not Found"
+    },
+    {
+      "reference": "/media/2019/06/sketchup-vray-ic-mekan-ayarlari.jpg",
+      "source": "https://www.ufuksen.com/wp-content/uploads/2019/06/sketchup-vray-ic-mekan-ayarlari.jpg",
+      "error": "GET başarısız: https://www.ufuksen.com/wp-content/uploads/2019/06/sketchup-vray-ic-mekan-ayarlari.jpg -> HTTP Error 404: Not Found"
+    }
+  ],
+  "mediaFailures": [],
+  "seoScraped": 0,
+  "seoErrors": [],
+  "seoErrorCount": 0,
+  "sourceDiscrepancies": [
+    {
+      "endpoint": "media",
+      "expected": 795,
+      "received": 758
+    }
+  ],
+  "duplicateSlugs": [],
+  "preExistingBrokenLinks": [
+    {
+      "legacyId": 4253,
+      "href": "/kategori/3d-egitim/3ds-max"
+    },
+    {
+      "legacyId": 3966,
+      "href": "/kategori/3d-egitim-setleri"
+    },
+    {
+      "legacyId": 3372,
+      "href": "/kategori/3d-haberler/3d-yazilimlar"
+    },
+    {
+      "legacyId": 2976,
+      "href": "/kategori/3d/3d-proje"
+    },
+    {
+      "legacyId": 2850,
+      "href": "/kategori/kaliteli-gorsel"
+    },
+    {
+      "legacyId": 2813,
+      "href": "/kategori/kaliteli-gorsel"
+    },
+    {
+      "legacyId": 2723,
+      "href": "/kategori/kaliteli-gorsel"
+    },
+    {
+      "legacyId": 2693,
+      "href": "/kategori/3d-egitim-setleri"
+    },
+    {
+      "legacyId": 2502,
+      "href": "/kategori/3d-egitim/3ds-max"
+    },
+    {
+      "legacyId": 2484,
+      "href": "/kategori/3d-egitim-setleri"
+    },
+    {
+      "legacyId": 2484,
+      "href": "/kategori/3d-egitim-setleri"
+    },
+    {
+      "legacyId": 2325,
+      "href": "/kategori/kaliteli-gorsel"
+    },
+    {
+      "legacyId": 2276,
+      "href": "/kategori/3d"
+    },
+    {
+      "legacyId": 2247,
+      "href": "/kategori/3d/3d-mimari"
+    },
+    {
+      "legacyId": 2236,
+      "href": "/kategori/3d-egitim-setleri"
+    },
+    {
+      "legacyId": 2229,
+      "href": "/kategori/3d"
+    },
+    {
+      "legacyId": 2214,
+      "href": "/kategori/3d-egitim-setleri"
+    },
+    {
+      "legacyId": 2193,
+      "href": "/kategori/3d-egitim/3ds-max"
+    },
+    {
+      "legacyId": 2193,
+      "href": "/kategori/3d-egitim/sketchup-egitim"
+    },
+    {
+      "legacyId": 2172,
+      "href": "/kategori/3d/3d-tasarim"
+    },
+    {
+      "legacyId": 2172,
+      "href": "/kategori/kaliteli-gorsel"
+    },
+    {
+      "legacyId": 2133,
+      "href": "/kategori/3d/3d-mimari"
+    },
+    {
+      "legacyId": 2133,
+      "href": "/kategori/kaliteli-gorsel"
+    },
+    {
+      "legacyId": 2123,
+      "href": "/kategori/3d/3d-tasarim"
+    },
+    {
+      "legacyId": 2123,
+      "href": "/kategori/kaliteli-gorsel"
+    },
+    {
+      "legacyId": 2109,
+      "href": "/kategori/3d"
+    },
+    {
+      "legacyId": 2109,
+      "href": "/kategori/3d-egitim-setleri"
+    },
+    {
+      "legacyId": 2097,
+      "href": "/kategori/3d-egitim-setleri"
+    },
+    {
+      "legacyId": 2086,
+      "href": "/kategori/3d-egitim-setleri"
+    },
+    {
+      "legacyId": 2086,
+      "href": "/kategori/3d"
+    },
+    {
+      "legacyId": 2028,
+      "href": "/kaplama"
+    },
+    {
+      "legacyId": 2028,
+      "href": "/kategori/3d-egitim-setleri"
+    },
+    {
+      "legacyId": 2007,
+      "href": "/kategori/3d-egitim-setleri"
+    },
+    {
+      "legacyId": 2007,
+      "href": "/kategori/3d"
+    },
+    {
+      "legacyId": 1951,
+      "href": "/kategori/3d-egitim/sketchup-vray"
+    },
+    {
+      "legacyId": 1927,
+      "href": "/kategori/pc-tavsiyeleri/render-pc-tavsiyeleri"
+    },
+    {
+      "legacyId": 1907,
+      "href": "/kategori/3d"
+    },
+    {
+      "legacyId": 1599,
+      "href": "/kategori/3d-egitim/sketchup-egitim"
+    },
+    {
+      "legacyId": 1546,
+      "href": "/kategori/3d/3d-mimari"
+    },
+    {
+      "legacyId": 1526,
+      "href": "/kategori/pc-tavsiyeleri/render-pc-tavsiyeleri"
+    },
+    {
+      "legacyId": 1489,
+      "href": "/kategori/3d-egitim/sketchup-egitim"
+    },
+    {
+      "legacyId": 1430,
+      "href": "/kategori/3d-egitim"
+    },
+    {
+      "legacyId": 1430,
+      "href": "/kategori/3d"
+    },
+    {
+      "legacyId": 1424,
+      "href": "/kategori/3d"
+    },
+    {
+      "legacyId": 1424,
+      "href": "/kategori/3d-egitim-setleri"
+    },
+    {
+      "legacyId": 1403,
+      "href": "/kategori/3d-egitim-setleri"
+    },
+    {
+      "legacyId": 1167,
+      "href": "/kategori/3d"
+    },
+    {
+      "legacyId": 1167,
+      "href": "/kategori/3d-egitim-setleri"
+    },
+    {
+      "legacyId": 1178,
+      "href": "/kategori/3d-egitim-setleri"
+    },
+    {
+      "legacyId": 1178,
+      "href": "/kategori/3d"
+    },
+    {
+      "legacyId": 1178,
+      "href": "/kategori/kaliteli-gorsel"
+    },
+    {
+      "legacyId": 1077,
+      "href": "/kategori/sketchup-dvd"
+    },
+    {
+      "legacyId": 925,
+      "href": "/kategori/3d"
+    },
+    {
+      "legacyId": 815,
+      "href": "/kategori/3d-egitim-setleri"
+    },
+    {
+      "legacyId": 712,
+      "href": "/kategori/3d/3d-proje"
+    },
+    {
+      "legacyId": 42,
+      "href": "/kategori/3d-egitim"
+    },
+    {
+      "legacyId": 19,
+      "href": "/3d-mimari-3d-gorsellestirme-3d-egitim/tblet"
+    },
+    {
+      "legacyId": 19,
+      "href": "/kategori/3d-egitim-setleri"
+    },
+    {
+      "legacyId": 7030,
+      "href": "/sketchup-ozel-ders/0002_1_a-side-by-side-visualization-of-a-luxuri_bnfhtajrrhk6asqpcrfuga_lf1wjylgqhwnyk8_u7wz2a_cover"
+    },
+    {
+      "legacyId": 7030,
+      "href": "/sketchup-ozel-ders/0001_1_a-split-screen-composition-of-a-rough-ar_5jm0j7b7tjcvgbceutak-g_dtj9cl82rvixproh9fcy_g_cover"
+    },
+    {
+      "legacyId": 7030,
+      "href": "/sketchup-ozel-ders/0002_2_a-side-by-side-visualization-on-the-left_n7s3y0cxsmkr8s2wpevw2w_lf1wjylgqhwnyk8_u7wz2a"
+    },
+    {
+      "legacyId": 7030,
+      "href": "/sketchup-ozel-ders/0003_3_a-dual-image-comparison-of-a-hand-drawn-_vzh5elwesqcp9f4ibi-g1w_s4s_p-x8t82pu0mv5hdasw"
+    },
+    {
+      "legacyId": 2895,
+      "href": "/sikca-sorulan-sorular/3d-sikca-sorulan-sorular"
+    },
+    {
+      "legacyId": 2646,
+      "href": "/mimari-modelleme/mimari-modelleme-2"
+    },
+    {
+      "legacyId": 2522,
+      "href": "/3d-gorsellestirme/3d-gorsellestirme-4"
+    },
+    {
+      "legacyId": 869,
+      "href": "/3d-render-gorsellestirme/3d-render"
+    },
+    {
+      "legacyId": 162,
+      "href": "/3d-gorsellestirme/3d-gorsellestirme-4"
+    },
+    {
+      "legacyId": 112,
+      "href": "/ben-kimim/ufuk-sen-3"
+    }
+  ],
+  "preExistingBrokenLinkCount": 68,
+  "internalLinksRewritten": 83,
+  "unlinkedToRemoved": 3,
+  "checksumCount": 446
+}

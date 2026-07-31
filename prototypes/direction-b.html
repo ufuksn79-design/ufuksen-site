@@ -1,0 +1,609 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Yön B — Atölye | Ufuk Şen (Prototip)</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600&family=Geist+Mono:wght@400&family=Fraunces:opsz,wght@9..144,600;9..144,700&display=swap">
+<link rel="stylesheet" href="../src/styles/tokens.css">
+<style>
+/* ===================================================================== *
+ * YÖN B — "Atölye"
+ * Sinematik derinlik: katmanlı yüzeyler, ışık kuyuları, editoryal serif
+ * başlıklar. Sarı burada da dolgudur; ışık kaynağı gibi kullanılır.
+ * ===================================================================== */
+
+:root {
+  --font-display: "Fraunces", Georgia, "Times New Roman", serif;
+}
+
+/* Serif başlıklar — dolgu sarı kuralı korunur */
+h1, h2 {
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-optical-sizing: auto;
+  letter-spacing: -0.015em;
+}
+h3 { font-weight: 600; }
+
+body { background: var(--c-base-deep); }
+
+/* Işık kuyusu — bölümlere derinlik veren tek katman */
+.b-well { position: relative; isolation: isolate; }
+.b-well::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background: radial-gradient(120% 80% at 50% -10%, rgba(255, 212, 0, 0.07), transparent 60%);
+  pointer-events: none;
+}
+
+/* ---- Navigasyon ------------------------------------------------------ */
+.b-nav {
+  position: sticky;
+  top: 0;
+  z-index: var(--z-nav);
+  background: color-mix(in srgb, var(--c-base-deep) 78%, transparent);
+  backdrop-filter: blur(16px);
+}
+.b-nav__inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--s-6);
+  min-height: 72px;
+}
+.b-logo {
+  font-family: var(--font-display);
+  font-size: 1.15rem;
+  color: var(--c-text);
+  text-decoration: none;
+  letter-spacing: -0.01em;
+}
+.b-logo b { color: var(--c-accent); }
+
+.b-nav__links { display: none; gap: var(--s-1); align-items: center; }
+.b-nav__link {
+  font-size: var(--t-small);
+  color: var(--c-text-muted);
+  text-decoration: none;
+  padding: var(--s-2) var(--s-3);
+  border-radius: var(--r-pill);
+  transition: color var(--d-fast) var(--e-out), background var(--d-fast) var(--e-out);
+}
+.b-nav__link:hover, .b-nav__link:focus-visible { color: var(--c-text); background: var(--c-surface-raised); }
+
+.b-burger {
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5px;
+  min-width: var(--tap-min);
+  min-height: var(--tap-min);
+  padding: var(--s-3);
+  background: var(--c-surface-raised);
+  border: 1px solid var(--c-line);
+  border-radius: var(--r-pill);
+  cursor: pointer;
+}
+.b-burger span { display: block; width: 18px; height: 1.5px; background: var(--c-text); transition: transform var(--d-base) var(--e-out), opacity var(--d-fast) linear; }
+.b-burger[aria-expanded="true"] span:nth-child(1) { transform: translateY(6.5px) rotate(45deg); }
+.b-burger[aria-expanded="true"] span:nth-child(2) { opacity: 0; }
+.b-burger[aria-expanded="true"] span:nth-child(3) { transform: translateY(-6.5px) rotate(-45deg); }
+
+.b-drawer { display: grid; grid-template-rows: 0fr; transition: grid-template-rows var(--d-base) var(--e-out); }
+.b-drawer[data-open="true"] { grid-template-rows: 1fr; }
+.b-drawer__inner { overflow: hidden; }
+.b-drawer__list { display: grid; gap: var(--s-1); padding-block: var(--s-3) var(--s-6); }
+.b-drawer__list a {
+  display: flex;
+  align-items: center;
+  min-height: var(--tap-min);
+  padding: var(--s-3) var(--s-4);
+  background: var(--c-surface);
+  border-radius: var(--r-md);
+  color: var(--c-text);
+  text-decoration: none;
+  font-size: var(--t-body-lg);
+}
+.b-drawer__list a:hover, .b-drawer__list a:focus-visible { background: var(--c-surface-hover); color: var(--c-accent); }
+
+/* ---- Hero ------------------------------------------------------------ */
+.b-hero { position: relative; padding-block: clamp(4rem, 1rem + 13vw, 9rem) var(--rhythm-section); overflow: hidden; }
+.b-hero__glow {
+  position: absolute;
+  top: -30%; left: 50%;
+  width: min(1100px, 130vw); aspect-ratio: 1;
+  transform: translateX(-50%);
+  background: radial-gradient(circle, rgba(255, 212, 0, 0.13), transparent 62%);
+  filter: blur(30px);
+  will-change: transform;
+  pointer-events: none;
+}
+.b-hero__inner { position: relative; display: grid; gap: var(--s-8); justify-items: start; }
+.b-hero h1 {
+  font-size: var(--t-display);
+  line-height: 1.02;
+  max-width: 16ch;
+}
+.b-hero h1 span {
+  color: var(--c-text);
+  -webkit-text-fill-color: var(--c-text);
+  font-family: var(--font-sans);
+  font-weight: 500;
+  font-size: 0.42em;
+  display: block;
+  letter-spacing: 0;
+  margin-top: var(--s-4);
+  line-height: 1.4;
+  max-width: 30ch;
+}
+.b-hero__lead { font-size: var(--t-body-lg); color: var(--c-text-muted); max-width: 48ch; }
+
+.b-stats {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--s-2);
+  width: 100%;
+  margin-top: var(--s-4);
+}
+.b-stat {
+  background: var(--c-surface);
+  border: 1px solid var(--c-line);
+  border-radius: var(--r-lg);
+  padding: var(--s-4);
+  display: grid;
+  gap: var(--s-1);
+  transition: border-color var(--d-base) var(--e-out), transform var(--d-base) var(--e-out);
+}
+@media (hover: hover) { .b-stat:hover { border-color: var(--c-accent-dim); transform: translateY(-2px); } }
+.b-stat b { font-family: var(--font-display); font-size: var(--t-h3); color: var(--c-accent); }
+.b-stat span { font-size: var(--t-micro); color: var(--c-text-faint); font-family: var(--font-mono); letter-spacing: 0.08em; text-transform: uppercase; }
+
+.b-cta { display: flex; flex-wrap: wrap; gap: var(--s-3); }
+
+/* ---- Düğmeler -------------------------------------------------------- */
+.btn {
+  display: inline-flex; align-items: center; justify-content: center; gap: var(--s-2);
+  min-height: var(--tap-min);
+  padding: var(--s-3) var(--s-6);
+  border-radius: var(--r-pill);
+  font-size: var(--t-small); font-weight: 600;
+  text-decoration: none; border: 1px solid transparent; cursor: pointer;
+  transition: background var(--d-fast) var(--e-out), border-color var(--d-fast) var(--e-out), transform var(--d-fast) var(--e-out);
+}
+.btn--primary { background: var(--c-accent); color: var(--c-on-accent); }
+.btn--primary:hover, .btn--primary:focus-visible { background: #ffe14d; }
+.btn--ghost { border-color: var(--c-line-strong); color: var(--c-text); background: var(--c-surface); }
+.btn--ghost:hover, .btn--ghost:focus-visible { border-color: var(--c-accent); }
+@media (hover: hover) { .btn:hover { transform: translateY(-1px); } }
+
+/* ---- Bölüm başlığı --------------------------------------------------- */
+.b-head { display: grid; gap: var(--s-3); margin-bottom: var(--s-12); max-width: 62ch; }
+.b-head h2 { font-size: var(--t-h2); }
+.b-head p { color: var(--c-text-muted); font-size: var(--t-body-lg); }
+
+/* ---- Kartlar — farklı ağırlıkta, tek şablon tekrarı değil ------------ */
+.b-cards { display: grid; gap: var(--s-4); }
+.b-card {
+  position: relative;
+  background: linear-gradient(180deg, var(--c-surface-raised), var(--c-surface));
+  border: 1px solid var(--c-line);
+  border-radius: var(--r-lg);
+  padding: var(--s-8) var(--s-6);
+  display: grid; gap: var(--s-3); align-content: start;
+  overflow: hidden;
+  transition: border-color var(--d-base) var(--e-out), transform var(--d-base) var(--e-out);
+}
+.b-card::after {
+  content: "";
+  position: absolute; inset-inline: 0; top: 0; height: 1px;
+  background: linear-gradient(90deg, transparent, var(--c-accent), transparent);
+  opacity: 0;
+  transition: opacity var(--d-base) var(--e-out);
+}
+@media (hover: hover) {
+  .b-card:hover { border-color: var(--c-line-strong); transform: translateY(-3px); }
+  .b-card:hover::after { opacity: 1; }
+}
+.b-card--wide { grid-column: 1 / -1; }
+.b-card__tag {
+  justify-self: start;
+  font-family: var(--font-mono); font-size: var(--t-micro);
+  color: var(--c-accent); letter-spacing: 0.1em; text-transform: uppercase;
+}
+.b-card h3 { font-size: var(--t-h3); }
+.b-card p { color: var(--c-text-muted); font-size: var(--t-small); }
+.b-card__go { margin-top: var(--s-2); font-size: var(--t-small); font-weight: 600; color: var(--c-accent); text-decoration: none; display: inline-flex; gap: var(--s-2); }
+.b-card__go i { font-style: normal; transition: transform var(--d-base) var(--e-out); }
+.b-card:hover .b-card__go i { transform: translateX(4px); }
+
+/* ---- Uzmanlık — sayaç şeridi ----------------------------------------- */
+.b-skills { display: grid; gap: var(--s-4); }
+.b-skill {
+  display: grid; gap: var(--s-2);
+  padding: var(--s-6);
+  border-radius: var(--r-lg);
+  background: var(--c-surface);
+  border: 1px solid var(--c-line);
+}
+.b-skill__bar { height: 3px; border-radius: var(--r-pill); background: var(--c-line-strong); overflow: hidden; }
+.b-skill__bar i { display: block; height: 100%; background: var(--c-accent); width: var(--w, 70%); transform-origin: left; transform: scaleX(0); transition: transform var(--d-slow) var(--e-out); }
+.b-skill.is-visible .b-skill__bar i { transform: scaleX(1); }
+.b-skill h3 { font-size: var(--t-body-lg); }
+.b-skill p { font-size: var(--t-small); color: var(--c-text-muted); }
+
+/* ---- Blog + sağ sütun ------------------------------------------------ */
+/* Not: ızgara min-width:auto taşması tokens.css içinde global çözüldü. */
+.b-blog { display: grid; gap: var(--s-12); }
+.b-post {
+  display: grid; gap: var(--s-2);
+  padding: var(--s-6);
+  border-radius: var(--r-lg);
+  background: var(--c-surface);
+  border: 1px solid transparent;
+  transition: border-color var(--d-base) var(--e-out), background var(--d-base) var(--e-out);
+}
+.b-post + .b-post { margin-top: var(--s-3); }
+@media (hover: hover) { .b-post:hover { border-color: var(--c-line-strong); background: var(--c-surface-raised); } }
+.b-post__meta { display: flex; flex-wrap: wrap; gap: var(--s-3); font-family: var(--font-mono); font-size: var(--t-micro); color: var(--c-text-faint); }
+.b-post__meta b { color: var(--c-accent); font-weight: 400; }
+.b-post h3 { font-size: var(--t-h3); }
+.b-post h3 a { text-decoration: none; }
+.b-post h3 a:hover { text-decoration: underline; text-underline-offset: 4px; }
+.b-post p { color: var(--c-text-muted); font-size: var(--t-small); }
+
+.b-aside { display: grid; gap: var(--s-4); align-content: start; }
+.b-widget { background: var(--c-surface); border: 1px solid var(--c-line); border-radius: var(--r-lg); padding: var(--s-6); display: grid; gap: var(--s-3); }
+.b-widget h3 { font-size: var(--t-body-lg); }
+.b-widget ul { margin: 0; padding: 0; list-style: none; display: grid; gap: var(--s-1); }
+.b-widget li a {
+  display: flex; justify-content: space-between; align-items: center; gap: var(--s-3);
+  min-height: 40px; padding-inline: var(--s-3);
+  border-radius: var(--r-md);
+  font-size: var(--t-small); color: var(--c-text-muted); text-decoration: none;
+  transition: background var(--d-fast) var(--e-out), color var(--d-fast) var(--e-out);
+}
+.b-widget li a:hover, .b-widget li a:focus-visible { background: var(--c-surface-hover); color: var(--c-accent); }
+.b-widget li em { font-style: normal; font-family: var(--font-mono); font-size: var(--t-micro); color: var(--c-text-faint); }
+.b-search { display: flex; gap: var(--s-2); }
+.b-search input {
+  flex: 1; min-height: var(--tap-min);
+  background: var(--c-base); border: 1px solid var(--c-line-strong); border-radius: var(--r-pill);
+  color: var(--c-text); padding-inline: var(--s-4); font: inherit; font-size: var(--t-small);
+}
+.b-search input::placeholder { color: var(--c-text-faint); }
+
+/* ---- İletişim -------------------------------------------------------- */
+.b-contact { display: grid; gap: var(--s-8); justify-items: start; }
+.b-mail { font-family: var(--font-display); font-size: var(--t-h2); color: var(--c-accent); text-decoration: none; word-break: break-word; }
+.b-mail:hover { text-decoration: underline; text-underline-offset: 6px; }
+.b-social { display: flex; flex-wrap: wrap; gap: var(--s-2); }
+.b-social a {
+  min-height: var(--tap-min); display: inline-flex; align-items: center; padding-inline: var(--s-5, 1.25rem);
+  background: var(--c-surface); border: 1px solid var(--c-line); border-radius: var(--r-pill);
+  font-size: var(--t-small); color: var(--c-text-muted); text-decoration: none;
+  padding: 0 var(--s-4);
+  transition: color var(--d-fast) var(--e-out), border-color var(--d-fast) var(--e-out);
+}
+.b-social a:hover, .b-social a:focus-visible { color: var(--c-accent); border-color: var(--c-accent); }
+
+.b-foot { border-top: 1px solid var(--c-line); padding-block: var(--s-8); display: flex; flex-wrap: wrap; gap: var(--s-4); justify-content: space-between; font-size: var(--t-small); color: var(--c-text-faint); }
+
+.b-note { background: var(--c-accent-wash); font-family: var(--font-mono); font-size: var(--t-micro); color: var(--c-text-muted); padding-block: var(--s-2); }
+.b-note b { color: var(--c-accent); }
+
+/* ---- Dokunma hedefi düzeltmesi (bkz. Yön A ile aynı ölçüm) ---------- */
+@media (pointer: coarse), (max-width: 1023px) {
+  .b-logo,
+  .b-card__go,
+  .b-widget li a {
+    display: inline-flex;
+    min-height: var(--tap-min);
+    align-items: center;
+  }
+  .b-post h3 a,
+  .b-nav__link {
+    display: inline-block;
+    padding-block: var(--s-3);
+  }
+}
+
+/* ---- Masaüstü -------------------------------------------------------- */
+@media (min-width: 768px) {
+  .b-cards { grid-template-columns: repeat(2, 1fr); }
+  .b-skills { grid-template-columns: repeat(2, 1fr); }
+  .b-stats { max-width: 520px; }
+}
+@media (min-width: 1024px) {
+  .b-burger, .b-drawer { display: none; }
+  .b-nav__links { display: flex; }
+  .b-cards { grid-template-columns: repeat(3, 1fr); }
+  .b-blog { grid-template-columns: 1fr 340px; gap: var(--s-16); align-items: start; }
+  .b-aside { position: sticky; top: 96px; max-height: calc(100vh - 120px); overflow-y: auto; }
+}
+</style>
+</head>
+<body>
+<a class="u-skip-link" href="#main">İçeriğe atla</a>
+
+<div class="b-note">
+  <div class="u-shell"><b>PROTOTİP — YÖN B.</b> Metinler yer tutucudur, gerçek biyografi değildir. Sayısal değerler örnektir.</div>
+</div>
+
+<header class="b-nav">
+  <div class="u-shell b-nav__inner">
+    <a class="b-logo" href="#main">Ufuk <b>Şen</b></a>
+    <nav class="b-nav__links" aria-label="Ana menü">
+      <a class="b-nav__link" href="#uzmanlik">Uzmanlık</a>
+      <a class="b-nav__link" href="#eklentiler">Eklentiler</a>
+      <a class="b-nav__link" href="#egitimler">Eğitimler</a>
+      <a class="b-nav__link" href="#projeler">Projeler</a>
+      <a class="b-nav__link" href="#blog">Blog</a>
+      <a class="btn btn--primary" href="#iletisim" style="margin-left:var(--s-3)">İletişim</a>
+    </nav>
+    <button class="b-burger" type="button" aria-expanded="false" aria-controls="b-drawer" aria-label="Menüyü aç">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+  <div class="b-drawer" id="b-drawer" data-open="false">
+    <div class="b-drawer__inner">
+      <nav class="u-shell b-drawer__list" aria-label="Mobil menü">
+        <a href="#uzmanlik">Uzmanlık</a>
+        <a href="#eklentiler">Eklentiler</a>
+        <a href="#egitimler">Eğitimler</a>
+        <a href="#projeler">Projeler</a>
+        <a href="#youtube">YouTube</a>
+        <a href="#blog">Blog</a>
+        <a href="#iletisim">İletişim</a>
+      </nav>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- HERO -->
+  <section class="b-hero b-well">
+    <div class="b-hero__glow" data-parallax="0.12"></div>
+    <div class="u-shell b-hero__inner">
+      <p class="u-eyebrow">3D Görselleştirme · Eğitim · Ankara</p>
+      <h1>Işığı doğru kurun, proje kendini anlatsın.<span>SketchUp, Twinmotion, D5 ve Enscape üzerine on yılı aşkın üretim ve eğitim.</span></h1>
+      <div class="b-cta">
+        <a class="btn btn--primary" href="#egitimler">Eğitimleri incele</a>
+        <a class="btn btn--ghost" href="#projeler">Projelere bak</a>
+      </div>
+      <div class="b-stats">
+        <div class="b-stat"><b>457</b><span>Yazı</span></div>
+        <div class="b-stat"><b>12</b><span>Eğitim seti</span></div>
+        <div class="b-stat"><b>10+</b><span>Yıl</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- UZMANLIK -->
+  <section class="u-section" id="uzmanlik">
+    <div class="u-shell">
+      <div class="b-head u-reveal">
+        <p class="u-eyebrow">Uzmanlık</p>
+        <h2>Yazılım araçtır. İş, ışıkta biter.</h2>
+        <p>Beş araç, tek disiplin: sahneyi okunur kılmak.</p>
+      </div>
+      <div class="b-skills">
+        <article class="b-skill u-reveal"><h3>SketchUp</h3><p>Temiz geometri ve yönetilebilir sahne kurgusu.</p><div class="b-skill__bar"><i style="--w:96%"></i></div></article>
+        <article class="b-skill u-reveal"><h3>D5 Render</h3><p>Fotogerçekçi çıktı, öngörülebilir süre.</p><div class="b-skill__bar"><i style="--w:90%"></i></div></article>
+        <article class="b-skill u-reveal"><h3>Twinmotion</h3><p>Toplantı masasında canlı sunum.</p><div class="b-skill__bar"><i style="--w:85%"></i></div></article>
+        <article class="b-skill u-reveal"><h3>Enscape &amp; V-Ray</h3><p>Hızlı iterasyon ve kontrollü kalite.</p><div class="b-skill__bar"><i style="--w:80%"></i></div></article>
+      </div>
+    </div>
+  </section>
+
+  <!-- EKLENTİLER -->
+  <section class="u-section b-well" id="eklentiler">
+    <div class="u-shell">
+      <div class="b-head u-reveal">
+        <p class="u-eyebrow">Araçlar</p>
+        <h2>SketchUp eklentileri</h2>
+        <p>Kendi üretim hattımdaki darboğazları çözmek için yazıldı.</p>
+      </div>
+      <div class="b-cards">
+        <article class="b-card u-reveal"><span class="b-card__tag">v2.4 · yer tutucu</span><h3>Scene Manager</h3><p>Sahne ve katman durumlarını tek panelden yönet.</p><a class="b-card__go" href="#iletisim">Detay <i>→</i></a></article>
+        <article class="b-card u-reveal"><span class="b-card__tag">v1.8 · yer tutucu</span><h3>Material Audit</h3><p>Tekrarlayan ve kayıp malzemeleri saniyeler içinde bul.</p><a class="b-card__go" href="#iletisim">Detay <i>→</i></a></article>
+        <article class="b-card u-reveal"><span class="b-card__tag">v3.1 · yer tutucu</span><h3>Batch Export</h3><p>Çoklu sahne çıktısını tek komutla al.</p><a class="b-card__go" href="#iletisim">Detay <i>→</i></a></article>
+      </div>
+    </div>
+  </section>
+
+  <!-- EĞİTİMLER -->
+  <section class="u-section" id="egitimler">
+    <div class="u-shell">
+      <div class="b-head u-reveal">
+        <p class="u-eyebrow">Eğitim</p>
+        <h2>Eğitim setleri</h2>
+        <p>Sıfırdan teslime kadar, gerçek proje üzerinden.</p>
+      </div>
+      <div class="b-cards">
+        <article class="b-card b-card--wide u-reveal"><span class="b-card__tag">Öne çıkan · yer tutucu</span><h3>SketchUp Temelleri — 18 bölüm</h3><p>Doğru alışkanlıkla başlayın. Modelleme mantığı, sahne düzeni ve teslim formatları.</p><a class="b-card__go" href="#iletisim">İncele <i>→</i></a></article>
+        <article class="b-card u-reveal"><span class="b-card__tag">Orta · yer tutucu</span><h3>D5 ile Işık</h3><p>Atmosfer kurma ve malzeme okuma. 14 bölüm.</p><a class="b-card__go" href="#iletisim">İncele <i>→</i></a></article>
+        <article class="b-card u-reveal"><span class="b-card__tag">İleri · yer tutucu</span><h3>Twinmotion Sunum</h3><p>Müşteri toplantısına hazır çıktı. 11 bölüm.</p><a class="b-card__go" href="#iletisim">İncele <i>→</i></a></article>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJELER -->
+  <section class="u-section b-well" id="projeler">
+    <div class="u-shell">
+      <div class="b-head u-reveal">
+        <p class="u-eyebrow">Proje</p>
+        <h2>Seçili işler ve araçlar</h2>
+        <p>Görselleştirme projeleri ve geliştirdiğim web araçları.</p>
+      </div>
+      <div class="b-cards">
+        <article class="b-card b-card--wide u-reveal"><span class="b-card__tag">Web aracı · yer tutucu</span><h3>Geostrategic Map Studio AI</h3><p>Jeostratejik harita üretimi için tarayıcı tabanlı araç.</p><a class="b-card__go" href="#iletisim">Aracı aç <i>→</i></a></article>
+        <article class="b-card u-reveal"><span class="b-card__tag">Görselleştirme · yer tutucu</span><h3>Konut kompleksi</h3><p>Gün batımı senaryosu, 12 kadraj.</p><a class="b-card__go" href="#iletisim">Detay <i>→</i></a></article>
+        <article class="b-card u-reveal"><span class="b-card__tag">Görselleştirme · yer tutucu</span><h3>Ofis iç mekân</h3><p>Doğal ışık çalışması.</p><a class="b-card__go" href="#iletisim">Detay <i>→</i></a></article>
+      </div>
+    </div>
+  </section>
+
+  <!-- YOUTUBE -->
+  <section class="u-section" id="youtube">
+    <div class="u-shell">
+      <div class="b-head u-reveal">
+        <p class="u-eyebrow">Medya</p>
+        <h2>YouTube kanalları</h2>
+        <p>Düzenli yayın, uzun soluklu arşiv.</p>
+      </div>
+      <div class="b-cards">
+        <article class="b-card u-reveal"><span class="b-card__tag">3D · yer tutucu</span><h3>Ufuk Şen</h3><p>Modelleme ve render eğitimleri.</p><a class="b-card__go" href="#iletisim">Kanala git <i>→</i></a></article>
+        <article class="b-card u-reveal"><span class="b-card__tag">Jeopolitik · yer tutucu</span><h3>Geopolitica Marco</h3><p>Makroekonomi ve uluslararası ilişkiler.</p><a class="b-card__go" href="#iletisim">Kanala git <i>→</i></a></article>
+      </div>
+    </div>
+  </section>
+
+  <!-- BLOG -->
+  <section class="u-section" id="blog">
+    <div class="u-shell">
+      <div class="b-head u-reveal">
+        <p class="u-eyebrow">Yazı</p>
+        <h2>Son yazılar</h2>
+        <p>Arşivde 457 yazı. Aşağıdakiler örnek gösterimdir.</p>
+      </div>
+      <div class="b-blog">
+        <div>
+          <article class="b-post u-reveal"><div class="b-post__meta"><b>3D GÖRSELLEŞTİRME</b><span>11.06.2025</span><span>6 dk</span></div><h3><a href="#blog">Render motoru seçerken gerçekten neye bakmalı?</a></h3><p>Donanım, süre ve müşteri beklentisi üçgeninde karar vermek. <em style="color:var(--c-text-faint)">Yer tutucu.</em></p></article>
+          <article class="b-post u-reveal"><div class="b-post__meta"><b>SKETCHUP</b><span>10.05.2025</span><span>4 dk</span></div><h3><a href="#blog">Temiz geometri neden her şeyden önce gelir?</a></h3><p>Kötü model iyi render'ı da yavaşlatır. <em style="color:var(--c-text-faint)">Yer tutucu.</em></p></article>
+          <article class="b-post u-reveal"><div class="b-post__meta"><b>RENDER MOTORLARI</b><span>28.04.2025</span><span>7 dk</span></div><h3><a href="#blog">D5 ve Twinmotion: hangisi hangi işte?</a></h3><p>İkisi rakip değil, farklı aşamaların aracı. <em style="color:var(--c-text-faint)">Yer tutucu.</em></p></article>
+        </div>
+        <aside class="b-aside" aria-label="Blog kenar çubuğu">
+          <div class="b-widget">
+            <h3>Ara</h3>
+            <form class="b-search" role="search" onsubmit="return false">
+              <label for="b-q" style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)">Arama</label>
+              <input id="b-q" type="search" placeholder="Yazılarda ara…">
+              <button class="btn btn--primary" type="submit">Ara</button>
+            </form>
+          </div>
+          <div class="b-widget">
+            <h3>Kategoriler</h3>
+            <ul>
+              <li><a href="#blog">3D Görselleştirme <em>110</em></a></li>
+              <li><a href="#blog">Render Motorları <em>109</em></a></li>
+              <li><a href="#blog">3D Programlar <em>68</em></a></li>
+              <li><a href="#blog">SketchUp <em>61</em></a></li>
+              <li><a href="#blog">V-Ray <em>35</em></a></li>
+            </ul>
+          </div>
+          <div class="b-widget">
+            <h3>Öne çıkan eğitim</h3>
+            <p style="color:var(--c-text-muted);font-size:var(--t-small)">SketchUp Temelleri — 18 bölüm. <em style="color:var(--c-text-faint)">Yer tutucu.</em></p>
+            <a class="btn btn--primary" href="#egitimler">Eğitime bak</a>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <!-- BAŞARILAR -->
+  <section class="u-section b-well" id="basarilar">
+    <div class="u-shell">
+      <div class="b-head u-reveal">
+        <p class="u-eyebrow">Kayıt</p>
+        <h2>Sertifikalar ve başarılar</h2>
+        <p>Gerçek kayıtlar eklenene kadar yer tutucudur.</p>
+      </div>
+      <div class="b-cards">
+        <article class="b-card u-reveal"><span class="b-card__tag">2024 · yer tutucu</span><h3>Eğitmen sertifikası</h3><p>Yer tutucu kayıt.</p></article>
+        <article class="b-card u-reveal"><span class="b-card__tag">2023 · yer tutucu</span><h3>Görselleştirme ödülü</h3><p>Yer tutucu kayıt.</p></article>
+      </div>
+    </div>
+  </section>
+
+  <!-- İLETİŞİM -->
+  <section class="u-section" id="iletisim">
+    <div class="u-shell b-contact">
+      <div class="b-head u-reveal" style="margin-bottom:0">
+        <p class="u-eyebrow">İletişim</p>
+        <h2>Proje veya eğitim.</h2>
+        <p>Kısa yazın, net cevap alın.</p>
+      </div>
+      <a class="b-mail" href="mailto:info@ufuksen.com">info@ufuksen.com</a>
+      <div class="b-social">
+        <a href="#iletisim">YouTube</a>
+        <a href="#iletisim">Instagram</a>
+        <a href="#iletisim">LinkedIn</a>
+        <a href="#iletisim">X</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="u-shell b-foot">
+  <span>© 2026 Ufuk Şen</span>
+  <span class="u-eyebrow">Yön B — Atölye</span>
+</footer>
+
+<script>
+document.documentElement.classList.add('js');
+
+const burger = document.querySelector('.b-burger');
+const drawer = document.getElementById('b-drawer');
+burger.addEventListener('click', () => {
+  const open = burger.getAttribute('aria-expanded') === 'true';
+  burger.setAttribute('aria-expanded', String(!open));
+  burger.setAttribute('aria-label', open ? 'Menüyü aç' : 'Menüyü kapat');
+  drawer.dataset.open = String(!open);
+});
+drawer.addEventListener('click', (e) => {
+  if (e.target.closest('a')) {
+    burger.setAttribute('aria-expanded', 'false');
+    drawer.dataset.open = 'false';
+  }
+});
+document.addEventListener('keydown', (e) => {
+  if (e.key === 'Escape' && drawer.dataset.open === 'true') {
+    burger.setAttribute('aria-expanded', 'false');
+    drawer.dataset.open = 'false';
+    burger.focus();
+  }
+});
+
+const reduced = window.matchMedia('(prefers-reduced-motion: reduce)');
+
+if ('IntersectionObserver' in window && !reduced.matches) {
+  const io = new IntersectionObserver((entries) => {
+    for (const entry of entries) {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('is-visible');
+        io.unobserve(entry.target);
+      }
+    }
+  }, { rootMargin: '0px 0px -8% 0px', threshold: 0.05 });
+  document.querySelectorAll('.u-reveal').forEach((el, i) => {
+    el.style.transitionDelay = (i % 3) * 60 + 'ms';
+    io.observe(el);
+  });
+} else {
+  document.querySelectorAll('.u-reveal').forEach((el) => el.classList.add('is-visible'));
+}
+
+const glow = document.querySelector('[data-parallax]');
+if (glow && !reduced.matches && window.matchMedia('(min-width: 1024px)').matches) {
+  const factor = parseFloat(glow.dataset.parallax);
+  let ticking = false;
+  addEventListener('scroll', () => {
+    if (ticking) return;
+    ticking = true;
+    requestAnimationFrame(() => {
+      glow.style.transform = 'translate3d(-50%,' + (scrollY * factor) + 'px,0)';
+      ticking = false;
+    });
+  }, { passive: true });
+}
+</script>
+</body>
+</html>

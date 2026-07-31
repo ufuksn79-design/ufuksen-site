@@ -1,0 +1,90 @@
+{
+  "legacyId": 2276,
+  "slug": "3-boyutlu-yazicilarda-cikti-almak",
+  "legacyUrl": "/3-boyutlu-yazicilarda-cikti-almak.html",
+  "url": "/3-boyutlu-yazicilarda-cikti-almak.html",
+  "title": "3 Boyutlu Yazıcılarda Çıktı almak için yapılması gereken 10 adım",
+  "excerpt": "3 Boyutlu Yazıcılarda Çıktı almak için yapılması gereken bazı önemli kriterler vardır. Öncelikle 3D programın seçimi konusunda hassak olmak burada en önemli krtiteri belirliyor. 3 Boyutlu Yazıcılarda Çıktı almak için , yani rahat çıktı almak için en önemli programlardan ve en uyumlu programlardan birisi Sketchup programıdır. Çünkü Sketchup programı , hem yüzey alanı ve poligonal …",
+  "contentHtml": "<p><a href=\"/3-boyutlu-yazicilarda-cikti-almak.html\" rel=\"attachment wp-att-2277\"><img loading=\"lazy\" decoding=\"async\" class=\"alignleft wp-image-2277 size-full\" src=\"/media/2018/01/3-boyutlu-yazicilarda-cikti-almak.jpg\" alt=\"3 boyutlu yazicilarda cikti almak\" width=\"400\" height=\"257\" srcset=\"/media/2018/01/3-boyutlu-yazicilarda-cikti-almak.jpg 400w, /media/2018/01/3-boyutlu-yazicilarda-cikti-almak-300x193.jpg 300w\" sizes=\"auto, (max-width: 400px) 100vw, 400px\" /></a><strong>3 Boyutlu Yazıcılarda Çıktı almak</strong> için yapılması gereken bazı önemli kriterler vardır. Öncelikle 3D programın seçimi konusunda hassak olmak burada en önemli krtiteri belirliyor.</p>\n<p><a href=\"/kategori/3d\" target=\"_blank\" rel=\"noopener noreferrer\">3 Boyutlu</a> Yazıcılarda Çıktı almak için , yani rahat çıktı almak için en önemli programlardan ve en uyumlu programlardan birisi <a href=\"http://www.sketchupturkiye.com/\" target=\"_blank\" rel=\"noopener noreferrer\"><strong>Sketchup</strong></a> programıdır.<br />\nÇünkü Sketchup programı , hem yüzey alanı ve poligonal modellemedeki kolaylığı bakımından 3d yazıcıları yormadan rahatça çıktı almayı kolaylaştıran bir yapıya sahiptir.</p>\n<p>Aşağıda sizler için ;</p>\n<h2><strong>3 Boyutlu Yazıcılarda Çıktı almak için yapılması gereken 10 adımı anlatıyoruz</strong></h2>\n<p>1) <strong>Sketchup Template(şablon) ayarı</strong></p>\n<p>Hatasız model oluşturmak için temel girdilerin yapılması gereklidir.<br />\nSketchupta menüden <strong>Window&gt;Prefences&gt;Template&gt;3d printing</strong> millimeters seçiniz.(İnch sistem çalışıyorsanız inches seçiniz.) cm veya metre olmasın.</p>\n<p>2) <strong>Sketchup dosya biçimi değiştirme</strong><br />\n<a href=\"http://www.sketchupfreemodel.com/\" target=\"_blank\" rel=\"noopener noreferrer\">3d model</a> üzerindeki çalışmalar sketchup dosyası olan .skp dosyası olarak kaydolur.3 boyutlu baskılarda skp dosyası da kullanılabilir.Ancak diğer yazılımlarla da uyumlu olması,paylaşım kolaylığı nedeniyle export edilirken STL dosyası olarak çıkarmanız daha iyi olacaktır.<br />\nÇizim şablonunuzu doğru olduğunu kontrol ettikten sonra bu adımı izlemelisiniz.</p>\n<p><a href=\"/3-boyutlu-yazicilarda-cikti-almak.html\" rel=\"attachment wp-att-2283\"><img loading=\"lazy\" decoding=\"async\" class=\"size-full wp-image-2283 aligncenter\" src=\"/media/2018/01/3d-yazici.png\" alt=\"3d-yazici\" width=\"600\" height=\"391\" srcset=\"/media/2018/01/3d-yazici.png 600w, /media/2018/01/3d-yazici-300x196.png 300w\" sizes=\"auto, (max-width: 600px) 100vw, 600px\" /></a></p>\n<p>Eğerki file menüsünde export STL çıkmıyorsa ;<br />\nSketchup Stl eklentisini indirip manager’dan yüklemelisiniz.</p>\n<p>İndirme Linki için <a href=\"https://extensions.sketchup.com/en/content/sketchup-stl\" target=\"_blank\" rel=\"noopener noreferrer\">buraya</a> bakınız.Yukarıdaki resime bakınız</p>\n<p>3) <strong>2 boyutlu ince yüzeyler kullanmayın.</strong></p>\n<p>Modellerin kalınlık yani hacim barındırmasına özen gösterin.<br />\nSketchup modelinizi 3 boyutlu baskı almak için 3.adım olan her yüzeyin kalınlık barındırmasıdır.</p>\n<p><a href=\"/3-boyutlu-yazicilarda-cikti-almak.html\" rel=\"attachment wp-att-2285\"><img loading=\"lazy\" decoding=\"async\" class=\"aligncenter size-full wp-image-2285\" src=\"/media/2018/01/3d-yazici-ayarlari.png\" alt=\"3d-yazici-ayarlari\" width=\"600\" height=\"398\" srcset=\"/media/2018/01/3d-yazici-ayarlari.png 600w, /media/2018/01/3d-yazici-ayarlari-300x199.png 300w\" sizes=\"auto, (max-width: 600px) 100vw, 600px\" /></a><br />\nYukarıdaki Görselde olduğu gibi 2 boyutlu olan yüzeyler otomatik olarak yazıcı tarafından kalınlık atanmaz ve bu sıkıntı oluşturur.Bu sebeple yüzeylere kalınlık vermelisiniz.</p>\n<p>4) <strong>Modelinizi katı model hale getirin ve boşluklu yüzey bulundurmayın.</strong></p>\n<p>Modelinizi oluştururken yüzey üzerinde boşluklar bulunmamasına dikkat edin.Kolay ve basit modellerde bunu gözden kaçırma ihtimali düşüktür.</p>\n<p><a href=\"/3-boyutlu-yazicilarda-cikti-almak.html\" rel=\"attachment wp-att-2286\"><img loading=\"lazy\" decoding=\"async\" class=\"aligncenter size-full wp-image-2286\" src=\"/media/2018/01/3d-yaziciya-model-göndermek.png\" alt=\"3d-yaziciya-model-göndermek\" width=\"600\" height=\"445\" srcset=\"/media/2018/01/3d-yaziciya-model-göndermek.png 600w, /media/2018/01/3d-yaziciya-model-göndermek-300x223.png 300w, /media/2018/01/3d-yaziciya-model-göndermek-216x160.png 216w, /media/2018/01/3d-yaziciya-model-göndermek-80x60.png 80w, /media/2018/01/3d-yaziciya-model-göndermek-265x198.png 265w, /media/2018/01/3d-yaziciya-model-göndermek-566x420.png 566w\" sizes=\"auto, (max-width: 600px) 100vw, 600px\" /></a><br />\nAncak daha karmaşık modellerde dikkat edilmelidir.<br />\nEğer boşluklar var ise kapatmanız gereklidir.Boşluk kapatıldıktan sonra bu işlem tamamlanır.</p>\n<p>5) <strong>Çakışan çizgi ve alanları önlemek.</strong></p>\n<p>Modelinizi oluştururken ana mantığın katı bir model,kabuk oluşturmak olduğunu unutmayın.2 boyutlu yardımcı çizgiler üzerinden 3 boyutlu modelinizi oluşturmak hatalarını önlemenize yardımcı olur.</p>\n<p><a href=\"/3-boyutlu-yazicilarda-cikti-almak.html\" rel=\"attachment wp-att-2287\"><img loading=\"lazy\" decoding=\"async\" class=\"aligncenter size-full wp-image-2287\" src=\"/media/2018/01/3d-cikti-alirken-dikkat-edilecekler.png\" alt=\"3d-cikti-alirken-dikkat-edilecekler\" width=\"600\" height=\"331\" srcset=\"/media/2018/01/3d-cikti-alirken-dikkat-edilecekler.png 600w, /media/2018/01/3d-cikti-alirken-dikkat-edilecekler-300x166.png 300w\" sizes=\"auto, (max-width: 600px) 100vw, 600px\" /></a></p>\n<p>Aşağıdaki örnek görselde soldaki modeli frame halde bakarken içerisinde anlamsız yüzeylerin oluşucağını görebilirsiniz.Soldaki model yazıcıda problem çıkarır.</p>\n<p>Ancak bu problemleri önlemenin de bir yolu var.6.Madde de bunu anlatacağız.</p>\n<h3>6)<strong> 3 Boyutlu Yazıcılarda Çıktı almak için Modelin Grup olduğunu kontrol etmek</strong></h3>\n<p>Modelinizi oluştururken boşluksuz olduğunu anlamak karmaşık modellerde zor olabilir.<br />\nAncak bunu kontrol etmenin basit bir yöntemi var.</p>\n<p>1)Farenizin sol imleci ile nesnenin üstüne gerek seçim aracı ile 3 kez tıklayarak tüm nesneyi seçiniz.<br />\n2.Sağ tıklayarak <strong>Make group</strong> (Grup oluştur)seçiniz.<br />\n3.Tekrar sağ tıklayarak <strong><span style=\"color: #0000ff;\">Entity Info</span></strong> bölümüne gidiniz.</p>\n<p>Delikli hatalı bir model oluşturduysanız modeliniz group olarak görünür.<br />\nBu durumda yeniden düzenlemek için sağ tıklayıp explode seçeneği ile patlatıp tekrar düzenleyiniz.<br />\nDelikli hatalı bir model oluşturduysanız modeliniz group olarak görünür.Bu durumda yeniden düzenlemek Eğerki tasarladığınız model boşluksuz hatasız ise sağ tıklayıp entity info ya tıkladığınızda Solid Group yani Katı model olarak gözükür.Ve bu hatasız bir model oluşturduğunuzun sağlamasıdır.</p>\n<p>7) <strong>Modelinizi Hide Tool yada Xray mode ile incelemek</strong><br />\nModeliniz dışarıdan bakıldığında hata içermeyebilir ancak iç kısımlarda hata olup olmadığını görebilmek için ;</p>\n<p>1)Modeldeki bir yüzeyi hide edip içeri bakabilirsiniz.<br />\n2)Görünüm seçeneklerinden biri olan Xray mode modunda modelinize bakabilirsiniz.</p>\n<p>8) <strong>Xray ile Grup oluşturup kontrol etmek</strong></p>\n<p>Modelinizde çakışan nesneler yazıcıda problem teşkil eder.Üst maddelerde bunu belirtmiştik.<br />\nÖrneğin iç içe geçmiş 2 nesneyi bir seçenek ile düzeltmenin yöntemi var.</p>\n<p>1) Öncelikle <strong>xray mode</strong> kullanmanızı öneririz.<br />\n2) Ayrı ayrı sağ tıklanıp <strong>make group</strong> haline gelmiş olan nesnelerden birini seçip üst menüden <span style=\"color: #333399;\"><strong>Tools&gt;Outer Shell</strong></span> tıklayın.ardından 2.nesneyi seçmenizi isteyecektir.<br />\n3) 2.nesneyi seçtikten sonra katı model düzelmiş olacaktır.</p>\n<p>9)<strong> Reverse Faces seçeneği</strong></p>\n<p>3 Boyutlu Yazıcılarda Çıktı almak için yapılacak en önemli konulardan biride , Modelinizde sorun oluşturabilecek en yaygın problemlerden biri ters yüzeylerdir.</p>\n<p>Bu yüzeylerin olup olmadığını anlamak için modelinizde beyaz değil gri renkte yüzey olup olmadığına bakmaktır.</p>\n<p><a href=\"/3-boyutlu-yazicilarda-cikti-almak.html\" rel=\"attachment wp-att-2288\"><img loading=\"lazy\" decoding=\"async\" class=\"aligncenter wp-image-2288\" src=\"/media/2018/01/reverce-face.png\" alt=\"reverce-face\" width=\"428\" height=\"357\" srcset=\"/media/2018/01/reverce-face.png 882w, /media/2018/01/reverce-face-300x250.png 300w, /media/2018/01/reverce-face-768x641.png 768w, /media/2018/01/reverce-face-696x581.png 696w, /media/2018/01/reverce-face-503x420.png 503w\" sizes=\"auto, (max-width: 428px) 100vw, 428px\" /></a>Eğerki böyle bir yüzey yada yüzeyler varsa yüzeyi seçip sağ tıklayıp <strong>Reverse Faces</strong> seçeneğine tıklamalısınız.</p>\n<p>10) <strong>Eğrisel yüzeylerin segmentini arttırma</strong></p>\n<p>Sketchup çalışmalarınız sırasında yay,daire vb eğrisel yüzeyleri ve çizgileri yumuşatır.Ancak üzerinde çalışmanız gerektiktiğinde daireyi oluşturan 24 segmenti (segmentler arttırılabilir) görmeniz gereklidir.</p>\n<p><a href=\"/3-boyutlu-yazicilarda-cikti-almak.html\" rel=\"attachment wp-att-2289\"><img loading=\"lazy\" decoding=\"async\" class=\"aligncenter size-large wp-image-2289\" src=\"/media/2018/01/segment-artirma-1024x741.png\" alt=\"segment-artirma\" width=\"696\" height=\"504\" srcset=\"/media/2018/01/segment-artirma-1024x741.png 1024w, /media/2018/01/segment-artirma-300x217.png 300w, /media/2018/01/segment-artirma-768x556.png 768w, /media/2018/01/segment-artirma-324x235.png 324w, /media/2018/01/segment-artirma-696x504.png 696w, /media/2018/01/segment-artirma-580x420.png 580w, /media/2018/01/segment-artirma.png 1058w\" sizes=\"auto, (max-width: 696px) 100vw, 696px\" /></a></p>\n<p>Çizgileri görmeniz için yukarı menüden View &gt;Hidden geometry seçeneğine tıklayın.<br />\nEğerki bu çizgileri arttırmak isterseniz 2 boyutlu şeklin çizimi seçip entity info kısmından segment sayısını değiştirebilirsiniz.</p>\n<p><span style=\"color: #000080;\"><strong>3 Boyutlu Yazıcılarda Çıktı almak için Konuyla ilgili videoyu aşağıdan izleyebilirsiniz, görüldüğü üzere modellemeye çok fazla dikkat ediliyor ;</strong></span></p>\n<p><iframe loading=\"lazy\" title=\"3D Printing from SketchUp | SketchUp Show #68 (Tutorial)\" width=\"500\" height=\"281\" src=\"https://www.youtube.com/embed/RPQliNKJKto?feature=oembed\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" referrerpolicy=\"strict-origin-when-cross-origin\" allowfullscreen></iframe></p>\n",
+  "publishedAt": "2018-01-02T07:22:49",
+  "modifiedAt": "2022-12-20T14:55:43",
+  "status": "publish",
+  "featuredImage": {
+    "legacyId": 2277,
+    "legacyUrl": "https://www.ufuksen.com/wp-content/uploads/2018/01/3-boyutlu-yazicilarda-cikti-almak.jpg",
+    "localPath": "/media/2018/01/3-boyutlu-yazicilarda-cikti-almak.jpg",
+    "alt": "3 boyutlu yazicilarda cikti almak",
+    "width": 400,
+    "height": 257,
+    "mimeType": "image/jpeg",
+    "error": null
+  },
+  "inlineMedia": [
+    {
+      "legacyUrl": "http://www.ufuksen.com/wp-content/uploads/2018/01/3-boyutlu-yazicilarda-cikti-almak.jpg",
+      "localPath": "/media/2018/01/3-boyutlu-yazicilarda-cikti-almak.jpg",
+      "error": null
+    },
+    {
+      "legacyUrl": "http://www.ufuksen.com/wp-content/uploads/2018/01/3d-yazici.png",
+      "localPath": "/media/2018/01/3d-yazici.png",
+      "error": null
+    },
+    {
+      "legacyUrl": "http://www.ufuksen.com/wp-content/uploads/2018/01/3d-yazici-ayarlari.png",
+      "localPath": "/media/2018/01/3d-yazici-ayarlari.png",
+      "error": null
+    },
+    {
+      "legacyUrl": "http://www.ufuksen.com/wp-content/uploads/2018/01/3d-yaziciya-model-göndermek.png",
+      "localPath": "/media/2018/01/3d-yaziciya-model-göndermek.png",
+      "error": null
+    },
+    {
+      "legacyUrl": "http://www.ufuksen.com/wp-content/uploads/2018/01/3d-cikti-alirken-dikkat-edilecekler.png",
+      "localPath": "/media/2018/01/3d-cikti-alirken-dikkat-edilecekler.png",
+      "error": null
+    },
+    {
+      "legacyUrl": "http://www.ufuksen.com/wp-content/uploads/2018/01/reverce-face.png",
+      "localPath": "/media/2018/01/reverce-face.png",
+      "error": null
+    },
+    {
+      "legacyUrl": "http://www.ufuksen.com/wp-content/uploads/2018/01/segment-artirma-1024x741.png",
+      "localPath": "/media/2018/01/segment-artirma-1024x741.png",
+      "error": null
+    }
+  ],
+  "embeds": [
+    {
+      "provider": "youtube",
+      "externalId": "RPQliNKJKto",
+      "originalSrc": "https://www.youtube.com/embed/RPQliNKJKto?feature=oembed",
+      "title": null
+    }
+  ],
+  "seo": {
+    "title": null,
+    "description": "3 Boyutlu Yazıcılarda Çıktı almak için, Sketchup programında yapılması gereken 10 adım anlattık.Bu şekilde malzemelerinizi ziyan etmeden rahatlıkla, 3 boyutlu…",
+    "focusKeyword": "3 Boyutlu Yazıcılarda Çıktı almak",
+    "canonicalUrl": null,
+    "ogImage": null
+  },
+  "readingMinutes": 4,
+  "migrationChecksum": "9414327c5f4234e3a02ede1d0aab08aa6c16443c41772809da45a9576aa79bca",
+  "author": {
+    "legacyId": 2,
+    "name": "Pınar Çakır",
+    "slug": "pcakir",
+    "isGuest": false
+  },
+  "categories": [
+    {
+      "legacyId": 518,
+      "name": "3D Görselleştirme",
+      "slug": "3d-gorsellestirme"
+    }
+  ],
+  "tags": []
+}

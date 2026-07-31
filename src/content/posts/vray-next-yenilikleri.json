@@ -1,0 +1,58 @@
+{
+  "legacyId": 2773,
+  "slug": "vray-next-yenilikleri",
+  "legacyUrl": "/vray-next-yenilikleri.html",
+  "url": "/vray-next-yenilikleri.html",
+  "title": "Vray Next Yenilikleri",
+  "excerpt": "V-Ray 3.0’ın piyasaya sürülmesinden bu yana, güncellemelerin çoğunun ayarları yapmadan daha iyi hale getirilmesini sağladığını fark etmiş olabilirsiniz. Ayrıca, V-Ray’ın varsayılan olarak çok daha hızlı olduğunu fark etmiş olabilirsiniz.Aslında, kullanıcılarımızın birçoğu eski sahnelerini daha hızlı ve daha temiz hale getirdiğini keşfettiler, sadece önceki ayarlarını kaldırarak ve yeni varsayılanlara geçtiler. Çünkü V-Ray’ı daha akıllı hale getirmek …",
+  "contentHtml": "<p><a href=\"/vray-next-yenilikleri.html\" rel=\"attachment wp-att-2774\"><img loading=\"lazy\" decoding=\"async\" class=\"alignleft wp-image-2774\" src=\"/media/2018/07/vray-next.jpg\" alt=\"vray next\" width=\"356\" height=\"202\" srcset=\"/media/2018/07/vray-next.jpg 800w, /media/2018/07/vray-next-300x170.jpg 300w, /media/2018/07/vray-next-768x436.jpg 768w, /media/2018/07/vray-next-696x395.jpg 696w, /media/2018/07/vray-next-740x420.jpg 740w\" sizes=\"auto, (max-width: 356px) 100vw, 356px\" /></a><br />V-Ray 3.0&#8217;ın piyasaya sürülmesinden bu yana, güncellemelerin çoğunun ayarları yapmadan daha iyi hale getirilmesini sağladığını fark etmiş olabilirsiniz. Ayrıca, V-Ray&#8217;ın varsayılan olarak çok daha hızlı olduğunu fark etmiş olabilirsiniz.Aslında, kullanıcılarımızın birçoğu eski sahnelerini daha hızlı ve daha temiz hale getirdiğini keşfettiler, sadece önceki ayarlarını kaldırarak ve yeni varsayılanlara geçtiler. Çünkü V-Ray&#8217;ı daha akıllı hale getirmek için çok çaba harcadık.<br /><br />Sizler için hazırlamış olduğumuz Türkçe <a href=\"/sketchup-vray-next-ucretsiz-turkce-dersleri.html\">Sketchup Vray Next</a> Derslerini buradan izleyebilirsiniz.</p>\r\n<h2><strong>V-Ray Next ile, Vray daha akıllı hale geliyor</strong></h2>\r\n<p>Aynı şekilde, belirli bir problem hakkında öğrenilenlere dayanarak seçimler yapar, V-Ray, bir sahneyi oluştururken analiz etmek için öğrenme tekniklerini benimsiyor.<br />Örneğin, Varyans tabanlı Uyarlamalı Örneklemenin tanıtımıyla, materyaller ve ışıklar üzerinde bireysel alt bölümler veya hatta alan derinliği gibi kamera efektleri ayarlama ihtiyacını ortadan kaldırdık.Görüntü boyunca nois seviyelerini üretmeye yetecek kadar akıllıdır. İhtiyaç duyulmayan diğer alanları fazla örneklemeden daha fazla Nois bölgelere daha fazla örnek yerleştirilir.</p>\r\n<p>Başka bir örnek, hangi ışıkların örnekleneceğini ve hangilerinin göz ardı edileceğini belirlemek için Işık Önbelleği verilerini analiz ederek sahneyi öğrenen V-Ray&#8217;ın Uyarlamalı Işıklar algoritmasıdır.</p>\r\n<p>Bu, kullanıcıların render sürelerini etkilemeden çok sayıda ışık kaynağıyla sahneleri oluşturmasını mümkün kılar. Ayrıca, bir sonraki sürümümüzde yeni geliştirilmiş bir Adaptif Işıklar 2 tekniği geliyor.</p>\r\n<p>Bir sonraki V-Ray&#8217;da, otomatik kamera pozlaması ve beyaz dengesi gibi daha akıllı özellikler var, ancak ilk konuşulacak olan, 3ds Max için <strong>V-Ray Next</strong> Beta 1&#8217;deki yeni Adaptif Dome Işığı eklendi.</p>\r\n<h3><strong>Yeni Uyarlamalı Dome Işığı nasıl çalışır?</strong></h3>\r\n<p><strong>V-Ray Nex</strong>t’in akıllı ışık örneklemesi artık kubbe ışığına (domelight) ve görüntü tabanlı aydınlatmaya entegre edildi.</p>\r\n<p>Bir kubbe ışığı, çevrenin yüksek dinamik aralıklı görüntüsüyle (HDRI) eşleştirilen küresel veya yarı küresel bir ışıktır.</p>\r\n<p>Bu tür görüntü tabanlı ortam aydınlatması, yıllardır CG renderlemede bir temel olmuştur.</p>\r\n<p>Görüntü tabanlı aydınlatma yıllar içinde gelişmesine rağmen, özellikle iç sahneler için çok fazla örnekleme gerektirir. Genellikle V-Ray, HDR kubbesini, IBL&#8217;nin olabildiğince az nois çıkardığından emin olmak için verimli bir şekilde örneklendirir.</p>\r\n<p>Bununla birlikte, ışık tipik olarak pencere ve kapılar gibi küçük açıklıklardan iç alanlara girer ve kubbe ışığının sadece küçük bir kısmı görüntüye katkıda bulunur, bu da kubbe ışığının örneklemesini HDR görüntüsü ile çok verimli hale getirmez.</p>\r\n<p>Bir geçici çözüm olarak, ışık örneklerine yardımcı olan kapılar, pencereler ve tavan pencereleri gibi açıklıkların yakınında Skylight Portal&#8217;ları ekleyebilirsiniz. Ancak bu, zaman alan manuel bir işlemdir &#8211; ve bu doğru değildir.</p>\r\n<p>Bu sorunu önlemek için, Adaptif Işıklar gibi benzer bir konsepte dayalı daha akıllı bir kubbe ışığı oluşturduk. Şimdi, yeni Uyarlamalı Dome Işığı, kubbe ışığının hangi kısımlarının sahneyi etkileme olasılığının yüksek olduğunu öğrenmek için Işık Önbelleği hesaplama aşamasını kullanır.</p>\r\n<p>Uyarlamalı Dome Işığı ile, Skylight Portalları artık gerekli değildir. Ortamın hangi bölümlerinin örneklendiğini ve hangilerinin göz ardı edileceğini otomatik olarak belirler. Bu, kurulumu ve daha verimli olmasını çok daha kolay hale getirir.</p>\r\n<p><strong>Vray Next ile yapılmış sempozyumu izlemek için aşağıdaki videoya bakınız</strong>.</p>\r\n\r\n<figure class=\"wp-block-embed-youtube wp-block-embed is-type-video is-provider-youtube wp-embed-aspect-16-9 wp-has-aspect-ratio\">\r\n<div class=\"wp-block-embed__wrapper\">https://www.youtube.com/watch?v=LHvY0lcI-Ns</div>\r\n</figure>\r\n",
+  "publishedAt": "2018-07-17T08:00:34",
+  "modifiedAt": "2022-12-21T10:28:44",
+  "status": "publish",
+  "featuredImage": {
+    "legacyId": 2774,
+    "legacyUrl": "https://www.ufuksen.com/wp-content/uploads/2018/07/vray-next.jpg",
+    "localPath": "/media/2018/07/vray-next.jpg",
+    "alt": "vray next",
+    "width": 800,
+    "height": 454,
+    "mimeType": "image/jpeg",
+    "error": null
+  },
+  "inlineMedia": [
+    {
+      "legacyUrl": "http://www.ufuksen.com/wp-content/uploads/2018/07/vray-next.jpg",
+      "localPath": "/media/2018/07/vray-next.jpg",
+      "error": null
+    }
+  ],
+  "embeds": [],
+  "seo": {
+    "title": null,
+    "description": "V-Ray 3.0’ın piyasaya sürülmesinden bu yana, güncellemelerin çoğunun ayarları yapmadan daha iyi hale getirilmesini sağladığını fark etmiş olabilirsiniz.",
+    "focusKeyword": "VRay Next",
+    "canonicalUrl": null,
+    "ogImage": null
+  },
+  "readingMinutes": 2,
+  "migrationChecksum": "bf73096390daadcfeaa89c3f8d6349b47e17d21127f34924e9882573bfd672fc",
+  "author": {
+    "legacyId": 1,
+    "name": "UFUK ŞEN",
+    "slug": "ufuk",
+    "isGuest": false
+  },
+  "categories": [
+    {
+      "legacyId": 538,
+      "name": "Render Motorları",
+      "slug": "render-motorlari"
+    },
+    {
+      "legacyId": 541,
+      "name": "Vray Render",
+      "slug": "vray"
+    }
+  ],
+  "tags": []
+}
