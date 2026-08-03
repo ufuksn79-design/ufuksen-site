@@ -1,0 +1,8 @@
+# Cloudflare Pages yapılandırması (ADR-019 revizyonu).
+#
+# Netlify yerine Cloudflare Pages seçildi: panel girişi için zaten bir
+# Cloudflare Worker kurulması gerekiyor (Netlify Identity kullanımdan
+# kaldırıldı), DNS de zaten Cloudflare'de. Tek sağlayıcıda toplandı.
+name = "ufuksen-site"
+compatibility_date = "2026-01-01"
+pages_build_output_dir = "dist"
