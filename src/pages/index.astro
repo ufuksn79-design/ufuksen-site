@@ -296,13 +296,36 @@ const icons: Record<string, string> = {
   @media (min-width: 640px) { .courses { grid-template-columns: repeat(2, 1fr); } }
   @media (min-width: 1080px) { .courses { grid-template-columns: repeat(3, 1fr); } }
 
+  /* Mobil/tablette videolar parmakla kaydırılan bir şerittir (ADR-020):
+     kaydır-bırak, karta yapış. Kaydırma konteynerin içindedir; sayfa
+     genişliğini etkilemez. Masaüstünde klasik ızgaraya döner. */
   .vstrip {
     display: grid;
     gap: var(--s-4);
-    grid-template-columns: 1fr;
+    grid-auto-flow: column;
+    grid-auto-columns: 78%;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    padding-bottom: var(--s-2);
+    scrollbar-width: thin;
+    scrollbar-color: var(--c-line-strong) transparent;
   }
-  @media (min-width: 560px) { .vstrip { grid-template-columns: repeat(2, 1fr); } }
-  @media (min-width: 900px) { .vstrip { grid-template-columns: repeat(3, 1fr); } }
+  .vstrip > .vmini {
+    scroll-snap-align: start;
+  }
+  @media (min-width: 560px) {
+    .vstrip { grid-auto-columns: 44%; }
+  }
+  @media (min-width: 900px) {
+    .vstrip {
+      grid-auto-flow: row;
+      grid-auto-columns: auto;
+      grid-template-columns: repeat(3, 1fr);
+      overflow-x: visible;
+      scroll-snap-type: none;
+      padding-bottom: 0;
+    }
+  }
 
   .vmini {
     display: grid;

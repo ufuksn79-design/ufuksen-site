@@ -38,7 +38,12 @@ const icons: Record<string, string> = {
 };
 ---
 
-<nav class="rail" aria-label="Ana menü">
+<!--
+  transition:persist — sayfa geçişinde şerit DOM'da kalır, menü "sabit
+  uygulama çubuğu" gibi hissedilir (ADR-020). Aktif sekme her geçişte
+  Base'deki script tarafından güncellenir (aria-current).
+-->
+<nav class="rail" aria-label="Ana menü" transition:persist="rail">
   <a class="rail__brand" href="/" aria-label="Ana sayfa — Ufuk Şen">
     <img src="/media/marka/ufuksenlogo.png" alt="Ufuk Şen" width="260" height="98" />
   </a>

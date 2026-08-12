@@ -1,4 +1,5 @@
 ---
+import { ClientRouter } from "astro:transitions";
 import "../styles/global.css";
 import Rail from "../components/Rail.astro";
 import Footer from "../components/Footer.astro";
@@ -33,6 +34,7 @@ const {
 
 const site = Astro.site ?? new URL("https://www.ufuksen.com");
 const canonical = new URL(path, site).href;
+
 /** Sayfaya özel görsel yoksa marka görseli kullanılır; her sayfa og:image taşır. */
 const VARSAYILAN_OG = "/media/marka/ufuksenlogo.png";
 const ogImageUrl = new URL(ogImage ?? VARSAYILAN_OG, site).href;
@@ -62,7 +64,6 @@ const ogImageUrl = new URL(ogImage ?? VARSAYILAN_OG, site).href;
 
     <link rel="icon" href="/media/marka/favicon-192.jpg" sizes="192x192" />
     <link rel="apple-touch-icon" href="/media/marka/favicon-192.jpg" />
-
     <link rel="alternate" type="application/rss+xml" title="Ufuk Şen — Blog" href="/rss.xml" />
 
     <!-- Geist: SIL OFL 1.1, latin + latin-ext (Türkçe doğrulandı — ADR-011) -->
@@ -72,6 +73,13 @@ const ogImageUrl = new URL(ogImage ?? VARSAYILAN_OG, site).href;
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&family=Geist+Mono:wght@400;500&display=swap"
     />
+
+    <!--
+      Sayfa geçişleri (ADR-020): sekmeler arası yumuşak geçiş siteyi "uygulama"
+      gibi hissettirir. İçerik JS olmadan da tamamen çalışır; bu yalnızca
+      iyileştirme katmanıdır (ADR-005). Reduced-motion CSS'te ayrıca kapatılır.
+    -->
+    <ClientRouter />
 
     {jsonLd && <script type="application/ld+json" set:html={JSON.stringify(jsonLd)} />}
   </head>
@@ -86,146 +94,394 @@ const ogImageUrl = new URL(ogImage ?? VARSAYILAN_OG, site).href;
       <Footer />
     </div>
 
+    <button class="totop" aria-label="Sayfa başına dön" data-totop>
+      <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+        <path d="M12 19V5M5.5 11.5 12 5l6.5 6.5" />
+      </svg>
+    </button>
+
     <script>
+      /**
+       * Etkileşim katmanı (ADR-020).
+       *
+       * ClientRouter ile bu modül YALNIZCA BİR KEZ çalışır; her sayfa
+       * geçişinde `astro:page-load` tetiklenir. Sayfa başına kurulan tüm
+       * dinleyiciler AbortController ile bağlanır ve `astro:before-swap`
+       * anında topluca sökülür — aksi hâlde her geçişte dinleyici birikir
+       * ve sayfa yavaşlardı.
+       *
+       * Tüm hareket `prefers-reduced-motion` ve işaretçi türüne göre
+       * kapılıdır; içerik JS kapalıyken de eksiksiz çalışır (ADR-005).
+       */
+      import { navigate } from "astro:transitions/client";
+
       document.documentElement.classList.add("js");
 
-      // Scroll reveal — JS/hareket kapalıyken içerik görünür kalır (ADR-005)
       const reduced = window.matchMedia("(prefers-reduced-motion: reduce)");
-      const reveals = document.querySelectorAll<HTMLElement>(".u-reveal");
-      if ("IntersectionObserver" in window && !reduced.matches) {
-        const io = new IntersectionObserver(
-          (entries) => {
-            for (const entry of entries) {
-              if (entry.isIntersecting) {
-                entry.target.classList.add("is-visible");
-                io.unobserve(entry.target);
-              }
-            }
-          },
-          { rootMargin: "0px 0px -8% 0px", threshold: 0.05 },
-        );
-        reveals.forEach((el, index) => {
-          el.style.transitionDelay = `${(index % 4) * 55}ms`;
-          io.observe(el);
-        });
-      } else {
-        reveals.forEach((el) => el.classList.add("is-visible"));
+      const finePointer = window.matchMedia("(hover: hover) and (pointer: fine)");
+
+      /* ---------------- Komut paleti (Ctrl+K veya /) ------------------ */
+
+      type SearchEntry = { t: string; u: string; d: string; c: string; s: string };
+      /** İndeks bir kez iner, sayfa geçişlerinde bellekte kalır. */
+      let searchIndex: SearchEntry[] | null = null;
+
+      const foldTr = (value: string) =>
+        value
+          .replace(/İ/g, "i")
+          .replace(/I/g, "i")
+          .replace(/ı/g, "i")
+          .toLocaleLowerCase("tr")
+          .normalize("NFD")
+          .replace(/[̀-ͯ]/g, "")
+          .replace(/ğ/g, "g")
+          .replace(/ş/g, "s")
+          .replace(/ç/g, "c")
+          .replace(/ö/g, "o")
+          .replace(/ü/g, "u");
+
+      async function loadSearchIndex(): Promise<SearchEntry[]> {
+        if (!searchIndex) {
+          const response = await fetch("/search-index.json");
+          if (!response.ok) throw new Error(`Arama indeksi yüklenemedi (${response.status})`);
+          searchIndex = (await response.json()) as SearchEntry[];
+        }
+        return searchIndex;
       }
 
-      // Okuma ilerlemesi — yalnızca yazı sayfasında bar varsa
-      const progress = document.querySelector<HTMLElement>(".progress i");
-      const articleBody = document.querySelector<HTMLElement>(".prose");
-      if (progress && articleBody) {
-        let ticking = false;
-        const update = () => {
-          const rect = articleBody.getBoundingClientRect();
-          const total = rect.height - window.innerHeight;
-          const seen = -rect.top;
-          const ratio = total > 0 ? Math.min(1, Math.max(0, seen / total)) : 0;
-          progress.style.setProperty("--p", `${(ratio * 100).toFixed(1)}%`);
-          ticking = false;
-        };
-        addEventListener(
-          "scroll",
-          () => {
-            if (ticking) return;
-            ticking = true;
-            requestAnimationFrame(update);
-          },
-          { passive: true },
-        );
-        update();
-      }
+      let palette: HTMLDialogElement | null = null;
 
-      // İçindekiler: okunan bölümü işaretle
-      const tocLinks = document.querySelectorAll<HTMLAnchorElement>(".toc a");
-      if (tocLinks.length && "IntersectionObserver" in window) {
-        const byId = new Map<string, HTMLAnchorElement>();
-        tocLinks.forEach((link) => byId.set(decodeURIComponent(link.hash.slice(1)), link));
-        const headings = [...byId.keys()]
-          .map((id) => document.getElementById(id))
-          .filter((el): el is HTMLElement => el !== null);
-        const ho = new IntersectionObserver(
-          (entries) => {
-            for (const entry of entries) {
-              if (!entry.isIntersecting) continue;
-              tocLinks.forEach((link) => link.removeAttribute("aria-current"));
-              byId.get(entry.target.id)?.setAttribute("aria-current", "true");
-            }
-          },
-          { rootMargin: "0px 0px -70% 0px" },
-        );
-        headings.forEach((heading) => ho.observe(heading));
-      }
+      function buildPalette(): HTMLDialogElement {
+        const dialog = document.createElement("dialog");
+        dialog.className = "palette";
+        dialog.innerHTML = `
+          <div class="palette__box">
+            <input class="palette__input" type="search" placeholder="Yazılarda ara…"
+                   aria-label="Yazılarda ara" autocomplete="off" />
+            <ul class="palette__list" role="listbox" aria-label="Sonuçlar"></ul>
+            <p class="palette__hint"><kbd>↑↓</kbd> gezin · <kbd>Enter</kbd> aç · <kbd>Esc</kbd> kapat</p>
+          </div>`;
+        document.body.append(dialog);
 
-      // Görsel büyütme — render işi için gerekli. Klavye ile kapanır.
-      const lightboxRoot = document.querySelector<HTMLElement>("[data-lightbox]");
-      if (lightboxRoot) {
-        const images = lightboxRoot.querySelectorAll<HTMLImageElement>("img");
-        let overlay: HTMLDialogElement | null = null;
+        const input = dialog.querySelector<HTMLInputElement>(".palette__input")!;
+        const list = dialog.querySelector<HTMLUListElement>(".palette__list")!;
+        let results: SearchEntry[] = [];
+        let active = 0;
 
-        const open = (src: string, alt: string) => {
-          if (!overlay) {
-            overlay = document.createElement("dialog");
-            overlay.className = "lightbox";
-            overlay.innerHTML =
-              '<button class="lightbox__close" aria-label="Kapat">×</button><img alt="" />';
-            document.body.append(overlay);
-            overlay.addEventListener("click", (event) => {
-              if (event.target === overlay || (event.target as HTMLElement).closest(".lightbox__close")) {
-                overlay?.close();
-              }
+        const render = () => {
+          list.innerHTML = "";
+          results.forEach((entry, index) => {
+            const item = document.createElement("li");
+            item.setAttribute("role", "option");
+            if (index === active) item.setAttribute("aria-selected", "true");
+            item.innerHTML = `<b></b><span></span>`;
+            item.querySelector("b")!.textContent = entry.t;
+            item.querySelector("span")!.textContent = entry.c || entry.d;
+            item.addEventListener("click", () => {
+              dialog.close();
+              navigate(entry.u);
             });
-          }
-          const target = overlay.querySelector("img")!;
-          target.src = src;
-          target.alt = alt;
-          overlay.showModal();
+            list.append(item);
+          });
         };
 
-        images.forEach((image) => {
-          if (image.closest("a")) return; // zaten bağlantılıysa dokunma
-          image.classList.add("is-zoomable");
-          image.tabIndex = 0;
-          image.setAttribute("role", "button");
-          image.setAttribute("aria-label", `${image.alt || "Görsel"} — büyüt`);
-          image.addEventListener("click", () => open(image.currentSrc || image.src, image.alt));
-          image.addEventListener("keydown", (event) => {
-            if (event.key === "Enter" || event.key === " ") {
-              event.preventDefault();
-              open(image.currentSrc || image.src, image.alt);
-            }
-          });
+        const runQuery = async () => {
+          const query = input.value.trim();
+          if (!query) {
+            results = [];
+            render();
+            return;
+          }
+          try {
+            const entries = await loadSearchIndex();
+            const needle = foldTr(query);
+            results = entries
+              .filter((entry) => foldTr(`${entry.t} ${entry.c} ${entry.s}`).includes(needle))
+              .slice(0, 8);
+            active = 0;
+            render();
+          } catch {
+            list.innerHTML = "";
+            const item = document.createElement("li");
+            item.textContent = "Arama indeksi yüklenemedi — /arama sayfasını deneyin.";
+            list.append(item);
+          }
+        };
+
+        input.addEventListener("input", runQuery);
+        dialog.addEventListener("keydown", (event) => {
+          if (event.key === "ArrowDown") {
+            event.preventDefault();
+            active = Math.min(active + 1, results.length - 1);
+            render();
+          } else if (event.key === "ArrowUp") {
+            event.preventDefault();
+            active = Math.max(active - 1, 0);
+            render();
+          } else if (event.key === "Enter" && results[active]) {
+            event.preventDefault();
+            dialog.close();
+            navigate(results[active].u);
+          }
         });
+        dialog.addEventListener("click", (event) => {
+          if (event.target === dialog) dialog.close();
+        });
+        return dialog;
       }
 
-      // Sayaç animasyonu — yalnızca görünür olduğunda ve hareket izni varken
-      const counters = document.querySelectorAll<HTMLElement>("[data-count]");
-      if (counters.length && "IntersectionObserver" in window && !reduced.matches) {
-        const co = new IntersectionObserver(
-          (entries) => {
-            for (const entry of entries) {
-              if (!entry.isIntersecting) continue;
-              const el = entry.target as HTMLElement;
-              const target = Number.parseInt(el.dataset.count ?? "0", 10);
-              const suffix = el.dataset.suffix ?? "";
-              const started = performance.now();
-              const duration = 900;
-              const tick = (now: number) => {
-                const progress = Math.min(1, (now - started) / duration);
-                // easeOutCubic
-                const eased = 1 - Math.pow(1 - progress, 3);
-                el.textContent = Math.round(target * eased).toLocaleString("tr-TR") + suffix;
-                if (progress < 1) requestAnimationFrame(tick);
-              };
-              requestAnimationFrame(tick);
-              co.unobserve(el);
+      function openPalette() {
+        // Sayfa geçişi palet DOM'unu süpürmüş olabilir; kopmuşsa yeniden kur.
+        if (!palette || !palette.isConnected) palette = buildPalette();
+        palette.showModal();
+        palette.querySelector<HTMLInputElement>(".palette__input")?.select();
+      }
+
+      /* ---------------- Sayfa başına kurulum -------------------------- */
+
+      let pageAbort: AbortController | null = null;
+
+      document.addEventListener("astro:before-swap", () => pageAbort?.abort());
+
+      document.addEventListener("astro:page-load", () => {
+        pageAbort = new AbortController();
+        const { signal } = pageAbort;
+
+        /* Sol şerit kalıcı (transition:persist) — aktif sekmeyi elle güncelle */
+        const here = location.pathname;
+        document.querySelectorAll<HTMLAnchorElement>(".rail__item").forEach((link) => {
+          const target = link.getAttribute("href") ?? "";
+          const current =
+            target === "/" ? here === "/" : here === target || here.startsWith(`${target}/`);
+          if (current) link.setAttribute("aria-current", "page");
+          else link.removeAttribute("aria-current");
+        });
+
+        /* Klavye kısayolu: / veya Ctrl+K arama paletini açar */
+        window.addEventListener(
+          "keydown",
+          (event) => {
+            // event.target her zaman Element değildir (window/document olabilir)
+            const typing =
+              event.target instanceof Element &&
+              event.target.closest("input, textarea, [contenteditable]");
+            const combo = (event.ctrlKey || event.metaKey) && event.key.toLowerCase() === "k";
+            if (combo || (event.key === "/" && !typing)) {
+              event.preventDefault();
+              openPalette();
             }
           },
-          { threshold: 0.4 },
+          { signal },
         );
-        counters.forEach((el) => co.observe(el));
-      }
+
+        /* Scroll reveal — JS/hareket kapalıyken içerik görünür kalır (ADR-005) */
+        const reveals = document.querySelectorAll<HTMLElement>(".u-reveal");
+        if ("IntersectionObserver" in window && !reduced.matches) {
+          const io = new IntersectionObserver(
+            (entries) => {
+              for (const entry of entries) {
+                if (entry.isIntersecting) {
+                  entry.target.classList.add("is-visible");
+                  io.unobserve(entry.target);
+                }
+              }
+            },
+            { rootMargin: "0px 0px -8% 0px", threshold: 0.05 },
+          );
+          reveals.forEach((el, index) => {
+            el.style.transitionDelay = `${(index % 4) * 55}ms`;
+            io.observe(el);
+          });
+          signal.addEventListener("abort", () => io.disconnect());
+        } else {
+          reveals.forEach((el) => el.classList.add("is-visible"));
+        }
+
+        /* Okuma ilerlemesi + başa dön düğmesi */
+        const progress = document.querySelector<HTMLElement>(".progress i");
+        const articleBody = document.querySelector<HTMLElement>(".prose");
+        const toTop = document.querySelector<HTMLElement>("[data-totop]");
+        let ticking = false;
+        const onScroll = () => {
+          if (ticking) return;
+          ticking = true;
+          requestAnimationFrame(() => {
+            if (progress && articleBody) {
+              const rect = articleBody.getBoundingClientRect();
+              const total = rect.height - window.innerHeight;
+              const ratio = total > 0 ? Math.min(1, Math.max(0, -rect.top / total)) : 0;
+              progress.style.setProperty("--p", `${(ratio * 100).toFixed(1)}%`);
+            }
+            toTop?.classList.toggle("is-visible", window.scrollY > 600);
+            ticking = false;
+          });
+        };
+        window.addEventListener("scroll", onScroll, { passive: true, signal });
+        onScroll();
+
+        toTop?.addEventListener(
+          "click",
+          () => window.scrollTo({ top: 0, behavior: reduced.matches ? "auto" : "smooth" }),
+          { signal },
+        );
+
+        /* İçindekiler: okunan bölümü işaretle */
+        const tocLinks = document.querySelectorAll<HTMLAnchorElement>(".toc a");
+        if (tocLinks.length && "IntersectionObserver" in window) {
+          const byId = new Map<string, HTMLAnchorElement>();
+          tocLinks.forEach((link) => byId.set(decodeURIComponent(link.hash.slice(1)), link));
+          const headings = [...byId.keys()]
+            .map((id) => document.getElementById(id))
+            .filter((el): el is HTMLElement => el !== null);
+          const ho = new IntersectionObserver(
+            (entries) => {
+              for (const entry of entries) {
+                if (!entry.isIntersecting) continue;
+                tocLinks.forEach((link) => link.removeAttribute("aria-current"));
+                byId.get(entry.target.id)?.setAttribute("aria-current", "true");
+              }
+            },
+            { rootMargin: "0px 0px -70% 0px" },
+          );
+          headings.forEach((heading) => ho.observe(heading));
+          signal.addEventListener("abort", () => ho.disconnect());
+        }
+
+        /* Görsel büyütme — render işi için gerekli. Klavye ile açılıp kapanır. */
+        const lightboxRoot = document.querySelector<HTMLElement>("[data-lightbox]");
+        if (lightboxRoot) {
+          let overlay: HTMLDialogElement | null = null;
+          const open = (src: string, alt: string) => {
+            if (!overlay || !overlay.isConnected) {
+              overlay = document.createElement("dialog");
+              overlay.className = "lightbox";
+              overlay.innerHTML =
+                '<button class="lightbox__close" aria-label="Kapat">×</button><img alt="" />';
+              document.body.append(overlay);
+              overlay.addEventListener("click", (event) => {
+                const target = event.target as HTMLElement;
+                if (target === overlay || target.closest(".lightbox__close")) overlay?.close();
+              });
+            }
+            const image = overlay.querySelector("img")!;
+            image.src = src;
+            image.alt = alt;
+            overlay.showModal();
+          };
+          lightboxRoot.querySelectorAll<HTMLImageElement>("img").forEach((image) => {
+            if (image.closest("a")) return;
+            image.classList.add("is-zoomable");
+            image.tabIndex = 0;
+            image.setAttribute("role", "button");
+            image.setAttribute("aria-label", `${image.alt || "Görsel"} — büyüt`);
+            image.addEventListener(
+              "click",
+              () => open(image.currentSrc || image.src, image.alt),
+              { signal },
+            );
+            image.addEventListener(
+              "keydown",
+              (event) => {
+                if (event.key === "Enter" || event.key === " ") {
+                  event.preventDefault();
+                  open(image.currentSrc || image.src, image.alt);
+                }
+              },
+              { signal },
+            );
+          });
+        }
+
+        /* Sayaç animasyonu — görünür olduğunda ve hareket izni varken */
+        const counters = document.querySelectorAll<HTMLElement>("[data-count]");
+        if (counters.length && "IntersectionObserver" in window && !reduced.matches) {
+          const co = new IntersectionObserver(
+            (entries) => {
+              for (const entry of entries) {
+                if (!entry.isIntersecting) continue;
+                const el = entry.target as HTMLElement;
+                const target = Number.parseInt(el.dataset.count ?? "0", 10);
+                const suffix = el.dataset.suffix ?? "";
+                const started = performance.now();
+                const tick = (now: number) => {
+                  const t = Math.min(1, (now - started) / 900);
+                  const eased = 1 - Math.pow(1 - t, 3);
+                  el.textContent = Math.round(target * eased).toLocaleString("tr-TR") + suffix;
+                  if (t < 1) requestAnimationFrame(tick);
+                };
+                requestAnimationFrame(tick);
+                co.unobserve(el);
+              }
+            },
+            { threshold: 0.4 },
+          );
+          counters.forEach((el) => co.observe(el));
+          signal.addEventListener("abort", () => co.disconnect());
+        }
+
+        /* ---- Işık izi + 3B eğim (ADR-020) --------------------------------
+           Kartlar imleci izler: sarı bir ışık lekesi ve hafif perspektif
+           eğimi. 3B görselleştirme sitesine tematik olarak oturur.
+           Yalnızca ince işaretçi + hareket izni varken; dokunmatikte kapalı. */
+        if (finePointer.matches && !reduced.matches) {
+          const FX = ".tile, .course, .vcard, .product, .counter, .post-item";
+          let raf = 0;
+          window.addEventListener(
+            "pointermove",
+            (event) => {
+              if (raf) return;
+              raf = requestAnimationFrame(() => {
+                raf = 0;
+                const card = (event.target as HTMLElement)?.closest?.(FX) as HTMLElement | null;
+
+                // Önceki eğimli kartı sıfırla
+                const previous = document.querySelector<HTMLElement>("[data-tilting]");
+                if (previous && previous !== card) {
+                  previous.style.transform = "";
+                  previous.removeAttribute("data-tilting");
+                }
+                if (!card) return;
+
+                const rect = card.getBoundingClientRect();
+                const x = (event.clientX - rect.left) / rect.width;
+                const y = (event.clientY - rect.top) / rect.height;
+                card.style.setProperty("--mx", `${(x * 100).toFixed(1)}%`);
+                card.style.setProperty("--my", `${(y * 100).toFixed(1)}%`);
+
+                // Büyük kartlarda eğim rahatsız eder; yalnızca kompakt kartlar eğilir
+                if (rect.width < 620 && rect.height < 560) {
+                  const rx = ((0.5 - y) * 4).toFixed(2);
+                  const ry = ((x - 0.5) * 4).toFixed(2);
+                  card.style.transform = `perspective(760px) rotateX(${rx}deg) rotateY(${ry}deg) translateY(-2px)`;
+                  card.setAttribute("data-tilting", "");
+                }
+
+                // Profil kapağı: ışık imleci takip eder
+                const cover = (event.target as HTMLElement)?.closest?.(
+                  ".profile__cover",
+                ) as HTMLElement | null;
+                if (cover) {
+                  const cr = cover.getBoundingClientRect();
+                  cover.style.setProperty("--hx", `${(((event.clientX - cr.left) / cr.width) * 100).toFixed(1)}%`);
+                  cover.style.setProperty("--hy", `${(((event.clientY - cr.top) / cr.height) * 100).toFixed(1)}%`);
+                }
+              });
+            },
+            { passive: true, signal },
+          );
+          window.addEventListener(
+            "pointerout",
+            (event) => {
+              const card = (event.target as HTMLElement)?.closest?.(FX) as HTMLElement | null;
+              if (card && !card.contains(event.relatedTarget as Node)) {
+                card.style.transform = "";
+                card.removeAttribute("data-tilting");
+              }
+            },
+            { passive: true, signal },
+          );
+        }
+      });
     </script>
   </body>
 </html>

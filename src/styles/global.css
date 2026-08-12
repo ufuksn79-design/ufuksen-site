@@ -79,8 +79,10 @@ body {
   position: relative;
   aspect-ratio: 21 / 8;
   min-height: 190px;
+  /* Işık konumu imleci izler: JS --hx/--hy günceller (ADR-020).
+     JS yokken varsayılan konumda sabit durur — görsel fark kaybolmaz. */
   background:
-    radial-gradient(120% 120% at 20% 10%, rgba(255, 212, 0, 0.14), transparent 55%),
+    radial-gradient(140% 120% at var(--hx, 22%) var(--hy, 12%), rgba(255, 212, 0, 0.16), transparent 55%),
     linear-gradient(160deg, #23232a, #17171b 70%);
   overflow: hidden;
 }
@@ -821,4 +823,233 @@ html:not(.js) .skill__bar i {
 .lightbox__close:focus-visible {
   background: var(--c-accent);
   color: var(--c-on-accent);
+}
+
+/* --------------------------------------------------------------------- */
+/* Etkileşim katmanı (ADR-020)                                            */
+/*                                                                        */
+/* Zorunlu kural: kullanım eğlenceli, dinamik ve sezgisel olacak.         */
+/* Sınırlar: tüm hareket `prefers-reduced-motion` ile kapanır, hover      */
+/* hileleri dokunmatikte devre dışıdır, içerik JS olmadan da eksiksiz     */
+/* çalışır (ADR-005). Eğlence içeriğin önüne geçmez.                      */
+/* --------------------------------------------------------------------- */
+
+/* Düğmeler basınca yaylanır — dokunuşa "cevap veren" arayüz hissi */
+.btn:active {
+  transform: translateY(0) scale(0.96);
+  transition-duration: 60ms;
+}
+
+/* Sayfa geçiş animasyonu hareket azaltma tercihinde tamamen kapanır */
+@media (prefers-reduced-motion: reduce) {
+  ::view-transition-group(*),
+  ::view-transition-old(*),
+  ::view-transition-new(*) {
+    animation: none !important;
+  }
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .tile,
+  .course,
+  .vcard,
+  .product,
+  .counter,
+  .post-item {
+    position: relative;
+    transition-property: transform, background, border-color, opacity;
+    transition-duration: var(--d-base);
+    transition-timing-function: var(--e-out);
+  }
+
+  /* İmleci izleyen sarı ışık lekesi (JS --mx/--my günceller) */
+  .tile::after,
+  .course::after,
+  .product::after,
+  .counter::after,
+  .post-item::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: inherit;
+    pointer-events: none;
+    opacity: 0;
+    transition: opacity var(--d-base) var(--e-out);
+    background: radial-gradient(
+      240px circle at var(--mx, 50%) var(--my, 50%),
+      rgba(255, 212, 0, 0.09),
+      transparent 65%
+    );
+  }
+  .tile:hover::after,
+  .course:hover::after,
+  .product:hover::after,
+  .counter:hover::after,
+  .post-item:hover::after {
+    opacity: 1;
+  }
+
+  /* "Taslaktan render'a": kapak görselleri soluk başlar, imleçle
+     renklenir. 3D render sitesine tematik bir gönderme. Bu blok yalnızca
+     hover cihazlarında — dokunmatikte görseller her zaman tam renkli. */
+  .post-item__thumb,
+  .vcard img,
+  .course img {
+    filter: saturate(0.55) brightness(0.94);
+    transition:
+      filter var(--d-slow) var(--e-out),
+      transform var(--d-slow) var(--e-out);
+  }
+  .post-item:hover .post-item__thumb,
+  .post-item:focus-within .post-item__thumb,
+  .vcard:hover img,
+  .vcard:focus-within img,
+  .course:hover img,
+  .course:focus-within img {
+    filter: none;
+  }
+}
+
+/* ---- Başa dön düğmesi ------------------------------------------------ */
+
+.totop {
+  position: fixed;
+  right: var(--s-4);
+  /* Mobilde alt sekme çubuğunun üstünde durur */
+  bottom: calc(84px + env(safe-area-inset-bottom, 0px) + var(--s-3));
+  z-index: var(--z-nav);
+  width: var(--tap-min);
+  height: var(--tap-min);
+  border-radius: 50%;
+  border: 1px solid var(--c-line-strong);
+  background: var(--c-surface);
+  color: var(--c-text);
+  display: grid;
+  place-items: center;
+  cursor: pointer;
+  opacity: 0;
+  transform: translateY(8px);
+  pointer-events: none;
+  transition:
+    opacity var(--d-base) var(--e-out),
+    transform var(--d-base) var(--e-out),
+    background var(--d-fast) var(--e-out),
+    color var(--d-fast) var(--e-out);
+}
+.totop.is-visible {
+  opacity: 1;
+  transform: none;
+  pointer-events: auto;
+}
+.totop svg {
+  width: 18px;
+  height: 18px;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+.totop:hover,
+.totop:focus-visible {
+  background: var(--c-accent);
+  color: var(--c-on-accent);
+  border-color: var(--c-accent);
+}
+@media (min-width: 1024px) {
+  .totop {
+    right: var(--s-6);
+    bottom: var(--s-6);
+  }
+}
+
+/* ---- Komut paleti (Ctrl+K veya /) ----------------------------------- */
+
+.palette {
+  border: 0;
+  padding: 0;
+  background: transparent;
+  width: min(560px, 92vw);
+  margin: 12vh auto auto;
+}
+.palette::backdrop {
+  background: rgba(8, 8, 10, 0.7);
+  backdrop-filter: blur(6px);
+}
+.palette__box {
+  background: var(--c-surface);
+  border: 1px solid var(--c-line-strong);
+  border-radius: var(--r-lg);
+  overflow: hidden;
+  box-shadow: 0 24px 80px rgba(0, 0, 0, 0.5);
+}
+.palette__input {
+  width: 100%;
+  border: 0;
+  border-bottom: 1px solid var(--c-line);
+  background: transparent;
+  color: var(--c-text);
+  font: inherit;
+  font-size: var(--t-body-lg);
+  padding: var(--s-4) var(--s-6);
+  outline: none;
+}
+.palette__list {
+  list-style: none;
+  margin: 0;
+  padding: var(--s-2);
+  max-height: 46vh;
+  overflow-y: auto;
+  display: grid;
+  gap: 2px;
+}
+.palette__list li {
+  display: grid;
+  gap: 2px;
+  padding: var(--s-3) var(--s-4);
+  min-height: var(--tap-min);
+  border-radius: var(--r-md);
+  cursor: pointer;
+  color: var(--c-text-muted);
+  font-size: var(--t-small);
+}
+.palette__list li b {
+  color: var(--c-text);
+  font-weight: 600;
+}
+.palette__list li span {
+  font-family: var(--font-mono);
+  font-size: var(--t-micro);
+  color: var(--c-text-faint);
+}
+.palette__list li:hover,
+.palette__list li[aria-selected="true"] {
+  background: var(--c-accent-wash);
+}
+.palette__list li[aria-selected="true"] b {
+  color: var(--c-accent);
+}
+.palette__hint {
+  padding: var(--s-2) var(--s-4) var(--s-3);
+  border-top: 1px solid var(--c-line);
+  font-family: var(--font-mono);
+  font-size: var(--t-micro);
+  color: var(--c-text-faint);
+  max-width: none;
+}
+.palette__hint kbd {
+  border: 1px solid var(--c-line-strong);
+  border-radius: 4px;
+  padding: 0 4px;
+}
+@media (prefers-reduced-motion: no-preference) {
+  .palette[open] .palette__box {
+    animation: palette-in 200ms var(--e-out);
+  }
+  @keyframes palette-in {
+    from {
+      opacity: 0;
+      transform: translateY(-8px) scale(0.985);
+    }
+  }
 }

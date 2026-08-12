@@ -471,3 +471,42 @@ Sveltia/Decap kaydederken dosyanın tamamını yeniden yazar. Tanımlanmayan ala
 ### WordPress ne olacak
 
 Geçiş tamamlanana kadar kapatılmaz (ADR-003). Yayın sonrası yalnızca yedek olarak durur; içerik kaynağı olarak kullanılmaz.
+
+---
+
+## ADR-020 — Etkileşim katmanı: "eğlenceli, dinamik, sezgisel" zorunlu kuralı
+
+**Durum:** Kabul edildi
+**Tarih:** 2026-08-01
+
+### Karar
+
+Kullanıcı yeni bir zorunlu kural bildirdi: kullanım eğlenceli, dinamik ve sezgisel olacak; kullanıcı sitede keyifle vakit geçirecek. Mevcut "ölçülü ve kontrollü" tasarım korunarak üzerine bir **etkileşim katmanı** eklendi:
+
+| Öğe | Ne yapar |
+|---|---|
+| Sayfa geçişleri (Astro ClientRouter) | Sekmeler arası yumuşak geçiş; sol şerit `transition:persist` ile sabit kalır — site "uygulama" gibi hissedilir |
+| Komut paleti (`/` veya `Ctrl+K`) | Her sayfadan anında arama; ok tuşlarıyla gezinme, Enter ile SPA geçişi |
+| Işık izi + 3B eğim | Kartlar imleci izler: sarı ışık lekesi ve ≤4° perspektif eğimi — 3D sitesine tematik |
+| "Taslaktan render'a" | Kapak görselleri soluk başlar, imleçle renklenir — sitenin işine gönderme |
+| İmleci izleyen kapak ışığı | Profil kapağındaki sarı ışık imleçle hareket eder |
+| Video şeridi (mobil) | Parmakla kaydır-bırak, karta yapışan yatay şerit |
+| Başa dön düğmesi | 600px sonrası belirir; mobilde alt çubuğun üstünde |
+| Mikro dokunuşlar | Düğme yaylanması, reveal'e hafif ölçek |
+
+### Önceki kurallarla uzlaşma — neyin değişmediği
+
+`PROJECT.md` "animasyon içeriğin önüne geçmemeli" ve ADR-005 "progressive enhancement" kuralları **geçerliliğini koruyor**:
+
+- Tüm hareket `prefers-reduced-motion` ile kapanır (sayfa geçişi dahil).
+- Hover hileleri yalnızca `(hover:hover) and (pointer:fine)` cihazlarda; dokunmatikte görseller her zaman tam renkli.
+- İçerik JS olmadan eksiksiz çalışır; palet kapalıyken `/arama` sayfası aynı işi görür.
+- Kütüphane eklenmedi (`architecture.md` önceliği: CSS → IntersectionObserver → ancak gerekirse kütüphane). GSAP/Motion gerekmedi.
+
+### Maliyet
+
+JS 0 KB'den ~12 KB'ye çıktı (etkileşim modülü ~4 KB + ClientRouter çalışma zamanı). Sayfa geçişlerinde dinleyiciler `AbortController` ile sökülür — birikme yok. Bu maliyet, zorunlu kuralın karşılığı olarak kabul edildi.
+
+### Doğrulanan hata
+
+İlk sürümde klavye dinleyicisi `event.target.closest` çağrısında patladı (hedef `window` olabiliyor) ve `transition:persist` bileşen etiketinden kök elemana aktarılmadı. İkisi de tarayıcıda yakalanıp düzeltildi; palet, ışık izi, ilerleme ve şerit senkronu iki SPA geçişi sonrasında yeniden doğrulandı.

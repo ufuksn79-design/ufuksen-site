@@ -28,6 +28,38 @@ Format, Keep a Changelog yaklaşımına yakındır. Tarihler `YYYY-MM-DD` biçim
 - Kaynak WordPress sistemi migration boyunca salt okunur kabul edildi.
 - Dry-run, yedek ve rollback zorunlulukları eklendi.
 
+## [0.5.0] — 2026-08-01
+
+Etkileşim katmanı (ADR-020): "eğlenceli, dinamik, sezgisel" zorunlu kuralı.
+
+### Added
+
+- Sayfa geçişleri (Astro ClientRouter); sol şerit `transition:persist` ile sabit, aktif sekme her geçişte JS ile güncelleniyor
+- Komut paleti: `/` veya `Ctrl+K` ile her sayfadan arama; ok tuşları + Enter ile SPA geçişi; indeks bir kez inip bellekte kalıyor
+- Kartlarda imleci izleyen sarı ışık lekesi + ≤4° 3B eğim (yalnızca ince işaretçi, reduced-motion kapalıyken)
+- "Taslaktan render'a": kapak görselleri soluk başlayıp imleçle renkleniyor — dokunmatikte her zaman tam renkli
+- Profil kapağında imleci izleyen ışık
+- Mobilde video şeridi parmakla kaydırılan scroll-snap şeridine dönüştü
+- Başa dön düğmesi (600px sonrası; mobilde alt çubuğun üstünde; 44px hedef)
+- Düğme yaylanması, reveal'e hafif ölçek
+
+### Changed
+
+- Base script'i `astro:page-load` + `AbortController` düzenine taşındı: her geçişte dinleyiciler kurulup sökülüyor, birikme yok; lightbox/palet DOM'u geçişte kopmuşsa yeniden kuruluyor
+
+### Fixed
+
+- Klavye dinleyicisi `event.target` Element olmayınca patlıyordu (`closest` yok); Element kontrolü eklendi
+- `transition:persist` bileşen etiketinde etkisizdi; Rail'in kök elemanına taşındı
+
+### Doğrulama (tarayıcı)
+
+- İki SPA geçişi sonrasında palet, ilerleme çubuğu, sayaçlar, şerit senkronu yeniden kuruluyor
+- Işık izi `--mx` değeri canlı ölçüldü; mobilde görsel filtresi `none` (dokunmatik istisnası çalışıyor)
+- 375px'te yatay taşma yok; video şeridi kendi içinde kaydırılıyor (`scroll-snap: x mandatory`)
+- Başa dön düğmesi mobilde alt çubuğu kapatmıyor (724 < 735)
+- JS maliyeti: ~12 KB toplam (önceden 0); kütüphane yok
+
 ## [0.4.0] — 2026-07-31
 
 ### Added — Eğitim setleri (gerçek Udemy verisi)

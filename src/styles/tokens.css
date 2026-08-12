@@ -264,7 +264,8 @@ a {
 
 .js .u-reveal {
   opacity: 0;
-  transform: translateY(18px);
+  /* Hafif ölçek, düz kaymadan daha "canlı" bir giriş verir (ADR-020) */
+  transform: translateY(18px) scale(0.985);
   transition:
     opacity var(--d-slow) var(--e-out),
     transform var(--d-slow) var(--e-out);
