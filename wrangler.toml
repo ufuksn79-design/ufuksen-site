@@ -1,8 +1,16 @@
-# Cloudflare Pages yapılandırması (ADR-019 revizyonu).
+# Cloudflare Workers (statik varlık) yapılandırması — ADR-019 revizyon 2.
 #
-# Netlify yerine Cloudflare Pages seçildi: panel girişi için zaten bir
-# Cloudflare Worker kurulması gerekiyor (Netlify Identity kullanımdan
-# kaldırıldı), DNS de zaten Cloudflare'de. Tek sağlayıcıda toplandı.
+# Cloudflare'in yeni paneli depoyu "Worker" akışıyla bağlıyor (Pages sekmesi
+# artık geri planda). Bu dosya siteyi sunucu kodu OLMADAN, salt statik varlık
+# olarak yayınlar: `npm run build` -> dist/ -> `npx wrangler deploy`.
+#
+# dist/ içindeki `_redirects` ve `_headers` dosyaları Workers Assets
+# tarafından doğrudan okunur — 59 yönlendirme ve 410 kuralları çalışır.
+
 name = "ufuksen-site"
 compatibility_date = "2026-01-01"
-pages_build_output_dir = "dist"
+
+[assets]
+directory = "./dist"
+# Bulunamayan yol için kendi 404 sayfamız sunulur (dist/404.html)
+not_found_handling = "404-page"
