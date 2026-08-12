@@ -28,6 +28,30 @@ Format, Keep a Changelog yaklaşımına yakındır. Tarihler `YYYY-MM-DD` biçim
 - Kaynak WordPress sistemi migration boyunca salt okunur kabul edildi.
 - Dry-run, yedek ve rollback zorunlulukları eklendi.
 
+## [0.6.0] — 2026-08-12
+
+Cloudflare yayını: site `ufuksen-site.ufuksn79.workers.dev` adresinde canlı; panel altyapısı tamam.
+
+### Added
+
+- GitHub deposu `ufuksn79-design/ufuksen-site` (eski işaretli hesaptan taşındı)
+- Cloudflare Workers Git entegrasyonu: her push otomatik derleme + yayın
+- Sveltia giriş köprüsü (`sveltia-cms-auth.ufuksn79.workers.dev`) kuruldu, OAuth anahtarları Cloudflare'de şifreli
+- `worker/index.js` — URL davranış katmanı (.htaccess'in Cloudflare karşılığı): .html birebir, dizin indeksleri yönlendirmesiz, 410 Gone, AMP/attachment/eski arama 301'leri, sondaki eğik çizgi kanonikleştirme
+- `.assetsignore` — 25 MiB üstü, hiçbir içerikte kullanılmayan video Cloudflare dışında bırakıldı (silinmedi)
+
+### Fixed
+
+- **Cloudflare varsayılanı `/yazi.html`i 307 ile uzantısız yola yönlendiriyordu** (ADR-007 ihlali) — `html_handling: none` + worker ile davranış devralındı
+- **`_redirects` içindeki `/?s=` satırı Cloudflare'de yanlış ayrışıp ana sayfayı yönlendiriyordu** — query/orta-splat kuralları dosyadan çıkarıldı, worker'a taşındı
+- İlk 3 dağıtım "Asset too large" ile düşüyordu: 34,1 MiB'lik kullanılmayan `enscapeegitim.mp4` (yerelde birebir yeniden üretilip çözüldü)
+
+### Doğrulama (canlı, workers.dev)
+
+- 11 sayfa örneklemi 200, yönlendirmesiz; Türkçe yüzde-kodlu slug dahil
+- Miras 301, ?amp=1, /slug.html/amp, /?s=, /blog/ kanonikleştirme — hepsi doğru hedefe
+- Kaldırılan içerik 410, bilinmeyen yol 404 (kendi sayfamızla), /admin 200
+
 ## [0.5.0] — 2026-08-01
 
 Etkileşim katmanı (ADR-020): "eğlenceli, dinamik, sezgisel" zorunlu kuralı.
