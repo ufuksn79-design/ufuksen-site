@@ -7,6 +7,7 @@ import { getVideos, videoThumb } from "../lib/discover";
 import CourseCard, { type Course } from "../components/CourseCard.astro";
 import courseData from "../content/courses.json";
 import productData from "../content/products.json";
+import seo from "../content/seo.json";
 
 const posts = await getPosts();
 const categories = await getVisibleCategories();
@@ -67,8 +68,8 @@ const icons: Record<string, string> = {
   jsonLd={{
     "@context": "https://schema.org",
     "@type": "Person",
-    name: "Ufuk Şen",
-    jobTitle: "3D Görselleştirme Uzmanı ve Eğitmen",
+    name: seo.kisiAdi || "Ufuk Şen",
+    jobTitle: seo.kisiUnvani || "3D Görselleştirme Uzmanı ve Eğitmen",
     url: site.href,
     address: { "@type": "PostalAddress", addressLocality: "Ankara", addressCountry: "TR" },
     knowsAbout: ["SketchUp", "Twinmotion", "D5 Render", "Enscape", "V-Ray", "Mimari görselleştirme"],

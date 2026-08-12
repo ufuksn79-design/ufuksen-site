@@ -25,6 +25,8 @@ const seo = z.object({
   focusKeyword: z.string().nullable().optional(),
   canonicalUrl: z.string().nullable(),
   ogImage: z.string().nullable(),
+  /** Panelden açılırsa yazı arama motorlarına kapatılır (noindex). */
+  noindex: z.boolean().optional(),
 });
 
 const term = z.object({

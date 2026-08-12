@@ -115,7 +115,7 @@ const tools = props.kind === "post" ? softwareOf(props.post) : [];
       description={props.post.data.seo.description ?? summarize(props.post, 155)}
       path={props.post.data.url}
       ogImage={props.post.data.featuredImage?.localPath ?? props.post.data.seo.ogImage}
-      noindex={props.parked}
+      noindex={props.parked || props.post.data.seo.noindex === true}
       type="article"
       publishedAt={isoDate(props.post.data.publishedAt)}
       modifiedAt={isoDate(props.post.data.modifiedAt)}

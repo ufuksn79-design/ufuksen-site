@@ -3,6 +3,7 @@ import { ClientRouter } from "astro:transitions";
 import "../styles/global.css";
 import Rail from "../components/Rail.astro";
 import Footer from "../components/Footer.astro";
+import seo from "../content/seo.json";
 
 interface Props {
   title: string;
@@ -35,9 +36,20 @@ const {
 const site = Astro.site ?? new URL("https://www.ufuksen.com");
 const canonical = new URL(path, site).href;
 
-/** Sayfaya özel görsel yoksa marka görseli kullanılır; her sayfa og:image taşır. */
-const VARSAYILAN_OG = "/media/marka/ufuksenlogo.png";
-const ogImageUrl = new URL(ogImage ?? VARSAYILAN_OG, site).href;
+/**
+ * Site geneli SEO ayarları panelden (src/content/seo.json) gelir.
+ * Her alan burada gerçekten kullanılır — panelde sahte kontrol yok.
+ */
+const siteTitle = seo.siteBasligi || "Ufuk Şen";
+// Sayfa açıklaması yoksa paneldeki varsayılan açıklama devreye girer.
+const metaDescription = description || seo.varsayilanAciklama || null;
+// Paylaşım görseli: sayfaya özel > panel varsayılanı > marka logosu.
+const ogImageUrl = new URL(
+  ogImage || seo.varsayilanPaylasimGorseli || "/media/marka/ufuksenlogo.png",
+  site,
+).href;
+const twitterSite = (seo.twitterKullanici || "").trim();
+const gaId = (seo.googleAnalyticsId || "").trim();
 ---
 
 <!doctype html>
@@ -46,21 +58,28 @@ const ogImageUrl = new URL(ogImage ?? VARSAYILAN_OG, site).href;
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>{title}</title>
-    {description && <meta name="description" content={description} />}
+    {metaDescription && <meta name="description" content={metaDescription} />}
     <link rel="canonical" href={canonical} />
     {noindex && <meta name="robots" content="noindex, nofollow" />}
     <meta name="theme-color" content="#17171b" />
 
-    <meta property="og:site_name" content="Ufuk Şen" />
+    {/* Site doğrulama kodları — panelden girilir, boşsa hiç yazılmaz */}
+    {seo.googleDogrulama && (
+      <meta name="google-site-verification" content={seo.googleDogrulama} />
+    )}
+    {seo.bingDogrulama && <meta name="msvalidate.01" content={seo.bingDogrulama} />}
+
+    <meta property="og:site_name" content={siteTitle} />
     <meta property="og:locale" content="tr_TR" />
     <meta property="og:type" content={type} />
     <meta property="og:title" content={title} />
-    {description && <meta property="og:description" content={description} />}
+    {metaDescription && <meta property="og:description" content={metaDescription} />}
     <meta property="og:url" content={canonical} />
     <meta property="og:image" content={ogImageUrl} />
     {publishedAt && <meta property="article:published_time" content={publishedAt} />}
     {modifiedAt && <meta property="article:modified_time" content={modifiedAt} />}
     <meta name="twitter:card" content={ogImage ? "summary_large_image" : "summary"} />
+    {twitterSite && <meta name="twitter:site" content={twitterSite} />}
 
     <link rel="icon" href="/media/marka/favicon-192.jpg" sizes="192x192" />
     <link rel="apple-touch-icon" href="/media/marka/favicon-192.jpg" />
@@ -82,6 +101,27 @@ const ogImageUrl = new URL(ogImage ?? VARSAYILAN_OG, site).href;
     <ClientRouter />
 
     {jsonLd && <script type="application/ld+json" set:html={JSON.stringify(jsonLd)} />}
+
+    {/*
+      Google Analytics — YALNIZCA panelde ID girilmişse yüklenir.
+      Boş (varsayılan) hâlde hiçbir izleme kodu, hiçbir çerez yok.
+      KVKK/çerez onayı sorumluluğu site sahibindedir (seo.json notu).
+    */}
+    {gaId && (
+      <>
+        <script
+          is:inline
+          src={`https://www.googletagmanager.com/gtag/js?id=${gaId}`}
+          async
+        />
+        <script is:inline set:html={`
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', '${gaId}', { anonymize_ip: true });
+        `} />
+      </>
+    )}
   </head>
   <body>
     <a class="u-skip-link" href="#main">İçeriğe atla</a>

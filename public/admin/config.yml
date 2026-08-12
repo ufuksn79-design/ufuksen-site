@@ -102,6 +102,14 @@ collections:
               hint: "Google'da görünen açıklama. 120–160 karakter idealdir.",
             }
           - { label: Odak kelime, name: focusKeyword, widget: string, required: false }
+          - {
+              label: Arama motorlarına kapat (noindex),
+              name: noindex,
+              widget: boolean,
+              default: false,
+              required: false,
+              hint: "Açılırsa bu yazı Google'da listelenmez. Normal yazılarda KAPALI bırakın.",
+            }
           - { label: Canonical, name: canonicalUrl, widget: hidden, required: false }
           - { label: OG görseli, name: ogImage, widget: hidden, required: false }
       # --- Aşağıdakiler teknik alanlar; panelde görünmez ama korunur ---
@@ -160,6 +168,60 @@ collections:
   - name: ayarlar
     label: Site Ayarları
     files:
+      - name: seo
+        label: SEO Ayarları
+        file: src/content/seo.json
+        fields:
+          - { label: Açıklama, name: aciklama, widget: hidden }
+          - {
+              label: Site başlığı,
+              name: siteBasligi,
+              widget: string,
+              hint: "Marka adı. Sosyal paylaşımlarda ve site adı olarak kullanılır.",
+            }
+          - {
+              label: Varsayılan açıklama,
+              name: varsayilanAciklama,
+              widget: text,
+              hint: "Kendi açıklaması olmayan sayfalarda Google'da görünen metin. 120–160 karakter.",
+            }
+          - {
+              label: Varsayılan paylaşım görseli,
+              name: varsayilanPaylasimGorseli,
+              widget: image,
+              hint: "Sosyal medyada paylaşılınca çıkan görsel. 1200×630 px önerilir.",
+            }
+          - { label: Kişi adı (schema), name: kisiAdi, widget: string }
+          - { label: Kişi unvanı (schema), name: kisiUnvani, widget: string }
+          - {
+              label: X (Twitter) kullanıcısı,
+              name: twitterKullanici,
+              widget: string,
+              required: false,
+              hint: "@ ile başlayan kullanıcı adı. Twitter kartlarında kullanılır.",
+            }
+          - {
+              label: Google Search Console doğrulama kodu,
+              name: googleDogrulama,
+              widget: string,
+              required: false,
+              hint: "Search Console 'HTML etiketi' yönteminde verilen content değeri. Sadece kod.",
+            }
+          - {
+              label: Bing doğrulama kodu,
+              name: bingDogrulama,
+              widget: string,
+              required: false,
+            }
+          - {
+              label: Google Analytics ID (isteğe bağlı),
+              name: googleAnalyticsId,
+              widget: string,
+              required: false,
+              hint: "BOŞ bırakılırsa izleme yok. Doldurulursa Analytics yüklenir — KVKK/çerez onayı sizin sorumluluğunuzda.",
+            }
+          - { label: Not, name: not, widget: hidden, required: false }
+
       - name: urunler
         label: Ürünler ve Eklentiler
         file: src/content/products.json

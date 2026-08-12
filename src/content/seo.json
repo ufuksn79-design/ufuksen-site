@@ -1,0 +1,17 @@
+{
+  "aciklama": "Site geneli SEO ayarları. Her alan sitede gerçekten kullanılır (Base.astro okur); boş bırakılan alan hiçbir çıktı üretmez.",
+  "siteBasligi": "Ufuk Şen",
+  "varsayilanAciklama": "SketchUp, Twinmotion, D5 Render ve Enscape üzerine eğitimler, eklentiler ve mimari görselleştirme projeleri.",
+  "varsayilanPaylasimGorseli": "/media/marka/ufuksenlogo.png",
+  "kisiAdi": "Ufuk Şen",
+  "kisiUnvani": "3D Görselleştirme Uzmanı ve Eğitmen",
+  "twitterKullanici": "@u_sen",
+  "googleDogrulama": "",
+  "bingDogrulama": "",
+  "googleAnalyticsId": "",
+  "not": {
+    "googleDogrulama": "Google Search Console 'HTML etiketi' yönteminde verdiği content=\"...\" değeri. Sadece kod, tırnaksız.",
+    "varsayilanPaylasimGorseli": "Sosyal medyada paylaşılınca çıkan görsel. 1200×630 px önerilir. Yazının kendi öne çıkan görseli varsa o kullanılır.",
+    "googleAnalyticsId": "İSTEĞE BAĞLI ve varsayılan olarak BOŞ. Doldurulursa Google Analytics yüklenir — bu KVKK/çerez onayı gerektirir, sorumluluğu size aittir. Boş bırakılırsa hiçbir izleme kodu yüklenmez."
+  }
+}
