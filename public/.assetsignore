@@ -1,0 +1,10 @@
+# Cloudflare Workers yayınından hariç tutulan varlıklar.
+#
+# Workers'ın dosya başına sınırı 25 MiB. Aşağıdaki video 34,1 MiB ve
+# HİÇBİR içerikte referans edilmiyor (grep ile doğrulandı, 2026-08-12) —
+# medya kütüphanesi göçüyle dolaylı gelmişti. Depoda ve paylaşımlı hosting
+# kopyasında durmaya devam eder; yalnızca Cloudflare'e yüklenmez.
+#
+# Bir gün bir yazıda kullanılmak istenirse: YouTube'a yüklenip gömülmeli
+# ya da 25 MiB altına sıkıştırılmalı (ffmpeg mevcut).
+media/2024/04/enscapeegitim.mp4
