@@ -7,14 +7,14 @@
 # `widget: hidden` olarak tanımlandı — tanımlanmasalardı kayıt sırasında
 # sessizce silinirlerdi ve göç doğrulaması bozulurdu.
 #
-# Depo: github.com/usen/ufuksen-site  (private olarak açılmalı)
+# Depo: github.com/ufuksn79-design/ufuksen-site  (private)
 #
 # Depo adı farklı açılırsa aşağıdaki `repo` satırı da güncellenmeli;
 # yoksa panel giriş yaptıktan sonra "depo bulunamadı" der.
 
 backend:
   name: github
-  repo: usen/ufuksen-site
+  repo: ufuksn79-design/ufuksen-site
   branch: main
   # GitHub girişini yapan köprü (Cloudflare Worker).
   # Netlify Identity / Git Gateway 2026'da kullanımdan kaldırıldı; yeni
