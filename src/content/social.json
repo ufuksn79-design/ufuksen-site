@@ -1,11 +1,5 @@
 {
   "aciklama": "Sosyal medya bağlantıları. Tek kaynak — üst şerit, profil kartı ve footer buradan besleniyor.",
-  "kaynak": {
-    "youtube": "Arşivdeki videoların oEmbed sorgusuyla bulundu (40 örneklemin 32'si bu kanal).",
-    "facebook": "Eski sitenin ana sayfasından ve iletişim sayfasından okundu.",
-    "twitter": "Eski sitenin ana sayfasından okundu.",
-    "linkedin": "Kullanıcı tarafından verildi (2026-07-31). Eski sitede profil bağlantısı yoktu, yalnızca paylaşım düğmesi vardı."
-  },
   "baglantilar": [
     {
       "id": "youtube",
@@ -25,7 +19,7 @@
       "id": "linkedin",
       "ad": "LinkedIn",
       "url": "https://www.linkedin.com/in/ufuk-sen/",
-      "etiket": "LinkedIn profili",
+      "etiket": "LinkedIn profilim",
       "aktif": true
     },
     {
@@ -35,5 +29,11 @@
       "etiket": "X (Twitter) profili",
       "aktif": true
     }
-  ]
+  ],
+  "kaynak": {
+    "youtube": "Arşivdeki videoların oEmbed sorgusuyla bulundu (40 örneklemin 32'si bu kanal).",
+    "facebook": "Eski sitenin ana sayfasından ve iletişim sayfasından okundu.",
+    "twitter": "Eski sitenin ana sayfasından okundu.",
+    "linkedin": "Kullanıcı tarafından verildi (2026-07-31). Eski sitede profil bağlantısı yoktu, yalnızca paylaşım düğmesi vardı."
+  }
 }
