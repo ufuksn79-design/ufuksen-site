@@ -19,8 +19,7 @@ backend:
   # GitHub girişini yapan köprü (Cloudflare Worker).
   # Netlify Identity / Git Gateway 2026'da kullanımdan kaldırıldı; yeni
   # kurulumlarda önerilmiyor. Bu yüzden resmi Sveltia yolu kullanılıyor.
-  # Worker kurulduktan sonra adresi buraya yazılacak:
-  base_url: WORKER_ADRESI # <-- https://sveltia-cms-auth.XXX.workers.dev
+  base_url: https://sveltia-cms-auth.ufuksn79.workers.dev
   commit_messages:
     create: "içerik: {{collection}} eklendi — {{slug}}"
     update: "içerik: {{collection}} güncellendi — {{slug}}"
