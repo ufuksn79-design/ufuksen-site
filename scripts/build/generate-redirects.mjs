@@ -42,19 +42,13 @@ for (const [from, to] of entries) {
 
 lines.push(
   "",
-  "# --- AMP varyantları -----------------------------------------------------",
-  "# /{slug}.html?amp=1 : statik hosting query'yi yok sayar, kanonik sayfayı",
-  "#                      zaten sunar; kural gerekmez.",
-  "# /{slug}.html/amp   : joker kuralla kanonik sayfaya 301.",
-  "/*/amp     /:splat  301",
-  "/*/amp/    /:splat  301",
-  "",
-  "# --- WordPress ek-dosya (attachment) sayfaları ---------------------------",
-  "# Kaynak sistem de bunları üst içeriğe 301'liyor.",
-  "/*.html/*  /:splat.html  301",
-  "",
-  "# --- Eski site içi arama -------------------------------------------------",
-  "/?s=:term  /arama?q=:term  301",
+  "# --- AMP / attachment / eski arama ---------------------------------------",
+  "# Bu kalıplar BİLEREK burada değil: Cloudflare _redirects orta-yol splat",
+  "# (/*.html/*) ve query eşleşmesini (/?s=) desteklemiyor; query'li satır",
+  "# yanlış ayrışıp ANA SAYFAYI yönlendiriyordu (canlıda ölçüldü, 2026-08-12).",
+  "# Hepsi worker/index.js içinde ele alınıyor: ?amp=1 -> kanonik,",
+  "# /slug.html/ek -> /slug.html, /?s= -> /arama, kaldırılan içerik -> 410.",
+  "# Paylaşımlı hosting için eşdeğer kurallar .htaccess'te duruyor.",
   "",
 );
 

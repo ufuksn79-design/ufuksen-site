@@ -1,16 +1,23 @@
-# Cloudflare Workers (statik varlık) yapılandırması — ADR-019 revizyon 2.
+# Cloudflare Workers yapılandırması — ADR-019 revizyon 3.
 #
-# Cloudflare'in yeni paneli depoyu "Worker" akışıyla bağlıyor (Pages sekmesi
-# artık geri planda). Bu dosya siteyi sunucu kodu OLMADAN, salt statik varlık
-# olarak yayınlar: `npm run build` -> dist/ -> `npx wrangler deploy`.
+# Statik site + küçük bir URL davranış katmanı (worker/index.js).
 #
-# dist/ içindeki `_redirects` ve `_headers` dosyaları Workers Assets
-# tarafından doğrudan okunur — 59 yönlendirme ve 410 kuralları çalışır.
+# Katman neden gerekli: varsayılan varlık sunumu `/yazi.html`i 307 ile
+# uzantısız yola yönlendiriyordu — ADR-007 (.html birebir korunur) ihlali.
+# `html_handling = "none"` ile otomatik yönlendirmeler kapatılır; davranışı
+# worker belirler (410'lar, AMP, attachment, eğik çizgi, dizin indeksi).
 
 name = "ufuksen-site"
+main = "worker/index.js"
 compatibility_date = "2026-01-01"
 
 [assets]
 directory = "./dist"
-# Bulunamayan yol için kendi 404 sayfamız sunulur (dist/404.html)
-not_found_handling = "404-page"
+binding = "ASSETS"
+# Otomatik .html/eğik çizgi yönlendirmeleri KAPALI — kanonik URL'ler
+# (/yazi.html, /blog) worker tarafından yönlendirmesiz sunulur.
+html_handling = "none"
+not_found_handling = "none"
+# Worker yalnızca sayfa isteklerinde devreye girer; medya ve derleme
+# varlıkları doğrudan sunulur (istek kotası harcamaz, daha hızlı).
+run_worker_first = ["/*", "!/media/*", "!/_astro/*"]
