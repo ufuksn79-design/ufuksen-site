@@ -505,7 +505,7 @@ Kullanıcı yeni bir zorunlu kural bildirdi: kullanım eğlenceli, dinamik ve se
 
 ### Maliyet
 
-JS 0 KB'den ~12 KB'ye çıktı (etkileşim modülü ~4 KB + ClientRouter çalışma zamanı). Sayfa geçişlerinde dinleyiciler `AbortController` ile sökülür — birikme yok. Bu maliyet, zorunlu kuralın karşılığı olarak kabul edildi.
+JS 0 KB'den 22,5 KB'ye çıktı (ölçüldü: etkileşim modülü ~4 KB + ClientRouter çalışma zamanı). Sayfa geçişlerinde dinleyiciler `AbortController` ile sökülür — birikme yok. Bu maliyet, zorunlu kuralın karşılığı olarak kabul edildi.
 
 ### Doğrulanan hata
 

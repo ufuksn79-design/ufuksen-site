@@ -58,7 +58,7 @@ Etkileşim katmanı (ADR-020): "eğlenceli, dinamik, sezgisel" zorunlu kuralı.
 - Işık izi `--mx` değeri canlı ölçüldü; mobilde görsel filtresi `none` (dokunmatik istisnası çalışıyor)
 - 375px'te yatay taşma yok; video şeridi kendi içinde kaydırılıyor (`scroll-snap: x mandatory`)
 - Başa dön düğmesi mobilde alt çubuğu kapatmıyor (724 < 735)
-- JS maliyeti: ~12 KB toplam (önceden 0); kütüphane yok
+- JS maliyeti: 22,5 KB toplam, ölçüldü (önceden 0); kütüphane yok
 
 ## [0.4.0] — 2026-07-31
 
