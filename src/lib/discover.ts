@@ -199,7 +199,11 @@ function slugifyHeading(text: string, index: number): string {
  * Göç edilen WordPress HTML'inde başlıkların id'si yok; bağlantı verebilmek
  * için burada ekleniyor. İçerik metni değiştirilmiyor, yalnızca öznitelik.
  */
-const MEDIA_SIZES = mediaSizes as Record<string, [number, number]>;
+/**
+ * JSON'dan gelen diziler `number[]` olarak tiplenir; ölçüm dosyası her zaman
+ * iki elemanlı (genişlik, yükseklik) yazar. `unknown` üzerinden dönüştürülür.
+ */
+const MEDIA_SIZES = mediaSizes as unknown as Record<string, [number, number]>;
 
 /**
  * Gövdedeki görsellere ölçülen `width`/`height` yazar.

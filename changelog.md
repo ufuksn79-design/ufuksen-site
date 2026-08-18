@@ -28,6 +28,38 @@ Format, Keep a Changelog yaklaşımına yakındır. Tarihler `YYYY-MM-DD` biçim
 - Kaynak WordPress sistemi migration boyunca salt okunur kabul edildi.
 - Dry-run, yedek ve rollback zorunlulukları eklendi.
 
+## [0.7.0] — 2026-08-18
+
+Ürünler bölümü yeniden kuruldu: teknik çizim dili, ürün başına sayfa, WhatsApp (ADR-021).
+
+### Added
+
+- **`/urunler` yeniden tasarlandı** — SketchUp'ın görsel dili: kareli zemin ızgarası, kırmızı/yeşil/mavi eksen işareti, izometrik tel kafes, kotalama çizgisi, künye bloğu
+- **Giriş bölümü** sosyal medyadan gelen ziyaretçi için: ne olduğu, ne kazandırdığı ve iletişim ilk ekranda; sayılar veriden hesaplanıyor (elle yazılmıyor)
+- **Fayda şeridi** — zaman / ölçü doğruluğu / güvenli geri alma; üçü de ürün verisindeki gerçek ifadelere dayanıyor
+- **Ürün başına sayfa**: `/urunler/floorstudio`, `/urunler/kitchen-studio`, `/urunler/panelcut-studio` — tek ürünün bağlantısı paylaşılabiliyor
+- Ürün sayfalarında `SoftwareApplication` yapılandırılmış verisi ve arşivden gerçek ilgili yazılar
+- **WhatsApp butonu** (#25D366) — her üründe, mesaj ürün adıyla önceden dolu; numara panelden düzenlenebilir, boşsa buton hiç görünmez
+- Panele **İletişim (WhatsApp)** bölümü
+
+### Fixed
+
+- **Sol şeritteki sosyal ikonlar 18px genişlikteydi** (44px kuralının altında). Kök neden `align-items: center`: `<li>` içeriğine daralıyor, içindeki `%100` genişlikteki `<a>` de onunla daralıyordu. `stretch` ile 56px'e çıkarıldı
+- Kullanılmayan iki sabit (`icons`, `site`) ve bir tip dönüşümü hatası temizlendi — `astro check` artık **0 hata**
+
+### Ölçülen ve geri alınan
+
+Şerit ikonlarının yüksekliği de 44px yapılmak istendi; ölçüldü, şerit içeriği 850px alana karşı 874px'e taşıyordu. Geri alındı, gerekçe koda yazıldı: kuralı uygulamak için menüyü taşırmak, kuralın koruduğu kullanılabilirliği bozardı.
+
+### Doğrulama (tarayıcı)
+
+- 320 / 375 / 390 / 1366 / 1440px — hiçbirinde yatay taşma yok
+- 5 WhatsApp butonu, hepsi ≥44px, `rel="noopener"` + yeni sekme; bağlantı ürün adıyla dolu
+- Kısa laptopta (1366×700) şerit 2×2 sıkışıyor, taşma yok (650 = 650)
+- Verisi eksik ürün (Kitchen Studio) uydurma özellik göstermiyor; "Ayrıntılar hazırlanıyor" + iletişim
+- 514 sayfa; yeni kırık link / eksik medya / boş gövde: 0; `astro check` 0 hata
+- CSS 38,5 → 56,2 KB (yeni sayfa stilleri); JS değişmedi (22,5 KB)
+
 ## [0.6.0] — 2026-08-12
 
 Cloudflare yayını: site `ufuksen-site.ufuksn79.workers.dev` adresinde canlı; panel altyapısı tamam.

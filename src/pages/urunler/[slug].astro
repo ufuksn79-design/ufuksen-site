@@ -1,0 +1,604 @@
+---
+import type { GetStaticPaths } from "astro";
+import Base from "../../layouts/Base.astro";
+import WhatsAppButton from "../../components/WhatsAppButton.astro";
+import type { Product } from "../../components/ProductCard.astro";
+import productData from "../../content/products.json";
+import { getSoftwareIndex } from "../../lib/discover";
+import { formatDate } from "../../lib/content";
+
+/**
+ * Ürün ayrıntı sayfası (ADR-021).
+ *
+ * Her ürünün kendi adresi var: /urunler/{slug}. Sosyal medyada tek bir ürünün
+ * bağlantısı paylaşılabilsin diye ayrıldı — ziyaretçi listeye düşüp aradığını
+ * aramak zorunda kalmıyor.
+ *
+ * Eksik veri uydurulmaz: özellik listesi boşsa bölüm hiç çıkmaz, bunun yerine
+ * "hazırlanıyor" notu ve iletişim yolu gösterilir (AGENTS.md §5).
+ */
+export const getStaticPaths: GetStaticPaths = () => {
+  const products = productData.urunler as Product[];
+  return products.map((product, index) => ({
+    params: { slug: product.slug },
+    props: { product, index },
+  }));
+};
+
+interface Props {
+  product: Product;
+  index: number;
+}
+
+const { product } = Astro.props;
+const site = Astro.site ?? new URL("https://www.ufuksen.com");
+
+const DURUM: Record<Product["durum"], { etiket: string; ton: string }> = {
+  aktif: { etiket: "Yayında", ton: "ok" },
+  beta: { etiket: "Beta", ton: "warn" },
+  alfa: { etiket: "Alfa sürüm", ton: "warn" },
+  gelistiriliyor: { etiket: "Geliştiriliyor", ton: "warn" },
+  arsiv: { etiket: "Arşiv", ton: "muted" },
+};
+
+const TUR: Record<Product["tur"], string> = {
+  eklenti: "SketchUp eklentisi",
+  arac: "Web aracı",
+  sablon: "Şablon",
+};
+
+const durum = DURUM[product.durum];
+
+/** İlgili yazılar — arşivden gerçek içerik, uydurma değil. */
+const softwareIndex = await getSoftwareIndex();
+const ilgiliYazilar = product.yazilim.length
+  ? (softwareIndex.find((entry) => entry.tag.slug === product.yazilim[0])?.posts ?? []).slice(0, 4)
+  : [];
+const yazilimSlug = product.yazilim[0] ?? null;
+const yazilimAdi =
+  softwareIndex.find((entry) => entry.tag.slug === yazilimSlug)?.tag.name ?? null;
+
+const icons: Record<string, string> = {
+  bolt: '<path d="M13 2 4.5 13.5H11l-1 8.5 8.5-11.5H12z"/>',
+  ruler: '<rect x="2.5" y="8" width="19" height="8" rx="1.5"/><path d="M7 8v3M11 8v4M15 8v3M19 8v4"/>',
+  grid: '<rect x="3.5" y="3.5" width="7" height="7" rx="1"/><rect x="13.5" y="3.5" width="7" height="7" rx="1"/><rect x="3.5" y="13.5" width="7" height="7" rx="1"/><rect x="13.5" y="13.5" width="7" height="7" rx="1"/>',
+  sliders:
+    '<path d="M4 7h10M18 7h2M4 12h4M12 12h8M4 17h9M17 17h3"/><circle cx="16" cy="7" r="2"/><circle cx="10" cy="12" r="2"/><circle cx="15" cy="17" r="2"/>',
+  layers: '<path d="m12 3 8 4.5-8 4.5-8-4.5z"/><path d="m4 12 8 4.5 8-4.5M4 16.5 12 21l8-4.5"/>',
+  texture:
+    '<rect x="3.5" y="3.5" width="17" height="17" rx="2"/><path d="M3.5 9h17M3.5 15h17M9 3.5v17M15 3.5v17"/>',
+};
+
+const jsonLd: Record<string, unknown> = {
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  name: product.ad,
+  description: product.aciklama ?? product.ozet,
+  applicationCategory: "DesignApplication",
+  url: new URL(`/urunler/${product.slug}`, site).href,
+  author: { "@type": "Person", name: "Ufuk Şen", url: site.href },
+  ...(product.surum ? { softwareVersion: product.surum } : {}),
+  ...(product.uyumluluk.length ? { operatingSystem: product.uyumluluk.join(", ") } : {}),
+  ...(product.ozellikler.length
+    ? { featureList: product.ozellikler.map((f) => f.baslik) }
+    : {}),
+};
+---
+
+<Base
+  title={`${product.ad} — ${TUR[product.tur]} | Ufuk Şen`}
+  description={product.aciklama ?? product.ozet}
+  path={`/urunler/${product.slug}`}
+  padded={false}
+  jsonLd={jsonLd}
+>
+  <article class="p">
+    {/* ---------------- Başlık ---------------- */}
+    <header class="p__head">
+      <nav class="p__crumb" aria-label="Konum">
+        <a href="/urunler">Ürünler</a>
+        <span aria-hidden="true">/</span>
+        <b>{product.ad}</b>
+      </nav>
+
+      <p class="p__kind">{TUR[product.tur]}</p>
+      <h1>{product.ad}</h1>
+
+      <div class="p__badges">
+        <span class:list={["badge", `badge--${durum.ton}`]}>
+          {durum.etiket}{product.ilerleme ? ` · %${product.ilerleme}` : ""}
+        </span>
+        {product.surum && <span class="badge badge--v">v{product.surum}</span>}
+      </div>
+
+      <p class="p__lead">{product.ozet}</p>
+      {product.slogan && <p class="p__slogan">“{product.slogan}”</p>}
+
+      <div class="p__cta">
+        {
+          product.satinAlmaUrl && (
+            <a class="btn-main" href={product.satinAlmaUrl} target="_blank" rel="noopener">
+              Satın al
+            </a>
+          )
+        }
+        <WhatsAppButton konu={product.ad} boyut="buyuk" etiket="WhatsApp'tan sor" />
+        {
+          product.iletisimEposta && (
+            <a
+              class="btn-ghost"
+              href={`mailto:${product.iletisimEposta}?subject=${encodeURIComponent(`${product.ad} hakkında`)}`}
+            >
+              E-posta gönder
+            </a>
+          )
+        }
+      </div>
+    </header>
+
+    {/* ---------------- Gövde ---------------- */}
+    <div class="p__body">
+      {
+        product.gorsel && (
+          <figure class="p__shot">
+            <img
+              src={product.gorsel}
+              alt={product.gorselAlt ?? `${product.ad} tanıtım görseli`}
+              loading="lazy"
+              decoding="async"
+            />
+          </figure>
+        )
+      }
+
+      {
+        product.aciklama && (
+          <section class="p__about">
+            <h2>Ne işe yarar?</h2>
+            <p>{product.aciklama}</p>
+          </section>
+        )
+      }
+
+      {
+        product.ozellikler.length > 0 && (
+          <section>
+            <h2>Özellikler</h2>
+            <ul class="feats">
+              {product.ozellikler.map((feature) => (
+                <li class="u-reveal">
+                  <span class="feats__icon">
+                    <svg
+                      viewBox="0 0 24 24"
+                      aria-hidden="true"
+                      set:html={icons[feature.ikon] ?? icons.grid}
+                    />
+                  </span>
+                  <b>{feature.baslik}</b>
+                  <span>{feature.not}</span>
+                </li>
+              ))}
+            </ul>
+          </section>
+        )
+      }
+
+      {
+        product.desenler.length > 0 && (
+          <section>
+            <h2>Desen kütüphanesi</h2>
+            <ul class="pats">
+              {product.desenler.map((name) => (
+                <li>{name}</li>
+              ))}
+            </ul>
+            {product.desenNotu && <p class="note">{product.desenNotu}</p>}
+          </section>
+        )
+      }
+
+      {
+        product.uyumluluk.length > 0 && (
+          <section>
+            <h2>Uyumluluk</h2>
+            <ul class="compat">
+              {product.uyumluluk.map((item) => (
+                <li>{item}</li>
+              ))}
+            </ul>
+          </section>
+        )
+      }
+
+      {/* Verisi henüz gelmemiş ürün: boş bölüm yerine dürüst not */}
+      {
+        product.ozellikler.length === 0 && (
+          <section class="pending">
+            <h2>Ayrıntılar hazırlanıyor</h2>
+            <p>
+              {product.ad} üzerinde çalışma sürüyor
+              {product.ilerleme ? ` (yaklaşık %${product.ilerleme})` : ""}. Özellik
+              listesi ve ekran görüntüleri hazır olduğunda bu sayfaya eklenecek.
+              Merak ettiğiniz bir şey varsa doğrudan yazabilirsiniz.
+            </p>
+            <WhatsAppButton konu={product.ad} etiket="Durumu sor" />
+          </section>
+        )
+      }
+
+      {
+        ilgiliYazilar.length > 0 && (
+          <section>
+            <h2>{yazilimAdi} yazıları</h2>
+            <p class="note">Arşivden ilgili içerikler.</p>
+            <ul class="rel">
+              {ilgiliYazilar.map((post) => (
+                <li>
+                  <a href={post.data.url}>
+                    <b>{post.data.title}</b>
+                    <time datetime={post.data.publishedAt}>
+                      {formatDate(post.data.publishedAt)}
+                    </time>
+                  </a>
+                </li>
+              ))}
+            </ul>
+            {yazilimSlug && (
+              <a class="rel__all" href={`/yazilim/${yazilimSlug}`}>
+                Tüm {yazilimAdi} yazıları →
+              </a>
+            )}
+          </section>
+        )
+      }
+    </div>
+
+    {/* ---------------- Alt iletişim ---------------- */}
+    <footer class="p__foot">
+      <div>
+        <h2>Sorunuz mu var?</h2>
+        <p>Kullanımı, uyumluluğu veya fiyatı — doğrudan bana yazın.</p>
+      </div>
+      <WhatsAppButton konu={product.ad} boyut="buyuk" etiket="WhatsApp'tan sor" />
+    </footer>
+  </article>
+</Base>
+
+<style>
+  /* ---------------- Başlık ---------------- */
+
+  .p__head {
+    padding: var(--s-6);
+    border-bottom: 1px solid var(--c-line-strong);
+    background-color: var(--c-surface);
+    background-image:
+      linear-gradient(rgb(255 255 255 / 0.04) 1px, transparent 1px),
+      linear-gradient(90deg, rgb(255 255 255 / 0.04) 1px, transparent 1px),
+      radial-gradient(80% 80% at 12% 0%, rgb(255 212 0 / 0.09), transparent 62%);
+    background-size:
+      28px 28px,
+      28px 28px,
+      100% 100%;
+  }
+
+  .p__crumb {
+    display: flex;
+    align-items: center;
+    gap: var(--s-2);
+    font-family: var(--font-mono);
+    font-size: var(--t-micro);
+    color: var(--c-text-faint);
+    margin-bottom: var(--s-4);
+  }
+  .p__crumb a {
+    color: var(--c-text-muted);
+    text-decoration: none;
+    /* Dokunma hedefi 44px (AGENTS.md §6); metin küçük ama alan geniş. */
+    min-height: var(--tap-min);
+    display: inline-flex;
+    align-items: center;
+    padding-right: var(--s-1);
+  }
+  .p__crumb a:hover,
+  .p__crumb a:focus-visible {
+    color: var(--c-accent);
+  }
+  .p__crumb b {
+    color: var(--c-text);
+    font-weight: 500;
+  }
+
+  .p__kind {
+    font-family: var(--font-mono);
+    font-size: var(--t-micro);
+    letter-spacing: var(--ls-eyebrow);
+    text-transform: uppercase;
+    color: var(--c-accent);
+    max-width: none;
+  }
+
+  .p__head h1 {
+    font-size: clamp(1.9rem, 6vw, 3rem);
+    line-height: 1.06;
+    letter-spacing: -0.03em;
+    margin-top: var(--s-2);
+  }
+
+  .p__badges {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--s-2);
+    margin-top: var(--s-3);
+  }
+  .badge {
+    font-family: var(--font-mono);
+    font-size: var(--t-micro);
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    padding: 3px var(--s-2);
+    border-radius: var(--r-pill);
+    border: 1px solid currentColor;
+  }
+  .badge--ok { color: #7ddc7d; }
+  .badge--warn { color: var(--c-accent); }
+  .badge--muted { color: var(--c-text-faint); }
+  .badge--v { color: var(--c-text-muted); }
+
+  .p__lead {
+    margin-top: var(--s-4);
+    font-size: var(--t-body-lg);
+    color: var(--c-text);
+    max-width: 52ch;
+  }
+  .p__slogan {
+    margin-top: var(--s-3);
+    color: var(--c-accent);
+    font-size: var(--t-body);
+    max-width: 52ch;
+  }
+
+  .p__cta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--s-3);
+    margin-top: var(--s-6);
+  }
+  .btn-main,
+  .btn-ghost {
+    display: inline-flex;
+    align-items: center;
+    min-height: 52px;
+    padding: 0 var(--s-6);
+    border-radius: var(--r-md);
+    font-weight: 600;
+    font-size: var(--t-small);
+    text-decoration: none;
+    transition:
+      background var(--d-fast) var(--e-out),
+      color var(--d-fast) var(--e-out);
+  }
+  .btn-main {
+    background: var(--c-accent);
+    color: var(--c-on-accent);
+    border: 1px solid var(--c-accent);
+  }
+  .btn-main:hover,
+  .btn-main:focus-visible {
+    filter: brightness(1.08);
+  }
+  .btn-ghost {
+    border: 1px solid var(--c-line-strong);
+    color: var(--c-text-muted);
+  }
+  .btn-ghost:hover,
+  .btn-ghost:focus-visible {
+    border-color: var(--c-accent);
+    color: var(--c-accent);
+  }
+
+  /* ---------------- Gövde ---------------- */
+
+  .p__body {
+    padding: var(--s-8) var(--s-6);
+    display: grid;
+    gap: var(--s-8);
+  }
+  .p__body h2 {
+    font-size: var(--t-h3);
+    letter-spacing: var(--ls-heading);
+    margin-bottom: var(--s-4);
+  }
+  .p__about p {
+    color: var(--c-text-muted);
+    font-size: var(--t-body);
+  }
+  .note {
+    color: var(--c-text-faint);
+    font-size: var(--t-micro);
+    margin-top: var(--s-3);
+    max-width: none;
+  }
+
+  .p__shot {
+    border: 1px solid var(--c-line-strong);
+    border-radius: var(--r-lg);
+    overflow: hidden;
+    background: var(--c-base);
+  }
+  .p__shot img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  .feats {
+    list-style: none;
+    display: grid;
+    gap: var(--s-4);
+  }
+  .feats li {
+    display: grid;
+    grid-template-columns: 40px 1fr;
+    grid-template-areas:
+      "icon title"
+      "icon note";
+    gap: 2px var(--s-4);
+    padding: var(--s-4);
+    border: 1px solid var(--c-line);
+    border-radius: var(--r-md);
+    background: var(--c-surface-raised);
+  }
+  .feats__icon {
+    grid-area: icon;
+    align-self: start;
+    width: 40px;
+    height: 40px;
+    border-radius: var(--r-md);
+    display: grid;
+    place-items: center;
+    background: var(--c-accent-wash);
+    color: var(--c-accent);
+  }
+  .feats__icon svg {
+    width: 20px;
+    height: 20px;
+    fill: none;
+    stroke: currentColor;
+    stroke-width: 1.7;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+  }
+  .feats b {
+    grid-area: title;
+    color: var(--c-text);
+    font-weight: 600;
+  }
+  .feats li > span:last-child {
+    grid-area: note;
+    color: var(--c-text-muted);
+    font-size: var(--t-small);
+  }
+  @media (min-width: 700px) {
+    .feats {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  .pats,
+  .compat {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--s-2);
+  }
+  .pats li,
+  .compat li {
+    font-family: var(--font-mono);
+    font-size: var(--t-micro);
+    color: var(--c-text-muted);
+    border: 1px solid var(--c-line-strong);
+    border-radius: var(--r-sm);
+    padding: var(--s-2) var(--s-3);
+  }
+  .compat li {
+    border-style: dashed;
+    color: var(--c-text);
+  }
+
+  .pending {
+    border: 1px dashed var(--c-line-strong);
+    border-radius: var(--r-lg);
+    padding: var(--s-6);
+    background: var(--c-surface);
+  }
+  .pending p {
+    color: var(--c-text-muted);
+    font-size: var(--t-small);
+    margin-bottom: var(--s-4);
+  }
+
+  .rel {
+    list-style: none;
+    display: grid;
+    gap: 1px;
+    background: var(--c-line);
+    border: 1px solid var(--c-line);
+    border-radius: var(--r-md);
+    overflow: hidden;
+  }
+  .rel a {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: var(--s-2);
+    padding: var(--s-3) var(--s-4);
+    min-height: var(--tap-min);
+    background: var(--c-surface-raised);
+    text-decoration: none;
+    color: var(--c-text-muted);
+  }
+  .rel b {
+    color: var(--c-text);
+    font-weight: 500;
+    font-size: var(--t-small);
+  }
+  .rel time {
+    font-family: var(--font-mono);
+    font-size: var(--t-micro);
+    color: var(--c-text-faint);
+  }
+  .rel a:hover,
+  .rel a:focus-visible {
+    background: var(--c-surface-hover);
+  }
+  .rel a:hover b,
+  .rel a:focus-visible b {
+    color: var(--c-accent);
+  }
+  .rel__all {
+    display: inline-flex;
+    align-items: center;
+    min-height: var(--tap-min);
+    margin-top: var(--s-3);
+    color: var(--c-accent);
+    font-size: var(--t-small);
+    text-decoration: none;
+  }
+  .rel__all:hover,
+  .rel__all:focus-visible {
+    text-decoration: underline;
+  }
+
+  /* ---------------- Alt ---------------- */
+
+  .p__foot {
+    display: grid;
+    gap: var(--s-4);
+    padding: var(--s-8) var(--s-6);
+    border-top: 1px solid var(--c-line-strong);
+    background: var(--c-surface);
+    align-items: center;
+  }
+  .p__foot h2 {
+    font-size: var(--t-h3);
+    letter-spacing: var(--ls-heading);
+  }
+  .p__foot p {
+    color: var(--c-text-muted);
+    font-size: var(--t-small);
+    margin-top: var(--s-2);
+  }
+
+  @media (min-width: 760px) {
+    .p__head,
+    .p__body,
+    .p__foot {
+      padding-left: var(--s-8);
+      padding-right: var(--s-8);
+    }
+    .p__foot {
+      grid-template-columns: 1fr auto;
+    }
+  }
+</style>

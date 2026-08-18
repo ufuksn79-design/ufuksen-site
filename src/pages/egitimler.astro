@@ -12,7 +12,6 @@ const totalReviews = courses.reduce((sum, course) => sum + course.yorumSayisi, 0
 const avgRating =
   courses.reduce((sum, course) => sum + course.puan * course.yorumSayisi, 0) / totalReviews;
 
-const site = Astro.site ?? new URL("https://www.ufuksen.com");
 ---
 
 <Base

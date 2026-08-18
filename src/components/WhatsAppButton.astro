@@ -1,0 +1,116 @@
+---
+/**
+ * WhatsApp iletişim butonu.
+ *
+ * Numara `src/content/contact.json` içinde ve panelden düzenlenebilir.
+ * Numara BOŞSA buton hiç render edilmez — çalışmayan buton gösterilmez
+ * (AGENTS.md §5: işlevsiz arayüz öğesi konmaz).
+ *
+ * Renk WhatsApp'ın kendi marka yeşilidir (#25D366). Marka rengi bilerek
+ * token sistemi dışında tutuldu: bu bir tema rengi değil, tanınması gereken
+ * bir servis işareti. Kullanıcı yeşili görüp ne olduğunu anında anlar.
+ */
+import contact from "../content/contact.json";
+
+interface Props {
+  /** Mesaja önceden yazılacak konu — genelde ürün adı. */
+  konu?: string | null;
+  /** `buyuk` ürün sayfaları için, `satir` kart içi için. */
+  boyut?: "satir" | "buyuk";
+  /** Buton üzerindeki metin. */
+  etiket?: string;
+  class?: string;
+}
+
+const { konu = null, boyut = "satir", etiket = "WhatsApp'tan sor", class: className = "" } = Astro.props;
+
+const numara = (contact.whatsappNumara ?? "").replace(/\D/g, "");
+
+/** Karşı tarafa hangi ürün için yazıldığı belli olsun diye mesaj hazır gelir. */
+const mesaj = konu
+  ? `Merhaba, ${konu} hakkında bilgi almak istiyorum.`
+  : "Merhaba, bilgi almak istiyorum.";
+
+const href = `https://wa.me/${numara}?text=${encodeURIComponent(mesaj)}`;
+---
+
+{
+  numara && (
+    <a
+      class:list={["wa", `wa--${boyut}`, className]}
+      href={href}
+      target="_blank"
+      rel="noopener noreferrer"
+      aria-label={konu ? `${konu} için WhatsApp'tan yaz` : "WhatsApp'tan yaz"}
+    >
+      {/* WhatsApp marka işareti — Simple Icons, CC0 */}
+      <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+        <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51a12.8 12.8 0 0 0-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z" />
+      </svg>
+      <span>{etiket}</span>
+    </a>
+  )
+}
+
+<style>
+  .wa {
+    /* WhatsApp marka yeşili — servis işareti, tema rengi değil. */
+    --wa-green: #25d366;
+    --wa-green-dark: #1da851;
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--s-2);
+    min-height: var(--tap-min);
+    padding: 0 var(--s-4);
+    border-radius: var(--r-md);
+    background: var(--wa-green);
+    color: #06251a;
+    font-weight: 600;
+    font-size: var(--t-small);
+    text-decoration: none;
+    border: 1px solid var(--wa-green);
+    transition:
+      background var(--d-fast) var(--e-out),
+      transform var(--d-fast) var(--e-out),
+      box-shadow var(--d-base) var(--e-out);
+  }
+
+  .wa svg {
+    width: 18px;
+    height: 18px;
+    fill: currentColor;
+    flex: none;
+  }
+
+  .wa:hover,
+  .wa:focus-visible {
+    background: var(--wa-green-dark);
+    border-color: var(--wa-green-dark);
+    color: #f4fff9;
+    box-shadow: 0 0 0 4px rgb(37 211 102 / 0.18);
+  }
+  .wa:active {
+    transform: scale(0.97);
+  }
+
+  .wa--buyuk {
+    font-size: var(--t-body);
+    padding: 0 var(--s-6);
+    min-height: 52px;
+  }
+  .wa--buyuk svg {
+    width: 21px;
+    height: 21px;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .wa {
+      transition: none;
+    }
+    .wa:active {
+      transform: none;
+    }
+  }
+</style>

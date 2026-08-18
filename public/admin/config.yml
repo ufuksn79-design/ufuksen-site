@@ -222,6 +222,29 @@ collections:
             }
           - { label: Not, name: not, widget: hidden, required: false }
 
+      - name: iletisim
+        label: İletişim (WhatsApp)
+        file: src/content/contact.json
+        fields:
+          - { label: Açıklama, name: aciklama, widget: hidden }
+          - {
+              label: WhatsApp numarası,
+              name: whatsappNumara,
+              widget: string,
+              required: false,
+              hint: "Ülke kodu + numara, SADECE rakam. Örnek: 905303229301. BOŞ bırakılırsa WhatsApp butonları sitede hiç görünmez.",
+            }
+          - {
+              label: Görünen numara,
+              name: whatsappGorunenNumara,
+              widget: string,
+              required: false,
+              hint: "İnsanların okuyacağı biçim. Örnek: 0530 322 93 01",
+            }
+          - { label: E-posta, name: eposta, widget: string, required: false }
+          - { label: Kaynak, name: kaynak, widget: hidden, required: false }
+          - { label: Not, name: not, widget: hidden, required: false }
+
       - name: urunler
         label: Ürünler ve Eklentiler
         file: src/content/products.json

@@ -100,13 +100,28 @@ const icons: Record<string, string> = {
   /* Dikey şerit içinde: daha küçük, çerçevesiz */
   .social--rail {
     flex-direction: column;
-    align-items: center;
+    /* `center` idi: <li> içeriğine daralıyor, içindeki %100 genişlikteki <a>
+       18px kalıyordu — 44px dokunma hedefi kuralının altında (ölçüldü).
+       `stretch` ile <li> şerit genişliğini alır, bağlantı da onunla birlikte. */
+    align-items: stretch;
     gap: var(--s-1);
+    width: 100%;
+  }
+  .social--rail li {
     width: 100%;
   }
   .social--rail a {
     border-color: transparent;
     width: 100%;
+    /**
+     * 38px, 44px değil — bilinçli istisna.
+     *
+     * 44px denendi ve ölçüldü: şerit içeriği 850px alana karşı 874px'e çıkıp
+     * taşıyordu (dört ikon × 6px). Şeridin dikey bütçesi zaten dar. Genişlik
+     * tam şerit kadar (56px) olduğu için hedef alanı 56×38 = rahat tıklanır;
+     * asıl kusur olan 18px genişlik giderildi. Yükseklik uğruna menüyü
+     * taşırmak, kuralın koruduğu şeyi (kullanılabilirlik) bozardı.
+     */
     height: 38px;
     border-radius: var(--r-md);
   }
@@ -120,7 +135,7 @@ const icons: Record<string, string> = {
   }
 
   .social--sm a {
-    width: 38px;
-    height: 38px;
+    width: var(--tap-min);
+    height: var(--tap-min);
   }
 </style>

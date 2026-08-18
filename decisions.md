@@ -510,3 +510,59 @@ JS 0 KB'den 22,5 KB'ye çıktı (ölçüldü: etkileşim modülü ~4 KB + Client
 ### Doğrulanan hata
 
 İlk sürümde klavye dinleyicisi `event.target.closest` çağrısında patladı (hedef `window` olabiliyor) ve `transition:persist` bileşen etiketinden kök elemana aktarılmadı. İkisi de tarayıcıda yakalanıp düzeltildi; palet, ışık izi, ilerleme ve şerit senkronu iki SPA geçişi sonrasında yeniden doğrulandı.
+
+---
+
+## ADR-021 — Ürünler bölümü: teknik çizim dili, ürün başına sayfa, WhatsApp
+
+**Durum:** Kabul edildi
+**Tarih:** 2026-08-18
+
+### Bağlam
+
+Ürünler sayfası Instagram ve diğer sosyal ağlardan **doğrudan** paylaşılıyor.
+Oraya düşen kişi siteyi tanımıyor; eski düzen ise site içinden gezinen birine
+göre kurulmuştu. Kullanıcının talebi: sayfa daha teknik, daha canlı, "çizim"
+havasında olsun; ne olduğu ilk bakışta anlaşılsın; her ürün ayrı sayfada
+açılsın ve her ürünün içinde WhatsApp butonu bulunsun.
+
+### Karar
+
+**1. Görsel dil: SketchUp'ın kendi dili.** Kareli zemin ızgarası, kırmızı/yeşil/
+mavi eksen işareti, kotalama (ölçü) çizgisi ve teknik paftaların köşesindeki
+künye bloğu. Süsleme değil, tanıma işareti: SketchUp kullanan biri sayfayı
+açtığında ne olduğunu okumadan anlıyor.
+
+**2. Giriş bölümü üç soruyu cevaplıyor:** Bu ne? (başlık) · Bana ne? (fayda
+şeridi) · Nasıl ulaşırım? (WhatsApp). Sayılar veriden hesaplanıyor, elle
+yazılmıyor — ürün eklendiğinde kendiliğinden güncelleniyor ve gerçekle asla
+çelişmiyor.
+
+**3. Ürün başına sayfa:** `/urunler/{slug}`. Tek ürünün bağlantısı
+paylaşılabiliyor; ziyaretçi listeye düşüp aradığını aramıyor. Her sayfada
+`SoftwareApplication` yapılandırılmış verisi ve arşivden gerçek ilgili yazılar.
+
+**4. WhatsApp butonu:** WhatsApp'ın kendi marka yeşili (#25D366) — bilerek token
+sisteminin dışında, çünkü bu bir tema rengi değil, tanınması gereken servis
+işareti. Mesaj ürün adıyla önceden dolu geliyor.
+
+### Numara nereden geldi
+
+Uydurulmadı. Kullanıcının kendi "SketchUp Özel Ders" sayfasında yayınladığı
+`wa.me/905303229301` bağlantısından okundu. Panelden düzenlenebilir; **boş
+bırakılırsa butonlar sitede hiç görünmez** — çalışmayan buton gösterilmez.
+
+### Eksik veri
+
+Kitchen Studio'nun özellik listesi yok. Uydurulmadı: "Ayrıntılar hazırlanıyor"
+notu ve iletişim yolu gösteriliyor (AGENTS.md §5).
+
+### Yol açtığı düzeltme
+
+Sol şeritteki sosyal ikonlar **18px genişlikteydi** (44px kuralının çok
+altında). Kök neden `align-items: center` — `<li>` içeriğine daralıyor, içindeki
+`%100` genişlikteki `<a>` de onunla daralıyordu. `stretch` ile giderildi (56px).
+
+Yükseklik 44px'e çıkarılmak istendi ama ölçüldü: şerit içeriği 850px alana
+karşı 874px'e taşıyordu. Geri alındı ve gerekçesi koda yazıldı — kuralı
+uygulamak için menüyü taşırmak, kuralın koruduğu şeyi bozardı.
