@@ -37,6 +37,7 @@ Format, Keep a Changelog yaklaşımına yakındır. Tarihler `YYYY-MM-DD` biçim
 - **`/urunler` yeniden tasarlandı** — SketchUp'ın görsel dili: kareli zemin ızgarası, kırmızı/yeşil/mavi eksen işareti, izometrik tel kafes, kotalama çizgisi, künye bloğu
 - **Giriş bölümü** sosyal medyadan gelen ziyaretçi için: ne olduğu, ne kazandırdığı ve iletişim ilk ekranda; sayılar veriden hesaplanıyor (elle yazılmıyor)
 - **Fayda şeridi** — zaman / ölçü doğruluğu / güvenli geri alma; üçü de ürün verisindeki gerçek ifadelere dayanıyor
+- **Girişteki kafes kalemle çizilerek oluşuyor** — kenarlar hafif eğri ve köşelerde taşmalı (elle çizim), üstünden soluk ikinci geçiş yapılıyor, ucunda gerçek bir kalem yol boyunca ilerliyor. Sıra bir eskizdeki gibi: taban → dikmeler → üst yüz (~2,4 sn)
 - **Ürün başına sayfa**: `/urunler/floorstudio`, `/urunler/kitchen-studio`, `/urunler/panelcut-studio` — tek ürünün bağlantısı paylaşılabiliyor
 - Ürün sayfalarında `SoftwareApplication` yapılandırılmış verisi ve arşivden gerçek ilgili yazılar
 - **WhatsApp butonu** (#25D366) — her üründe, mesaj ürün adıyla önceden dolu; numara panelden düzenlenebilir, boşsa buton hiç görünmez
@@ -48,6 +49,9 @@ Format, Keep a Changelog yaklaşımına yakındır. Tarihler `YYYY-MM-DD` biçim
 - Kullanılmayan iki sabit (`icons`, `site`) ve bir tip dönüşümü hatası temizlendi — `astro check` artık **0 hata**
 
 ### Ölçülen ve geri alınan
+
+Kalem hareketi önce CSS `offset-path` ile yazıldı; ölçüldü, kalem çizimin 141px üstünde kalıyordu (SVG kullanıcı birimleriyle hizalanmıyor). SVG'nin kendi `animateMotion`'ına geçildi — elemanın (0,0) noktasını yol üzerinde yürüttüğü için kalemin ucu tam çizginin ucunda oluyor.
+
 
 Şerit ikonlarının yüksekliği de 44px yapılmak istendi; ölçüldü, şerit içeriği 850px alana karşı 874px'e taşıyordu. Geri alındı, gerekçe koda yazıldı: kuralı uygulamak için menüyü taşırmak, kuralın koruduğu kullanılabilirliği bozardı.
 
