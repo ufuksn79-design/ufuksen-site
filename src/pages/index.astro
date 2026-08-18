@@ -22,14 +22,19 @@ const totalPosts = posts.length;
 const site = Astro.site ?? new URL("https://www.ufuksen.com");
 
 /**
- * YER TUTUCU İÇERİK (AGENTS.md §5, ADR-016).
+ * Profil görselleri.
  *
- * Aşağıdaki bloklar için gerçek veri yok. `placeholder: true` taşıyanlar
- * arayüzde açıkça etiketlenir ve gerçek bilgi gibi sunulmaz.
- * Profil fotoğrafı ve kapak görseli kullanıcıdan gelecek.
+ * Fotoğraf kullanıcıdan geldi (2026-08-18). Kaynak `pic/ufuksen.png`
+ * (1254×1254, 1,87 MB); 256×256 WebP'ye indirildi — 8 KB. 128px kutuda
+ * gösterildiği için 256px retina ekranlarda yeterli.
+ *
+ * Kapak görseli yok: `.profile__cover` imleci izleyen ışıklı degrade
+ * kullanıyor (ADR-020). Bu bir yer tutucu değil, tasarlanmış bir zemin —
+ * dolayısıyla ayrıca etiketlenmiyor. Fotoğraflı kapak istenirse
+ * COVER_SRC doldurulur, degradenin üstüne biner.
  */
-const AVATAR_SRC: string | null = null; // kullanıcıdan gelecek
-const COVER_SRC: string | null = null; // kullanıcıdan gelecek
+const AVATAR_SRC: string | null = "/media/marka/ufuksen-avatar.webp";
+const COVER_SRC: string | null = null;
 
 
 const skills = [
@@ -72,14 +77,24 @@ const counters = [
     </div>
     <div class="profile__body">
       <div class="profile__avatar">
-        {AVATAR_SRC ? <img src={AVATAR_SRC} alt="Ufuk Şen" /> : <span aria-hidden="true">UŞ</span>}
+        {
+          AVATAR_SRC ? (
+            <img
+              src={AVATAR_SRC}
+              alt="Ufuk Şen"
+              width="256"
+              height="256"
+              fetchpriority="high"
+              decoding="async"
+            />
+          ) : (
+            <span aria-hidden="true">UŞ</span>
+          )
+        }
       </div>
       <h1 class="profile__name">Ufuk Şen</h1>
       <p class="profile__role">3D Görselleştirme Uzmanı · Eğitmen · Ankara</p>
       <SocialLinks variant="row" />
-      <p class="tag tag--placeholder" style="justify-self:center">
-        Profil ve kapak görseli yer tutucu
-      </p>
     </div>
     <div class="profile__cta">
       <a href="/blog">Yazıları oku</a>
