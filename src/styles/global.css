@@ -101,26 +101,46 @@ body {
 }
 
 .profile__body {
+  /**
+   * Avatar ölçüsü tek yerden: gövde tam yarısı kadar yukarı çekilir, böylece
+   * fotoğraf kapağın alt kenarına oturur. Boyut değişince hizalama kendiliğinden
+   * doğru kalır — iki ayrı sayıyı elle eşlemek gerekmez.
+   */
+  --avatar: 128px;
+
   display: grid;
   justify-items: center;
   gap: var(--s-3);
   text-align: center;
   padding: 0 var(--shell-pad) var(--s-8);
-  margin-top: -64px;
+  margin-top: calc(var(--avatar) / -2);
   position: relative;
 }
 
+/**
+ * Masaüstünde fotoğraf sayfanın kahramanı olur (kart genişliğinin ~%35'i).
+ * Mobilde 128px kalır: küçük ekranda dev bir daire, adı ve bağlantıları
+ * ekranın dışına iter.
+ */
+@media (min-width: 1024px) {
+  .profile__body {
+    --avatar: clamp(260px, 31vw, 460px);
+  }
+}
+
 .profile__avatar {
-  width: 128px;
-  height: 128px;
+  width: var(--avatar);
+  height: var(--avatar);
   border-radius: 50%;
-  border: 4px solid var(--c-surface);
+  /* Çerçeve de ölçüyle birlikte kalınlaşır; 460px'lik dairede 4px kaybolurdu */
+  border: clamp(4px, calc(var(--avatar) / 64), 8px) solid var(--c-surface);
   background: var(--c-surface-raised);
   display: grid;
   place-items: center;
   overflow: hidden;
   font-family: var(--font-mono);
-  font-size: 2rem;
+  /* Fotoğraf yoksa görünen "UŞ" baş harfleri de ölçüyle büyür */
+  font-size: calc(var(--avatar) / 4);
   color: var(--c-accent);
   letter-spacing: 0.02em;
 }

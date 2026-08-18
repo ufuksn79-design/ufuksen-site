@@ -25,8 +25,10 @@ const site = Astro.site ?? new URL("https://www.ufuksen.com");
  * Profil görselleri.
  *
  * Fotoğraf kullanıcıdan geldi (2026-08-18). Kaynak `pic/ufuksen.png`
- * (1254×1254, 1,87 MB); 256×256 WebP'ye indirildi — 8 KB. 128px kutuda
- * gösterildiği için 256px retina ekranlarda yeterli.
+ * (1254×1254, 1,87 MB). Üç ölçüde WebP üretildi ve `srcset` ile ekrana göre
+ * seçiliyor: mobil 8 KB'lık 256px'i indirir, masaüstü 80 KB'lık 960px'i.
+ * Masaüstünde 460px'e kadar büyüdüğü için retina ekranlarda 960px gerekiyor;
+ * telefona o dosyayı indirtmek gereksiz yük olurdu.
  *
  * Kapak görseli yok: `.profile__cover` imleci izleyen ışıklı degrade
  * kullanıyor (ADR-020). Bu bir yer tutucu değil, tasarlanmış bir zemin —
@@ -81,9 +83,11 @@ const counters = [
           AVATAR_SRC ? (
             <img
               src={AVATAR_SRC}
+              srcset="/media/marka/ufuksen-avatar.webp 256w, /media/marka/ufuksen-512.webp 512w, /media/marka/ufuksen-960.webp 960w"
+              sizes="(min-width: 1024px) min(31vw, 460px), 128px"
               alt="Ufuk Şen"
-              width="256"
-              height="256"
+              width="960"
+              height="960"
               fetchpriority="high"
               decoding="async"
             />
