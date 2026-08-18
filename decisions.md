@@ -566,3 +566,62 @@ altında). Kök neden `align-items: center` — `<li>` içeriğine daralıyor, i
 Yükseklik 44px'e çıkarılmak istendi ama ölçüldü: şerit içeriği 850px alana
 karşı 874px'e taşıyordu. Geri alındı ve gerekçesi koda yazıldı — kuralı
 uygulamak için menüyü taşırmak, kuralın koruduğu şeyi bozardı.
+
+
+---
+
+## ADR-022 — Ürünler: çekirdek yapı (ürün başına dosya, doğrulanmış şema)
+
+**Durum:** Kabul edildi
+**Tarih:** 2026-08-18
+
+### Bağlam
+
+Kullanıcı 4-5 ürün daha ekleyeceğini bildirdi. Mevcut düzen tek bir
+`products.json` dosyasıydı ve sekiz üründe üç yerden kırılırdı:
+
+1. **Panel kullanılamaz hale gelirdi** — sekiz ürün tek bir dev formda; yeni
+   ürün eklemek için var olanların içinden geçmek gerekirdi.
+2. **Her yeni ürün tipi kod değişikliği isterdi** — `desenler`/`desenNotu`
+   FloorStudio'ya özeldi; başka bir ürünün "Desteklenen formatlar" listesi
+   için yeni alan ve yeni şablon kodu gerekirdi.
+3. **Hatalı veri sessizce geçerdi** — şema doğrulaması yoktu.
+
+### Karar
+
+**1. Ürün başına dosya.** `src/content/products/{slug}.json`. Panelde "Ürünler"
+kendi bölümü oldu; ekle/düzenle/sil tek tek yapılıyor.
+
+**2. Astro içerik koleksiyonu + zod şeması.** Panelden hatalı veri gelirse
+derleme **durur**. Sessizce yanlış sayfa üretmektense gürültülü hata yeğdir.
+
+**3. Ürüne özel alanlar genelleştirildi.** `desenler`/`desenNotu` yerine
+adlandırılmış `listeler`: her ürün kendi başlığıyla istediği kadar liste
+tanımlar ("Desen kütüphanesi", "Desteklenen formatlar"…).
+
+**4. Yeni isteğe bağlı bölümler:** galeri, tanıtım videosu, S.S.S., fiyat,
+deneme bağlantısı. Hepsi boşken hiç render edilmez.
+
+**5. `yayinda` anahtarı.** Hazır olmayan ürün panelde bekler, sitede görünmez.
+
+**6. Ortak mantık tek dosyada** (`src/lib/products.ts`): sıralama, durum/tür
+etiketleri, ikon kümesi. İkon listesi daha önce iki dosyada kopyalanmıştı.
+
+**7. Süzgeç eşiği veriye bağlı.** Ürün sayısı 5'e ulaşıp birden fazla tür
+olduğunda tür süzgeci kendiliğinden belirir; JavaScript kullanmaz (gizli radyo
+düğmeleri + `:has()`). `:has()` desteklenmezse tüm ürünler görünür kalır —
+hiçbir ürün erişilemez hale gelmez (ADR-005).
+
+### Doğrulama
+
+Göç elle değil betikle yapıldı ve taşınmayan alan raporlandı: sıfır kayıp.
+
+Çekirdeğin işe yaradığı, geçici bir dördüncü ve beşinci ürün eklenerek
+kanıtlandı: **hiçbir kod değişikliği olmadan** sayfa üretildi, video/liste/
+S.S.S./fiyat/satın al bölümleri çıktı, yeni ikon çalıştı ve beşinci üründe
+süzgeç kendiliğinden belirip doğru süzdü. Sınama kayıtları sonra silindi.
+
+### Bilinçli olarak yapılmayanlar
+
+Ürün karşılaştırma tablosu, ürün içi arama, etiket sistemi. Üç üründe hiçbiri
+değer üretmez; ihtiyaç doğduğunda eklenir. Şema bunları engellemiyor.

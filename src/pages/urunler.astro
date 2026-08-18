@@ -1,8 +1,8 @@
 ---
 import Base from "../layouts/Base.astro";
-import ProductCard, { type Product } from "../components/ProductCard.astro";
+import ProductCard from "../components/ProductCard.astro";
 import WhatsAppButton from "../components/WhatsAppButton.astro";
-import productData from "../content/products.json";
+import { getProducts, productPath, turDagilimi, TUR } from "../lib/products";
 
 /**
  * Ürünler — teknik çizim paftası düzeni (ADR-021).
@@ -16,14 +16,22 @@ import productData from "../content/products.json";
  * Sayılar veriden hesaplanır, elle yazılmaz — ürün eklendiğinde kendiliğinden
  * güncellenir ve hiçbir zaman gerçekle çelişmez.
  */
-const products = productData.urunler as Product[];
+const products = await getProducts();
 
 const site = Astro.site ?? new URL("https://www.ufuksen.com");
+
+/**
+ * Tür süzgeci ürün sayısı arttığında kendiliğinden belirir.
+ * Üç üründe süzgeç gürültüdür; sekizde gereklidir. Eşik veriye bakar,
+ * ürün eklendiğinde koda dönmek gerekmez (ADR-022).
+ */
+const turler = turDagilimi(products);
+const gosterFiltre = products.length > 4 && turler.length > 1;
 
 /** Desteklenen SketchUp sürümleri — ürünlerin uyumluluk alanlarından toplanır. */
 const sketchupSurumleri = [
   ...new Set(
-    products.flatMap((p) => p.uyumluluk.filter((u) => /sketch\s?up/i.test(u))),
+    products.flatMap((p) => p.data.uyumluluk.filter((u) => /sketch\s?up/i.test(u))),
   ),
 ].sort();
 
@@ -32,8 +40,8 @@ const surumAraligi =
     ? `${sketchupSurumleri[0].replace(/\D+/g, "")}–${sketchupSurumleri.at(-1)!.replace(/\D+/g, "")}`
     : (sketchupSurumleri[0]?.replace(/\D+/g, "") ?? null);
 
-const yayindaSayisi = products.filter((p) => p.durum === "aktif").length;
-const toplamOzellik = products.reduce((n, p) => n + p.ozellikler.length, 0);
+const yayindaSayisi = products.filter((p) => p.data.durum === "aktif").length;
+const toplamOzellik = products.reduce((n, p) => n + p.data.ozellikler.length, 0);
 
 /**
  * Fayda şeridi — üçü de ürün verisindeki gerçek ifadelere dayanır,
@@ -70,7 +78,7 @@ const faydaIkon: Record<string, string> = {
 
 <Base
   title="SketchUp Eklentileri ve Araçlar | Ufuk Şen"
-  description={`SketchUp için geliştirdiğim eklentiler: ${products.map((p) => p.ad).join(", ")}. Zemin, mutfak ve panel işlerini ölçülü ve hızlı üretin.`}
+  description={`SketchUp için geliştirdiğim eklentiler: ${products.map((p) => p.data.ad).join(", ")}. Zemin, mutfak ve panel işlerini ölçülü ve hızlı üretin.`}
   path="/urunler"
   padded={false}
   jsonLd={{
@@ -83,14 +91,14 @@ const faydaIkon: Record<string, string> = {
       position: index + 1,
       item: {
         "@type": "SoftwareApplication",
-        name: product.ad,
-        description: product.ozet,
+        name: product.data.ad,
+        description: product.data.ozet,
         applicationCategory: "DesignApplication",
-        ...(product.surum ? { softwareVersion: product.surum } : {}),
-        ...(product.uyumluluk.length
-          ? { operatingSystem: product.uyumluluk.join(", ") }
+        ...(product.data.surum ? { softwareVersion: product.data.surum } : {}),
+        ...(product.data.uyumluluk.length
+          ? { operatingSystem: product.data.uyumluluk.join(", ") }
           : {}),
-        url: new URL(`/urunler/${product.slug}`, site).href,
+        url: new URL(productPath(product.data.slug), site).href,
       },
     })),
   }}
@@ -278,8 +286,37 @@ const faydaIkon: Record<string, string> = {
       <p>Her birinin kendi sayfası var — ayrıntılar, uyumluluk ve iletişim orada.</p>
     </div>
 
+    {/*
+      Tür süzgeci — JavaScript'siz. Gizli radyo düğmeleri + `:has()` ile
+      çalışır; JS kapalıysa ya da `:has()` desteklenmiyorsa tüm ürünler
+      görünür kalır, hiçbir şey kaybolmaz (ADR-005).
+    */}
+    {
+      gosterFiltre && (
+        <fieldset class="filtre">
+          <legend class="u-visually-hidden">Türe göre süz</legend>
+          <input type="radio" name="urun-turu" id="filtre-tumu" checked />
+          <label for="filtre-tumu">Tümü <span>{products.length}</span></label>
+          {turler.map(({ tur, adet }) => (
+            <>
+              <input type="radio" name="urun-turu" id={`filtre-${tur}`} />
+              <label for={`filtre-${tur}`}>
+                {TUR[tur].cogul} <span>{adet}</span>
+              </label>
+            </>
+          ))}
+        </fieldset>
+      )
+    }
+
     <div class="sheet__grid">
-      {products.map((product, index) => <ProductCard product={product} index={index} />)}
+      {
+        products.map((product, index) => (
+          <div class="sheet__cell" data-tur={product.data.tur}>
+            <ProductCard product={product} index={index} />
+          </div>
+        ))
+      }
     </div>
   </section>
 
@@ -535,10 +572,77 @@ const faydaIkon: Record<string, string> = {
     margin-top: var(--s-2);
     max-width: none;
   }
+  /* --- Tür süzgeci (JS'siz) --- */
+
+  .filtre {
+    border: 0;
+    padding: 0;
+    margin: 0 0 var(--s-6);
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--s-2);
+  }
+  .filtre input {
+    position: absolute;
+    opacity: 0;
+    pointer-events: none;
+  }
+  .filtre label {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--s-2);
+    min-height: var(--tap-min);
+    padding: 0 var(--s-4);
+    border: 1px solid var(--c-line-strong);
+    border-radius: var(--r-pill);
+    color: var(--c-text-muted);
+    font-size: var(--t-small);
+    cursor: pointer;
+    transition:
+      border-color var(--d-fast) var(--e-out),
+      color var(--d-fast) var(--e-out),
+      background var(--d-fast) var(--e-out);
+  }
+  .filtre label span {
+    font-family: var(--font-mono);
+    font-size: var(--t-micro);
+    color: var(--c-text-faint);
+  }
+  .filtre label:hover {
+    border-color: var(--c-accent-dim);
+    color: var(--c-text);
+  }
+  .filtre input:checked + label {
+    background: var(--c-accent);
+    border-color: var(--c-accent);
+    color: var(--c-on-accent);
+    font-weight: 600;
+  }
+  .filtre input:checked + label span {
+    color: var(--c-on-accent);
+    opacity: 0.7;
+  }
+  /* Klavyeyle gezinirken hangi seçenekte olduğumuz görünsün */
+  .filtre input:focus-visible + label {
+    outline: 2px solid var(--c-focus);
+    outline-offset: 2px;
+  }
+
+  /* Seçime göre gizleme — `:has()` yoksa hepsi görünür kalır */
+  .sheet:has(#filtre-eklenti:checked) .sheet__cell:not([data-tur="eklenti"]),
+  .sheet:has(#filtre-arac:checked) .sheet__cell:not([data-tur="arac"]),
+  .sheet:has(#filtre-sablon:checked) .sheet__cell:not([data-tur="sablon"]) {
+    display: none;
+  }
+
   .sheet__grid {
     display: grid;
     gap: var(--s-6);
     grid-template-columns: 1fr;
+  }
+  /* Hücre kartı taşır; kart yüksekliği hücreyi doldurur */
+  .sheet__cell {
+    display: grid;
   }
   @media (min-width: 900px) {
     .sheet {

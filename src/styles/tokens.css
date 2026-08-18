@@ -262,6 +262,20 @@ a {
   opacity: 1;
 }
 
+/* Ekranda görünmez ama ekran okuyucu okur — süzgeç başlığı gibi bağlam
+   veren ama görsel olarak gereksiz metinler için. */
+.u-visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+  border: 0;
+}
+
 .js .u-reveal {
   opacity: 0;
   /* Hafif ölçek, düz kaymadan daha "canlı" bir giriş verir (ADR-020) */

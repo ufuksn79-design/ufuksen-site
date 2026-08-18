@@ -6,7 +6,7 @@ import { getPosts, getVisibleCategories, categoryPath, formatDate, summarize } f
 import { getVideos, videoThumb } from "../lib/discover";
 import CourseCard, { type Course } from "../components/CourseCard.astro";
 import courseData from "../content/courses.json";
-import productData from "../content/products.json";
+import { getProducts, productPath } from "../lib/products";
 import seo from "../content/seo.json";
 
 const posts = await getPosts();
@@ -16,7 +16,7 @@ const allVideos = await getVideos();
 const videos = allVideos.slice(0, 6);
 const courses = (courseData.kurslar as Course[]).slice(0, 3);
 const courseCount = courseData.kurslar.length;
-const products = productData.urunler;
+const products = await getProducts();
 const totalPosts = posts.length;
 
 const site = Astro.site ?? new URL("https://www.ufuksen.com");
@@ -121,12 +121,16 @@ const counters = [
         products.map((product) => (
           <article class="tile">
             <span class="tag">
-              {product.durum === "aktif" ? `v${product.surum}` : product.durum === "gelistiriliyor" ? `Geliştiriliyor · %${product.ilerleme}` : "Alfa"}
+              {product.data.surum
+                ? `v${product.data.surum}`
+                : product.data.ilerleme
+                  ? `Geliştiriliyor · %${product.data.ilerleme}`
+                  : product.data.durum}
             </span>
-            <h3>{product.ad}</h3>
-            <p>{product.ozet}</p>
+            <h3>{product.data.ad}</h3>
+            <p>{product.data.ozet}</p>
             {/* Her ürünün kendi sayfası var (ADR-021) */}
-            <a class="tile__link" href={`/urunler/${product.slug}`}>Detay <i>→</i></a>
+            <a class="tile__link" href={productPath(product.data.slug)}>Detay <i>→</i></a>
           </article>
         ))
       }

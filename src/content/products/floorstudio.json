@@ -1,0 +1,81 @@
+{
+  "slug": "floorstudio",
+  "ad": "FloorStudio",
+  "tur": "eklenti",
+  "durum": "aktif",
+  "ilerleme": null,
+  "surum": "3.1.5",
+  "sira": 1,
+  "yayinda": true,
+  "ozet": "Profesyonel zemin desenlerini saniyeler içinde oluşturan SketchUp eklentisi.",
+  "aciklama": "Zemin modellemesi elle yapıldığında hem uzun sürer hem de derz ölçüleri tutmaz. FloorStudio, parametreleri girip tek tıkla gerçek ölçülü zemin üretmenizi sağlar.",
+  "slogan": "Zaman kazanın, kalitenizi artırın.",
+  "kapak": null,
+  "galeri": [],
+  "video": null,
+  "uyumluluk": [
+    "SketchUp 2024",
+    "SketchUp 2025",
+    "SketchUp 2026"
+  ],
+  "ozellikler": [
+    {
+      "baslik": "Otomatik üretim",
+      "not": "Zeminleri tek tıklamayla oluşturun.",
+      "ikon": "bolt"
+    },
+    {
+      "baslik": "Gerçek ölçüler",
+      "not": "Fiziksel derz (gap) sistemi ile tamamen doğru sonuçlar.",
+      "ikon": "ruler"
+    },
+    {
+      "baslik": "Zengin desen kütüphanesi",
+      "not": "13+ profesyonel desen seçeneği.",
+      "ikon": "grid"
+    },
+    {
+      "baslik": "Gelişmiş parametreler",
+      "not": "Rastgele uzunluk, genişlik, renk ve yükseklik varyasyonları.",
+      "ikon": "sliders"
+    },
+    {
+      "baslik": "Kalınlık ve bevel",
+      "not": "Gerçekçi kalınlık ve bevel seçenekleri.",
+      "ikon": "layers"
+    },
+    {
+      "baslik": "UV ve malzeme yönetimi",
+      "not": "Akıllı UV hizalama ve malzeme kontrolü.",
+      "ikon": "texture"
+    }
+  ],
+  "listeler": [
+    {
+      "baslik": "Desen kütüphanesi",
+      "ogeler": [
+        "Wood Straight",
+        "Herringbone Single",
+        "Herringbone Double",
+        "Chevron",
+        "Tile Diamond 45°",
+        "Stack Bond"
+      ],
+      "not": "Görselde altı desen gösteriliyor; eklenti 13+ desen içeriyor."
+    }
+  ],
+  "vurgular": [
+    "Tek işlem undo — güvenli üretim",
+    "Hızlı ve verimli",
+    "Profesyonel sonuçlar"
+  ],
+  "sss": [],
+  "fiyat": null,
+  "satinAlmaUrl": null,
+  "denemeUrl": null,
+  "iletisimEposta": "ufuksn79@gmail.com",
+  "yazilim": [
+    "sketchup"
+  ],
+  "icNot": "/media/urun/floorstudio.jpg — tanitim gorseli kullanicidan bekleniyor. Dosya bu yola konunca gorsel alanina ayni yol yazilacak."
+}

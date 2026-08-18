@@ -28,6 +28,32 @@ Format, Keep a Changelog yaklaşımına yakındır. Tarihler `YYYY-MM-DD` biçim
 - Kaynak WordPress sistemi migration boyunca salt okunur kabul edildi.
 - Dry-run, yedek ve rollback zorunlulukları eklendi.
 
+## [0.8.0] — 2026-08-18
+
+Ürün altyapısı: yeni ürün eklemek artık kod işi değil (ADR-022).
+
+### Changed
+
+- **Ürünler tek dosyadan ürün başına dosyaya taşındı** (`src/content/products/{slug}.json`). Panelde "Ürünler" kendi bölümü oldu: ekle / düzenle / sil tek tek yapılıyor
+- Ürüne özel `desenler` alanı, adlandırılmış `listeler` yapısına genelleştirildi — her ürün kendi başlığıyla istediği kadar liste tanımlayabiliyor
+- Ortak ürün mantığı `src/lib/products.ts` içinde toplandı; ikon kümesi iki dosyada kopyalanmaktan kurtuldu
+
+### Added
+
+- Astro içerik koleksiyonu + zod şeması: panelden hatalı veri gelirse derleme durur
+- Yeni isteğe bağlı bölümler: **ekran görüntüleri**, **tanıtım videosu**, **sık sorulanlar**, **fiyat**, **deneme sürümü bağlantısı** — hepsi boşken hiç görünmez
+- **"Sitede göster" anahtarı** — hazır olmayan ürün panelde bekler, sitede görünmez
+- **Tür süzgeci**: ürün sayısı 5'e ulaşınca kendiliğinden belirir; JavaScript kullanmaz (gizli radyo + `:has()`)
+- `.u-visually-hidden` yardımcı sınıfı
+- `docs/content/urun-ekleme.md` — ürün ekleme kılavuzu
+
+### Doğrulama
+
+- Göç betikle yapıldı, taşınmayan alan raporlandı: **sıfır veri kaybı**
+- Çekirdek, geçici 4. ve 5. ürün eklenerek sınandı: **hiç kod değişikliği olmadan** sayfa üretildi; video, liste, S.S.S., fiyat, satın al bölümleri ve yeni ikon çalıştı
+- Süzgeç tarayıcıda ölçüldü: Eklentiler → 2, Araçlar → 2, Tümü → 5; etiketler 44px; yatay taşma yok
+- 513 sayfa; `astro check` **0 hata**; yeni kırık link / eksik medya / boş gövde: 0
+
 ## [0.7.0] — 2026-08-18
 
 Ürünler bölümü yeniden kuruldu: teknik çizim dili, ürün başına sayfa, WhatsApp (ADR-021).

@@ -83,4 +83,94 @@ const pages = defineCollection({
   schema: z.object(base),
 });
 
-export const collections = { posts, pages };
+/* ------------------------------------------------------------------ */
+/* Ürünler (ADR-022)                                                   */
+/* ------------------------------------------------------------------ */
+
+const urunGorsel = z.object({
+  src: z.string(),
+  alt: z.string(),
+  not: z.string().nullable().optional(),
+});
+
+/**
+ * Ürünler her biri kendi dosyasında tutulur (`src/content/products/*.json`).
+ * Böylece panelde tek tek eklenip silinebilirler ve yeni ürün eklemek kod
+ * değişikliği gerektirmez.
+ *
+ * Şema burada doğrulanır: panelden hatalı veri gelirse derleme **durur**.
+ * Sessizce yanlış sayfa üretmektense gürültülü hata vermek yeğdir.
+ *
+ * İsteğe bağlı bölümler (galeri, video, listeler, S.S.S., fiyat) boş
+ * bırakıldığında sayfada hiç görünmez — yer tutucu üretilmez (AGENTS.md §5).
+ */
+const products = defineCollection({
+  loader: glob({ pattern: "**/*.json", base: "./src/content/products" }),
+  schema: z.object({
+    slug: z.string(),
+    ad: z.string(),
+    tur: z.enum(["eklenti", "arac", "sablon"]),
+    durum: z.enum(["aktif", "beta", "alfa", "gelistiriliyor", "arsiv"]),
+    /** Yalnızca `gelistiriliyor` durumunda anlamlı. */
+    ilerleme: z.number().min(0).max(100).nullable().default(null),
+    surum: z.string().nullable().default(null),
+    /** Listede sıralama; küçük olan önce. */
+    sira: z.number().default(99),
+    /** Kapalıyken ürün sitede hiç görünmez — hazır olmayan kayıt yayına düşmez. */
+    yayinda: z.boolean().default(true),
+
+    ozet: z.string(),
+    aciklama: z.string().nullable().default(null),
+    slogan: z.string().nullable().default(null),
+
+    kapak: urunGorsel.nullable().default(null),
+    galeri: z.array(urunGorsel).default([]),
+    video: z
+      .object({ youtubeId: z.string(), baslik: z.string().nullable().default(null) })
+      .nullable()
+      .default(null),
+
+    uyumluluk: z.array(z.string()).default([]),
+    ozellikler: z
+      .array(
+        z.object({
+          baslik: z.string(),
+          not: z.string(),
+          ikon: z.string().default("grid"),
+        }),
+      )
+      .default([]),
+    /** Adlandırılmış listeler: "Desen kütüphanesi", "Desteklenen formatlar"… */
+    listeler: z
+      .array(
+        z.object({
+          baslik: z.string(),
+          ogeler: z.array(z.string()),
+          not: z.string().nullable().default(null),
+        }),
+      )
+      .default([]),
+    vurgular: z.array(z.string()).default([]),
+    sss: z.array(z.object({ soru: z.string(), cevap: z.string() })).default([]),
+
+    fiyat: z
+      .object({
+        tutar: z.number().nullable().default(null),
+        paraBirimi: z.string().default("TRY"),
+        not: z.string().nullable().default(null),
+      })
+      .nullable()
+      .default(null),
+    satinAlmaUrl: z.string().nullable().default(null),
+    denemeUrl: z.string().nullable().default(null),
+    iletisimEposta: z.string().nullable().default(null),
+
+    /** Arşivdeki ilgili yazıları eşlemek için (bkz. lib/discover.ts SOFTWARE). */
+    yazilim: z.array(z.string()).default([]),
+
+    /** Yalnızca panelde görünür, sitede hiçbir yerde basılmaz. */
+    icNot: z.string().nullable().default(null),
+  }),
+});
+
+export const collections = { posts, pages, products };

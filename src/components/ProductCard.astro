@@ -4,35 +4,13 @@
  *
  * Tasarım dili SketchUp'ın kendi görsel diline dayanır: kareli zemin ızgarası,
  * kırmızı/yeşil/mavi eksen işareti, ölçü çizgisi ve çizim paftalarının sağ alt
- * köşesindeki künye bloğu. Amaç, sayfayı Instagram'dan açan birinin iki
- * saniyede "bu bir SketchUp aracı" diyebilmesi.
+ * köşesindeki künye bloğu.
  *
- * Veriler `src/content/products.json` içinde. Boş alanlar render edilmez —
- * eksik bilgi yer tutucu metinle doldurulmaz (AGENTS.md §5).
+ * Veri `src/content/products/{slug}.json` içinde; etiketler ve sıralama
+ * `src/lib/products.ts` içinde (ADR-022). Boş alanlar render edilmez.
  */
 import WhatsAppButton from "./WhatsAppButton.astro";
-
-export interface Product {
-  slug: string;
-  ad: string;
-  tur: "eklenti" | "arac" | "sablon";
-  durum: "aktif" | "beta" | "alfa" | "gelistiriliyor" | "arsiv";
-  ilerleme?: number;
-  surum: string | null;
-  ozet: string;
-  aciklama: string | null;
-  slogan: string | null;
-  gorsel: string | null;
-  gorselAlt: string | null;
-  uyumluluk: string[];
-  ozellikler: { baslik: string; not: string; ikon: string }[];
-  desenler: string[];
-  desenNotu: string | null;
-  vurgular: string[];
-  iletisimEposta: string | null;
-  satinAlmaUrl: string | null;
-  yazilim: string[];
-}
+import { DURUM, TUR, productPath, type Product } from "../lib/products";
 
 interface Props {
   product: Product;
@@ -41,23 +19,10 @@ interface Props {
 }
 
 const { product, index = 0 } = Astro.props;
+const u = product.data;
 
-const DURUM: Record<Product["durum"], { etiket: string; ton: string }> = {
-  aktif: { etiket: "Yayında", ton: "ok" },
-  beta: { etiket: "Beta", ton: "warn" },
-  alfa: { etiket: "Alfa", ton: "warn" },
-  gelistiriliyor: { etiket: "Geliştiriliyor", ton: "warn" },
-  arsiv: { etiket: "Arşiv", ton: "muted" },
-};
-
-const TUR: Record<Product["tur"], string> = {
-  eklenti: "SketchUp eklentisi",
-  arac: "Web aracı",
-  sablon: "Şablon",
-};
-
-const durum = DURUM[product.durum];
-const href = `/urunler/${product.slug}`;
+const durum = DURUM[u.durum];
+const href = productPath(u.slug);
 
 /** Künyedeki pafta numarası — çizim sayfalarındaki "SHEET 01/03" karşılığı. */
 const paftaNo = String(index + 1).padStart(2, "0");
@@ -73,27 +38,27 @@ const paftaNo = String(index + 1).padStart(2, "0");
       <circle cx="8" cy="32" r="1.8" fill="currentColor" stroke="none" />
     </svg>
 
-    <p class="pcard__kind">{TUR[product.tur]}</p>
+    <p class="pcard__kind">{TUR[u.tur].tekil}</p>
 
     <h3 class="pcard__title">
-      <a href={href}>{product.ad}</a>
+      <a href={href}>{u.ad}</a>
     </h3>
 
     {/* Ölçü çizgisi — teknik çizimlerdeki kotalama oku */}
     <div class="pcard__dim" aria-hidden="true">
       <span class="pcard__dim-line"></span>
       <span class="pcard__dim-text">
-        {product.surum ? `v${product.surum}` : durum.etiket}
+        {u.surum ? `v${u.surum}` : durum.etiket}
       </span>
       <span class="pcard__dim-line"></span>
     </div>
 
-    <p class="pcard__lead">{product.ozet}</p>
+    <p class="pcard__lead">{u.ozet}</p>
 
     {
-      product.vurgular.length > 0 && (
+      u.vurgular.length > 0 && (
         <ul class="pcard__points">
-          {product.vurgular.slice(0, 3).map((item) => (
+          {u.vurgular.slice(0, 3).map((item) => (
             <li>{item}</li>
           ))}
         </ul>
@@ -106,12 +71,12 @@ const paftaNo = String(index + 1).padStart(2, "0");
     <div>
       <dt>Durum</dt>
       <dd class:list={[`is-${durum.ton}`]}>
-        {durum.etiket}{product.ilerleme ? ` %${product.ilerleme}` : ""}
+        {durum.etiket}{u.ilerleme ? ` %${u.ilerleme}` : ""}
       </dd>
     </div>
     <div>
       <dt>Uyumluluk</dt>
-      <dd>{product.uyumluluk.length ? product.uyumluluk.join(" · ") : "—"}</dd>
+      <dd>{u.uyumluluk.length ? u.uyumluluk.join(" · ") : "—"}</dd>
     </div>
     <div>
       <dt>Pafta</dt>
@@ -126,7 +91,7 @@ const paftaNo = String(index + 1).padStart(2, "0");
         <path d="M5 12h13M12.5 5.5 19 12l-6.5 6.5" />
       </svg>
     </a>
-    <WhatsAppButton konu={product.ad} etiket="Sor" />
+    <WhatsAppButton konu={u.ad} etiket="Sor" />
   </div>
 </article>
 

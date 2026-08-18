@@ -2,25 +2,21 @@
 import type { GetStaticPaths } from "astro";
 import Base from "../../layouts/Base.astro";
 import WhatsAppButton from "../../components/WhatsAppButton.astro";
-import type { Product } from "../../components/ProductCard.astro";
-import productData from "../../content/products.json";
+import { getProducts, productPath, DURUM, TUR, ikon, type Product } from "../../lib/products";
 import { getSoftwareIndex } from "../../lib/discover";
 import { formatDate } from "../../lib/content";
 
 /**
- * Ürün ayrıntı sayfası (ADR-021).
+ * Ürün ayrıntı sayfası (ADR-021, ADR-022).
  *
- * Her ürünün kendi adresi var: /urunler/{slug}. Sosyal medyada tek bir ürünün
- * bağlantısı paylaşılabilsin diye ayrıldı — ziyaretçi listeye düşüp aradığını
- * aramak zorunda kalmıyor.
- *
- * Eksik veri uydurulmaz: özellik listesi boşsa bölüm hiç çıkmaz, bunun yerine
- * "hazırlanıyor" notu ve iletişim yolu gösterilir (AGENTS.md §5).
+ * Bölümlerin tamamı isteğe bağlı: galeri, video, özellikler, listeler, S.S.S.,
+ * fiyat, uyumluluk. Verisi olmayan bölüm hiç render edilmez — yeni bir ürün
+ * eklendiğinde hangi bölümlerin çıkacağını veri belirler, kod değişmez.
  */
-export const getStaticPaths: GetStaticPaths = () => {
-  const products = productData.urunler as Product[];
-  return products.map((product, index) => ({
-    params: { slug: product.slug },
+export const getStaticPaths: GetStaticPaths = async () => {
+  const urunler = await getProducts();
+  return urunler.map((product, index) => ({
+    params: { slug: product.data.slug },
     props: { product, index },
   }));
 };
@@ -30,65 +26,64 @@ interface Props {
   index: number;
 }
 
-const { product } = Astro.props;
+const { product } = Astro.props as Props;
+const u = product.data;
 const site = Astro.site ?? new URL("https://www.ufuksen.com");
 
-const DURUM: Record<Product["durum"], { etiket: string; ton: string }> = {
-  aktif: { etiket: "Yayında", ton: "ok" },
-  beta: { etiket: "Beta", ton: "warn" },
-  alfa: { etiket: "Alfa sürüm", ton: "warn" },
-  gelistiriliyor: { etiket: "Geliştiriliyor", ton: "warn" },
-  arsiv: { etiket: "Arşiv", ton: "muted" },
-};
-
-const TUR: Record<Product["tur"], string> = {
-  eklenti: "SketchUp eklentisi",
-  arac: "Web aracı",
-  sablon: "Şablon",
-};
-
-const durum = DURUM[product.durum];
+const durum = DURUM[u.durum];
 
 /** İlgili yazılar — arşivden gerçek içerik, uydurma değil. */
 const softwareIndex = await getSoftwareIndex();
-const ilgiliYazilar = product.yazilim.length
-  ? (softwareIndex.find((entry) => entry.tag.slug === product.yazilim[0])?.posts ?? []).slice(0, 4)
+const ilgiliYazilar = u.yazilim.length
+  ? (softwareIndex.find((entry) => entry.tag.slug === u.yazilim[0])?.posts ?? []).slice(0, 4)
   : [];
-const yazilimSlug = product.yazilim[0] ?? null;
+const yazilimSlug = u.yazilim[0] ?? null;
 const yazilimAdi =
   softwareIndex.find((entry) => entry.tag.slug === yazilimSlug)?.tag.name ?? null;
 
-const icons: Record<string, string> = {
-  bolt: '<path d="M13 2 4.5 13.5H11l-1 8.5 8.5-11.5H12z"/>',
-  ruler: '<rect x="2.5" y="8" width="19" height="8" rx="1.5"/><path d="M7 8v3M11 8v4M15 8v3M19 8v4"/>',
-  grid: '<rect x="3.5" y="3.5" width="7" height="7" rx="1"/><rect x="13.5" y="3.5" width="7" height="7" rx="1"/><rect x="3.5" y="13.5" width="7" height="7" rx="1"/><rect x="13.5" y="13.5" width="7" height="7" rx="1"/>',
-  sliders:
-    '<path d="M4 7h10M18 7h2M4 12h4M12 12h8M4 17h9M17 17h3"/><circle cx="16" cy="7" r="2"/><circle cx="10" cy="12" r="2"/><circle cx="15" cy="17" r="2"/>',
-  layers: '<path d="m12 3 8 4.5-8 4.5-8-4.5z"/><path d="m4 12 8 4.5 8-4.5M4 16.5 12 21l8-4.5"/>',
-  texture:
-    '<rect x="3.5" y="3.5" width="17" height="17" rx="2"/><path d="M3.5 9h17M3.5 15h17M9 3.5v17M15 3.5v17"/>',
-};
+/** Fiyat yalnızca gerçekten girilmişse gösterilir. */
+const fiyatMetni =
+  u.fiyat?.tutar != null
+    ? new Intl.NumberFormat("tr-TR", {
+        style: "currency",
+        currency: u.fiyat.paraBirimi || "TRY",
+        maximumFractionDigits: 0,
+      }).format(u.fiyat.tutar)
+    : null;
+
+/** Ayrıntı bölümü hiç yoksa "hazırlanıyor" notu gösterilir. */
+const icerikVar =
+  u.ozellikler.length > 0 || u.listeler.length > 0 || u.galeri.length > 0 || u.video !== null;
 
 const jsonLd: Record<string, unknown> = {
   "@context": "https://schema.org",
   "@type": "SoftwareApplication",
-  name: product.ad,
-  description: product.aciklama ?? product.ozet,
+  name: u.ad,
+  description: u.aciklama ?? u.ozet,
   applicationCategory: "DesignApplication",
-  url: new URL(`/urunler/${product.slug}`, site).href,
+  url: new URL(productPath(u.slug), site).href,
   author: { "@type": "Person", name: "Ufuk Şen", url: site.href },
-  ...(product.surum ? { softwareVersion: product.surum } : {}),
-  ...(product.uyumluluk.length ? { operatingSystem: product.uyumluluk.join(", ") } : {}),
-  ...(product.ozellikler.length
-    ? { featureList: product.ozellikler.map((f) => f.baslik) }
+  ...(u.surum ? { softwareVersion: u.surum } : {}),
+  ...(u.uyumluluk.length ? { operatingSystem: u.uyumluluk.join(", ") } : {}),
+  ...(u.ozellikler.length ? { featureList: u.ozellikler.map((f) => f.baslik) } : {}),
+  ...(u.kapak ? { image: new URL(u.kapak.src, site).href } : {}),
+  ...(u.fiyat?.tutar != null
+    ? {
+        offers: {
+          "@type": "Offer",
+          price: u.fiyat.tutar,
+          priceCurrency: u.fiyat.paraBirimi || "TRY",
+          ...(u.satinAlmaUrl ? { url: u.satinAlmaUrl } : {}),
+        },
+      }
     : {}),
 };
 ---
-
 <Base
-  title={`${product.ad} — ${TUR[product.tur]} | Ufuk Şen`}
-  description={product.aciklama ?? product.ozet}
-  path={`/urunler/${product.slug}`}
+  title={`${u.ad} — ${TUR[u.tur].tekil} | Ufuk Şen`}
+  description={u.aciklama ?? u.ozet}
+  path={productPath(u.slug)}
+  ogImage={u.kapak?.src ?? null}
   padded={false}
   jsonLd={jsonLd}
 >
@@ -98,36 +93,45 @@ const jsonLd: Record<string, unknown> = {
       <nav class="p__crumb" aria-label="Konum">
         <a href="/urunler">Ürünler</a>
         <span aria-hidden="true">/</span>
-        <b>{product.ad}</b>
+        <b>{u.ad}</b>
       </nav>
 
-      <p class="p__kind">{TUR[product.tur]}</p>
-      <h1>{product.ad}</h1>
+      <p class="p__kind">{TUR[u.tur].tekil}</p>
+      <h1>{u.ad}</h1>
 
       <div class="p__badges">
         <span class:list={["badge", `badge--${durum.ton}`]}>
-          {durum.etiket}{product.ilerleme ? ` · %${product.ilerleme}` : ""}
+          {durum.etiket}{u.ilerleme ? ` · %${u.ilerleme}` : ""}
         </span>
-        {product.surum && <span class="badge badge--v">v{product.surum}</span>}
+        {u.surum && <span class="badge badge--v">v{u.surum}</span>}
+        {fiyatMetni && <span class="badge badge--fiyat">{fiyatMetni}</span>}
       </div>
 
-      <p class="p__lead">{product.ozet}</p>
-      {product.slogan && <p class="p__slogan">“{product.slogan}”</p>}
+      <p class="p__lead">{u.ozet}</p>
+      {u.slogan && <p class="p__slogan">“{u.slogan}”</p>}
+      {u.fiyat?.not && <p class="note">{u.fiyat.not}</p>}
 
       <div class="p__cta">
         {
-          product.satinAlmaUrl && (
-            <a class="btn-main" href={product.satinAlmaUrl} target="_blank" rel="noopener">
-              Satın al
+          u.satinAlmaUrl && (
+            <a class="btn-main" href={u.satinAlmaUrl} target="_blank" rel="noopener">
+              Satın al{fiyatMetni ? ` — ${fiyatMetni}` : ""}
             </a>
           )
         }
-        <WhatsAppButton konu={product.ad} boyut="buyuk" etiket="WhatsApp'tan sor" />
         {
-          product.iletisimEposta && (
+          u.denemeUrl && (
+            <a class="btn-ghost" href={u.denemeUrl} target="_blank" rel="noopener">
+              Denemeyi indir
+            </a>
+          )
+        }
+        <WhatsAppButton konu={u.ad} boyut="buyuk" etiket="WhatsApp'tan sor" />
+        {
+          u.iletisimEposta && (
             <a
               class="btn-ghost"
-              href={`mailto:${product.iletisimEposta}?subject=${encodeURIComponent(`${product.ad} hakkında`)}`}
+              href={`mailto:${u.iletisimEposta}?subject=${encodeURIComponent(`${u.ad} hakkında`)}`}
             >
               E-posta gönder
             </a>
@@ -139,40 +143,50 @@ const jsonLd: Record<string, unknown> = {
     {/* ---------------- Gövde ---------------- */}
     <div class="p__body">
       {
-        product.gorsel && (
+        u.kapak && (
           <figure class="p__shot">
-            <img
-              src={product.gorsel}
-              alt={product.gorselAlt ?? `${product.ad} tanıtım görseli`}
-              loading="lazy"
-              decoding="async"
-            />
+            <img src={u.kapak.src} alt={u.kapak.alt} loading="lazy" decoding="async" />
+            {u.kapak.not && <figcaption>{u.kapak.not}</figcaption>}
           </figure>
         )
       }
 
       {
-        product.aciklama && (
-          <section class="p__about">
-            <h2>Ne işe yarar?</h2>
-            <p>{product.aciklama}</p>
+        u.video && (
+          <section>
+            <h2>{u.video.baslik ?? "Tanıtım videosu"}</h2>
+            {/* Tıklanana kadar YouTube yüklenmez — sayfa hızını korur */}
+            <div class="p__video">
+              <iframe
+                src={`https://www.youtube-nocookie.com/embed/${u.video.youtubeId}`}
+                title={u.video.baslik ?? `${u.ad} tanıtım videosu`}
+                loading="lazy"
+                allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+              />
+            </div>
           </section>
         )
       }
 
       {
-        product.ozellikler.length > 0 && (
+        u.aciklama && (
+          <section class="p__about">
+            <h2>Ne işe yarar?</h2>
+            <p>{u.aciklama}</p>
+          </section>
+        )
+      }
+
+      {
+        u.ozellikler.length > 0 && (
           <section>
             <h2>Özellikler</h2>
             <ul class="feats">
-              {product.ozellikler.map((feature) => (
+              {u.ozellikler.map((feature) => (
                 <li class="u-reveal">
                   <span class="feats__icon">
-                    <svg
-                      viewBox="0 0 24 24"
-                      aria-hidden="true"
-                      set:html={icons[feature.ikon] ?? icons.grid}
-                    />
+                    <svg viewBox="0 0 24 24" aria-hidden="true" set:html={ikon(feature.ikon)} />
                   </span>
                   <b>{feature.baslik}</b>
                   <span>{feature.not}</span>
@@ -184,25 +198,41 @@ const jsonLd: Record<string, unknown> = {
       }
 
       {
-        product.desenler.length > 0 && (
+        u.galeri.length > 0 && (
           <section>
-            <h2>Desen kütüphanesi</h2>
-            <ul class="pats">
-              {product.desenler.map((name) => (
-                <li>{name}</li>
+            <h2>Ekran görüntüleri</h2>
+            <div class="gal" data-lightbox>
+              {u.galeri.map((g) => (
+                <figure>
+                  <img src={g.src} alt={g.alt} loading="lazy" decoding="async" />
+                  {g.not && <figcaption>{g.not}</figcaption>}
+                </figure>
               ))}
-            </ul>
-            {product.desenNotu && <p class="note">{product.desenNotu}</p>}
+            </div>
           </section>
         )
       }
 
       {
-        product.uyumluluk.length > 0 && (
+        u.listeler.map((liste) => (
+          <section>
+            <h2>{liste.baslik}</h2>
+            <ul class="pats">
+              {liste.ogeler.map((oge) => (
+                <li>{oge}</li>
+              ))}
+            </ul>
+            {liste.not && <p class="note">{liste.not}</p>}
+          </section>
+        ))
+      }
+
+      {
+        u.uyumluluk.length > 0 && (
           <section>
             <h2>Uyumluluk</h2>
             <ul class="compat">
-              {product.uyumluluk.map((item) => (
+              {u.uyumluluk.map((item) => (
                 <li>{item}</li>
               ))}
             </ul>
@@ -210,18 +240,34 @@ const jsonLd: Record<string, unknown> = {
         )
       }
 
+      {
+        u.sss.length > 0 && (
+          <section>
+            <h2>Sık sorulanlar</h2>
+            <div class="sss">
+              {u.sss.map((s) => (
+                <details>
+                  <summary>{s.soru}</summary>
+                  <p>{s.cevap}</p>
+                </details>
+              ))}
+            </div>
+          </section>
+        )
+      }
+
       {/* Verisi henüz gelmemiş ürün: boş bölüm yerine dürüst not */}
       {
-        product.ozellikler.length === 0 && (
+        !icerikVar && (
           <section class="pending">
             <h2>Ayrıntılar hazırlanıyor</h2>
             <p>
-              {product.ad} üzerinde çalışma sürüyor
-              {product.ilerleme ? ` (yaklaşık %${product.ilerleme})` : ""}. Özellik
-              listesi ve ekran görüntüleri hazır olduğunda bu sayfaya eklenecek.
-              Merak ettiğiniz bir şey varsa doğrudan yazabilirsiniz.
+              {u.ad} üzerinde çalışma sürüyor
+              {u.ilerleme ? ` (yaklaşık %${u.ilerleme})` : ""}. Özellik listesi ve
+              ekran görüntüleri hazır olduğunda bu sayfaya eklenecek. Merak
+              ettiğiniz bir şey varsa doğrudan yazabilirsiniz.
             </p>
-            <WhatsAppButton konu={product.ad} etiket="Durumu sor" />
+            <WhatsAppButton konu={u.ad} etiket="Durumu sor" />
           </section>
         )
       }
@@ -259,7 +305,7 @@ const jsonLd: Record<string, unknown> = {
         <h2>Sorunuz mu var?</h2>
         <p>Kullanımı, uyumluluğu veya fiyatı — doğrudan bana yazın.</p>
       </div>
-      <WhatsAppButton konu={product.ad} boyut="buyuk" etiket="WhatsApp'tan sor" />
+      <WhatsAppButton konu={u.ad} boyut="buyuk" etiket="WhatsApp'tan sor" />
     </footer>
   </article>
 </Base>
@@ -343,6 +389,12 @@ const jsonLd: Record<string, unknown> = {
   .badge--warn { color: var(--c-accent); }
   .badge--muted { color: var(--c-text-faint); }
   .badge--v { color: var(--c-text-muted); }
+  .badge--fiyat {
+    color: var(--c-on-accent);
+    background: var(--c-accent);
+    border-color: var(--c-accent);
+    font-weight: 600;
+  }
 
   .p__lead {
     margin-top: var(--s-4);
@@ -429,6 +481,98 @@ const jsonLd: Record<string, unknown> = {
     width: 100%;
     height: auto;
     display: block;
+  }
+  .p__shot figcaption,
+  .gal figcaption {
+    padding: var(--s-2) var(--s-3);
+    font-size: var(--t-micro);
+    color: var(--c-text-faint);
+    border-top: 1px solid var(--c-line);
+  }
+
+  /* Video — oranı korur, taşmaz */
+  .p__video {
+    position: relative;
+    aspect-ratio: 16 / 9;
+    border: 1px solid var(--c-line-strong);
+    border-radius: var(--r-lg);
+    overflow: hidden;
+    background: var(--c-base);
+  }
+  .p__video iframe {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+  }
+
+  /* Galeri */
+  .gal {
+    display: grid;
+    gap: var(--s-4);
+    grid-template-columns: 1fr;
+  }
+  .gal figure {
+    border: 1px solid var(--c-line-strong);
+    border-radius: var(--r-md);
+    overflow: hidden;
+    background: var(--c-base);
+  }
+  .gal img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  @media (min-width: 700px) {
+    .gal {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  /* Sık sorulanlar — JS'siz açılır kapanır */
+  .sss {
+    display: grid;
+    gap: 1px;
+    background: var(--c-line);
+    border: 1px solid var(--c-line);
+    border-radius: var(--r-md);
+    overflow: hidden;
+  }
+  .sss details {
+    background: var(--c-surface-raised);
+  }
+  .sss summary {
+    display: flex;
+    align-items: center;
+    gap: var(--s-3);
+    min-height: var(--tap-min);
+    padding: var(--s-3) var(--s-4);
+    cursor: pointer;
+    color: var(--c-text);
+    font-weight: 500;
+    font-size: var(--t-small);
+    list-style: none;
+  }
+  .sss summary::-webkit-details-marker {
+    display: none;
+  }
+  .sss summary::before {
+    content: "+";
+    font-family: var(--font-mono);
+    color: var(--c-accent);
+    flex: none;
+  }
+  .sss details[open] summary::before {
+    content: "−";
+  }
+  .sss summary:hover {
+    background: var(--c-surface-hover);
+  }
+  .sss details p {
+    padding: 0 var(--s-4) var(--s-4) calc(var(--s-4) + 1.1em);
+    color: var(--c-text-muted);
+    font-size: var(--t-small);
   }
 
   .feats {

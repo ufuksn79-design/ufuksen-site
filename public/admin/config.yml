@@ -162,6 +162,236 @@ collections:
       - { label: readingMinutes, name: readingMinutes, widget: hidden }
       - { label: migrationChecksum, name: migrationChecksum, widget: hidden }
 
+
+  # ------------------------------------------------------------------ #
+  # Ürünler — her ürün kendi dosyasında (ADR-022)
+  #
+  # Yeni ürün eklemek için "Yeni Ürün" düğmesi yeterli; kod değişmez.
+  # Doldurulmayan bölümler (galeri, video, S.S.S., fiyat) sayfada hiç
+  # görünmez — boş başlık basılmaz.
+  # ------------------------------------------------------------------ #
+  - name: products
+    label: Ürünler
+    label_singular: Ürün
+    folder: src/content/products
+    extension: json
+    format: json
+    create: true
+    slug: "{{fields.slug}}"
+    identifier_field: ad
+    summary: "{{ad}}"
+    sortable_fields: [sira, ad]
+    fields:
+      - { label: Ad, name: ad, widget: string }
+      - {
+          label: URL adresi (slug),
+          name: slug,
+          widget: string,
+          hint: "Ürün sayfasının adresi: /urunler/BURASI. Yayınlandıktan sonra DEĞİŞTİRMEYİN.",
+        }
+      - {
+          label: Tür,
+          name: tur,
+          widget: select,
+          default: eklenti,
+          options:
+            [
+              { label: "SketchUp eklentisi", value: eklenti },
+              { label: "Web aracı", value: arac },
+              { label: "Şablon", value: sablon },
+            ],
+        }
+      - {
+          label: Durum,
+          name: durum,
+          widget: select,
+          default: aktif,
+          options:
+            [
+              { label: "Yayında", value: aktif },
+              { label: "Beta", value: beta },
+              { label: "Alfa", value: alfa },
+              { label: "Geliştiriliyor", value: gelistiriliyor },
+              { label: "Arşiv", value: arsiv },
+            ],
+        }
+      - {
+          label: Sitede göster,
+          name: yayinda,
+          widget: boolean,
+          default: true,
+          hint: "Kapatırsanız ürün sitede hiçbir yerde görünmez. Hazır olmayan kaydı burada bekletebilirsiniz.",
+        }
+      - {
+          label: İlerleme yüzdesi,
+          name: ilerleme,
+          widget: number,
+          required: false,
+          value_type: int,
+          min: 0,
+          max: 100,
+          hint: "Yalnızca 'Geliştiriliyor' durumunda anlamlı. Boş bırakılabilir.",
+        }
+      - { label: Sürüm, name: surum, widget: string, required: false, hint: "Örnek: 3.1.5" }
+      - {
+          label: Sıra,
+          name: sira,
+          widget: number,
+          default: 99,
+          value_type: int,
+          hint: "Listede küçük sayı önce gelir.",
+        }
+
+      - { label: Özet, name: ozet, widget: text, hint: "Kartta görünen tek cümle." }
+      - {
+          label: Açıklama,
+          name: aciklama,
+          widget: text,
+          required: false,
+          hint: "'Ne işe yarar?' bölümü. Hangi sorunu çözdüğünü anlatın.",
+        }
+      - { label: Slogan, name: slogan, widget: string, required: false }
+
+      - label: Kapak görseli
+        name: kapak
+        widget: object
+        required: false
+        collapsed: true
+        fields:
+          - { label: Görsel, name: src, widget: image }
+          - {
+              label: Alternatif metin,
+              name: alt,
+              widget: string,
+              hint: "Görselde ne olduğunu yazın; ekran okuyucular ve Google bunu okur.",
+            }
+          - { label: Alt yazı, name: not, widget: string, required: false }
+
+      - label: Ekran görüntüleri
+        name: galeri
+        widget: list
+        required: false
+        collapsed: true
+        label_singular: Görsel
+        summary: "{{alt}}"
+        fields:
+          - { label: Görsel, name: src, widget: image }
+          - { label: Alternatif metin, name: alt, widget: string }
+          - { label: Alt yazı, name: not, widget: string, required: false }
+
+      - label: Tanıtım videosu
+        name: video
+        widget: object
+        required: false
+        collapsed: true
+        fields:
+          - {
+              label: YouTube kimliği,
+              name: youtubeId,
+              widget: string,
+              hint: "Video adresindeki v= sonrasındaki kod. Örnek: dQw4w9WgXcQ",
+            }
+          - { label: Başlık, name: baslik, widget: string, required: false }
+
+      - {
+          label: Uyumluluk,
+          name: uyumluluk,
+          widget: list,
+          required: false,
+          hint: "Her satıra bir tane. Örnek: SketchUp 2024",
+        }
+
+      - label: Özellikler
+        name: ozellikler
+        widget: list
+        required: false
+        label_singular: Özellik
+        summary: "{{baslik}}"
+        fields:
+          - { label: Başlık, name: baslik, widget: string }
+          - { label: Açıklama, name: not, widget: string }
+          - {
+              label: İkon,
+              name: ikon,
+              widget: select,
+              default: grid,
+              options:
+                [grid, bolt, ruler, sliders, layers, texture, kesim, kutu, indir, bulut, kod, onay, saat, goz],
+            }
+
+      - label: Listeler
+        name: listeler
+        widget: list
+        required: false
+        collapsed: true
+        label_singular: Liste
+        summary: "{{baslik}}"
+        hint: "Adlandırılmış listeler: 'Desen kütüphanesi', 'Desteklenen formatlar' gibi."
+        fields:
+          - { label: Başlık, name: baslik, widget: string }
+          - { label: Öğeler, name: ogeler, widget: list }
+          - { label: Not, name: not, widget: string, required: false }
+
+      - {
+          label: Öne çıkanlar,
+          name: vurgular,
+          widget: list,
+          required: false,
+          hint: "Kartta rozet olarak görünür; ilk üçü gösterilir.",
+        }
+
+      - label: Sık sorulanlar
+        name: sss
+        widget: list
+        required: false
+        collapsed: true
+        label_singular: Soru
+        summary: "{{soru}}"
+        fields:
+          - { label: Soru, name: soru, widget: string }
+          - { label: Cevap, name: cevap, widget: text }
+
+      - label: Fiyat
+        name: fiyat
+        widget: object
+        required: false
+        collapsed: true
+        fields:
+          - {
+              label: Tutar,
+              name: tutar,
+              widget: number,
+              required: false,
+              hint: "Boş bırakılırsa fiyat sitede hiç gösterilmez.",
+            }
+          - { label: Para birimi, name: paraBirimi, widget: string, default: TRY }
+          - {
+              label: Not,
+              name: not,
+              widget: string,
+              required: false,
+              hint: "Örnek: KDV dahil, tek seferlik ödeme.",
+            }
+
+      - { label: Satın alma bağlantısı, name: satinAlmaUrl, widget: string, required: false }
+      - { label: Deneme sürümü bağlantısı, name: denemeUrl, widget: string, required: false }
+      - { label: İletişim e-postası, name: iletisimEposta, widget: string, required: false }
+
+      - {
+          label: İlgili yazılım,
+          name: yazilim,
+          widget: list,
+          required: false,
+          hint: "Arşivdeki ilgili yazıları bağlar. Örnek: sketchup, vray, d5-render",
+        }
+      - {
+          label: İç not,
+          name: icNot,
+          widget: text,
+          required: false,
+          hint: "Yalnızca panelde görünür, sitede hiçbir yerde basılmaz.",
+        }
+
   # ------------------------------------------------------------------ #
   # Tek dosyalık ayarlar
   # ------------------------------------------------------------------ #
@@ -244,61 +474,6 @@ collections:
           - { label: E-posta, name: eposta, widget: string, required: false }
           - { label: Kaynak, name: kaynak, widget: hidden, required: false }
           - { label: Not, name: not, widget: hidden, required: false }
-
-      - name: urunler
-        label: Ürünler ve Eklentiler
-        file: src/content/products.json
-        fields:
-          - { label: Açıklama, name: aciklama, widget: hidden }
-          - { label: Kaynak, name: kaynak, widget: hidden, required: false }
-          - { label: Nasıl doldurulur, name: nasilDoldurulur, widget: hidden, required: false }
-          - label: Ürünler
-            name: urunler
-            widget: list
-            fields:
-              - { label: Ad, name: ad, widget: string }
-              - { label: Slug, name: slug, widget: string }
-              - { label: Özet, name: ozet, widget: text }
-              - { label: Açıklama, name: aciklama, widget: text, required: false }
-              - {
-                  label: Tür,
-                  name: tur,
-                  widget: select,
-                  options: [eklenti, arac, sablon],
-                }
-              - {
-                  label: Durum,
-                  name: durum,
-                  widget: select,
-                  options: [aktif, beta, alfa, gelistiriliyor, arsiv],
-                }
-              - { label: "İlerleme (%)", name: ilerleme, widget: number, required: false }
-              - { label: Sürüm, name: surum, widget: string, required: false }
-              - { label: Slogan, name: slogan, widget: string, required: false }
-              - { label: Görsel, name: gorsel, widget: image, required: false }
-              - { label: Görsel açıklaması, name: gorselAlt, widget: string, required: false }
-              - { label: Uyumluluk, name: uyumluluk, widget: list, required: false }
-              - label: Özellikler
-                name: ozellikler
-                widget: list
-                required: false
-                fields:
-                  - { label: Başlık, name: baslik, widget: string }
-                  - { label: Açıklama, name: not, widget: string }
-                  - {
-                      label: İkon,
-                      name: ikon,
-                      widget: select,
-                      options: [bolt, ruler, grid, sliders, layers, texture],
-                    }
-              - { label: Desenler, name: desenler, widget: list, required: false }
-              - { label: Desen notu, name: desenNotu, widget: string, required: false }
-              - { label: Vurgular, name: vurgular, widget: list, required: false }
-              - { label: İletişim e-postası, name: iletisimEposta, widget: string, required: false }
-              - { label: Satın alma bağlantısı, name: satinAlmaUrl, widget: string, required: false }
-              - { label: İlgili yazılım, name: yazilim, widget: list, required: false }
-              - { label: Not, name: not, widget: hidden, required: false }
-              - { label: gorselBekleniyor, name: gorselBekleniyor, widget: hidden, required: false }
 
       - name: sosyal
         label: Sosyal Bağlantılar

@@ -1,0 +1,29 @@
+{
+  "slug": "kitchen-studio",
+  "ad": "Kitchen Studio",
+  "tur": "eklenti",
+  "durum": "gelistiriliyor",
+  "ilerleme": 90,
+  "surum": null,
+  "sira": 2,
+  "yayinda": true,
+  "ozet": "Mutfak modellemesi için geliştirilmekte olan SketchUp eklentisi.",
+  "aciklama": null,
+  "slogan": null,
+  "kapak": null,
+  "galeri": [],
+  "video": null,
+  "uyumluluk": [],
+  "ozellikler": [],
+  "listeler": [],
+  "vurgular": [],
+  "sss": [],
+  "fiyat": null,
+  "satinAlmaUrl": null,
+  "denemeUrl": null,
+  "iletisimEposta": "ufuksn79@gmail.com",
+  "yazilim": [
+    "sketchup"
+  ],
+  "icNot": "Ayrıntılar kullanıcıdan gelmedi. Özellik listesi, uyumluluk ve görsel eklendiğinde bu kayıt tamamlanacak — uydurma bilgi yazılmadı (AGENTS.md §5)."
+}

@@ -1,0 +1,56 @@
+{
+  "slug": "panelcut-studio",
+  "ad": "PanelCut Studio",
+  "tur": "arac",
+  "durum": "alfa",
+  "ilerleme": null,
+  "surum": "0.17.0-alpha",
+  "sira": 3,
+  "yayinda": true,
+  "ozet": "Tarayıcıda çalışan panel açınım, kesim listesi ve CNC hazırlama uygulaması.",
+  "aciklama": "Kurulum gerektirmez, sunucu bağımlılığı yoktur; tüm hesap istemci tarafında yapılır. Masaüstü, tablet ve telefon tarayıcılarında çalışır. Çıktı belgedir: DXF makineye gider, PDF atölyeye asılır.",
+  "slogan": "Atölyedeki adam için: doğru sayı, yanlışta susmayan yazılım.",
+  "kapak": null,
+  "galeri": [],
+  "video": null,
+  "uyumluluk": [
+    "Masaüstü tarayıcı",
+    "Tablet",
+    "Telefon"
+  ],
+  "ozellikler": [
+    {
+      "baslik": "Panel açınım",
+      "not": "Ölçüden kesim parçasına.",
+      "ikon": "grid"
+    },
+    {
+      "baslik": "Kesim listesi",
+      "not": "Atölyeye asılabilir çıktı.",
+      "ikon": "ruler"
+    },
+    {
+      "baslik": "CNC hazırlama",
+      "not": "DXF çıktısı doğrudan makineye.",
+      "ikon": "sliders"
+    },
+    {
+      "baslik": "Kurulum yok",
+      "not": "Tarayıcıda açılır, hesap istemcide yapılır.",
+      "ikon": "bolt"
+    }
+  ],
+  "listeler": [],
+  "vurgular": [
+    "Ücretsiz",
+    "Kurulum gerektirmez",
+    "Milimetre hassasiyeti"
+  ],
+  "sss": [],
+  "fiyat": null,
+  "satinAlmaUrl": null,
+  "denemeUrl": null,
+  "iletisimEposta": "ufuksn79@gmail.com",
+  "yazilim": [],
+  "icNot": "Veriler projenin kendi PROJECT.md ve package.json dosyalarından okundu. Alfa sürümde; KompozitCut Studio adlı ücretli kompozit cephe sürümü planlanıyor."
+}
