@@ -40,7 +40,21 @@ for (const [from, to] of entries) {
   lines.push(`${from}  ${to}  301`);
 }
 
+/**
+ * Yeni sistem içi ad değişiklikleri.
+ *
+ * Bir ürün yeniden adlandırıldığında eski adres yayına çıkmış olabilir
+ * (paylaşılan bağlantı, yer imi). ADR-004'ün mantığı miras URL'lerle sınırlı
+ * değil: her eski adres ya çalışır ya 301 alır.
+ */
+const ICERIDEN = {
+  "/urunler/kitchen-studio": "/urunler/kitchenflow",
+};
+
 lines.push(
+  "",
+  "# --- Site içi ad değişiklikleri ------------------------------------------",
+  ...Object.entries(ICERIDEN).map(([from, to]) => `${from}  ${to}  301`),
   "",
   "# --- AMP / attachment / eski arama ---------------------------------------",
   "# Bu kalıplar BİLEREK burada değil: Cloudflare _redirects orta-yol splat",

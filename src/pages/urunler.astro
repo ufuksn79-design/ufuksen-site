@@ -40,6 +40,17 @@ const surumAraligi =
     ? `${sketchupSurumleri[0].replace(/\D+/g, "")}–${sketchupSurumleri.at(-1)!.replace(/\D+/g, "")}`
     : (sketchupSurumleri[0]?.replace(/\D+/g, "") ?? null);
 
+/**
+ * Meta açıklaması 160 karakteri aşmamalı — Google fazlasını keser. Ürün sayısı
+ * arttıkça hepsini saymak yerine ilk üçü yazılıp gerisi sayıya dönüşür; böylece
+ * yeni ürün eklendiğinde açıklama şişmez.
+ */
+const ilkUcAd = products.slice(0, 3).map((p) => p.data.ad).join(", ");
+const kalanAdet = Math.max(0, products.length - 3);
+const metaAciklama = `SketchUp eklentileri ve tarayıcıda çalışan araçlar: ${ilkUcAd}${
+  kalanAdet ? ` ve ${kalanAdet} araç daha` : ""
+}. Zemin, pencere, dolap ve panel işleri.`;
+
 const yayindaSayisi = products.filter((p) => p.data.durum === "aktif").length;
 const toplamOzellik = products.reduce((n, p) => n + p.data.ozellikler.length, 0);
 
@@ -78,7 +89,7 @@ const faydaIkon: Record<string, string> = {
 
 <Base
   title="SketchUp Eklentileri ve Araçlar | Ufuk Şen"
-  description={`SketchUp için geliştirdiğim eklentiler: ${products.map((p) => p.data.ad).join(", ")}. Zemin, mutfak ve panel işlerini ölçülü ve hızlı üretin.`}
+  description={metaAciklama}
   path="/urunler"
   padded={false}
   jsonLd={{

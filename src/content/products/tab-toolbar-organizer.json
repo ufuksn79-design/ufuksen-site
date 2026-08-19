@@ -1,0 +1,43 @@
+{
+  "ilerleme": null,
+  "slogan": null,
+  "kapak": null,
+  "galeri": [],
+  "video": null,
+  "listeler": [],
+  "sss": [],
+  "fiyat": null,
+  "satinAlmaUrl": null,
+  "denemeUrl": null,
+  "iletisimEposta": "ufuksn79@gmail.com",
+  "yayinda": true,
+  "slug": "tab-toolbar-organizer",
+  "ad": "Tab Toolbar Organizer",
+  "tur": "eklenti",
+  "durum": "aktif",
+  "surum": "2.0.2",
+  "sira": 7,
+  "ozet": "SketchUp araç çubuklarını adlandırılmış, renkli sekmeler hâlinde düzenleyen eklenti.",
+  "aciklama": "Sekme oluşturma, silme, yeniden adlandırma ve renklendirme. Ayarlar SketchUp uygulama tercihlerinde JSON olarak saklanır, okunurken doğrulanır ve normalize edilir.",
+  "uyumluluk": [],
+  "ozellikler": [
+    {
+      "baslik": "Sekmeli araç çubuğu",
+      "not": "Araç çubukları adlandırılmış sekmelerde gruplanır.",
+      "ikon": "grid"
+    },
+    {
+      "baslik": "Kalıcı ayarlar",
+      "not": "Yapılandırma SketchUp tercihlerinde saklanır ve her açılışta doğrulanır.",
+      "ikon": "onay"
+    }
+  ],
+  "vurgular": [
+    "Sekmeli düzen",
+    "Ayarlar kalıcı"
+  ],
+  "yazilim": [
+    "sketchup"
+  ],
+  "icNot": "Kaynak: Yeni proje/docs/tab_toolbar_organizer_phase2_report.md ve dist/tab_toolbar_organizer_v2.0.2.rbz. Belge sınırlı — özellik listesi kısa tutuldu, ayrıntı geldikçe genişletilmeli."
+}

@@ -1,0 +1,65 @@
+{
+  "ilerleme": null,
+  "slogan": null,
+  "kapak": null,
+  "galeri": [],
+  "video": null,
+  "listeler": [],
+  "sss": [],
+  "fiyat": null,
+  "satinAlmaUrl": null,
+  "denemeUrl": null,
+  "iletisimEposta": "ufuksn79@gmail.com",
+  "yayinda": true,
+  "slug": "fun-road",
+  "ad": "FUN ROAD",
+  "tur": "eklenti",
+  "durum": "aktif",
+  "surum": "1.1.0",
+  "sira": 5,
+  "ozet": "Parametrik yol, arazi takipli patika ve spiral rampa üreten SketchUp eklentisi.",
+  "aciklama": "Geometri, dönme-en-aza-indiren istasyon çerçevelerinden ve dikilmiş poligon ağlardan üretilir; SketchUp'ın Follow Me aracı kullanılmaz. Panel değerleri SI birimlerindedir — metre, derece ve yüzde.",
+  "uyumluluk": [
+    "SketchUp 2021",
+    "SketchUp 2022",
+    "SketchUp 2023",
+    "SketchUp 2024",
+    "SketchUp 2025"
+  ],
+  "ozellikler": [
+    {
+      "baslik": "Seçimden yol üret",
+      "not": "Bağlı bir kenar zinciri seçilip tek düğmeyle yola dönüştürülür.",
+      "ikon": "ruler"
+    },
+    {
+      "baslik": "Arazi kalemi",
+      "not": "Eğimli yüzeylere doğrudan istasyon konur; ara noktalar araziyi takip eder.",
+      "ikon": "layers"
+    },
+    {
+      "baslik": "Helis rampa",
+      "not": "Yarıçap, açı, yükseliş ve eksen verilerek spiral rampa üretilir.",
+      "ikon": "kutu"
+    },
+    {
+      "baslik": "Düz / yay / spline",
+      "not": "Çizim sırasında A tuşuyla geçiş yapılır.",
+      "ikon": "sliders"
+    },
+    {
+      "baslik": "Parametreyle yeniden düzenleme",
+      "not": "Her sonuç kayıtlı parametrelerini taşır; seçilip güncellenebilir.",
+      "ikon": "onay"
+    }
+  ],
+  "vurgular": [
+    "Arazi takipli",
+    "Spiral rampa",
+    "SI birimleri"
+  ],
+  "yazilim": [
+    "sketchup"
+  ],
+  "icNot": "Kaynak: Yeni proje/fun_road/README.md (1.1.0). README İngilizce."
+}

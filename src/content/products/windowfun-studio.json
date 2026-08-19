@@ -1,0 +1,63 @@
+{
+  "ilerleme": null,
+  "slogan": null,
+  "kapak": null,
+  "galeri": [],
+  "video": null,
+  "listeler": [],
+  "sss": [],
+  "fiyat": null,
+  "satinAlmaUrl": null,
+  "denemeUrl": null,
+  "iletisimEposta": "ufuksn79@gmail.com",
+  "yayinda": true,
+  "slug": "windowfun-studio",
+  "ad": "WindowFun Studio",
+  "tur": "eklenti",
+  "durum": "aktif",
+  "surum": "1.1.0",
+  "sira": 2,
+  "ozet": "Ölçü tabanlı parametrik pencere üreten SketchUp eklentisi; 51 hazır model.",
+  "aciklama": "Tek, eğimli veya bağlı L/U/C plan kenarları seçilerek her kenar uzunluğunda ve girilen yükseklikte pencere dizisi oluşturulur. Seçili hat modunda kasa, kanat, kayıt, cam, conta, kulp ve bevel ölçüleri her segmentin uzunluğuna özel orantılı ölçeklenir.",
+  "uyumluluk": [
+    "SketchUp 2024",
+    "SketchUp 2025",
+    "SketchUp 2026"
+  ],
+  "ozellikler": [
+    {
+      "baslik": "51 hazır model",
+      "not": "1–4 bölmeli, sürmeli ve Fransız pencere başlıkları altında sınıflandırılmış katalog.",
+      "ikon": "grid"
+    },
+    {
+      "baslik": "Hat boyunca dizi",
+      "not": "Seçilen plan kenarları boyunca pencereler otomatik dizilir.",
+      "ikon": "ruler"
+    },
+    {
+      "baslik": "Orantılı ölçekleme",
+      "not": "Kasa, kanat, cam ve kulp ölçüleri segment uzunluğuna göre uyarlanır.",
+      "ikon": "sliders"
+    },
+    {
+      "baslik": "Arama ve kategori",
+      "not": "Katalog sekmeler ve aramayla taranır; seçilen model adı ayarlarda saklanır.",
+      "ikon": "goz"
+    },
+    {
+      "baslik": "Maliyet ve teknik rapor",
+      "not": "Seçilen katalog adı maliyet ve teknik raporlara aktarılır.",
+      "ikon": "onay"
+    }
+  ],
+  "vurgular": [
+    "51 hazır model",
+    "Çevrimdışı çalışır",
+    "Maliyet raporu"
+  ],
+  "yazilim": [
+    "sketchup"
+  ],
+  "icNot": "Kaynak: Yeni proje/README.md ve dist/windowfun_studio-1.1.0.rbz"
+}

@@ -1,0 +1,78 @@
+{
+  "ilerleme": null,
+  "slogan": null,
+  "kapak": null,
+  "galeri": [],
+  "video": null,
+  "listeler": [
+    {
+      "baslik": "Perde aileleri",
+      "ogeler": [
+        "Tül",
+        "Fon",
+        "Kruvaze",
+        "Briz",
+        "Stor",
+        "Zebra",
+        "Screen",
+        "Silüet",
+        "Plise",
+        "Honeycomb",
+        "Roman",
+        "Dikey",
+        "Akıllı Dikey Tül",
+        "Japon Panel",
+        "Jaluzi"
+      ],
+      "not": "Dökümlü, rulo/kademeli, katlamalı/hücresel ve dikey/yanal olmak üzere dört grupta 15 sistem."
+    }
+  ],
+  "sss": [],
+  "fiyat": null,
+  "satinAlmaUrl": null,
+  "denemeUrl": null,
+  "iletisimEposta": "ufuksn79@gmail.com",
+  "yayinda": true,
+  "slug": "perdenese-studio",
+  "ad": "PerdeNeşe Studio",
+  "tur": "eklenti",
+  "durum": "aktif",
+  "surum": "1.5.5",
+  "sira": 4,
+  "ozet": "Üç sol tıkla 15 parametrik perde sistemi üreten SketchUp eklentisi; kumaş planı ve metraj dahil.",
+  "aciklama": "Başlangıç → genişlik → Z yüksekliği: perde otomatik oluşur. Tül ve ara şeffaf yüzeylerde önce SketchUp'ın kendi cam malzeme kütüphanesi aranır; bulunamazsa şeffaflığı ayarlanmış güvenli bir tül malzemesi üretilir.",
+  "uyumluluk": [
+    "SketchUp 2021 ve üzeri"
+  ],
+  "ozellikler": [
+    {
+      "baslik": "Üç tıkla perde",
+      "not": "Başlangıç, genişlik ve yükseklik — gerisi otomatik.",
+      "ikon": "bolt"
+    },
+    {
+      "baslik": "Nokta ve eksen kilidi",
+      "not": "Yerleştirme sırasında eksen ve nokta kilitlenebilir.",
+      "ikon": "ruler"
+    },
+    {
+      "baslik": "Metraj ve kumaş planı",
+      "not": "Kumaş, donanım, çıta ve birleşim metrajı çıkarılır.",
+      "ikon": "indir"
+    },
+    {
+      "baslik": "Fiziksel kalınlık",
+      "not": "Kumaş kalınlığı ve kontrol ipi modellenir.",
+      "ikon": "layers"
+    }
+  ],
+  "vurgular": [
+    "15 perde sistemi",
+    "Üç tıkla",
+    "Kumaş planı"
+  ],
+  "yazilim": [
+    "sketchup"
+  ],
+  "icNot": "Kaynak: Yeni proje/curtain_joy_studio/README.md (1.5.5)"
+}

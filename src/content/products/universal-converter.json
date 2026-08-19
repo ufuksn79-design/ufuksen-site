@@ -1,0 +1,79 @@
+{
+  "ilerleme": null,
+  "slogan": null,
+  "kapak": null,
+  "galeri": [],
+  "video": null,
+  "listeler": [
+    {
+      "baslik": "Desteklenen formatlar",
+      "ogeler": [
+        "FBX",
+        "OBJ",
+        "3DS",
+        "DAE (Collada)",
+        "STL",
+        "GLTF / GLB"
+      ],
+      "not": null
+    }
+  ],
+  "sss": [],
+  "fiyat": null,
+  "satinAlmaUrl": null,
+  "denemeUrl": null,
+  "iletisimEposta": "ufuksn79@gmail.com",
+  "yayinda": true,
+  "slug": "universal-converter",
+  "ad": "Universal Converter",
+  "tur": "eklenti",
+  "durum": "aktif",
+  "surum": "1.0.0",
+  "sira": 6,
+  "ozet": "FBX, OBJ, 3DS, DAE, STL ve GLTF dosyalarını temiz SketchUp geometrisine dönüştürür.",
+  "aciklama": "Hiçbir model ham geometri olarak aktarılmaz; her dosya zorunlu optimizasyondan geçer. İş bitince önce/sonra poligon sayısı, azaltma yüzdesi, materyal ve doku sayısı, süre ve kalite skoru raporlanır. Bir dosyadaki hata toplu işi durdurmaz.",
+  "uyumluluk": [
+    "SketchUp 2024",
+    "SketchUp 2025",
+    "SketchUp 2026",
+    "SketchUp 2027",
+    "Windows",
+    "Mac"
+  ],
+  "ozellikler": [
+    {
+      "baslik": "Zorunlu optimizasyon",
+      "not": "Maximum Optimization, Balanced ve Quality Priority profilleri.",
+      "ikon": "bolt"
+    },
+    {
+      "baslik": "Toplu dönüştürme",
+      "not": "Klasördeki tüm desteklenen dosyalar kuyruğa alınır; dosya başına 500 MB.",
+      "ikon": "kutu"
+    },
+    {
+      "baslik": "3B önizleme",
+      "not": "Materyal, solid ve wireframe modlarıyla dönüştürmeden önce inceleme.",
+      "ikon": "goz"
+    },
+    {
+      "baslik": "Gelişmiş ayarlar",
+      "not": "Weld toleransı, hedef face oranı, smooth açısı; UV, materyal ve keskin kenar koruma.",
+      "ikon": "sliders"
+    },
+    {
+      "baslik": "Dönüştürme raporu",
+      "not": "Poligon azaltma, kalite skoru ve uyarılar; hatalılar tek tuşla yeniden denenir.",
+      "ikon": "onay"
+    }
+  ],
+  "vurgular": [
+    "6 giriş formatı",
+    "Windows ve Mac",
+    "Toplu dönüştürme"
+  ],
+  "yazilim": [
+    "sketchup"
+  ],
+  "icNot": "Kaynak: SketchUp_Universal_Converter/README.md"
+}

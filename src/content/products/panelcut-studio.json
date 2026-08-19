@@ -5,7 +5,7 @@
   "durum": "alfa",
   "ilerleme": null,
   "surum": "0.17.0-alpha",
-  "sira": 3,
+  "sira": 12,
   "yayinda": true,
   "ozet": "Tarayıcıda çalışan panel açınım, kesim listesi ve CNC hazırlama uygulaması.",
   "aciklama": "Kurulum gerektirmez, sunucu bağımlılığı yoktur; tüm hesap istemci tarafında yapılır. Masaüstü, tablet ve telefon tarayıcılarında çalışır. Çıktı belgedir: DXF makineye gider, PDF atölyeye asılır.",

@@ -1,0 +1,66 @@
+{
+  "ilerleme": null,
+  "slogan": null,
+  "kapak": null,
+  "galeri": [],
+  "video": null,
+  "listeler": [],
+  "sss": [],
+  "fiyat": null,
+  "satinAlmaUrl": null,
+  "denemeUrl": null,
+  "iletisimEposta": "ufuksn79@gmail.com",
+  "yayinda": true,
+  "slug": "dolap-sihirbazi",
+  "ad": "Dolap Sihirbazı",
+  "tur": "arac",
+  "durum": "aktif",
+  "surum": "1.14.0",
+  "sira": 9,
+  "ozet": "Parametrik elbise dolabı tasarım, teklif ve CNC üretim platformu: ölçüden DXF'e dört adım.",
+  "aciklama": "Ölçü → Model → Teklif → CNC: dört adım, tek ekran, gerçek zamanlı 3B. Sunucu yok; proje verisi tarayıcıda ve JSON dosyasında saklanır. 3B'de bölmeye veya kapağa tıklayıp doğrudan düzenlersiniz.",
+  "uyumluluk": [
+    "Masaüstü tarayıcı",
+    "Tablet",
+    "Telefon"
+  ],
+  "ozellikler": [
+    {
+      "baslik": "Telefon dostu ölçü",
+      "not": "Dev sayaçlar ve hazır boy şablonları; genişlik değişince bölme adedi uyarlanır.",
+      "ikon": "ruler"
+    },
+    {
+      "baslik": "Panel panel kurgu",
+      "not": "Askılı, boy askılı, raflı, karma ve çekmeceli bölmeler.",
+      "ikon": "layers"
+    },
+    {
+      "baslik": "Kapak, taç ve baza",
+      "not": "Sol/sağ/yukarı/sürgülü kapak, otomatik çift kapak, taç taşmaları, baza veya dört ayak.",
+      "ikon": "kutu"
+    },
+    {
+      "baslik": "Tek tık teklif",
+      "not": "Plaka, bant, donanım, işçilik, kâr ve KDV; yazdır/PDF ve CSV.",
+      "ikon": "onay"
+    },
+    {
+      "baslik": "Kesim optimizasyonu",
+      "not": "Guillotine yerleşim, desen yönü korumalı; plaka yerleşim görselleri.",
+      "ikon": "kesim"
+    },
+    {
+      "baslik": "DXF çıktısı",
+      "not": "Kesim listesi CSV, DXF ve proje JSON olarak dışa aktarılır.",
+      "ikon": "indir"
+    }
+  ],
+  "vurgular": [
+    "4 adım",
+    "Gerçek zamanlı 3B",
+    "CNC hazır"
+  ],
+  "yazilim": [],
+  "icNot": "Kaynak: dolap-sihirbazi/README.md ve package.json (1.14.0)"
+}

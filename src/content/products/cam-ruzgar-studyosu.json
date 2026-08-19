@@ -1,0 +1,75 @@
+{
+  "ilerleme": null,
+  "slogan": null,
+  "kapak": null,
+  "galeri": [],
+  "video": null,
+  "listeler": [
+    {
+      "baslik": "Uygulanan standartlar",
+      "ogeler": [
+        "EN 1991-1-4",
+        "TS 498",
+        "EN 16612",
+        "TBDY 2018"
+      ],
+      "not": null
+    }
+  ],
+  "sss": [],
+  "fiyat": null,
+  "satinAlmaUrl": null,
+  "denemeUrl": null,
+  "iletisimEposta": "ufuksn79@gmail.com",
+  "yayinda": true,
+  "slug": "cam-ruzgar-studyosu",
+  "ad": "Cam Rüzgâr Stüdyosu",
+  "tur": "arac",
+  "durum": "aktif",
+  "surum": "1.0.0",
+  "sira": 10,
+  "ozet": "Cam cephe statik analizi ve gerçek zamanlı 3B rüzgâr simülasyonu; EN 1991-1-4 ve TS 498 tabanlı.",
+  "aciklama": "Rüzgâr yükü, cam dayanımı, sehim, ısıcam yük paylaşımı, deprem etkisi, kesim optimizasyonu ve denetlenebilir mühendislik raporlaması tek bir akışta toplanır.",
+  "uyumluluk": [
+    "Masaüstü tarayıcı"
+  ],
+  "ozellikler": [
+    {
+      "baslik": "Mühendislik hesap motoru",
+      "not": "Rüzgâr yükü, dayanım, sehim ve ısıcam yük paylaşımı.",
+      "ikon": "kod"
+    },
+    {
+      "baslik": "Gerçek zamanlı 3B simülasyon",
+      "not": "Yük altındaki panel davranışı canlı izlenir.",
+      "ikon": "goz"
+    },
+    {
+      "baslik": "Cam kataloğu",
+      "not": "Bileşen seçimi katalogdan yapılır.",
+      "ikon": "grid"
+    },
+    {
+      "baslik": "DXF içe aktarım",
+      "not": "Mevcut cephe çizimi doğrudan okunur.",
+      "ikon": "indir"
+    },
+    {
+      "baslik": "Kesim optimizasyonu",
+      "not": "Panel kesim planı çıkarılır.",
+      "ikon": "kesim"
+    },
+    {
+      "baslik": "Denetlenebilir rapor",
+      "not": "Hesap adımları izlenebilir biçimde raporlanır.",
+      "ikon": "onay"
+    }
+  ],
+  "vurgular": [
+    "Standart tabanlı",
+    "119 test",
+    "Denetlenebilir rapor"
+  ],
+  "yazilim": [],
+  "icNot": "Kaynak: cam-ruzgar-studyosu/README.md ve package.json (1.0.0)"
+}

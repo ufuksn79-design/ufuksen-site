@@ -79,9 +79,10 @@ const jsonLd: Record<string, unknown> = {
     : {}),
 };
 ---
+{/* Meta açıklaması özeti kullanır: `aciklama` gövde metnidir, 160 karakteri aşar */}
 <Base
   title={`${u.ad} — ${TUR[u.tur].tekil} | Ufuk Şen`}
-  description={u.aciklama ?? u.ozet}
+  description={u.ozet}
   path={productPath(u.slug)}
   ogImage={u.kapak?.src ?? null}
   padded={false}

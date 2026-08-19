@@ -1,0 +1,66 @@
+{
+  "ilerleme": null,
+  "slogan": null,
+  "kapak": null,
+  "galeri": [],
+  "video": null,
+  "listeler": [],
+  "sss": [],
+  "fiyat": null,
+  "satinAlmaUrl": null,
+  "denemeUrl": null,
+  "iletisimEposta": "ufuksn79@gmail.com",
+  "yayinda": true,
+  "slug": "windowfun-studio-web",
+  "ad": "WindowFun Studio Web",
+  "tur": "arac",
+  "durum": "aktif",
+  "surum": "1.0.0",
+  "sira": 11,
+  "ozet": "WindowFun Studio eklentisinin tarayıcı portu: parametrik pencere, 3B önizleme, metraj ve teklif.",
+  "aciklama": "Sunucu ve veritabanı gerekmez; tüm veriler tarayıcıda saklanır ve uygulama çevrimdışı çalışan bir PWA'dır. Eklentinin 1.1.0 davranışı referans alınarak yazıldı.",
+  "uyumluluk": [
+    "Masaüstü tarayıcı",
+    "Tablet",
+    "Telefon"
+  ],
+  "ozellikler": [
+    {
+      "baslik": "51 katalog modeli",
+      "not": "Altı kategori; her model kendine özgü parametrik düzenle.",
+      "ikon": "grid"
+    },
+    {
+      "baslik": "11 hızlı teknik tip",
+      "not": "Sabit, kemerli, tek/çift/üçlü kanat, katlanır, sürme ve diğerleri.",
+      "ikon": "sliders"
+    },
+    {
+      "baslik": "Gerçek zamanlı 3B",
+      "not": "Parametre değişince önizleme anında güncellenir.",
+      "ikon": "goz"
+    },
+    {
+      "baslik": "2B teknik çizim",
+      "not": "Ölçülü teknik çizim ve plan/hat yerleştirme.",
+      "ikon": "ruler"
+    },
+    {
+      "baslik": "Metraj ve teklif",
+      "not": "Tasarımdan doğrudan metraj ve fiyat dökümü.",
+      "ikon": "onay"
+    },
+    {
+      "baslik": "Çok formatlı dışa aktarma",
+      "not": "GLB dahil çeşitli formatlarda çıktı.",
+      "ikon": "indir"
+    }
+  ],
+  "vurgular": [
+    "Kurulum yok",
+    "Çevrimdışı çalışır",
+    "51 model"
+  ],
+  "yazilim": [],
+  "icNot": "Kaynak: windowfun-studio/README.md ve package.json (1.0.0)"
+}

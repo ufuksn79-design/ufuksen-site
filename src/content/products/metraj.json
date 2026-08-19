@@ -1,0 +1,56 @@
+{
+  "ilerleme": null,
+  "slogan": null,
+  "kapak": null,
+  "galeri": [],
+  "video": null,
+  "listeler": [],
+  "sss": [],
+  "fiyat": null,
+  "satinAlmaUrl": null,
+  "denemeUrl": null,
+  "iletisimEposta": "ufuksn79@gmail.com",
+  "yayinda": true,
+  "slug": "metraj",
+  "ad": "Metraj",
+  "tur": "arac",
+  "durum": "beta",
+  "surum": null,
+  "sira": 13,
+  "ozet": "Oda ölçülerinden yüzey alanı, malzeme miktarı ve yaklaşık maliyet hesaplayan web uygulaması.",
+  "aciklama": "Tamamen tarayıcıda çalışır, veriler cihazda kalır. 2B plan ile 3B görünüm karşılıklı senkron; kapı ve pencere boşlukları brüt duvar alanından otomatik düşülür.",
+  "uyumluluk": [
+    "Masaüstü tarayıcı",
+    "Tablet",
+    "Telefon"
+  ],
+  "ozellikler": [
+    {
+      "baslik": "2B plan ve 3B görünüm",
+      "not": "Ölçü etiketleri plandan düzenlenir; iki görünüm senkron çalışır.",
+      "ikon": "kutu"
+    },
+    {
+      "baslik": "Kapı ve pencere boşlukları",
+      "not": "Geometrik doğrulama ile konumlandırılır; net alandan düşülür.",
+      "ikon": "kesim"
+    },
+    {
+      "baslik": "Malzeme hesapları",
+      "not": "Boya, saten alçı, epoksi, duvar kâğıdı, seramik, parke, PVC ve halı.",
+      "ikon": "layers"
+    },
+    {
+      "baslik": "Raporlama",
+      "not": "Yazdırılabilir PDF, Excel uyumlu CSV, JSON ve plan PNG çıktısı.",
+      "ikon": "indir"
+    }
+  ],
+  "vurgular": [
+    "Ücretsiz",
+    "Tarayıcıda çalışır",
+    "PDF + CSV rapor"
+  ],
+  "yazilim": [],
+  "icNot": "Kaynak: metraj/README.md. package.json sürümü 0.0.0 olduğu için sürüm yazılmadı; README 'Faz 1–8 tamamlandı (MVP)' diyor, bu yüzden durum 'beta'."
+}

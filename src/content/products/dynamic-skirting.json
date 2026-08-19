@@ -1,0 +1,68 @@
+{
+  "ilerleme": null,
+  "slogan": null,
+  "kapak": null,
+  "galeri": [],
+  "video": null,
+  "listeler": [],
+  "sss": [],
+  "fiyat": null,
+  "satinAlmaUrl": null,
+  "denemeUrl": null,
+  "iletisimEposta": "ufuksn79@gmail.com",
+  "yayinda": true,
+  "slug": "dynamic-skirting",
+  "ad": "Dynamic Skirting",
+  "tur": "eklenti",
+  "durum": "aktif",
+  "surum": "1.2.3",
+  "sira": 3,
+  "ozet": "3B yollar boyunca parametrik süpürgelik ve kartonpiyer üreten SketchUp eklentisi.",
+  "aciklama": "Merdiven ve kot değişimleri, otomatik zemin/tavan çevresi algılama, boşluk işaretleme, canlı profil düzenleme, render uyumlu doku yönü ve CSV metraj tek panelde birleşir.",
+  "uyumluluk": [
+    "SketchUp 2024",
+    "SketchUp 2025",
+    "SketchUp 2026"
+  ],
+  "ozellikler": [
+    {
+      "baslik": "Zemin ve tavan algılama",
+      "not": "Yüzeye tıklamak dış sınırı bulur; köşeleri gönye kapalı çevre oluşturur.",
+      "ikon": "kutu"
+    },
+    {
+      "baslik": "Merdiven ve kot takibi",
+      "not": "Kot değişimlerinde profil yol boyunca kesintisiz devam eder.",
+      "ikon": "layers"
+    },
+    {
+      "baslik": "Boşluk işaretleme",
+      "not": "Kapı, kolon, kiriş veya dolabın kestiği bölüm modelden ve metrajdan çıkarılır.",
+      "ikon": "kesim"
+    },
+    {
+      "baslik": "Canlı profil düzenleme",
+      "not": "Profil kesiti panelden anında değiştirilir.",
+      "ikon": "sliders"
+    },
+    {
+      "baslik": "CSV metraj",
+      "not": "Uzunluk ve parça dökümü tablo olarak dışa aktarılır.",
+      "ikon": "indir"
+    },
+    {
+      "baslik": "Render uyumlu doku yönü",
+      "not": "Doku yönü profil boyunca doğru hizalanır.",
+      "ikon": "texture"
+    }
+  ],
+  "vurgular": [
+    "Süpürgelik + kartonpiyer",
+    "CSV metraj",
+    "Tek panel"
+  ],
+  "yazilim": [
+    "sketchup"
+  ],
+  "icNot": "Kaynak: Yeni proje/dynamic_skirting/README.md (1.2.3)"
+}

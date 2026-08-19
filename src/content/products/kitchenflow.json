@@ -1,0 +1,66 @@
+{
+  "ilerleme": null,
+  "slogan": null,
+  "kapak": null,
+  "galeri": [],
+  "video": null,
+  "listeler": [],
+  "sss": [],
+  "fiyat": null,
+  "satinAlmaUrl": null,
+  "denemeUrl": null,
+  "iletisimEposta": "ufuksn79@gmail.com",
+  "yayinda": true,
+  "slug": "kitchenflow",
+  "ad": "KitchenFlow",
+  "tur": "arac",
+  "durum": "aktif",
+  "surum": "1.0.0",
+  "sira": 8,
+  "ozet": "Web tabanlı parametrik mutfak dolabı tasarım, teklif ve CNC üretim platformu.",
+  "aciklama": "Ölçüden teklife, 3B'den CNC'ye tek akış. Kurulum yok, eklenti yok, tarayıcıda çalışır. Usta ölçüye gittiğinde 'L mi U mu' diye başlamaz; plan kafasında modüllere bölünmüştür. KitchenFlow bunu birebir uygular: modülü tasarla, kütüphaneye kaydet, kareye koy — mutfağın şekli dizilimden kendiliğinden çıkar.",
+  "uyumluluk": [
+    "Masaüstü tarayıcı",
+    "Tablet",
+    "Telefon"
+  ],
+  "ozellikler": [
+    {
+      "baslik": "Modül sihirbazı",
+      "not": "Tip, ölçü, iç düzen ve kulp; sağda canlı önden görünüş.",
+      "ikon": "sliders"
+    },
+    {
+      "baslik": "Modül kütüphanesi",
+      "not": "Kaydedilen modül sonra tek tıkla tekrar tekrar kullanılır.",
+      "ikon": "kutu"
+    },
+    {
+      "baslik": "Dama tahtası yerleşim",
+      "not": "Modül kareye konur, komşusuna sıfır derzle dayanır; kol kendiliğinden oluşur.",
+      "ikon": "grid"
+    },
+    {
+      "baslik": "2B teknik çizim",
+      "not": "Yerleşimden üretilen ölçülü çizim.",
+      "ikon": "ruler"
+    },
+    {
+      "baslik": "Teklif",
+      "not": "Plaka, bant, donanım ve işçilik dökümü.",
+      "ikon": "onay"
+    },
+    {
+      "baslik": "CNC çıktısı",
+      "not": "Delik konumları tek yerde hesaplanır; hatalı çıktı üretilmez.",
+      "ikon": "kesim"
+    }
+  ],
+  "vurgular": [
+    "Kurulum yok",
+    "L/U ayrıca seçilmez",
+    "CNC hazır"
+  ],
+  "yazilim": [],
+  "icNot": "Kaynak: kitchenflow/README.md ve package.json (1.0.0). Sitedeki eski 'Kitchen Studio · geliştiriliyor %90' kaydının yerini aldı — kullanıcı onayıyla (2026-08-18)."
+}

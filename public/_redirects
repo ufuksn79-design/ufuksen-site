@@ -66,6 +66,9 @@
 /youtubeda-buyumenin-ve-kazanmanin-sirlari.html  /youtube-icerik-ureterek-para-kazanmak.html  301
 /youtubedan-para-kazanma-sartlari-2025-guncel-rehber.html  /youtube-para-kazanma-sartlari2025.html  301
 
+# --- Site içi ad değişiklikleri ------------------------------------------
+/urunler/kitchen-studio  /urunler/kitchenflow  301
+
 # --- AMP / attachment / eski arama ---------------------------------------
 # Bu kalıplar BİLEREK burada değil: Cloudflare _redirects orta-yol splat
 # (/*.html/*) ve query eşleşmesini (/?s=) desteklemiyor; query'li satır
