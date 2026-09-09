@@ -1,11 +1,20 @@
 ---
 import Base from "../layouts/Base.astro";
-import ProductCard from "../components/ProductCard.astro";
-import WhatsAppButton from "../components/WhatsAppButton.astro";
-import { getProducts, productPath, turDagilimi, TUR } from "../lib/products";
+import ProductCard from "./ProductCard.astro";
+import WhatsAppButton from "./WhatsAppButton.astro";
+import LangSwitch from "./LangSwitch.astro";
+import { getProducts, turDagilimi } from "../lib/products";
+import { METIN, LISTE_YOLU, urunYolu, urunDilde, type Dil } from "../lib/i18n";
+
+interface Props {
+  dil: Dil;
+}
+
+const { dil } = Astro.props;
+const t = METIN[dil];
 
 /**
- * Ürünler — teknik çizim paftası düzeni (ADR-021).
+ * Eklenti listesi — teknik çizim paftası düzeni (ADR-021), iki dilli (ADR-023).
  *
  * Bu sayfa sosyal medyadan doğrudan paylaşılıyor. Gelen kişi siteyi
  * tanımıyor; ilk ekranda üç soruyu cevaplamak zorunda:
@@ -17,6 +26,8 @@ import { getProducts, productPath, turDagilimi, TUR } from "../lib/products";
  * güncellenir ve hiçbir zaman gerçekle çelişmez.
  */
 const products = await getProducts();
+/** Kart ve yapısal veri, sayfanın dilinde okunur. */
+const gorunum = products.map((p) => urunDilde(p.data, dil));
 
 const site = Astro.site ?? new URL("https://www.ufuksen.com");
 
@@ -45,14 +56,13 @@ const surumAraligi =
  * arttıkça hepsini saymak yerine ilk üçü yazılıp gerisi sayıya dönüşür; böylece
  * yeni ürün eklendiğinde açıklama şişmez.
  */
-const ilkUcAd = products.slice(0, 3).map((p) => p.data.ad).join(", ");
+const ilkUcAd = gorunum.slice(0, 3).map((u) => u.ad).join(", ");
 const kalanAdet = Math.max(0, products.length - 3);
-const metaAciklama = `SketchUp eklentileri ve tarayıcıda çalışan araçlar: ${ilkUcAd}${
-  kalanAdet ? ` ve ${kalanAdet} araç daha` : ""
-}. Zemin, pencere, dolap ve panel işleri.`;
+const metaAciklama = t.metaAciklama(ilkUcAd, kalanAdet);
 
-const yayindaSayisi = products.filter((p) => p.data.durum === "aktif").length;
-const toplamOzellik = products.reduce((n, p) => n + p.data.ozellikler.length, 0);
+/** Gerçekten satın alınabilenler — fiyatı ve satın alma bağlantısı olanlar. */
+const satistaSayisi = products.filter((p) => p.data.satinAlmaUrl && p.data.fiyat?.tutar != null).length;
+const toplamOzellik = gorunum.reduce((n, u) => n + u.ozellikler.length, 0);
 
 /**
  * Fayda şeridi — üçü de ürün verisindeki gerçek ifadelere dayanır,
@@ -61,23 +71,9 @@ const toplamOzellik = products.reduce((n, p) => n + p.data.ozellikler.length, 0)
  *   - doğruluk : "Fiziksel derz (gap) sistemi ile tamamen doğru sonuçlar"
  *   - güven    : vurgular "Tek işlem undo — güvenli üretim"
  */
-const faydalar = [
-  {
-    ikon: "clock",
-    baslik: "Saatler yerine saniyeler",
-    not: "Elle çizildiğinde uzun süren zemin, panel ve dizilim işleri parametreyle tek seferde üretiliyor.",
-  },
-  {
-    ikon: "ruler",
-    baslik: "Ölçü tutar",
-    not: "Fiziksel derz sistemi ve milimetre hassasiyeti — göz kararı değil, gerçek ölçü.",
-  },
-  {
-    ikon: "undo",
-    baslik: "Geri alması güvenli",
-    not: "Üretim tek işlem olarak yapılır; beğenmezseniz bir Ctrl+Z ile modeliniz eski hâline döner.",
-  },
-];
+/** İkonlar burada, metinler sözlükte — üçü aynı sırada eşleşir. */
+const faydaIkonlari = ["clock", "ruler", "undo"] as const;
+const faydalar = t.faydalar.map((f, i) => ({ ...f, ikon: faydaIkonlari[i] }));
 
 const faydaIkon: Record<string, string> = {
   clock: '<circle cx="12" cy="12" r="8.5"/><path d="M12 7.5V12l3 2"/>',
@@ -88,28 +84,38 @@ const faydaIkon: Record<string, string> = {
 ---
 
 <Base
-  title="SketchUp Eklentileri ve Araçlar | Ufuk Şen"
+  title={t.metaBaslik}
   description={metaAciklama}
-  path="/urunler"
+  path={LISTE_YOLU[dil]}
+  dil={dil}
+  alternateUrl={LISTE_YOLU[dil === "tr" ? "en" : "tr"]}
   padded={false}
   jsonLd={{
     "@context": "https://schema.org",
     "@type": "ItemList",
-    name: "Ufuk Şen ürünleri",
+    name: t.bolumAdi,
     numberOfItems: products.length,
-    itemListElement: products.map((product, index) => ({
+    itemListElement: gorunum.map((u, index) => ({
       "@type": "ListItem",
       position: index + 1,
       item: {
         "@type": "SoftwareApplication",
-        name: product.data.ad,
-        description: product.data.ozet,
+        name: u.ad,
+        description: u.ozet,
         applicationCategory: "DesignApplication",
-        ...(product.data.surum ? { softwareVersion: product.data.surum } : {}),
-        ...(product.data.uyumluluk.length
-          ? { operatingSystem: product.data.uyumluluk.join(", ") }
+        ...(u.surum ? { softwareVersion: u.surum } : {}),
+        ...(u.uyumluluk.length ? { operatingSystem: u.uyumluluk.join(", ") } : {}),
+        url: new URL(urunYolu(u.slug, dil), site).href,
+        ...(u.fiyat?.tutar != null
+          ? {
+              offers: {
+                "@type": "Offer",
+                price: u.fiyat.tutar,
+                priceCurrency: u.fiyat.paraBirimi,
+                ...(u.satinAlmaUrl ? { url: u.satinAlmaUrl } : {}),
+              },
+            }
           : {}),
-        url: new URL(productPath(product.data.slug), site).href,
       },
     })),
   }}
@@ -117,25 +123,25 @@ const faydaIkon: Record<string, string> = {
   {/* ---------------- Giriş: sayfa ne hakkında ---------------- */}
   <header class="hero">
     <div class="hero__text">
-      <p class="hero__eyebrow">Ufuk Şen · Geliştirdiğim araçlar</p>
+      <div class="hero__top">
+        <p class="hero__eyebrow">{t.heroEyebrow}</p>
+        <LangSwitch dil={dil} />
+      </div>
       <h1 class="hero__title">
-        SketchUp'ta<br /><span>çizimi hızlandıran</span><br />eklentiler
+        {t.heroBaslik[0]}<br /><span>{t.heroBaslik[1]}</span><br />{t.heroBaslik[2]}
       </h1>
-      <p class="hero__lead">
-        Zemin, mutfak ve panel işlerini elle çizmek yerine parametreyle üretin.
-        Ölçüler gerçek, sonuç modelin içinde — kopyala-yapıştır değil.
-      </p>
+      <p class="hero__lead">{t.heroLead}</p>
 
       <ul class="hero__stats">
-        <li><b>{products.length}</b><span>araç</span></li>
-        {yayindaSayisi > 0 && <li><b>{yayindaSayisi}</b><span>yayında</span></li>}
-        {surumAraligi && <li><b>{surumAraligi}</b><span>SketchUp sürümü</span></li>}
-        {toplamOzellik > 0 && <li><b>{toplamOzellik}</b><span>özellik</span></li>}
+        <li><b>{products.length}</b><span>{t.istatistik.arac}</span></li>
+        {satistaSayisi > 0 && <li><b>{satistaSayisi}</b><span>{t.istatistik.yayinda}</span></li>}
+        {surumAraligi && <li><b>{surumAraligi}</b><span>{t.istatistik.surum}</span></li>}
+        {toplamOzellik > 0 && <li><b>{toplamOzellik}</b><span>{t.istatistik.ozellik}</span></li>}
       </ul>
 
       <div class="hero__cta">
-        <a class="hero__jump" href="#araclar">Araçları gör</a>
-        <WhatsAppButton boyut="buyuk" etiket="WhatsApp'tan yaz" />
+        <a class="hero__jump" href="#araclar">{t.heroCta}</a>
+        <WhatsAppButton boyut="buyuk" etiket={t.waYaz} dil={dil} />
       </div>
     </div>
 
@@ -290,11 +296,11 @@ const faydaIkon: Record<string, string> = {
     }
   </section>
 
-  {/* ---------------- Ürünler ---------------- */}
+  {/* ---------------- Eklentiler ---------------- */}
   <section class="sheet" id="araclar">
     <div class="sheet__head">
-      <h2>Araçlar</h2>
-      <p>Her birinin kendi sayfası var — ayrıntılar, uyumluluk ve iletişim orada.</p>
+      <h2>{t.araclarBaslik}</h2>
+      <p>{t.araclarNot}</p>
     </div>
 
     {/*
@@ -305,14 +311,14 @@ const faydaIkon: Record<string, string> = {
     {
       gosterFiltre && (
         <fieldset class="filtre">
-          <legend class="u-visually-hidden">Türe göre süz</legend>
+          <legend class="u-visually-hidden">{t.araclarBaslik}</legend>
           <input type="radio" name="urun-turu" id="filtre-tumu" checked />
-          <label for="filtre-tumu">Tümü <span>{products.length}</span></label>
+          <label for="filtre-tumu">{t.filtreTumu} <span>{products.length}</span></label>
           {turler.map(({ tur, adet }) => (
             <>
               <input type="radio" name="urun-turu" id={`filtre-${tur}`} />
               <label for={`filtre-${tur}`}>
-                {TUR[tur].cogul} <span>{adet}</span>
+                {t.filtreTur[tur]} <span>{adet}</span>
               </label>
             </>
           ))}
@@ -324,7 +330,7 @@ const faydaIkon: Record<string, string> = {
       {
         products.map((product, index) => (
           <div class="sheet__cell" data-tur={product.data.tur}>
-            <ProductCard product={product} index={index} />
+            <ProductCard product={product} index={index} dil={dil} />
           </div>
         ))
       }
@@ -334,13 +340,10 @@ const faydaIkon: Record<string, string> = {
   {/* ---------------- İletişim ---------------- */}
   <section class="ask">
     <div>
-      <h2>Hangisi işinize yarar, birlikte bakalım</h2>
-      <p>
-        Hangi aracın işinizi hızlandıracağından emin değilseniz yazın — ne
-        yaptığınızı anlatın, size uygun olanı söyleyeyim.
-      </p>
+      <h2>{t.askBaslik}</h2>
+      <p>{t.askNot}</p>
     </div>
-    <WhatsAppButton boyut="buyuk" etiket="WhatsApp'tan yaz" />
+    <WhatsAppButton boyut="buyuk" etiket={t.waYaz} dil={dil} />
   </section>
 </Base>
 
@@ -363,6 +366,14 @@ const faydaIkon: Record<string, string> = {
       30px 30px,
       30px 30px,
       100% 100%;
+  }
+
+  .hero__top {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--s-3);
   }
 
   .hero__eyebrow {

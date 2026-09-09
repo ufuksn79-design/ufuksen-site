@@ -27,7 +27,7 @@
   "tur": "arac",
   "durum": "aktif",
   "surum": "1.0.0",
-  "sira": 10,
+  "sira": 21,
   "ozet": "Cam cephe statik analizi ve gerçek zamanlı 3B rüzgâr simülasyonu; EN 1991-1-4 ve TS 498 tabanlı.",
   "aciklama": "Rüzgâr yükü, cam dayanımı, sehim, ısıcam yük paylaşımı, deprem etkisi, kesim optimizasyonu ve denetlenebilir mühendislik raporlaması tek bir akışta toplanır.",
   "uyumluluk": [
@@ -71,5 +71,64 @@
     "Denetlenebilir rapor"
   ],
   "yazilim": [],
-  "icNot": "Kaynak: cam-ruzgar-studyosu/README.md ve package.json (1.0.0)"
+  "icNot": "Kaynak: cam-ruzgar-studyosu/README.md ve package.json (1.0.0)",
+  "en": {
+    "ad": "Glass Wind Studio",
+    "ozet": "Structural glass façade analysis with real-time 3D wind simulation, based on EN 1991-1-4 and TS 498.",
+    "aciklama": "Wind load, glass resistance, deflection, insulated-glass load sharing, seismic effects, cutting optimisation and auditable engineering reporting brought together in a single flow.",
+    "slogan": null,
+    "uyumluluk": [
+      "Desktop browser"
+    ],
+    "ozellikler": [
+      {
+        "baslik": "Engineering calculation core",
+        "not": "Wind load, resistance, deflection and insulated-glass load sharing.",
+        "ikon": "kod"
+      },
+      {
+        "baslik": "Real-time 3D simulation",
+        "not": "Watch panel behaviour under load as it happens.",
+        "ikon": "goz"
+      },
+      {
+        "baslik": "Glass catalogue",
+        "not": "Build-ups are picked from a catalogue.",
+        "ikon": "grid"
+      },
+      {
+        "baslik": "DXF import",
+        "not": "Read an existing façade drawing directly.",
+        "ikon": "indir"
+      },
+      {
+        "baslik": "Cutting optimisation",
+        "not": "Generates the panel cutting plan.",
+        "ikon": "kesim"
+      },
+      {
+        "baslik": "Auditable report",
+        "not": "Calculation steps are reported so they can be checked.",
+        "ikon": "onay"
+      }
+    ],
+    "listeler": [
+      {
+        "baslik": "Standards applied",
+        "ogeler": [
+          "EN 1991-1-4",
+          "TS 498",
+          "EN 16612",
+          "TBDY 2018"
+        ],
+        "not": null
+      }
+    ],
+    "vurgular": [
+      "Standards-based",
+      "119 tests",
+      "Auditable report"
+    ],
+    "sss": []
+  }
 }

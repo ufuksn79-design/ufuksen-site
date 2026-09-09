@@ -6,8 +6,12 @@
   "video": null,
   "listeler": [],
   "sss": [],
-  "fiyat": null,
-  "satinAlmaUrl": null,
+  "fiyat": {
+    "tutar": 25,
+    "paraBirimi": "USD",
+    "not": "Tek seferlik ödeme, ömür boyu kullanım."
+  },
+  "satinAlmaUrl": "https://ufuksen.gumroad.com/l/SketchupDynamicSkirtingPlugin",
   "denemeUrl": null,
   "iletisimEposta": "ufuksn79@gmail.com",
   "yayinda": true,
@@ -15,7 +19,7 @@
   "ad": "Dynamic Skirting",
   "tur": "eklenti",
   "durum": "aktif",
-  "surum": "1.2.3",
+  "surum": "1.3.2",
   "sira": 3,
   "ozet": "3B yollar boyunca parametrik süpürgelik ve kartonpiyer üreten SketchUp eklentisi.",
   "aciklama": "Merdiven ve kot değişimleri, otomatik zemin/tavan çevresi algılama, boşluk işaretleme, canlı profil düzenleme, render uyumlu doku yönü ve CSV metraj tek panelde birleşir.",
@@ -64,5 +68,56 @@
   "yazilim": [
     "sketchup"
   ],
-  "icNot": "Kaynak: Yeni proje/dynamic_skirting/README.md (1.2.3)"
+  "icNot": "Kaynak: Yeni proje/dynamic_skirting/README.md (1.2.3) | Gumroad: Sketchup Dynamic Skirting Plugin, 25 USD (2026-09-09). Sürüm paketlenmiş .rbz'den doğrulandı.",
+  "en": {
+    "ad": "Dynamic Skirting",
+    "ozet": "SketchUp plugin that generates parametric skirting and cornice along 3D paths.",
+    "aciklama": "Stairs and level changes, automatic floor and ceiling perimeter detection, gap marking, live profile editing, render-correct texture direction and CSV take-off — all in one panel.",
+    "slogan": null,
+    "uyumluluk": [
+      "SketchUp 2024",
+      "SketchUp 2025",
+      "SketchUp 2026"
+    ],
+    "ozellikler": [
+      {
+        "baslik": "Floor and ceiling detection",
+        "not": "Click a surface and the outer boundary is found; corners are mitred into a closed perimeter.",
+        "ikon": "kutu"
+      },
+      {
+        "baslik": "Stairs and level changes",
+        "not": "The profile runs continuously along the path across height changes.",
+        "ikon": "layers"
+      },
+      {
+        "baslik": "Gap marking",
+        "not": "Sections cut by a door, column, beam or cabinet are removed from both the model and the take-off.",
+        "ikon": "kesim"
+      },
+      {
+        "baslik": "Live profile editing",
+        "not": "Change the profile cross-section straight from the panel.",
+        "ikon": "sliders"
+      },
+      {
+        "baslik": "CSV take-off",
+        "not": "Lengths and part lists export as a table.",
+        "ikon": "indir"
+      },
+      {
+        "baslik": "Render-correct texture direction",
+        "not": "Texture direction aligns correctly along the profile.",
+        "ikon": "texture"
+      }
+    ],
+    "listeler": [],
+    "vurgular": [
+      "Skirting + cornice",
+      "CSV take-off",
+      "One panel"
+    ],
+    "sss": [],
+    "fiyatNot": "One-time payment, lifetime use."
+  }
 }

@@ -1,36 +1,28 @@
 ---
-import type { GetStaticPaths } from "astro";
-import Base from "../../layouts/Base.astro";
-import WhatsAppButton from "../../components/WhatsAppButton.astro";
-import { getProducts, productPath, DURUM, TUR, ikon, type Product } from "../../lib/products";
-import { getSoftwareIndex } from "../../lib/discover";
-import { formatDate } from "../../lib/content";
+import Base from "../layouts/Base.astro";
+import WhatsAppButton from "./WhatsAppButton.astro";
+import LangSwitch from "./LangSwitch.astro";
+import { ikon, type Product } from "../lib/products";
+import { METIN, LISTE_YOLU, urunYolu, urunDilde, type Dil } from "../lib/i18n";
+import { getSoftwareIndex } from "../lib/discover";
+import { formatDate } from "../lib/content";
 
 /**
- * Ürün ayrıntı sayfası (ADR-021, ADR-022).
+ * Ürün ayrıntı sayfası (ADR-021, ADR-022), iki dilli (ADR-023).
  *
  * Bölümlerin tamamı isteğe bağlı: galeri, video, özellikler, listeler, S.S.S.,
  * fiyat, uyumluluk. Verisi olmayan bölüm hiç render edilmez — yeni bir ürün
  * eklendiğinde hangi bölümlerin çıkacağını veri belirler, kod değişmez.
  */
-export const getStaticPaths: GetStaticPaths = async () => {
-  const urunler = await getProducts();
-  return urunler.map((product, index) => ({
-    params: { slug: product.data.slug },
-    props: { product, index },
-  }));
-};
-
 interface Props {
   product: Product;
-  index: number;
+  dil: Dil;
 }
 
-const { product } = Astro.props as Props;
-const u = product.data;
+const { product, dil } = Astro.props;
+const t = METIN[dil];
+const u = urunDilde(product.data, dil);
 const site = Astro.site ?? new URL("https://www.ufuksen.com");
-
-const durum = DURUM[u.durum];
 
 /** İlgili yazılar — arşivden gerçek içerik, uydurma değil. */
 const softwareIndex = await getSoftwareIndex();
@@ -44,9 +36,9 @@ const yazilimAdi =
 /** Fiyat yalnızca gerçekten girilmişse gösterilir. */
 const fiyatMetni =
   u.fiyat?.tutar != null
-    ? new Intl.NumberFormat("tr-TR", {
+    ? new Intl.NumberFormat(dil === "en" ? "en-US" : "tr-TR", {
         style: "currency",
-        currency: u.fiyat.paraBirimi || "TRY",
+        currency: u.fiyat.paraBirimi || "USD",
         maximumFractionDigits: 0,
       }).format(u.fiyat.tutar)
     : null;
@@ -61,7 +53,7 @@ const jsonLd: Record<string, unknown> = {
   name: u.ad,
   description: u.aciklama ?? u.ozet,
   applicationCategory: "DesignApplication",
-  url: new URL(productPath(u.slug), site).href,
+  url: new URL(urunYolu(u.slug, dil), site).href,
   author: { "@type": "Person", name: "Ufuk Şen", url: site.href },
   ...(u.surum ? { softwareVersion: u.surum } : {}),
   ...(u.uyumluluk.length ? { operatingSystem: u.uyumluluk.join(", ") } : {}),
@@ -72,7 +64,7 @@ const jsonLd: Record<string, unknown> = {
         offers: {
           "@type": "Offer",
           price: u.fiyat.tutar,
-          priceCurrency: u.fiyat.paraBirimi || "TRY",
+          priceCurrency: u.fiyat.paraBirimi || "USD",
           ...(u.satinAlmaUrl ? { url: u.satinAlmaUrl } : {}),
         },
       }
@@ -81,9 +73,11 @@ const jsonLd: Record<string, unknown> = {
 ---
 {/* Meta açıklaması özeti kullanır: `aciklama` gövde metnidir, 160 karakteri aşar */}
 <Base
-  title={`${u.ad} — ${TUR[u.tur].tekil} | Ufuk Şen`}
+  title={`${u.ad} — ${t.turTekil[u.tur]} | Ufuk Şen`}
   description={u.ozet}
-  path={productPath(u.slug)}
+  path={urunYolu(u.slug, dil)}
+  dil={dil}
+  alternateUrl={urunYolu(u.slug, dil === "tr" ? "en" : "tr")}
   ogImage={u.kapak?.src ?? null}
   padded={false}
   jsonLd={jsonLd}
@@ -92,17 +86,18 @@ const jsonLd: Record<string, unknown> = {
     {/* ---------------- Başlık ---------------- */}
     <header class="p__head">
       <nav class="p__crumb" aria-label="Konum">
-        <a href="/urunler">Ürünler</a>
+        <a href={LISTE_YOLU[dil]}>{t.bolumKisa}</a>
         <span aria-hidden="true">/</span>
         <b>{u.ad}</b>
+        <LangSwitch dil={dil} slug={u.slug} />
       </nav>
 
-      <p class="p__kind">{TUR[u.tur].tekil}</p>
+      <p class="p__kind">{t.turTekil[u.tur]}</p>
       <h1>{u.ad}</h1>
 
       <div class="p__badges">
-        <span class:list={["badge", `badge--${durum.ton}`]}>
-          {durum.etiket}{u.ilerleme ? ` · %${u.ilerleme}` : ""}
+        <span class="badge badge--warn">
+          {t.durumEtiket[u.durum]}{u.ilerleme ? ` · %${u.ilerleme}` : ""}
         </span>
         {u.surum && <span class="badge badge--v">v{u.surum}</span>}
         {fiyatMetni && <span class="badge badge--fiyat">{fiyatMetni}</span>}
@@ -116,25 +111,25 @@ const jsonLd: Record<string, unknown> = {
         {
           u.satinAlmaUrl && (
             <a class="btn-main" href={u.satinAlmaUrl} target="_blank" rel="noopener">
-              Satın al{fiyatMetni ? ` — ${fiyatMetni}` : ""}
+              {t.satinAl}{fiyatMetni ? ` — ${fiyatMetni}` : ""}
             </a>
           )
         }
         {
           u.denemeUrl && (
             <a class="btn-ghost" href={u.denemeUrl} target="_blank" rel="noopener">
-              Denemeyi indir
+              {t.denemeIndir}
             </a>
           )
         }
-        <WhatsAppButton konu={u.ad} boyut="buyuk" etiket="WhatsApp'tan sor" />
+        <WhatsAppButton konu={u.ad} boyut="buyuk" etiket={t.waSor} dil={dil} />
         {
           u.iletisimEposta && (
             <a
               class="btn-ghost"
               href={`mailto:${u.iletisimEposta}?subject=${encodeURIComponent(`${u.ad} hakkında`)}`}
             >
-              E-posta gönder
+              {t.epostaGonder}
             </a>
           )
         }
@@ -155,7 +150,7 @@ const jsonLd: Record<string, unknown> = {
       {
         u.video && (
           <section>
-            <h2>{u.video.baslik ?? "Tanıtım videosu"}</h2>
+            <h2>{u.video.baslik ?? t.tanitimVideosu}</h2>
             {/* Tıklanana kadar YouTube yüklenmez — sayfa hızını korur */}
             <div class="p__video">
               <iframe
@@ -173,7 +168,7 @@ const jsonLd: Record<string, unknown> = {
       {
         u.aciklama && (
           <section class="p__about">
-            <h2>Ne işe yarar?</h2>
+            <h2>{t.neIseYarar}</h2>
             <p>{u.aciklama}</p>
           </section>
         )
@@ -182,7 +177,7 @@ const jsonLd: Record<string, unknown> = {
       {
         u.ozellikler.length > 0 && (
           <section>
-            <h2>Özellikler</h2>
+            <h2>{t.ozellikler}</h2>
             <ul class="feats">
               {u.ozellikler.map((feature) => (
                 <li class="u-reveal">
@@ -201,7 +196,7 @@ const jsonLd: Record<string, unknown> = {
       {
         u.galeri.length > 0 && (
           <section>
-            <h2>Ekran görüntüleri</h2>
+            <h2>{t.ekranGoruntuleri}</h2>
             <div class="gal" data-lightbox>
               {u.galeri.map((g) => (
                 <figure>
@@ -231,7 +226,7 @@ const jsonLd: Record<string, unknown> = {
       {
         u.uyumluluk.length > 0 && (
           <section>
-            <h2>Uyumluluk</h2>
+            <h2>{t.uyumluluk}</h2>
             <ul class="compat">
               {u.uyumluluk.map((item) => (
                 <li>{item}</li>
@@ -244,7 +239,7 @@ const jsonLd: Record<string, unknown> = {
       {
         u.sss.length > 0 && (
           <section>
-            <h2>Sık sorulanlar</h2>
+            <h2>{t.sikSorulanlar}</h2>
             <div class="sss">
               {u.sss.map((s) => (
                 <details>
@@ -261,14 +256,9 @@ const jsonLd: Record<string, unknown> = {
       {
         !icerikVar && (
           <section class="pending">
-            <h2>Ayrıntılar hazırlanıyor</h2>
-            <p>
-              {u.ad} üzerinde çalışma sürüyor
-              {u.ilerleme ? ` (yaklaşık %${u.ilerleme})` : ""}. Özellik listesi ve
-              ekran görüntüleri hazır olduğunda bu sayfaya eklenecek. Merak
-              ettiğiniz bir şey varsa doğrudan yazabilirsiniz.
-            </p>
-            <WhatsAppButton konu={u.ad} etiket="Durumu sor" />
+            <h2>{t.hazirlaniyor}</h2>
+            <p>{t.hazirlaniyorMetin(u.ad, u.ilerleme)}</p>
+            <WhatsAppButton konu={u.ad} etiket={t.durumSor} dil={dil} />
           </section>
         )
       }
@@ -276,8 +266,8 @@ const jsonLd: Record<string, unknown> = {
       {
         ilgiliYazilar.length > 0 && (
           <section>
-            <h2>{yazilimAdi} yazıları</h2>
-            <p class="note">Arşivden ilgili içerikler.</p>
+            <h2>{t.ilgiliYazilar(yazilimAdi ?? "")}</h2>
+            <p class="note">{t.arsivNotu}</p>
             <ul class="rel">
               {ilgiliYazilar.map((post) => (
                 <li>
@@ -292,7 +282,7 @@ const jsonLd: Record<string, unknown> = {
             </ul>
             {yazilimSlug && (
               <a class="rel__all" href={`/yazilim/${yazilimSlug}`}>
-                Tüm {yazilimAdi} yazıları →
+                {t.tumYazilar(yazilimAdi ?? "")}
               </a>
             )}
           </section>
@@ -303,10 +293,10 @@ const jsonLd: Record<string, unknown> = {
     {/* ---------------- Alt iletişim ---------------- */}
     <footer class="p__foot">
       <div>
-        <h2>Sorunuz mu var?</h2>
-        <p>Kullanımı, uyumluluğu veya fiyatı — doğrudan bana yazın.</p>
+        <h2>{t.sorunuzMuVar}</h2>
+        <p>{t.sorunuzMuVarNot}</p>
       </div>
-      <WhatsAppButton konu={u.ad} boyut="buyuk" etiket="WhatsApp'tan sor" />
+      <WhatsAppButton konu={u.ad} boyut="buyuk" etiket={t.waSor} dil={dil} />
     </footer>
   </article>
 </Base>
@@ -330,6 +320,7 @@ const jsonLd: Record<string, unknown> = {
 
   .p__crumb {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     gap: var(--s-2);
     font-family: var(--font-mono);
@@ -353,6 +344,10 @@ const jsonLd: Record<string, unknown> = {
   .p__crumb b {
     color: var(--c-text);
     font-weight: 500;
+  }
+  /* Dil düğmesi satırın sonuna itilir */
+  .p__crumb :global(.lang) {
+    margin-left: auto;
   }
 
   .p__kind {

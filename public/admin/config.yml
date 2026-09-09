@@ -392,6 +392,83 @@ collections:
           hint: "Yalnızca panelde görünür, sitede hiçbir yerde basılmaz.",
         }
 
+      # ---------------------------------------------------------------- #
+      # İngilizce sürüm (ADR-023)
+      #
+      # Boş bırakılan alan Türkçesine düşer — çeviri yarım kalsa bile
+      # İngilizce sayfa eksiksiz görünür, boş bölüm oluşmaz.
+      # ---------------------------------------------------------------- #
+      - label: İngilizce metinler
+        name: en
+        widget: object
+        required: false
+        collapsed: true
+        fields:
+          - {
+              label: Ad (İngilizce),
+              name: ad,
+              widget: string,
+              required: false,
+              hint: "Gumroad'daki adla aynı olması alıcıyı şaşırtmaz.",
+            }
+          - { label: Özet (İngilizce), name: ozet, widget: text, required: false }
+          - { label: Açıklama (İngilizce), name: aciklama, widget: text, required: false }
+          - { label: Slogan (İngilizce), name: slogan, widget: string, required: false }
+          - {
+              label: Fiyat notu (İngilizce),
+              name: fiyatNot,
+              widget: string,
+              required: false,
+              hint: "Örnek: One-time payment, lifetime use.",
+            }
+          - {
+              label: Uyumluluk (İngilizce),
+              name: uyumluluk,
+              widget: list,
+              required: false,
+              hint: "Boş bırakılırsa Türkçe listesi kullanılır.",
+            }
+          - label: Özellikler (İngilizce)
+            name: ozellikler
+            widget: list
+            required: false
+            collapsed: true
+            label_singular: Feature
+            summary: "{{baslik}}"
+            fields:
+              - { label: Başlık, name: baslik, widget: string }
+              - { label: Açıklama, name: not, widget: string }
+              - {
+                  label: İkon,
+                  name: ikon,
+                  widget: select,
+                  default: grid,
+                  options:
+                    [grid, bolt, ruler, sliders, layers, texture, kesim, kutu, indir, bulut, kod, onay, saat, goz],
+                }
+          - label: Listeler (İngilizce)
+            name: listeler
+            widget: list
+            required: false
+            collapsed: true
+            label_singular: List
+            summary: "{{baslik}}"
+            fields:
+              - { label: Başlık, name: baslik, widget: string }
+              - { label: Öğeler, name: ogeler, widget: list }
+              - { label: Not, name: not, widget: string, required: false }
+          - { label: Öne çıkanlar (İngilizce), name: vurgular, widget: list, required: false }
+          - label: Sık sorulanlar (İngilizce)
+            name: sss
+            widget: list
+            required: false
+            collapsed: true
+            label_singular: Question
+            summary: "{{soru}}"
+            fields:
+              - { label: Soru, name: soru, widget: string }
+              - { label: Cevap, name: cevap, widget: text }
+
   # ------------------------------------------------------------------ #
   # Tek dosyalık ayarlar
   # ------------------------------------------------------------------ #

@@ -1,0 +1,116 @@
+{
+  "ilerleme": null,
+  "slogan": null,
+  "kapak": null,
+  "galeri": [],
+  "video": null,
+  "listeler": [],
+  "sss": [],
+  "fiyat": null,
+  "satinAlmaUrl": null,
+  "denemeUrl": null,
+  "iletisimEposta": "ufuksn79@gmail.com",
+  "yayinda": true,
+  "slug": "dolap-sihirbazi-web",
+  "ad": "Dolap Sihirbazı Web",
+  "tur": "arac",
+  "durum": "aktif",
+  "surum": "1.14.0",
+  "sira": 22,
+  "ozet": "Tarayıcıda çalışan parametrik elbise dolabı tasarım, teklif ve CNC platformu; kurulum gerekmez.",
+  "aciklama": "Ölçü → Model → Teklif → CNC: dört adım, tek ekran, gerçek zamanlı 3B. Sunucu yok; proje verisi tarayıcıda ve JSON dosyasında saklanır. 3B'de bölmeye veya kapağa tıklayıp doğrudan düzenlersiniz.",
+  "uyumluluk": [
+    "Masaüstü tarayıcı",
+    "Tablet",
+    "Telefon"
+  ],
+  "ozellikler": [
+    {
+      "baslik": "Telefon dostu ölçü",
+      "not": "Dev sayaçlar ve hazır boy şablonları; genişlik değişince bölme adedi uyarlanır.",
+      "ikon": "ruler"
+    },
+    {
+      "baslik": "Panel panel kurgu",
+      "not": "Askılı, boy askılı, raflı, karma ve çekmeceli bölmeler.",
+      "ikon": "layers"
+    },
+    {
+      "baslik": "Kapak, taç ve baza",
+      "not": "Sol/sağ/yukarı/sürgülü kapak, otomatik çift kapak, taç taşmaları, baza veya dört ayak.",
+      "ikon": "kutu"
+    },
+    {
+      "baslik": "Tek tık teklif",
+      "not": "Plaka, bant, donanım, işçilik, kâr ve KDV; yazdır/PDF ve CSV.",
+      "ikon": "onay"
+    },
+    {
+      "baslik": "Kesim optimizasyonu",
+      "not": "Guillotine yerleşim, desen yönü korumalı; plaka yerleşim görselleri.",
+      "ikon": "kesim"
+    },
+    {
+      "baslik": "DXF çıktısı",
+      "not": "Kesim listesi CSV, DXF ve proje JSON olarak dışa aktarılır.",
+      "ikon": "indir"
+    }
+  ],
+  "vurgular": [
+    "4 adım",
+    "Gerçek zamanlı 3B",
+    "CNC hazır"
+  ],
+  "yazilim": [],
+  "icNot": "Kaynak: dolap-sihirbazi/README.md ve package.json (1.14.0) | SketchUp eklentisi ayrı ürün olarak eklendi (Gumroad'da Wardrobe Studio adıyla satılıyor); karışmasın diye bu kayıt \"Web\" olarak adlandırıldı.",
+  "en": {
+    "ad": "Wardrobe Studio Web",
+    "ozet": "Browser-based parametric wardrobe design, quoting and CNC platform — nothing to install.",
+    "aciklama": "Dimensions → Model → Quote → CNC: four steps, one screen, real-time 3D. No server; project data lives in your browser and in a JSON file. Click a shelf or a door in 3D and edit it directly.",
+    "slogan": null,
+    "uyumluluk": [
+      "Desktop browser",
+      "Tablet",
+      "Phone"
+    ],
+    "ozellikler": [
+      {
+        "baslik": "Phone-friendly sizing",
+        "not": "Large steppers and preset heights; the bay count adapts as the width changes.",
+        "ikon": "ruler"
+      },
+      {
+        "baslik": "Panel-by-panel layout",
+        "not": "Hanging, full-height hanging, shelved, mixed and drawer bays.",
+        "ikon": "layers"
+      },
+      {
+        "baslik": "Doors, cornice and plinth",
+        "not": "Left/right/up/sliding doors, automatic double doors, cornice overhangs, plinth or four feet.",
+        "ikon": "kutu"
+      },
+      {
+        "baslik": "One-click quote",
+        "not": "Board, edge banding, hardware, labour, margin and VAT; print/PDF and CSV.",
+        "ikon": "onay"
+      },
+      {
+        "baslik": "Cutting optimisation",
+        "not": "Guillotine nesting that respects grain direction, with sheet layout images.",
+        "ikon": "kesim"
+      },
+      {
+        "baslik": "DXF output",
+        "not": "Cutting list as CSV, plus DXF and project JSON.",
+        "ikon": "indir"
+      }
+    ],
+    "listeler": [],
+    "vurgular": [
+      "Four steps",
+      "Real-time 3D",
+      "CNC ready"
+    ],
+    "sss": []
+  }
+}

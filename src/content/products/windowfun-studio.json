@@ -6,8 +6,12 @@
   "video": null,
   "listeler": [],
   "sss": [],
-  "fiyat": null,
-  "satinAlmaUrl": null,
+  "fiyat": {
+    "tutar": 30,
+    "paraBirimi": "USD",
+    "not": "Tek seferlik ödeme, ömür boyu kullanım."
+  },
+  "satinAlmaUrl": "https://ufuksen.gumroad.com/l/SketchUpWindowsFunPlugin",
   "denemeUrl": null,
   "iletisimEposta": "ufuksn79@gmail.com",
   "yayinda": true,
@@ -15,7 +19,7 @@
   "ad": "WindowFun Studio",
   "tur": "eklenti",
   "durum": "aktif",
-  "surum": "1.1.0",
+  "surum": "2.5.0",
   "sira": 2,
   "ozet": "Ölçü tabanlı parametrik pencere üreten SketchUp eklentisi; 51 hazır model.",
   "aciklama": "Tek, eğimli veya bağlı L/U/C plan kenarları seçilerek her kenar uzunluğunda ve girilen yükseklikte pencere dizisi oluşturulur. Seçili hat modunda kasa, kanat, kayıt, cam, conta, kulp ve bevel ölçüleri her segmentin uzunluğuna özel orantılı ölçeklenir.",
@@ -59,5 +63,51 @@
   "yazilim": [
     "sketchup"
   ],
-  "icNot": "Kaynak: Yeni proje/README.md ve dist/windowfun_studio-1.1.0.rbz"
+  "icNot": "Kaynak: Yeni proje/README.md ve dist/windowfun_studio-1.1.0.rbz | Gumroad: SketchUp Windows Fun Plugin, 30 USD (2026-09-09). Sürüm paketlenmiş .rbz'den doğrulandı.",
+  "en": {
+    "ad": "WindowFun Studio",
+    "ozet": "Dimension-driven parametric windows for SketchUp, with 51 ready-made models.",
+    "aciklama": "Select a single, sloped or connected L/U/C plan edge and windows are generated along its full length at the height you enter. Only the window width follows the edge — frame, sash, rail, handle and other profile sections keep the real dimensions you typed, exactly as in real joinery where a 70 mm profile stays 70 mm whether the window is 400 mm or 4000 mm wide.",
+    "slogan": null,
+    "uyumluluk": [
+      "SketchUp 2024",
+      "SketchUp 2025",
+      "SketchUp 2026"
+    ],
+    "ozellikler": [
+      {
+        "baslik": "51 ready-made models",
+        "not": "Catalogued under 1–4 pane, sliding and French window families.",
+        "ikon": "grid"
+      },
+      {
+        "baslik": "Windows along a path",
+        "not": "Windows are placed automatically along the plan edges you select.",
+        "ikon": "ruler"
+      },
+      {
+        "baslik": "Real profile sections",
+        "not": "Profiles keep their true size; only the opening adapts to the edge.",
+        "ikon": "sliders"
+      },
+      {
+        "baslik": "Search and categories",
+        "not": "Browse the catalogue by tabs or search; the chosen model is stored in the settings.",
+        "ikon": "goz"
+      },
+      {
+        "baslik": "Cost and technical report",
+        "not": "The selected catalogue name flows through to cost and technical reports.",
+        "ikon": "onay"
+      }
+    ],
+    "listeler": [],
+    "vurgular": [
+      "51 ready models",
+      "Works offline",
+      "Cost reporting"
+    ],
+    "sss": [],
+    "fiyatNot": "One-time payment, lifetime use."
+  }
 }

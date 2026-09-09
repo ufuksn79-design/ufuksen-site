@@ -170,6 +170,37 @@ const products = defineCollection({
 
     /** Yalnızca panelde görünür, sitede hiçbir yerde basılmaz. */
     icNot: z.string().nullable().default(null),
+
+    /**
+     * İngilizce sürüm (ADR-023). Doldurulmayan alan Türkçesine düşer, böylece
+     * çeviri kısmi olabilir ve İngilizce sayfa yine de eksiksiz görünür.
+     */
+    en: z
+      .object({
+        ad: z.string().nullable().default(null),
+        ozet: z.string().nullable().default(null),
+        aciklama: z.string().nullable().default(null),
+        slogan: z.string().nullable().default(null),
+        /** Fiyat rozetinin altındaki not — para birimi aynı, metin dile bağlı. */
+        fiyatNot: z.string().nullable().default(null),
+        uyumluluk: z.array(z.string()).default([]),
+        ozellikler: z
+          .array(z.object({ baslik: z.string(), not: z.string(), ikon: z.string().default("grid") }))
+          .default([]),
+        listeler: z
+          .array(
+            z.object({
+              baslik: z.string(),
+              ogeler: z.array(z.string()),
+              not: z.string().nullable().default(null),
+            }),
+          )
+          .default([]),
+        vurgular: z.array(z.string()).default([]),
+        sss: z.array(z.object({ soru: z.string(), cevap: z.string() })).default([]),
+      })
+      .nullable()
+      .default(null),
   }),
 });
 

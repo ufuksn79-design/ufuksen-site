@@ -5,7 +5,7 @@
   "durum": "alfa",
   "ilerleme": null,
   "surum": "0.17.0-alpha",
-  "sira": 12,
+  "sira": 24,
   "yayinda": true,
   "ozet": "Tarayıcıda çalışan panel açınım, kesim listesi ve CNC hazırlama uygulaması.",
   "aciklama": "Kurulum gerektirmez, sunucu bağımlılığı yoktur; tüm hesap istemci tarafında yapılır. Masaüstü, tablet ve telefon tarayıcılarında çalışır. Çıktı belgedir: DXF makineye gider, PDF atölyeye asılır.",
@@ -52,5 +52,45 @@
   "denemeUrl": null,
   "iletisimEposta": "ufuksn79@gmail.com",
   "yazilim": [],
-  "icNot": "Veriler projenin kendi PROJECT.md ve package.json dosyalarından okundu. Alfa sürümde; KompozitCut Studio adlı ücretli kompozit cephe sürümü planlanıyor."
+  "icNot": "Veriler projenin kendi PROJECT.md ve package.json dosyalarından okundu. Alfa sürümde; KompozitCut Studio adlı ücretli kompozit cephe sürümü planlanıyor.",
+  "en": {
+    "ad": "PanelCut Studio",
+    "ozet": "Browser-based panel unfolding, cutting list and CNC preparation.",
+    "aciklama": "No installation, no server dependency; everything is computed on the client. Runs in desktop, tablet and phone browsers. The output is a document: DXF goes to the machine, PDF goes on the workshop wall.",
+    "slogan": null,
+    "uyumluluk": [
+      "Desktop browser",
+      "Tablet",
+      "Phone"
+    ],
+    "ozellikler": [
+      {
+        "baslik": "Panel unfolding",
+        "not": "From dimensions to cut parts.",
+        "ikon": "grid"
+      },
+      {
+        "baslik": "Cutting list",
+        "not": "Output you can pin up in the workshop.",
+        "ikon": "ruler"
+      },
+      {
+        "baslik": "CNC preparation",
+        "not": "DXF output straight to the machine.",
+        "ikon": "sliders"
+      },
+      {
+        "baslik": "No installation",
+        "not": "Opens in the browser; the maths runs on your device.",
+        "ikon": "bolt"
+      }
+    ],
+    "listeler": [],
+    "vurgular": [
+      "Free",
+      "No installation",
+      "Millimetre precision"
+    ],
+    "sss": []
+  }
 }

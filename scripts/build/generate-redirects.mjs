@@ -48,7 +48,22 @@ for (const [from, to] of entries) {
  * değil: her eski adres ya çalışır ya 301 alır.
  */
 const ICERIDEN = {
-  "/urunler/kitchen-studio": "/urunler/kitchenflow",
+  "/urunler": "/sketchup-en-iyi-pluginleri.html",
+  "/urunler/cam-ruzgar-studyosu": "/eklenti/cam-ruzgar-studyosu.html",
+  "/urunler/dolap-sihirbazi-web": "/eklenti/dolap-sihirbazi-web.html",
+  "/urunler/dolap-sihirbazi": "/eklenti/dolap-sihirbazi.html",
+  "/urunler/dynamic-skirting": "/eklenti/dynamic-skirting.html",
+  "/urunler/floorstudio": "/eklenti/floorstudio.html",
+  "/urunler/fun-road": "/eklenti/fun-road.html",
+  "/urunler/kapi-studyosu": "/eklenti/kapi-studyosu.html",
+  "/urunler/kitchenflow": "/eklenti/kitchenflow.html",
+  "/urunler/metraj": "/eklenti/metraj.html",
+  "/urunler/panelcut-studio": "/eklenti/panelcut-studio.html",
+  "/urunler/perdenese-studio": "/eklenti/perdenese-studio.html",
+  "/urunler/universal-converter": "/eklenti/universal-converter.html",
+  "/urunler/windowfun-studio-web": "/eklenti/windowfun-studio-web.html",
+  "/urunler/windowfun-studio": "/eklenti/windowfun-studio.html",
+  "/urunler/kitchen-studio": "/eklenti/kitchenflow.html",
 };
 
 lines.push(

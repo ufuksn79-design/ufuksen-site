@@ -35,10 +35,62 @@ function withStatus(assetResponse, status) {
   });
 }
 
+/**
+ * Türkçe sayfaların İngilizce karşılıkları (ADR-023).
+ *
+ * Yalnızca çevirisi olan adresler burada. Blog arşivi (430 Türkçe yazı) ve ana
+ * sayfa çevrilmedi; onlara gelen yurt dışı ziyaretçi yönlendirilmez — olmayan
+ * bir çeviriye göndermek 404 üretirdi.
+ */
+function ingilizceKarsiligi(pathname) {
+  if (pathname === "/sketchup-en-iyi-pluginleri.html") return "/sketchup-best-plugins.html";
+  const m = pathname.match(/^\/eklenti\/(.+)\.html$/);
+  return m ? `/plugin/${m[1]}.html` : null;
+}
+
+/**
+ * Arama motoru robotu ya da bağlantı önizleyicisi mi?
+ *
+ * Bunlar YÖNLENDİRİLMEZ. Googlebot ABD'den tarar; konuma göre yönlendirilseydi
+ * Türkçe sayfaları hiç göremez, Türkçe içerik dizine girmezdi. Robot her iki
+ * sürümü de olduğu gibi görür; hangisinin kime gösterileceğini `hreflang`
+ * etiketlerinden anlar.
+ */
+function robotMu(ua) {
+  return /bot|crawler|spider|crawling|slurp|mediapartners|facebookexternalhit|embedly|preview|whatsapp|telegram|discord|skype|vkshare|pinterest/i.test(
+    ua || "",
+  );
+}
+
 export default {
   async fetch(request, env) {
     const url = new URL(request.url);
     const { pathname, searchParams } = url;
+
+    /**
+     * 0) Konuma göre dil: Türkiye dışından gelen ziyaretçi İngilizce sürüme.
+     *
+     * - **302**, 301 değil: yanıt ziyaretçiye göre değişiyor. Kalıcı
+     *   yönlendirme tarayıcıda önbelleğe alınır ve yanlış dili kilitlerdi.
+     * - `dil` çerezi varsa kullanıcının kendi seçimi geçerlidir; konuma bakılmaz.
+     * - `?dil=tr` ile yönlendirme tek seferlik atlanır (bağlantı paylaşmak için).
+     * - Robotlar ve önizleyiciler hiç yönlendirilmez (bkz. robotMu).
+     * - Ülke bilgisi yoksa (yerel geliştirme) yönlendirme yapılmaz.
+     */
+    const cerez = request.headers.get("Cookie") || "";
+    const secilenDil = cerez.match(/(?:^|;\s*)dil=(tr|en)/)?.[1] ?? null;
+    const ulke = request.cf?.country ?? null;
+
+    if (
+      !secilenDil &&
+      !searchParams.has("dil") &&
+      ulke &&
+      ulke !== "TR" &&
+      !robotMu(request.headers.get("User-Agent"))
+    ) {
+      const enYol = ingilizceKarsiligi(pathname);
+      if (enYol) return Response.redirect(url.origin + enYol, 302);
+    }
 
     // 1) Eski WordPress site içi araması
     if (pathname === "/" && searchParams.has("s")) {

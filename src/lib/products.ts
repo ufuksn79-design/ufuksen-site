@@ -84,10 +84,21 @@ export async function getAllProducts(): Promise<Product[]> {
   return (await getCollection("products")).sort(sirala);
 }
 
-/** Ürün sayfası adresi. Tek yerde tanımlı — şema değişirse burası değişir. */
+/**
+ * Ürün sayfası adresi. Tek yerde tanımlı — şema değişirse burası değişir.
+ *
+ * `.html` uzantısı bilinçli: site genelindeki şemayla aynı (ADR-007) ve
+ * adres arama motorunda anahtar kelime taşıyor.
+ */
 export function productPath(slug: string): string {
-  return `/urunler/${slug}`;
+  return `/eklenti/${slug}.html`;
 }
+
+/** Bölümün kendi adresi ve adı — menü, footer ve ekmek kırıntısı buradan okur. */
+export const BOLUM_YOLU = "/sketchup-en-iyi-pluginleri.html";
+export const BOLUM_ADI = "SketchUp En İyi Pluginleri";
+/** Menüde ve dar alanlarda kullanılan kısa ad. */
+export const BOLUM_KISA = "Pluginler";
 
 /**
  * Türlere göre gruplama — liste sayfasında süzgeç göstermeye değer mi

@@ -16,7 +16,7 @@
   "tur": "eklenti",
   "durum": "aktif",
   "surum": "1.1.0",
-  "sira": 5,
+  "sira": 7,
   "ozet": "Parametrik yol, arazi takipli patika ve spiral rampa üreten SketchUp eklentisi.",
   "aciklama": "Geometri, dönme-en-aza-indiren istasyon çerçevelerinden ve dikilmiş poligon ağlardan üretilir; SketchUp'ın Follow Me aracı kullanılmaz. Panel değerleri SI birimlerindedir — metre, derece ve yüzde.",
   "uyumluluk": [
@@ -61,5 +61,52 @@
   "yazilim": [
     "sketchup"
   ],
-  "icNot": "Kaynak: Yeni proje/fun_road/README.md (1.1.0). README İngilizce."
+  "icNot": "Kaynak: Yeni proje/fun_road/README.md (1.1.0). README İngilizce.",
+  "en": {
+    "ad": "FUN ROAD",
+    "ozet": "Parametric roads, terrain-following paths and helical ramps for SketchUp.",
+    "aciklama": "Geometry is generated from rotation-minimising station frames and stitched polygon meshes; SketchUp's native Follow Me is not used. All panel values are SI — metres, degrees and percent.",
+    "slogan": null,
+    "uyumluluk": [
+      "SketchUp 2021",
+      "SketchUp 2022",
+      "SketchUp 2023",
+      "SketchUp 2024",
+      "SketchUp 2025"
+    ],
+    "ozellikler": [
+      {
+        "baslik": "Build from selection",
+        "not": "Select a connected edge chain and turn it into a road with one button.",
+        "ikon": "ruler"
+      },
+      {
+        "baslik": "Terrain pencil",
+        "not": "Place stations directly on sloped faces; intermediate stations follow the surface.",
+        "ikon": "layers"
+      },
+      {
+        "baslik": "Helix ramp",
+        "not": "Set radius, angle, rise and axis to build a spiral ramp.",
+        "ikon": "kutu"
+      },
+      {
+        "baslik": "Straight / arc / spline",
+        "not": "Cycle modes with the A key while drawing.",
+        "ikon": "sliders"
+      },
+      {
+        "baslik": "Editable after the fact",
+        "not": "Every result carries its parameters; select it and update.",
+        "ikon": "onay"
+      }
+    ],
+    "listeler": [],
+    "vurgular": [
+      "Terrain-following",
+      "Helical ramps",
+      "SI units"
+    ],
+    "sss": []
+  }
 }

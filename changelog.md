@@ -28,6 +28,36 @@ Format, Keep a Changelog yaklaşımına yakındır. Tarihler `YYYY-MM-DD` biçim
 - Kaynak WordPress sistemi migration boyunca salt okunur kabul edildi.
 - Dry-run, yedek ve rollback zorunlulukları eklendi.
 
+## [0.9.0] — 2026-09-09
+
+Gumroad satışı, bölüm yeniden adlandırma ve İngilizce sürüm (ADR-023).
+
+### Added
+
+- **İngilizce eklenti bölümü**: `/sketchup-best-plugins.html` ve `/plugin/{slug}.html` — 14 ürünün tamamı çevrildi (ad, özet, açıklama, özellikler, listeler, öne çıkanlar, fiyat notu)
+- **Konuma göre yönlendirme**: Türkiye dışından gelen ziyaretçi İngilizce sürüme 302 ile gider. Robotlar yönlendirilmez (Türkçe içerik dizine girsin diye), kullanıcı seçimi çerezde saklanır ve konumu ezer
+- `hreflang` (tr / en / x-default) — yalnızca çevirisi olan sayfalarda
+- Dil düğmesi (TR ⇄ EN), seçimi hatırlıyor
+- **İki yeni ürün**: Kapı Stüdyosu v1.6.0 ($30) ve Dolap Sihirbazı v1.19.0 ($35) — Gumroad'da satışta ama sitede yoktu
+- Panelde İngilizce metin alanları
+
+### Changed
+
+- **Bölüm adı**: "Ürünler" → **SketchUp En İyi Pluginleri** / **SketchUp Best Plugins**
+- **URL şeması**: `/urunler` → `/sketchup-en-iyi-pluginleri.html`, `/urunler/{slug}` → `/eklenti/{slug}.html` (16 adet 301 yönlendirme)
+- **Gumroad verisi işlendi**: 5 eklentiye gerçek fiyat ve satın alma bağlantısı; "Satın al" doğrudan o eklentinin Gumroad sayfasına gidiyor
+- **Sürümler düzeltildi** (paketlenmiş .rbz dosyalarından doğrulandı): WindowFun 1.1.0 → 2.5.0, PerdeNeşe 1.5.5 → 2.2.1, Dynamic Skirting 1.2.3 → 1.3.2, FloorStudio 3.1.5 → 3.2.1
+- "Dolap Sihirbazı" (web) → "Dolap Sihirbazı Web"; SketchUp eklentisi ayrı ürün oldu
+- Kartlarda künyenin ilk hücresi satıştaki üründe fiyatı gösteriyor; buton "İncele" yerine "Satın al" oluyor
+- Giriş sayacı "yayında" yerine gerçekten satın alınabilenleri sayıyor
+
+### Doğrulama
+
+- 539 sayfa; `astro check` **0 hata**; kırık link / eksik medya / boş gövde: 0
+- İngilizce sayfalarda Türkçe kalıntı yok (kalan iki eşleşme: geliştirici yorumu ve dil düğmesinin kendi dilindeki ipucu)
+- 5 Gumroad bağlantısı tek tek doğrulandı; fiyatlar $ olarak biçimleniyor
+- Meta açıklamaları iki dilde de 160 karakter altında (TR 155, EN 147)
+
 ## [0.8.0] — 2026-08-18
 
 Ürün altyapısı: yeni ürün eklemek artık kod işi değil (ADR-022).

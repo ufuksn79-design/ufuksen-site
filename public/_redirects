@@ -67,7 +67,22 @@
 /youtubedan-para-kazanma-sartlari-2025-guncel-rehber.html  /youtube-para-kazanma-sartlari2025.html  301
 
 # --- Site içi ad değişiklikleri ------------------------------------------
-/urunler/kitchen-studio  /urunler/kitchenflow  301
+/urunler  /sketchup-en-iyi-pluginleri.html  301
+/urunler/cam-ruzgar-studyosu  /eklenti/cam-ruzgar-studyosu.html  301
+/urunler/dolap-sihirbazi-web  /eklenti/dolap-sihirbazi-web.html  301
+/urunler/dolap-sihirbazi  /eklenti/dolap-sihirbazi.html  301
+/urunler/dynamic-skirting  /eklenti/dynamic-skirting.html  301
+/urunler/floorstudio  /eklenti/floorstudio.html  301
+/urunler/fun-road  /eklenti/fun-road.html  301
+/urunler/kapi-studyosu  /eklenti/kapi-studyosu.html  301
+/urunler/kitchenflow  /eklenti/kitchenflow.html  301
+/urunler/metraj  /eklenti/metraj.html  301
+/urunler/panelcut-studio  /eklenti/panelcut-studio.html  301
+/urunler/perdenese-studio  /eklenti/perdenese-studio.html  301
+/urunler/universal-converter  /eklenti/universal-converter.html  301
+/urunler/windowfun-studio-web  /eklenti/windowfun-studio-web.html  301
+/urunler/windowfun-studio  /eklenti/windowfun-studio.html  301
+/urunler/kitchen-studio  /eklenti/kitchenflow.html  301
 
 # --- AMP / attachment / eski arama ---------------------------------------
 # Bu kalıplar BİLEREK burada değil: Cloudflare _redirects orta-yol splat

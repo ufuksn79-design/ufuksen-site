@@ -4,7 +4,7 @@
   "tur": "eklenti",
   "durum": "aktif",
   "ilerleme": null,
-  "surum": "3.1.5",
+  "surum": "3.2.1",
   "sira": 1,
   "yayinda": true,
   "ozet": "Profesyonel zemin desenlerini saniyeler içinde oluşturan SketchUp eklentisi.",
@@ -77,5 +77,71 @@
   "yazilim": [
     "sketchup"
   ],
-  "icNot": "/media/urun/floorstudio.jpg — tanitim gorseli kullanicidan bekleniyor. Dosya bu yola konunca gorsel alanina ayni yol yazilacak."
+  "icNot": "/media/urun/floorstudio.jpg — tanitim gorseli kullanicidan bekleniyor. Dosya bu yola konunca gorsel alanina ayni yol yazilacak. | Surum FloorStudio_v3.2.1-stability.1.rbz paketinden dogrulandi (2026-09-09). Gumroad satisinda degil.",
+  "en": {
+    "ad": "FloorStudio",
+    "ozet": "SketchUp plugin that builds professional floor patterns in seconds.",
+    "aciklama": "Modelling floors by hand is slow and the joint spacing never quite adds up. FloorStudio lets you enter the parameters and generate a dimensionally correct floor in one click.",
+    "slogan": "Save time, raise your quality.",
+    "uyumluluk": [
+      "SketchUp 2021",
+      "SketchUp 2022",
+      "SketchUp 2023",
+      "SketchUp 2024",
+      "SketchUp 2025",
+      "SketchUp 2026"
+    ],
+    "ozellikler": [
+      {
+        "baslik": "Automatic generation",
+        "not": "Build entire floors with a single click.",
+        "ikon": "bolt"
+      },
+      {
+        "baslik": "True dimensions",
+        "not": "A physical gap system gives fully accurate results.",
+        "ikon": "ruler"
+      },
+      {
+        "baslik": "Rich pattern library",
+        "not": "13+ professional patterns.",
+        "ikon": "grid"
+      },
+      {
+        "baslik": "Advanced parameters",
+        "not": "Randomised length, width, colour and height variation.",
+        "ikon": "sliders"
+      },
+      {
+        "baslik": "Thickness and bevel",
+        "not": "Realistic board thickness and bevel options.",
+        "ikon": "layers"
+      },
+      {
+        "baslik": "UV and material control",
+        "not": "Smart UV alignment and material management.",
+        "ikon": "texture"
+      }
+    ],
+    "listeler": [
+      {
+        "baslik": "Pattern library",
+        "ogeler": [
+          "Wood Straight",
+          "Herringbone Single",
+          "Herringbone Double",
+          "Chevron",
+          "Tile Diamond 45°",
+          "Stack Bond"
+        ],
+        "not": "Six patterns shown here; the plugin ships with 13+."
+      }
+    ],
+    "vurgular": [
+      "Single-step undo",
+      "Fast and efficient",
+      "Professional results"
+    ],
+    "sss": []
+  }
 }

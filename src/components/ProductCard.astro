@@ -10,19 +10,31 @@
  * `src/lib/products.ts` içinde (ADR-022). Boş alanlar render edilmez.
  */
 import WhatsAppButton from "./WhatsAppButton.astro";
-import { DURUM, TUR, productPath, type Product } from "../lib/products";
+import type { Product } from "../lib/products";
+import { METIN, urunDilde, urunYolu, type Dil } from "../lib/i18n";
 
 interface Props {
   product: Product;
   /** Kartın listedeki sırası — künyedeki pafta numarası için. */
   index?: number;
+  dil?: Dil;
 }
 
-const { product, index = 0 } = Astro.props;
-const u = product.data;
+const { product, index = 0, dil = "tr" } = Astro.props;
+const t = METIN[dil];
+const u = urunDilde(product.data, dil);
 
-const durum = DURUM[u.durum];
-const href = productPath(u.slug);
+const href = urunYolu(u.slug, dil);
+
+/** Fiyat yalnızca gerçekten girilmişse görünür. */
+const fiyatMetni =
+  u.fiyat?.tutar != null
+    ? new Intl.NumberFormat(dil === "en" ? "en-US" : "tr-TR", {
+        style: "currency",
+        currency: u.fiyat.paraBirimi || "USD",
+        maximumFractionDigits: 0,
+      }).format(u.fiyat.tutar)
+    : null;
 
 /** Künyedeki pafta numarası — çizim sayfalarındaki "SHEET 01/03" karşılığı. */
 const paftaNo = String(index + 1).padStart(2, "0");
@@ -38,7 +50,7 @@ const paftaNo = String(index + 1).padStart(2, "0");
       <circle cx="8" cy="32" r="1.8" fill="currentColor" stroke="none" />
     </svg>
 
-    <p class="pcard__kind">{TUR[u.tur].tekil}</p>
+    <p class="pcard__kind">{t.turTekil[u.tur]}</p>
 
     <h3 class="pcard__title">
       <a href={href}>{u.ad}</a>
@@ -48,7 +60,7 @@ const paftaNo = String(index + 1).padStart(2, "0");
     <div class="pcard__dim" aria-hidden="true">
       <span class="pcard__dim-line"></span>
       <span class="pcard__dim-text">
-        {u.surum ? `v${u.surum}` : durum.etiket}
+        {u.surum ? `v${u.surum}` : t.durumEtiket[u.durum]}
       </span>
       <span class="pcard__dim-line"></span>
     </div>
@@ -69,29 +81,29 @@ const paftaNo = String(index + 1).padStart(2, "0");
   {/* Künye bloğu — teknik çizimin sağ alt köşesindeki bilgi tablosu */}
   <dl class="pcard__block">
     <div>
-      <dt>Durum</dt>
-      <dd class:list={[`is-${durum.ton}`]}>
-        {durum.etiket}{u.ilerleme ? ` %${u.ilerleme}` : ""}
+      <dt>{fiyatMetni ? t.kunyeFiyat : t.kunyeDurum}</dt>
+      <dd class:list={[fiyatMetni ? "is-fiyat" : "is-warn"]}>
+        {fiyatMetni ?? `${t.durumEtiket[u.durum]}${u.ilerleme ? ` %${u.ilerleme}` : ""}`}
       </dd>
     </div>
     <div>
-      <dt>Uyumluluk</dt>
+      <dt>{t.kunyeUyumluluk}</dt>
       <dd>{u.uyumluluk.length ? u.uyumluluk.join(" · ") : "—"}</dd>
     </div>
     <div>
-      <dt>Pafta</dt>
+      <dt>{t.kunyePafta}</dt>
       <dd>{paftaNo}</dd>
     </div>
   </dl>
 
   <div class="pcard__cta">
     <a class="pcard__more" href={href}>
-      İncele
+      {u.satinAlmaUrl ? t.satinAl : t.incele}
       <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
         <path d="M5 12h13M12.5 5.5 19 12l-6.5 6.5" />
       </svg>
     </a>
-    <WhatsAppButton konu={u.ad} etiket="Sor" />
+    <WhatsAppButton konu={u.ad} etiket={t.sor} dil={dil} />
   </div>
 </article>
 
@@ -251,6 +263,12 @@ const paftaNo = String(index + 1).padStart(2, "0");
   .pcard__block .is-ok { color: #7ddc7d; }
   .pcard__block .is-warn { color: var(--c-accent); }
   .pcard__block .is-muted { color: var(--c-text-faint); }
+  /* Satıştaki ürünlerde künyenin ilk hücresi fiyatı gösterir */
+  .pcard__block .is-fiyat {
+    color: var(--c-accent);
+    font-weight: 700;
+    font-size: var(--t-small);
+  }
 
   .pcard__cta {
     position: relative;

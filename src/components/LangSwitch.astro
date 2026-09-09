@@ -1,0 +1,80 @@
+---
+/**
+ * Dil düğmesi (ADR-023).
+ *
+ * Yalnızca çevirisi olan sayfalarda gösterilir — blog arşivi Türkçe olduğu
+ * için menüye genel bir dil düğmesi konmadı; olmayan bir çeviriye götüren
+ * düğme, çalışmayan bir düğmedir.
+ *
+ * Yurt dışından gelen ziyaretçi Cloudflare tarafında İngilizceye yönlendirilir
+ * (worker/index.js); bu düğme o kararı elle değiştirmek içindir ve seçim
+ * çerezde saklanır, sonraki ziyarette yönlendirme tekrar araya girmez.
+ */
+import { LISTE_YOLU, METIN, urunYolu, digerDil, type Dil } from "../lib/i18n";
+
+interface Props {
+  dil: Dil;
+  /** Ürün sayfasındaysa: karşı dildeki ürün adresi buradan kurulur. */
+  slug?: string | null;
+}
+
+const { dil, slug = null } = Astro.props;
+const hedefDil = digerDil(dil);
+const t = METIN[dil];
+const href = slug ? urunYolu(slug, hedefDil) : LISTE_YOLU[hedefDil];
+---
+
+<a class="lang" href={href} title={t.digerDilBaslik} data-lang-switch={hedefDil} hreflang={hedefDil}>
+  <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+    <circle cx="12" cy="12" r="8.5" />
+    <path d="M3.5 12h17M12 3.5c2.5 2.6 2.5 14.4 0 17M12 3.5c-2.5 2.6-2.5 14.4 0 17" />
+  </svg>
+  <span>{t.digerDilEtiketi}</span>
+</a>
+
+<script>
+  /**
+   * Kullanıcı dili elle seçtiyse konum tabanlı yönlendirme bir daha araya
+   * girmesin: seçim bir yıl boyunca çerezde saklanır, worker onu okur.
+   */
+  document.addEventListener("astro:page-load", () => {
+    document.querySelectorAll<HTMLAnchorElement>("[data-lang-switch]").forEach((a) => {
+      a.addEventListener("click", () => {
+        const secim = a.dataset.langSwitch;
+        document.cookie = `dil=${secim}; path=/; max-age=31536000; samesite=lax`;
+      });
+    });
+  });
+</script>
+
+<style>
+  .lang {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--s-2);
+    min-height: 36px;
+    padding: 0 var(--s-3);
+    border: 1px solid var(--c-line-strong);
+    border-radius: var(--r-pill);
+    color: var(--c-text-muted);
+    font-family: var(--font-mono);
+    font-size: var(--t-micro);
+    letter-spacing: 0.08em;
+    text-decoration: none;
+    transition:
+      border-color var(--d-fast) var(--e-out),
+      color var(--d-fast) var(--e-out);
+  }
+  .lang svg {
+    width: 15px;
+    height: 15px;
+    fill: none;
+    stroke: currentColor;
+    stroke-width: 1.6;
+  }
+  .lang:hover,
+  .lang:focus-visible {
+    border-color: var(--c-accent);
+    color: var(--c-accent);
+  }
+</style>

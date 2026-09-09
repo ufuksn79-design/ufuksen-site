@@ -11,6 +11,7 @@
  * bir servis işareti. Kullanıcı yeşili görüp ne olduğunu anında anlar.
  */
 import contact from "../content/contact.json";
+import { METIN, type Dil } from "../lib/i18n";
 
 interface Props {
   /** Mesaja önceden yazılacak konu — genelde ürün adı. */
@@ -19,17 +20,23 @@ interface Props {
   boyut?: "satir" | "buyuk";
   /** Buton üzerindeki metin. */
   etiket?: string;
+  /** Hazır mesajın dili. */
+  dil?: Dil;
   class?: string;
 }
 
-const { konu = null, boyut = "satir", etiket = "WhatsApp'tan sor", class: className = "" } = Astro.props;
+const {
+  konu = null,
+  boyut = "satir",
+  etiket = "WhatsApp'tan sor",
+  dil = "tr",
+  class: className = "",
+} = Astro.props;
 
 const numara = (contact.whatsappNumara ?? "").replace(/\D/g, "");
 
 /** Karşı tarafa hangi ürün için yazıldığı belli olsun diye mesaj hazır gelir. */
-const mesaj = konu
-  ? `Merhaba, ${konu} hakkında bilgi almak istiyorum.`
-  : "Merhaba, bilgi almak istiyorum.";
+const mesaj = METIN[dil].waMesaj(konu);
 
 const href = `https://wa.me/${numara}?text=${encodeURIComponent(mesaj)}`;
 ---
@@ -41,7 +48,7 @@ const href = `https://wa.me/${numara}?text=${encodeURIComponent(mesaj)}`;
       href={href}
       target="_blank"
       rel="noopener noreferrer"
-      aria-label={konu ? `${konu} için WhatsApp'tan yaz` : "WhatsApp'tan yaz"}
+      aria-label={konu ? `${konu} — ${etiket}` : etiket}
     >
       {/* WhatsApp marka işareti — Simple Icons, CC0 */}
       <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">

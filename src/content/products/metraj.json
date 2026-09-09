@@ -16,7 +16,7 @@
   "tur": "arac",
   "durum": "beta",
   "surum": null,
-  "sira": 13,
+  "sira": 25,
   "ozet": "Oda ölçülerinden yüzey alanı, malzeme miktarı ve yaklaşık maliyet hesaplayan web uygulaması.",
   "aciklama": "Tamamen tarayıcıda çalışır, veriler cihazda kalır. 2B plan ile 3B görünüm karşılıklı senkron; kapı ve pencere boşlukları brüt duvar alanından otomatik düşülür.",
   "uyumluluk": [
@@ -52,5 +52,45 @@
     "PDF + CSV rapor"
   ],
   "yazilim": [],
-  "icNot": "Kaynak: metraj/README.md. package.json sürümü 0.0.0 olduğu için sürüm yazılmadı; README 'Faz 1–8 tamamlandı (MVP)' diyor, bu yüzden durum 'beta'."
+  "icNot": "Kaynak: metraj/README.md. package.json sürümü 0.0.0 olduğu için sürüm yazılmadı; README 'Faz 1–8 tamamlandı (MVP)' diyor, bu yüzden durum 'beta'.",
+  "en": {
+    "ad": "Metraj",
+    "ozet": "Web app that turns room dimensions into surface areas, material quantities and an approximate cost.",
+    "aciklama": "Runs entirely in the browser; your data stays on your device. The 2D plan and 3D view stay in sync, and door and window openings are deducted from the gross wall area automatically.",
+    "slogan": null,
+    "uyumluluk": [
+      "Desktop browser",
+      "Tablet",
+      "Phone"
+    ],
+    "ozellikler": [
+      {
+        "baslik": "2D plan and 3D view",
+        "not": "Edit dimension labels straight on the plan; both views stay in sync.",
+        "ikon": "kutu"
+      },
+      {
+        "baslik": "Door and window openings",
+        "not": "Placed with geometric validation and deducted from the net area.",
+        "ikon": "kesim"
+      },
+      {
+        "baslik": "Material calculations",
+        "not": "Paint, satin plaster, epoxy, wallpaper, ceramic, laminate, PVC and carpet.",
+        "ikon": "layers"
+      },
+      {
+        "baslik": "Reporting",
+        "not": "Printable PDF, Excel-friendly CSV, JSON and a PNG of the plan.",
+        "ikon": "indir"
+      }
+    ],
+    "listeler": [],
+    "vurgular": [
+      "Free",
+      "Runs in the browser",
+      "PDF + CSV report"
+    ],
+    "sss": []
+  }
 }

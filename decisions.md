@@ -625,3 +625,56 @@ süzgeç kendiliğinden belirip doğru süzdü. Sınama kayıtları sonra silind
 
 Ürün karşılaştırma tablosu, ürün içi arama, etiket sistemi. Üç üründe hiçbiri
 değer üretmez; ihtiyaç doğduğunda eklenir. Şema bunları engellemiyor.
+
+
+---
+
+## ADR-023 — İki dillilik: eklenti bölümü İngilizce, konuma göre yönlendirme
+
+**Durum:** Kabul edildi
+**Tarih:** 2026-09-09
+
+### Bağlam
+
+Eklentiler Gumroad'da **dolarla** satılıyor; alıcı kitlesi Türkiye dışı.
+Kullanıcı, yurt dışına verdiği bağlantının İngilizce açılmasını istedi.
+
+### Karar
+
+**1. Kapsam: eklenti bölümü.** Blog arşivi 430 Türkçe yazıdır; çevrilmesi ne
+mümkün ne de anlamlı. İngilizce sürüm satışa dokunan sayfaları kapsar:
+eklenti listesi ve eklenti sayfaları. Ana sayfa ve blog Türkçe kalır.
+
+**2. Ayrı adresler, otomatik çeviri değil.**
+
+| | Türkçe | İngilizce |
+|---|---|---|
+| Liste | `/sketchup-en-iyi-pluginleri.html` | `/sketchup-best-plugins.html` |
+| Ürün | `/eklenti/{slug}.html` | `/plugin/{slug}.html` |
+
+Adresler arama motoru için anahtar kelime taşıyor ("sketchup best plugins").
+
+**3. Türkçe kaynak dil.** Bir alanın İngilizcesi yoksa Türkçesine düşülür
+(`urunDilde`). Çeviri yarım kalsa bile İngilizce sayfa eksiksiz görünür; boş
+başlık ya da yer tutucu oluşmaz.
+
+**4. Konuma göre yönlendirme — üç güvenlik kilidiyle.**
+
+- **302, 301 değil.** Yanıt ziyaretçiye göre değişiyor; kalıcı yönlendirme
+  tarayıcıda önbelleğe alınıp yanlış dili kilitlerdi.
+- **Robotlar yönlendirilmez.** Googlebot ABD'den tarar; yönlendirilseydi Türkçe
+  sayfaları hiç göremez, Türkçe içerik dizine girmezdi. Robot iki sürümü de
+  görür, eşleşmeyi `hreflang` etiketlerinden kurar.
+- **Kullanıcı seçimi konumu ezer.** Dil düğmesine basıldığında seçim bir yıllık
+  çerezde saklanır; worker onu okur ve bir daha araya girmez. `?dil=tr` ile de
+  tek seferlik atlanabilir.
+
+**5. `hreflang` yalnızca çevirisi olan sayfalarda.** Olmayan bir çeviriyi
+Google'a bildirmek 404 üretirdi; `alternateUrl` verilmeyen sayfa tek dillidir.
+
+### Sonuç
+
+Dil düğmesi yalnızca çevirisi olan sayfalarda görünür — menüye genel bir dil
+düğmesi konmadı, çünkü çalışmayan bir düğme olurdu. Sol menü İngilizce
+sayfalarda da Türkçe kalıyor: oradaki bölümlerin İngilizcesi yok, İngilizce
+etiketleyip Türkçe içeriğe göndermek yanıltıcı olurdu.

@@ -29,7 +29,7 @@
   "tur": "eklenti",
   "durum": "aktif",
   "surum": "1.0.0",
-  "sira": 6,
+  "sira": 8,
   "ozet": "FBX, OBJ, 3DS, DAE, STL ve GLTF dosyalarını temiz SketchUp geometrisine dönüştürür.",
   "aciklama": "Hiçbir model ham geometri olarak aktarılmaz; her dosya zorunlu optimizasyondan geçer. İş bitince önce/sonra poligon sayısı, azaltma yüzdesi, materyal ve doku sayısı, süre ve kalite skoru raporlanır. Bir dosyadaki hata toplu işi durdurmaz.",
   "uyumluluk": [
@@ -75,5 +75,66 @@
   "yazilim": [
     "sketchup"
   ],
-  "icNot": "Kaynak: SketchUp_Universal_Converter/README.md"
+  "icNot": "Kaynak: SketchUp_Universal_Converter/README.md",
+  "en": {
+    "ad": "Universal Converter",
+    "ozet": "Converts FBX, OBJ, 3DS, DAE, STL and GLTF files into clean SketchUp geometry.",
+    "aciklama": "No model is imported as raw geometry — every file passes through mandatory optimisation. When the job finishes you get before/after polygon counts, reduction percentage, material and texture counts, duration and a quality score. A failure in one file does not stop the batch.",
+    "slogan": null,
+    "uyumluluk": [
+      "SketchUp 2024",
+      "SketchUp 2025",
+      "SketchUp 2026",
+      "SketchUp 2027",
+      "Windows",
+      "Mac"
+    ],
+    "ozellikler": [
+      {
+        "baslik": "Mandatory optimisation",
+        "not": "Maximum Optimization, Balanced and Quality Priority profiles.",
+        "ikon": "bolt"
+      },
+      {
+        "baslik": "Batch conversion",
+        "not": "Every supported file in a folder is queued; 500 MB per file.",
+        "ikon": "kutu"
+      },
+      {
+        "baslik": "3D preview",
+        "not": "Inspect in material, solid or wireframe mode before converting.",
+        "ikon": "goz"
+      },
+      {
+        "baslik": "Advanced settings",
+        "not": "Weld tolerance, target face ratio, smoothing angle; UV, material and hard-edge preservation.",
+        "ikon": "sliders"
+      },
+      {
+        "baslik": "Conversion report",
+        "not": "Polygon reduction, quality score and warnings; failed files requeue with one click.",
+        "ikon": "onay"
+      }
+    ],
+    "listeler": [
+      {
+        "baslik": "Supported formats",
+        "ogeler": [
+          "FBX",
+          "OBJ",
+          "3DS",
+          "DAE (Collada)",
+          "STL",
+          "GLTF / GLB"
+        ],
+        "not": null
+      }
+    ],
+    "vurgular": [
+      "6 input formats",
+      "Windows and Mac",
+      "Batch conversion"
+    ],
+    "sss": []
+  }
 }

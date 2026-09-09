@@ -6,61 +6,114 @@
   "video": null,
   "listeler": [],
   "sss": [],
-  "fiyat": null,
-  "satinAlmaUrl": null,
   "denemeUrl": null,
   "iletisimEposta": "ufuksn79@gmail.com",
   "yayinda": true,
+  "durum": "aktif",
+  "tur": "eklenti",
+  "yazilim": [
+    "sketchup"
+  ],
   "slug": "dolap-sihirbazi",
   "ad": "Dolap Sihirbazı",
-  "tur": "arac",
-  "durum": "aktif",
-  "surum": "1.14.0",
-  "sira": 9,
-  "ozet": "Parametrik elbise dolabı tasarım, teklif ve CNC üretim platformu: ölçüden DXF'e dört adım.",
-  "aciklama": "Ölçü → Model → Teklif → CNC: dört adım, tek ekran, gerçek zamanlı 3B. Sunucu yok; proje verisi tarayıcıda ve JSON dosyasında saklanır. 3B'de bölmeye veya kapağa tıklayıp doğrudan düzenlersiniz.",
+  "surum": "1.19.0",
+  "sira": 5,
+  "ozet": "Elbise dolabını ölçüden CNC'ye kadar SketchUp içinde üreten eklenti; İngilizce adı Wardrobe Studio.",
+  "aciklama": "Web sürümünün birebir aynısı SketchUp içinde çalışır: ölçü → model → teklif → CNC akışının tamamı. 12 dekor, 17 doku, 7 kapak modeli, çekmeceler, üretim modülleri, süpürgelik/dolgu, LED ve delik tablası dahil. Ek olarak tasarım tek tıkla SketchUp modeline katı geometri olarak aktarılır.",
   "uyumluluk": [
-    "Masaüstü tarayıcı",
-    "Tablet",
-    "Telefon"
+    "SketchUp 2021",
+    "SketchUp 2022",
+    "SketchUp 2023",
+    "SketchUp 2024",
+    "SketchUp 2025",
+    "SketchUp 2026"
   ],
   "ozellikler": [
     {
-      "baslik": "Telefon dostu ölçü",
-      "not": "Dev sayaçlar ve hazır boy şablonları; genişlik değişince bölme adedi uyarlanır.",
+      "baslik": "Ölçüden CNC'ye tek akış",
+      "not": "Ölçü, model, teklif ve kesim listesi aynı panelde.",
       "ikon": "ruler"
     },
     {
-      "baslik": "Panel panel kurgu",
-      "not": "Askılı, boy askılı, raflı, karma ve çekmeceli bölmeler.",
-      "ikon": "layers"
-    },
-    {
-      "baslik": "Kapak, taç ve baza",
-      "not": "Sol/sağ/yukarı/sürgülü kapak, otomatik çift kapak, taç taşmaları, baza veya dört ayak.",
+      "baslik": "SketchUp'a katı geometri",
+      "not": "Tasarım tek tıkla modele gerçek geometri olarak aktarılır.",
       "ikon": "kutu"
     },
     {
-      "baslik": "Tek tık teklif",
-      "not": "Plaka, bant, donanım, işçilik, kâr ve KDV; yazdır/PDF ve CSV.",
-      "ikon": "onay"
+      "baslik": "12 dekor, 17 doku",
+      "not": "7 kapak modeli, çekmeceler ve üretim modülleriyle birlikte.",
+      "ikon": "texture"
     },
     {
-      "baslik": "Kesim optimizasyonu",
-      "not": "Guillotine yerleşim, desen yönü korumalı; plaka yerleşim görselleri.",
+      "baslik": "Süpürgelik, dolgu, LED",
+      "not": "Gerçek imalatta gereken tamamlayıcı parçalar dahil.",
+      "ikon": "layers"
+    },
+    {
+      "baslik": "Delik tablası",
+      "not": "Montaj delikleri tek yerde hesaplanır, çıktıya birebir yansır.",
       "ikon": "kesim"
-    },
-    {
-      "baslik": "DXF çıktısı",
-      "not": "Kesim listesi CSV, DXF ve proje JSON olarak dışa aktarılır.",
-      "ikon": "indir"
     }
   ],
   "vurgular": [
-    "4 adım",
-    "Gerçek zamanlı 3B",
-    "CNC hazır"
+    "Ölçüden CNC'ye",
+    "SketchUp'a aktarım",
+    "Web sürümüyle aynı"
   ],
-  "yazilim": [],
-  "icNot": "Kaynak: dolap-sihirbazi/README.md ve package.json (1.14.0)"
+  "fiyat": {
+    "tutar": 35,
+    "paraBirimi": "USD",
+    "not": "Tek seferlik ödeme, ömür boyu kullanım."
+  },
+  "satinAlmaUrl": "https://ufuksen.gumroad.com/l/SketchupWardrobeStudio",
+  "icNot": "Kaynak: claudes/dolap-sihirbazi/sketchup/README.md ve dist-sketchup/DolapSihirbazi-1.19.0.rbz. Gumroad: Sketchup Wardrobe Studio, 35 USD (2026-09-09). Tarayıcı sürümü ayrı kayıt: dolap-sihirbazi-web.",
+  "en": {
+    "ad": "Wardrobe Studio",
+    "ozet": "Take a wardrobe from dimensions to CNC without leaving SketchUp.",
+    "aciklama": "The same engine as the browser version, running inside SketchUp: the full dimensions → model → quote → CNC flow. 12 finishes, 17 textures, 7 door styles, drawers, production modules, plinth and filler panels, LED and the drilling schedule are all included. The design is pushed into the SketchUp model as solid geometry with one click.",
+    "slogan": null,
+    "uyumluluk": [
+      "SketchUp 2021",
+      "SketchUp 2022",
+      "SketchUp 2023",
+      "SketchUp 2024",
+      "SketchUp 2025",
+      "SketchUp 2026"
+    ],
+    "ozellikler": [
+      {
+        "baslik": "Dimensions to CNC in one flow",
+        "not": "Sizing, modelling, quoting and the cutting list live in the same panel.",
+        "ikon": "ruler"
+      },
+      {
+        "baslik": "Solid geometry into SketchUp",
+        "not": "One click pushes the design into the model as real geometry.",
+        "ikon": "kutu"
+      },
+      {
+        "baslik": "12 finishes, 17 textures",
+        "not": "With 7 door styles, drawers and production modules.",
+        "ikon": "texture"
+      },
+      {
+        "baslik": "Plinth, filler, LED",
+        "not": "The trim parts real fabrication actually needs.",
+        "ikon": "layers"
+      },
+      {
+        "baslik": "Drilling schedule",
+        "not": "Hole positions are computed in one place and carried through to the output.",
+        "ikon": "kesim"
+      }
+    ],
+    "listeler": [],
+    "vurgular": [
+      "Dimensions to CNC",
+      "Pushes into SketchUp",
+      "Same as the web version"
+    ],
+    "sss": [],
+    "fiyatNot": "One-time payment, lifetime use."
+  }
 }

@@ -1,0 +1,26 @@
+---
+/**
+ * Eklenti ayrıntı sayfası — Türkçe.
+ *
+ * Gövde `PluginDetail` bileşeninde; iki dil aynı bileşeni kullanır (ADR-023).
+ */
+import type { GetStaticPaths } from "astro";
+import PluginDetail from "../../components/PluginDetail.astro";
+import { getProducts, type Product } from "../../lib/products";
+
+export const getStaticPaths: GetStaticPaths = async () => {
+  const urunler = await getProducts();
+  return urunler.map((product) => ({
+    params: { slug: product.data.slug },
+    props: { product },
+  }));
+};
+
+interface Props {
+  product: Product;
+}
+
+const { product } = Astro.props;
+---
+
+<PluginDetail product={product} dil="tr" />

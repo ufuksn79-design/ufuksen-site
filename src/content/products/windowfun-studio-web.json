@@ -16,7 +16,7 @@
   "tur": "arac",
   "durum": "aktif",
   "surum": "1.0.0",
-  "sira": 11,
+  "sira": 23,
   "ozet": "WindowFun Studio eklentisinin tarayıcı portu: parametrik pencere, 3B önizleme, metraj ve teklif.",
   "aciklama": "Sunucu ve veritabanı gerekmez; tüm veriler tarayıcıda saklanır ve uygulama çevrimdışı çalışan bir PWA'dır. Eklentinin 1.1.0 davranışı referans alınarak yazıldı.",
   "uyumluluk": [
@@ -62,5 +62,55 @@
     "51 model"
   ],
   "yazilim": [],
-  "icNot": "Kaynak: windowfun-studio/README.md ve package.json (1.0.0)"
+  "icNot": "Kaynak: windowfun-studio/README.md ve package.json (1.0.0)",
+  "en": {
+    "ad": "WindowFun Studio Web",
+    "ozet": "The browser port of WindowFun Studio: parametric windows, 3D preview, take-off and quoting.",
+    "aciklama": "No server and no database; all data stays in your browser and the app runs offline as a PWA. Written against the behaviour of the SketchUp plugin.",
+    "slogan": null,
+    "uyumluluk": [
+      "Desktop browser",
+      "Tablet",
+      "Phone"
+    ],
+    "ozellikler": [
+      {
+        "baslik": "51 catalogue models",
+        "not": "Six categories, each with its own parametric layout.",
+        "ikon": "grid"
+      },
+      {
+        "baslik": "11 quick technical types",
+        "not": "Fixed, arched, single/double/triple sash, folding, sliding and more.",
+        "ikon": "sliders"
+      },
+      {
+        "baslik": "Real-time 3D",
+        "not": "The preview updates the moment a parameter changes.",
+        "ikon": "goz"
+      },
+      {
+        "baslik": "2D technical drawing",
+        "not": "Dimensioned drawings plus plan and path placement.",
+        "ikon": "ruler"
+      },
+      {
+        "baslik": "Take-off and quote",
+        "not": "Quantities and pricing straight from the design.",
+        "ikon": "onay"
+      },
+      {
+        "baslik": "Multi-format export",
+        "not": "Export in several formats including GLB.",
+        "ikon": "indir"
+      }
+    ],
+    "listeler": [],
+    "vurgular": [
+      "No install",
+      "Works offline",
+      "51 models"
+    ],
+    "sss": []
+  }
 }
