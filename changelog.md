@@ -28,6 +28,44 @@ Format, Keep a Changelog yaklaşımına yakındır. Tarihler `YYYY-MM-DD` biçim
 - Kaynak WordPress sistemi migration boyunca salt okunur kabul edildi.
 - Dry-run, yedek ve rollback zorunlulukları eklendi.
 
+## [1.2.1] — 2026-10-14
+
+### Removed
+
+- **`/iletisim` sayfasındaki çalışmayan WordPress formu kaldırıldı.** Form
+  Contact Form 7'ye bağlıydı; statik sitede hiçbir yere gitmiyordu ve
+  "Gönder"e basan kişi sessizce kayboluyordu (AGENTS.md §5). Formla birlikte
+  sayfaya gömülü Akismet `<script>` bloğu da gitti.
+
+### Changed
+
+- Yerine gerçekten çalışan kanallar kondu: WhatsApp düğmesi ve e-posta.
+  Numara ve adres `src/content/contact.json`'dan okunuyor, elle yazılmadı.
+- Forma yönlendiren cümle ("aşağıdaki formu doldurup Gönder Butonuna basınız")
+  kanallara yönlendirecek şekilde düzeltildi. Kullanıcının geri kalan metni
+  olduğu gibi korundu.
+
+### Fixed
+
+- **Yazı gövdesindeki düğmeler boş görünüyordu.** `.prose a` (0,1,1) renk
+  kuralı `.btn--primary` (0,1,0) kuralından daha belirgin olduğu için sarı
+  zemine sarı yazı düşüyordu. `.prose a.btn--primary` / `.btn--ghost`
+  kuralları eklendi.
+
+### Doğrulama
+
+- Derlenen `/iletisim` sayfasında `wpcf7`, `<form>`, `<input>`,
+  `<textarea>` sayısı: **0**
+- İki düğme de ölçüldü: 49px yükseklik (dokunma alt sınırı 44px), yazı rengi
+  doğru, bağlantılar `wa.me/905303229301` ve `mailto:` olarak çalışıyor
+- 593 sayfa; yeni kırık link / eksik medya: 0
+
+### Not
+
+`migrationChecksum` kaynak gövdenin özeti olduğu için değiştirilmedi.
+`migrate.py` yeniden çalıştırılırsa bu elle düzenleme üzerine yazılır —
+WordPress'ten veri çekme işi bittiği için kabul edildi.
+
 ## [1.2.0] — 2026-10-14
 
 İlk elle yazılan yazı ve koddan üretilen şekiller (ADR-026).

@@ -709,6 +709,24 @@ html:not(.js) .skill__bar i {
   color: var(--c-accent);
   text-underline-offset: 3px;
 }
+/**
+ * Yazı gövdesine düğme konulabilsin diye.
+ *
+ * `.prose a` (0,1,1) `.btn--primary` (0,1,0) kuralından daha belirgin
+ * olduğu için düğmenin yazısı da sarıya dönüyordu: iletişim sayfasında
+ * sarı zemine sarı yazı düştü ve düğme boş bir pastil gibi göründü.
+ * Burada her düğme türü kendi rengini geri alıyor.
+ */
+.prose a.btn--primary {
+  color: var(--c-on-accent);
+}
+.prose a.btn--ghost {
+  color: var(--c-text);
+}
+.prose a.btn--ghost:hover,
+.prose a.btn--ghost:focus-visible {
+  color: var(--c-accent);
+}
 .prose ul,
 .prose ol {
   padding-left: 1.4rem;
