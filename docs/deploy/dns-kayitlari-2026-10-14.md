@@ -74,3 +74,22 @@ ziyaretçi hosting'i hiç görmez ama MX/SPF çözümlemesi bozulmaz.
 `www.ufuksen.com` CNAME silindi; yerine Cloudflare'in Worker özel alan adı
 kaydı geldi. Geri dönüş: bu kaydı silip yukarıdaki CNAME'i (`ufuksen.com`,
 Proxied, Auto TTL) yeniden oluşturmak.
+
+---
+
+## Geçiş sonrası ölçüm (2026-10-14)
+
+Dışarıdan sorulduğunda MX şöyle dönüyor:
+
+```
+ufuksen.com  MX  preference = 0, mail exchanger = _dc-mx.2781e387e9f6.ufuksen.com
+```
+
+Yani Cloudflare, proxy'li apex için posta hedefini kendisi ayırmış; panelde
+`ufuksen.com` görünse de dışarıya `_dc-mx...` veriliyor. Apex'i Worker'a
+bağlamak bu yüzden sanıldığı kadar riskli olmayabilirdi — ama Redirect Rule
+yolu aynı sonucu veriyor ve e-posta yoluna hiç dokunmuyor, o yüzden
+değiştirilmedi.
+
+**Geçişte değişen tek kayıt:** `www.ufuksen.com` CNAME silindi, yerine
+Cloudflare'in Worker özel alan adı kaydı geldi.

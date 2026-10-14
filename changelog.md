@@ -28,6 +28,63 @@ Format, Keep a Changelog yaklaşımına yakındır. Tarihler `YYYY-MM-DD` biçim
 - Kaynak WordPress sistemi migration boyunca salt okunur kabul edildi.
 - Dry-run, yedek ve rollback zorunlulukları eklendi.
 
+## [1.3.0] — 2026-10-14
+
+**Site canlıya alındı.** `www.ufuksen.com` artık Cloudflare Worker'dan
+yayınlanıyor; WordPress devreden çıktı.
+
+### Added
+
+- `www.ufuksen.com` Worker'a **custom domain** olarak bağlandı
+  (`wrangler.toml` → `routes`)
+- Çıplak `ufuksen.com` için Cloudflare **Redirect Rule**: 301 → www,
+  sorgu dizesi korunuyor ("Redirect from root to WWW" şablonu)
+- `docs/deploy/dns-kayitlari-2026-10-14.md` — 24 DNS kaydının geçiş
+  öncesi hâli, geri dönüş için
+
+### Changed
+
+- Tek DNS değişikliği: `www.ufuksen.com` CNAME silindi, yerine Cloudflare'in
+  Worker kaydı geldi. **Başka hiçbir kayda dokunulmadı.**
+- `workers_dev = true` kalıcı olarak açık (bkz. LES-016)
+
+### Kasıtlı olarak yapılmayanlar
+
+- **Apex Worker'a bağlanmadı.** Panelde `MX` kaydı `ufuksen.com` konağını
+  gösterdiği ve SPF de aynı ada baktığı için apex A kaydının Worker'a
+  çevrilmesi e-posta açısından riskliydi. Redirect Rule aynı sonucu DNS'e
+  dokunmadan veriyor.
+  (Not: dışarıdan sorulduğunda MX aslında `_dc-mx.<hash>.ufuksen.com`
+  olarak dönüyor — Cloudflare proxy'li apex için posta hedefini kendisi
+  ayırmış. Yine de Redirect Rule yolu tercih edildi: aynı sonucu veriyor ve
+  e-posta yoluna hiç dokunmuyor.)
+- **Hosting'e hiçbir dosya yüklenmedi.** WordPress `public_html`'de olduğu
+  gibi duruyor. Geri dönüş: Worker'dan custom domain'i kaldırıp
+  `www` CNAME'ini (`ufuksen.com`, Proxied) yeniden oluşturmak.
+
+### Doğrulama (canlıda ölçüldü)
+
+| Kontrol | Sonuç |
+|---|---|
+| `www.ufuksen.com/` başlığı | "Ufuk Şen — 3D Görselleştirme, Render ve SketchUp Eğitimleri" |
+| `/blog`, `/egitimler`, `/iletisim`, `/sketchup-en-iyi-pluginleri.html` | 200 |
+| Yeni yazı `/sketchup-2026-profesyonel-egitim.html` | 200 |
+| Miras 301: `/3d-egitim.html` | → `/sketchup-model-3dmax-render-egitimi.html` |
+| Eski site içi arama `/?s=render` | → `/arama?q=render` |
+| AMP `?amp=1` | → kanonik sayfa |
+| Sondaki eğik çizgi `/blog/` | → `/blog` |
+| `/sitemap-index.xml`, `/rss.xml`, medya | 200 |
+| Olmayan sayfa | 404 |
+| `ufuksen.com/*` (çıplak) | 301 → `www`, sorgu korunuyor |
+
+### Geçiş sonrası yapılacaklar
+
+- [ ] Search Console'a sitemap: `https://www.ufuksen.com/sitemap-index.xml`
+- [ ] Birkaç gün 404 takibi
+- [ ] Hosting bir süre açık kalsın (geri dönüş için)
+- [ ] `wp-snapshots/tmp/` içindeki SQL dökümü silinsin, veritabanı parolası
+      değiştirilsin — bu geçişten bağımsız, hâlâ açık bir güvenlik sorunu
+
 ## [1.2.1] — 2026-10-14
 
 ### Removed
