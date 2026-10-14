@@ -577,31 +577,71 @@ html:not(.js) .skill__bar i {
   padding: 0;
   list-style: none;
   display: grid;
-  gap: var(--s-1);
+  gap: var(--s-2);
 }
+
+/**
+ * Her kayıt kendi penceresinde durur.
+ *
+ * Önce öğeler yalnızca 4px boşlukla ayrılıyordu; başlık üç satıra sardığında
+ * (dar kenar çubuğunda sık oluyor) hangi satırın hangi yazıya ait olduğu
+ * okunmuyordu. Çerçeve bilerek soluk: ayırmaya yetecek kadar var, kenar
+ * çubuğunu kutu yığınına çevirecek kadar değil.
+ */
 .widget li a {
   display: flex;
   justify-content: space-between;
   gap: var(--s-3);
-  align-items: center;
+  /* Tarih başlığın İLK satırıyla hizalı kalsın; ortalanınca metne karışıyordu */
+  align-items: flex-start;
   min-height: var(--tap-min);
-  padding-inline: var(--s-2);
+  padding: var(--s-3);
+  border: 1px solid var(--c-line);
   border-radius: var(--r-md);
+  background: var(--c-surface);
   font-size: var(--t-small);
+  line-height: 1.45;
   color: var(--c-text-muted);
   text-decoration: none;
-  transition: color var(--d-fast) var(--e-out), background var(--d-fast) var(--e-out);
+  transition:
+    color var(--d-fast) var(--e-out),
+    background var(--d-fast) var(--e-out),
+    border-color var(--d-fast) var(--e-out);
 }
 .widget li a:hover,
 .widget li a:focus-visible {
   color: var(--c-accent);
   background: var(--c-surface-hover);
+  border-color: var(--c-accent-dim);
 }
 .widget li a em {
   font-style: normal;
   font-family: var(--font-mono);
   font-size: var(--t-micro);
   color: var(--c-text-faint);
+  /* Mono yazı küçük olduğu için ilk satırla optik olarak hizalanması gerekiyor */
+  padding-top: 0.15em;
+  white-space: nowrap;
+  flex: none;
+}
+
+/**
+ * Uzun başlıklı listelerde (son yazılar) tarih alta iner.
+ *
+ * Yan yana dizildiğinde tarih ~85px yer kapıyor ve 285px'lik kenar çubuğunda
+ * başlığa 135px kalıyordu — başlık dört satıra sarıyordu (ölçüldü). Tarih
+ * alta alınınca başlık tam genişliği kullanıyor. Kategori listesi etkilenmez:
+ * oradaki sayı kısa, yanda durması doğru.
+ */
+.widget__list--stacked li a {
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: var(--s-1);
+}
+.widget__list--stacked li a em {
+  padding-top: 0;
+  order: -1;
 }
 
 .search-form {

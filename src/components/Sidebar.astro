@@ -17,7 +17,8 @@ const categories = (await getVisibleCategories()).slice(0, 8);
 
   <section class="widget">
     <h2>Son yazılar</h2>
-    <ul>
+    {/* Uzun başlıklar: tarih altta, başlık tam genişlikte (bkz. global.css) */}
+    <ul class="widget__list--stacked">
       {recent.map((post) => (
         <li>
           <a href={post.data.url}>
