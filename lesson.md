@@ -159,3 +159,36 @@ Bu dosya yalnızca gerçek hata, başarısız deneme veya ölçülebilir öğren
 - Doğru çözüm: Tüm script dosyalarını kontrol karakterlerine karşı tarayıp temizlemek; kaçış içeren kodu yalnızca `Write`/`Edit` aracıyla yazmak.
 - Regression testi: `audit-seo.mjs` artık gerçek sayıyı veriyor (11 → düzeltmeler sonrası 9, hepsi harici YouTube görseli).
 - Gelecekte uygulanacak kural: **Kod dosyalarını kabuk heredoc'u ile yazma.** LES-003, LES-011 ve LES-012 aynı kök nedene dayanıyordu; kural üç kez yazıldı ama uygulanmadı. Bir aracın çıktısı bağımsız bir ölçümle çelişiyorsa, önce aracın kendi dosyasını `repr()` ile doğrula.
+
+## LES-016 — `routes` eklemek workers.dev adresini sessizce kapattı
+
+- Tarih: 2026-10-14
+- İlgili görev: Alan adını Cloudflare Worker'a bağlama
+- Belirti: `wrangler.toml`'a `routes` eklenip push edildikten sonra
+  `ufuksen-site.ufuksn79.workers.dev` üzerindeki **her** istek 404 döndü;
+  gövdede Cloudflare hata kodu 1042. Medya yolları dahil hiçbir şey açılmadı.
+- Kök neden: `wrangler`, `routes` tanımlandığında `workers_dev` bayrağı
+  açıkça `true` yazılmadıysa workers.dev yolunu **kapatıyor**. Dağıtım
+  "başarılı" göründüğü için hata mesajı da çıkmadı.
+- Neden tehlikeliydi: Alan adı henüz Worker'a bağlanmamıştı. Yani yeni sitenin
+  çalışan tek adresi workers.dev'di ve o da kapandı — bir süre yeni siteye
+  hiçbir yerden erişilemedi.
+- Ziyaretçi etkisi: **Yok.** `www.ufuksen.com` hâlâ eski hosting'e gittiği
+  için site WordPress'ten yayında kalmaya devam etti. Şans eseri değil:
+  alan adı bağlanmadığı için zaten eski yol işliyordu.
+- Çözüm: `workers_dev = true` eklendi; 100 saniye içinde geri geldi
+  (ölçüldü: /, /blog ve yeni yazı 200).
+- Gelecekte uygulanacak kural: **Worker yapılandırmasında bir ayar
+  eklerken, o ayarın başka bir varsayılanı değiştirip değiştirmediğini
+  önce doğrula.** `wrangler deploy --dry-run` bunu göstermiyor — çıktı
+  yalnızca paket boyutunu ve bağlantıları yazıyor, yolları yazmıyor. Yayına
+  alma değişikliklerinden sonra **eski çalışan adres de** ayrıca sınanmalı;
+  yalnızca yeni adrese bakmak yetmiyor.
+
+### İkinci ders: ölçüm yaparken origin'i yormak
+
+Aynı oturumda `www.ufuksen.com` onlarca kez yoklandı ve hosting'in bot
+koruması (Imunify360 / openresty) bu makinenin IP'sini engelledi — sonrasında
+canlı adresten dönen 403'ler gerçek durumu değil, bu engeli gösteriyordu.
+Geçiş beklerken yoklama aralığı seyrek tutulmalı; "değişti mi" sorusu
+origin'i dövmeden de sorulabilir.
