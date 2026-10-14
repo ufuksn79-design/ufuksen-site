@@ -42,18 +42,27 @@ const site = Astro.site ?? new URL("https://www.ufuksen.com");
 /**
  * Profil görselleri.
  *
- * Fotoğraf kullanıcıdan geldi (2026-08-18). Kaynak `pic/ufuksen.png`
- * (1254×1254, 1,87 MB). Üç ölçüde WebP üretildi ve `srcset` ile ekrana göre
- * seçiliyor: mobil 8 KB'lık 256px'i indirir, masaüstü 80 KB'lık 960px'i.
- * Masaüstünde 460px'e kadar büyüdüğü için retina ekranlarda 960px gerekiyor;
- * telefona o dosyayı indirtmek gereksiz yük olurdu.
+ * Fotoğraf kullanıcıdan geldi (2026-10-14). Kaynak `pic/ufuksen-studyo.webp`
+ * (1672×941, 16:9 stüdyo çekimi).
+ *
+ * Daire için 880×880'lik kare kırpıldı: `crop=880:880:270:0`. Kırpma gözle
+ * denendi — 780px'te başın tepesi daireye değiyordu, 941px'te yüz fazla
+ * küçülüyordu. 880 ikisinin arasında: yüz 128px'lik mobil dairede bile
+ * tanınır, 446px'lik masaüstü dairesinde mikrofon ve stüdyo ışığı da görünür.
+ *
+ * Üç ölçüde WebP üretildi, `srcset` ekrana göre seçiyor: mobil 18 KB'lık
+ * 256px'i indirir, masaüstü retina 95 KB'lık 880px'i. En büyük ölçü 880 —
+ * kaynak kare bu boyutta, daha büyüğü yapay büyütme olurdu.
+ *
+ * Önceki fotoğraf silinmedi (`ufuksen-avatar/512/960.webp`); geri dönmek
+ * istenirse yalnızca bu iki satır değişir.
  *
  * Kapak görseli yok: `.profile__cover` imleci izleyen ışıklı degrade
  * kullanıyor (ADR-020). Bu bir yer tutucu değil, tasarlanmış bir zemin —
  * dolayısıyla ayrıca etiketlenmiyor. Fotoğraflı kapak istenirse
  * COVER_SRC doldurulur, degradenin üstüne biner.
  */
-const AVATAR_SRC: string | null = "/media/marka/ufuksen-avatar.webp";
+const AVATAR_SRC: string | null = "/media/marka/ufuksen-studyo-256.webp";
 const COVER_SRC: string | null = null;
 
 
@@ -104,11 +113,11 @@ const counters = [
           AVATAR_SRC ? (
             <img
               src={AVATAR_SRC}
-              srcset="/media/marka/ufuksen-avatar.webp 256w, /media/marka/ufuksen-512.webp 512w, /media/marka/ufuksen-960.webp 960w"
+              srcset="/media/marka/ufuksen-studyo-256.webp 256w, /media/marka/ufuksen-studyo-512.webp 512w, /media/marka/ufuksen-studyo-880.webp 880w"
               sizes="(min-width: 1024px) min(31vw, 460px), 128px"
               alt="Ufuk Şen"
-              width="960"
-              height="960"
+              width="880"
+              height="880"
               fetchpriority="high"
               decoding="async"
             />
