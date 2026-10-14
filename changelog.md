@@ -28,6 +28,42 @@ Format, Keep a Changelog yaklaşımına yakındır. Tarihler `YYYY-MM-DD` biçim
 - Kaynak WordPress sistemi migration boyunca salt okunur kabul edildi.
 - Dry-run, yedek ve rollback zorunlulukları eklendi.
 
+## [1.3.2] — 2026-10-14
+
+### Added
+
+- **Google Search Console'da alan adı (Domain) mülkü:** `ufuksen.com`.
+  Doğrulama DNS sağlayıcı üzerinden yapıldı (Google, Cloudflare bağlantısıyla
+  TXT kaydını kendisi ekledi; yetkiyi kullanıcı verdi).
+- Yeni mülke kanonik site haritası gönderildi:
+  `https://www.ufuksen.com/sitemap-index.xml`
+
+### Neden alan adı mülkü
+
+Önceki mülk `https://ufuksen.com/` (çıplak) URL öneki mülküydü. Site
+haritasındaki 497 adresin hepsi `www`'li olduğu için o mülkün kapsamı
+dışında kalıyordu; panel "Başarılı" ama **keşfedilen sayfa 0** gösteriyordu.
+Alan adı mülkü `www`, çıplak, http ve https'i tek çatıda topluyor — konak
+uyuşmazlığı bir daha sorun olmuyor.
+
+### Ölçüm
+
+Alan adı mülkünde iki site haritası da görünüyor:
+
+| Site haritası | Durum | Keşfedilen sayfa |
+|---|---|---|
+| `https://ufuksen.com/sitemap-index.xml` | Başarılı | **497** |
+| `https://www.ufuksen.com/sitemap-index.xml` | Başarılı | işleniyor |
+
+### Temizlenmeyi bekleyen (kozmetik)
+
+WordPress'ten kalan 8 site haritası kaydı Search Console'da "Getirilemedi"
+olarak duruyor; hepsi artık 404 veriyor (ölçüldü): `sitemap_index.xml`,
+`sitemap.xml`, `post-sitemap.xml`, `category-sitemap.xml`,
+`attachment-sitemap.xml`, `page-sitemap.xml`, `addl-sitemap.xml`,
+`dd-sitemap.xml`. Sıralamaya zararı yok; istenirse panelden tek tek
+kaldırılabilir.
+
 ## [1.3.1] — 2026-10-14
 
 ### Added
