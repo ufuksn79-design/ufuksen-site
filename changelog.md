@@ -28,6 +28,31 @@ Format, Keep a Changelog yaklaşımına yakındır. Tarihler `YYYY-MM-DD` biçim
 - Kaynak WordPress sistemi migration boyunca salt okunur kabul edildi.
 - Dry-run, yedek ve rollback zorunlulukları eklendi.
 
+## [1.3.1] — 2026-10-14
+
+### Added
+
+- **IndexNow bildirimi.** `public/c49c7d6f….txt` anahtar dosyası sitenin
+  kökünde yayında; `scripts/deploy/indexnow.mjs` URL listesini sitemap'ten
+  okuyup gönderiyor ve göndermeden önce anahtar dosyasının canlıda olduğunu
+  doğruluyor.
+
+### Doğrulama
+
+- Anahtar dosyası canlıda 200, içeriği anahtarla birebir
+- İlk gönderim `403 SiteVerificationNotCompleted` döndü (anahtar dosyası yeni
+  yayına girmişti); bir dakika sonraki denemede **200 OK**
+- **497 URL** bildirildi (sitemap'teki tüm indekslenebilir adresler)
+
+### Kapsam notu
+
+IndexNow'ı **Google kullanmaz** — Bing, Yandex, Seznam ve Naver kullanıyor.
+Google için Search Console'a sitemap verilmesi gerekiyor:
+`https://www.ufuksen.com/sitemap-index.xml` (kullanıcı tarafından yapılacak).
+
+Yeni yazı yayınlandığında tek tek bildirmek için:
+`node scripts/deploy/indexnow.mjs /yeni-yazi.html`
+
 ## [1.3.0] — 2026-10-14
 
 **Site canlıya alındı.** `www.ufuksen.com` artık Cloudflare Worker'dan
