@@ -1,10 +1,14 @@
 # Cloudflare Workers yayınından hariç tutulan varlıklar.
 #
-# Workers'ın dosya başına sınırı 25 MiB. Aşağıdaki video 34,1 MiB ve
-# HİÇBİR içerikte referans edilmiyor (grep ile doğrulandı, 2026-08-12) —
-# medya kütüphanesi göçüyle dolaylı gelmişti. Depoda ve paylaşımlı hosting
-# kopyasında durmaya devam eder; yalnızca Cloudflare'e yüklenmez.
+# Workers'ın dosya başına sınırı 25 MiB.
 #
-# Bir gün bir yazıda kullanılmak istenirse: YouTube'a yüklenip gömülmeli
-# ya da 25 MiB altına sıkıştırılmalı (ffmpeg mevcut).
-media/2024/04/enscapeegitim.mp4
+# ŞU AN LİSTE BOŞ. Daha önce burada `media/2024/04/enscapeegitim.mp4`
+# (34,1 MiB) vardı; hiçbir içerikte referans edilmiyordu ve medya
+# kütüphanesi göçüyle dolaylı gelmişti. 2026-10-14'te kullanıcının isteğiyle
+# depodan tamamen silindi — git geçmişinde ve canlı WordPress'te duruyor.
+#
+# Ölçüldü (2026-10-14): public/ altında 25 MiB'ı aşan başka dosya yok;
+# en büyüğü 7,1 MB'lık bir GIF.
+#
+# Yeni bir büyük dosya eklenirse: YouTube'a yüklenip gömülmeli ya da
+# 25 MiB altına sıkıştırılmalı (ffmpeg mevcut), yoksa yolu buraya yazılmalı.
