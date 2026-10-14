@@ -24,3 +24,6 @@ dist-staging/
 site-yukle-staging.zip
 dist-staging-light/
 site-yukle-staging-light.zip
+
+# Wrangler yerel durumu ve geçici derleme çıktısı — depoya girmez.
+.wrangler/
