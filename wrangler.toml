@@ -30,6 +30,17 @@ routes = [
   { pattern = "ufuksen.com", custom_domain = true },
 ]
 
+# workers.dev adresi AÇIK kalmalı.
+#
+# `routes` tanımlanıp bu bayrak yazılmazsa wrangler workers.dev yolunu
+# KAPATIR. 2026-10-14'te başımıza geldi: alan adı henüz bağlanmamışken
+# workers.dev de kapandı ve yeni sitenin çalışan tek adresi kalmadı
+# (her yol 404, Cloudflare hata kodu 1042).
+#
+# Alan adı bağlandıktan sonra bile açık kalsın: canlıya dokunmadan
+# deneme yapabildiğimiz tek adres burası.
+workers_dev = true
+
 [assets]
 directory = "./dist"
 binding = "ASSETS"
