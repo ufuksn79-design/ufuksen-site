@@ -5,6 +5,7 @@ import Rail from "../components/Rail.astro";
 import Footer from "../components/Footer.astro";
 import seo from "../content/seo.json";
 import { METIN, digerDil, type Dil } from "../lib/i18n";
+import { SAYFA } from "../lib/i18n-sayfalar";
 
 interface Props {
   title: string;
@@ -154,17 +155,17 @@ const gaId = (seo.googleAnalyticsId || "").trim();
     )}
   </head>
   <body>
-    <a class="u-skip-link" href="#main">İçeriğe atla</a>
-    <Rail />
+    <a class="u-skip-link" href="#main">{SAYFA[dil].icerigeAtla}</a>
+    <Rail dil={dil} />
 
     <div class="app">
       <main id="main" class={padded ? "card card--padded" : "card"}>
         <slot />
       </main>
-      <Footer />
+      <Footer dil={dil} />
     </div>
 
-    <button class="totop" aria-label="Sayfa başına dön" data-totop>
+    <button class="totop" aria-label={SAYFA[dil].basaDon} data-totop>
       <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
         <path d="M12 19V5M5.5 11.5 12 5l6.5 6.5" />
       </svg>

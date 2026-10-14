@@ -1,36 +1,49 @@
 ---
 /**
- * Dil düğmesi (ADR-023).
+ * Dil düğmesi (ADR-023, ADR-025).
  *
- * Yalnızca çevirisi olan sayfalarda gösterilir — blog arşivi Türkçe olduğu
- * için menüye genel bir dil düğmesi konmadı; olmayan bir çeviriye götüren
- * düğme, çalışmayan bir düğmedir.
+ * Bulunduğu sayfanın diğer dildeki karşılığını `karsiYol` ile bulur.
+ * **Karşılığı yoksa hiç render edilmez** — çalışmayan ya da 404'e giden bir
+ * düğme göstermeyiz (AGENTS.md §5).
  *
  * Yurt dışından gelen ziyaretçi Cloudflare tarafında İngilizceye yönlendirilir
  * (worker/index.js); bu düğme o kararı elle değiştirmek içindir ve seçim
  * çerezde saklanır, sonraki ziyarette yönlendirme tekrar araya girmez.
  */
-import { LISTE_YOLU, METIN, urunYolu, digerDil, type Dil } from "../lib/i18n";
+import { METIN, digerDil, type Dil } from "../lib/i18n";
+import { karsiYol } from "../lib/i18n-sayfalar";
 
 interface Props {
   dil: Dil;
-  /** Ürün sayfasındaysa: karşı dildeki ürün adresi buradan kurulur. */
-  slug?: string | null;
+  /** Bulunulan yol; verilmezse Astro'nun geçerli adresi kullanılır. */
+  yol?: string;
+  class?: string;
 }
 
-const { dil, slug = null } = Astro.props;
+const { dil, yol = Astro.url.pathname, class: className = "" } = Astro.props;
+
 const hedefDil = digerDil(dil);
 const t = METIN[dil];
-const href = slug ? urunYolu(slug, hedefDil) : LISTE_YOLU[hedefDil];
+const href = karsiYol(yol, hedefDil);
 ---
 
-<a class="lang" href={href} title={t.digerDilBaslik} data-lang-switch={hedefDil} hreflang={hedefDil}>
-  <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
-    <circle cx="12" cy="12" r="8.5" />
-    <path d="M3.5 12h17M12 3.5c2.5 2.6 2.5 14.4 0 17M12 3.5c-2.5 2.6-2.5 14.4 0 17" />
-  </svg>
-  <span>{t.digerDilEtiketi}</span>
-</a>
+{
+  href && (
+    <a
+      class:list={["lang", className]}
+      href={href}
+      title={t.digerDilBaslik}
+      data-lang-switch={hedefDil}
+      hreflang={hedefDil}
+    >
+      <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+        <circle cx="12" cy="12" r="8.5" />
+        <path d="M3.5 12h17M12 3.5c2.5 2.6 2.5 14.4 0 17M12 3.5c-2.5 2.6-2.5 14.4 0 17" />
+      </svg>
+      <span>{t.digerDilEtiketi}</span>
+    </a>
+  )
+}
 
 <script>
   /**
@@ -40,8 +53,7 @@ const href = slug ? urunYolu(slug, hedefDil) : LISTE_YOLU[hedefDil];
   document.addEventListener("astro:page-load", () => {
     document.querySelectorAll<HTMLAnchorElement>("[data-lang-switch]").forEach((a) => {
       a.addEventListener("click", () => {
-        const secim = a.dataset.langSwitch;
-        document.cookie = `dil=${secim}; path=/; max-age=31536000; samesite=lax`;
+        document.cookie = `dil=${a.dataset.langSwitch}; path=/; max-age=31536000; samesite=lax`;
       });
     });
   });
@@ -51,6 +63,7 @@ const href = slug ? urunYolu(slug, hedefDil) : LISTE_YOLU[hedefDil];
   .lang {
     display: inline-flex;
     align-items: center;
+    justify-content: center;
     gap: var(--s-2);
     min-height: 36px;
     padding: 0 var(--s-3);
@@ -76,5 +89,24 @@ const href = slug ? urunYolu(slug, hedefDil) : LISTE_YOLU[hedefDil];
   .lang:focus-visible {
     border-color: var(--c-accent);
     color: var(--c-accent);
+  }
+
+  /**
+   * Şeritte: 56px genişlikte küre ikonu + metin tek satıra sığmıyordu
+   * (ölçüldü: metin alt satıra kayıyordu). Dar şeritte ikon düşürülür,
+   * iki harflik dil kodu tek başına zaten anlaşılır.
+   */
+  .lang--rail {
+    width: 100%;
+    min-height: var(--tap-min);
+    padding: 0;
+    gap: 0;
+  }
+  .lang--rail svg {
+    display: none;
+  }
+  .lang--rail span {
+    font-weight: 600;
+    letter-spacing: 0.12em;
   }
 </style>

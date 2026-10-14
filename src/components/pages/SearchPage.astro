@@ -1,0 +1,179 @@
+---
+/**
+ * Site içi arama — iki dilli (ADR-025).
+ *
+ * Betik metinleri `data-*` özniteliklerinden okunur; böylece iki dil için
+ * iki ayrı script yazmak gerekmiyor ve çeviri tek yerde (sözlükte) durur.
+ *
+ * Aranan içerik Türkçedir: indeks Türkçe başlık, kategori ve özetlerden
+ * kurulur. İngilizce sürümde bu, sayfa notunda açıkça söylenir.
+ */
+import Base from "../../layouts/Base.astro";
+import SectionTitle from "../SectionTitle.astro";
+import { getPosts } from "../../lib/content";
+import { SAYFA, karsiYol } from "../../lib/i18n-sayfalar";
+import { digerDil, type Dil } from "../../lib/i18n";
+
+interface Props {
+  dil: Dil;
+}
+
+const { dil } = Astro.props;
+const t = SAYFA[dil].arama;
+const posts = await getPosts();
+
+const yol = dil === "en" ? "/en/search" : "/arama";
+const blogYolu = dil === "en" ? "/en/blog" : "/blog";
+---
+
+<Base
+  title={t.metaBaslik}
+  description={t.metaAciklama(posts.length)}
+  path={yol}
+  dil={dil}
+  alternateUrl={karsiYol(yol, digerDil(dil))}
+  noindex={true}
+>
+  <section style="display:grid;gap:var(--s-8)">
+    <SectionTitle title={t.baslik} as="h1" note={t.not(posts.length)} />
+
+    <form class="search-form" role="search" id="search-form" style="max-width:560px">
+      <label
+        for="q"
+        style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)"
+      >
+        {t.etiket}
+      </label>
+      <input id="q" name="q" type="search" placeholder={t.ipucu} autocomplete="off" />
+      <button class="btn btn--primary" type="submit">{t.butonAra}</button>
+    </form>
+
+    <p
+      id="status"
+      class="u-eyebrow"
+      role="status"
+      aria-live="polite"
+      data-bos={t.durumBos}
+      data-yukleniyor={t.indeksYukleniyor}
+      data-hata={t.hata}
+      data-sonuc={t.durumSonuc(0).replace("0", "{n}")}
+      data-yok={t.sonucYokTerim("{q}")}
+    >
+      {t.durumBos}
+    </p>
+    <div id="results"></div>
+
+    <noscript>
+      <p style="color:var(--c-text-muted)">
+        {t.jsGerekliOnce}
+        <a href={blogYolu} style="color:var(--c-accent)">{t.jsGerekliBaglanti}</a>
+        {t.jsGerekliSonra}
+      </p>
+    </noscript>
+  </section>
+</Base>
+
+<script>
+  const form = document.getElementById("search-form") as HTMLFormElement;
+  const input = document.getElementById("q") as HTMLInputElement;
+  const status = document.getElementById("status") as HTMLElement;
+  const results = document.getElementById("results") as HTMLElement;
+
+  /** Metinler sunucuda dile göre basıldı; betik onları buradan okur. */
+  const M = {
+    bos: status.dataset.bos ?? "",
+    yukleniyor: status.dataset.yukleniyor ?? "",
+    hata: status.dataset.hata ?? "",
+    sonuc: (n: number) => (status.dataset.sonuc ?? "").replace("{n}", String(n)),
+    yok: (q: string) => (status.dataset.yok ?? "").replace("{q}", q),
+  };
+
+  type Entry = { t: string; u: string; d: string; c: string; s: string };
+  let index: Entry[] | null = null;
+
+  /** Türkçe karakterleri normalize eder: "İ/ı/ğ/ş/ç/ö/ü" duyarsız arama. */
+  const fold = (value: string) =>
+    value
+      .replace(/İ/g, "i")
+      .replace(/I/g, "i")
+      .replace(/ı/g, "i")
+      .toLocaleLowerCase("tr")
+      .normalize("NFD")
+      .replace(/[̀-ͯ]/g, "")
+      .replace(/ğ/g, "g")
+      .replace(/ş/g, "s")
+      .replace(/ç/g, "c")
+      .replace(/ö/g, "o")
+      .replace(/ü/g, "u");
+
+  async function ensureIndex(): Promise<Entry[]> {
+    if (index) return index;
+    status.textContent = M.yukleniyor;
+    const response = await fetch("/search-index.json");
+    if (!response.ok) throw new Error(`${M.hata} (${response.status})`);
+    index = (await response.json()) as Entry[];
+    return index;
+  }
+
+  function render(matches: Entry[], term: string) {
+    results.innerHTML = "";
+    if (!matches.length) {
+      status.textContent = M.yok(term);
+      return;
+    }
+    status.textContent = M.sonuc(matches.length);
+    const fragment = document.createDocumentFragment();
+    for (const entry of matches.slice(0, 50)) {
+      const article = document.createElement("article");
+      article.className = "post-item";
+      const meta = document.createElement("span");
+      meta.className = "post-item__meta";
+      meta.textContent = entry.d;
+      const heading = document.createElement("h3");
+      const link = document.createElement("a");
+      link.href = entry.u;
+      link.textContent = entry.t;
+      link.style.textDecoration = "none";
+      heading.append(link);
+      const summary = document.createElement("p");
+      summary.textContent = entry.s;
+      article.append(meta, heading, summary);
+      fragment.append(article);
+    }
+    results.append(fragment);
+  }
+
+  async function run(term: string) {
+    const query = term.trim();
+    if (!query) {
+      results.innerHTML = "";
+      status.textContent = M.bos;
+      return;
+    }
+    try {
+      const entries = await ensureIndex();
+      const needle = fold(query);
+      const matches = entries.filter((entry) =>
+        fold(`${entry.t} ${entry.c} ${entry.s}`).includes(needle),
+      );
+      render(matches, query);
+    } catch (error) {
+      // Hata sessizce yutulmaz; kullanıcıya anlaşılır mesaj gösterilir.
+      status.textContent = error instanceof Error ? error.message : M.hata;
+    }
+  }
+
+  form.addEventListener("submit", (event) => {
+    event.preventDefault();
+    const url = new URL(location.href);
+    url.searchParams.set("q", input.value.trim());
+    history.replaceState(null, "", url);
+    void run(input.value);
+  });
+
+  const initial = new URLSearchParams(location.search).get("q");
+  if (initial) {
+    input.value = initial;
+    void run(initial);
+  }
+</script>

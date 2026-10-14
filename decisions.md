@@ -775,3 +775,67 @@ Kaçışsız sınır gerekiyorsa `\b` yerine `(?<!\d)` / `(?!\d)` kullanılabili
 
 Tarama: `scripts/.../kontrol-karakteri-temizle.mjs` kod dosyalarında satır sonu
 ve sekme dışındaki kontrol karakterlerini bulur.
+
+
+---
+
+## ADR-025 — Site geneli iki dillilik: arayüz çevrilir, Türkçe arşiv çevrilmez
+
+**Durum:** Kabul edildi
+**Tarih:** 2026-10-14
+
+### Bağlam
+
+Eklenti bölümü ADR-023 ile iki dilli olmuştu. Kullanıcı sitenin **tamamının**
+iki dilli olmasını istedi: yurt dışından gelen bağlantı her zaman İngilizce
+açılmalı.
+
+### Karar
+
+**1. Arayüzün ve site-yazımı sayfaların tamamı iki dilli.** Ana sayfa, blog
+listesi, eğitimler, videolar, yazılımlar (dizin + 14 hub), arama, iletişim,
+404, menü ve footer — hepsi TR/EN.
+
+**2. 430 blog yazısı ve 16 WordPress sayfası ÇEVRİLMEZ.** Bu çeviri değil
+yeniden yazım işi olurdu. İngilizce tarafta arşiv listelenir, ama yazıların
+Türkçe olduğu açıkça yazılır (blog listesinde uyarı kutusu, video ve eğitim
+notlarında "written/narrated in Turkish"). Okuyucu tıklamadan önce bilir.
+
+**3. Adres şeması.**
+
+| | Türkçe | İngilizce |
+|---|---|---|
+| Ana sayfa | `/` | `/en/` |
+| Blog | `/blog` | `/en/blog` |
+| Eğitimler | `/egitimler` | `/en/courses` |
+| Videolar | `/videolar` | `/en/videos` |
+| Yazılımlar | `/yazilim` | `/en/software` |
+| Arama | `/arama` | `/en/search` |
+| İletişim | `/iletisim` | `/en/contact` |
+| Eklentiler | `/sketchup-en-iyi-pluginleri.html` | `/sketchup-best-plugins.html` |
+
+**Türkçe adresler değişmedi** (ADR-004/007): arama motorundaki karşılıkları
+korunuyor. İngilizce taraf `/en/` önekiyle yaşıyor; tek istisna, anahtar
+kelime taşıdığı için ayrı tutulan eklenti sayfaları.
+
+**4. Tek bileşen, iki dil.** Her sayfa `dil` propu alan tek bir bileşendir
+(`src/components/pages/`); sayfa dosyaları yalnızca o bileşeni çağırır.
+Tasarım tek yerde durur, diller birbirinden ayrışmaz.
+
+**5. Dil düğmesi karşılığı olmayan sayfada görünmez.** `karsiYol()` bir
+karşılık bulamazsa düğme hiç basılmaz — 404'e giden düğme göstermeyiz.
+Aynı mantık `hreflang` için de geçerli.
+
+**6. Konum yönlendirmesi genişletildi.** Worker artık eşlemesi olan tüm
+sayfalarda Türkiye dışından geleni İngilizceye alıyor. Blog YAZILARI
+listede yok: yazının İngilizcesi olmadığı için ziyaretçi yazının kendisini
+görür. Robot muafiyeti ve çerez önceliği ADR-023'teki gibi sürüyor.
+
+### Sonuç
+
+Arayüzün İngilizce sayfalarda tamamen İngilizce olduğu ölçüldü; kalan Türkçe
+karakterler yalnızca gerçek Türkçe içerikten (arşiv yazı başlıkları, Udemy kurs
+adları) geliyor ve bunlar etiketli.
+
+İngilizce iletişim sayfası WordPress'ten gelen **çalışmayan formu taşımıyor**;
+yerine gerçekten çalışan kanallar (WhatsApp, e-posta) konuldu (AGENTS.md §5).

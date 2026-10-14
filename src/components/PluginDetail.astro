@@ -89,7 +89,7 @@ const jsonLd: Record<string, unknown> = {
         <a href={LISTE_YOLU[dil]}>{t.bolumKisa}</a>
         <span aria-hidden="true">/</span>
         <b>{u.ad}</b>
-        <LangSwitch dil={dil} slug={u.slug} />
+        <LangSwitch dil={dil} yol={urunYolu(u.slug, dil)} />
       </nav>
 
       <p class="p__kind">

@@ -1,0 +1,120 @@
+---
+/**
+ * Tek yazılımın hub sayfası — iki dilli (ADR-025).
+ *
+ * Yazı başlıkları ve özetleri arşivden gelir; Türkçedir ve çevrilmez.
+ * Arayüz, sayfa başlığı ve açıklaması dile göre değişir.
+ */
+import Base from "../../layouts/Base.astro";
+import Sidebar from "../Sidebar.astro";
+import SectionTitle from "../SectionTitle.astro";
+import type { SoftwareIndexEntry } from "../../lib/discover";
+import { formatDate, isoDate, summarize } from "../../lib/content";
+import CourseCard, { type Course } from "../CourseCard.astro";
+import courseData from "../../content/courses.json";
+import { SAYFA, karsiYol } from "../../lib/i18n-sayfalar";
+import { digerDil, type Dil } from "../../lib/i18n";
+
+interface Props {
+  entry: SoftwareIndexEntry;
+  dil: Dil;
+}
+
+const { entry, dil } = Astro.props;
+const t = SAYFA[dil].yazilimlar;
+const ortak = SAYFA[dil].ortak;
+
+const posts = entry.posts;
+const recent = posts.slice(0, 5);
+/** Bu yazılıma ait eğitim setleri — courses.json içindeki `yazilim` alanından. */
+const courses = (courseData.kurslar as Course[]).filter((course) =>
+  course.yazilim.includes(entry.tag.slug),
+);
+
+const yol = dil === "en" ? `/en/software/${entry.tag.slug}` : `/yazilim/${entry.tag.slug}`;
+---
+
+<Base
+  title={t.detayBaslik(entry.tag.name, posts.length)}
+  description={t.detayAciklama(entry.tag.name, posts.length, entry.videoCount)}
+  path={yol}
+  dil={dil}
+  alternateUrl={karsiYol(yol, digerDil(dil))}
+  jsonLd={{
+    "@context": "https://schema.org",
+    "@type": "CollectionPage",
+    name: t.koleksiyonAdi(entry.tag.name),
+  }}
+>
+  <section class="blog-grid">
+    <div>
+      <SectionTitle
+        title={entry.tag.name}
+        as="h1"
+        note={t.yaziVeVideo(posts.length, entry.videoCount)}
+      />
+      {
+        courses.length > 0 && (
+          <section style="margin-bottom:var(--s-12)">
+            <h2 style="font-size:var(--t-body-lg);margin-bottom:var(--s-4)">
+              {t.egitimSetleri(entry.tag.name)}
+            </h2>
+            <div class="hub-courses">
+              {courses.map((course) => (
+                <CourseCard course={course} />
+              ))}
+            </div>
+          </section>
+        )
+      }
+
+      {
+        posts.map((post) => (
+          <article
+            class={`post-item ${post.data.featuredImage?.localPath ? "post-item--with-thumb" : ""}`}
+          >
+            {post.data.featuredImage?.localPath && (
+              <img
+                class="post-item__thumb"
+                src={post.data.featuredImage.localPath}
+                alt={post.data.featuredImage.alt || post.data.title}
+                width={post.data.featuredImage.width ?? undefined}
+                height={post.data.featuredImage.height ?? undefined}
+                loading="lazy"
+                decoding="async"
+              />
+            )}
+            <div style="display:grid;gap:var(--s-2)">
+              <div class="post-item__meta">
+                <time datetime={isoDate(post.data.publishedAt)}>
+                  {formatDate(post.data.publishedAt)}
+                </time>
+                <span>
+                  {post.data.readingMinutes} {ortak.dakika}
+                </span>
+              </div>
+              <h2>
+                <a href={post.data.url}>{post.data.title}</a>
+              </h2>
+              <p>{summarize(post, 150)}</p>
+            </div>
+          </article>
+        ))
+      }
+    </div>
+    <Sidebar recent={recent} />
+  </section>
+</Base>
+
+<style>
+  .hub-courses {
+    display: grid;
+    gap: var(--s-4);
+    grid-template-columns: 1fr;
+  }
+  @media (min-width: 720px) {
+    .hub-courses {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+</style>

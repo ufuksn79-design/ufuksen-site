@@ -9,18 +9,29 @@
  * İkonlar satır içi SVG: ek istek yok, renk `currentColor` ile temadan gelir.
  */
 import SocialLinks from "./SocialLinks.astro";
+import LangSwitch from "./LangSwitch.astro";
+import { SAYFA } from "../lib/i18n-sayfalar";
+import { LISTE_YOLU, type Dil } from "../lib/i18n";
 
+interface Props {
+  dil?: Dil;
+}
+
+const { dil = "tr" } = Astro.props;
 const path = Astro.url.pathname;
+const m = SAYFA[dil].menu;
 
+/** Menü hedefleri dile göre: Türkçe kökler ya da /en/ önekli karşılıkları. */
+const en = dil === "en";
 const items = [
-  { href: "/", label: "Profil", icon: "user" },
-  { href: "/blog", label: "Blog", icon: "book" },
-  { href: "/sketchup-en-iyi-pluginleri.html", label: "Pluginler", icon: "box" },
-  { href: "/egitimler", label: "Eğitim", icon: "cap" },
-  { href: "/videolar", label: "Video", icon: "play" },
-  { href: "/yazilim", label: "Yazılım", icon: "layers" },
-  { href: "/arama", label: "Ara", icon: "search" },
-  { href: "/iletisim", label: "İletişim", icon: "mail" },
+  { href: en ? "/en/" : "/", label: m.profil, icon: "user" },
+  { href: en ? "/en/blog" : "/blog", label: m.blog, icon: "book" },
+  { href: LISTE_YOLU[dil], label: m.pluginler, icon: "box" },
+  { href: en ? "/en/courses" : "/egitimler", label: m.egitim, icon: "cap" },
+  { href: en ? "/en/videos" : "/videolar", label: m.video, icon: "play" },
+  { href: en ? "/en/software" : "/yazilim", label: m.yazilim, icon: "layers" },
+  { href: en ? "/en/search" : "/arama", label: m.ara, icon: "search" },
+  { href: en ? "/en/contact" : "/iletisim", label: m.iletisim, icon: "mail" },
 ] as const;
 
 const isCurrent = (href: string) =>
@@ -43,7 +54,7 @@ const icons: Record<string, string> = {
   uygulama çubuğu" gibi hissedilir (ADR-020). Aktif sekme her geçişte
   Base'deki script tarafından güncellenir (aria-current).
 -->
-<nav class="rail" aria-label="Ana menü" transition:persist="rail">
+<nav class="rail" aria-label={SAYFA[dil].anaMenu} transition:persist="rail">
   <a class="rail__brand" href="/" aria-label="Ana sayfa — Ufuk Şen">
     <img src="/media/marka/ufuksenlogo.png" alt="Ufuk Şen" width="260" height="98" />
   </a>
@@ -65,6 +76,7 @@ const icons: Record<string, string> = {
   </ul>
 
   <div class="rail__social">
+    <LangSwitch dil={dil} class="lang--rail" />
     <SocialLinks variant="rail" />
   </div>
 </nav>
@@ -210,7 +222,8 @@ const icons: Record<string, string> = {
     }
 
     .rail__social {
-      display: block;
+      display: grid;
+      gap: var(--s-2);
       width: 100%;
       margin-top: auto;
       padding-top: var(--s-3);

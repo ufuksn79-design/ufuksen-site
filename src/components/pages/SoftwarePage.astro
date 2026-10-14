@@ -1,0 +1,67 @@
+---
+/**
+ * Yazılımlar dizini — iki dilli (ADR-025).
+ *
+ * Arşiv, yazının konu aldığı araca göre gruplanır. Sayılar `getSoftwareIndex`
+ * tarafından ölçülür; burada hiçbir rakam elle yazılmaz.
+ */
+import Base from "../../layouts/Base.astro";
+import SectionTitle from "../SectionTitle.astro";
+import { getSoftwareIndex } from "../../lib/discover";
+import { SAYFA, karsiYol } from "../../lib/i18n-sayfalar";
+import { digerDil, type Dil } from "../../lib/i18n";
+
+interface Props {
+  dil: Dil;
+}
+
+const { dil } = Astro.props;
+const t = SAYFA[dil].yazilimlar;
+const index = await getSoftwareIndex();
+
+const yol = dil === "en" ? "/en/software" : "/yazilim";
+const urunYoluOneki = dil === "en" ? "/en/software" : "/yazilim";
+
+const gruplar = [
+  { kind: "modelleme", title: t.gruplar.modelleme },
+  { kind: "render", title: t.gruplar.render },
+  { kind: "gercek-zamanli", title: t.gruplar.gercekZamanli },
+  { kind: "diger", title: t.gruplar.diger },
+] as const;
+---
+
+<Base
+  title={t.metaBaslik}
+  description={t.metaAciklama}
+  path={yol}
+  dil={dil}
+  alternateUrl={karsiYol(yol, digerDil(dil))}
+>
+  <SectionTitle title={t.baslik} as="h1" note={t.not} />
+
+  {
+    gruplar.map((grup) => {
+      const items = index.filter((entry) => entry.tag.kind === grup.kind);
+      return items.length > 0 ? (
+        <section style="margin-bottom:var(--s-12)">
+          <h2 style="font-size:var(--t-body-lg);margin-bottom:var(--s-4);color:var(--c-text-muted)">
+            {grup.title}
+          </h2>
+          <div class="tiles">
+            {items.map((entry) => (
+              <article class="tile">
+                <span class="tag">
+                  {t.yaziSayisi(entry.posts.length)} · {t.videoSayisi(entry.videoCount)}
+                </span>
+                <h3>{entry.tag.name}</h3>
+                <a class="tile__link" href={`${urunYoluOneki}/${entry.tag.slug}`}>
+                  {t.incele} <i>→</i>
+                </a>
+              </article>
+            ))}
+          </div>
+        </section>
+      ) : null;
+    })
+  }
+</Base>

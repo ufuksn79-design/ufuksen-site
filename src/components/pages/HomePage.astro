@@ -1,0 +1,417 @@
+---
+import Base from "../../layouts/Base.astro";
+import SectionTitle from "../SectionTitle.astro";
+import SocialLinks from "../SocialLinks.astro";
+import { getPosts, getVisibleCategories, categoryPath, formatDate, summarize } from "../../lib/content";
+import { getVideos, videoThumb } from "../../lib/discover";
+import CourseCard, { type Course } from "../CourseCard.astro";
+import courseData from "../../content/courses.json";
+import { getProducts } from "../../lib/products";
+import seo from "../../content/seo.json";
+import { SAYFA, karsiYol } from "../../lib/i18n-sayfalar";
+import { METIN, urunYolu, urunDilde, digerDil, type Dil } from "../../lib/i18n";
+
+interface Props {
+  dil: Dil;
+}
+
+const { dil } = Astro.props;
+const t = SAYFA[dil].ana;
+const ortak = SAYFA[dil].ortak;
+
+/** Bu sayfadaki bağlantılar dile göre: Türkçe kökler ya da /en/ önekli. */
+const yol = dil === "en" ? "/en/" : "/";
+const blogYolu = dil === "en" ? "/en/blog" : "/blog";
+const egitimYolu = dil === "en" ? "/en/courses" : "/egitimler";
+const videoYolu = dil === "en" ? "/en/videos" : "/videolar";
+const iletisimYolu = dil === "en" ? "/en/contact" : "/iletisim";
+
+const posts = await getPosts();
+const categories = await getVisibleCategories();
+const latest = posts.slice(0, 4);
+const allVideos = await getVideos();
+const videos = allVideos.slice(0, 6);
+const courses = (courseData.kurslar as Course[]).slice(0, 3);
+const courseCount = courseData.kurslar.length;
+const products = await getProducts();
+const urunGorunum = products.map((p) => urunDilde(p.data, dil));
+const totalPosts = posts.length;
+
+const site = Astro.site ?? new URL("https://www.ufuksen.com");
+
+/**
+ * Profil görselleri.
+ *
+ * Fotoğraf kullanıcıdan geldi (2026-08-18). Kaynak `pic/ufuksen.png`
+ * (1254×1254, 1,87 MB). Üç ölçüde WebP üretildi ve `srcset` ile ekrana göre
+ * seçiliyor: mobil 8 KB'lık 256px'i indirir, masaüstü 80 KB'lık 960px'i.
+ * Masaüstünde 460px'e kadar büyüdüğü için retina ekranlarda 960px gerekiyor;
+ * telefona o dosyayı indirtmek gereksiz yük olurdu.
+ *
+ * Kapak görseli yok: `.profile__cover` imleci izleyen ışıklı degrade
+ * kullanıyor (ADR-020). Bu bir yer tutucu değil, tasarlanmış bir zemin —
+ * dolayısıyla ayrıca etiketlenmiyor. Fotoğraflı kapak istenirse
+ * COVER_SRC doldurulur, degradenin üstüne biner.
+ */
+const AVATAR_SRC: string | null = "/media/marka/ufuksen-avatar.webp";
+const COVER_SRC: string | null = null;
+
+
+const skills = [
+  { name: "SketchUp", level: 96 },
+  { name: "D5 Render", level: 90 },
+  { name: "Twinmotion", level: 85 },
+  { name: "Enscape", level: 82 },
+  { name: "V-Ray", level: 80 },
+  { name: "Lumion", level: 72 },
+];
+
+/** Sayaçlar — bunlar gerçek, arşivden ölçüldü. */
+const counters = [
+  { value: totalPosts, suffix: "", label: "Yayımlanmış yazı" },
+  { value: categories.length, suffix: "", label: "Kategori" },
+  { value: 1819, suffix: "", label: "Görsel arşivi" },
+  { value: 10, suffix: "+", label: "Yıllık deneyim" },
+];
+
+---
+
+<Base
+  title={t.metaBaslik}
+  description={t.metaAciklama}
+  path={yol}
+  dil={dil}
+  alternateUrl={karsiYol(yol, digerDil(dil))}
+  jsonLd={{
+    "@context": "https://schema.org",
+    "@type": "Person",
+    name: seo.kisiAdi || "Ufuk Şen",
+    jobTitle: seo.kisiUnvani || "3D Görselleştirme Uzmanı ve Eğitmen",
+    url: site.href,
+    address: { "@type": "PostalAddress", addressLocality: "Ankara", addressCountry: "TR" },
+    inLanguage: dil,
+    knowsAbout: ["SketchUp", "Twinmotion", "D5 Render", "Enscape", "V-Ray", "Mimari görselleştirme"],
+  }}
+>
+  <!-- PROFİL KARTI -->
+  <section class="profile">
+    <div class="profile__cover">
+      {COVER_SRC && <img src={COVER_SRC} alt="" />}
+    </div>
+    <div class="profile__body">
+      <div class="profile__avatar">
+        {
+          AVATAR_SRC ? (
+            <img
+              src={AVATAR_SRC}
+              srcset="/media/marka/ufuksen-avatar.webp 256w, /media/marka/ufuksen-512.webp 512w, /media/marka/ufuksen-960.webp 960w"
+              sizes="(min-width: 1024px) min(31vw, 460px), 128px"
+              alt="Ufuk Şen"
+              width="960"
+              height="960"
+              fetchpriority="high"
+              decoding="async"
+            />
+          ) : (
+            <span aria-hidden="true">UŞ</span>
+          )
+        }
+      </div>
+      <h1 class="profile__name">Ufuk Şen</h1>
+      <p class="profile__role">{t.rol}</p>
+      <SocialLinks variant="row" />
+    </div>
+    <div class="profile__cta">
+      <a href={blogYolu}>{t.yazilariOku}</a>
+      <a href={iletisimYolu}>{t.iletisimeGec}</a>
+    </div>
+  </section>
+
+  <!-- HAKKIMDA -->
+  <section class="block u-reveal">
+    <SectionTitle title={t.hakkimda} />
+    <div class="about">
+      <div>
+        <p style="color:var(--c-text);font-weight:600;margin-bottom:var(--s-2)">
+          {t.merhaba}
+        </p>
+        <p style="color:var(--c-text-muted)">
+          {t.tanitim(totalPosts, categories.length)}
+        </p>
+      </div>
+      <dl class="facts">
+        <div><dt>{t.bilgiKonum}</dt><span class="dots" /><dd>{t.bilgiKonumDeger}</dd></div>
+        <div><dt>{t.bilgiUzmanlik}</dt><span class="dots" /><dd>{t.bilgiUzmanlikDeger}</dd></div>
+        <div><dt>{t.bilgiEgitim}</dt><span class="dots" /><dd>{t.bilgiEgitimDeger}</dd></div>
+        <div><dt>{t.bilgiArsiv}</dt><span class="dots" /><dd>{t.bilgiArsivDeger(totalPosts)}</dd></div>
+      </dl>
+    </div>
+  </section>
+
+  <!-- ÜRÜNLER -->
+  <section class="block u-reveal">
+    <SectionTitle
+      title={t.urunlerBaslik}
+      note={t.urunlerNot}
+    />
+    <div class="tiles">
+      {
+        urunGorunum.slice(0, 6).map((u) => (
+          <article class="tile">
+            <span class="tag">
+              {u.surum ? `v${u.surum}` : METIN[dil].durumEtiket[u.durum]}
+            </span>
+            <h3>{u.ad}</h3>
+            <p>{u.ozet}</p>
+            {/* Her ürünün kendi sayfası var (ADR-021) */}
+            <a class="tile__link" href={urunYolu(u.slug, dil)}>
+              {t.urunDetay} <i>→</i>
+            </a>
+          </article>
+        ))
+      }
+    </div>
+  </section>
+
+  <!-- EĞİTİM SETLERİ -->
+  <section class="block u-reveal">
+    <SectionTitle
+      title={t.egitimBaslik}
+      note={t.egitimNot(courseCount)}
+    />
+    <div class="courses">
+      {courses.map((course) => <CourseCard course={course} />)}
+    </div>
+    <div style="margin-top:var(--s-6)">
+      <a class="btn btn--ghost" href={egitimYolu}>{t.tumEgitimler(courseCount)}</a>
+    </div>
+  </section>
+
+  <!-- UZMANLIK -->
+  <section class="block u-reveal">
+    <SectionTitle
+      title={t.uzmanlikBaslik}
+      note={t.uzmanlikNot}
+    />
+    <div class="skills">
+      {
+        skills.map((skill) => (
+          <div class="skill u-reveal">
+            <div class="skill__head">
+              <b>{skill.name}</b>
+              <span>{skill.level}%</span>
+            </div>
+            <div class="skill__bar">
+              <i style={`--w:${skill.level}%`} />
+            </div>
+          </div>
+        ))
+      }
+    </div>
+  </section>
+
+  <!-- SAYAÇLAR -->
+  <section class="block u-reveal">
+    <SectionTitle title={t.rakamlarBaslik} note={t.rakamlarNot} />
+    <div class="counters">
+      {
+        counters.map((counter) => (
+          <div class="counter">
+            <b data-count={counter.value} data-suffix={counter.suffix}>
+              {counter.value.toLocaleString("tr-TR")}
+              {counter.suffix}
+            </b>
+            <span>{counter.label}</span>
+          </div>
+        ))
+      }
+    </div>
+  </section>
+
+  <!-- VİDEOLAR -->
+  <section class="block u-reveal">
+    <SectionTitle
+      title={t.videoBaslik}
+      note={t.videoNot(allVideos.length)}
+    />
+    <div class="vstrip">
+      {
+        videos.map((video) => (
+          <a class="vmini" href={video.postUrl}>
+            <img src={videoThumb(video.id)} alt="" loading="lazy" decoding="async" width="320" height="180" />
+            <span class="vmini__title">{video.postTitle}</span>
+          </a>
+        ))
+      }
+    </div>
+    <div style="margin-top:var(--s-6)">
+      <a class="btn btn--ghost" href={videoYolu}>{t.tumVideolar}</a>
+    </div>
+  </section>
+
+  <!-- KONULAR -->
+  <section class="block u-reveal">
+    <SectionTitle title={t.konularBaslik} note={t.konularNot(totalPosts, categories.length)} />
+    <div class="tiles">
+      {
+        categories.slice(0, 4).map((category) => (
+          <article class="tile">
+            <span class="tag">{SAYFA[dil].yazilimlar.yaziSayisi(category.postCount)}</span>
+            <h3>{category.name}</h3>
+            {category.description && <p>{category.description}</p>}
+            <a class="tile__link" href={categoryPath(category)}>
+              {SAYFA[dil].yazilimlar.incele} <i>→</i>
+            </a>
+          </article>
+        ))
+      }
+    </div>
+  </section>
+
+  <!-- SON YAZILAR -->
+  <section class="block u-reveal">
+    <SectionTitle title={t.sonYazilarBaslik} note={t.sonYazilarNot} />
+    <div>
+      {
+        latest.map((post) => (
+          <article class={`post-item ${post.data.featuredImage?.localPath ? "post-item--with-thumb" : ""}`}>
+            {post.data.featuredImage?.localPath && (
+              <img
+                class="post-item__thumb"
+                src={post.data.featuredImage.localPath}
+                alt={post.data.featuredImage.alt || post.data.title}
+                width={post.data.featuredImage.width ?? undefined}
+                height={post.data.featuredImage.height ?? undefined}
+                loading="lazy"
+                decoding="async"
+              />
+            )}
+            <div style="display:grid;gap:var(--s-2)">
+              <div class="post-item__meta">
+                <time datetime={post.data.publishedAt}>{formatDate(post.data.publishedAt)}</time>
+                <span>
+                  {post.data.readingMinutes} {ortak.dakika}
+                </span>
+              </div>
+              <h3>
+                <a href={post.data.url}>{post.data.title}</a>
+              </h3>
+              <p>{summarize(post, 140)}</p>
+            </div>
+          </article>
+        ))
+      }
+    </div>
+    <div style="margin-top:var(--s-8)">
+      <a class="btn btn--ghost" href={blogYolu}>{t.tumYazilar} ({totalPosts})</a>
+    </div>
+  </section>
+
+  <!-- İLETİŞİM -->
+  <section class="block u-reveal">
+    <SectionTitle title="İletişim" note="Kısa yazın, net cevap alın." />
+    <div style="display:grid;gap:var(--s-6);justify-items:start">
+      <a
+        href="mailto:ufuksn79@gmail.com"
+        class="contact-mail"
+        >ufuksn79@gmail.com</a
+      >
+      <a class="btn btn--primary" href="/iletisim">İletişim sayfası</a>
+    </div>
+  </section>
+</Base>
+
+<style>
+  .courses {
+    display: grid;
+    gap: var(--s-6);
+    grid-template-columns: 1fr;
+  }
+  @media (min-width: 640px) { .courses { grid-template-columns: repeat(2, 1fr); } }
+  @media (min-width: 1080px) { .courses { grid-template-columns: repeat(3, 1fr); } }
+
+  /* Mobil/tablette videolar parmakla kaydırılan bir şerittir (ADR-020):
+     kaydır-bırak, karta yapış. Kaydırma konteynerin içindedir; sayfa
+     genişliğini etkilemez. Masaüstünde klasik ızgaraya döner. */
+  .vstrip {
+    display: grid;
+    gap: var(--s-4);
+    grid-auto-flow: column;
+    grid-auto-columns: 78%;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    padding-bottom: var(--s-2);
+    scrollbar-width: thin;
+    scrollbar-color: var(--c-line-strong) transparent;
+  }
+  .vstrip > .vmini {
+    scroll-snap-align: start;
+  }
+  @media (min-width: 560px) {
+    .vstrip { grid-auto-columns: 44%; }
+  }
+  @media (min-width: 900px) {
+    .vstrip {
+      grid-auto-flow: row;
+      grid-auto-columns: auto;
+      grid-template-columns: repeat(3, 1fr);
+      overflow-x: visible;
+      scroll-snap-type: none;
+      padding-bottom: 0;
+    }
+  }
+
+  .vmini {
+    display: grid;
+    gap: var(--s-2);
+    text-decoration: none;
+    color: var(--c-text);
+  }
+  .vmini img {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+    border-radius: var(--r-md);
+    border: 1px solid var(--c-line);
+    transition: opacity var(--d-base) var(--e-out);
+  }
+  .vmini__title {
+    font-size: var(--t-small);
+    line-height: 1.4;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+  .vmini:hover img, .vmini:focus-visible img { opacity: 0.82; }
+  .vmini:hover .vmini__title { color: var(--c-accent); }
+
+  /* Bağımsız aksiyon hedefi: 44px altına inmemeli (AGENTS.md §6) */
+  .contact-mail {
+    font-size: var(--t-h3);
+    color: var(--c-accent);
+    text-decoration: none;
+    word-break: break-word;
+    display: inline-flex;
+    align-items: center;
+    min-height: var(--tap-min);
+  }
+  .contact-mail:hover,
+  .contact-mail:focus-visible {
+    text-decoration: underline;
+    text-underline-offset: 6px;
+  }
+
+  .about {
+    display: grid;
+    gap: var(--s-8);
+  }
+
+  @media (min-width: 860px) {
+    .about {
+      grid-template-columns: 1.25fr 1fr;
+      gap: var(--s-12);
+      align-items: start;
+    }
+  }
+</style>

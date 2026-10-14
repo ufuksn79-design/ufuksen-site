@@ -1,0 +1,130 @@
+---
+/**
+ * Contact — English (ADR-025).
+ *
+ * Türkçe `/iletisim` sayfası WordPress'ten göç eden içeriği kullanıyor ve
+ * oradaki form artık çalışmıyor. İngilizce sürüm bu yüzden formu taşımıyor:
+ * çalışmayan bir form göstermektense gerçekten çalışan kanalları veriyoruz
+ * (AGENTS.md §5). Kanallar `contact.json` ve `social.json` içindedir.
+ */
+import Base from "../../../layouts/Base.astro";
+import SectionTitle from "../../../components/SectionTitle.astro";
+import WhatsAppButton from "../../../components/WhatsAppButton.astro";
+import SocialLinks from "../../../components/SocialLinks.astro";
+import contact from "../../../content/contact.json";
+import { karsiYol } from "../../../lib/i18n-sayfalar";
+
+const eposta = contact.eposta;
+const gorunenNumara = contact.whatsappGorunenNumara;
+
+/** Gerçekten yapılan işler — Türkçe sayfadaki listenin İngilizcesi. */
+const hizmetler = [
+  "Architectural visualisation in SketchUp and V-Ray",
+  "Rendering of exhibition stand designs",
+  "Studio renders of single products",
+  "Taking your own drawings through to finished images",
+  "One-to-one and video training",
+];
+---
+
+<Base
+  title="Contact | Ufuk Şen"
+  description="Get in touch about architectural visualisation, rendering work, SketchUp plugins or training. Reply by WhatsApp or e-mail."
+  path="/en/contact"
+  dil="en"
+  alternateUrl={karsiYol("/en/contact", "tr")}
+>
+  <section style="display:grid;gap:var(--s-8)">
+    <SectionTitle
+      title="Contact"
+      as="h1"
+      note="The fastest route is WhatsApp — I usually answer the same day."
+    />
+
+    <p style="color:var(--c-text-muted);max-width:60ch">
+      Tell me what you are working on: a project to visualise, a render that needs finishing,
+      a question about one of the plugins, or training. The more concrete you are about the
+      drawing and the deadline, the more useful my first answer will be.
+    </p>
+
+    <div class="kanallar">
+      <WhatsAppButton boyut="buyuk" etiket="Message on WhatsApp" dil="en" />
+      {
+        eposta && (
+          <a class="btn btn--ghost" href={`mailto:${eposta}`}>
+            {eposta}
+          </a>
+        )
+      }
+    </div>
+
+    {
+      gorunenNumara && (
+        <p class="numara">
+          WhatsApp · <b>{gorunenNumara}</b> <span>(+90)</span>
+        </p>
+      )
+    }
+
+    <section>
+      <h2 style="font-size:var(--t-body-lg);margin-bottom:var(--s-4)">What I take on</h2>
+      <ul class="hizmetler">
+        {hizmetler.map((h) => <li>{h}</li>)}
+      </ul>
+    </section>
+
+    <section>
+      <h2 style="font-size:var(--t-body-lg);margin-bottom:var(--s-4)">Elsewhere</h2>
+      <SocialLinks variant="row" />
+    </section>
+  </section>
+</Base>
+
+<style>
+  .kanallar {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--s-3);
+    align-items: center;
+  }
+  .kanallar :global(.btn) {
+    min-height: 52px;
+    display: inline-flex;
+    align-items: center;
+  }
+
+  .numara {
+    font-family: var(--font-mono);
+    font-size: var(--t-small);
+    color: var(--c-text-muted);
+  }
+  .numara b {
+    color: var(--c-text);
+    letter-spacing: 0.04em;
+  }
+  .numara span {
+    color: var(--c-text-faint);
+  }
+
+  .hizmetler {
+    display: grid;
+    gap: var(--s-2);
+    list-style: none;
+    max-width: 60ch;
+  }
+  .hizmetler li {
+    position: relative;
+    padding-left: var(--s-6);
+    color: var(--c-text-muted);
+    font-size: var(--t-body);
+  }
+  .hizmetler li::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0.62em;
+    width: 10px;
+    height: 2px;
+    background: var(--c-accent);
+  }
+</style>

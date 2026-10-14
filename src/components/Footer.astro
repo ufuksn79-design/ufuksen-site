@@ -1,10 +1,20 @@
 ---
 import SocialLinks from "./SocialLinks.astro";
+import { SAYFA } from "../lib/i18n-sayfalar";
+import { LISTE_YOLU, METIN, type Dil } from "../lib/i18n";
+
+interface Props {
+  dil?: Dil;
+}
+
+const { dil = "tr" } = Astro.props;
+const m = SAYFA[dil].menu;
+const en = dil === "en";
 const year = new Date().getFullYear();
 ---
 <footer class="foot">
   <div class="foot__top">
-    <a class="foot__brand" href="/" aria-label="Ana sayfa — Ufuk Şen">
+    <a class="foot__brand" href={en ? "/en/" : "/"} aria-label="Ana sayfa — Ufuk Şen">
       <img src="/media/marka/ufuksenlogo.png" alt="Ufuk Şen" width="260" height="98" />
     </a>
     <SocialLinks variant="row" size="sm" />
@@ -12,14 +22,14 @@ const year = new Date().getFullYear();
   <div class="foot__bottom">
     <span>© {year} Ufuk Şen</span>
     <div class="foot__links">
-      <a href="/blog">Blog</a>
-      <a href="/sketchup-en-iyi-pluginleri.html">SketchUp En İyi Pluginleri</a>
-      <a href="/egitimler">Eğitimler</a>
-      <a href="/videolar">Videolar</a>
-      <a href="/yazilim">Yazılımlar</a>
-      <a href="/arama">Ara</a>
-      <a href="/iletisim">İletişim</a>
-      <a href="/rss.xml">RSS</a>
+      <a href={en ? "/en/blog" : "/blog"}>{m.blog}</a>
+      <a href={LISTE_YOLU[dil]}>{METIN[dil].bolumAdi}</a>
+      <a href={en ? "/en/courses" : "/egitimler"}>{m.egitim}</a>
+      <a href={en ? "/en/videos" : "/videolar"}>{m.video}</a>
+      <a href={en ? "/en/software" : "/yazilim"}>{m.yazilim}</a>
+      <a href={en ? "/en/search" : "/arama"}>{m.ara}</a>
+      <a href={en ? "/en/contact" : "/iletisim"}>{m.iletisim}</a>
+      <a href="/rss.xml">{SAYFA[dil].footerRss}</a>
     </div>
   </div>
 </footer>

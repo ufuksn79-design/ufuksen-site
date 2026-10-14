@@ -1,0 +1,114 @@
+---
+/**
+ * Eğitim setleri — iki dilli (ADR-025).
+ *
+ * Kurslar Udemy'de **Türkçe** anlatılır; İngilizce sürümde bu açıkça yazılır.
+ * Sayılar `courses.json` içindeki gerçek verilerden hesaplanır.
+ *
+ * Fiyat gösterilmez: Udemy kampanyaya göre değişiyor, sabit yazmak kısa sürede
+ * yanlış bilgiye dönüşür.
+ */
+import Base from "../../layouts/Base.astro";
+import SectionTitle from "../SectionTitle.astro";
+import CourseCard, { type Course } from "../CourseCard.astro";
+import courseData from "../../content/courses.json";
+import { SAYFA, karsiYol } from "../../lib/i18n-sayfalar";
+import { digerDil, type Dil } from "../../lib/i18n";
+
+interface Props {
+  dil: Dil;
+}
+
+const { dil } = Astro.props;
+const t = SAYFA[dil].egitimler;
+const courses = courseData.kurslar as Course[];
+
+const totalHours = courses.reduce((sum, course) => sum + course.saat, 0);
+const totalLectures = courses.reduce((sum, course) => sum + course.dersSayisi, 0);
+const totalReviews = courses.reduce((sum, course) => sum + course.yorumSayisi, 0);
+const avgRating =
+  courses.reduce((sum, course) => sum + course.puan * course.yorumSayisi, 0) / totalReviews;
+
+const yol = dil === "en" ? "/en/courses" : "/egitimler";
+/** Sayı biçimi dile göre: 1.234,5 ↔ 1,234.5 */
+const yerel = dil === "en" ? "en-US" : "tr-TR";
+---
+
+<Base
+  title={t.metaBaslik(courses.length)}
+  description={t.metaAciklama(courses.length, totalLectures)}
+  path={yol}
+  dil={dil}
+  alternateUrl={karsiYol(yol, digerDil(dil))}
+  jsonLd={{
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    name: t.baslik,
+    numberOfItems: courses.length,
+    itemListElement: courses.map((course, index) => ({
+      "@type": "ListItem",
+      position: index + 1,
+      item: {
+        "@type": "Course",
+        name: course.baslik,
+        url: course.url,
+        inLanguage: "tr",
+        provider: { "@type": "Organization", name: "Udemy" },
+        aggregateRating: {
+          "@type": "AggregateRating",
+          ratingValue: course.puan,
+          reviewCount: course.yorumSayisi,
+          bestRating: 5,
+        },
+      },
+    })),
+  }}
+>
+  <SectionTitle title={t.baslik} as="h1" note={t.not} />
+
+  <div class="counters" style="margin-bottom:var(--s-12)">
+    <div class="counter">
+      <b data-count={courses.length}>{courses.length}</b><span>{t.sayacSet}</span>
+    </div>
+    <div class="counter">
+      <b data-count={totalLectures}>{totalLectures}</b><span>{t.sayacDers}</span>
+    </div>
+    <div class="counter">
+      <b>{totalHours.toLocaleString(yerel)}</b><span>{t.sayacSaat}</span>
+    </div>
+    <div class="counter">
+      <b>{avgRating.toLocaleString(yerel, { minimumFractionDigits: 1, maximumFractionDigits: 1 })}</b
+      ><span>{t.sayacPuan}</span>
+    </div>
+  </div>
+
+  <div class="courses">
+    {courses.map((course) => <CourseCard course={course} />)}
+  </div>
+
+  <p class="note">{t.altNot}</p>
+</Base>
+
+<style>
+  .courses {
+    display: grid;
+    gap: var(--s-6);
+    grid-template-columns: 1fr;
+  }
+  @media (min-width: 720px) {
+    .courses {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  @media (min-width: 1180px) {
+    .courses {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+
+  .note {
+    margin-top: var(--s-8);
+    color: var(--c-text-faint);
+    font-size: var(--t-micro);
+  }
+</style>

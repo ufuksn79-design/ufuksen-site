@@ -43,9 +43,37 @@ function withStatus(assetResponse, status) {
  * bir çeviriye göndermek 404 üretirdi.
  */
 function ingilizceKarsiligi(pathname) {
-  if (pathname === "/sketchup-en-iyi-pluginleri.html") return "/sketchup-best-plugins.html";
-  const m = pathname.match(/^\/eklenti\/(.+)\.html$/);
-  return m ? `/plugin/${m[1]}.html` : null;
+  const yol = pathname.replace(/\/+$/, "") || "/";
+
+  /** Birebir karşılığı olan sayfalar (ADR-025). */
+  const SABIT = {
+    "/": "/en/",
+    "/blog": "/en/blog",
+    "/egitimler": "/en/courses",
+    "/videolar": "/en/videos",
+    "/yazilim": "/en/software",
+    "/arama": "/en/search",
+    "/iletisim": "/en/contact",
+    "/sketchup-en-iyi-pluginleri.html": "/sketchup-best-plugins.html",
+  };
+  if (SABIT[yol]) return SABIT[yol];
+
+  /** Sayfalanmış blog: /blog/2 -> /en/blog/2 */
+  const blog = yol.match(/^\/blog\/(\d+)$/);
+  if (blog) return `/en/blog/${blog[1]}`;
+
+  const yazilim = yol.match(/^\/yazilim\/(.+)$/);
+  if (yazilim) return `/en/software/${yazilim[1]}`;
+
+  const eklenti = yol.match(/^\/eklenti\/(.+)\.html$/);
+  if (eklenti) return `/plugin/${eklenti[1]}.html`;
+
+  /**
+   * Blog YAZILARI (`/{slug}.html`) ve kategori sayfaları burada YOK: 430 yazı
+   * Türkçedir, İngilizce karşılıkları yoktur. Yurt dışından bir yazıya gelen
+   * ziyaretçi yazının kendisini görür — var olmayan bir çeviriye gönderilmez.
+   */
+  return null;
 }
 
 /**
@@ -131,8 +159,11 @@ export default {
       if (index.status !== 404) return index;
     }
 
-    // 8) Kendi 404 sayfamız, doğru durum koduyla
-    const notFound = await env.ASSETS.fetch(new Request(`${url.origin}/404.html`));
+    // 8) Kendi 404 sayfamız, doğru durum koduyla.
+    //    `/en/` altındaki bulunamayan istek İngilizce 404 görür (ADR-025).
+    //    (Astro kök 404'ü `404.html` olarak yazar; /en/ altındaki dizin olur.)
+    const dort = pathname.startsWith("/en/") ? "/en/404/index.html" : "/404.html";
+    const notFound = await env.ASSETS.fetch(new Request(url.origin + dort));
     return withStatus(notFound, 404);
   },
 };

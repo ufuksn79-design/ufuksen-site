@@ -1,0 +1,55 @@
+---
+/**
+ * 404 sayfası — iki dilli (ADR-025).
+ *
+ * İngilizce sürümü `/en/404` adresinde durur; worker, `/en/` ile başlayan
+ * bulunamayan istekleri ona yönlendirir (worker/index.js).
+ */
+import Base from "../../layouts/Base.astro";
+import SectionTitle from "../SectionTitle.astro";
+import { getVisibleCategories, categoryPath } from "../../lib/content";
+import { SAYFA } from "../../lib/i18n-sayfalar";
+import type { Dil } from "../../lib/i18n";
+
+interface Props {
+  dil: Dil;
+}
+
+const { dil } = Astro.props;
+const t = SAYFA[dil].dortYuzDort;
+const s = SAYFA[dil];
+const categories = (await getVisibleCategories()).slice(0, 4);
+
+const blogYolu = dil === "en" ? "/en/blog" : "/blog";
+const aramaYolu = dil === "en" ? "/en/search" : "/arama";
+---
+
+<Base
+  title={t.metaBaslik}
+  description={t.metaAciklama}
+  path={dil === "en" ? "/en/404" : "/404"}
+  dil={dil}
+  noindex={true}
+>
+  <section style="display:grid;gap:var(--s-8)">
+    <SectionTitle title={t.baslik} as="h1" note={t.not} />
+    <div style="display:flex;flex-wrap:wrap;gap:var(--s-3)">
+      <a class="btn btn--primary" href={blogYolu}>{t.tumYazilar}</a>
+      <a class="btn btn--ghost" href={aramaYolu}>{t.aramaYap}</a>
+    </div>
+    <div class="tiles">
+      {
+        categories.map((category) => (
+          <article class="tile">
+            <span class="tag">{s.yazilimlar.yaziSayisi(category.postCount)}</span>
+            <h3>
+              <a href={categoryPath(category)} style="text-decoration:none">
+                {category.name}
+              </a>
+            </h3>
+          </article>
+        ))
+      }
+    </div>
+  </section>
+</Base>

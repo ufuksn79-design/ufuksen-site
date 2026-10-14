@@ -28,6 +28,39 @@ Format, Keep a Changelog yaklaşımına yakındır. Tarihler `YYYY-MM-DD` biçim
 - Kaynak WordPress sistemi migration boyunca salt okunur kabul edildi.
 - Dry-run, yedek ve rollback zorunlulukları eklendi.
 
+## [1.1.0] — 2026-10-14
+
+Site geneli iki dillilik (ADR-025).
+
+### Added
+
+- **İngilizce sürüm sitenin tamamına yayıldı**: `/en/` ana sayfa, `/en/blog`, `/en/courses`, `/en/videos`, `/en/software` (+14 hub), `/en/search`, `/en/contact`, `/en/404`
+- Menü, footer, "içeriğe atla" ve "başa dön" dahil **bütün arayüz iki dilli**
+- Dil düğmesi artık site genelinde; bulunduğu sayfanın karşılığını kendisi buluyor ve **karşılığı yoksa hiç görünmüyor**
+- İngilizce iletişim sayfası: WordPress'ten gelen çalışmayan form taşınmadı, yerine WhatsApp ve e-posta kanalları kondu
+- `src/lib/i18n-sayfalar.ts` — sayfa metinleri ve adres eşlemesi tek kaynakta
+
+### Changed
+
+- Her sayfa `dil` propu alan **tek bileşene** dönüştü (`src/components/pages/`); sayfa dosyaları yalnızca o bileşeni çağırıyor — tasarım tek yerde
+- Worker'ın konum yönlendirmesi eşlemesi olan tüm sayfaları kapsıyor; `/en/` altındaki 404'ler İngilizce sayfayı görüyor
+- Türkçe adresler **değişmedi** — arama motorundaki karşılıkları korundu
+
+### Kapsam dışı (bilerek)
+
+430 blog yazısı ve 16 WordPress sayfası çevrilmedi; bu çeviri değil yeniden yazım işi olurdu. İngilizce tarafta arşiv listeleniyor ama yazıların Türkçe olduğu açıkça söyleniyor (blog listesinde uyarı, video ve eğitim notlarında "written/narrated in Turkish").
+
+### Fixed
+
+- Şeritteki dil düğmesinde metin alt satıra kayıyordu (56px'e sığmıyordu); dar şeritte küre ikonu düşürüldü
+
+### Doğrulama
+
+- 592 sayfa; `astro check` **0 hata**; kırık link / eksik medya / boş gövde: 0
+- 8 İngilizce sayfanın hepsinde `lang="en"`, `hreflang` üçlüsü ve İngilizce başlık ölçüldü
+- Kalan Türkçe karakterler yalnızca gerçek içerikten: arşiv yazı başlıkları ve Udemy kurs adları
+- Kod dosyalarında kontrol karakteri taraması temiz (LES-015)
+
 ## [1.0.0] — 2026-10-14
 
 Ürünler tanıtım sayfasına dönüştü; satış mağazaya taşındı (ADR-024).

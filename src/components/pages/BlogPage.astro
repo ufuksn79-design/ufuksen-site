@@ -1,0 +1,105 @@
+---
+/**
+ * Blog listesi — iki dilli arayüz, Türkçe içerik (ADR-025).
+ *
+ * 430 yazının kendisi çevrilmiyor: bu çeviri değil yeniden yazım işi olurdu.
+ * İngilizce sürümde arşiv listelenir ama yazıların Türkçe olduğu açıkça
+ * söylenir — okuyucu tıklamadan önce bilsin (AGENTS.md §5).
+ */
+import type { Page } from "astro";
+import Base from "../../layouts/Base.astro";
+import Sidebar from "../Sidebar.astro";
+import SectionTitle from "../SectionTitle.astro";
+import { formatDate, isoDate, summarize, type Post } from "../../lib/content";
+import { SAYFA, karsiYol } from "../../lib/i18n-sayfalar";
+import { digerDil, type Dil } from "../../lib/i18n";
+
+interface Props {
+  page: Page<Post>;
+  dil: Dil;
+}
+
+const { page, dil } = Astro.props;
+const t = SAYFA[dil].blog;
+const ortak = SAYFA[dil].ortak;
+
+const recent = page.data.slice(0, 5);
+const kok = dil === "en" ? "/en/blog" : "/blog";
+const yol = page.currentPage === 1 ? kok : `${kok}/${page.currentPage}`;
+---
+
+<Base
+  title={t.metaBaslik(page.currentPage)}
+  description={t.metaAciklama(page.total, page.currentPage, page.lastPage)}
+  path={yol}
+  dil={dil}
+  alternateUrl={page.currentPage === 1 ? karsiYol(kok, digerDil(dil)) : null}
+>
+  <section class="blog-grid">
+    <div>
+      <SectionTitle
+        title={t.baslik}
+        as="h1"
+        note={t.not(page.total, page.currentPage, page.lastPage)}
+      />
+
+      {/* İngilizce sürümde dil uyarısı; Türkçede boş olduğu için hiç basılmaz */}
+      {t.turkceUyari && <p class="dil-notu">{t.turkceUyari}</p>}
+
+      {
+        page.data.map((post) => (
+          <article
+            class={`post-item ${post.data.featuredImage?.localPath ? "post-item--with-thumb" : ""}`}
+          >
+            {post.data.featuredImage?.localPath && (
+              <img
+                class="post-item__thumb"
+                src={post.data.featuredImage.localPath}
+                alt={post.data.featuredImage.alt || post.data.title}
+                width={post.data.featuredImage.width ?? undefined}
+                height={post.data.featuredImage.height ?? undefined}
+                loading="lazy"
+                decoding="async"
+              />
+            )}
+            <div style="display:grid;gap:var(--s-2)">
+              <div class="post-item__meta">
+                <time datetime={isoDate(post.data.publishedAt)}>
+                  {formatDate(post.data.publishedAt)}
+                </time>
+                <span>
+                  {post.data.readingMinutes} {ortak.dakika}
+                </span>
+              </div>
+              <h2>
+                <a href={post.data.url}>{post.data.title}</a>
+              </h2>
+              <p>{summarize(post, 150)}</p>
+            </div>
+          </article>
+        ))
+      }
+
+      <nav class="pager" aria-label={t.baslik}>
+        {page.url.prev ? <a class="btn btn--ghost" href={page.url.prev}>{t.onceki}</a> : <span />}
+        <span class="u-eyebrow">{page.currentPage} / {page.lastPage}</span>
+        {page.url.next ? <a class="btn btn--ghost" href={page.url.next}>{t.sonraki}</a> : <span />}
+      </nav>
+    </div>
+    <Sidebar recent={recent} />
+  </section>
+</Base>
+
+<style>
+  /* Dil uyarısı: bilgi verir ama içeriğin önüne geçmez */
+  .dil-notu {
+    margin-bottom: var(--s-6);
+    padding: var(--s-3) var(--s-4);
+    border-left: 2px solid var(--c-accent-dim);
+    background: var(--c-surface-raised);
+    border-radius: 0 var(--r-md) var(--r-md) 0;
+    color: var(--c-text-muted);
+    font-size: var(--t-small);
+    max-width: none;
+  }
+</style>

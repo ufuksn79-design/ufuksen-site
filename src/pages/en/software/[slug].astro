@@ -1,0 +1,18 @@
+---
+/**
+ * Software hub page — English.
+ *
+ * Gövde `SoftwareDetailPage` bileşeninde; iki dil aynı bileşeni kullanır.
+ */
+import SoftwareDetailPage from "../../../components/pages/SoftwareDetailPage.astro";
+import { getSoftwareIndex, type SoftwareIndexEntry } from "../../../lib/discover";
+
+export async function getStaticPaths() {
+  const index = await getSoftwareIndex();
+  return index.map((entry) => ({ params: { slug: entry.tag.slug }, props: { entry } }));
+}
+
+const { entry } = Astro.props as { entry: SoftwareIndexEntry };
+---
+
+<SoftwareDetailPage entry={entry} dil="en" />
