@@ -28,6 +28,36 @@ Format, Keep a Changelog yaklaşımına yakındır. Tarihler `YYYY-MM-DD` biçim
 - Kaynak WordPress sistemi migration boyunca salt okunur kabul edildi.
 - Dry-run, yedek ve rollback zorunlulukları eklendi.
 
+## [1.2.0] — 2026-10-14
+
+İlk elle yazılan yazı ve koddan üretilen şekiller (ADR-026).
+
+### Added
+
+- **"SketchUp 2026 Profesyonel Eğitim — En İyi Uzmanından"** yazısı
+  (`/sketchup-2026-profesyonel-egitim.html`): kurulum, sistem gereksinimleri,
+  arayüz, eklenti kurma, kendi eklentilerimiz, Render Fun ile görselleştirme,
+  eğitim yol haritası ve S.S.S.
+- Yazı için **7 renkli SVG şekil** + kapak görseli, koddan üretiliyor
+  (`scripts/content/sketchup-2026-sekiller.mjs`)
+- `scripts/content/sketchup-2026-egitim.mjs` — yazıyı ve şekilleri üreten betik;
+  kullanılan kaynaklar betiğin başında sayılı
+
+### Changed
+
+- Kenar çubuğundaki "Son yazılar" listesi: her yazı kendi soluk çerçevesinde,
+  tarih uzun başlıklarda üstte (başlık 4 satırdan 2 satıra indi)
+
+### Doğrulama
+
+- Bilgilerin tamamı kaynaklı: SketchUp 2026.0 resmî sürüm notları (7 Ekim 2025),
+  SketchUp sistem gereksinimleri sayfası, renderfun.com, kendi ürün verimiz,
+  Udemy eğitmen profilinden okunan eğitim setleri
+- 593 sayfa; `astro check` **0 hata**; yeni kırık link / eksik medya: 0
+- Yazıdaki 17 eklenti bağlantısı ve 7 sayfa bağlantısının hepsi derlemede var
+- Şekiller masaüstünde 0,89 ölçekte okunuyor; telefonda dokununca tam ekran
+- Kod dosyalarında kontrol karakteri taraması temiz (LES-015)
+
 ## [1.1.0] — 2026-10-14
 
 Site geneli iki dillilik (ADR-025).

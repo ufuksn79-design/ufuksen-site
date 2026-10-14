@@ -1,0 +1,24 @@
+<svg viewBox="0 0 560 410" width="560" height="410" role="img" xmlns="http://www.w3.org/2000/svg"><title>SketchUp'a eklenti kurmanın üç yolu</title><rect width="560" height="410" fill="#17171b"/><text x="16" y="30" font-family="system-ui, -apple-system, Segoe UI, Roboto, sans-serif" font-size="19" font-weight="800" fill="#f2f2f4">SketchUp'a eklenti kurmanın üç yolu</text>
+  <text x="16" y="52" font-family="system-ui, -apple-system, Segoe UI, Roboto, sans-serif" font-size="12.5" fill="#9a9aa6">Hangisini kullanırsanız kullanın, kurulumdan sonra SketchUp'ı yeniden başlatın.</text>
+  <g>
+    <rect x="16" y="68" width="528" height="90" rx="10" fill="#1e1e23" stroke="#38bdf8" stroke-opacity="0.45"/>
+    <circle cx="48" cy="113" r="18" fill="#38bdf8"/>
+    <text x="48" y="119" text-anchor="middle" font-family="system-ui, -apple-system, Segoe UI, Roboto, sans-serif" font-size="17" font-weight="800" fill="#17171b">1</text>
+    <text x="82" y="100" font-family="system-ui, -apple-system, Segoe UI, Roboto, sans-serif" font-size="15" font-weight="700" fill="#f2f2f4">Extension Warehouse</text>
+    <text x="82" y="122" font-family="system-ui, -apple-system, Segoe UI, Roboto, sans-serif" font-size="12.5" fill="#9a9aa6">Uzantılar menüsünden mağazayı açın, eklentiyi bulun, Install deyin.</text><text x="82" y="139" font-family="system-ui, -apple-system, Segoe UI, Roboto, sans-serif" font-size="12.5" fill="#9a9aa6">Güncellemeler de buradan gelir; SketchUp hesabı gerekir.</text>
+  </g>
+  <g>
+    <rect x="16" y="176" width="528" height="90" rx="10" fill="#1e1e23" stroke="#4ade80" stroke-opacity="0.45"/>
+    <circle cx="48" cy="221" r="18" fill="#4ade80"/>
+    <text x="48" y="227" text-anchor="middle" font-family="system-ui, -apple-system, Segoe UI, Roboto, sans-serif" font-size="17" font-weight="800" fill="#17171b">2</text>
+    <text x="82" y="208" font-family="system-ui, -apple-system, Segoe UI, Roboto, sans-serif" font-size="15" font-weight="700" fill="#f2f2f4">Extension Manager ile .rbz</text>
+    <text x="82" y="230" font-family="system-ui, -apple-system, Segoe UI, Roboto, sans-serif" font-size="12.5" fill="#9a9aa6">Uzantılar → Extension Manager → Install Extension.</text><text x="82" y="247" font-family="system-ui, -apple-system, Segoe UI, Roboto, sans-serif" font-size="12.5" fill="#9a9aa6">Satın aldığınız eklentilerin standart kurulum yolu.</text>
+  </g>
+  <g>
+    <rect x="16" y="284" width="528" height="90" rx="10" fill="#1e1e23" stroke="#fb923c" stroke-opacity="0.45"/>
+    <circle cx="48" cy="329" r="18" fill="#fb923c"/>
+    <text x="48" y="335" text-anchor="middle" font-family="system-ui, -apple-system, Segoe UI, Roboto, sans-serif" font-size="17" font-weight="800" fill="#17171b">3</text>
+    <text x="82" y="316" font-family="system-ui, -apple-system, Segoe UI, Roboto, sans-serif" font-size="15" font-weight="700" fill="#f2f2f4">Plugins klasörüne elle</text>
+    <text x="82" y="338" font-family="system-ui, -apple-system, Segoe UI, Roboto, sans-serif" font-size="12.5" fill="#9a9aa6">SketchUp kapalıyken .rbz'yi zip gibi açıp içindekileri kopyalayın.</text><text x="82" y="355" font-family="system-ui, -apple-system, Segoe UI, Roboto, sans-serif" font-size="12.5" fill="#9a9aa6">Dosyası büyük eklentilerde bu yol daha güvenli.</text>
+  </g>
+  <text x="16" y="394" font-family="system-ui, -apple-system, Segoe UI, Roboto, sans-serif" font-size="11.5" fill="#ffd400">Windows'ta klasör: %APPDATA%\SketchUp\SketchUp 2026\SketchUp\Plugins</text></svg>

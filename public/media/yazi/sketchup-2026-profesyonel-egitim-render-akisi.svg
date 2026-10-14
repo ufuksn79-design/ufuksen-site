@@ -1,0 +1,37 @@
+<svg viewBox="0 0 560 430" width="560" height="430" role="img" xmlns="http://www.w3.org/2000/svg"><title>Render Fun'ın çalışma akışı: model, ışın izleme, gürültü giderme, sonuç</title><rect width="560" height="430" fill="#17171b"/><text x="16" y="30" font-family="system-ui, -apple-system, Segoe UI, Roboto, sans-serif" font-size="19" font-weight="800" fill="#f2f2f4">Render Fun: SketchUp penceresinden çıkmadan ışın izleme</text>
+  <text x="16" y="52" font-family="system-ui, -apple-system, Segoe UI, Roboto, sans-serif" font-size="12.5" fill="#9a9aa6">Dışa aktarma yok, içe aktarma yok; model doğrudan okunur.</text>
+
+  <rect x="16" y="68" width="150" height="150" rx="10" fill="#1e1e23" stroke="#3a3a43"/>
+  <text x="91" y="92" text-anchor="middle" font-family="system-ui, -apple-system, Segoe UI, Roboto, sans-serif" font-size="13" font-weight="700" fill="#38bdf8">SketchUp modeli</text>
+  <polygon points="51,170 91,146 131,170 131,196 51,196" fill="none" stroke="#38bdf8" stroke-width="1.8"/>
+  <line x1="91" y1="146" x2="91" y2="196" stroke="#38bdf8" stroke-width="1" opacity="0.5"/>
+  <text x="91" y="212" text-anchor="middle" font-family="system-ui, -apple-system, Segoe UI, Roboto, sans-serif" font-size="11" fill="#9a9aa6">doğrudan okunur</text>
+
+  <path d="M172 143 L192 143" stroke="#3a3a43" stroke-width="2" marker-end="url(#ok)"/>
+  <defs><marker id="ok" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto"><path d="M0 0 L8 4 L0 8 z" fill="#3a3a43"/></marker></defs>
+
+  <rect x="198" y="68" width="346" height="150" rx="10" fill="#1e1e23" stroke="#3a3a43"/>
+  <text x="371" y="92" text-anchor="middle" font-family="system-ui, -apple-system, Segoe UI, Roboto, sans-serif" font-size="13" font-weight="700" fill="#ffd400">Işın izleme (path tracing)</text>
+  <circle cx="236" cy="116" r="6" fill="#ffd400"/>
+  <text x="236" y="107" text-anchor="middle" font-family="system-ui, -apple-system, Segoe UI, Roboto, sans-serif" font-size="10" fill="#9a9aa6">ışık</text>
+  <path d="M241 121 L300 162 L230 186 L350 192" fill="none" stroke="#ffd400" stroke-width="2" stroke-linejoin="round"/>
+  <path d="M241 121 L370 140 L290 190" fill="none" stroke="#fb923c" stroke-width="1.5" opacity="0.8"/>
+  <path d="M241 121 L430 170 L380 196" fill="none" stroke="#f472b6" stroke-width="1.5" opacity="0.7"/>
+  <rect x="220" y="192" width="300" height="12" rx="3" fill="#26262c"/>
+  <rect x="448" y="104" width="12" height="96" rx="3" fill="#38bdf8" fill-opacity="0.22" stroke="#38bdf8" stroke-opacity="0.6"/>
+  <text x="488" y="156" text-anchor="middle" font-family="system-ui, -apple-system, Segoe UI, Roboto, sans-serif" font-size="10" fill="#9a9aa6">cam</text>
+  <text x="371" y="212" text-anchor="middle" font-family="system-ui, -apple-system, Segoe UI, Roboto, sans-serif" font-size="11" fill="#9a9aa6">ışık duvarlardan sekerek ve camdan geçerek hesaplanır</text>
+
+  <rect x="16" y="238" width="258" height="140" rx="10" fill="#1e1e23" stroke="#3a3a43"/>
+  <text x="145" y="262" text-anchor="middle" font-family="system-ui, -apple-system, Segoe UI, Roboto, sans-serif" font-size="13" font-weight="700" fill="#4ade80">Gürültü giderme</text>
+  <rect x="52" y="278" width="20" height="16" rx="3" fill="#4ade80" fill-opacity="0.06"/><rect x="76" y="278" width="20" height="16" rx="3" fill="#4ade80" fill-opacity="0.15"/><rect x="100" y="278" width="20" height="16" rx="3" fill="#4ade80" fill-opacity="0.23"/><rect x="124" y="278" width="20" height="16" rx="3" fill="#4ade80" fill-opacity="0.32"/><rect x="148" y="278" width="20" height="16" rx="3" fill="#4ade80" fill-opacity="0.40"/><rect x="172" y="278" width="20" height="16" rx="3" fill="#4ade80" fill-opacity="0.49"/><rect x="196" y="278" width="20" height="16" rx="3" fill="#4ade80" fill-opacity="0.57"/><rect x="220" y="278" width="20" height="16" rx="3" fill="#4ade80" fill-opacity="0.66"/><rect x="52" y="298" width="20" height="16" rx="3" fill="#4ade80" fill-opacity="0.74"/><rect x="76" y="298" width="20" height="16" rx="3" fill="#4ade80" fill-opacity="0.06"/><rect x="100" y="298" width="20" height="16" rx="3" fill="#4ade80" fill-opacity="0.15"/><rect x="124" y="298" width="20" height="16" rx="3" fill="#4ade80" fill-opacity="0.23"/><rect x="148" y="298" width="20" height="16" rx="3" fill="#4ade80" fill-opacity="0.32"/><rect x="172" y="298" width="20" height="16" rx="3" fill="#4ade80" fill-opacity="0.40"/><rect x="196" y="298" width="20" height="16" rx="3" fill="#4ade80" fill-opacity="0.49"/><rect x="220" y="298" width="20" height="16" rx="3" fill="#4ade80" fill-opacity="0.57"/><rect x="52" y="318" width="20" height="16" rx="3" fill="#4ade80" fill-opacity="0.66"/><rect x="76" y="318" width="20" height="16" rx="3" fill="#4ade80" fill-opacity="0.74"/><rect x="100" y="318" width="20" height="16" rx="3" fill="#4ade80" fill-opacity="0.06"/><rect x="124" y="318" width="20" height="16" rx="3" fill="#4ade80" fill-opacity="0.15"/><rect x="148" y="318" width="20" height="16" rx="3" fill="#4ade80" fill-opacity="0.23"/><rect x="172" y="318" width="20" height="16" rx="3" fill="#4ade80" fill-opacity="0.32"/><rect x="196" y="318" width="20" height="16" rx="3" fill="#4ade80" fill-opacity="0.40"/><rect x="220" y="318" width="20" height="16" rx="3" fill="#4ade80" fill-opacity="0.49"/><rect x="52" y="338" width="20" height="16" rx="3" fill="#4ade80" fill-opacity="0.57"/><rect x="76" y="338" width="20" height="16" rx="3" fill="#4ade80" fill-opacity="0.66"/><rect x="100" y="338" width="20" height="16" rx="3" fill="#4ade80" fill-opacity="0.74"/><rect x="124" y="338" width="20" height="16" rx="3" fill="#4ade80" fill-opacity="0.06"/><rect x="148" y="338" width="20" height="16" rx="3" fill="#4ade80" fill-opacity="0.15"/><rect x="172" y="338" width="20" height="16" rx="3" fill="#4ade80" fill-opacity="0.23"/><rect x="196" y="338" width="20" height="16" rx="3" fill="#4ade80" fill-opacity="0.32"/><rect x="220" y="338" width="20" height="16" rx="3" fill="#4ade80" fill-opacity="0.40"/>
+  <text x="145" y="366" text-anchor="middle" font-family="system-ui, -apple-system, Segoe UI, Roboto, sans-serif" font-size="11" fill="#9a9aa6">önizleme ilk saniyeden temiz kalır</text>
+
+  <rect x="286" y="238" width="258" height="140" rx="10" fill="#1e1e23" stroke="#ffd400" stroke-opacity="0.55"/>
+  <text x="415" y="262" text-anchor="middle" font-family="system-ui, -apple-system, Segoe UI, Roboto, sans-serif" font-size="13" font-weight="700" fill="#ffd400">Sonuç</text>
+  <rect x="340" y="276" width="150" height="62" rx="6" fill="url(#gok)"/>
+  <defs><linearGradient id="gok" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#38bdf8" stop-opacity="0.55"/><stop offset="1" stop-color="#fb923c" stop-opacity="0.45"/></linearGradient></defs>
+  <polygon points="356,338 415,300 474,338" fill="#17171b" opacity="0.78"/>
+  <text x="415" y="360" text-anchor="middle" font-family="system-ui, -apple-system, Segoe UI, Roboto, sans-serif" font-size="11" fill="#9a9aa6">Render Buffer'da son 60 kare saklanır</text>
+
+  <text x="16" y="406" font-family="system-ui, -apple-system, Segoe UI, Roboto, sans-serif" font-size="11.5" fill="#9a9aa6">Render Fun ücretsizdir, lisans anahtarı istemez; SketchUp 2021–2026 ile çalışır (yalnızca Windows).</text></svg>

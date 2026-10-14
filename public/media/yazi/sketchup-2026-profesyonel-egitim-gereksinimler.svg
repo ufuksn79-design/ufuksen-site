@@ -1,0 +1,66 @@
+<svg viewBox="0 0 560 540" width="560" height="540" role="img" xmlns="http://www.w3.org/2000/svg"><title>SketchUp 2026 için Windows ve macOS sistem gereksinimleri</title><rect width="560" height="540" fill="#17171b"/><text x="16" y="30" font-family="system-ui, -apple-system, Segoe UI, Roboto, sans-serif" font-size="19" font-weight="800" fill="#f2f2f4">SketchUp 2026 sistem gereksinimleri</text>
+  <text x="16" y="52" font-family="system-ui, -apple-system, Segoe UI, Roboto, sans-serif" font-size="12.5" fill="#9a9aa6">Kaynak: SketchUp'ın resmî sistem gereksinimleri sayfası</text>
+  <g>
+    <rect x="16" y="68" width="528" height="196" rx="12" fill="#1e1e23" stroke="#3a3a43"/>
+    <rect x="16" y="68" width="528" height="34" rx="12" fill="#26262c"/>
+    <text x="32" y="91" font-family="system-ui, -apple-system, Segoe UI, Roboto, sans-serif" font-size="15" font-weight="700" fill="#38bdf8">Windows</text>
+    <g>
+    <circle cx="35" cy="130" r="4" fill="#38bdf8"/>
+    <text x="48" y="134" font-family="system-ui, -apple-system, Segoe UI, Roboto, sans-serif" font-size="11.5" fill="#9a9aa6">İşletim sistemi</text>
+    <text x="48" y="150" font-family="system-ui, -apple-system, Segoe UI, Roboto, sans-serif" font-size="13" font-weight="700" fill="#f2f2f4">Windows 11</text>
+  </g><g>
+    <circle cx="35" cy="168" r="4" fill="#38bdf8"/>
+    <text x="48" y="172" font-family="system-ui, -apple-system, Segoe UI, Roboto, sans-serif" font-size="11.5" fill="#9a9aa6">İşlemci</text>
+    <text x="48" y="188" font-family="system-ui, -apple-system, Segoe UI, Roboto, sans-serif" font-size="13" font-weight="700" fill="#f2f2f4">2 GHz ve üzeri önerilir</text>
+  </g><g>
+    <circle cx="35" cy="206" r="4" fill="#38bdf8"/>
+    <text x="48" y="210" font-family="system-ui, -apple-system, Segoe UI, Roboto, sans-serif" font-size="11.5" fill="#9a9aa6">Ekran kartı</text>
+    <text x="48" y="226" font-family="system-ui, -apple-system, Segoe UI, Roboto, sans-serif" font-size="13" font-weight="700" fill="#f2f2f4">Ayrı kart, en az 8 GB VRAM</text>
+  </g>
+    <g>
+    <circle cx="297" cy="130" r="4" fill="#4ade80"/>
+    <text x="310" y="134" font-family="system-ui, -apple-system, Segoe UI, Roboto, sans-serif" font-size="11.5" fill="#9a9aa6">Bellek / disk</text>
+    <text x="310" y="150" font-family="system-ui, -apple-system, Segoe UI, Roboto, sans-serif" font-size="13" font-weight="700" fill="#f2f2f4">8 GB RAM · 6 GB boş alan</text>
+  </g><g>
+    <circle cx="297" cy="168" r="4" fill="#4ade80"/>
+    <text x="310" y="172" font-family="system-ui, -apple-system, Segoe UI, Roboto, sans-serif" font-size="11.5" fill="#9a9aa6">Klasik motor</text>
+    <text x="310" y="188" font-family="system-ui, -apple-system, Segoe UI, Roboto, sans-serif" font-size="13" font-weight="700" fill="#f2f2f4">OpenGL 3.1</text>
+  </g><g>
+    <circle cx="297" cy="206" r="4" fill="#4ade80"/>
+    <text x="310" y="210" font-family="system-ui, -apple-system, Segoe UI, Roboto, sans-serif" font-size="11.5" fill="#9a9aa6">Yeni motor</text>
+    <text x="310" y="226" font-family="system-ui, -apple-system, Segoe UI, Roboto, sans-serif" font-size="13" font-weight="700" fill="#f2f2f4">DirectX 12, düzey 11.0</text>
+  </g>
+  </g>
+  <g>
+    <rect x="16" y="280" width="528" height="196" rx="12" fill="#1e1e23" stroke="#3a3a43"/>
+    <rect x="16" y="280" width="528" height="34" rx="12" fill="#26262c"/>
+    <text x="32" y="303" font-family="system-ui, -apple-system, Segoe UI, Roboto, sans-serif" font-size="15" font-weight="700" fill="#a78bfa">macOS</text>
+    <g>
+    <circle cx="35" cy="342" r="4" fill="#a78bfa"/>
+    <text x="48" y="346" font-family="system-ui, -apple-system, Segoe UI, Roboto, sans-serif" font-size="11.5" fill="#9a9aa6">İşletim sistemi</text>
+    <text x="48" y="362" font-family="system-ui, -apple-system, Segoe UI, Roboto, sans-serif" font-size="13" font-weight="700" fill="#f2f2f4">macOS 26, 15 ve 14</text>
+  </g><g>
+    <circle cx="35" cy="380" r="4" fill="#a78bfa"/>
+    <text x="48" y="384" font-family="system-ui, -apple-system, Segoe UI, Roboto, sans-serif" font-size="11.5" fill="#9a9aa6">İşlemci</text>
+    <text x="48" y="400" font-family="system-ui, -apple-system, Segoe UI, Roboto, sans-serif" font-size="13" font-weight="700" fill="#f2f2f4">2,1 GHz ya da Apple M1</text>
+  </g><g>
+    <circle cx="35" cy="418" r="4" fill="#a78bfa"/>
+    <text x="48" y="422" font-family="system-ui, -apple-system, Segoe UI, Roboto, sans-serif" font-size="11.5" fill="#9a9aa6">Ekran kartı</text>
+    <text x="48" y="438" font-family="system-ui, -apple-system, Segoe UI, Roboto, sans-serif" font-size="13" font-weight="700" fill="#f2f2f4">En az 1 GB bellekli GPU</text>
+  </g>
+    <g>
+    <circle cx="297" cy="342" r="4" fill="#fb923c"/>
+    <text x="310" y="346" font-family="system-ui, -apple-system, Segoe UI, Roboto, sans-serif" font-size="11.5" fill="#9a9aa6">Bellek / disk</text>
+    <text x="310" y="362" font-family="system-ui, -apple-system, Segoe UI, Roboto, sans-serif" font-size="13" font-weight="700" fill="#f2f2f4">8 GB RAM · 6 GB boş alan</text>
+  </g><g>
+    <circle cx="297" cy="380" r="4" fill="#fb923c"/>
+    <text x="310" y="384" font-family="system-ui, -apple-system, Segoe UI, Roboto, sans-serif" font-size="11.5" fill="#9a9aa6">Klasik motor</text>
+    <text x="310" y="400" font-family="system-ui, -apple-system, Segoe UI, Roboto, sans-serif" font-size="13" font-weight="700" fill="#f2f2f4">OpenGL 3.1</text>
+  </g><g>
+    <circle cx="297" cy="418" r="4" fill="#fb923c"/>
+    <text x="310" y="422" font-family="system-ui, -apple-system, Segoe UI, Roboto, sans-serif" font-size="11.5" fill="#9a9aa6">Yeni motor</text>
+    <text x="310" y="438" font-family="system-ui, -apple-system, Segoe UI, Roboto, sans-serif" font-size="13" font-weight="700" fill="#f2f2f4">Metal 2</text>
+  </g>
+  </g>
+  <text x="16" y="500" font-family="system-ui, -apple-system, Segoe UI, Roboto, sans-serif" font-size="12" fill="#ffd400">PBR doku, Ambient Occlusion ve IBL ile çalışacaksanız Windows'ta 32 GB VRAM öneriliyor.</text>
+  <text x="16" y="520" font-family="system-ui, -apple-system, Segoe UI, Roboto, sans-serif" font-size="12" fill="#9a9aa6">Cihaz yeni motorun koşullarını karşılamazsa SketchUp kendiliğinden klasik motora düşer.</text></svg>

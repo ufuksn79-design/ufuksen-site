@@ -839,3 +839,57 @@ adları) geliyor ve bunlar etiketli.
 
 İngilizce iletişim sayfası WordPress'ten gelen **çalışmayan formu taşımıyor**;
 yerine gerçekten çalışan kanallar (WhatsApp, e-posta) konuldu (AGENTS.md §5).
+
+
+---
+
+## ADR-026 — Elle yazılan yazılar ve koddan üretilen şekiller
+
+**Durum:** Kabul edildi
+**Tarih:** 2026-10-14
+
+### Bağlam
+
+Sitedeki 430 yazının tamamı WordPress göçünden geliyordu; elle yazılmış yazı
+yoktu. "SketchUp 2026 Profesyonel Eğitim" yazısı ilk elle yazılan içerik.
+İçinde renkli grafikler isteniyordu: sürüm yenilikleri, sistem gereksinimleri,
+arayüz yerleşimi, eklenti kurulumu, render akışı.
+
+### Karar
+
+**1. Elle yazılan yazı da göç şemasını kullanır.** Liste, arama, RSS, benzer
+yazı ve kategori mantığının tamamı tek bir kayıt şekline bakıyor; ikinci bir
+şekil üretmek bu mantığı ikiye bölerdi. Yazı `src/content/posts/` altında,
+diğerleriyle aynı alanlarla duruyor. `legacyId` için göç aralığının (en
+büyük 7185) dışından 90001 seçildi.
+
+**2. Yazı bir betikten üretilir, elle düzenlenmez.**
+`scripts/content/sketchup-2026-egitim.mjs` gövdeyi ve meta alanları yazar;
+`sketchup-2026-sekiller.mjs` şekilleri çizer. Kaynaklar betiğin başındaki
+yorumda sayılıdır, böylece hangi bilginin nereden geldiği kaybolmaz.
+
+**3. Şekiller SVG olarak koddan üretilir, ekran görüntüsü taklit edilmez.**
+Arayüz çizimi hem başlığında hem alt yazısında "şematik" diye etiketlendi
+(AGENTS.md §5). Uydurma bir SketchUp ekran görüntüsü üretmedik.
+
+**4. Şekiller gövdeye gömülmez, `<img src="...svg">` ile çağrılır.**
+Önce gövdeye gömülü `<svg>` denendi ve ölçüldü: yazı sütunu masaüstünde
+499px, telefonda 301px (`--measure: 68ch`). 960 birimlik viewBox telefonda
+0,54 ölçeğe düşüyor, 12px'lik yazı ekranda 6,5px oluyordu. İki değişiklik
+yapıldı:
+- Şekiller 560 birim genişliğe göre yeniden kuruldu (dar ve uzun yerleşim).
+- Gövdeye `<img>` olarak kondu; böylece `Base.astro`'daki büyüteç devreye
+  girip dokununca tam ekran açıyor ve SVG her ölçüde keskin kalıyor.
+
+SVG dosyasının köküne `width`/`height` yazmak şart: yalnızca `viewBox` +
+`style="width:100%"` varken tarayıcı doğal genişliği 196px sanıyordu ve
+büyüteç şekli küçük açıyordu. Zemin de CSS yerine `<rect>` ile boyanıyor.
+
+**5. Yazı yalnızca Türkçe.** ADR-025'teki kural sürüyor: blog yazıları
+çevrilmiyor. İngilizce tarafta arşivde listeleniyor ve Türkçe olduğu
+söyleniyor. İngilizce karşılığı istenirse ayrı bir karar gerekir.
+
+### Sonuç
+
+593 sayfa, `astro check` 0 hata, yeni kırık link ya da eksik medya yok.
+Şekiller telefonda dokununca tam ekran açılıyor; ölçüldü.
