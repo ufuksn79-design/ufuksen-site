@@ -11,6 +11,25 @@ name = "ufuksen-site"
 main = "worker/index.js"
 compatibility_date = "2026-01-01"
 
+# Canlı alan adları (2026-10-14, kullanıcı onayıyla).
+#
+# `custom_domain = true`: Cloudflare bu konak adlarının DNS kaydını kendisi
+# kurar ve sertifikayı kendisi alır. Bu kayıtlar eskiden paylaşımlı hosting'e
+# bakıyordu; bağlandığı andan itibaren alan adı WordPress'e değil bu Worker'a
+# gider. WordPress dosyalarına DOKUNULMAZ — hosting'de olduğu gibi durur,
+# geri dönüş bu iki satırı kaldırıp eski DNS kaydını geri koymaktır.
+#
+# E-posta etkilenmez: yalnızca bu konak adlarının A/CNAME kaydı değişir,
+# MX kayıtları olduğu gibi kalır.
+#
+# Çıplak `ufuksen.com` da bağlanıyor çünkü bağlanmazsa eski hosting'e gitmeye
+# devam ederdi. İstek Worker'a ulaşır ulaşmaz 301 ile `www`ye gider
+# (worker/index.js, adım -1) — kanonik adresler `www` ile üretiliyor.
+routes = [
+  { pattern = "www.ufuksen.com", custom_domain = true },
+  { pattern = "ufuksen.com", custom_domain = true },
+]
+
 [assets]
 directory = "./dist"
 binding = "ASSETS"
