@@ -1,0 +1,145 @@
+{
+  "slug": "cityfill",
+  "ad": "CityFill",
+  "tur": "eklenti",
+  "durum": "aktif",
+  "ilerleme": null,
+  "surum": "2.0.0",
+  "sira": 2,
+  "yayinda": true,
+  "ozet": "Boş beyaz zemin yok: binanızın çevresi birkaç tıkla şehirle dolsun.",
+  "aciklama": null,
+  "slogan": null,
+  "baslik": "Binanız boş bir parseli değil, bir sokağı hak ediyor.",
+  "sunum": "Gri zeminde tek başına duran bir kule ürün fotoğrafı gibi görünür. Etrafında yaşayan bir sokak olan aynı kule, bir yere ait olan bir proje gibi görünür. Çoğu sunumun çevreyi atlamasının sebebi maliyettir: dolgu binalarını tek tek avlayıp yerleştirmek yaklaşık 150 dakika sürer. CityFill bir adanın tamamını yaklaşık 25 saniyede doldurur; 154 hazır bina, üç yerleştirme modu, SketchUp 2021-2026.",
+  "kanit": {
+    "oncekiEtiket": "Dolgu binalarını tek tek avlamak",
+    "oncekiDakika": 150,
+    "sonrakiEtiket": "Adanın tamamını tek serpiştirmede doldurmak",
+    "sonrakiSaniye": 25
+  },
+  "hikayeler": [
+    {
+      "baslik": "Zaman aramaya değil tasarıma",
+      "metin": "Kütüphane zaten orada; ölçeği tutmayan ve 400 bin poligonla gelen bir modeli internette aramıyorsunuz. Serpiştirirsiniz, bakarsınız, ayarlarsınız."
+    },
+    {
+      "baslik": "Bir sokağı yaşayan yapan nedir?",
+      "metin": "Çeşitlilik. Yükseklikler, genişlikler ve cepheler gerçek bir sıradaki gibi değişir; böylece çevre kopyalanmış bir blok değil, bir mahalle gibi okunur — sunum görselinde gözün ilk kontrol ettiği şey tam olarak budur."
+    },
+    {
+      "baslik": "Beğenmediğinizi yerinde değiştirin",
+      "metin": "Yerleşmiş herhangi bir bina, çevresindeki sırayı yeniden kurmadan değiştirilebilir ya da kaydırılabilir. Çevre, mahkûm olduğunuz bir karar değil, yönettiğiniz bir fon olarak kalır."
+    }
+  ],
+  "magazaUrl": "https://www.bestsketchupplugins.com/tr/plugins/cityfill/",
+  "kapak": null,
+  "galeri": [],
+  "video": null,
+  "uyumluluk": [
+    "SketchUp 2021",
+    "SketchUp 2022",
+    "SketchUp 2023",
+    "SketchUp 2024",
+    "SketchUp 2025",
+    "SketchUp 2026",
+    "Windows (birincil)",
+    "macOS (uyumlu olduğu belirtiliyor)"
+  ],
+  "ozellikler": [
+    {
+      "baslik": "154 hazır bina",
+      "not": "",
+      "ikon": "grid"
+    },
+    {
+      "baslik": "3 yerleştirme modu",
+      "not": "",
+      "ikon": "grid"
+    },
+    {
+      "baslik": "SketchUp 2021-2026",
+      "not": "",
+      "ikon": "grid"
+    }
+  ],
+  "listeler": [],
+  "vurgular": [
+    "154 hazır bina",
+    "3 yerleştirme modu",
+    "SketchUp 2021-2026"
+  ],
+  "sss": [],
+  "fiyat": null,
+  "satinAlmaUrl": null,
+  "denemeUrl": null,
+  "iletisimEposta": "ufuksn79@gmail.com",
+  "yazilim": [
+    "sketchup"
+  ],
+  "icNot": "Mağazadan senkronlandı (plugin-store/data/plugins.json, 2026-10-14). Metinleri burada elle değiştirmeyin — mağazada değiştirip senkronu tekrar çalıştırın.",
+  "en": {
+    "ad": "CityFill",
+    "ozet": "No white void around your design: fill the city in a few clicks.",
+    "aciklama": null,
+    "slogan": null,
+    "fiyatNot": null,
+    "baslik": "Your building deserves a street, not an empty plot.",
+    "sunum": "A tower standing alone on grey ground looks like a product shot. The same tower with a living street around it looks like a project that belongs somewhere. The reason most presentations skip the context is cost: hunting down and placing filler buildings one by one runs about 150 minutes. CityFill fills an entire block in roughly 25 seconds, from 154 ready buildings, with three placement modes, on SketchUp 2021 through 2026.",
+    "kanit": {
+      "oncekiEtiket": "Hunting filler buildings one by one",
+      "oncekiDakika": 150,
+      "sonrakiEtiket": "Filling the whole block in one scatter",
+      "sonrakiSaniye": 25
+    },
+    "hikayeler": [
+      {
+        "baslik": "Time on design, not on searching",
+        "metin": "The library is already there, so you are not trawling for a model that is the wrong scale and arrives with 400,000 polygons. You scatter, you look, you adjust."
+      },
+      {
+        "baslik": "What makes a street look alive?",
+        "metin": "Variation. Heights, widths and frontages differ the way a real row does, so the context reads as a neighbourhood rather than a copied block — which is exactly what the eye checks first in a presentation image."
+      },
+      {
+        "baslik": "Change the one you do not like, where it stands",
+        "metin": "Any placed building can be swapped or adjusted in position without rebuilding the row around it. The context stays a background you control, not a decision you are stuck with."
+      }
+    ],
+    "magazaUrl": "https://www.bestsketchupplugins.com/en/plugins/cityfill/",
+    "uyumluluk": [
+      "SketchUp 2021",
+      "SketchUp 2022",
+      "SketchUp 2023",
+      "SketchUp 2024",
+      "SketchUp 2025",
+      "SketchUp 2026",
+      "Windows (primary)",
+      "macOS (stated compatible)"
+    ],
+    "ozellikler": [
+      {
+        "baslik": "154 presets",
+        "not": "",
+        "ikon": "grid"
+      },
+      {
+        "baslik": "3 placement modes",
+        "not": "",
+        "ikon": "grid"
+      },
+      {
+        "baslik": "SketchUp 2021-2026",
+        "not": "",
+        "ikon": "grid"
+      }
+    ],
+    "listeler": [],
+    "vurgular": [
+      "154 presets",
+      "3 placement modes",
+      "SketchUp 2021-2026"
+    ],
+    "sss": []
+  }
+}

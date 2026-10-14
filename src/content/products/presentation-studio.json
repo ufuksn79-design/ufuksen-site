@@ -1,0 +1,135 @@
+{
+  "slug": "presentation-studio",
+  "ad": "Sunum Stüdyosu",
+  "tur": "eklenti",
+  "durum": "beta",
+  "ilerleme": null,
+  "surum": "1.0.0",
+  "sira": 19,
+  "yayinda": true,
+  "ozet": "Elle dizmeden: render ve planlar girer, tasarımcı işi bir pafta seti çıkar.",
+  "aciklama": null,
+  "slogan": null,
+  "baslik": "Projeye üç hafta, nasıl göründüğüne bir gece verdiniz.",
+  "sunum": "Çizimler bitmiştir, toplantı yarındır; sunum da açık olan hangi programsa onda slayt slayt dizilir — görselleri kutulara sürüklemenin yaklaşık 180 dakikası. Sunum Stüdyosu sayfaları yazdığınız içerikten dizer, yaklaşık 15 dakikada. 4 pafta tarzı şablon, yapılaşma ve kat paylaşım şemaları, 16:9, 9:16, A4 ve A3 PDF çıktısı. SketchUp eklentisi değildir: her programdan dışa aktarılan görsellerle çalışır ve bir kez yüklendikten sonra çevrimdışı da çalışır.",
+  "kanit": {
+    "oncekiEtiket": "Her sayfayı slayt programında elle dizmek",
+    "oncekiDakika": 180,
+    "sonrakiEtiket": "İçeriği yazın; sayfaları şablon dizer",
+    "sonrakiSaniye": 900
+  },
+  "hikayeler": [
+    {
+      "baslik": "Slayt değil, mimar paftası",
+      "metin": "Şablonlar bir proje paftasının dizildiği gibi dizilmiştir; sonuç bir satış sunumundan değil bir mimarlık ofisinden çıkmış gibi görünür."
+    },
+    {
+      "baslik": "Alan şemalarını kim çiziyor?",
+      "metin": "O çiziyor. Yapılaşma ve kat paylaşım tabloları kendiliğinden şemaya dönüşür; gece ikide vakit yetmediği için ilk atlanan kısım da genelde budur."
+    },
+    {
+      "baslik": "Projeniz cihazınızda kalır",
+      "metin": "Hiçbir şey yüklenmez. Henüz yapılmamış bir projenin görselleri ve rakamları çalıştığınız makinede kalır — bu işte bunun değeri, itiraf edildiğinden fazladır."
+    }
+  ],
+  "magazaUrl": "https://www.bestsketchupplugins.com/tr/plugins/presentation-studio/",
+  "kapak": null,
+  "galeri": [],
+  "video": null,
+  "uyumluluk": [
+    "Güncel her masaüstü ya da telefon tarayıcısı (Chrome, Edge, Safari, Firefox)",
+    "SketchUp eklentisi değil: her programdan dışa aktarılan görsellerle çalışır",
+    "Sayfa yüklendikten sonra çevrimdışı da çalışır"
+  ],
+  "ozellikler": [
+    {
+      "baslik": "4 pafta tarzı şablon",
+      "not": "",
+      "ikon": "grid"
+    },
+    {
+      "baslik": "Yapılaşma + kat paylaşım şeması",
+      "not": "",
+      "ikon": "grid"
+    },
+    {
+      "baslik": "PDF 16:9 · 9:16 · A4 · A3",
+      "not": "",
+      "ikon": "grid"
+    }
+  ],
+  "listeler": [],
+  "vurgular": [
+    "4 pafta tarzı şablon",
+    "Yapılaşma + kat paylaşım şeması",
+    "PDF 16:9 · 9:16 · A4 · A3"
+  ],
+  "sss": [],
+  "fiyat": null,
+  "satinAlmaUrl": null,
+  "denemeUrl": null,
+  "iletisimEposta": "ufuksn79@gmail.com",
+  "yazilim": [
+    "sketchup"
+  ],
+  "icNot": "Mağazadan senkronlandı (plugin-store/data/plugins.json, 2026-10-14). Metinleri burada elle değiştirmeyin — mağazada değiştirip senkronu tekrar çalıştırın.",
+  "en": {
+    "ad": "Presentation Studio",
+    "ozet": "Skip slide-by-slide layout: renders in, a designer-grade sheet set out.",
+    "aciklama": null,
+    "slogan": null,
+    "fiyatNot": null,
+    "baslik": "You spent three weeks on the project and one night on how it looks.",
+    "sunum": "The drawings are finished and the meeting is tomorrow, so the presentation gets assembled slide by slide in whatever program is open — about 180 minutes of dragging images into boxes. Presentation Studio lays the pages out from the content you type, in roughly 15 minutes. 4 architectural sheet templates, built-up area and floor distribution diagrams, PDF output in 16:9, 9:16, A4 and A3. It is not a SketchUp extension: it works with images exported from any program, and it keeps working offline once loaded.",
+    "kanit": {
+      "oncekiEtiket": "Laying out every page by hand in slide software",
+      "oncekiDakika": 180,
+      "sonrakiEtiket": "Type the content; the template sets the pages",
+      "sonrakiSaniye": 900
+    },
+    "hikayeler": [
+      {
+        "baslik": "An architect's sheet, not a slide",
+        "metin": "The templates are laid out the way a project board is laid out, so the result looks like it came from an architecture office rather than from a sales deck."
+      },
+      {
+        "baslik": "Who draws the area diagrams?",
+        "metin": "It does. Built-up area and floor distribution tables become diagrams on their own, which is usually the part that gets dropped at 2am for lack of time."
+      },
+      {
+        "baslik": "Your project stays on your device",
+        "metin": "Nothing is uploaded. The images and numbers for an unbuilt project stay on the machine you are working on — which matters more in this business than people admit."
+      }
+    ],
+    "magazaUrl": "https://www.bestsketchupplugins.com/en/plugins/presentation-studio/",
+    "uyumluluk": [
+      "Any current desktop or phone browser (Chrome, Edge, Safari, Firefox)",
+      "Not a SketchUp plugin: works with images exported from any program",
+      "Works offline once the page has loaded"
+    ],
+    "ozellikler": [
+      {
+        "baslik": "4 sheet-style templates",
+        "not": "",
+        "ikon": "grid"
+      },
+      {
+        "baslik": "Zoning + stacking diagrams",
+        "not": "",
+        "ikon": "grid"
+      },
+      {
+        "baslik": "PDF 16:9 · 9:16 · A4 · A3",
+        "not": "",
+        "ikon": "grid"
+      }
+    ],
+    "listeler": [],
+    "vurgular": [
+      "4 sheet-style templates",
+      "Zoning + stacking diagrams",
+      "PDF 16:9 · 9:16 · A4 · A3"
+    ],
+    "sss": []
+  }
+}

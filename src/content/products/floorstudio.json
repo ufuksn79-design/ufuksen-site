@@ -4,70 +4,68 @@
   "tur": "eklenti",
   "durum": "aktif",
   "ilerleme": null,
-  "surum": "3.2.1",
-  "sira": 1,
+  "surum": "3.3.0",
+  "sira": 6,
   "yayinda": true,
-  "ozet": "Profesyonel zemin desenlerini saniyeler içinde oluşturan SketchUp eklentisi.",
-  "aciklama": "Zemin modellemesi elle yapıldığında hem uzun sürer hem de derz ölçüleri tutmaz. FloorStudio, parametreleri girip tek tıkla gerçek ölçülü zemin üretmenizi sağlar.",
-  "slogan": "Zaman kazanın, kalitenizi artırın.",
+  "ozet": "Tek tek çoğaltmadan: her parça odaya kesilir, sayılır, CSV'ye çıkar.",
+  "aciklama": null,
+  "slogan": null,
+  "baslik": "Zemini kimse övmez. Yanlış olduğunda fark ederler.",
+  "sunum": "Müşteri size parkenin güzel olduğunu söylemez. Ama duvarda kırılan bir balıksırtı ya da her sırada iki milimetre kayan bir derz, gözünün ilk takıldığı yerdir — ve bütün görseli sessizce ucuzlatan şeydir. Bu SketchUp zemin kaplama eklentisi, zemini bir parke ustasının döşeyeceği gibi döşer: yüzeyi seçersiniz, deseni seçersiniz, tahtalar odaya göre kesilmiş olarak yerine oturur. Aynı zemini elle çizip çoğaltıp tek tek kesmek yaklaşık 45 dakika sürer. Burada 45 saniye.",
+  "kanit": {
+    "oncekiEtiket": "Zemini elle çizip çoğaltıp tek tek kesmek",
+    "oncekiDakika": 45,
+    "sonrakiEtiket": "Yüzeyi seç, deseni seç, uygula",
+    "sonrakiSaniye": 45
+  },
+  "hikayeler": [
+    {
+      "baslik": "Elle döşenen parke neden hep kenarda bozulur?",
+      "metin": "Çünkü kopyala-çoğalt duvarın nerede olduğunu bilmez. FloorStudio her tahtayı yüzeyin gerçek sınırına göre keser; süpürgeliğin üstüne taşan parça da, köşede yarım kalan üçgen de olmaz. Ekranda gördüğünüz şey, bir ustanın gerçekten döşeyebileceği şeydir."
+    },
+    {
+      "baslik": "Derz, tam yazdığınız ölçüde",
+      "metin": "Burada derz aralığı gerçek bir ölçüdür, doku hilesi değil. 3 mm yazarsınız, on iki metrelik koridorun öbür ucunda da 3 mm ölçer. Oda V-Ray ya da Enscape'te render edilip ışık zemine yalayarak düştüğünde bunun değeri anlaşılır."
+    },
+    {
+      "baslik": "Sipariş listesi zeminle birlikte çıkar",
+      "metin": "Her üretim, geometriyle beraber CSV metraj da yazar: tahta adedi ve alan, az önce kurduğunuz modelden. Gece yarısı ekranda sıra sayıp fiyat çıkarmak zorunda kalmazsınız."
+    }
+  ],
+  "magazaUrl": "https://www.bestsketchupplugins.com/tr/plugins/floorstudio/",
   "kapak": null,
   "galeri": [],
   "video": null,
   "uyumluluk": [
+    "SketchUp 2021",
+    "SketchUp 2022",
+    "SketchUp 2023",
     "SketchUp 2024",
     "SketchUp 2025",
     "SketchUp 2026"
   ],
   "ozellikler": [
     {
-      "baslik": "Otomatik üretim",
-      "not": "Zeminleri tek tıklamayla oluşturun.",
-      "ikon": "bolt"
-    },
-    {
-      "baslik": "Gerçek ölçüler",
-      "not": "Fiziksel derz (gap) sistemi ile tamamen doğru sonuçlar.",
-      "ikon": "ruler"
-    },
-    {
-      "baslik": "Zengin desen kütüphanesi",
-      "not": "13+ profesyonel desen seçeneği.",
+      "baslik": "13 desen",
+      "not": "",
       "ikon": "grid"
     },
     {
-      "baslik": "Gelişmiş parametreler",
-      "not": "Rastgele uzunluk, genişlik, renk ve yükseklik varyasyonları.",
-      "ikon": "sliders"
+      "baslik": "SketchUp 2021-2026",
+      "not": "",
+      "ikon": "grid"
     },
     {
-      "baslik": "Kalınlık ve bevel",
-      "not": "Gerçekçi kalınlık ve bevel seçenekleri.",
-      "ikon": "layers"
-    },
-    {
-      "baslik": "UV ve malzeme yönetimi",
-      "not": "Akıllı UV hizalama ve malzeme kontrolü.",
-      "ikon": "texture"
+      "baslik": "CSV metraj",
+      "not": "",
+      "ikon": "grid"
     }
   ],
-  "listeler": [
-    {
-      "baslik": "Desen kütüphanesi",
-      "ogeler": [
-        "Wood Straight",
-        "Herringbone Single",
-        "Herringbone Double",
-        "Chevron",
-        "Tile Diamond 45°",
-        "Stack Bond"
-      ],
-      "not": "Görselde altı desen gösteriliyor; eklenti 13+ desen içeriyor."
-    }
-  ],
+  "listeler": [],
   "vurgular": [
-    "Tek işlem undo — güvenli üretim",
-    "Hızlı ve verimli",
-    "Profesyonel sonuçlar"
+    "13 desen",
+    "SketchUp 2021-2026",
+    "CSV metraj"
   ],
   "sss": [],
   "fiyat": null,
@@ -77,12 +75,36 @@
   "yazilim": [
     "sketchup"
   ],
-  "icNot": "/media/urun/floorstudio.jpg — tanitim gorseli kullanicidan bekleniyor. Dosya bu yola konunca gorsel alanina ayni yol yazilacak. | Surum FloorStudio_v3.2.1-stability.1.rbz paketinden dogrulandi (2026-09-09). Gumroad satisinda degil.",
+  "icNot": "Mağazadan senkronlandı (plugin-store/data/plugins.json, 2026-10-14). Metinleri burada elle değiştirmeyin — mağazada değiştirip senkronu tekrar çalıştırın.",
   "en": {
     "ad": "FloorStudio",
-    "ozet": "SketchUp plugin that builds professional floor patterns in seconds.",
-    "aciklama": "Modelling floors by hand is slow and the joint spacing never quite adds up. FloorStudio lets you enter the parameters and generate a dimensionally correct floor in one click.",
-    "slogan": "Save time, raise your quality.",
+    "ozet": "Skip the tile-by-tile copying: every board cut, counted, out as CSV.",
+    "aciklama": null,
+    "slogan": null,
+    "fiyatNot": null,
+    "baslik": "Nobody praises a floor. They notice it when it is wrong.",
+    "sunum": "A client will not tell you the parquet looks right. But a herringbone that breaks at the wall, or a joint that drifts two millimetres per row, is the first thing their eye catches — and the thing that quietly makes the whole render feel cheap. This parametric floor pattern plugin for SketchUp lays the floor the way a flooring contractor would: you pick the face, pick the pattern, and the boards fall into place already cut to the room. Drawing, array-copying and trimming that floor by hand takes about 45 minutes. Here it takes 45 seconds.",
+    "kanit": {
+      "oncekiEtiket": "Drawing, array-copying and trimming a floor by hand",
+      "oncekiDakika": 45,
+      "sonrakiEtiket": "Pick a face, pick a pattern, commit",
+      "sonrakiSaniye": 45
+    },
+    "hikayeler": [
+      {
+        "baslik": "Why does hand-laid parquet always break at the edges?",
+        "metin": "Because copy-and-array does not know where the wall is. FloorStudio cuts every board against the real boundary of the face, so no piece hangs over the skirting and no triangle is left half-drawn in a corner. What you see in the viewport is what a fitter could actually lay."
+      },
+      {
+        "baslik": "The joint is exactly the width you typed",
+        "metin": "Gap width is a real dimension here, not a texture trick. Type 3 mm and the gap measures 3 mm at the far end of a twelve-metre corridor too. That matters the moment someone renders the room in V-Ray or Enscape and the grazing light falls across the floor."
+      },
+      {
+        "baslik": "The order list comes out with the floor",
+        "metin": "Every run writes a CSV take-off alongside the geometry — board count and area, straight from the model you just built. You are not counting rows on screen at midnight to price the job."
+      }
+    ],
+    "magazaUrl": "https://www.bestsketchupplugins.com/en/plugins/floorstudio/",
     "uyumluluk": [
       "SketchUp 2021",
       "SketchUp 2022",
@@ -93,54 +115,26 @@
     ],
     "ozellikler": [
       {
-        "baslik": "Automatic generation",
-        "not": "Build entire floors with a single click.",
-        "ikon": "bolt"
-      },
-      {
-        "baslik": "True dimensions",
-        "not": "A physical gap system gives fully accurate results.",
-        "ikon": "ruler"
-      },
-      {
-        "baslik": "Rich pattern library",
-        "not": "13+ professional patterns.",
+        "baslik": "13 patterns",
+        "not": "",
         "ikon": "grid"
       },
       {
-        "baslik": "Advanced parameters",
-        "not": "Randomised length, width, colour and height variation.",
-        "ikon": "sliders"
+        "baslik": "SketchUp 2021-2026",
+        "not": "",
+        "ikon": "grid"
       },
       {
-        "baslik": "Thickness and bevel",
-        "not": "Realistic board thickness and bevel options.",
-        "ikon": "layers"
-      },
-      {
-        "baslik": "UV and material control",
-        "not": "Smart UV alignment and material management.",
-        "ikon": "texture"
+        "baslik": "CSV take-off",
+        "not": "",
+        "ikon": "grid"
       }
     ],
-    "listeler": [
-      {
-        "baslik": "Pattern library",
-        "ogeler": [
-          "Wood Straight",
-          "Herringbone Single",
-          "Herringbone Double",
-          "Chevron",
-          "Tile Diamond 45°",
-          "Stack Bond"
-        ],
-        "not": "Six patterns shown here; the plugin ships with 13+."
-      }
-    ],
+    "listeler": [],
     "vurgular": [
-      "Single-step undo",
-      "Fast and efficient",
-      "Professional results"
+      "13 patterns",
+      "SketchUp 2021-2026",
+      "CSV take-off"
     ],
     "sss": []
   }

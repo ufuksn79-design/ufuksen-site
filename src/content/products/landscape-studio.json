@@ -1,0 +1,143 @@
+{
+  "slug": "landscape-studio",
+  "ad": "Peyzaj Stüdyosu",
+  "tur": "eklenti",
+  "durum": "aktif",
+  "ilerleme": null,
+  "surum": "1.6.0",
+  "sira": 10,
+  "yayinda": true,
+  "ozet": "Bir kez şekillendir, tüm alan uysun: her değişiklikte düzeltmek yok.",
+  "aciklama": null,
+  "slogan": null,
+  "baslik": "Peyzaj, projeyi bitmiş gösteren şeydir — ve ilk kesilen şeydir.",
+  "sunum": "Araziyi Sandbox'la kurup sonra 300 bitkiyi tek tek yerleştirmek yaklaşık 210 dakika sürer; bu yüzden bitkilendirme genelde üç kopya ağaç ve yeşil bir yüzeye dönüşür. Peyzaj Stüdyosu bunu yaklaşık 45 saniyeye indirir: ızgarayı şekillendirin, zonu boyayın, karışımı dağıtın. Türkiye'ye özgü 151 bitki, 12 arazi fırçası, 571 otomatik test yeşil — SketchUp 2021-2026.",
+  "kanit": {
+    "oncekiEtiket": "Araziyi Sandbox'la kur, sonra 300 bitkiyi tek tek yerleştir",
+    "oncekiDakika": 210,
+    "sonrakiEtiket": "Izgarayı şekillendir, zonu boya, karışımı dağıt",
+    "sonrakiSaniye": 45
+  },
+  "hikayeler": [
+    {
+      "baslik": "Tek zemin, bütünlüklü bir alan",
+      "metin": "Arazi, yollar, duvarlar ve bitkilendirme aynı yüzey üzerinde durur; model, bir düzlemin üstünde yüzen nesneler değil bir yer gibi okunur."
+    },
+    {
+      "baslik": "Yerleşim bir gün önce değişirse?",
+      "metin": "Zonu yeniden boyarsınız. Bitkilendirme silinip baştan yerleştirilmek yerine yeniden dağılır; geç gelen peyzaj revizyonlarının korkutucu olmaktan çıkmasının tek sebebi budur."
+    },
+    {
+      "baslik": "Bitki listesi sayılmaz, yazılır",
+      "metin": "Türlere göre bitki adetleri modelden rapor olarak çıkar; teslim ettiğiniz miktarlar çizimde gerçekten duran şeyle örtüşür."
+    }
+  ],
+  "magazaUrl": "https://www.bestsketchupplugins.com/tr/plugins/landscape-studio/",
+  "kapak": null,
+  "galeri": [],
+  "video": null,
+  "uyumluluk": [
+    "SketchUp 2021",
+    "SketchUp 2022",
+    "SketchUp 2023",
+    "SketchUp 2024",
+    "SketchUp 2025",
+    "SketchUp 2026",
+    "Windows"
+  ],
+  "ozellikler": [
+    {
+      "baslik": "151 Türkiye bitkisi",
+      "not": "",
+      "ikon": "layers"
+    },
+    {
+      "baslik": "12 arazi fırçası",
+      "not": "",
+      "ikon": "layers"
+    },
+    {
+      "baslik": "571 test yeşil",
+      "not": "",
+      "ikon": "layers"
+    }
+  ],
+  "listeler": [],
+  "vurgular": [
+    "151 Türkiye bitkisi",
+    "12 arazi fırçası",
+    "571 test yeşil"
+  ],
+  "sss": [],
+  "fiyat": null,
+  "satinAlmaUrl": null,
+  "denemeUrl": null,
+  "iletisimEposta": "ufuksn79@gmail.com",
+  "yazilim": [
+    "sketchup"
+  ],
+  "icNot": "Mağazadan senkronlandı (plugin-store/data/plugins.json, 2026-10-14). Metinleri burada elle değiştirmeyin — mağazada değiştirip senkronu tekrar çalıştırın.",
+  "en": {
+    "ad": "Landscape Studio",
+    "ozet": "No fixing after every edit: shape the ground once, the site follows.",
+    "aciklama": null,
+    "slogan": null,
+    "fiyatNot": null,
+    "baslik": "The landscape is what makes a project look finished — and it is what gets cut first.",
+    "sunum": "Shaping the terrain in Sandbox and then placing 300 plants one by one takes about 210 minutes, so the planting usually ends up as three copied trees and a green surface. Landscape Studio turns that into roughly 45 seconds: shape the grid, paint the zone, scatter the mix. 151 plants native to Türkiye, 12 terrain brushes, 571 automated tests green — SketchUp 2021 through 2026.",
+    "kanit": {
+      "oncekiEtiket": "Sandbox the terrain, then place 300 plants one by one",
+      "oncekiDakika": 210,
+      "sonrakiEtiket": "Sculpt the grid, paint the zone, scatter the mix",
+      "sonrakiSaniye": 45
+    },
+    "hikayeler": [
+      {
+        "baslik": "One ground, one coherent site",
+        "metin": "Terrain, paths, walls and planting sit on the same surface, so the model reads as a place rather than as objects floating above a plane."
+      },
+      {
+        "baslik": "What if the layout changes the day before?",
+        "metin": "Repaint the zone. The planting redistributes instead of being deleted and placed again, which is the only reason late landscape revisions stop being frightening."
+      },
+      {
+        "baslik": "The schedule is written, not counted",
+        "metin": "Plant counts by species come out of the model as a report, so the quantities you hand over match what is actually on the drawing."
+      }
+    ],
+    "magazaUrl": "https://www.bestsketchupplugins.com/en/plugins/landscape-studio/",
+    "uyumluluk": [
+      "SketchUp 2021",
+      "SketchUp 2022",
+      "SketchUp 2023",
+      "SketchUp 2024",
+      "SketchUp 2025",
+      "SketchUp 2026",
+      "Windows"
+    ],
+    "ozellikler": [
+      {
+        "baslik": "151 Turkish plants",
+        "not": "",
+        "ikon": "layers"
+      },
+      {
+        "baslik": "12 terrain brushes",
+        "not": "",
+        "ikon": "layers"
+      },
+      {
+        "baslik": "571 tests green",
+        "not": "",
+        "ikon": "layers"
+      }
+    ],
+    "listeler": [],
+    "vurgular": [
+      "151 Turkish plants",
+      "12 terrain brushes",
+      "571 tests green"
+    ],
+    "sss": []
+  }
+}

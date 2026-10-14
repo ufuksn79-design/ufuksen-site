@@ -16,9 +16,9 @@
  *   node scripts/build/make-staging.mjs /yeni
  */
 
+import { zipKlasor } from "./zip-lib.mjs";
 import { cp, readFile, writeFile, readdir, rm, stat } from "node:fs/promises";
 import { join, resolve, extname } from "node:path";
-import { spawnSync } from "node:child_process";
 import { existsSync } from "node:fs";
 
 const ROOT = resolve(".");
@@ -134,22 +134,8 @@ await writeFile(
 // Arama motorlarına staging'i indekslememesi söylenir.
 await writeFile(join(STAGE, "robots.txt"), "User-agent: *\nDisallow: /\n", "utf8");
 
-if (existsSync(OUT)) await rm(OUT);
-const script = [
-  "$ErrorActionPreference = 'Stop'",
-  "$items = Get-ChildItem -Path $env:ZIP_SOURCE -Force",
-  "Compress-Archive -Path $items.FullName -DestinationPath $env:ZIP_TARGET -CompressionLevel Optimal",
-].join("; ");
-const result = spawnSync("powershell", ["-NoProfile", "-Command", script], {
-  stdio: "inherit",
-  env: { ...process.env, ZIP_SOURCE: STAGE, ZIP_TARGET: OUT },
-});
-if (result.status !== 0) {
-  console.error("Arşivleme başarısız.");
-  process.exit(1);
-}
-
-const size = (await stat(OUT)).size / 1024 / 1024;
+/* Paketleme ortak kitaplıkta: ters bölü hatasına karşı doğrulama orada (LES-014). */
+const size = (await zipKlasor(STAGE, OUT)).boyut / 1024 / 1024;
 console.log(`Önek        : ${BASE}`);
 console.log(`Değişen dosya: ${touched}`);
 console.log(`Yeniden yazılan yol: ${rewritten}`);

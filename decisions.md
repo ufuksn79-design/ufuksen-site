@@ -678,3 +678,100 @@ Dil düğmesi yalnızca çevirisi olan sayfalarda görünür — menüye genel b
 düğmesi konmadı, çünkü çalışmayan bir düğme olurdu. Sol menü İngilizce
 sayfalarda da Türkçe kalıyor: oradaki bölümlerin İngilizcesi yok, İngilizce
 etiketleyip Türkçe içeriğe göndermek yanıltıcı olurdu.
+
+
+---
+
+## ADR-024 — Ürün sayfaları tanıtım metnine dönüştü; satın alma mağazaya taşındı
+
+**Durum:** Kabul edildi
+**Tarih:** 2026-10-14
+
+### Bağlam
+
+Eklentiler artık **bestsketchupplugins.com** (PluginStation) üzerinden satılıyor.
+ufuksen.com'da ürünlerin ikinci bir kataloğunu tutmak üç sorun üretiyordu:
+
+1. **Yinelenen içerik.** Aynı metin iki alan adında dururken Google ikisini de
+   yinelenen sayar; iki site birden düşer.
+2. **İki yerde fiyat.** Fiyat değiştiğinde biri bayatlıyordu.
+3. **Çatallanan katalog.** Mağazada 22 ürün varken sitede 14 vardı; ikisi
+   birbirini tutmuyordu.
+
+### Karar
+
+**1. Ürün sayfası artık tanıtım yazısıdır.** Teknik döküm yerine satış metni:
+kimliğe/duyguya dokunan başlık → somut kanıt (elle kaç dakika / bu araçla kaç
+saniye, kaç kat) → üç anlatı bölümü → öne çıkanlar → uyumluluk.
+
+**2. En altta gösterişli buton** ziyaretçiyi ürünün mağazadaki kendi sayfasına
+götürür (`bestsketchupplugins.com/{tr|en}/plugins/{slug}/`).
+
+**3. Fiyat ve satın alma ufuksen.com'da YOK.** Güncel sürüm, fiyat ve satın
+alma yalnız mağazada durur; tek kaynak, bayatlama yok.
+
+**4. Katalog mağazadan senkronlanır** (`scripts/content/sync-magaza.mjs`):
+22 ürün, durum ve sürüm dahil. Mağazada olmayan ürün sitede de durmaz.
+
+**5. Metinler mağazadan KOPYALANMAZ.** Olgular (süre, model/test sayısı,
+uyumluluk) mağaza verisinden alınır; anlatım ufuksen.com için ayrıca yazılır.
+Ölçüldü: 220 metin parçasının mağazayla birebir çakışması **sıfır**.
+
+### Yazım kuralları (kullanıcı yönergeleri)
+
+- Önce kimlik/duygu, sonra somut kanıt, sonra avantaj.
+- **Uydurma olgu yok.** Her sayının kaynağı belli: süre/model/test sayıları
+  `plugin-store/data/plugins.json`; eğitmen kanıtı `data/udemy.json`
+  (34 kurs, 7.269 öğrenci, 899 değerlendirme).
+- SEO + semantik: uzun kuyruklu ifadeler başlıkta ve ilk paragrafta, soru
+  biçimli ara başlıklar, ilişkili kavramlar (SketchUp sürümleri, V-Ray/Enscape,
+  CSV/DXF) anılır; anahtar kelime doldurma yok.
+- Önce İngilizce (global öncelik), sonra Türkçe.
+- Blogda ve tanıtımda fiyat yazılmaz.
+
+### Doğrulama
+
+44 mağaza bağlantısının 44'ü 200 döndü — kırık buton yok.
+
+---
+
+## LES-014 — Hazır ZIP araçlarının üçü de bu projede bozuk paket üretti
+
+**Tarih:** 2026-10-14
+
+Yayına çıkarken paketin sağlamlığı kritikti; üç araç da başarısız oldu:
+
+| Araç | Ne oldu |
+|---|---|
+| PowerShell `Compress-Archive` | Arşive **ters bölü** yazdı (`eklenti\sayfa.html`). ZIP düz bölü şart koşar. Ağustos'taki yükleme yalnızca cPanel'in toleransı sayesinde çalışmış. |
+| Windows `bsdtar` | 2392 dosyalık `dist/` üzerinde **segmentation fault**. Dosya listesiyle çağrıldığında Türkçe adları kodlama uyuşmazlığından bulamadı; **sessizce 995 dosya eksik** paket üretti. |
+| Git Bash `tar` (GNU) | Zip üretemiyor. |
+
+**Çözüm:** `scripts/build/zip-lib.mjs` — Node'un `zlib`iyle doğrudan yazılan
+ZIP. Yol ayıracı her zaman `/`, adlar UTF-8 bayraklı, çıktı belirleyici.
+
+**Asıl ders:** paket üretildikten sonra **doğrulanmalı**. Yazıcı artık arşivi
+geri okuyup dosya sayısını ve ters bölü olmadığını denetliyor; uymuyorsa
+derleme durur. Bozuk zip ancak sunucuda açıldıktan sonra fark edilirdi.
+
+---
+
+## LES-015 — Kabuk üzerinden kaçışlı kod yazmak DÖRDÜNCÜ kez sessiz hata üretti
+
+**Tarih:** 2026-10-14
+
+`python -c "... /\b(20\d{2})\b/ ..."` zinciri `\b`yi **geri silme karakterine
+(0x08)** çevirdi. Sonuç: regex hiçbir şeyle eşleşmedi, giriş sayacındaki sürüm
+aralığı sessizce kayboldu. Gözle görünmüyor, `grep`te fark edilmiyor; yalnızca
+çıktının eksikliğinden anlaşıldı.
+
+Bu LES-011, LES-012 ve LES-013'ün aynısı. **Kural artık kesin:**
+
+> Kod dosyalarına kabuk (`python -c`, `node -e`, heredoc) üzerinden
+> **kaçış karakteri içeren** metin yazılmaz. Edit/Write aracı kullanılır;
+> zorunluysa betik önce dosyaya yazılır, sonra çalıştırılır.
+
+Kaçışsız sınır gerekiyorsa `\b` yerine `(?<!\d)` / `(?!\d)` kullanılabilir.
+
+Tarama: `scripts/.../kontrol-karakteri-temizle.mjs` kod dosyalarında satır sonu
+ve sekme dışındaki kontrol karakterlerini bulur.

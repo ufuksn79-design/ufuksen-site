@@ -85,6 +85,15 @@ interface Metinler {
   askBaslik: string;
   askNot: string;
 
+  kanitBaslik: string;
+  kanitElle: string;
+  kanitEklentiyle: string;
+  kanitDakika: string;
+  kanitSaniye: string;
+  magazaCta: (ad: string) => string;
+  magazaNot: string;
+  magazaRozet: string;
+
   kunyeDurum: string;
   kunyeFiyat: string;
   kunyeUyumluluk: string;
@@ -112,7 +121,7 @@ export const METIN: Record<Dil, Metinler> = {
     heroLead:
       "Zemin, pencere, kapı, dolap ve panel işlerini elle çizmek yerine parametreyle üretin. Ölçüler gerçek, sonuç modelin içinde — kopyala-yapıştır değil.",
     heroCta: "Pluginleri gör",
-    istatistik: { arac: "plugin", yayinda: "satışta", surum: "SketchUp sürümü", ozellik: "özellik" },
+    istatistik: { arac: "araç", yayinda: "yayında", surum: "SketchUp sürümü", ozellik: "özellik" },
 
     faydalar: [
       {
@@ -163,6 +172,15 @@ export const METIN: Record<Dil, Metinler> = {
     askNot:
       "Hangi eklentinin işinizi hızlandıracağından emin değilseniz yazın — ne yaptığınızı anlatın, size uygun olanı söyleyeyim.",
 
+    kanitBaslik: "Ne kadar zaman kazandırıyor?",
+    kanitElle: "Elle",
+    kanitEklentiyle: "Bu araçla",
+    kanitDakika: "dakika",
+    kanitSaniye: "saniye",
+    magazaCta: (ad) => ad + " sayfasına git",
+    magazaNot: "Güncel sürüm, fiyat ve satın alma ürünün kendi sayfasında.",
+    magazaRozet: "bestsketchupplugins.com",
+
     kunyeDurum: "Durum",
     kunyeFiyat: "Fiyat",
     kunyeUyumluluk: "Uyumluluk",
@@ -197,7 +215,7 @@ export const METIN: Record<Dil, Metinler> = {
     heroLead:
       "Stop drawing floors, windows, doors, wardrobes and panels by hand — generate them from parameters. Real dimensions, real geometry inside your model.",
     heroCta: "See the plugins",
-    istatistik: { arac: "plugins", yayinda: "on sale", surum: "SketchUp versions", ozellik: "features" },
+    istatistik: { arac: "tools", yayinda: "live", surum: "SketchUp versions", ozellik: "features" },
 
     faydalar: [
       {
@@ -248,6 +266,15 @@ export const METIN: Record<Dil, Metinler> = {
     askNot:
       "Tell me what you build and I'll point you to the plugin that will actually save you time.",
 
+    kanitBaslik: "How much time does it save?",
+    kanitElle: "By hand",
+    kanitEklentiyle: "With this tool",
+    kanitDakika: "minutes",
+    kanitSaniye: "seconds",
+    magazaCta: (ad) => "Go to the " + ad + " page",
+    magazaNot: "Current version, pricing and purchase live on the product's own page.",
+    magazaRozet: "bestsketchupplugins.com",
+
     kunyeDurum: "Status",
     kunyeFiyat: "Price",
     kunyeUyumluluk: "Compatibility",
@@ -297,6 +324,13 @@ export function urunDilde(u: ProductData, dil: Dil) {
     sss: e.sss.length ? e.sss : u.sss,
     // Tutar ve para birimi ortak; yalnızca açıklama metni dile bağlı.
     fiyat: u.fiyat ? { ...u.fiyat, not: e.fiyatNot ?? u.fiyat.not } : u.fiyat,
+    // Satış metni alanları (ADR-024)
+    baslik: e.baslik ?? u.baslik,
+    sunum: e.sunum ?? u.sunum,
+    kanit: e.kanit ?? u.kanit,
+    hikayeler: e.hikayeler.length ? e.hikayeler : u.hikayeler,
+    // Mağaza bağlantısı dile göre: /tr/ ya da /en/
+    magazaUrl: e.magazaUrl ?? u.magazaUrl,
   };
 }
 

@@ -1,28 +1,41 @@
 {
-  "ilerleme": null,
-  "slogan": null,
-  "kapak": null,
-  "galeri": [],
-  "video": null,
-  "listeler": [],
-  "sss": [],
-  "fiyat": {
-    "tutar": 30,
-    "paraBirimi": "USD",
-    "not": "Tek seferlik ödeme, ömür boyu kullanım."
-  },
-  "satinAlmaUrl": "https://ufuksen.gumroad.com/l/SketchUpWindowsFunPlugin",
-  "denemeUrl": null,
-  "iletisimEposta": "ufuksn79@gmail.com",
-  "yayinda": true,
   "slug": "windowfun-studio",
   "ad": "WindowFun Studio",
   "tur": "eklenti",
   "durum": "aktif",
-  "surum": "2.5.0",
-  "sira": 2,
-  "ozet": "Ölçü tabanlı parametrik pencere üreten SketchUp eklentisi; 51 hazır model.",
-  "aciklama": "Tek, eğimli veya bağlı L/U/C plan kenarları seçilerek her kenar uzunluğunda ve girilen yükseklikte pencere dizisi oluşturulur. Seçili hat modunda kasa, kanat, kayıt, cam, conta, kulp ve bevel ölçüleri her segmentin uzunluğuna özel orantılı ölçeklenir.",
+  "ilerleme": null,
+  "surum": "1.1.0",
+  "sira": 12,
+  "yayinda": true,
+  "ozet": "Pencereyi tek tek çizmeden: ölçüyü yaz, pencere de teklif de hazır.",
+  "aciklama": null,
+  "slogan": null,
+  "baslik": "Kutu olarak çizilmiş bir pencere, müşteriye yakından bakmadığınızı söyler.",
+  "sunum": "Cepheler pencereden yargılanır. Boşluğa konmuş düz bir dikdörtgen yer tutucu gibi durur; gerçek kasası, kanadı, çıtası ve kulpuyla bir pencere ise üzerinde düşünülmüş bir bina gibi. Bir pencereyi elle kutulardan çizip sonra fiyatlamak yaklaşık 40 dakika sürer. Bu SketchUp parametrik pencere eklentisi ölçüyü ikisine birden çevirir — pencere ve teklif — yaklaşık 25 saniyede; 6 kategoride 51 modellik katalogdan, çıkışta CSV, DXF ve PDF teklifle birlikte.",
+  "kanit": {
+    "oncekiEtiket": "Bir pencereyi elle kutulardan çizip fiyatlamak",
+    "oncekiDakika": 40,
+    "sonrakiEtiket": "Ölçü girilir, pencere ve teklif çıkar",
+    "sonrakiSaniye": 25
+  },
+  "hikayeler": [
+    {
+      "baslik": "Ölçüyü yazın, pencere kendini kursun",
+      "metin": "Kasa, kanat, kayıt, cam ve donanım girdiğiniz ölçülerden, gerçek profil kalınlığında üretilir. 70 mm'lik profil, pencere ister 400 mm ister 4 metre olsun 70 mm kalır — doğramadan nasıl gelecekse öyle."
+    },
+    {
+      "baslik": "Boşluk akşam altıda değişti. Akşamınız gitti mi?",
+      "metin": "Hayır. Sayıyı değiştirirsiniz, pencere yerinde yeniden kurulur, katalog seçimi de durur. Revizyon, günün sonunda telefonun çalmasından korkma sebebi olmaktan çıkar."
+    },
+    {
+      "baslik": "Teklif, model bittiğinde hazır",
+      "metin": "Profil boyları, cam alanı ve donanım adetleri baktığınız geometriden gelir; verdiğiniz fiyat modelin desteklediği fiyattır. SketchUp 2024, 2025 ve 2026 ile çalışır."
+    }
+  ],
+  "magazaUrl": "https://www.bestsketchupplugins.com/tr/plugins/windowfun-studio/",
+  "kapak": null,
+  "galeri": [],
+  "video": null,
   "uyumluluk": [
     "SketchUp 2024",
     "SketchUp 2025",
@@ -30,45 +43,65 @@
   ],
   "ozellikler": [
     {
-      "baslik": "51 hazır model",
-      "not": "1–4 bölmeli, sürmeli ve Fransız pencere başlıkları altında sınıflandırılmış katalog.",
-      "ikon": "grid"
+      "baslik": "51 model, 6 kategori",
+      "not": "",
+      "ikon": "kutu"
     },
     {
-      "baslik": "Hat boyunca dizi",
-      "not": "Seçilen plan kenarları boyunca pencereler otomatik dizilir.",
-      "ikon": "ruler"
+      "baslik": "CSV + DXF + PDF teklif",
+      "not": "",
+      "ikon": "kutu"
     },
     {
-      "baslik": "Orantılı ölçekleme",
-      "not": "Kasa, kanat, cam ve kulp ölçüleri segment uzunluğuna göre uyarlanır.",
-      "ikon": "sliders"
-    },
-    {
-      "baslik": "Arama ve kategori",
-      "not": "Katalog sekmeler ve aramayla taranır; seçilen model adı ayarlarda saklanır.",
-      "ikon": "goz"
-    },
-    {
-      "baslik": "Maliyet ve teknik rapor",
-      "not": "Seçilen katalog adı maliyet ve teknik raporlara aktarılır.",
-      "ikon": "onay"
+      "baslik": "SketchUp 2024-2026",
+      "not": "",
+      "ikon": "kutu"
     }
   ],
+  "listeler": [],
   "vurgular": [
-    "51 hazır model",
-    "Çevrimdışı çalışır",
-    "Maliyet raporu"
+    "51 model, 6 kategori",
+    "CSV + DXF + PDF teklif",
+    "SketchUp 2024-2026"
   ],
+  "sss": [],
+  "fiyat": null,
+  "satinAlmaUrl": null,
+  "denemeUrl": null,
+  "iletisimEposta": "ufuksn79@gmail.com",
   "yazilim": [
     "sketchup"
   ],
-  "icNot": "Kaynak: Yeni proje/README.md ve dist/windowfun_studio-1.1.0.rbz | Gumroad: SketchUp Windows Fun Plugin, 30 USD (2026-09-09). Sürüm paketlenmiş .rbz'den doğrulandı.",
+  "icNot": "Mağazadan senkronlandı (plugin-store/data/plugins.json, 2026-10-14). Metinleri burada elle değiştirmeyin — mağazada değiştirip senkronu tekrar çalıştırın.",
   "en": {
     "ad": "WindowFun Studio",
-    "ozet": "Dimension-driven parametric windows for SketchUp, with 51 ready-made models.",
-    "aciklama": "Select a single, sloped or connected L/U/C plan edge and windows are generated along its full length at the height you enter. Only the window width follows the edge — frame, sash, rail, handle and other profile sections keep the real dimensions you typed, exactly as in real joinery where a 70 mm profile stays 70 mm whether the window is 400 mm or 4000 mm wide.",
+    "ozet": "Don't draw windows one by one: type the size, get window and quote.",
+    "aciklama": null,
     "slogan": null,
+    "fiyatNot": null,
+    "baslik": "A window drawn as a box tells the client you did not look closely.",
+    "sunum": "Facades are judged on windows. A flat rectangle in the opening reads as a placeholder; a window with a real frame, sash, bead and handle reads as a building somebody thought about. Boxing one window by hand and then pricing it takes around 40 minutes. This parametric window plugin for SketchUp turns dimensions into both at once — window and quote — in about 25 seconds, from a catalogue of 51 models across 6 categories, with CSV, DXF and PDF quotes on the way out.",
+    "kanit": {
+      "oncekiEtiket": "Boxing out one window by hand, then pricing it",
+      "oncekiDakika": 40,
+      "sonrakiEtiket": "Dimensions in, window and quote out",
+      "sonrakiSaniye": 25
+    },
+    "hikayeler": [
+      {
+        "baslik": "Type the dimension, let the window build itself",
+        "metin": "Frame, sash, mullion, glazing and hardware are generated from the sizes you enter, at their real profile thickness. A 70 mm profile stays 70 mm whether the window is 400 mm or 4 metres wide — exactly as it would arrive from the joinery."
+      },
+      {
+        "baslik": "The opening changed at 6pm. Does that cost you the evening?",
+        "metin": "No. Change the number and the window rebuilds in place, catalogue choice intact. Revisions stop being a reason to dread the phone ringing late in the day."
+      },
+      {
+        "baslik": "The quote is ready when the model is",
+        "metin": "Profile lengths, glass area and hardware counts come from the same geometry you are looking at, so the price you give is the price the model supports. Works on SketchUp 2024, 2025 and 2026."
+      }
+    ],
+    "magazaUrl": "https://www.bestsketchupplugins.com/en/plugins/windowfun-studio/",
     "uyumluluk": [
       "SketchUp 2024",
       "SketchUp 2025",
@@ -76,38 +109,27 @@
     ],
     "ozellikler": [
       {
-        "baslik": "51 ready-made models",
-        "not": "Catalogued under 1–4 pane, sliding and French window families.",
-        "ikon": "grid"
+        "baslik": "51 models, 6 categories",
+        "not": "",
+        "ikon": "kutu"
       },
       {
-        "baslik": "Windows along a path",
-        "not": "Windows are placed automatically along the plan edges you select.",
-        "ikon": "ruler"
+        "baslik": "CSV + DXF + PDF quote",
+        "not": "",
+        "ikon": "kutu"
       },
       {
-        "baslik": "Real profile sections",
-        "not": "Profiles keep their true size; only the opening adapts to the edge.",
-        "ikon": "sliders"
-      },
-      {
-        "baslik": "Search and categories",
-        "not": "Browse the catalogue by tabs or search; the chosen model is stored in the settings.",
-        "ikon": "goz"
-      },
-      {
-        "baslik": "Cost and technical report",
-        "not": "The selected catalogue name flows through to cost and technical reports.",
-        "ikon": "onay"
+        "baslik": "SketchUp 2024-2026",
+        "not": "",
+        "ikon": "kutu"
       }
     ],
     "listeler": [],
     "vurgular": [
-      "51 ready models",
-      "Works offline",
-      "Cost reporting"
+      "51 models, 6 categories",
+      "CSV + DXF + PDF quote",
+      "SketchUp 2024-2026"
     ],
-    "sss": [],
-    "fiyatNot": "One-time payment, lifetime use."
+    "sss": []
   }
 }

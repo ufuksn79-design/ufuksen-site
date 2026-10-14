@@ -1,0 +1,143 @@
+{
+  "slug": "roadflow",
+  "ad": "RoadFlow",
+  "tur": "eklenti",
+  "durum": "aktif",
+  "ilerleme": null,
+  "surum": "1.16.0",
+  "sira": 11,
+  "yayinda": true,
+  "ozet": "Koridoru elle oturtmadan: güzergâhı tıkla; yol, arazi ve metraj hazır.",
+  "aciklama": null,
+  "slogan": null,
+  "baslik": "Yol hiçbir zaman tasarım değildir. Tasarımdan önceki haftayı yiyen şeydir.",
+  "sunum": "İşi binalar için aldınız. Sonra arsa 400 metrelik bir ulaşım yoluyla, uslanmayan bir eğimle ve cumaya kadar bunu arazide görmek isteyen bir müşteriyle geldi. Bir koridoru elle modelleyip araziye oturtmak yaklaşık 240 dakika. Bu SketchUp parametrik yol eklentisiyle güzergâhı tıklar, kesiti girer, Uygula'ya basarsınız: 90 saniye. Test setinde elle modellemeye göre 13-35 kat hızlı üretim ölçüldü ve her sürümde 408 otomatik test yeşil koşuyor.",
+  "kanit": {
+    "oncekiEtiket": "Koridoru elle modelleyip araziye oturtmak",
+    "oncekiDakika": 240,
+    "sonrakiEtiket": "Güzergâhı tıkla, kesiti gir, Uygula'ya bas",
+    "sonrakiSaniye": 90
+  },
+  "hikayeler": [
+    {
+      "baslik": "Tek eksen, koca bir koridor",
+      "metin": "Güzergâhı çizersiniz; kaplama, bordür, banket ve şevler onu takip eder — dever, yarma ve dolgu dahil. Yedi hazır yol tipi alışılmış durumları karşılar, yani yol çizmek yerine yol ayarlarsınız."
+    },
+    {
+      "baslik": "Güzergâh değişirse ne olur?",
+      "metin": "Değiştirirsiniz. Koridor baştan çizilmek yerine yeni hat boyunca kendini yeniden kurar. Bir revizyonun size on dakikaya mı yoksa bir akşama mı mal olacağı farkı budur."
+    },
+    {
+      "baslik": "Saymak zorunda kalmadığınız metraj",
+      "metin": "Asfalt alanı, bordür uzunluğu ve hafriyat hacimleri zaten ekranda duran modelden çıkar. Kesitleri tabloya aktarıp elle toplayan kimse olmaz."
+    }
+  ],
+  "magazaUrl": "https://www.bestsketchupplugins.com/tr/plugins/roadflow/",
+  "kapak": null,
+  "galeri": [],
+  "video": null,
+  "uyumluluk": [
+    "SketchUp 2021",
+    "SketchUp 2022",
+    "SketchUp 2023",
+    "SketchUp 2024",
+    "SketchUp 2025",
+    "SketchUp 2026",
+    "Windows"
+  ],
+  "ozellikler": [
+    {
+      "baslik": "408 test yeşil",
+      "not": "",
+      "ikon": "grid"
+    },
+    {
+      "baslik": "13-35x hızlı üretim",
+      "not": "",
+      "ikon": "grid"
+    },
+    {
+      "baslik": "7 hazır yol tipi",
+      "not": "",
+      "ikon": "grid"
+    }
+  ],
+  "listeler": [],
+  "vurgular": [
+    "408 test yeşil",
+    "13-35x hızlı üretim",
+    "7 hazır yol tipi"
+  ],
+  "sss": [],
+  "fiyat": null,
+  "satinAlmaUrl": null,
+  "denemeUrl": null,
+  "iletisimEposta": "ufuksn79@gmail.com",
+  "yazilim": [
+    "sketchup"
+  ],
+  "icNot": "Mağazadan senkronlandı (plugin-store/data/plugins.json, 2026-10-14). Metinleri burada elle değiştirmeyin — mağazada değiştirip senkronu tekrar çalıştırın.",
+  "en": {
+    "ad": "RoadFlow",
+    "ozet": "Click a route; road, terrain fit and quantities follow, no hand-fitting.",
+    "aciklama": null,
+    "slogan": null,
+    "fiyatNot": null,
+    "baslik": "The road is never the design. It is the thing that eats the week before the design.",
+    "sunum": "You took the job for the buildings. Then the site came with a 400-metre access road, a slope that will not behave, and a client who wants to see it on the terrain by Friday. Modelling one corridor by hand and cutting it into the terrain runs about 240 minutes. With this parametric road plugin for SketchUp you click the route, set the cross-section and press Apply: 90 seconds. Across the test suite it builds 13 to 35 times faster than hand modelling, and 408 automated tests run green on every release.",
+    "kanit": {
+      "oncekiEtiket": "Hand-modelling one corridor and cutting it into the terrain",
+      "oncekiDakika": 240,
+      "sonrakiEtiket": "Click the route, set the section, press Apply",
+      "sonrakiSaniye": 90
+    },
+    "hikayeler": [
+      {
+        "baslik": "One centreline, a whole corridor",
+        "metin": "Draw the alignment and the carriageway, kerbs, shoulders and batters follow it — superelevation, cut and fill included. Seven ready road types cover the usual cases, so you are configuring a road rather than drafting one."
+      },
+      {
+        "baslik": "What happens when the alignment moves?",
+        "metin": "You move it. The corridor rebuilds along the new line instead of being redrawn from scratch. That is the difference between a revision costing you ten minutes and costing you an evening."
+      },
+      {
+        "baslik": "Quantities you did not have to count",
+        "metin": "Asphalt area, kerb length and earthwork volumes come out of the model that is already on screen. Nobody is exporting sections into a spreadsheet to add them up by hand."
+      }
+    ],
+    "magazaUrl": "https://www.bestsketchupplugins.com/en/plugins/roadflow/",
+    "uyumluluk": [
+      "SketchUp 2021",
+      "SketchUp 2022",
+      "SketchUp 2023",
+      "SketchUp 2024",
+      "SketchUp 2025",
+      "SketchUp 2026",
+      "Windows"
+    ],
+    "ozellikler": [
+      {
+        "baslik": "408 tests green",
+        "not": "",
+        "ikon": "grid"
+      },
+      {
+        "baslik": "13-35x faster builds",
+        "not": "",
+        "ikon": "grid"
+      },
+      {
+        "baslik": "7 road presets",
+        "not": "",
+        "ikon": "grid"
+      }
+    ],
+    "listeler": [],
+    "vurgular": [
+      "408 tests green",
+      "13-35x faster builds",
+      "7 road presets"
+    ],
+    "sss": []
+  }
+}

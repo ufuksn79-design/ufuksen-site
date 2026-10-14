@@ -1,0 +1,143 @@
+{
+  "slug": "kompozit-studio",
+  "ad": "Kompozit Studio",
+  "tur": "eklenti",
+  "durum": "beta",
+  "ilerleme": null,
+  "surum": "1.3.1",
+  "sira": 15,
+  "yayinda": true,
+  "ozet": "Panel panel çizmeden: cepheyi seç, ACM sistemi metrajıyla gelsin.",
+  "aciklama": null,
+  "slogan": null,
+  "baslik": "Cephe, müşterinin aklında kalan çizimdir. Aynı zamanda haftanızı yiyen çizim.",
+  "sunum": "Kompozit cephe, döşemeye başlayana kadar basit görünür: her panel 1250×2500 mm ızgarada, her boşluk etrafından kesilmiş, her parça sipariş için sayılmış. Cepheyi panel panel modelleyip metrajı tabloda saymak yaklaşık 150 dakika sürer. Kompozit Studio bunu yaklaşık 45 saniyede yapar — yüzeyleri seçin, oluştur'a basın — ve m² ile adet CSV metrajını da birlikte yazar. SketchUp 2021-2026.",
+  "kanit": {
+    "oncekiEtiket": "Cepheyi panel panel modelleyip metrajı tabloda saymak",
+    "oncekiDakika": 150,
+    "sonrakiEtiket": "Yüzeyleri seçip oluştur'a basmak",
+    "sonrakiSaniye": 45
+  },
+  "hikayeler": [
+    {
+      "baslik": "Bir kez seçin, cephe yerine otursun",
+      "metin": "Panel ızgarası seçtiğiniz yüzeyler boyunca üretilir; tedarikçinin gerçekten teslim ettiği levha ölçüsüne hizalı olarak, satın alınamayacak dekoratif bir desene göre değil."
+    },
+    {
+      "baslik": "Revizyon cepheyi baştan çizdirir mi?",
+      "metin": "Hayır. Yüzeyi değiştirirsiniz, panel bölüntüsü onu takip eder. Cephe, sunuma iki gün kala kimsenin dokunmak istemediği kısım olmaktan çıkar."
+    },
+    {
+      "baslik": "Sipariş rakamı modelden gelir",
+      "metin": "Metrekare ve adetler, az önce ürettiğiniz geometriden doğrudan CSV olarak çıkar; sipariş ettiğiniz şey çizilen şeyle örtüşür."
+    }
+  ],
+  "magazaUrl": "https://www.bestsketchupplugins.com/tr/plugins/kompozit-studio/",
+  "kapak": null,
+  "galeri": [],
+  "video": null,
+  "uyumluluk": [
+    "SketchUp 2021",
+    "SketchUp 2022",
+    "SketchUp 2023",
+    "SketchUp 2024",
+    "SketchUp 2025",
+    "SketchUp 2026",
+    "Windows"
+  ],
+  "ozellikler": [
+    {
+      "baslik": "1250×2500 mm panel ızgarası",
+      "not": "",
+      "ikon": "grid"
+    },
+    {
+      "baslik": "m² + adet CSV metrajı",
+      "not": "",
+      "ikon": "grid"
+    },
+    {
+      "baslik": "SketchUp 2021–2026",
+      "not": "",
+      "ikon": "grid"
+    }
+  ],
+  "listeler": [],
+  "vurgular": [
+    "1250×2500 mm panel ızgarası",
+    "m² + adet CSV metrajı",
+    "SketchUp 2021–2026"
+  ],
+  "sss": [],
+  "fiyat": null,
+  "satinAlmaUrl": null,
+  "denemeUrl": null,
+  "iletisimEposta": "ufuksn79@gmail.com",
+  "yazilim": [
+    "sketchup"
+  ],
+  "icNot": "Mağazadan senkronlandı (plugin-store/data/plugins.json, 2026-10-14). Metinleri burada elle değiştirmeyin — mağazada değiştirip senkronu tekrar çalıştırın.",
+  "en": {
+    "ad": "Kompozit Studio",
+    "ozet": "No panel-by-panel work: click the facade, get the ACM system, counted.",
+    "aciklama": null,
+    "slogan": null,
+    "fiyatNot": null,
+    "baslik": "The facade is the drawing the client remembers. It is also the one that eats your week.",
+    "sunum": "Composite cladding looks simple until you start laying it: every panel on a 1250×2500 mm grid, every opening cut around, every piece counted for the order. Modelling a facade panel by panel and then counting the take-off in a spreadsheet runs about 150 minutes. Kompozit Studio does it in roughly 45 seconds — select the faces, press build — and writes the m² and piece-count CSV with it. SketchUp 2021 through 2026.",
+    "kanit": {
+      "oncekiEtiket": "Modelling the facade panel by panel, then counting it in a spreadsheet",
+      "oncekiDakika": 150,
+      "sonrakiEtiket": "Selecting the faces and clicking build",
+      "sonrakiSaniye": 45
+    },
+    "hikayeler": [
+      {
+        "baslik": "Select once, let the facade land",
+        "metin": "The panel grid is generated across the surfaces you picked, aligned to the sheet size the supplier actually delivers rather than a decorative pattern that cannot be bought."
+      },
+      {
+        "baslik": "Does a revision mean redrawing the elevation?",
+        "metin": "No. Change the surface and the panelisation follows it. The facade stops being the part of the model nobody wants to touch two days before the presentation."
+      },
+      {
+        "baslik": "The order figure comes from the model",
+        "metin": "Square metres and piece counts are exported as CSV straight from the geometry you just generated, so what you order matches what is drawn."
+      }
+    ],
+    "magazaUrl": "https://www.bestsketchupplugins.com/en/plugins/kompozit-studio/",
+    "uyumluluk": [
+      "SketchUp 2021",
+      "SketchUp 2022",
+      "SketchUp 2023",
+      "SketchUp 2024",
+      "SketchUp 2025",
+      "SketchUp 2026",
+      "Windows"
+    ],
+    "ozellikler": [
+      {
+        "baslik": "1250×2500 mm panel grid",
+        "not": "",
+        "ikon": "grid"
+      },
+      {
+        "baslik": "m² + piece CSV take-off",
+        "not": "",
+        "ikon": "grid"
+      },
+      {
+        "baslik": "SketchUp 2021–2026",
+        "not": "",
+        "ikon": "grid"
+      }
+    ],
+    "listeler": [],
+    "vurgular": [
+      "1250×2500 mm panel grid",
+      "m² + piece CSV take-off",
+      "SketchUp 2021–2026"
+    ],
+    "sss": []
+  }
+}

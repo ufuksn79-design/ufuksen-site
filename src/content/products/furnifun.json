@@ -1,0 +1,143 @@
+{
+  "slug": "furnifun",
+  "ad": "FurniFun",
+  "tur": "eklenti",
+  "durum": "aktif",
+  "ilerleme": null,
+  "surum": "1.14.0",
+  "sira": 7,
+  "yayinda": true,
+  "ozet": "Boş oda yok: iki tıkla gerçek mobilya; mavi topu çekin, uzasın.",
+  "aciklama": null,
+  "slogan": null,
+  "baslik": "Boş oda satmaz. Döşenmiş oda satar.",
+  "sunum": "Müşteri plan okuyamaz ama oturma odası okur. Sorun şu ki odayı dürüstçe döşemek ya kanepeyi, TV ünitesini ve kitaplığı kendiniz modellemek ya da ölçeği tutmayan ve arkasında yarım milyon poligon sürükleyen modelleri indirmek demektir — her iki yol da yaklaşık 60 dakika. FurniFun bir parçayı iki tıkla yerleştirir ve mavi topu çekerek istediğiniz ölçüye getirmenizi sağlar: yaklaşık 60 saniye, 18 mobilya türü, SketchUp 2021-2026.",
+  "kanit": {
+    "oncekiEtiket": "Kanepeyi, TV ünitesini ve kitaplığı elle modellemek ya da indirilen modelleri arayıp temizlemek",
+    "oncekiDakika": 60,
+    "sonrakiEtiket": "Her mobilya için iki tık, sonra mavi topu istediğiniz ölçüye çekmek",
+    "sonrakiSaniye": 60
+  },
+  "hikayeler": [
+    {
+      "baslik": "İki tık ve yerinde",
+      "metin": "Türü seçin, nereye gideceğine tıklayın. İçe aktarma yok; indirilen bir bileşeni inç cinsinden modellenmiş olduğunu anlamak için patlatmak da yok."
+    },
+    {
+      "baslik": "Oda küçülünce ne oluyor?",
+      "metin": "Mavi topu çekersiniz. Parça bir mobilya gibi yeniden ölçeklenir; karikatüre dönüşecek şekilde esnemez — ki indirilen bir bloğu ölçeklediğinizde olan tam da budur."
+    },
+    {
+      "baslik": "Müşteriye seçenek, size ek iş yok",
+      "metin": "Üç farklı yerleşim göstermek 'hayır' deme sebebi olmaktan çıkar. İkinci seçeneğin maliyeti birkaç tıka iner ve konuşma 'yapabilir misiniz'den 'hangisi' olsuna kayar."
+    }
+  ],
+  "magazaUrl": "https://www.bestsketchupplugins.com/tr/plugins/furnifun/",
+  "kapak": null,
+  "galeri": [],
+  "video": null,
+  "uyumluluk": [
+    "SketchUp 2021",
+    "SketchUp 2022",
+    "SketchUp 2023",
+    "SketchUp 2024",
+    "SketchUp 2025",
+    "SketchUp 2026",
+    "Windows"
+  ],
+  "ozellikler": [
+    {
+      "baslik": "18 mobilya türü",
+      "not": "",
+      "ikon": "grid"
+    },
+    {
+      "baslik": "İki tık + mavi top",
+      "not": "",
+      "ikon": "grid"
+    },
+    {
+      "baslik": "SketchUp 2021–2026",
+      "not": "",
+      "ikon": "grid"
+    }
+  ],
+  "listeler": [],
+  "vurgular": [
+    "18 mobilya türü",
+    "İki tık + mavi top",
+    "SketchUp 2021–2026"
+  ],
+  "sss": [],
+  "fiyat": null,
+  "satinAlmaUrl": null,
+  "denemeUrl": null,
+  "iletisimEposta": "ufuksn79@gmail.com",
+  "yazilim": [
+    "sketchup"
+  ],
+  "icNot": "Mağazadan senkronlandı (plugin-store/data/plugins.json, 2026-10-14). Metinleri burada elle değiştirmeyin — mağazada değiştirip senkronu tekrar çalıştırın.",
+  "en": {
+    "ad": "FurniFun",
+    "ozet": "No empty boxes: two clicks, real furniture; pull the ball, it grows.",
+    "aciklama": null,
+    "slogan": null,
+    "fiyatNot": null,
+    "baslik": "An empty room does not sell. A furnished one does.",
+    "sunum": "The client cannot read a plan, but they can read a living room. The problem is that furnishing one honestly means either modelling a sofa, a TV unit and a bookcase yourself, or downloading models that arrive at the wrong scale and drag half a million polygons behind them — about 60 minutes either way. FurniFun places a piece in two clicks and lets you drag the blue handle to the size you need: around 60 seconds, from 18 furniture types, on SketchUp 2021 through 2026.",
+    "kanit": {
+      "oncekiEtiket": "Modelling a sofa, a TV unit and a bookcase by hand, or hunting and cleaning up downloaded models",
+      "oncekiDakika": 60,
+      "sonrakiEtiket": "Two clicks per piece, then pulling the blue ball to the size you need",
+      "sonrakiSaniye": 60
+    },
+    "hikayeler": [
+      {
+        "baslik": "Two clicks and it is in place",
+        "metin": "Pick the type, click where it goes. No importing, no exploding a downloaded component to find out it was modelled in inches."
+      },
+      {
+        "baslik": "What happens when the room gets smaller?",
+        "metin": "You pull the blue handle. The piece resizes as furniture, keeping its proportions sensible rather than stretching into a cartoon — which is exactly what scaling a downloaded block does to it."
+      },
+      {
+        "baslik": "Options for the client, no extra work for you",
+        "metin": "Showing three layouts stops being a reason to say no. The cost of a second option drops to a couple of clicks, and the conversation moves from 'can you?' to 'which one?'."
+      }
+    ],
+    "magazaUrl": "https://www.bestsketchupplugins.com/en/plugins/furnifun/",
+    "uyumluluk": [
+      "SketchUp 2021",
+      "SketchUp 2022",
+      "SketchUp 2023",
+      "SketchUp 2024",
+      "SketchUp 2025",
+      "SketchUp 2026",
+      "Windows"
+    ],
+    "ozellikler": [
+      {
+        "baslik": "18 furniture types",
+        "not": "",
+        "ikon": "grid"
+      },
+      {
+        "baslik": "Two clicks + blue ball",
+        "not": "",
+        "ikon": "grid"
+      },
+      {
+        "baslik": "SketchUp 2021–2026",
+        "not": "",
+        "ikon": "grid"
+      }
+    ],
+    "listeler": [],
+    "vurgular": [
+      "18 furniture types",
+      "Two clicks + blue ball",
+      "SketchUp 2021–2026"
+    ],
+    "sss": []
+  }
+}

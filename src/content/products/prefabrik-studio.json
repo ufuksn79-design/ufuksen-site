@@ -1,0 +1,135 @@
+{
+  "slug": "prefabrik-studio",
+  "ad": "Prefabrik Stüdyo",
+  "tur": "eklenti",
+  "durum": "alfa",
+  "ilerleme": null,
+  "surum": "0.1.0",
+  "sira": 22,
+  "yayinda": true,
+  "ozet": "Çeliği elle saymadan: kaydırıcıyı çek, yapı da metraj da güncellensin.",
+  "aciklama": null,
+  "slogan": null,
+  "baslik": "Müşteri, ortada bina yokken fiyat sorar.",
+  "sunum": "Prefabrik çelik iş bir rakam üzerinden satılır ve o rakam henüz kimsenin çizmediği bir karkasa bağlıdır. Açıklık her değiştiğinde karkası yeniden kurup metrajı baştan saymak yaklaşık 90 dakika sürer. Prefabrik Stüdyo genişliği çekmenize ve metrajın peşinden gelmesine izin verir — yaklaşık 20 saniye. 3,6-15 m x 4,8-24 m açıklıklar, otomatik seçilen 3 makas tipi, canlı çelik kg ve panel m². Masaüstü tarayıcıda çalışır, SketchUp içinde değil; GLB olarak dışa aktarır.",
+  "kanit": {
+    "oncekiEtiket": "Karkası yeniden kurup metrajı baştan saymak",
+    "oncekiDakika": 90,
+    "sonrakiEtiket": "Genişliği çek; metraj peşinden gelsin",
+    "sonrakiSaniye": 20
+  },
+  "hikayeler": [
+    {
+      "baslik": "Üç kaydırıcı, hazır bir bina",
+      "metin": "Genişlik, uzunluk ve yükseklik arayüzün tamamı. Beliren şey bir karkastır, eskiz değil — yani fiyatladığınız şey gerçekten imal edilebilecek bir şeydir."
+    },
+    {
+      "baslik": "Hangi makas olmalı?",
+      "metin": "Açıklık karar verir. Makas tipi alışkanlıktan değil geometriden otomatik seçilir; hızlı bir etüdün sessizce yapılamaz bir şeye dönüşmesini engelleyen de budur."
+    },
+    {
+      "baslik": "Hiç bayatlamayan metraj",
+      "metin": "Çelik ağırlığı ve panel alanı siz çekerken güncellenir; ekrandaki rakam her zaman ekrandaki binaya aittir — gönderdiğiniz teklif gösterdiğiniz şeyle örtüşür."
+    }
+  ],
+  "magazaUrl": "https://www.bestsketchupplugins.com/tr/plugins/prefabrik-studio/",
+  "kapak": null,
+  "galeri": [],
+  "video": null,
+  "uyumluluk": [
+    "Masaüstü tarayıcı - tercihen WebGPU, yoksa kendiliğinden WebGL (görünüm penceresinde rozetle belirtilir)",
+    "0.1.0'da tek dışa aktarım biçimi GLB (ikili glTF)",
+    "SketchUp eklentisi değil - projede ne Ruby var ne de .skp kodu"
+  ],
+  "ozellikler": [
+    {
+      "baslik": "3,6-15 m x 4,8-24 m",
+      "not": "",
+      "ikon": "grid"
+    },
+    {
+      "baslik": "3 makas tipi, otomatik seçim",
+      "not": "",
+      "ikon": "grid"
+    },
+    {
+      "baslik": "Canlı çelik kg + panel m²",
+      "not": "",
+      "ikon": "grid"
+    }
+  ],
+  "listeler": [],
+  "vurgular": [
+    "3,6-15 m x 4,8-24 m",
+    "3 makas tipi, otomatik seçim",
+    "Canlı çelik kg + panel m²"
+  ],
+  "sss": [],
+  "fiyat": null,
+  "satinAlmaUrl": null,
+  "denemeUrl": null,
+  "iletisimEposta": "ufuksn79@gmail.com",
+  "yazilim": [
+    "sketchup"
+  ],
+  "icNot": "Mağazadan senkronlandı (plugin-store/data/plugins.json, 2026-10-14). Metinleri burada elle değiştirmeyin — mağazada değiştirip senkronu tekrar çalıştırın.",
+  "en": {
+    "ad": "Prefab Studio",
+    "ozet": "No hand-counted steel: drag a slider, the prefab and takeoff update.",
+    "aciklama": null,
+    "slogan": null,
+    "fiyatNot": null,
+    "baslik": "The client asks for a price before you have a building.",
+    "sunum": "Prefabricated steel work is sold on a number, and the number depends on a frame nobody has drawn yet. Rebuilding the frame and recounting the take-off each time the span changes runs about 90 minutes. Prefab Studio lets you drag the width and watch the quantities follow — roughly 20 seconds. Spans from 3.6 to 15 m by 4.8 to 24 m, 3 truss types chosen automatically, live steel kg and panel m². It runs in a desktop browser, not inside SketchUp, and exports GLB.",
+    "kanit": {
+      "oncekiEtiket": "Re-modelling the frame, then recounting the takeoff",
+      "oncekiDakika": 90,
+      "sonrakiEtiket": "Drag the width slider; the takeoff follows",
+      "sonrakiSaniye": 20
+    },
+    "hikayeler": [
+      {
+        "baslik": "Three sliders, a ready building",
+        "metin": "Width, length and height are the whole interface. The frame that appears is a frame, not a sketch — so what you are pricing is something that could actually be fabricated."
+      },
+      {
+        "baslik": "Which truss should it be?",
+        "metin": "The span decides. The truss type is selected automatically from the geometry rather than from habit, which is what keeps a quick study from quietly becoming an unbuildable one."
+      },
+      {
+        "baslik": "Quantities that are never stale",
+        "metin": "Steel weight and panel area update as you drag, so the figure on screen always belongs to the building on screen — and the quote you send matches what you showed."
+      }
+    ],
+    "magazaUrl": "https://www.bestsketchupplugins.com/en/plugins/prefabrik-studio/",
+    "uyumluluk": [
+      "Desktop browser - WebGPU preferred, automatic WebGL fallback shown as a viewport badge",
+      "GLB (glTF binary) is the only export in 0.1.0",
+      "Not a SketchUp plugin - the project contains no Ruby and no .skp code"
+    ],
+    "ozellikler": [
+      {
+        "baslik": "3.6-15 m x 4.8-24 m",
+        "not": "",
+        "ikon": "grid"
+      },
+      {
+        "baslik": "3 truss types, auto-picked",
+        "not": "",
+        "ikon": "grid"
+      },
+      {
+        "baslik": "Live steel kg + panel m²",
+        "not": "",
+        "ikon": "grid"
+      }
+    ],
+    "listeler": [],
+    "vurgular": [
+      "3.6-15 m x 4.8-24 m",
+      "3 truss types, auto-picked",
+      "Live steel kg + panel m²"
+    ],
+    "sss": []
+  }
+}

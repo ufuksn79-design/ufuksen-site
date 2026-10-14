@@ -1,0 +1,143 @@
+{
+  "slug": "ramp-studio",
+  "ad": "Rampa Stüdyosu",
+  "tur": "eklenti",
+  "durum": "beta",
+  "ilerleme": null,
+  "surum": "1.0.0",
+  "sira": 17,
+  "yayinda": true,
+  "ozet": "Eğim hesabı yok: çizgiyi çiz, korkuluklu ve eğimi kontrollü rampa hazır.",
+  "aciklama": null,
+  "slogan": null,
+  "baslik": "Rampa hiçbir zaman eskizde olmaz. Her zaman denetlemede olur.",
+  "sunum": "Kimse binayı rampasının etrafında tasarlamaz, kimse de rampasız onaylamaz. Bu yüzden rampa genelde geç gelir, aceleyle çizilir ve korkuluğu eğimi tam takip etmez. Korkuluklu bir rampayı elle modellemek yaklaşık 45 dakika sürer. Rampa Stüdyosu bunu yaklaşık 40 saniyede kurar; 5 kategoride 50 hazır ayar, 8 korkuluk tipi ve 363 otomatik test yeşil, SketchUp 2021-2026.",
+  "kanit": {
+    "oncekiEtiket": "Korkuluklu bir rampayı elle modellemek",
+    "oncekiDakika": 45,
+    "sonrakiEtiket": "Hazır ayarı seç, iki kez tıkla",
+    "sonrakiSaniye": 40
+  },
+  "hikayeler": [
+    {
+      "baslik": "Eğri hangisi olursa olsun",
+      "metin": "Düz kollar, dönüşlü rampalar ve helis rampalar aynı araçtan çıkar; sahanlıklar ve korkuluklar geometriyi takip eder, sonradan göz kararı oturtulmaz."
+    },
+    {
+      "baslik": "Rampayı değiştirmeyi kimse neden istemez?",
+      "metin": "Çünkü elle yapınca korkuluğu da yeniden çizmek demektir. Burada eğim, genişlik ya da sahanlık değişir ve bütün takım yeniden kurulur; geç gelen bir düzeltme bir öğleden sonraya değil bir dakikaya mal olur."
+    },
+    {
+      "baslik": "Hesap yapmadan kurala uygun",
+      "metin": "Hazır ayarlar makul eğim ve sahanlık ilişkilerini taşır; rampa hesaplamak yerine rampa seçersiniz — ve ortaya içiniz rahat gösterebileceğiniz bir şey çıkar."
+    }
+  ],
+  "magazaUrl": "https://www.bestsketchupplugins.com/tr/plugins/ramp-studio/",
+  "kapak": null,
+  "galeri": [],
+  "video": null,
+  "uyumluluk": [
+    "SketchUp 2021",
+    "SketchUp 2022",
+    "SketchUp 2023",
+    "SketchUp 2024",
+    "SketchUp 2025",
+    "SketchUp 2026",
+    "Windows"
+  ],
+  "ozellikler": [
+    {
+      "baslik": "50 hazır ayar, 5 kategori",
+      "not": "",
+      "ikon": "grid"
+    },
+    {
+      "baslik": "8 korkuluk tipi",
+      "not": "",
+      "ikon": "grid"
+    },
+    {
+      "baslik": "363 test, SU 2021-2026",
+      "not": "",
+      "ikon": "grid"
+    }
+  ],
+  "listeler": [],
+  "vurgular": [
+    "50 hazır ayar, 5 kategori",
+    "8 korkuluk tipi",
+    "363 test, SU 2021-2026"
+  ],
+  "sss": [],
+  "fiyat": null,
+  "satinAlmaUrl": null,
+  "denemeUrl": null,
+  "iletisimEposta": "ufuksn79@gmail.com",
+  "yazilim": [
+    "sketchup"
+  ],
+  "icNot": "Mağazadan senkronlandı (plugin-store/data/plugins.json, 2026-10-14). Metinleri burada elle değiştirmeyin — mağazada değiştirip senkronu tekrar çalıştırın.",
+  "en": {
+    "ad": "Ramp Studio",
+    "ozet": "No slope maths: draw a line, get a code-checked ramp, railings included.",
+    "aciklama": null,
+    "slogan": null,
+    "fiyatNot": null,
+    "baslik": "The ramp is never on the sketch. It is always on the inspection.",
+    "sunum": "Nobody designs a building around its ramp, and nobody signs one off without it. That is why it tends to arrive late, drawn in a hurry, with a handrail that does not quite follow the slope. Modelling one ramp with handrails by hand takes about 45 minutes. Ramp Studio builds it in roughly 40 seconds from 50 presets across 5 categories, with 8 handrail types and 363 automated tests green, on SketchUp 2021 through 2026.",
+    "kanit": {
+      "oncekiEtiket": "Hand-modelling one ramp with railings",
+      "oncekiDakika": 45,
+      "sonrakiEtiket": "Pick a preset, click twice",
+      "sonrakiSaniye": 40
+    },
+    "hikayeler": [
+      {
+        "baslik": "Whatever the curve is",
+        "metin": "Straight runs, switchbacks and helical ramps come out of the same tool, with landings and handrails following the geometry instead of being fitted afterwards by eye."
+      },
+      {
+        "baslik": "Why does nobody want to change a ramp?",
+        "metin": "Because by hand it means redrawing the rail too. Here the slope, width or landing changes and the whole assembly rebuilds, so a late correction costs a minute rather than an afternoon."
+      },
+      {
+        "baslik": "Compliant without doing the arithmetic",
+        "metin": "Presets carry sensible slope and landing relationships, so you are choosing a ramp rather than calculating one — and the result is something you can show without a knot in your stomach."
+      }
+    ],
+    "magazaUrl": "https://www.bestsketchupplugins.com/en/plugins/ramp-studio/",
+    "uyumluluk": [
+      "SketchUp 2021",
+      "SketchUp 2022",
+      "SketchUp 2023",
+      "SketchUp 2024",
+      "SketchUp 2025",
+      "SketchUp 2026",
+      "Windows"
+    ],
+    "ozellikler": [
+      {
+        "baslik": "50 presets, 5 categories",
+        "not": "",
+        "ikon": "grid"
+      },
+      {
+        "baslik": "8 railing types",
+        "not": "",
+        "ikon": "grid"
+      },
+      {
+        "baslik": "363 tests, SU 2021-2026",
+        "not": "",
+        "ikon": "grid"
+      }
+    ],
+    "listeler": [],
+    "vurgular": [
+      "50 presets, 5 categories",
+      "8 railing types",
+      "363 tests, SU 2021-2026"
+    ],
+    "sss": []
+  }
+}

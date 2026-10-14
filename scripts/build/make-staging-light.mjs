@@ -13,9 +13,9 @@
  *   node scripts/build/make-staging-light.mjs     # sonra hafif paket
  */
 
+import { zipKlasor } from "./zip-lib.mjs";
 import { cp, rm, stat, readdir } from "node:fs/promises";
 import { join, resolve } from "node:path";
-import { spawnSync } from "node:child_process";
 import { existsSync } from "node:fs";
 
 const ROOT = resolve(".");
@@ -56,22 +56,8 @@ async function walk(dir) {
 }
 await walk(LIGHT);
 
-if (existsSync(OUT)) await rm(OUT);
-const script = [
-  "$ErrorActionPreference = 'Stop'",
-  "$items = Get-ChildItem -Path $env:ZIP_SOURCE -Force",
-  "Compress-Archive -Path $items.FullName -DestinationPath $env:ZIP_TARGET -CompressionLevel Optimal",
-].join("; ");
-const result = spawnSync("powershell", ["-NoProfile", "-Command", script], {
-  stdio: "inherit",
-  env: { ...process.env, ZIP_SOURCE: LIGHT, ZIP_TARGET: OUT },
-});
-if (result.status !== 0) {
-  console.error("Arşivleme başarısız.");
-  process.exit(1);
-}
-
-const size = (await stat(OUT)).size / 1024 / 1024;
+/* Paketleme ortak kitaplıkta: ters bölü hatasına karşı doğrulama orada (LES-014). */
+const size = (await zipKlasor(LIGHT, OUT)).boyut / 1024 / 1024;
 console.log(`Hafif paket: ${count} dosya, ${size.toFixed(1)} MB`);
 console.log(`-> ${OUT}`);
 console.log("Medya klasörü DAHİL DEĞİL — sunucudaki mevcut /yeni/media korunur.");

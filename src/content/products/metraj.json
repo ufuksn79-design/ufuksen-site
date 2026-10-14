@@ -1,95 +1,136 @@
 {
+  "slug": "metraj",
+  "ad": "Metraj",
+  "tur": "arac",
+  "durum": "beta",
   "ilerleme": null,
+  "surum": "",
+  "sira": 16,
+  "yayinda": true,
+  "ozet": "Hesap hatasıyla teklif vermeden: ölçüyü gir, malzeme ve maliyet çıksın.",
+  "aciklama": null,
   "slogan": null,
+  "baslik": "Metre, kâğıt, sonra gece yarısı yanlış hesaplayan tablo.",
+  "sunum": "Bir odayı ölçmek, kâğıda yazmak ve sonra Excel'de yeniden kurmak yaklaşık 35 dakika sürer — ve size para kaybettiren hata her zaman ölçmede değil aktarmada olur. Metraj bunu yaklaşık 90 saniyeye indirir: odayı yazın, toplamı okuyun. 11 malzeme türü, 119 otomatik test yeşil; PDF, CSV, JSON ve PNG çıktısı. Tarayıcıda çalışır, kurulum ve hesap istemez, veriler cihazınızda kalır.",
+  "kanit": {
+    "oncekiEtiket": "Metre, kağıt, sonra Excel",
+    "oncekiDakika": 35,
+    "sonrakiEtiket": "Odayı yaz, toplamı oku",
+    "sonrakiSaniye": 90
+  },
+  "hikayeler": [
+    {
+      "baslik": "Bir kez yazın, gerisi ölçülü gelsin",
+      "metin": "Oda ölçüleri kendiliğinden zemin, tavan ve duvar alanlarına dönüşür; elle çarpılan bir şey olmaz, kâğıtla tablo arasında yanlış yazılan bir sayı da."
+    },
+    {
+      "baslik": "Fiyatladığınız brüt alan mı, net mi?",
+      "metin": "Net. Kapı ve pencereler yerleştirildikçe duvar alanından düşülür; tutan bir teklifle sonradan açıklamak zorunda kaldığınız teklif arasındaki fark budur."
+    },
+    {
+      "baslik": "Rakam değişti. Toplam da döner",
+      "metin": "Bir ölçüyü değiştirirsiniz, ona bağlı bütün değerler yeniden hesaplanır. Müşterinin 'oda 40 cm geniş olsa ne olurdu' sorusu baştan başlama sebebi olmaktan çıkar."
+    }
+  ],
+  "magazaUrl": "https://www.bestsketchupplugins.com/tr/plugins/metraj/",
   "kapak": null,
   "galeri": [],
   "video": null,
+  "uyumluluk": [
+    "Masaüstü tarayıcı - kurulum yok, hesap yok",
+    "Tablet",
+    "Telefon (katlanabilir panelli mobil yerleşim)",
+    "3B ve Bölünmüş sekmeleri için WebGL gerekir (yoksa sekmeler kendiliğinden gizlenir)",
+    "Veriler tarayıcıda yerel olarak saklanır (LocalStorage); projeyi cihazlar arasında taşımak için JSON dışa aktarımı"
+  ],
+  "ozellikler": [
+    {
+      "baslik": "11 malzeme türü",
+      "not": "",
+      "ikon": "grid"
+    },
+    {
+      "baslik": "119 test yeşil",
+      "not": "",
+      "ikon": "grid"
+    },
+    {
+      "baslik": "PDF · CSV · JSON · PNG",
+      "not": "",
+      "ikon": "grid"
+    }
+  ],
   "listeler": [],
+  "vurgular": [
+    "11 malzeme türü",
+    "119 test yeşil",
+    "PDF · CSV · JSON · PNG"
+  ],
   "sss": [],
   "fiyat": null,
   "satinAlmaUrl": null,
   "denemeUrl": null,
   "iletisimEposta": "ufuksn79@gmail.com",
-  "yayinda": true,
-  "slug": "metraj",
-  "ad": "Metraj",
-  "tur": "arac",
-  "durum": "beta",
-  "surum": null,
-  "sira": 25,
-  "ozet": "Oda ölçülerinden yüzey alanı, malzeme miktarı ve yaklaşık maliyet hesaplayan web uygulaması.",
-  "aciklama": "Tamamen tarayıcıda çalışır, veriler cihazda kalır. 2B plan ile 3B görünüm karşılıklı senkron; kapı ve pencere boşlukları brüt duvar alanından otomatik düşülür.",
-  "uyumluluk": [
-    "Masaüstü tarayıcı",
-    "Tablet",
-    "Telefon"
-  ],
-  "ozellikler": [
-    {
-      "baslik": "2B plan ve 3B görünüm",
-      "not": "Ölçü etiketleri plandan düzenlenir; iki görünüm senkron çalışır.",
-      "ikon": "kutu"
-    },
-    {
-      "baslik": "Kapı ve pencere boşlukları",
-      "not": "Geometrik doğrulama ile konumlandırılır; net alandan düşülür.",
-      "ikon": "kesim"
-    },
-    {
-      "baslik": "Malzeme hesapları",
-      "not": "Boya, saten alçı, epoksi, duvar kâğıdı, seramik, parke, PVC ve halı.",
-      "ikon": "layers"
-    },
-    {
-      "baslik": "Raporlama",
-      "not": "Yazdırılabilir PDF, Excel uyumlu CSV, JSON ve plan PNG çıktısı.",
-      "ikon": "indir"
-    }
-  ],
-  "vurgular": [
-    "Ücretsiz",
-    "Tarayıcıda çalışır",
-    "PDF + CSV rapor"
-  ],
   "yazilim": [],
-  "icNot": "Kaynak: metraj/README.md. package.json sürümü 0.0.0 olduğu için sürüm yazılmadı; README 'Faz 1–8 tamamlandı (MVP)' diyor, bu yüzden durum 'beta'.",
+  "icNot": "Mağazadan senkronlandı (plugin-store/data/plugins.json, 2026-10-14). Metinleri burada elle değiştirmeyin — mağazada değiştirip senkronu tekrar çalıştırın.",
   "en": {
     "ad": "Metraj",
-    "ozet": "Web app that turns room dimensions into surface areas, material quantities and an approximate cost.",
-    "aciklama": "Runs entirely in the browser; your data stays on your device. The 2D plan and 3D view stay in sync, and door and window openings are deducted from the gross wall area automatically.",
+    "ozet": "No hand maths behind the quote: room sizes in, materials and costs out.",
+    "aciklama": null,
     "slogan": null,
+    "fiyatNot": null,
+    "baslik": "The tape measure, the notepad, then the spreadsheet that gets it wrong at midnight.",
+    "sunum": "Measuring a room, writing it on paper and then rebuilding it in Excel takes about 35 minutes — and the error that costs you money is always in the transcription, not the measuring. Metraj turns it into roughly 90 seconds: type the room, read the total. 11 material types, 119 automated tests green, with PDF, CSV, JSON and PNG output. It runs in the browser with no installation and no account, and your data stays on your device.",
+    "kanit": {
+      "oncekiEtiket": "Tape measure, notepad, then Excel",
+      "oncekiDakika": 35,
+      "sonrakiEtiket": "Type the room, read the totals",
+      "sonrakiSaniye": 90
+    },
+    "hikayeler": [
+      {
+        "baslik": "Type it once, let the rest be measured",
+        "metin": "Room dimensions become floor, ceiling and wall areas automatically, so nothing is multiplied by hand and nothing is mistyped between the notepad and the sheet."
+      },
+      {
+        "baslik": "Is it the gross area or the net you are pricing?",
+        "metin": "The net. Doors and windows are deducted from the wall area as you place them, which is the difference between a quote that holds and one you have to explain later."
+      },
+      {
+        "baslik": "The number changed. So does the total",
+        "metin": "Change a dimension and every dependent figure recalculates. A client asking 'what if the room were 40 cm wider' stops being a reason to start again."
+      }
+    ],
+    "magazaUrl": "https://www.bestsketchupplugins.com/en/plugins/metraj/",
     "uyumluluk": [
-      "Desktop browser",
+      "Desktop browser - no install, no account",
       "Tablet",
-      "Phone"
+      "Phone (mobile layout with collapsible panel)",
+      "WebGL required for the 3D and Split tabs (tabs auto-hidden without it)",
+      "Data stored locally in the browser (LocalStorage); JSON export to move projects between devices"
     ],
     "ozellikler": [
       {
-        "baslik": "2D plan and 3D view",
-        "not": "Edit dimension labels straight on the plan; both views stay in sync.",
-        "ikon": "kutu"
+        "baslik": "11 material types",
+        "not": "",
+        "ikon": "grid"
       },
       {
-        "baslik": "Door and window openings",
-        "not": "Placed with geometric validation and deducted from the net area.",
-        "ikon": "kesim"
+        "baslik": "119 tests green",
+        "not": "",
+        "ikon": "grid"
       },
       {
-        "baslik": "Material calculations",
-        "not": "Paint, satin plaster, epoxy, wallpaper, ceramic, laminate, PVC and carpet.",
-        "ikon": "layers"
-      },
-      {
-        "baslik": "Reporting",
-        "not": "Printable PDF, Excel-friendly CSV, JSON and a PNG of the plan.",
-        "ikon": "indir"
+        "baslik": "PDF · CSV · JSON · PNG",
+        "not": "",
+        "ikon": "grid"
       }
     ],
     "listeler": [],
     "vurgular": [
-      "Free",
-      "Runs in the browser",
-      "PDF + CSV report"
+      "11 material types",
+      "119 tests green",
+      "PDF · CSV · JSON · PNG"
     ],
     "sss": []
   }

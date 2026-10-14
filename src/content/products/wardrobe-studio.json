@@ -1,0 +1,141 @@
+{
+  "slug": "wardrobe-studio",
+  "ad": "Dolap Sihirbazı",
+  "tur": "eklenti",
+  "durum": "aktif",
+  "ilerleme": null,
+  "surum": "1.19.0",
+  "sira": 3,
+  "yayinda": true,
+  "ozet": "Panel panel çizmeden: ölçüyü yaz; dolap, teklif, CNC dosyaları hazır.",
+  "aciklama": null,
+  "slogan": null,
+  "baslik": "Dolap oturma odasında satılır, atölyede kaybedilir.",
+  "sunum": "İşi, müşteriye kendini kullanırken görebileceği bir dolabı göstererek alırsınız. Kârı üç hafta sonra, çizimle kesim listesini iki ayrı el yazdığı için bir panel 18 mm kısa kesildiğinde kaybedersiniz. Her paneli elle çizip sonra kesim listesini yazmak yaklaşık 120 dakika sürer. Dolap Sihirbazı, ölçüden Modele Ekle'ye yaklaşık 90 saniyede gider; 20 bileşeni 131 katıya çevirir, 12 kaplama ve 7 kapak stiliyle — 164 test yeşil, SketchUp 2017 ve üzeri, Windows ve macOS.",
+  "kanit": {
+    "oncekiEtiket": "Her paneli elle çizmek, sonra kesim listesini yazmak",
+    "oncekiDakika": 120,
+    "sonrakiEtiket": "Ölçüyü yaz, Modele Ekle'ye bas",
+    "sonrakiSaniye": 90
+  },
+  "hikayeler": [
+    {
+      "baslik": "Bir kez çizin, atölye zaten almış olsun",
+      "metin": "Model, teklif ve kesim listesi aynı hesaptan çıkar; testeredeki panel, görseldeki paneldir. Delik konumları kopyalanmaz, tek yerde hesaplanır."
+    },
+    {
+      "baslik": "Niş yerinde 2 cm dar çıktı. Şimdi ne olacak?",
+      "metin": "Yeni genişliği yazarsınız. Bölmeler, kapaklar, çekmeceler ve kesim listesi birlikte uyarlanır; bir akşamlık çizimi baştan yapmazsınız. Sahadaki gerçeklik bir ceza olmaktan çıkar."
+    },
+    {
+      "baslik": "Teklif masada, kesim listesi makinede",
+      "metin": "Plaka, bant, donanım ve işçilik gerçek miktarlardan fiyatlanır; kesim verisi makinenizin beklediği biçimde çıkar. Tek iş, tek doğruluk kaynağı."
+    }
+  ],
+  "magazaUrl": "https://www.bestsketchupplugins.com/tr/plugins/wardrobe-studio/",
+  "kapak": null,
+  "galeri": [],
+  "video": null,
+  "uyumluluk": [
+    "SketchUp 2017 ve üzeri",
+    "SketchUp 2024",
+    "SketchUp 2025",
+    "SketchUp 2026",
+    "Windows",
+    "macOS"
+  ],
+  "ozellikler": [
+    {
+      "baslik": "20 bileşenden 131 katı",
+      "not": "",
+      "ikon": "grid"
+    },
+    {
+      "baslik": "12 kaplama, 7 kapak stili",
+      "not": "",
+      "ikon": "grid"
+    },
+    {
+      "baslik": "164 test, SketchUp 2017+",
+      "not": "",
+      "ikon": "grid"
+    }
+  ],
+  "listeler": [],
+  "vurgular": [
+    "20 bileşenden 131 katı",
+    "12 kaplama, 7 kapak stili",
+    "164 test, SketchUp 2017+"
+  ],
+  "sss": [],
+  "fiyat": null,
+  "satinAlmaUrl": null,
+  "denemeUrl": null,
+  "iletisimEposta": "ufuksn79@gmail.com",
+  "yazilim": [
+    "sketchup"
+  ],
+  "icNot": "Mağazadan senkronlandı (plugin-store/data/plugins.json, 2026-10-14). Metinleri burada elle değiştirmeyin — mağazada değiştirip senkronu tekrar çalıştırın.",
+  "en": {
+    "ad": "CabinetWizard",
+    "ozet": "No panel-by-panel drawing: type the size, get quote and CNC files.",
+    "aciklama": null,
+    "slogan": null,
+    "fiyatNot": null,
+    "baslik": "The wardrobe is sold in the living room and lost in the workshop.",
+    "sunum": "You win the job by showing the client a wardrobe they can see themselves using. You lose the margin three weeks later, when a panel is cut 18 mm short because the drawing and the cutting list were written by two different hands. Drawing every panel and then typing the cutting list takes about 120 minutes. CabinetWizard goes from dimensions to Add to Model in roughly 90 seconds, turning 20 components into 131 solids, with 12 finishes and 7 door styles — 164 tests green, SketchUp 2017 and newer, Windows and macOS.",
+    "kanit": {
+      "oncekiEtiket": "Modelling every panel by hand, then typing the cutting list",
+      "oncekiDakika": 120,
+      "sonrakiEtiket": "Type the opening, press Add to Model",
+      "sonrakiSaniye": 90
+    },
+    "hikayeler": [
+      {
+        "baslik": "Draw once, and the workshop already has it",
+        "metin": "The model, the quote and the cutting list come out of the same calculation, so the panel on the saw is the panel in the render. Hole positions are computed in one place rather than transcribed."
+      },
+      {
+        "baslik": "The alcove measured 2 cm narrower on site. Now what?",
+        "metin": "You type the new width. Bays, doors, drawers and the cut list adapt together instead of you reworking an evening's drawing. Site reality stops being a punishment."
+      },
+      {
+        "baslik": "Quote on the table, cut list on the machine",
+        "metin": "Board, edge banding, hardware and labour are priced from real quantities, and the cutting data leaves as the format your machine expects. One job, one source of truth."
+      }
+    ],
+    "magazaUrl": "https://www.bestsketchupplugins.com/en/plugins/wardrobe-studio/",
+    "uyumluluk": [
+      "SketchUp 2017 or newer",
+      "SketchUp 2024",
+      "SketchUp 2025",
+      "SketchUp 2026",
+      "Windows",
+      "macOS"
+    ],
+    "ozellikler": [
+      {
+        "baslik": "131 solids from 20 components",
+        "not": "",
+        "ikon": "grid"
+      },
+      {
+        "baslik": "12 finishes, 7 door styles",
+        "not": "",
+        "ikon": "grid"
+      },
+      {
+        "baslik": "164 tests, SketchUp 2017+",
+        "not": "",
+        "ikon": "grid"
+      }
+    ],
+    "listeler": [],
+    "vurgular": [
+      "131 solids from 20 components",
+      "12 finishes, 7 door styles",
+      "164 tests, SketchUp 2017+"
+    ],
+    "sss": []
+  }
+}

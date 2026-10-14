@@ -350,7 +350,17 @@ const gaId = (seo.googleAnalyticsId || "").trim();
           const io = new IntersectionObserver(
             (entries) => {
               for (const entry of entries) {
-                if (entry.isIntersecting) {
+                /**
+                 * Ekranın ÜSTÜNDE kalan öğe de açılmalı.
+                 *
+                 * Yalnızca `isIntersecting` bakılırsa, hızlı kaydırmada ya da
+                 * çapa bağlantısıyla atlamada öğe görünür alana hiç uğramadan
+                 * yukarıda kalır; gözlemci `false` bildirir ve metin kalıcı
+                 * olarak görünmez olur. Ölçüldü: ürün sayfasında hızlı
+                 * kaydırmada üç anlatı bölümü opaklık 0'da kalıyordu.
+                 */
+                const ustteKaldi = entry.boundingClientRect.bottom < 0;
+                if (entry.isIntersecting || ustteKaldi) {
                   entry.target.classList.add("is-visible");
                   io.unobserve(entry.target);
                 }

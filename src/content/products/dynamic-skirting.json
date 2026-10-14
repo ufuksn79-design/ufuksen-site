@@ -1,28 +1,41 @@
 {
-  "ilerleme": null,
-  "slogan": null,
-  "kapak": null,
-  "galeri": [],
-  "video": null,
-  "listeler": [],
-  "sss": [],
-  "fiyat": {
-    "tutar": 25,
-    "paraBirimi": "USD",
-    "not": "Tek seferlik ödeme, ömür boyu kullanım."
-  },
-  "satinAlmaUrl": "https://ufuksen.gumroad.com/l/SketchupDynamicSkirtingPlugin",
-  "denemeUrl": null,
-  "iletisimEposta": "ufuksn79@gmail.com",
-  "yayinda": true,
   "slug": "dynamic-skirting",
   "ad": "Dynamic Skirting",
   "tur": "eklenti",
   "durum": "aktif",
+  "ilerleme": null,
   "surum": "1.3.2",
-  "sira": 3,
-  "ozet": "3B yollar boyunca parametrik süpürgelik ve kartonpiyer üreten SketchUp eklentisi.",
-  "aciklama": "Merdiven ve kot değişimleri, otomatik zemin/tavan çevresi algılama, boşluk işaretleme, canlı profil düzenleme, render uyumlu doku yönü ve CSV metraj tek panelde birleşir.",
+  "sira": 4,
+  "yayinda": true,
+  "ozet": "Gönye kesmeden: süpürgelik ve kartonpiyer tek tıkla yerinde.",
+  "aciklama": null,
+  "slogan": null,
+  "baslik": "Süpürgelik, kimsenin çizmediği ve herkesin gördüğü detaydır.",
+  "sunum": "Yakın plan bir iç mekân görselinde duvarla döşemenin birleştiği çizgi sürekli kadraj içindedir. Koymazsanız oda bitmemiş okunur; elle çizerseniz tek oda yaklaşık 14 dakikaya mal olur — her oda, her revizyon. Dynamic Skirting bunu yaklaşık 25 saniyede yapar: döşemeye tıklayın, profili seçin. 24 profil, Türkçe, İngilizce ve İspanyolca, SketchUp 2024-2026.",
+  "kanit": {
+    "oncekiEtiket": "Bir odanın süpürgeliği elle",
+    "oncekiDakika": 14,
+    "sonrakiEtiket": "Döşemeye tıkla, profili seç",
+    "sonrakiSaniye": 25
+  },
+  "hikayeler": [
+    {
+      "baslik": "İlk geçişte temiz köşe",
+      "metin": "İç ve dış köşeler üretim sırasında gönyelenir; sonradan köşeye yakınlaşıp ters dönmüş bir profili düzeltmeye çalışmazsınız."
+    },
+    {
+      "baslik": "Profil mi değişti? Bu yeniden çizim değil",
+      "metin": "Başka bir kesit seçersiniz, aynı yol boyunca üretim güncellenir. 60'lık yerine 80'liği denemek, işten kaçındığınız bir şey değil gerçekten verebileceğiniz bir karar olur."
+    },
+    {
+      "baslik": "Sipariş metrajı modelden gelir",
+      "metin": "Uzunluklar ve parça adetleri az önce ürettiğiniz üretimden CSV olarak çıkar; sipariş ettiğiniz metre duvardaki metreyle örtüşür."
+    }
+  ],
+  "magazaUrl": "https://www.bestsketchupplugins.com/tr/plugins/dynamic-skirting/",
+  "kapak": null,
+  "galeri": [],
+  "video": null,
   "uyumluluk": [
     "SketchUp 2024",
     "SketchUp 2025",
@@ -30,50 +43,65 @@
   ],
   "ozellikler": [
     {
-      "baslik": "Zemin ve tavan algılama",
-      "not": "Yüzeye tıklamak dış sınırı bulur; köşeleri gönye kapalı çevre oluşturur.",
-      "ikon": "kutu"
+      "baslik": "24 profil",
+      "not": "",
+      "ikon": "grid"
     },
     {
-      "baslik": "Merdiven ve kot takibi",
-      "not": "Kot değişimlerinde profil yol boyunca kesintisiz devam eder.",
-      "ikon": "layers"
+      "baslik": "SketchUp 2024-2026",
+      "not": "",
+      "ikon": "grid"
     },
     {
-      "baslik": "Boşluk işaretleme",
-      "not": "Kapı, kolon, kiriş veya dolabın kestiği bölüm modelden ve metrajdan çıkarılır.",
-      "ikon": "kesim"
-    },
-    {
-      "baslik": "Canlı profil düzenleme",
-      "not": "Profil kesiti panelden anında değiştirilir.",
-      "ikon": "sliders"
-    },
-    {
-      "baslik": "CSV metraj",
-      "not": "Uzunluk ve parça dökümü tablo olarak dışa aktarılır.",
-      "ikon": "indir"
-    },
-    {
-      "baslik": "Render uyumlu doku yönü",
-      "not": "Doku yönü profil boyunca doğru hizalanır.",
-      "ikon": "texture"
+      "baslik": "TR / EN / ES",
+      "not": "",
+      "ikon": "grid"
     }
   ],
+  "listeler": [],
   "vurgular": [
-    "Süpürgelik + kartonpiyer",
-    "CSV metraj",
-    "Tek panel"
+    "24 profil",
+    "SketchUp 2024-2026",
+    "TR / EN / ES"
   ],
+  "sss": [],
+  "fiyat": null,
+  "satinAlmaUrl": null,
+  "denemeUrl": null,
+  "iletisimEposta": "ufuksn79@gmail.com",
   "yazilim": [
     "sketchup"
   ],
-  "icNot": "Kaynak: Yeni proje/dynamic_skirting/README.md (1.2.3) | Gumroad: Sketchup Dynamic Skirting Plugin, 25 USD (2026-09-09). Sürüm paketlenmiş .rbz'den doğrulandı.",
+  "icNot": "Mağazadan senkronlandı (plugin-store/data/plugins.json, 2026-10-14). Metinleri burada elle değiştirmeyin — mağazada değiştirip senkronu tekrar çalıştırın.",
   "en": {
     "ad": "Dynamic Skirting",
-    "ozet": "SketchUp plugin that generates parametric skirting and cornice along 3D paths.",
-    "aciklama": "Stairs and level changes, automatic floor and ceiling perimeter detection, gap marking, live profile editing, render-correct texture direction and CSV take-off — all in one panel.",
+    "ozet": "No hand-cut mitres: skirting and cornice, one click per room.",
+    "aciklama": null,
     "slogan": null,
+    "fiyatNot": null,
+    "baslik": "Skirting is the detail nobody draws and everybody sees.",
+    "sunum": "In a close-up interior render, the line where the wall meets the floor is in frame constantly. Leave it out and the room reads as unfinished; draw it by hand and one room costs about 14 minutes, every room, every revision. Dynamic Skirting runs it in roughly 25 seconds: click the floor, pick the profile. 24 profiles, Turkish, English and Spanish, SketchUp 2024 through 2026.",
+    "kanit": {
+      "oncekiEtiket": "Skirting one room by hand",
+      "oncekiDakika": 14,
+      "sonrakiEtiket": "Click the floor, pick a profile",
+      "sonrakiSaniye": 25
+    },
+    "hikayeler": [
+      {
+        "baslik": "Clean corners on the first pass",
+        "metin": "Internal and external corners are mitred as it runs, so you are not zooming into a corner afterwards to fix a profile that twisted the wrong way."
+      },
+      {
+        "baslik": "Changed the profile? That is not a redraw",
+        "metin": "Pick a different section and the run updates along the same path. Trying the 80 mm instead of the 60 mm becomes a decision you can actually make, not one you avoid because of the work."
+      },
+      {
+        "baslik": "The order length comes from the model",
+        "metin": "Lengths and part counts export as CSV from the run you just generated, so the metres you order match the metres on the wall."
+      }
+    ],
+    "magazaUrl": "https://www.bestsketchupplugins.com/en/plugins/dynamic-skirting/",
     "uyumluluk": [
       "SketchUp 2024",
       "SketchUp 2025",
@@ -81,43 +109,27 @@
     ],
     "ozellikler": [
       {
-        "baslik": "Floor and ceiling detection",
-        "not": "Click a surface and the outer boundary is found; corners are mitred into a closed perimeter.",
-        "ikon": "kutu"
+        "baslik": "24 profiles",
+        "not": "",
+        "ikon": "grid"
       },
       {
-        "baslik": "Stairs and level changes",
-        "not": "The profile runs continuously along the path across height changes.",
-        "ikon": "layers"
+        "baslik": "SketchUp 2024-2026",
+        "not": "",
+        "ikon": "grid"
       },
       {
-        "baslik": "Gap marking",
-        "not": "Sections cut by a door, column, beam or cabinet are removed from both the model and the take-off.",
-        "ikon": "kesim"
-      },
-      {
-        "baslik": "Live profile editing",
-        "not": "Change the profile cross-section straight from the panel.",
-        "ikon": "sliders"
-      },
-      {
-        "baslik": "CSV take-off",
-        "not": "Lengths and part lists export as a table.",
-        "ikon": "indir"
-      },
-      {
-        "baslik": "Render-correct texture direction",
-        "not": "Texture direction aligns correctly along the profile.",
-        "ikon": "texture"
+        "baslik": "TR / EN / ES",
+        "not": "",
+        "ikon": "grid"
       }
     ],
     "listeler": [],
     "vurgular": [
-      "Skirting + cornice",
-      "CSV take-off",
-      "One panel"
+      "24 profiles",
+      "SketchUp 2024-2026",
+      "TR / EN / ES"
     ],
-    "sss": [],
-    "fiyatNot": "One-time payment, lifetime use."
+    "sss": []
   }
 }

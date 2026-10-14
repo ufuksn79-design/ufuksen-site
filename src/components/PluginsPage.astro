@@ -39,17 +39,26 @@ const site = Astro.site ?? new URL("https://www.ufuksen.com");
 const turler = turDagilimi(products);
 const gosterFiltre = products.length > 4 && turler.length > 1;
 
-/** Desteklenen SketchUp sürümleri — ürünlerin uyumluluk alanlarından toplanır. */
-const sketchupSurumleri = [
+/**
+ * Desteklenen SketchUp sürüm aralığı.
+ *
+ * Uyumluluk alanları serbest cümle de içerebiliyor ("eklenti v1.9.0 ile eşlik
+ * takibi" gibi). Bu yüzden rakamları silip birleştirmek yerine YALNIZCA
+ * 20xx biçimindeki yıl belirteçleri toplanır — aksi hâlde sürüm numaraları
+ * yıl sanılıp aralık saçmalıyordu (ölçüldü: "–1190").
+ */
+const yillar = [
   ...new Set(
-    products.flatMap((p) => p.data.uyumluluk.filter((u) => /sketch\s?up/i.test(u))),
+    products.flatMap((p) =>
+      p.data.uyumluluk
+        .filter((u) => /sketch\s?up/i.test(u))
+        .flatMap((u) => [...u.matchAll(/(?<!\d)(20\d{2})(?!\d)/g)].map((m) => Number(m[1]))),
+    ),
   ),
-].sort();
+].sort((a, b) => a - b);
 
 const surumAraligi =
-  sketchupSurumleri.length > 1
-    ? `${sketchupSurumleri[0].replace(/\D+/g, "")}–${sketchupSurumleri.at(-1)!.replace(/\D+/g, "")}`
-    : (sketchupSurumleri[0]?.replace(/\D+/g, "") ?? null);
+  yillar.length > 1 ? `${yillar[0]}–${yillar.at(-1)}` : (yillar[0]?.toString() ?? null);
 
 /**
  * Meta açıklaması 160 karakteri aşmamalı — Google fazlasını keser. Ürün sayısı
@@ -60,8 +69,11 @@ const ilkUcAd = gorunum.slice(0, 3).map((u) => u.ad).join(", ");
 const kalanAdet = Math.max(0, products.length - 3);
 const metaAciklama = t.metaAciklama(ilkUcAd, kalanAdet);
 
-/** Gerçekten satın alınabilenler — fiyatı ve satın alma bağlantısı olanlar. */
-const satistaSayisi = products.filter((p) => p.data.satinAlmaUrl && p.data.fiyat?.tutar != null).length;
+/**
+ * Yayında olanlar. Fiyat ve satın alma mağazada durduğu için (ADR-024) burada
+ * fiyata değil ürünün olgunluk durumuna bakılır.
+ */
+const satistaSayisi = products.filter((p) => p.data.durum === "aktif").length;
 const toplamOzellik = gorunum.reduce((n, u) => n + u.ozellikler.length, 0);
 
 /**

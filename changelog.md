@@ -28,6 +28,32 @@ Format, Keep a Changelog yaklaşımına yakındır. Tarihler `YYYY-MM-DD` biçim
 - Kaynak WordPress sistemi migration boyunca salt okunur kabul edildi.
 - Dry-run, yedek ve rollback zorunlulukları eklendi.
 
+## [1.0.0] — 2026-10-14
+
+Ürünler tanıtım sayfasına dönüştü; satış mağazaya taşındı (ADR-024).
+
+### Changed
+
+- **Ürün sayfaları artık satış metni**: kancalı başlık → somut kanıt (örn. "25 dakika → 75× → 20 saniye") → üç anlatı bölümü → öne çıkanlar → uyumluluk
+- **En altta gösterişli buton** ürünün `bestsketchupplugins.com` sayfasına götürüyor; 44 bağlantının 44'ü doğrulandı
+- **Fiyat ve satın alma siteden kaldırıldı** — tek kaynak mağaza; iki yerde fiyat tutmak bayatlamaya yol açıyordu
+- **Katalog mağazadan senkronlanıyor**: 14 ürün → **22 ürün** (`scripts/content/sync-magaza.mjs`)
+- Metinler mağazadan kopyalanmadı, ufuksen.com için ayrıca yazıldı — 220 metin parçası, mağazayla birebir çakışma **sıfır** (yinelenen içerik cezası yok)
+- Ürün sayfası meta açıklaması kanca + tanıtımdan kuruluyor (54 sayfa 70 karakterin altındaydı, şimdi ~150)
+
+### Fixed
+
+- **Paketleme bozuk zip üretiyordu.** `Compress-Archive` ters bölü yazıyor, `bsdtar` 2392 dosyada çöküyor ve sessizce 995 dosya eksik paket üretiyordu. Yerine Node `zlib` ile kendi ZIP yazıcımız (LES-014); paket üretildikten sonra geri okunup doğrulanıyor
+- **Hızlı kaydırmada metin görünmez kalıyordu**: görünürlük gözlemcisi ekranın üstünde kalan öğeyi "görünmedi" sayıyordu. Ölçüldü: ürün sayfasında 4 bölüm opaklık 0'da kalıyordu → şimdi 0
+- **Giriş sayacında sürüm aralığı "–1190" çıkıyordu**: uyumluluk alanları serbest cümle içeriyor, "v1.9.0" yıl sanılıyordu. Yalnız 20xx yıl belirteçleri toplanıyor → 2017–2027
+- Kabuk kaçışından koda sızan 2 kontrol karakteri temizlendi (LES-015)
+
+### Doğrulama
+
+- 555 sayfa; `astro check` **0 hata**; kırık link / eksik medya / boş gövde: 0
+- Paket bağımsız araçla (Python `zipfile`) açıldı: CRC sağlam, 2392/2392 dosya, 0 eksik, 0 fazla, içerik MD5 ile birebir, klasörler doğru oluşuyor
+- Mağaza bağlantıları: 44/44 HTTP 200
+
 ## [0.9.0] — 2026-09-09
 
 Gumroad satışı, bölüm yeniden adlandırma ve İngilizce sürüm (ADR-023).

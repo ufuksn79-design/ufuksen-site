@@ -1,0 +1,139 @@
+{
+  "slug": "windowfun-web",
+  "ad": "WindowFun Studio Web",
+  "tur": "arac",
+  "durum": "aktif",
+  "ilerleme": null,
+  "surum": "1.0.0",
+  "sira": 13,
+  "yayinda": true,
+  "ozet": "Saatlerce hesap yok: pencereyi çiz, teklif ve kesim listesi hazır.",
+  "aciklama": null,
+  "slogan": null,
+  "baslik": "Ölçü sahada alınır. Teklif siz dönmeden istenir.",
+  "sunum": "Modelle, yeniden çiz, bir daha yaz: aynı pencereyi üç ayrı yerde üç kez yapmanın yaklaşık 35 dakikası. WindowFun Studio Web parametreleri bir kez alır ve her şeyi yaklaşık 45 saniyede dışa aktarır. 6 kategoride 55 model, 105 test geçiyor, Türkçe, İngilizce ve Almanca çevrimdışı PWA — ve SketchUp'a gidiş-dönüş için GLB ile DXF çıktısı.",
+  "kanit": {
+    "oncekiEtiket": "Modelle, yeniden çiz, tekrar yaz",
+    "oncekiDakika": 35,
+    "sonrakiEtiket": "Parametreleri gir, hepsini dışa aktar",
+    "sonrakiSaniye": 45
+  },
+  "hikayeler": [
+    {
+      "baslik": "Tek parametre seti, bütün belgeler",
+      "metin": "3B görünüm, teknik çizim, metraj ve teklif aynı tanımı okur; birbirinden azıcık farklı üç pencereyi anlatmaları mümkün değildir."
+    },
+    {
+      "baslik": "Bir değişiklik sizi tabloya geri gönderir mi?",
+      "metin": "Hayır. Parametreyi değiştirirsiniz, bütün çıktılar onu izler. E-postayla gönderdiğiniz sürüm çizdiğiniz sürümdür; bir teklifin bir haftalık revizyondan sağ çıkmasının tek yolu da budur."
+    },
+    {
+      "baslik": "Sahadan teklife kesintisiz",
+      "metin": "Çevrimdışı çalışan bir PWA olduğu için, çekmeyen boş bir dairede alınan ölçü siz arabaya döndüğünüzde teklif olmuş olur."
+    }
+  ],
+  "magazaUrl": "https://www.bestsketchupplugins.com/tr/plugins/windowfun-web/",
+  "kapak": null,
+  "galeri": [],
+  "video": null,
+  "uyumluluk": [
+    "Masaüstü tarayıcı",
+    "Tablet",
+    "Telefon",
+    "Çevrimdışı çalışan PWA (üretim yapısında service worker)",
+    "WindowFun Studio SketchUp eklentisi verisi (WindowConfig schemaVersion 1, eklenti v1.9.0 ile eşlik takibi)",
+    "GLB ve DXF dışa aktarımıyla SketchUp'a gidiş-dönüş"
+  ],
+  "ozellikler": [
+    {
+      "baslik": "55 model, 6 kategori",
+      "not": "",
+      "ikon": "kutu"
+    },
+    {
+      "baslik": "105 test geçiyor",
+      "not": "",
+      "ikon": "kutu"
+    },
+    {
+      "baslik": "Çevrimdışı PWA, TR/EN/DE",
+      "not": "",
+      "ikon": "kutu"
+    }
+  ],
+  "listeler": [],
+  "vurgular": [
+    "55 model, 6 kategori",
+    "105 test geçiyor",
+    "Çevrimdışı PWA, TR/EN/DE"
+  ],
+  "sss": [],
+  "fiyat": null,
+  "satinAlmaUrl": null,
+  "denemeUrl": null,
+  "iletisimEposta": "ufuksn79@gmail.com",
+  "yazilim": [],
+  "icNot": "Mağazadan senkronlandı (plugin-store/data/plugins.json, 2026-10-14). Metinleri burada elle değiştirmeyin — mağazada değiştirip senkronu tekrar çalıştırın.",
+  "en": {
+    "ad": "WindowFun Studio Web",
+    "ozet": "No hours of quote maths: design the window, get quote and cut list.",
+    "aciklama": null,
+    "slogan": null,
+    "fiyatNot": null,
+    "baslik": "The measurement is taken on site. The quote is needed before you get back.",
+    "sunum": "Model it, redraw it, then type it out again: about 35 minutes of doing the same window three times in three places. WindowFun Studio Web takes the parameters once and exports everything in roughly 45 seconds. 55 models across 6 categories, 105 tests passing, an offline PWA in Turkish, English and German — and GLB and DXF export for the round trip back into SketchUp.",
+    "kanit": {
+      "oncekiEtiket": "Model it, redraw it, retype it",
+      "oncekiDakika": 35,
+      "sonrakiEtiket": "Set the parameters, export the lot",
+      "sonrakiSaniye": 45
+    },
+    "hikayeler": [
+      {
+        "baslik": "One parameter set, every document",
+        "metin": "The 3D view, the technical drawing, the take-off and the quote all read the same definition, so they cannot describe three slightly different windows."
+      },
+      {
+        "baslik": "Does a change send you back to the spreadsheet?",
+        "metin": "No. Edit the parameter and every output follows. The version you email is the version you drew, which is the only way a quote survives a week of revisions."
+      },
+      {
+        "baslik": "From the site to the quote without a gap",
+        "metin": "It works offline as a PWA, so the measurement taken in an empty flat with no signal is still a quote by the time you are back in the car."
+      }
+    ],
+    "magazaUrl": "https://www.bestsketchupplugins.com/en/plugins/windowfun-web/",
+    "uyumluluk": [
+      "Desktop browser",
+      "Tablet",
+      "Phone",
+      "Offline PWA (service worker in the production build)",
+      "WindowFun Studio SketchUp plugin data (WindowConfig schemaVersion 1, parity tracked to plugin v1.9.0)",
+      "Round-trip to SketchUp via GLB and DXF export"
+    ],
+    "ozellikler": [
+      {
+        "baslik": "55 models, 6 categories",
+        "not": "",
+        "ikon": "kutu"
+      },
+      {
+        "baslik": "105 tests passing",
+        "not": "",
+        "ikon": "kutu"
+      },
+      {
+        "baslik": "Offline PWA, TR/EN/DE",
+        "not": "",
+        "ikon": "kutu"
+      }
+    ],
+    "listeler": [],
+    "vurgular": [
+      "55 models, 6 categories",
+      "105 tests passing",
+      "Offline PWA, TR/EN/DE"
+    ],
+    "sss": []
+  }
+}

@@ -168,6 +168,30 @@ const products = defineCollection({
     /** Arşivdeki ilgili yazıları eşlemek için (bkz. lib/discover.ts SOFTWARE). */
     yazilim: z.array(z.string()).default([]),
 
+    /* --- Satış metni alanları (ADR-024) ------------------------------- *
+     * Ürün sayfası artık teknik döküm değil, tanıtım yazısıdır. Metinler
+     * mağazadan (bestsketchupplugins.com) senkronlanır — iki sitede aynı
+     * anlatı, tek kaynak. Satın alma mağaza sayfasında, burada değil.      */
+
+    /** Duyguya/kimliğe dokunan ana başlık (mağazadaki problemHeadline). */
+    baslik: z.string().nullable().default(null),
+    /** Tanıtım paragrafı (mağazadaki heroSub). */
+    sunum: z.string().nullable().default(null),
+    /** Somut kanıt: elle ne kadar sürüyor, eklentiyle ne kadar. */
+    kanit: z
+      .object({
+        oncekiEtiket: z.string(),
+        oncekiDakika: z.number(),
+        sonrakiEtiket: z.string(),
+        sonrakiSaniye: z.number(),
+      })
+      .nullable()
+      .default(null),
+    /** Anlatı bölümleri — her biri bir satış argümanı. */
+    hikayeler: z.array(z.object({ baslik: z.string(), metin: z.string() })).default([]),
+    /** Ürünün mağazadaki sayfası — gösterişli butonun gittiği yer. */
+    magazaUrl: z.string().nullable().default(null),
+
     /** Yalnızca panelde görünür, sitede hiçbir yerde basılmaz. */
     icNot: z.string().nullable().default(null),
 
@@ -183,6 +207,19 @@ const products = defineCollection({
         slogan: z.string().nullable().default(null),
         /** Fiyat rozetinin altındaki not — para birimi aynı, metin dile bağlı. */
         fiyatNot: z.string().nullable().default(null),
+        baslik: z.string().nullable().default(null),
+        sunum: z.string().nullable().default(null),
+        kanit: z
+          .object({
+            oncekiEtiket: z.string(),
+            oncekiDakika: z.number(),
+            sonrakiEtiket: z.string(),
+            sonrakiSaniye: z.number(),
+          })
+          .nullable()
+          .default(null),
+        hikayeler: z.array(z.object({ baslik: z.string(), metin: z.string() })).default([]),
+        magazaUrl: z.string().nullable().default(null),
         uyumluluk: z.array(z.string()).default([]),
         ozellikler: z
           .array(z.object({ baslik: z.string(), not: z.string(), ikon: z.string().default("grid") }))
