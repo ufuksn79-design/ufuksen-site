@@ -96,6 +96,25 @@ export default {
     const { pathname, searchParams } = url;
 
     /**
+     * -1) Tek kanonik alan adı: ufuksen.com -> www.ufuksen.com
+     *
+     * Sitenin bütün kanonik adresleri `https://www.ufuksen.com` ile üretiliyor
+     * (astro.config.mjs ve Base.astro). İki alan adı da aynı içeriği sunarsa
+     * arama motoru için aynı sayfanın iki kopyası olur ve alttaki
+     * yönlendirmeler `url.origin`i kullandığı için ziyaretçi çıplak alan
+     * adında kilitli kalır.
+     *
+     * **301**, 302 değil: bu tercih kalıcı, ziyaretçiye göre değişmiyor.
+     * Sorgu dizesi korunur; dil ve arama yönlendirmeleri sonra çalışsın.
+     *
+     * Yalnızca tam olarak `ufuksen.com` eşleşir — workers.dev adresi
+     * dokunulmadan kalır, yoksa canlıya almadan deneme yapılamazdı.
+     */
+    if (url.hostname === "ufuksen.com") {
+      return Response.redirect(`https://www.ufuksen.com${pathname}${url.search}`, 301);
+    }
+
+    /**
      * 0) Konuma göre dil: Türkiye dışından gelen ziyaretçi İngilizce sürüme.
      *
      * - **302**, 301 değil: yanıt ziyaretçiye göre değişiyor. Kalıcı
