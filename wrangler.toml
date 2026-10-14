@@ -25,9 +25,18 @@ compatibility_date = "2026-01-01"
 # Çıplak `ufuksen.com` da bağlanıyor çünkü bağlanmazsa eski hosting'e gitmeye
 # devam ederdi. İstek Worker'a ulaşır ulaşmaz 301 ile `www`ye gider
 # (worker/index.js, adım -1) — kanonik adresler `www` ile üretiliyor.
+# Yalnızca www bağlanır. Çıplak `ufuksen.com` BİLEREK burada değil.
+#
+# Apex'in A kaydı silinemez: `MX` kaydı `ufuksen.com` konağını gösteriyor ve
+# SPF de (`include:ufuksen.com`) aynı ada bakıyor. Apex Worker'a çevrilirse
+# gelen e-posta bozulur. Bu yüzden apex'te DNS olduğu gibi kalıyor ve çıplak
+# alan adı Cloudflare Redirect Rule ile www'ye gönderiliyor — kural istek
+# origin'e ulaşmadan kenarda çalıştığı için ziyaretçi hosting'i görmez,
+# MX/SPF çözümlemesi de bozulmaz.
+#
+# Kayıtların geçişten önceki hâli: docs/deploy/dns-kayitlari-2026-10-14.md
 routes = [
   { pattern = "www.ufuksen.com", custom_domain = true },
-  { pattern = "ufuksen.com", custom_domain = true },
 ]
 
 # workers.dev adresi AÇIK kalmalı.
