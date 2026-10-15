@@ -13,6 +13,10 @@
  *
  * Tarihler her kartta açıkça yazılı: yorumlar 2014–2015 dönemine ait,
  * güncel gibi sunulmuyor.
+ *
+ * İSİM KARTIN ÜSTÜNDE, altında değil: sütun akışında kartlar alt alta
+ * diziliyor ve isim kartın altındayken bir sonraki kartın başlığı gibi
+ * okunuyordu. Kimin ne yazdığı, yazıyı okumadan önce belli olmalı.
  */
 import Base from "../layouts/Base.astro";
 import SectionTitle from "../components/SectionTitle.astro";
@@ -38,7 +42,7 @@ const sonYil = tarihler.at(-1)?.slice(0, 4);
 
 <Base
   title="Ne Demişler? — Öğrenci ve Kullanıcı Yorumları | Ufuk Şen"
-  description={`SketchUp ve V-Ray eğitim setlerini kullananların kendi sözleri. ${liste.length} yorum, ${ilkYil}–${sonYil} arasında siteye bırakıldı.`}
+  description={`Ufuk Şen'in eğitim setlerini alanların ve kendisini yakından tanıyanların kendi sözleri. ${liste.length} yorum, ${ilkYil}–${sonYil} arasında siteye bırakıldı.`}
   path="/ne-demisler"
   dil="tr"
   alternateUrl={karsiYol("/ne-demisler", "en")}
@@ -47,7 +51,7 @@ const sonYil = tarihler.at(-1)?.slice(0, 4);
     <SectionTitle
       title="Ne Demişler?"
       as="h1"
-      note={`SketchUp ve V-Ray eğitimlerini kullananların kendi sözleri — ${liste.length} yorum.`}
+      note={`Ufuk Şen'in eğitim setlerini alanlar ve kendisini yakından tanıyanlar — ${liste.length} yorum.`}
     />
 
     <p class="giris">
@@ -60,11 +64,6 @@ const sonYil = tarihler.at(-1)?.slice(0, 4);
       {
         liste.map((y) => (
           <figure class="yorum u-reveal">
-            <blockquote>
-              {y.metin.split(/\n{2,}/).map((p) => (
-                <p>{p}</p>
-              ))}
-            </blockquote>
             <figcaption>
               <span class="yorum__rozet" aria-hidden="true">
                 {basHarfler(y.ad)}
@@ -74,6 +73,11 @@ const sonYil = tarihler.at(-1)?.slice(0, 4);
                 {y.tarih && <time datetime={y.tarih}>{y.tarihGorunen}</time>}
               </span>
             </figcaption>
+            <blockquote>
+              {y.metin.split(/\n{2,}/).map((p) => (
+                <p>{p}</p>
+              ))}
+            </blockquote>
           </figure>
         ))
       }
@@ -109,15 +113,25 @@ const sonYil = tarihler.at(-1)?.slice(0, 4);
     }
   }
 
+  /**
+   * Çerçeve sarı, koyu gri değil.
+   *
+   * Koyu çerçeve zeminle neredeyse aynı tondaydı; kartların nerede başlayıp
+   * nerede bittiği seçilmiyordu. Sarı, sitenin vurgu rengi — tam doygunlukta
+   * 37 kart gürültü olurdu, bu yüzden %28 saydamlıkta.
+   */
   .yorum {
     break-inside: avoid;
     margin: 0 0 var(--s-5);
     padding: var(--s-5);
-    border: 1px solid var(--c-line);
+    border: 1px solid rgba(255, 212, 0, 0.28);
     border-radius: var(--r-md);
     background: var(--c-surface);
     display: grid;
     gap: var(--s-4);
+  }
+  .yorum:hover {
+    border-color: rgba(255, 212, 0, 0.55);
   }
 
   .yorum blockquote {
@@ -132,12 +146,13 @@ const sonYil = tarihler.at(-1)?.slice(0, 4);
     margin: 0;
   }
 
+  /* Başlık artık üstte: ayırıcı çizgi de alta geçti. */
   .yorum figcaption {
     display: flex;
     align-items: center;
     gap: var(--s-3);
-    padding-top: var(--s-3);
-    border-top: 1px solid var(--c-line);
+    padding-bottom: var(--s-3);
+    border-bottom: 1px solid rgba(255, 212, 0, 0.18);
   }
 
   .yorum__rozet {

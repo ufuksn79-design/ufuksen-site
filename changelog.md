@@ -28,6 +28,25 @@ Format, Keep a Changelog yaklaşımına yakındır. Tarihler `YYYY-MM-DD` biçim
 - Kaynak WordPress sistemi migration boyunca salt okunur kabul edildi.
 - Dry-run, yedek ve rollback zorunlulukları eklendi.
 
+## [1.5.2] — 2026-10-15
+
+### Changed — /ne-demisler
+
+- **İsim kartın üstüne alındı.** Sütun akışında kartlar alt alta diziliyor;
+  isim kartın altındayken bir sonraki kartın başlığı gibi okunuyordu.
+  Kimin ne yazdığı artık yazıyı okumadan önce belli.
+- **Çerçeve sarı oldu** (`rgba(255, 212, 0, .28)`). Koyu gri çerçeve zeminle
+  neredeyse aynı tondaydı, kart sınırları seçilmiyordu. Tam doygunlukta 37
+  kart gürültü olurdu; %28 saydamlıkta bırakıldı, üzerine gelince %55.
+- Ayırıcı çizgi başlığın altına geçti ve o da sarıya çekildi.
+- **Alt başlık:** "Ufuk Şen'in eğitim setlerini alanlar ve kendisini yakından
+  tanıyanlar — 37 yorum." Meta açıklama da aynı ifadeye çekildi.
+
+### Doğrulama
+
+- Ölçüldü: 37 kart, çerçeve `rgba(255, 212, 0, 0.28)`, isim bloğu alıntının
+  üstünde, ayırıcı çizgi başlığın altında
+
 ## [1.5.1] — 2026-10-15
 
 ### Changed
