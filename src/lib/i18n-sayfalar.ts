@@ -248,7 +248,7 @@ export const SAYFA: Record<Dil, SayfaMetinleri> = {
       hakkimda: "Hakkımda",
       merhaba: "Merhaba, ben Ufuk Şen.",
       tanitim: (yazi, konu) =>
-        `Mimari görselleştirme üretiyor ve bu işi öğretiyorum. Yazılım öğretmiyorum; ışığı, malzemeyi ve kadrajı öğretiyorum. Yazılım bunun aracı. Arşivde ${yazi} yazı, ${konu} konu başlığı ve on yılı aşkın üretim birikimi var.`,
+        `Mimari görselleştirme üretiyor ve bu işi öğretiyorum. Yazılım öğretmiyorum; ışığı, malzemeyi ve kadrajı öğretiyorum. Yazılım bunun aracı. Arşivde ${yazi} yazı, ${konu} konu başlığı var; 18 yıldır SketchUp eğitmenliği yapıyorum.`,
       bilgiKonum: "Konum",
       bilgiKonumDeger: "Ankara, Türkiye",
       bilgiUzmanlik: "Uzmanlık",
@@ -425,7 +425,7 @@ export const SAYFA: Record<Dil, SayfaMetinleri> = {
       hakkimda: "About",
       merhaba: "Hello, I'm Ufuk Şen.",
       tanitim: (yazi, konu) =>
-        `I produce architectural visualisation and I teach it. I don't teach software; I teach light, material and framing — software is just the tool. The archive holds ${yazi} articles across ${konu} topics, built over more than ten years of production work.`,
+        `I produce architectural visualisation and I teach it. I don't teach software; I teach light, material and framing — software is just the tool. The archive holds ${yazi} articles across ${konu} topics, and I have been teaching SketchUp for 18 years.`,
       bilgiKonum: "Location",
       bilgiKonumDeger: "Ankara, Türkiye",
       bilgiUzmanlik: "Focus",

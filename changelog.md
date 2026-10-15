@@ -28,6 +28,21 @@ Format, Keep a Changelog yaklaşımına yakındır. Tarihler `YYYY-MM-DD` biçim
 - Kaynak WordPress sistemi migration boyunca salt okunur kabul edildi.
 - Dry-run, yedek ve rollback zorunlulukları eklendi.
 
+## [1.5.1] — 2026-10-15
+
+### Changed
+
+- **Deneyim yılı tek rakama çekildi: 18.** Ana sayfa tanıtım paragrafında
+  "on yılı aşkın üretim birikimi" yazıyordu; uzmanlık listesi ve sayaç ise
+  18 diyordu. Kullanıcı 18'i onayladı, iki dilde de düzeltildi.
+
+### Doğrulama
+
+- Derlenen ana sayfada geçen ifadeler: "18 yıl SketchUp eğitmenliği",
+  "18 yıldır SketchUp eğitmenliği yapıyorum", sayaç `data-count="18"`
+- İngilizce tarafta: "18 years teaching SketchUp", "for 18 years"
+- Sitede kalan "on yılı aşkın" / "ten years" ifadesi: **0**
+
 ## [1.5.0] — 2026-10-15
 
 Eğitim tarafı baştan kuruldu.
