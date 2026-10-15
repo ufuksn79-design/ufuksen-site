@@ -28,6 +28,58 @@ Format, Keep a Changelog yaklaşımına yakındır. Tarihler `YYYY-MM-DD` biçim
 - Kaynak WordPress sistemi migration boyunca salt okunur kabul edildi.
 - Dry-run, yedek ve rollback zorunlulukları eklendi.
 
+## [1.4.0] — 2026-10-15
+
+### Added
+
+- **"Ne Demişler?" sayfası geri geldi** (`/ne-demisler`): **37 gerçek
+  kullanıcı yorumu**, 2014–2015 arası. Sayfa WordPress'ten **boş** gelmişti
+  çünkü yorumlar sayfa gövdesinde değil **WordPress yorumu** olarak
+  duruyordu; `migrate.py` yalnızca `contentHtml` alıyordu.
+  Yorumlar `web.archive.org`'daki 13 Haziran 2026 anlık görüntüsünden
+  kurtarıldı (`src/content/yorumlar.json`).
+- Footer'a ve ana sayfadaki Uzmanlık bölümüne yorum sayfası bağlantısı.
+
+### Changed
+
+- **Ana sayfadaki "Uzmanlık" bölümü uydurma olmaktan çıktı.** Eskiden
+  "SketchUp %96, Lumion %72" gibi seviye çubukları vardı ve altında
+  *"Seviye göstergeleri yer tutucudur; ölçülmüş bir değerlendirmeye
+  dayanmaz"* yazıyordu — güven vermesi gereken bölüm tam tersini söylüyordu.
+  Yerine doğrulanabilir altı madde kondu:
+
+  | Madde | Kaynağı |
+  |---|---|
+  | 18 yıl SketchUp eğitmenliği | bestsketchupplugins.com'daki kendi beyanı |
+  | 9 yayımlanmış eğitim seti | `courses.json` (Udemy profilinden) |
+  | 7.269 Udemy öğrencisi | bestsketchupplugins.com'daki kendi beyanı |
+  | 22 SketchUp eklentisi | `src/content/products/*.json` (sayıldı) |
+  | Kendi render motoru | renderfun.com'da yayında |
+  | 338 yazılık arşiv, 25 kategori | arşivin kendisi |
+
+- Sayaçlardaki "10+ yıllık deneyim" **18** oldu (kendi beyanıyla tutarlı).
+- `.skills` / `.skill__bar` stilleri silindi.
+
+### Fixed
+
+- `/ne-demisler` artık boş gövde listesinde değil (3 → 2).
+
+### Doğrulama
+
+- 593 sayfa; `astro check` **0 hata**; yeni kırık link / eksik medya: 0
+- Yorum sayfası ölçüldü: 37 kart, masaüstünde 2 sütun, telefonda 1 sütun,
+  yatay taşma yok
+- Ana sayfada eski yüzde çubuğu kalmadı (ölçüldü: 0 adet)
+
+### Yorumlar hakkında notlar
+
+- Metinler **birebir** duruyor; yazım hataları dahil hiçbir şey düzeltilmedi.
+- Her kartta tarih görünür — yorumlar 2014–2015'e ait, güncel gibi sunulmuyor.
+- Arşivdeki 51 yorumdan: 37'si SketchUp/eğitim ile ilgili (yayında),
+  12'si bisiklet ve kişisel dostluk üzerine (`yorumlar.json` içinde
+  `kisisel` altında tutuluyor, sitede yayınlanmıyor), 1 spam
+  (`binary options`, 2022) ve 1 tane de 17 karakterlik tek cümle ayıklandı.
+
 ## [1.3.2] — 2026-10-14
 
 ### Added

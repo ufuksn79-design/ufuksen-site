@@ -48,10 +48,22 @@ export async function getStaticPaths() {
     props: { kind: "post" as const, post, posts, parked: isParked(post.data.slug) },
   }));
 
-  const pageRoutes = pages.map((page) => ({
-    params: { slug: decodeSlug(page.data.slug) },
-    props: { kind: "page" as const, page, posts },
-  }));
+  /**
+   * Kendi özel sayfası olan slug'lar buradan üretilmez — aynı adres iki kez
+   * üretilirse Astro derlemeyi durdurur.
+   *
+   * `ne-demisler`: WordPress'ten BOŞ gövdeyle geldi, çünkü yorumlar sayfa
+   * gövdesinde değil WordPress yorumu olarak duruyordu. Yorumlar arşivden
+   * kurtarıldı ve sayfa `src/pages/ne-demisler.astro` olarak yeniden yazıldı.
+   */
+  const OZEL_SAYFALAR = new Set(["ne-demisler"]);
+
+  const pageRoutes = pages
+    .filter((page) => !OZEL_SAYFALAR.has(page.data.slug))
+    .map((page) => ({
+      params: { slug: decodeSlug(page.data.slug) },
+      props: { kind: "page" as const, page, posts },
+    }));
 
   const categoryRoutes = categories.map((category) => ({
     params: { slug: decodeSlug(category.legacyUrl.replace(/^\//, "")) },

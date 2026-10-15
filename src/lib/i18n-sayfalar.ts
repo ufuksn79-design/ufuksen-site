@@ -106,6 +106,20 @@ interface SayfaMetinleri {
     tumEgitimler: (n: number) => string;
     uzmanlikBaslik: string;
     uzmanlikNot: string;
+    /**
+     * Uzmanlık satırları. Eskiden uydurma yüzde çubuklarıydı ve altında
+     * "yer tutucudur" yazıyordu; yerine doğrulanabilir maddeler kondu.
+     * Sayılar çağıran taraftan gelir, metne gömülmez.
+     */
+    uzmanlikListesi: (s: {
+      kurs: number;
+      urun: number;
+      yazi: number;
+      kategori: number;
+      egitimYolu: string;
+      blogYolu: string;
+      eklentiYolu: string;
+    }) => { baslik: string; not: string; yol?: string; disYol?: string }[];
     rakamlarBaslik: string;
     rakamlarNot: string;
     sayacYazi: string;
@@ -250,7 +264,37 @@ export const SAYFA: Record<Dil, SayfaMetinleri> = {
       egitimNot: (n) => `Udemy'de yayında olan ${n} eğitim seti. En yüksek puanlı üçü aşağıda.`,
       tumEgitimler: (n) => `Tüm eğitim setleri (${n})`,
       uzmanlikBaslik: "Uzmanlık",
-      uzmanlikNot: "Seviye göstergeleri yer tutucudur; ölçülmüş bir değerlendirmeye dayanmaz.",
+      uzmanlikNot: "Rakamların hepsi doğrulanabilir; hiçbiri tahmin değil.",
+      uzmanlikListesi: (s) => [
+        {
+          baslik: "18 yıl SketchUp eğitmenliği",
+          not: "Türkiye'de SketchUp'ı Türkçe anlatan ilk isimlerden; hâlâ ders veriyor.",
+        },
+        {
+          baslik: `${s.kurs} yayımlanmış eğitim seti`,
+          not: "SketchUp, D5 Render, Enscape, Twinmotion ve V-Ray üzerine, Udemy'de yayında.",
+          yol: s.egitimYolu,
+        },
+        {
+          baslik: "7.269 Udemy öğrencisi",
+          not: "Eğitim setlerine kayıtlı öğrenci sayısı.",
+        },
+        {
+          baslik: `${s.urun} SketchUp eklentisi geliştirdi`,
+          not: "Önce kendi işinde elle yapmaktan bıktığı işler için yazıldı, sonra paylaşıldı.",
+          yol: s.eklentiYolu,
+        },
+        {
+          baslik: "Kendi render motorunu yazdı",
+          not: "Render Fun — SketchUp'ın içinde çalışan, ücretsiz, ışın izlemeli render motoru.",
+          disYol: "https://renderfun.com/",
+        },
+        {
+          baslik: `${s.yazi} yazılık arşiv`,
+          not: `${s.kategori} başlık altında: 3B görselleştirme, render motorları ve modelleme.`,
+          yol: s.blogYolu,
+        },
+      ],
       rakamlarBaslik: "Rakamlar",
       rakamlarNot: "Bu değerler arşivden ölçüldü.",
       sayacYazi: "Yayımlanmış yazı",
@@ -397,7 +441,37 @@ export const SAYFA: Record<Dil, SayfaMetinleri> = {
       egitimNot: (n) => `${n} course sets published on Udemy. The three highest rated are below.`,
       tumEgitimler: (n) => `All course sets (${n})`,
       uzmanlikBaslik: "Expertise",
-      uzmanlikNot: "These level bars are indicative; they are not based on a measured assessment.",
+      uzmanlikNot: "Every figure here can be checked; none of them is an estimate.",
+      uzmanlikListesi: (s) => [
+        {
+          baslik: "18 years teaching SketchUp",
+          not: "One of the first people to teach SketchUp in Turkish — and still teaching.",
+        },
+        {
+          baslik: `${s.kurs} published course sets`,
+          not: "On SketchUp, D5 Render, Enscape, Twinmotion and V-Ray, live on Udemy.",
+          yol: s.egitimYolu,
+        },
+        {
+          baslik: "7,269 students on Udemy",
+          not: "Enrolled across the published course sets.",
+        },
+        {
+          baslik: `${s.urun} SketchUp plugins built`,
+          not: "Written first for his own work — the jobs he was tired of doing by hand.",
+          yol: s.eklentiYolu,
+        },
+        {
+          baslik: "Wrote his own render engine",
+          not: "Render Fun — a free, path-traced renderer that runs inside SketchUp.",
+          disYol: "https://renderfun.com/",
+        },
+        {
+          baslik: `${s.yazi} articles in the archive`,
+          not: `Across ${s.kategori} topics: 3D visualisation, render engines and modelling.`,
+          yol: s.blogYolu,
+        },
+      ],
       rakamlarBaslik: "By the numbers",
       rakamlarNot: "These figures were measured from the archive.",
       sayacYazi: "Published articles",

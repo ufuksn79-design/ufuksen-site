@@ -25,6 +25,8 @@ const year = new Date().getFullYear();
       <a href={en ? "/en/blog" : "/blog"}>{m.blog}</a>
       <a href={LISTE_YOLU[dil]}>{METIN[dil].bolumAdi}</a>
       <a href={en ? "/en/courses" : "/egitimler"}>{m.egitim}</a>
+      {/* Yorum sayfasının İngilizcesi yok; olmayan sayfaya bağlantı basmıyoruz. */}
+      {!en && <a href="/ne-demisler">Ne Demişler?</a>}
       <a href={en ? "/en/videos" : "/videolar"}>{m.video}</a>
       <a href={en ? "/en/software" : "/yazilim"}>{m.yazilim}</a>
       <a href={en ? "/en/search" : "/arama"}>{m.ara}</a>

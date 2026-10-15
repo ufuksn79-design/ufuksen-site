@@ -393,55 +393,58 @@ body {
 /* Uzmanlık çubukları                                                     */
 /* --------------------------------------------------------------------- */
 
-.skills {
-  display: grid;
-  gap: var(--s-6);
-}
-.skill {
+/**
+ * Uzmanlık listesi.
+ *
+ * Eskiden burada yüzde çubukları vardı (.skills/.skill__bar) ve altında
+ * "bu göstergeler yer tutucudur" yazıyordu. Uydurma sayı yerine
+ * doğrulanabilir maddeler kondu; çubuk stilleri de silindi.
+ *
+ * Sayaç bloğundan görsel olarak ayrı tutuldu: o büyük rakam, bu satır
+ * listesi — aynı kart şablonunun tekrarı değil (AGENTS.md §6).
+ */
+.uzmanlik {
   display: grid;
   gap: var(--s-2);
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
-.skill__head {
-  display: flex;
-  justify-content: space-between;
-  align-items: baseline;
-  gap: var(--s-3);
-  font-size: var(--t-small);
+.uzmanlik__madde > a,
+.uzmanlik__madde > div {
+  display: grid;
+  gap: 2px;
+  padding: var(--s-3) var(--s-4);
+  border-left: 2px solid var(--c-line-strong);
+  border-radius: 0 var(--r-md) var(--r-md) 0;
+  text-decoration: none;
+  transition:
+    border-color var(--d-fast) var(--e-out),
+    background var(--d-fast) var(--e-out);
 }
-.skill__head b {
+.uzmanlik__madde > a:hover,
+.uzmanlik__madde > a:focus-visible {
+  border-left-color: var(--c-accent);
+  background: var(--c-surface);
+}
+.uzmanlik__madde b {
   color: var(--c-text);
+  font-size: var(--t-body);
   font-weight: 600;
 }
-.skill__head span {
+.uzmanlik__madde > a b {
   color: var(--c-accent);
-  font-family: var(--font-mono);
-  font-size: var(--t-micro);
 }
-.skill__bar {
-  height: 5px;
-  border-radius: var(--r-pill);
-  background: var(--c-surface-raised);
-  overflow: hidden;
-}
-.skill__bar i {
-  display: block;
-  height: 100%;
-  border-radius: inherit;
-  background: var(--c-accent);
-  width: var(--w, 70%);
-  transform-origin: left;
-  transform: scaleX(0);
-  transition: transform var(--d-slow) var(--e-out);
-}
-.skill.is-visible .skill__bar i,
-html:not(.js) .skill__bar i {
-  transform: scaleX(1);
+.uzmanlik__madde span {
+  color: var(--c-text-muted);
+  font-size: var(--t-small);
+  line-height: 1.5;
 }
 
 @media (min-width: 768px) {
-  .skills {
+  .uzmanlik {
     grid-template-columns: 1fr 1fr;
-    gap: var(--s-6) var(--s-8);
+    gap: var(--s-2) var(--s-6);
   }
 }
 
@@ -1130,4 +1133,25 @@ html:not(.js) .skill__bar i {
       transform: translateY(-8px) scale(0.985);
     }
   }
+}
+
+/**
+ * Uzmanlık bölümünden yorum sayfasına çıkış bağlantısı.
+ * Yalnızca Türkçe tarafta basılır (yorum sayfasının İngilizcesi yok).
+ */
+.uzmanlik__cikis {
+  margin-top: var(--s-4);
+  font-size: var(--t-small);
+}
+.uzmanlik__cikis a {
+  color: var(--c-accent);
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  min-height: var(--tap-min);
+}
+.uzmanlik__cikis a:hover,
+.uzmanlik__cikis a:focus-visible {
+  text-decoration: underline;
+  text-underline-offset: 3px;
 }

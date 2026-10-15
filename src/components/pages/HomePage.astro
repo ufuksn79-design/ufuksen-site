@@ -66,21 +66,38 @@ const AVATAR_SRC: string | null = "/media/marka/ufuksen-studyo-256.webp";
 const COVER_SRC: string | null = null;
 
 
-const skills = [
-  { name: "SketchUp", level: 96 },
-  { name: "D5 Render", level: 90 },
-  { name: "Twinmotion", level: 85 },
-  { name: "Enscape", level: 82 },
-  { name: "V-Ray", level: 80 },
-  { name: "Lumion", level: 72 },
-];
+/**
+ * Uzmanlık — yüzde çubukları KALDIRILDI.
+ *
+ * Eskiden "SketchUp %96, Lumion %72" gibi uydurma seviye çubukları vardı ve
+ * bölümün altında "bu göstergeler yer tutucudur, ölçülmüş bir değerlendirmeye
+ * dayanmaz" yazıyordu. Güven vermesi gereken bölüm tam tersini söylüyordu.
+ *
+ * Yerine doğrulanabilir olanlar kondu. Her satırın kanıtı ya sitenin kendi
+ * verisinde ya da dışarıdan bakılabilecek bir yerde:
+ *   - 18 yıl / 7.269 öğrenci : bestsketchupplugins.com'daki kendi beyanı
+ *   - 22 eklenti             : src/content/products/*.json (sayıldı)
+ *   - 9 eğitim seti          : src/content/courses.json (Udemy profilinden)
+ *   - 430 yazı / 27 kategori : arşivin kendisi
+ *   - Render Fun             : renderfun.com'da yayında, ücretsiz
+ */
+const uzmanlik = t.uzmanlikListesi({
+  kurs: courseCount,
+  urun: products.length,
+  yazi: totalPosts,
+  kategori: categories.length,
+  egitimYolu,
+  blogYolu,
+  eklentiYolu: dil === "en" ? "/sketchup-best-plugins.html" : "/sketchup-en-iyi-pluginleri.html",
+});
 
 /** Sayaçlar — bunlar gerçek, arşivden ölçüldü. */
 const counters = [
   { value: totalPosts, suffix: "", label: "Yayımlanmış yazı" },
   { value: categories.length, suffix: "", label: "Kategori" },
   { value: 1819, suffix: "", label: "Görsel arşivi" },
-  { value: 10, suffix: "+", label: "Yıllık deneyim" },
+  /** 18: kendi beyanı (bestsketchupplugins.com). Eskiden "10+" yazıyordu. */
+  { value: 18, suffix: "", label: "Yıllık deneyim" },
 ];
 
 ---
@@ -202,21 +219,40 @@ const counters = [
       title={t.uzmanlikBaslik}
       note={t.uzmanlikNot}
     />
-    <div class="skills">
+    <ul class="uzmanlik">
       {
-        skills.map((skill) => (
-          <div class="skill u-reveal">
-            <div class="skill__head">
-              <b>{skill.name}</b>
-              <span>{skill.level}%</span>
-            </div>
-            <div class="skill__bar">
-              <i style={`--w:${skill.level}%`} />
-            </div>
-          </div>
-        ))
+        uzmanlik.map((madde) => {
+          const govde = (
+            <>
+              <b>{madde.baslik}</b>
+              <span>{madde.not}</span>
+            </>
+          );
+          return (
+            <li class="uzmanlik__madde u-reveal">
+              {madde.disYol ? (
+                <a href={madde.disYol} target="_blank" rel="noopener">
+                  {govde}
+                </a>
+              ) : madde.yol ? (
+                <a href={madde.yol}>{govde}</a>
+              ) : (
+                <div>{govde}</div>
+              )}
+            </li>
+          );
+        })
       }
-    </div>
+    </ul>
+    {
+      /* Sosyal kanıt: yorum sayfası yalnızca Türkçe var (ADR-025 gereği
+         çevrilmedi), o yüzden bağlantı yalnızca Türkçe tarafta basılıyor. */
+      dil === "tr" && (
+        <p class="uzmanlik__cikis">
+          <a href="/ne-demisler">Kullananlar ne demiş? →</a>
+        </p>
+      )
+    }
   </section>
 
   <!-- SAYAÇLAR -->

@@ -1,0 +1,190 @@
+---
+/**
+ * "Ne Demişler?" — gerçek kullanıcı yorumları.
+ *
+ * Bu sayfa WordPress'ten BOŞ geldi: yorumlar sayfa gövdesinde değil,
+ * WordPress yorumu olarak duruyordu ve `migrate.py` yalnızca gövdeyi
+ * alıyordu. Yorumlar web.archive.org'daki anlık görüntüden kurtarıldı
+ * (bkz. src/content/yorumlar.json içindeki `kaynak` alanı).
+ *
+ * Metinler BİREBİR duruyor — yazım hataları dahil hiçbir şey düzeltilmedi.
+ * Bunlar gerçek kişilerin gerçek cümleleri; "düzeltmek" onları sahtelemek
+ * olurdu (AGENTS.md §5).
+ *
+ * Tarihler her kartta açıkça yazılı: yorumlar 2014–2015 dönemine ait,
+ * güncel gibi sunulmuyor.
+ */
+import Base from "../layouts/Base.astro";
+import SectionTitle from "../components/SectionTitle.astro";
+import yorumlar from "../content/yorumlar.json";
+import { karsiYol } from "../lib/i18n-sayfalar";
+
+const liste = yorumlar.yorumlar;
+
+/** Baş harfler — kart köşesindeki rozet için. */
+function basHarfler(ad: string): string {
+  return ad
+    .split(/\s+/)
+    .filter(Boolean)
+    .slice(0, 2)
+    .map((p) => p[0]?.toLocaleUpperCase("tr-TR") ?? "")
+    .join("");
+}
+
+const tarihler = liste.map((y) => y.tarih).filter(Boolean) as string[];
+const ilkYil = tarihler.sort()[0]?.slice(0, 4);
+const sonYil = tarihler.at(-1)?.slice(0, 4);
+---
+
+<Base
+  title="Ne Demişler? — Öğrenci ve Kullanıcı Yorumları | Ufuk Şen"
+  description={`SketchUp ve V-Ray eğitim setlerini kullananların kendi sözleri. ${liste.length} yorum, ${ilkYil}–${sonYil} arasında siteye bırakıldı.`}
+  path="/ne-demisler"
+  dil="tr"
+  alternateUrl={karsiYol("/ne-demisler", "en")}
+>
+  <section style="display:grid;gap:var(--s-8)">
+    <SectionTitle
+      title="Ne Demişler?"
+      as="h1"
+      note={`SketchUp ve V-Ray eğitimlerini kullananların kendi sözleri — ${liste.length} yorum.`}
+    />
+
+    <p class="giris">
+      Aşağıdaki yorumlar sitenin eski sürümüne ziyaretçiler tarafından bırakıldı.
+      Hepsi <b>{ilkYil}–{sonYil}</b> dönemine ait ve <b>olduğu gibi</b> duruyor:
+      tek kelimesi değiştirilmedi, yazım hataları bile düzeltilmedi.
+    </p>
+
+    <div class="yorumlar">
+      {
+        liste.map((y) => (
+          <figure class="yorum u-reveal">
+            <blockquote>
+              {y.metin.split(/\n{2,}/).map((p) => (
+                <p>{p}</p>
+              ))}
+            </blockquote>
+            <figcaption>
+              <span class="yorum__rozet" aria-hidden="true">
+                {basHarfler(y.ad)}
+              </span>
+              <span class="yorum__kim">
+                <b>{y.ad}</b>
+                {y.tarih && <time datetime={y.tarih}>{y.tarihGorunen}</time>}
+              </span>
+            </figcaption>
+          </figure>
+        ))
+      }
+    </div>
+
+    <section class="cta">
+      <p>Siz de başlamak isterseniz: eğitim setleri ve birebir ders.</p>
+      <div class="cta__butonlar">
+        <a class="btn btn--primary" href="/egitimler">Eğitim setleri</a>
+        <a class="btn btn--ghost" href="/iletisim">Birebir ders için yazın</a>
+      </div>
+    </section>
+  </section>
+</Base>
+
+<style>
+  .giris {
+    color: var(--c-text-muted);
+    max-width: 68ch;
+  }
+
+  /**
+   * Masonry değil, basit sütun akışı: yorumların uzunluğu çok değişken
+   * (17–1.600 karakter), eşit yükseklikli grid büyük boşluklar bırakıyordu.
+   */
+  .yorumlar {
+    columns: 2;
+    column-gap: var(--s-5);
+  }
+  @media (max-width: 860px) {
+    .yorumlar {
+      columns: 1;
+    }
+  }
+
+  .yorum {
+    break-inside: avoid;
+    margin: 0 0 var(--s-5);
+    padding: var(--s-5);
+    border: 1px solid var(--c-line);
+    border-radius: var(--r-md);
+    background: var(--c-surface);
+    display: grid;
+    gap: var(--s-4);
+  }
+
+  .yorum blockquote {
+    margin: 0;
+    display: grid;
+    gap: var(--s-3);
+    color: rgba(255, 255, 255, 0.78);
+    font-size: var(--t-body);
+    line-height: 1.6;
+  }
+  .yorum blockquote p {
+    margin: 0;
+  }
+
+  .yorum figcaption {
+    display: flex;
+    align-items: center;
+    gap: var(--s-3);
+    padding-top: var(--s-3);
+    border-top: 1px solid var(--c-line);
+  }
+
+  .yorum__rozet {
+    flex: none;
+    width: 38px;
+    height: 38px;
+    display: grid;
+    place-items: center;
+    border-radius: 50%;
+    background: var(--c-surface-raised);
+    border: 1px solid var(--c-line-strong);
+    color: var(--c-accent);
+    font-family: var(--font-mono);
+    font-size: var(--t-micro);
+    font-weight: 700;
+    letter-spacing: 0.04em;
+  }
+
+  .yorum__kim {
+    display: grid;
+    line-height: 1.3;
+  }
+  .yorum__kim b {
+    color: var(--c-text);
+    font-size: var(--t-small);
+  }
+  .yorum__kim time {
+    color: var(--c-text-faint);
+    font-size: var(--t-micro);
+    font-family: var(--font-mono);
+  }
+
+  .cta {
+    display: grid;
+    gap: var(--s-4);
+    padding: var(--s-6);
+    border: 1px solid var(--c-line);
+    border-radius: var(--r-md);
+    background: var(--c-surface);
+  }
+  .cta p {
+    margin: 0;
+    color: var(--c-text-muted);
+  }
+  .cta__butonlar {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--s-3);
+  }
+</style>
