@@ -28,6 +28,27 @@ Format, Keep a Changelog yaklaşımına yakındır. Tarihler `YYYY-MM-DD` biçim
 - Kaynak WordPress sistemi migration boyunca salt okunur kabul edildi.
 - Dry-run, yedek ve rollback zorunlulukları eklendi.
 
+## [1.5.3] — 2026-10-15
+
+### Fixed
+
+- **Tanımsız `--s-5` aralık jetonu.** Ölçek `--s-4`ten `--s-6`ya atlıyor;
+  `--s-5` diye bir jeton yok. Yazdığım beş yerde kullanılmıştı ve tanımsız
+  değişken bildirimi geçersiz kıldığı için **boşluklar hiç uygulanmıyordu**:
+  yorum kartlarının dikey aralığı 0, iç boşluğu 0 kalıyordu.
+  Gerçek jetonlarla değiştirildi (`/ne-demisler` ve `/egitimler`).
+
+### Changed
+
+- Yorum kartları arasına bir satırlık boşluk kondu (`--s-8`, 32px);
+  sütun arası ve iç boşluk `--s-6` (24px).
+
+### Doğrulama
+
+- Ölçüldü: alt boşluk 32px, iki kart arası 52px, sütun arası 24px,
+  iç boşluk 24px, 2 sütun, 37 kart
+- Kaynakta kalan `var(--s-5)`: **0**
+
 ## [1.5.2] — 2026-10-15
 
 ### Changed — /ne-demisler
