@@ -12,6 +12,7 @@ import Base from "../../layouts/Base.astro";
 import SectionTitle from "../SectionTitle.astro";
 import CourseCard, { type Course } from "../CourseCard.astro";
 import courseData from "../../content/courses.json";
+import egitimKonulari from "../../content/egitim-konulari.json";
 import { SAYFA, karsiYol } from "../../lib/i18n-sayfalar";
 import { digerDil, type Dil } from "../../lib/i18n";
 
@@ -27,7 +28,7 @@ const totalHours = courses.reduce((sum, course) => sum + course.saat, 0);
 const totalLectures = courses.reduce((sum, course) => sum + course.dersSayisi, 0);
 const totalReviews = courses.reduce((sum, course) => sum + course.yorumSayisi, 0);
 const avgRating =
-  courses.reduce((sum, course) => sum + course.puan * course.yorumSayisi, 0) / totalReviews;
+  courses.reduce((sum, course) => sum + (course.puan ?? 0) * course.yorumSayisi, 0) / totalReviews;
 
 const yol = dil === "en" ? "/en/courses" : "/egitimler";
 /** Sayı biçimi dile göre: 1.234,5 ↔ 1,234.5 */
@@ -52,14 +53,23 @@ const yerel = dil === "en" ? "en-US" : "tr-TR";
         "@type": "Course",
         name: course.baslik,
         url: course.url,
-        inLanguage: "tr",
+        inLanguage: course.dil,
         provider: { "@type": "Organization", name: "Udemy" },
-        aggregateRating: {
-          "@type": "AggregateRating",
-          ratingValue: course.puan,
-          reviewCount: course.yorumSayisi,
-          bestRating: 5,
-        },
+        /**
+         * Yorumu olmayan kursa aggregateRating KONULMAZ: reviewCount 0 olan
+         * puan yapısal veri doğrulamasında hata verir ve Search Console'da
+         * uyarı olarak döner.
+         */
+        ...(course.yorumSayisi > 0 && course.puan !== null
+          ? {
+              aggregateRating: {
+                "@type": "AggregateRating",
+                ratingValue: course.puan,
+                reviewCount: course.yorumSayisi,
+                bestRating: 5,
+              },
+            }
+          : {}),
       },
     })),
   }}
@@ -82,6 +92,83 @@ const yerel = dil === "en" ? "en-US" : "tr-TR";
     </div>
   </div>
 
+  {
+    /* Eğitim konuları ve ücretsiz video dersler — yalnızca Türkçe taraf. */
+    dil === "tr" && (
+      <section class="konular" aria-labelledby="egitim-konulari">
+        <h2 id="egitim-konulari">Eğitim konularımız</h2>
+        <p class="konular__not">
+          Aktif olarak ders verdiğimiz başlıklar. Udemy setleri aşağıda; burada
+          <strong> neyi öğrettiğimiz</strong> yazıyor.
+        </p>
+        <div class="konular__izgara">
+          {egitimKonulari.konular.map((k) => (
+            <article class="konu u-reveal">
+              <header>
+                <h3>{k.ad}</h3>
+                {k.durum === "youtube" ? (
+                  <span class="konu__rozet konu__rozet--youtube">YouTube'da ücretsiz</span>
+                ) : (
+                  <span class="konu__rozet">Aktif</span>
+                )}
+              </header>
+              <p class="konu__ozet">{k.ozet}</p>
+              <p class="konu__aciklama">{k.aciklama}</p>
+              {k.kapsam.length > 0 && (
+                <ul class="konu__kapsam">
+                  {k.kapsam.map((madde) => (
+                    <li>{madde}</li>
+                  ))}
+                </ul>
+              )}
+              {k.not && <p class="konu__uyari">{k.not}</p>}
+              <a
+                class="konu__cta"
+                href={k.url}
+                {...(k.url.startsWith("http") ? { target: "_blank", rel: "noopener" } : {})}
+              >
+                {k.urlEtiket} <i aria-hidden="true">→</i>
+              </a>
+            </article>
+          ))}
+        </div>
+
+        <h2 id="video-dersler" style="margin-top:var(--s-12)">
+          {egitimKonulari.videoDersler.baslik}
+        </h2>
+        <p class="konular__not">{egitimKonulari.videoDersler.not}</p>
+        <ul class="dersler">
+          {egitimKonulari.videoDersler.videolar.map((v) => (
+            <li>
+              <a href={`https://www.youtube.com/watch?v=${v.id}`} target="_blank" rel="noopener">
+                <img
+                  src={`https://i.ytimg.com/vi/${v.id}/hqdefault.jpg`}
+                  alt=""
+                  loading="lazy"
+                  decoding="async"
+                  width="480"
+                  height="360"
+                />
+                <span>
+                  <b>{v.baslik}</b>
+                  <time datetime={v.tarih}>{v.tarih}</time>
+                </span>
+              </a>
+            </li>
+          ))}
+        </ul>
+        <p class="konular__not">
+          Tüm dersler için:{" "}
+          <a href={egitimKonulari.kanal.url} target="_blank" rel="noopener">
+            {egitimKonulari.kanal.ad} YouTube kanalı
+          </a>
+        </p>
+
+        <h2 style="margin-top:var(--s-12)">Udemy eğitim setleri</h2>
+      </section>
+    )
+  }
+
   <div class="courses">
     {courses.map((course) => <CourseCard course={course} />)}
   </div>
@@ -90,6 +177,157 @@ const yerel = dil === "en" ? "en-US" : "tr-TR";
 </Base>
 
 <style>
+  .konular {
+    margin-bottom: var(--s-12);
+  }
+  .konular h2 {
+    font-size: var(--t-h2);
+    margin-bottom: var(--s-2);
+  }
+  .konular__not {
+    color: var(--c-text-muted);
+    font-size: var(--t-small);
+    margin-bottom: var(--s-6);
+    max-width: 68ch;
+  }
+  .konular__not a {
+    color: var(--c-accent);
+  }
+
+  .konular__izgara {
+    display: grid;
+    gap: var(--s-5);
+  }
+  @media (min-width: 880px) {
+    .konular__izgara {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+
+  .konu {
+    display: grid;
+    gap: var(--s-3);
+    align-content: start;
+    padding: var(--s-5);
+    border: 1px solid var(--c-line);
+    border-radius: var(--r-md);
+    background: var(--c-surface);
+  }
+  .konu header {
+    display: flex;
+    align-items: center;
+    gap: var(--s-3);
+    flex-wrap: wrap;
+  }
+  .konu h3 {
+    margin: 0;
+    font-size: var(--t-body-lg);
+    color: var(--c-accent);
+  }
+  .konu__rozet {
+    padding: 2px var(--s-2);
+    border: 1px solid var(--c-line-strong);
+    border-radius: var(--r-pill);
+    color: var(--c-text-muted);
+    font-family: var(--font-mono);
+    font-size: var(--t-micro);
+  }
+  .konu__rozet--youtube {
+    border-color: var(--c-accent);
+    color: var(--c-accent);
+  }
+  .konu__ozet {
+    margin: 0;
+    color: var(--c-text);
+    font-size: var(--t-body);
+  }
+  .konu__aciklama {
+    margin: 0;
+    color: var(--c-text-muted);
+    font-size: var(--t-small);
+    line-height: 1.6;
+  }
+  .konu__kapsam {
+    display: grid;
+    gap: var(--s-2);
+    margin: 0;
+    padding-left: 1.1rem;
+    color: var(--c-text-muted);
+    font-size: var(--t-small);
+  }
+  .konu__uyari {
+    margin: 0;
+    color: var(--c-text-faint);
+    font-size: var(--t-micro);
+    line-height: 1.5;
+  }
+  .konu__cta {
+    justify-self: start;
+    display: inline-flex;
+    align-items: center;
+    gap: var(--s-2);
+    min-height: var(--tap-min);
+    color: var(--c-accent);
+    font-size: var(--t-small);
+    font-weight: 600;
+    text-decoration: none;
+  }
+  .konu__cta:hover,
+  .konu__cta:focus-visible {
+    text-decoration: underline;
+    text-underline-offset: 3px;
+  }
+
+  .dersler {
+    display: grid;
+    gap: var(--s-3);
+    list-style: none;
+    padding: 0;
+    margin: 0 0 var(--s-6);
+  }
+  @media (min-width: 720px) {
+    .dersler {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+  .dersler a {
+    display: flex;
+    gap: var(--s-3);
+    align-items: center;
+    padding: var(--s-2);
+    border: 1px solid var(--c-line);
+    border-radius: var(--r-md);
+    background: var(--c-surface);
+    text-decoration: none;
+    transition: border-color var(--d-fast) var(--e-out);
+  }
+  .dersler a:hover,
+  .dersler a:focus-visible {
+    border-color: var(--c-accent);
+  }
+  .dersler img {
+    flex: none;
+    width: 96px;
+    height: 54px;
+    object-fit: cover;
+    border-radius: var(--r-sm, 6px);
+  }
+  .dersler span {
+    display: grid;
+    gap: 2px;
+  }
+  .dersler b {
+    color: var(--c-text);
+    font-size: var(--t-small);
+    font-weight: 600;
+    line-height: 1.35;
+  }
+  .dersler time {
+    color: var(--c-text-faint);
+    font-family: var(--font-mono);
+    font-size: var(--t-micro);
+  }
+
   .courses {
     display: grid;
     gap: var(--s-6);

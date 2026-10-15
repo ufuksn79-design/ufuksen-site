@@ -15,11 +15,14 @@ export interface Course {
   altBaslik: string | null;
   url: string;
   gorsel: string;
-  puan: number;
+  /** Yeni kurslarda puan yok — yorum almamış demektir. */
+  puan: number | null;
   yorumSayisi: number;
   saat: number;
   dersSayisi: number;
   seviye: string;
+  /** "tr" | "en" | "es" | "de" — kursun anlatım dili. */
+  dil: string;
   yazilim: string[];
 }
 
@@ -28,6 +31,13 @@ interface Props {
 }
 
 const { course } = Astro.props;
+
+/** Rozette gösterilecek dil adları. */
+const DIL_ADI: Record<string, string> = {
+  en: "İngilizce",
+  es: "İspanyolca",
+  de: "Almanca",
+};
 const saat = course.saat.toLocaleString("tr-TR");
 ---
 
@@ -43,20 +53,44 @@ const saat = course.saat.toLocaleString("tr-TR");
     />
   </a>
   <div class="course__body">
+    {
+      /* Dil rozeti yalnızca Türkçe olmayan kurslarda: site Türkçe, bu yüzden
+         "tr" rozeti her kartta tekrar eden gürültü olurdu. */
+      course.dil !== "tr" && (
+        <span class="course__dil">{DIL_ADI[course.dil] ?? course.dil.toUpperCase()}</span>
+      )
+    }
     <h3>
       <a href={course.url} rel="noopener" target="_blank">{course.baslik}</a>
     </h3>
     {course.altBaslik && <p class="course__sub">{course.altBaslik}</p>}
 
     <dl class="course__stats">
-      <div>
-        <dt>Puan</dt>
-        <dd>
-          <span class="course__star" aria-hidden="true">★</span>
-          {course.puan.toLocaleString("tr-TR")}
-          <small>({course.yorumSayisi})</small>
-        </dd>
-      </div>
+      {
+        /**
+         * Yeni yayımlanan kurslarda puan yok (henüz yorum almamış).
+         * Uydurma puan yazmaktansa kutuyu "Yeni" diye gösteriyoruz.
+         */
+        course.puan === null ? (
+          <div>
+            <dt>Durum</dt>
+            <dd>
+              <span class="course__yeni">Yeni</span>
+            </dd>
+          </div>
+        ) : (
+          <div>
+            <dt>Puan</dt>
+            <dd>
+              <span class="course__star" aria-hidden="true">
+                ★
+              </span>
+              {course.puan.toLocaleString("tr-TR")}
+              <small>({course.yorumSayisi})</small>
+            </dd>
+          </div>
+        )
+      }
       <div><dt>Süre</dt><dd>{saat} saat</dd></div>
       <div><dt>Ders</dt><dd>{course.dersSayisi}</dd></div>
       <div><dt>Seviye</dt><dd>{course.seviye}</dd></div>
@@ -69,6 +103,21 @@ const saat = course.saat.toLocaleString("tr-TR");
 </article>
 
 <style>
+  .course__dil {
+    justify-self: start;
+    padding: 2px var(--s-2);
+    border: 1px solid var(--c-line-strong);
+    border-radius: var(--r-pill);
+    color: var(--c-text-muted);
+    font-family: var(--font-mono);
+    font-size: var(--t-micro);
+    letter-spacing: 0.06em;
+  }
+  .course__yeni {
+    color: var(--c-accent);
+    font-weight: 600;
+  }
+
   .course {
     display: grid;
     gap: var(--s-4);

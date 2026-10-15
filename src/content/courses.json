@@ -1,63 +1,544 @@
 {
   "kaynak": "https://www.udemy.com/user/ufuksen/",
-  "cekilmeTarihi": "2026-07-31",
-  "not": "Udemy eğitmen profilinden okundu. FİYAT BİLİNÇLİ OLARAK TUTULMUYOR: Udemy fiyatları kampanyaya göre sürekli değişir; sabit yazmak yanlış bilgi üretir. Kullanıcı fiyatı Udemy'de görür.",
+  "cekilmeTarihi": "2026-10-15",
+  "toplamOgrenci": 7273,
+  "toplamYorum": 900,
+  "not": "Eğitmen profilinin dört sayfası tarayıcıdan okundu. FİYAT BİLİNÇLİ OLARAK TUTULMUYOR: Udemy fiyatları kampanyaya göre sürekli değişir; sabit yazmak yanlış bilgi üretir. Puanı olmayan kurslar yeni yayımlananlardır (henüz yorum almamış).",
   "kurslar": [
+    {
+      "slug": "d5-render-mimari-gorsellestirme-egitim-seti",
+      "baslik": "D5 Render Mimari Görselleştirme Eğitim Seti",
+      "altBaslik": null,
+      "url": "https://www.udemy.com/course/d5-render-mimari-gorsellestirme-egitim-seti/",
+      "gorsel": "/media/udemy/d5-render-mimari-gorsellestirme-egitim-seti.jpg",
+      "gorselKaynak": "https://img-c.udemycdn.com/course/480x270/5299256_cf1f_4.jpg",
+      "puan": 4.3,
+      "yorumSayisi": 149,
+      "saat": 3,
+      "dersSayisi": 16,
+      "seviye": "Yeni Başlayan",
+      "dil": "tr",
+      "yazilim": [
+        "d5-render"
+      ]
+    },
+    {
+      "slug": "d5-render-29-ile-gercekci-yatak-odas-render-egitimi",
+      "baslik": "D5 Render 2.9 ile Gerçekçi Yatak Odası Render Eğitimi",
+      "altBaslik": null,
+      "url": "https://www.udemy.com/course/d5-render-29-ile-gercekci-yatak-odas-render-egitimi/",
+      "gorsel": "/media/udemy/d5-render-29-ile-gercekci-yatak-odas-render-egitimi.jpg",
+      "gorselKaynak": "https://img-c.udemycdn.com/course/480x270/6487497_4fd9.jpg",
+      "puan": 4.5,
+      "yorumSayisi": 8,
+      "saat": 3,
+      "dersSayisi": 37,
+      "seviye": "Tüm Düzeyler",
+      "dil": "tr",
+      "yazilim": [
+        "d5-render"
+      ]
+    },
+    {
+      "slug": "realistic-bedroom-rendering-with-enscape-42",
+      "baslik": "Realistic Bedroom Rendering with Enscape 4.2",
+      "altBaslik": null,
+      "url": "https://www.udemy.com/course/realistic-bedroom-rendering-with-enscape-42/",
+      "gorsel": "/media/udemy/realistic-bedroom-rendering-with-enscape-42.jpg",
+      "gorselKaynak": "https://img-c.udemycdn.com/course/480x270/6571835_3916.jpg",
+      "puan": 4.3,
+      "yorumSayisi": 5,
+      "saat": 3.5,
+      "dersSayisi": 34,
+      "seviye": "Tüm Düzeyler",
+      "dil": "en",
+      "yazilim": [
+        "enscape"
+      ]
+    },
+    {
+      "slug": "d5-render-motoru-ile-gercekci-kaliteli-ic-mekan-render",
+      "baslik": "D5 Render Motoru ile Gerçekçi Kaliteli İç Mekân Render",
+      "altBaslik": null,
+      "url": "https://www.udemy.com/course/d5-render-motoru-ile-gercekci-kaliteli-ic-mekan-render/",
+      "gorsel": "/media/udemy/d5-render-motoru-ile-gercekci-kaliteli-ic-mekan-render.jpg",
+      "gorselKaynak": "https://img-c.udemycdn.com/course/480x270/4529158_57a5_3.jpg",
+      "puan": 4.1,
+      "yorumSayisi": 55,
+      "saat": 1.5,
+      "dersSayisi": 10,
+      "seviye": "Yeni Başlayan",
+      "dil": "tr",
+      "yazilim": [
+        "d5-render"
+      ]
+    },
+    {
+      "slug": "sketchup-2023-en-iyi-temel-egitim-kursu-01",
+      "baslik": "SketchUp 2023 En İyi Temel Eğitim Kursu 01",
+      "altBaslik": null,
+      "url": "https://www.udemy.com/course/sketchup-2023-en-iyi-temel-egitim-kursu-01/",
+      "gorsel": "/media/udemy/sketchup-2023-en-iyi-temel-egitim-kursu-01.jpg",
+      "gorselKaynak": "https://img-c.udemycdn.com/course/480x270/5646210_3762_4.jpg",
+      "puan": 4.3,
+      "yorumSayisi": 65,
+      "saat": 2,
+      "dersSayisi": 11,
+      "seviye": "Yeni Başlayan",
+      "dil": "tr",
+      "yazilim": [
+        "sketchup"
+      ]
+    },
     {
       "slug": "sketchup-icin-en-iyi-pluginler-is-aksn-hzlandr",
       "baslik": "SketchUp için En İyi Pluginler: İş Akışını Hızlandır",
-      "altBaslik": "SketchUp için en iyi pluginlerin kullanımları",
+      "altBaslik": null,
       "url": "https://www.udemy.com/course/sketchup-icin-en-iyi-pluginler-is-aksn-hzlandr/",
       "gorsel": "/media/udemy/sketchup-icin-en-iyi-pluginler-is-aksn-hzlandr.jpg",
-      "gorselKaynak": "https://img-c.udemycdn.com/course/240x135/6466471_bd64_2.jpg",
+      "gorselKaynak": "https://img-c.udemycdn.com/course/480x270/6466471_bd64_2.jpg",
       "puan": 4.7,
       "yorumSayisi": 15,
       "saat": 2.5,
       "dersSayisi": 41,
       "seviye": "Tüm Düzeyler",
-      "yazilim": ["sketchup"]
+      "dil": "tr",
+      "yazilim": [
+        "sketchup"
+      ]
     },
     {
-      "slug": "sketchup-vray-7-hzl-ve-profesyonel-salon-render-egitimi",
-      "baslik": "SketchUp V-Ray 7: Hızlı ve Profesyonel Salon Render Eğitimi",
-      "altBaslik": "SketchUp V-Ray 7 ile iç mekân render",
-      "url": "https://www.udemy.com/course/sketchup-vray-7-hzl-ve-profesyonel-salon-render-egitimi/",
-      "gorsel": "/media/udemy/sketchup-vray-7-hzl-ve-profesyonel-salon-render-egitimi.jpg",
-      "gorselKaynak": "https://img-c.udemycdn.com/course/240x135/6515941_de2b_2.jpg",
-      "puan": 4.6,
-      "yorumSayisi": 5,
-      "saat": 1.5,
-      "dersSayisi": 25,
+      "slug": "sketchup-2023-en-iyi-temel-egitim-kursu-02",
+      "baslik": "SketchUp 2023 En İyi Temel Eğitim Kursu 02",
+      "altBaslik": null,
+      "url": "https://www.udemy.com/course/sketchup-2023-en-iyi-temel-egitim-kursu-02/",
+      "gorsel": "/media/udemy/sketchup-2023-en-iyi-temel-egitim-kursu-02.jpg",
+      "gorselKaynak": "https://img-c.udemycdn.com/course/480x270/5649588_f952_5.jpg",
+      "puan": 4.3,
+      "yorumSayisi": 19,
+      "saat": 2,
+      "dersSayisi": 8,
+      "seviye": "Yeni Başlayan",
+      "dil": "tr",
+      "yazilim": [
+        "sketchup"
+      ]
+    },
+    {
+      "slug": "twinmotion-2025-masterclass-from-zero-to-expert",
+      "baslik": "Twinmotion 2025 Masterclass: From Zero to Expert",
+      "altBaslik": null,
+      "url": "https://www.udemy.com/course/twinmotion-2025-masterclass-from-zero-to-expert/",
+      "gorsel": "/media/udemy/twinmotion-2025-masterclass-from-zero-to-expert.jpg",
+      "gorselKaynak": "https://img-c.udemycdn.com/course/480x270/6574117_4b00.jpg",
+      "puan": 3.9,
+      "yorumSayisi": 7,
+      "saat": 6,
+      "dersSayisi": 40,
       "seviye": "Tüm Düzeyler",
-      "yazilim": ["sketchup", "vray"]
+      "dil": "en",
+      "yazilim": [
+        "twinmotion"
+      ]
+    },
+    {
+      "slug": "fast-realistic-rendering-sketchup-to-d5-render-workflow",
+      "baslik": "Fast & Realistic Rendering: SketchUp to D5 Render Workflow",
+      "altBaslik": null,
+      "url": "https://www.udemy.com/course/fast-realistic-rendering-sketchup-to-d5-render-workflow/",
+      "gorsel": "/media/udemy/fast-realistic-rendering-sketchup-to-d5-render-workflow.jpg",
+      "gorselKaynak": "https://img-c.udemycdn.com/course/480x270/6541211_0693_2.jpg",
+      "puan": 3.8,
+      "yorumSayisi": 17,
+      "saat": 3.5,
+      "dersSayisi": 36,
+      "seviye": "Tüm Düzeyler",
+      "dil": "en",
+      "yazilim": [
+        "sketchup",
+        "d5-render"
+      ]
+    },
+    {
+      "slug": "sketchup-vray-6-gercekci-ic-mekan-render-egitimi",
+      "baslik": "SketchUp V-Ray 6 Gerçekçi İç Mekân Render Eğitimi",
+      "altBaslik": null,
+      "url": "https://www.udemy.com/course/sketchup-vray-6-gercekci-ic-mekan-render-egitimi/",
+      "gorsel": "/media/udemy/sketchup-vray-6-gercekci-ic-mekan-render-egitimi.jpg",
+      "gorselKaynak": "https://img-c.udemycdn.com/course/480x270/5877850_a195_2.jpg",
+      "puan": 4.5,
+      "yorumSayisi": 47,
+      "saat": 3,
+      "dersSayisi": 27,
+      "seviye": "Tüm Düzeyler",
+      "dil": "tr",
+      "yazilim": [
+        "sketchup",
+        "vray"
+      ]
     },
     {
       "slug": "twinmotion-2023-gercekci-render-egitim-seti",
       "baslik": "Twinmotion 2023 Gerçekçi Render Eğitim Seti",
-      "altBaslik": "Twinmotion'ın yeni sürümüyle gerçekçi ve kaliteli görsele adım",
+      "altBaslik": null,
       "url": "https://www.udemy.com/course/twinmotion-2023-gercekci-render-egitim-seti/",
       "gorsel": "/media/udemy/twinmotion-2023-gercekci-render-egitim-seti.jpg",
-      "gorselKaynak": "https://img-c.udemycdn.com/course/240x135/5284946_af06_3.jpg",
+      "gorselKaynak": "https://img-c.udemycdn.com/course/480x270/5284946_af06_3.jpg",
       "puan": 4.6,
       "yorumSayisi": 51,
       "saat": 4,
       "dersSayisi": 17,
       "seviye": "Yeni Başlayan",
-      "yazilim": ["twinmotion"]
+      "dil": "tr",
+      "yazilim": [
+        "twinmotion"
+      ]
     },
     {
       "slug": "enscape-35-gercekci-3d-gorsellestirme-egitim-seti",
       "baslik": "Enscape 3.5 — Gerçekçi 3D Görselleştirme Eğitim Seti",
-      "altBaslik": "Görselleştirmenin sırları",
+      "altBaslik": null,
       "url": "https://www.udemy.com/course/enscape-35-gercekci-3d-gorsellestirme-egitim-seti/",
       "gorsel": "/media/udemy/enscape-35-gercekci-3d-gorsellestirme-egitim-seti.jpg",
-      "gorselKaynak": "https://img-c.udemycdn.com/course/240x135/5628621_9794_3.jpg",
+      "gorselKaynak": "https://img-c.udemycdn.com/course/480x270/5628621_9794_3.jpg",
       "puan": 4.6,
       "yorumSayisi": 22,
       "saat": 3,
       "dersSayisi": 23,
       "seviye": "Yeni Başlayan",
-      "yazilim": ["enscape"]
+      "dil": "tr",
+      "yazilim": [
+        "enscape"
+      ]
+    },
+    {
+      "slug": "d5-render-gercekci-mutfak-egitim-seti",
+      "baslik": "D5 Render Gerçekçi Mutfak Eğitim Seti",
+      "altBaslik": null,
+      "url": "https://www.udemy.com/course/d5-render-gercekci-mutfak-egitim-seti/",
+      "gorsel": "/media/udemy/d5-render-gercekci-mutfak-egitim-seti.jpg",
+      "gorselKaynak": "https://img-c.udemycdn.com/course/480x270/5036632_6378_3.jpg",
+      "puan": 4.3,
+      "yorumSayisi": 41,
+      "saat": 2,
+      "dersSayisi": 16,
+      "seviye": "Yeni Başlayan",
+      "dil": "tr",
+      "yazilim": [
+        "d5-render"
+      ]
+    },
+    {
+      "slug": "sketchup-vray-51-gercekci-gorsel-egitim-seti",
+      "baslik": "SketchUp V-Ray 5.1 Gerçekçi Görsel Eğitim Seti",
+      "altBaslik": null,
+      "url": "https://www.udemy.com/course/sketchup-vray-51-gercekci-gorsel-egitim-seti/",
+      "gorsel": "/media/udemy/sketchup-vray-51-gercekci-gorsel-egitim-seti.jpg",
+      "gorselKaynak": "https://img-c.udemycdn.com/course/480x270/4510760_7f03_3.jpg",
+      "puan": 4.3,
+      "yorumSayisi": 92,
+      "saat": 1.5,
+      "dersSayisi": 5,
+      "seviye": "Tüm Düzeyler",
+      "dil": "tr",
+      "yazilim": [
+        "sketchup",
+        "vray"
+      ]
+    },
+    {
+      "slug": "enscape-render-ile-ust-kalite-gercekci-salon-render-egitimi",
+      "baslik": "Enscape Render — Üst Kalite İç Mekân Görselleştirme Eğitimi",
+      "altBaslik": null,
+      "url": "https://www.udemy.com/course/enscape-render-ile-ust-kalite-gercekci-salon-render-egitimi/",
+      "gorsel": "/media/udemy/enscape-render-ile-ust-kalite-gercekci-salon-render-egitimi.jpg",
+      "gorselKaynak": "https://img-c.udemycdn.com/course/480x270/4514914_a012.jpg",
+      "puan": 4.2,
+      "yorumSayisi": 61,
+      "saat": 1,
+      "dersSayisi": 8,
+      "seviye": "Tüm Düzeyler",
+      "dil": "tr",
+      "yazilim": [
+        "enscape"
+      ]
+    },
+    {
+      "slug": "corona-render-kaliteli-gorsellestirme-mutfak-egitim-seti",
+      "baslik": "Corona Render Kaliteli Görselleştirme Mutfak Eğitim Seti",
+      "altBaslik": null,
+      "url": "https://www.udemy.com/course/corona-render-kaliteli-gorsellestirme-mutfak-egitim-seti/",
+      "gorsel": "/media/udemy/corona-render-kaliteli-gorsellestirme-mutfak-egitim-seti.jpg",
+      "gorselKaynak": "https://img-c.udemycdn.com/course/480x270/4515908_8749.jpg",
+      "puan": 4.2,
+      "yorumSayisi": 15,
+      "saat": 3.5,
+      "dersSayisi": 16,
+      "seviye": "Yeni Başlayan",
+      "dil": "tr",
+      "yazilim": [
+        "corona"
+      ]
+    },
+    {
+      "slug": "enscape-render-33-ile-gercekci-3d-gorsellestirme",
+      "baslik": "Enscape Render 3.3 ile Gerçekçi 3D Görselleştirme",
+      "altBaslik": null,
+      "url": "https://www.udemy.com/course/enscape-render-33-ile-gercekci-3d-gorsellestirme/",
+      "gorsel": "/media/udemy/enscape-render-33-ile-gercekci-3d-gorsellestirme.jpg",
+      "gorselKaynak": "https://img-c.udemycdn.com/course/480x270/4927410_c53a.jpg",
+      "puan": 4.2,
+      "yorumSayisi": 10,
+      "saat": 5,
+      "dersSayisi": 27,
+      "seviye": "Yeni Başlayan",
+      "dil": "tr",
+      "yazilim": [
+        "enscape"
+      ]
+    },
+    {
+      "slug": "enscape-render-kaliteli-ve-gercekci-gorsellestirme-egitimi",
+      "baslik": "Enscape Render Kaliteli ve Gerçekçi Görselleştirme Eğitimi",
+      "altBaslik": null,
+      "url": "https://www.udemy.com/course/enscape-render-kaliteli-ve-gercekci-gorsellestirme-egitimi/",
+      "gorsel": "/media/udemy/enscape-render-kaliteli-ve-gercekci-gorsellestirme-egitimi.jpg",
+      "gorselKaynak": "https://img-c.udemycdn.com/course/480x270/4316398_7d89_2.jpg",
+      "puan": 3.6,
+      "yorumSayisi": 19,
+      "saat": 2,
+      "dersSayisi": 11,
+      "seviye": "Yeni Başlayan",
+      "dil": "tr",
+      "yazilim": [
+        "enscape"
+      ]
+    },
+    {
+      "slug": "unreal-engine-51-en-iyi-ucretsiz-icerik-kursu-bolum-01",
+      "baslik": "Unreal Engine 5.1 En İyi İçerik Kursu",
+      "altBaslik": null,
+      "url": "https://www.udemy.com/course/unreal-engine-51-en-iyi-ucretsiz-icerik-kursu-bolum-01/",
+      "gorsel": "/media/udemy/unreal-engine-51-en-iyi-ucretsiz-icerik-kursu-bolum-01.jpg",
+      "gorselKaynak": "https://img-c.udemycdn.com/course/480x270/5029950_858f_5.jpg",
+      "puan": 4.7,
+      "yorumSayisi": 102,
+      "saat": 1.5,
+      "dersSayisi": 12,
+      "seviye": "Yeni Başlayan",
+      "dil": "tr",
+      "yazilim": [
+        "unreal-engine"
+      ]
+    },
+    {
+      "slug": "render-interior-realista-con-enscape-42-dormitorio-paso",
+      "baslik": "Render Interior Realista con Enscape 4.2: Dormitorio Paso a Paso",
+      "altBaslik": null,
+      "url": "https://www.udemy.com/course/render-interior-realista-con-enscape-42-dormitorio-paso/",
+      "gorsel": "/media/udemy/render-interior-realista-con-enscape-42-dormitorio-paso.jpg",
+      "gorselKaynak": "https://img-c.udemycdn.com/course/480x270/6572283_ca6d.jpg",
+      "puan": 4.5,
+      "yorumSayisi": 1,
+      "saat": 4,
+      "dersSayisi": 37,
+      "seviye": "Tüm Düzeyler",
+      "dil": "es",
+      "yazilim": [
+        "enscape"
+      ]
+    },
+    {
+      "slug": "photorealistic-exterior-rendering-in-twinmotion-2025",
+      "baslik": "Photorealistic Exterior Rendering in Twinmotion 2025",
+      "altBaslik": null,
+      "url": "https://www.udemy.com/course/photorealistic-exterior-rendering-in-twinmotion-2025/",
+      "gorsel": "/media/udemy/photorealistic-exterior-rendering-in-twinmotion-2025.jpg",
+      "gorselKaynak": "https://img-c.udemycdn.com/course/480x270/6563695_6da9.jpg",
+      "puan": null,
+      "yorumSayisi": 0,
+      "saat": 3.5,
+      "dersSayisi": 22,
+      "seviye": "Tüm Düzeyler",
+      "dil": "en",
+      "yazilim": [
+        "twinmotion"
+      ]
+    },
+    {
+      "slug": "master-architectural-rendering-sketchup-v-ray-course",
+      "baslik": "Master Architectural Rendering: SketchUp & V-Ray Course",
+      "altBaslik": null,
+      "url": "https://www.udemy.com/course/master-architectural-rendering-sketchup-v-ray-course/",
+      "gorsel": "/media/udemy/master-architectural-rendering-sketchup-v-ray-course.jpg",
+      "gorselKaynak": "https://img-c.udemycdn.com/course/480x270/6553945_4f06.jpg",
+      "puan": 3.9,
+      "yorumSayisi": 3,
+      "saat": 3,
+      "dersSayisi": 26,
+      "seviye": "Tüm Düzeyler",
+      "dil": "en",
+      "yazilim": [
+        "sketchup",
+        "vray"
+      ]
+    },
+    {
+      "slug": "sketchup-power-tools-must-have-plugins-for-faster-modeling",
+      "baslik": "SketchUp Best Plugins: Must-Have Plugins for Faster Modeling",
+      "altBaslik": null,
+      "url": "https://www.udemy.com/course/sketchup-power-tools-must-have-plugins-for-faster-modeling/",
+      "gorsel": "/media/udemy/sketchup-power-tools-must-have-plugins-for-faster-modeling.jpg",
+      "gorselKaynak": "https://img-c.udemycdn.com/course/480x270/6538817_0518_3.jpg",
+      "puan": 4.5,
+      "yorumSayisi": 2,
+      "saat": 2.5,
+      "dersSayisi": 37,
+      "seviye": "Tüm Düzeyler",
+      "dil": "en",
+      "yazilim": [
+        "sketchup"
+      ]
+    },
+    {
+      "slug": "effektives-und-schnelles-rendern-mit-sketchup-und-v-ray-7",
+      "baslik": "Effektives und schnelles Rendern mit SketchUp und V-Ray 7",
+      "altBaslik": null,
+      "url": "https://www.udemy.com/course/effektives-und-schnelles-rendern-mit-sketchup-und-v-ray-7/",
+      "gorsel": "/media/udemy/effektives-und-schnelles-rendern-mit-sketchup-und-v-ray-7.jpg",
+      "gorselKaynak": "https://img-c.udemycdn.com/course/480x270/6534493_7015.jpg",
+      "puan": null,
+      "yorumSayisi": 0,
+      "saat": 1.5,
+      "dersSayisi": 23,
+      "seviye": "Tüm Düzeyler",
+      "dil": "de",
+      "yazilim": [
+        "sketchup",
+        "vray"
+      ]
+    },
+    {
+      "slug": "realistic-interior-rendering-with-sketchup-vray-7",
+      "baslik": "Realistic Interior Rendering with SketchUp V-Ray 7",
+      "altBaslik": null,
+      "url": "https://www.udemy.com/course/realistic-interior-rendering-with-sketchup-vray-7/",
+      "gorsel": "/media/udemy/realistic-interior-rendering-with-sketchup-vray-7.jpg",
+      "gorselKaynak": "https://img-c.udemycdn.com/course/480x270/6517999_024b.jpg",
+      "puan": 4.5,
+      "yorumSayisi": 15,
+      "saat": 1.5,
+      "dersSayisi": 24,
+      "seviye": "Tüm Düzeyler",
+      "dil": "en",
+      "yazilim": [
+        "sketchup",
+        "vray"
+      ]
+    },
+    {
+      "slug": "sketchup-vray-7-hzl-ve-profesyonel-salon-render-egitimi",
+      "baslik": "SketchUp V-Ray 7: Hızlı ve Profesyonel Salon Render Eğitimi",
+      "altBaslik": null,
+      "url": "https://www.udemy.com/course/sketchup-vray-7-hzl-ve-profesyonel-salon-render-egitimi/",
+      "gorsel": "/media/udemy/sketchup-vray-7-hzl-ve-profesyonel-salon-render-egitimi.jpg",
+      "gorselKaynak": "https://img-c.udemycdn.com/course/480x270/6515941_de2b_2.jpg",
+      "puan": 4.6,
+      "yorumSayisi": 5,
+      "saat": 1.5,
+      "dersSayisi": 25,
+      "seviye": "Tüm Düzeyler",
+      "dil": "tr",
+      "yazilim": [
+        "sketchup",
+        "vray"
+      ]
+    },
+    {
+      "slug": "twinmotion-2025-ile-sinematik-render-baslangctan-uzmanlga",
+      "baslik": "Twinmotion 2025 ile Sinematik Render: Başlangıçtan Uzmanlığa",
+      "altBaslik": null,
+      "url": "https://www.udemy.com/course/twinmotion-2025-ile-sinematik-render-baslangctan-uzmanlga/",
+      "gorsel": "/media/udemy/twinmotion-2025-ile-sinematik-render-baslangctan-uzmanlga.jpg",
+      "gorselKaynak": "https://img-c.udemycdn.com/course/480x270/6501807_52e5.jpg",
+      "puan": 3.8,
+      "yorumSayisi": 6,
+      "saat": 1.5,
+      "dersSayisi": 19,
+      "seviye": "Tüm Düzeyler",
+      "dil": "tr",
+      "yazilim": [
+        "twinmotion"
+      ]
+    },
+    {
+      "slug": "twinmotion-2025-create-cinematic-renders",
+      "baslik": "Twinmotion 2025: Create Cinematic Renders",
+      "altBaslik": null,
+      "url": "https://www.udemy.com/course/twinmotion-2025-create-cinematic-renders/",
+      "gorsel": "/media/udemy/twinmotion-2025-create-cinematic-renders.jpg",
+      "gorselKaynak": "https://img-c.udemycdn.com/course/480x270/6501751_f2e8.jpg",
+      "puan": 4.2,
+      "yorumSayisi": 2,
+      "saat": 1.5,
+      "dersSayisi": 19,
+      "seviye": "Tüm Düzeyler",
+      "dil": "en",
+      "yazilim": [
+        "twinmotion"
+      ]
+    },
+    {
+      "slug": "mimari-gorsellestirmede-ustalk-enscape-ile-gercekci-render",
+      "baslik": "Enscape Render Son Sürüm ile Gerçekçi Render",
+      "altBaslik": null,
+      "url": "https://www.udemy.com/course/mimari-gorsellestirmede-ustalk-enscape-ile-gercekci-render/",
+      "gorsel": "/media/udemy/mimari-gorsellestirmede-ustalk-enscape-ile-gercekci-render.jpg",
+      "gorselKaynak": "https://img-c.udemycdn.com/course/480x270/6481699_c999_5.jpg",
+      "puan": 4.5,
+      "yorumSayisi": 17,
+      "saat": 4,
+      "dersSayisi": 41,
+      "seviye": "Tüm Düzeyler",
+      "dil": "tr",
+      "yazilim": [
+        "enscape"
+      ]
+    },
+    {
+      "slug": "twinmotion-2025-ile-ic-mekan-yatak-odas-gercekci-render-al",
+      "baslik": "Twinmotion 2025 ile İç Mekân Yatak Odası Gerçekçi Render Al",
+      "altBaslik": null,
+      "url": "https://www.udemy.com/course/twinmotion-2025-ile-ic-mekan-yatak-odas-gercekci-render-al/",
+      "gorsel": "/media/udemy/twinmotion-2025-ile-ic-mekan-yatak-odas-gercekci-render-al.jpg",
+      "gorselKaynak": "https://img-c.udemycdn.com/course/480x270/6402245_f6f8_3.jpg",
+      "puan": null,
+      "yorumSayisi": 0,
+      "saat": 2.5,
+      "dersSayisi": 24,
+      "seviye": "Tüm Düzeyler",
+      "dil": "tr",
+      "yazilim": [
+        "twinmotion"
+      ]
+    },
+    {
+      "slug": "corona-render-ile-sketchup-model-gercekci-render",
+      "baslik": "Corona Render ile SketchUp Model Gerçekçi Render",
+      "altBaslik": null,
+      "url": "https://www.udemy.com/course/corona-render-ile-sketchup-model-gercekci-render/",
+      "gorsel": "/media/udemy/corona-render-ile-sketchup-model-gercekci-render.jpg",
+      "gorselKaynak": "https://img-c.udemycdn.com/course/480x270/6396349_c272_3.jpg",
+      "puan": 4.3,
+      "yorumSayisi": 2,
+      "saat": 1,
+      "dersSayisi": 11,
+      "seviye": "Tüm Düzeyler",
+      "dil": "tr",
+      "yazilim": [
+        "sketchup",
+        "corona"
+      ]
     },
     {
       "slug": "twinmotion-2025-ile-gercekci-ds-mekan-olusturun",
@@ -65,69 +546,51 @@
       "altBaslik": null,
       "url": "https://www.udemy.com/course/twinmotion-2025-ile-gercekci-ds-mekan-olusturun/",
       "gorsel": "/media/udemy/twinmotion-2025-ile-gercekci-ds-mekan-olusturun.jpg",
-      "gorselKaynak": "https://img-c.udemycdn.com/course/240x135/6356629_0648_2.jpg",
+      "gorselKaynak": "https://img-c.udemycdn.com/course/480x270/6356629_0648_2.jpg",
       "puan": 4.4,
       "yorumSayisi": 42,
       "saat": 3.5,
       "dersSayisi": 24,
       "seviye": "Tüm Düzeyler",
-      "yazilim": ["twinmotion"]
+      "dil": "tr",
+      "yazilim": [
+        "twinmotion"
+      ]
     },
     {
-      "slug": "d5-render-mimari-gorsellestirme-egitim-seti",
-      "baslik": "D5 Render Mimari Görselleştirme Eğitim Seti",
-      "altBaslik": "3D mimari görselleştirme eğitim seti",
-      "url": "https://www.udemy.com/course/d5-render-mimari-gorsellestirme-egitim-seti/",
-      "gorsel": "/media/udemy/d5-render-mimari-gorsellestirme-egitim-seti.jpg",
-      "gorselKaynak": "https://img-c.udemycdn.com/course/240x135/5299256_cf1f_4.jpg",
+      "slug": "sketchup-vray-ile-fotogercekci-render",
+      "baslik": "SketchUp V-Ray ile Fotogerçekçi Render",
+      "altBaslik": null,
+      "url": "https://www.udemy.com/course/sketchup-vray-ile-fotogercekci-render/",
+      "gorsel": "/media/udemy/sketchup-vray-ile-fotogercekci-render.jpg",
+      "gorselKaynak": "https://img-c.udemycdn.com/course/480x270/6212049_af7d_2.jpg",
       "puan": 4.3,
-      "yorumSayisi": 138,
-      "saat": 3,
-      "dersSayisi": 16,
-      "seviye": "Yeni Başlayan",
-      "yazilim": ["d5-render"]
-    },
-    {
-      "slug": "sketchup-2023-en-iyi-temel-egitim-kursu-01",
-      "baslik": "SketchUp 2023 Temel Eğitim Kursu",
-      "altBaslik": "Sıfırdan SketchUp temelleri",
-      "url": "https://www.udemy.com/course/sketchup-2023-en-iyi-temel-egitim-kursu-01/",
-      "gorsel": "/media/udemy/sketchup-2023-en-iyi-temel-egitim-kursu-01.jpg",
-      "gorselKaynak": "https://img-c.udemycdn.com/course/240x135/5646210_3762_4.jpg",
-      "puan": 4.3,
-      "yorumSayisi": 63,
-      "saat": 2,
-      "dersSayisi": 11,
-      "seviye": "Yeni Başlayan",
-      "yazilim": ["sketchup"]
-    },
-    {
-      "slug": "d5-render-motoru-ile-gercekci-kaliteli-ic-mekan-render",
-      "baslik": "D5 Render ile Gerçekçi İç Mekân Render",
-      "altBaslik": "D5 Render'ın sunduğu teknolojilerle iç mekân çalışması",
-      "url": "https://www.udemy.com/course/d5-render-motoru-ile-gercekci-kaliteli-ic-mekan-render/",
-      "gorsel": "/media/udemy/d5-render-motoru-ile-gercekci-kaliteli-ic-mekan-render.jpg",
-      "gorselKaynak": "https://img-c.udemycdn.com/course/240x135/4529158_57a5_3.jpg",
-      "puan": 4.1,
-      "yorumSayisi": 55,
-      "saat": 1.5,
-      "dersSayisi": 10,
-      "seviye": "Yeni Başlayan",
-      "yazilim": ["d5-render"]
-    },
-    {
-      "slug": "fast-realistic-rendering-sketchup-to-d5-render-workflow",
-      "baslik": "Fast & Realistic Rendering: SketchUp to D5 Render Workflow",
-      "altBaslik": "İngilizce · SketchUp'tan D5 Render'a iş akışı",
-      "url": "https://www.udemy.com/course/fast-realistic-rendering-sketchup-to-d5-render-workflow/",
-      "gorsel": "/media/udemy/fast-realistic-rendering-sketchup-to-d5-render-workflow.jpg",
-      "gorselKaynak": "https://img-c.udemycdn.com/course/240x135/6541211_0693_2.jpg",
-      "puan": 3.8,
-      "yorumSayisi": 16,
-      "saat": 3.5,
-      "dersSayisi": 36,
+      "yorumSayisi": 5,
+      "saat": 2.5,
+      "dersSayisi": 29,
       "seviye": "Tüm Düzeyler",
-      "yazilim": ["sketchup", "d5-render"]
+      "dil": "tr",
+      "yazilim": [
+        "sketchup",
+        "vray"
+      ]
+    },
+    {
+      "slug": "yapay-zeka-ile-guclendirilmis-enscape-render-gorsellestirme",
+      "baslik": "Yapay Zekâ ile Güçlendirilmiş Enscape Render Görselleştirme",
+      "altBaslik": null,
+      "url": "https://www.udemy.com/course/yapay-zeka-ile-guclendirilmis-enscape-render-gorsellestirme/",
+      "gorsel": "/media/udemy/yapay-zeka-ile-guclendirilmis-enscape-render-gorsellestirme.jpg",
+      "gorselKaynak": "https://img-c.udemycdn.com/course/480x270/6006644_6e00_3.jpg",
+      "puan": 4,
+      "yorumSayisi": 1,
+      "saat": 1.5,
+      "dersSayisi": 14,
+      "seviye": "Tüm Düzeyler",
+      "dil": "tr",
+      "yazilim": [
+        "enscape"
+      ]
     }
   ]
 }

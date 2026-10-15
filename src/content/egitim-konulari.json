@@ -1,0 +1,94 @@
+{
+  "aciklama": "Şu an aktif olarak eğitim verilen konular ve ücretsiz video dersler. Udemy setleri courses.json'da; bu dosya 'neyi öğretiyoruz' sorusunun cevabı.",
+  "kaynak": {
+    "youtube": "https://www.youtube.com/feeds/videos.xml?channel_id=UCkM6BYFqvojF2AsSDoSeYBw — SketchUp Türkiye kanalının RSS akışı, 15 Ekim 2026'da okundu. Video başlıkları ve tarihleri birebir alındı.",
+    "renderfun": "https://renderfun.com/tr/ — özellikler ürünün kendi sayfasından alındı.",
+    "sketchup2026": "help.sketchup.com resmî sürüm notları ve sistem gereksinimleri."
+  },
+  "kanal": {
+    "ad": "SketchUp Türkiye",
+    "url": "https://www.youtube.com/@sketchupturkiye",
+    "kanalId": "UCkM6BYFqvojF2AsSDoSeYBw"
+  },
+  "konular": [
+    {
+      "slug": "renderfun",
+      "ad": "Render Fun",
+      "durum": "aktif",
+      "ozet": "Kendi geliştirdiğimiz ücretsiz render motoru. Dersler YouTube'da, ücretsiz.",
+      "aciklama": "Render Fun SketchUp'ın içinde çalışır: modeli dışa aktarmazsınız, ayrı program açmazsınız. Işık duvarlardan sekerek ve camdan geçerek hesaplanır; ilk görüntü hemen gelir, örnek sayısı arttıkça netleşir. Eğitimde motoru satın almanız gerekmediği için ilk dakikadan itibaren uygulamalı çalışırız.",
+      "kapsam": [
+        "Kurulum ve ilk render: .rbz kurulumu, arayüz, tek düğmeyle sonuç",
+        "Işık: güneş ve gökyüzü, 10 gömülü HDRI, kendi HDRI dosyanız",
+        "Yapay ışık: nokta, spot ve panel lambalar, IES dağılımı",
+        "Malzeme: 20 kategorili kütüphane, 298 doku seti, tek tıkla malzeme seçimi",
+        "Bitki ve çevre: 129 türlük bitki paketi",
+        "Renk yönetimi: AgX, ACES ve Filmic karşılaştırması",
+        "Kamera: alan derinliği, parlama, kenar yumuşatma kalitesi",
+        "Sunum: Önce/Sonra sürgüsü ve 5 saniyelik MP4 çıktısı"
+      ],
+      "not": "Render Fun ücretsizdir, hesap ya da lisans anahtarı istemez. SketchUp 2021–2026 ile çalışır; şu an yalnızca Windows ve WebGL2 destekli ekran kartı gerekir.",
+      "url": "https://renderfun.com/",
+      "urlEtiket": "Render Fun'ı indir"
+    },
+    {
+      "slug": "sketchup-2026",
+      "ad": "SketchUp 2026",
+      "durum": "aktif",
+      "ozet": "Kurulumdan arayüze, eklenti kurmaktan sunuma kadar sıfırdan profesyonel kullanım.",
+      "aciklama": "SketchUp 2026 ile gelen Collaboration Bar, yeni grafik motoru ve LayOut'un yeni çizim araçları dahil, programın bütününü iş akışı üzerinden anlatıyoruz. Ders hazır model üzerinde düğme göstermek değil; sizin işinizden bir projeyi ölçüden sunuma götürmek üzerine kurulu.",
+      "kapsam": [
+        "Kurulum ve sistem gereksinimleri; klasik ve yeni grafik motoru farkı",
+        "Arayüz ve çıkarım (inference) sistemi; ölçü kutusuyla modelleme",
+        "Grup, bileşen ve etiket düzeni — model şişmesini önleyen yapı",
+        "Eklenti kurmanın üç yolu ve iş akışına yerleştirme",
+        "Kendi geliştirdiğimiz 22 eklentiyle hızlandırılmış üretim",
+        "LayOut ile pafta: Trim, Extend, Fillet, Chamfer ve Architecture Scrapbook"
+      ],
+      "not": "SketchUp 2026 yalnızca Windows 11 ve macOS 14/15/26 ile çalışıyor.",
+      "url": "/sketchup-2026-profesyonel-egitim.html",
+      "urlEtiket": "SketchUp 2026 rehberini oku"
+    },
+    {
+      "slug": "d5-render",
+      "ad": "D5 Render",
+      "durum": "aktif",
+      "ozet": "Gerçek zamanlı render; iç mekân, mutfak, yatak odası ve SketchUp'tan D5'e iş akışı.",
+      "aciklama": "D5 Render üzerine hem Türkçe hem İngilizce yayımlanmış eğitim setlerimiz var. Ders ışık, malzeme ve kamera üzerine kuruluyor; bu üçü motordan motora değişmediği için öğrendiğinizi başka motora da taşıyabiliyorsunuz.",
+      "kapsam": [
+        "SketchUp'tan D5'e temiz aktarım",
+        "İç mekân aydınlatması ve malzeme kurgusu",
+        "Mutfak ve yatak odası gibi gerçek sahnelerle uygulama",
+        "Kamera açısı ve son işlem"
+      ],
+      "not": null,
+      "url": "/yazilim/d5-render",
+      "urlEtiket": "D5 Render yazıları"
+    },
+    {
+      "slug": "vray",
+      "ad": "V-Ray",
+      "durum": "youtube",
+      "ozet": "V-Ray derslerini SketchUp Türkiye YouTube kanalında ücretsiz yayınlıyoruz.",
+      "aciklama": "V-Ray tarafında yeni birebir ders vermiyoruz. Yayımlanmış eğitim setleri Udemy'de duruyor; bunun dışındaki V-Ray anlatımları SketchUp Türkiye kanalında ücretsiz olarak yayında.",
+      "kapsam": [],
+      "not": null,
+      "url": "https://www.youtube.com/@sketchupturkiye/search?query=vray",
+      "urlEtiket": "Kanaldaki V-Ray derslerini aç"
+    }
+  ],
+  "videoDersler": {
+    "baslik": "Render Fun ücretsiz video dersleri",
+    "not": "SketchUp Türkiye kanalında yayında. Liste kanalın RSS akışından okundu (15 Ekim 2026).",
+    "videolar": [
+      { "id": "KJQdUr76ADQ", "baslik": "Render Fun ilk Ders 01 — Türkiyenin ilk Render Motoru Ücretsiz", "tarih": "2026-10-05" },
+      { "id": "nOXv7M_9OZM", "baslik": "RenderFun ile Gerçekçi İç Mekan Render 01", "tarih": "2026-10-12" },
+      { "id": "URc1TchUCTY", "baslik": "RenderFun ile Gerçekçi Render Almak 02", "tarih": "2026-10-12" },
+      { "id": "SkLjfhT6Wmg", "baslik": "RenderFun ile Gerçekçi Render Almak 03", "tarih": "2026-10-12" },
+      { "id": "LrBuC8c53d4", "baslik": "RenderFun ile HDRI Kullanımı", "tarih": "2026-10-07" },
+      { "id": "2J5NAbs_OMk", "baslik": "Render Fun Dış Mekân Yetenekleri", "tarih": "2026-10-06" },
+      { "id": "zHdFaP_OHMA", "baslik": "Müşterilerinizi Büyüleyecek Foto-Gerçekçi Render — RenderFun", "tarih": "2026-10-09" },
+      { "id": "1O3YledmGzE", "baslik": "RenderFun Önemli Gelişmeler", "tarih": "2026-10-14" }
+    ]
+  }
+}

@@ -28,6 +28,53 @@ Format, Keep a Changelog yaklaşımına yakındır. Tarihler `YYYY-MM-DD` biçim
 - Kaynak WordPress sistemi migration boyunca salt okunur kabul edildi.
 - Dry-run, yedek ve rollback zorunlulukları eklendi.
 
+## [1.5.0] — 2026-10-15
+
+Eğitim tarafı baştan kuruldu.
+
+### Added
+
+- **Udemy verisi tazelendi: 9 → 34 kurs.** Eğitmen profilinin dört sayfası
+  tarayıcıdan okundu (`scripts/content/udemy-kurslari.mjs`). Puan, yorum,
+  süre, ders sayısı ve seviye profilde yazdığı gibi; 25 kapak görseli indirildi.
+  Profil toplamları: **7.273 öğrenci, 900 yorum**.
+- **Dil rozeti**: Türkçe olmayan kurslarda kartta görünüyor.
+  Dağılım: Türkçe 24, İngilizce 8, İspanyolca 1, Almanca 1.
+- **"Eğitim konularımız" bölümü** (`/egitimler`): aktif olarak ders verilen
+  başlıklar ve kapsamları — `src/content/egitim-konulari.json`.
+  - **Render Fun** — ücretsiz render motoru; dersler YouTube'da ücretsiz
+  - **SketchUp 2026** — kurulumdan sunuma
+  - **D5 Render** — iç mekân ve iş akışı
+  - **V-Ray** — yeni birebir ders yok; dersler SketchUp Türkiye kanalında
+- **Render Fun ücretsiz video dersleri** listesi: 8 ders, kanalın RSS
+  akışından okundu (başlıklar ve tarihler birebir).
+- **Yeni yazı:** [Eğitim Setlerimiz Artık Dört Dilde](/egitim-setleri-dort-dilde.html).
+  Sayılar `courses.json`'dan okunuyor, elle yazılmadı.
+
+### Changed
+
+- **Lumion eğitim teklifinden çıkarıldı.** Udemy'de zaten Lumion seti yok;
+  uzmanlık listesinde ve eğitim konularında da geçmiyor. Arşivdeki Lumion
+  yazıları ve `/yazilim/lumion` **duruyor** — trafik getiriyorlar.
+- `Course` arayüzü: `puan` artık `number | null` (yeni kurslarda puan yok),
+  `dil` alanı eklendi. Puansız kurslarda kart "Yeni" rozeti gösteriyor.
+
+### Fixed
+
+- **Yapısal veri hatası önlendi:** yorumu olmayan kursa artık
+  `aggregateRating` yazılmıyor. `reviewCount: 0` olan puan yapısı
+  doğrulamada hata verir ve Search Console'da uyarı olarak döner.
+- Ortalama puan hesabı `null` puanda çökecekti; `?? 0` ile korundu.
+- JSON-LD'de `inLanguage` artık kursun gerçek dili (hepsine "tr" yazılıyordu).
+
+### Doğrulama
+
+- 594 sayfa; `astro check` **0 hata**; yeni kırık link / eksik medya: 0
+- `/egitimler` ölçüldü: 34 kart, 4 konu bloğu, 8 video dersi,
+  10 dil rozeti, 3 "Yeni" rozeti, yatay taşma yok
+- Sayaçlar: 34 set · 770 ders · 89 saat · 4,3 ortalama puan
+- Yeni yazı ölçüldü: 5 ana başlık, 10 satırlık tablo, taşma yok
+
 ## [1.4.0] — 2026-10-15
 
 ### Added
