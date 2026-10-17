@@ -56,7 +56,7 @@ Mağaza odaklı içerik kümesi.
 ### Changed
 
 - Tanıtım yazısındaki ürün tanımları kendi cümleleriyle yeniden yazıldı.
-  Önce  alanı birebir kullanılıyordu; aynı cümle ürün kartında,
+  Önce `ozet` alanı birebir kullanılıyordu; aynı cümle ürün kartında,
   detay sayfasında, ana sayfada ve yazıda olmak üzere dört yerdeydi.
 
 ### Doğrulama
@@ -64,10 +64,10 @@ Mağaza odaklı içerik kümesi.
 - 10 yazı, ortalama 379 kelime, **mağaza bağlantısı olmayan yazı: 0**
 - Kopya denetimi (8 kelimelik pencere, ürün sayfalarına karşı):
   tanıtım yazısı **45 → 0**; toplam örtüşme 53 → 8. Kalan 8, dört yazıda
-  alıntılanan ölçüm etiketleri () — aynı işi
+  alıntılanan ölçüm etiketleri (`kanit.oncekiEtiket`) — aynı işi
   adlandırdıkları için aynılar.
 - Mağazaya bağlanan sayfa sayısı: **44 → 59**
-- 589 sayfa;  0 hata; yeni kırık link / eksik medya: 0
+- 589 sayfa; `astro check` 0 hata; yeni kırık link / eksik medya: 0
 
 ## [1.5.3] — 2026-10-15
 
