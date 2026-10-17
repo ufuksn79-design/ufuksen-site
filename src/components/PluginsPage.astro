@@ -349,6 +349,22 @@ const faydaIkon: Record<string, string> = {
     </div>
   </section>
 
+  {/* ---------------- Mağaza ---------------- */}
+  <section class="magaza">
+    <div>
+      <h2>{t.magazaBolumBaslik}</h2>
+      <p>{t.magazaBolumNot}</p>
+    </div>
+    <a
+      class="btn btn--primary magaza__btn"
+      href={dil === "en" ? "https://www.bestsketchupplugins.com/" : "https://www.bestsketchupplugins.com/tr/"}
+      target="_blank"
+      rel="noopener"
+    >
+      {t.magazaBolumCta} <i aria-hidden="true">↗</i>
+    </a>
+  </section>
+
   {/* ---------------- İletişim ---------------- */}
   <section class="ask">
     <div>
@@ -360,6 +376,39 @@ const faydaIkon: Record<string, string> = {
 </Base>
 
 <style>
+  /**
+   * Mağaza bölümü — liste sayfasının sonunda.
+   *
+   * Ölçülmüştü: mağazaya giden bağlantıların hepsi ürün detay
+   * sayfalarındaydı, liste sayfasından hiç çıkış yoktu.
+   */
+  .magaza {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--s-6);
+    margin-top: var(--s-16);
+    padding: var(--s-8);
+    border: 1px solid var(--c-line);
+    border-radius: var(--r-md);
+    background: var(--c-surface);
+  }
+  .magaza h2 {
+    margin: 0 0 var(--s-2);
+    font-size: var(--t-h3);
+  }
+  .magaza p {
+    margin: 0;
+    max-width: 60ch;
+    color: var(--c-text-muted);
+    font-size: var(--t-small);
+  }
+  .magaza__btn {
+    min-height: 52px;
+    white-space: nowrap;
+  }
+
   /* ---------------- Giriş ---------------- */
 
   .hero {

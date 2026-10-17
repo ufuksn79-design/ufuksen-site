@@ -90,6 +90,10 @@ interface Metinler {
   kanitEklentiyle: string;
   kanitDakika: string;
   kanitSaniye: string;
+  /** Liste sayfasının sonundaki mağaza bölümü. */
+  magazaBolumBaslik: string;
+  magazaBolumNot: string;
+  magazaBolumCta: string;
   magazaCta: (ad: string) => string;
   magazaNot: string;
   magazaRozet: string;
@@ -177,6 +181,10 @@ export const METIN: Record<Dil, Metinler> = {
     kanitEklentiyle: "Bu araçla",
     kanitDakika: "dakika",
     kanitSaniye: "saniye",
+    magazaBolumBaslik: "Hepsi tek adreste",
+    magazaBolumNot:
+      "Güncel sürümler, uyumluluk tabloları, disipline göre paketler ve ücretsiz araçlar Best SketchUp Plugins'te.",
+    magazaBolumCta: "Mağazaya git",
     magazaCta: (ad) => ad + " sayfasına git",
     magazaNot: "Güncel sürüm, fiyat ve satın alma ürünün kendi sayfasında.",
     magazaRozet: "bestsketchupplugins.com",
@@ -271,6 +279,10 @@ export const METIN: Record<Dil, Metinler> = {
     kanitEklentiyle: "With this tool",
     kanitDakika: "minutes",
     kanitSaniye: "seconds",
+    magazaBolumBaslik: "All of them in one place",
+    magazaBolumNot:
+      "Current versions, compatibility tables, discipline bundles and the free tools live on Best SketchUp Plugins.",
+    magazaBolumCta: "Visit the store",
     magazaCta: (ad) => "Go to the " + ad + " page",
     magazaNot: "Current version, pricing and purchase live on the product's own page.",
     magazaRozet: "bestsketchupplugins.com",

@@ -9,7 +9,7 @@ import courseData from "../../content/courses.json";
 import { getProducts } from "../../lib/products";
 import seo from "../../content/seo.json";
 import { SAYFA, karsiYol } from "../../lib/i18n-sayfalar";
-import { METIN, urunYolu, urunDilde, digerDil, type Dil } from "../../lib/i18n";
+import { METIN, LISTE_YOLU, urunYolu, urunDilde, digerDil, type Dil } from "../../lib/i18n";
 
 interface Props {
   dil: Dil;
@@ -196,6 +196,20 @@ const counters = [
           </article>
         ))
       }
+    </div>
+    {/* Ana sayfadan mağazaya çıkış: ölçülmüştü, hiç yoktu. */}
+    <div style="margin-top:var(--s-6);display:flex;flex-wrap:wrap;gap:var(--s-3)">
+      <a class="btn btn--ghost" href={LISTE_YOLU[dil]}>{METIN[dil].bolumAdi}</a>
+      <a
+        class="btn btn--ghost"
+        href={dil === "en"
+          ? "https://www.bestsketchupplugins.com/"
+          : "https://www.bestsketchupplugins.com/tr/"}
+        target="_blank"
+        rel="noopener"
+      >
+        {METIN[dil].magazaBolumCta} <i aria-hidden="true">↗</i>
+      </a>
     </div>
   </section>
 
