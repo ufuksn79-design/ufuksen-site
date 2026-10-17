@@ -1,0 +1,44 @@
+{
+  "legacyId": 90010,
+  "slug": "sketchup-zemin-kaplama-metraji",
+  "legacyUrl": "/sketchup-zemin-kaplama-metraji.html",
+  "url": "/sketchup-zemin-kaplama-metraji.html",
+  "title": "SketchUp'ta Zemin Kaplaması Metrajı Nasıl Çıkarılır?",
+  "excerpt": "Parke ve seramik metrajını çizimden çıkarmanın yolu: desen, kesim payı, fire ve CSV listesi. Elle sayım neden tutmuyor?",
+  "contentHtml": "<p>Zemin metrajı, teklif hazırlarken en çok hata yapılan kalemlerden biri. Sebebi hesabın zor olması değil — <strong>çizimle metrajın birbirinden kopuk olması</strong>. Modelde zemin bir yüzey, teklifte ise bir sayı; ikisi arasındaki bağı insan kuruyor ve insan yanılıyor.</p>\n\n<h2>Elle sayarken ne oluyor?</h2>\n\n<p>Alışılmış yöntem şu: alanı ölçersiniz, kutu ölçüsüne bölersiniz, üstüne fire eklersiniz. Üç yerde kayıyor:</p>\n\n<ul>\n  <li><strong>Desen hesaba girmiyor.</strong> Balıksırtı ya da şaşırtmalı dizilim, düz dizilimden daha fazla kesim üretir. Alan aynı, fire değil.</li>\n  <li><strong>Kesim payı tahmin ediliyor.</strong> \"%10 fire\" alışkanlıktan söylenen bir sayı; oda geometrisi karmaşıklaştıkça gerçek fire ondan sapıyor.</li>\n  <li><strong>Değişiklik metraja yansımıyor.</strong> Oda büyüyor, duvar kayıyor — model güncelleniyor ama tablodaki sayı eski kalıyor.</li>\n</ul>\n\n<p>Sonuç tanıdık: ya eksik malzeme çıkıyor ve iş duruyor, ya fazla çıkıyor ve parayı siz ödüyorsunuz.</p>\n\n<h2>Metraj çizimin kendisinden gelirse</h2>\n\n<p>Doğru kurgu, metrajı ayrı bir işlem olmaktan çıkarıp <em>çizimin çıktısı</em> hâline getirmek. Yani tahtalar modelde gerçekten döşensin — odaya göre kesilsin — ve sayım o parçalardan yapılsın.</p>\n\n<p>FloorStudio bunu yapıyor: yüzeyi seçiyorsunuz, deseni seçiyorsunuz, parçalar odaya kesilmiş olarak yerine oturuyor. Sayım da o parçalardan çıkıyor, tahminden değil. <strong>13 desen</strong> arasından seçiyorsunuz ve sonuç <strong>csv metraj</strong> olarak dışa aktarılıyor — teklife doğrudan yapıştırabileceğiniz bir liste.</p>\n\n<p class=\"kazanc\"><strong>Ölçülen fark:</strong> zemini elle çizip çoğaltıp tek tek kesmek <strong>45 dakika</strong> sürüyor; yüzeyi seç, deseni seç, uygula <strong>45 saniye</strong>. Yaklaşık <strong>60 kat</strong>.</p>\n\n<h2>Neden CSV önemli?</h2>\n\n<p>Çünkü teklif Excel'de hazırlanıyor. Modeldeki sayıyı elle Excel'e yazmak, hatanın tekrar girdiği yer. Liste dosya olarak çıkınca o adım ortadan kalkıyor; m² ve adet aynı kaynaktan geliyor.</p>\n\n<h2>Ne zaman işe yaramaz?</h2>\n\n<p>Dürüst olalım: tek bir odanın kabaca alanını öğrenmek istiyorsanız eklentiye gerek yok, ölçüp bölmek yeterli. Fark, <strong>çok odalı projelerde ve desen değiştiğinde</strong> ortaya çıkıyor. Bir de revizyonda: plan değişince metrajı yeniden üretmek bir tık oluyor.</p>\n\n<h2>Sık sorulan sorular</h2>\n<h3>Zemin metrajına ne kadar fire eklemeliyim?</h3>\n<p>Fire oranı desene ve oda geometrisine göre değişiyor; alışkanlıktan söylenen tek bir yüzde yok. Parçalar modelde gerçekten kesildiğinde fire tahmin edilmek yerine sayılmış oluyor.</p>\n<h3>Parke ve seramik metrajı aynı şekilde mi çıkar?</h3>\n<p>Mantık aynı: yüzey, desen ve kesim. Fark, parça ölçüsünde ve derz payında. İkisi için de parçadan sayım, alandan bölmeye göre daha doğru sonuç verir.</p>\n<h3>Metrajı Excel'e nasıl aktarırım?</h3>\n<p>CSV olarak dışa aktarıp Excel'de açıyorsunuz. Arada elle yazım olmadığı için modeldeki sayı ile tekliftekinin farklı olma ihtimali kalkıyor.</p>\n\n<h2>Nereden başlanır?</h2>\n<p>FloorStudio şu an <strong>v3.3.0</strong> sürümünde ve SketchUp 2021–2026 ile çalışıyor. Ne yaptığını ayrıntılı anlattığım sayfa burada: <a href=\"/eklenti/floorstudio.html\">FloorStudio</a>.</p>\n<p>Güncel sürüm, uyumluluk tablosu ve satın alma için eklentinin mağazadaki kendi sayfası: <a href=\"https://www.bestsketchupplugins.com/tr/plugins/floorstudio/\" target=\"_blank\" rel=\"noopener\">FloorStudio — bestsketchupplugins.com</a>.</p>\n<p>Diğer eklentiler, disipline göre paketler ve ücretsiz araçlar için <a href=\"https://www.bestsketchupplugins.com/tr/\" target=\"_blank\" rel=\"noopener\">Best SketchUp Plugins</a> sayfasına bakabilirsiniz. Tanıtım yazısı: <a href=\"/sketchup-eklentileri-best-sketchup-plugins.html\">SketchUp Eklentilerimiz Tek Adreste</a>.</p>\n<p>SketchUp'ı baştan öğrenmek isterseniz <a href=\"/sketchup-2026-profesyonel-egitim.html\">SketchUp 2026 profesyonel eğitim rehberi</a>, render tarafı için <a href=\"/egitimler\">eğitim setleri</a> sayfasına bakabilirsiniz.</p>\n\n<h2>İlgili yazılar</h2>\n<ul>\n  <li><a href=\"/sketchup-dolap-cizimi-cnc-kesim-listesi.html\">Ölçüden CNC'ye: SketchUp'ta Gömme Dolap Çizimi</a></li>\n  <li><a href=\"/pencere-teklifini-cizimden-cikarmak.html\">Pencere Teklifini Çizimden Çıkarmak</a></li>\n  <li><a href=\"/plan-degisti-modeli-bastan-cizmemek.html\">Müşteri Duvarı Kaydırdı: Modeli Baştan Çizmemek</a></li>\n  <li><a href=\"/render-cevre-binalari-nasil-doldurulur.html\">Render'daki Boş Çevre Sorunu Nasıl Çözülür?</a></li>\n</ul>",
+  "publishedAt": "2026-10-17 11:00:00",
+  "modifiedAt": "2026-10-17 11:00:00",
+  "status": "publish",
+  "featuredImage": null,
+  "inlineMedia": [],
+  "embeds": [],
+  "seo": {
+    "title": "SketchUp'ta Zemin Kaplaması Metrajı Nasıl Çıkarılır? | Ufuk Şen",
+    "description": "Parke ve seramik metrajını çizimden çıkarmanın yolu: desen, kesim payı, fire ve CSV listesi. Elle sayım neden tutmuyor?",
+    "focusKeyword": "sketchup zemin metrajı",
+    "canonicalUrl": "https://www.ufuksen.com/sketchup-zemin-kaplama-metraji.html",
+    "ogImage": null,
+    "noindex": false
+  },
+  "readingMinutes": 2,
+  "migrationChecksum": "f61f1aaa5258e54a89415bfcd938e92768f3a35556e8187c0c8596454b82ad3a",
+  "author": {
+    "legacyId": 1,
+    "name": "UFUK ŞEN",
+    "slug": "ufuk",
+    "isGuest": false
+  },
+  "categories": [
+    {
+      "legacyId": 1172,
+      "name": "Sketchup",
+      "slug": "sketchup"
+    },
+    {
+      "legacyId": 1169,
+      "name": "3D Programlar",
+      "slug": "3d-programlar"
+    }
+  ],
+  "tags": []
+}

@@ -1,0 +1,44 @@
+{
+  "legacyId": 90018,
+  "slug": "perde-modelleme-ve-kumas-metraji",
+  "legacyUrl": "/perde-modelleme-ve-kumas-metraji.html",
+  "url": "/perde-modelleme-ve-kumas-metraji.html",
+  "title": "Perde Modellemek Neden Bu Kadar Uzun Sürüyor?",
+  "excerpt": "Kıvrımlı perdeyi elle modellemenin maliyeti ve kumaş metrajını çizimden almanın yolu.",
+  "contentHtml": "<p>Perde, iç mekân görselinde en çok emek yiyen öğelerden biri. Sebebi şu: düz bir yüzey değil. Kıvrımları var, kıvrımlar ışığı farklı tutuyor ve kıvrım sayısı kumaş miktarını belirliyor.</p>\n\n<h2>Elle modellemenin iki ayrı maliyeti</h2>\n\n<p>Birincisi <strong>zaman</strong>: Bir perdeyi elle modelleyip kumaşını ölçmek yaklaşık <strong>35 dakika</strong>.</p>\n\n<p>İkincisi <strong>metraj</strong>. Perdeci kumaşı pile payıyla hesaplıyor; modelde gördüğünüz kıvrım sayısıyla sipariş edilecek kumaş arasında doğrudan bir ilişki var. Modeli göz kararı kıvırdığınızda metraj da göz kararı oluyor.</p>\n\n<h2>Sistem seçmek, kıvrım çizmek değil</h2>\n\n<p>PerdeNeşe Studio perdeyi sistem olarak ele alıyor: <strong>19 sistem, 3 tık</strong>. Pile tipini ve korniş sistemini seçiyorsunuz, kıvrımlar ona göre kuruluyor — ve kumaş metrajı aynı seçimden hesaplanıyor.</p>\n\n<p class=\"kazanc\"><strong>Ölçülen fark:</strong> bir perdeyi elle modelleyip kumaşını ölçmek <strong>35 dakika</strong> sürüyor; üç tık — metrajı da içinde <strong>40 saniye</strong>. Yaklaşık <strong>53 kat</strong>.</p>\n\n<h2>Teklif tarafı</h2>\n\n<p>Perde işinde teklif, kumaş metresi üzerinden veriliyor. Metrajın modelden gelmesi, \"tahmini\" teklif vermeyi bitiriyor. Müşteriye gösterdiğiniz görseldeki perde ile fiyatladığınız perde aynı perde oluyor.</p>\n\n<h2>Olgunluk</h2>\n\n<p>Sürüm 2.2.1 için <strong>826 test yeşil</strong>. Arayüz <strong>TR/EN/ES · SU2021–2026</strong>.</p>\n\n<h2>Sık sorulan sorular</h2>\n<h3>Kumaş metrajı pile payını içeriyor mu?</h3>\n<p>Metraj seçtiğiniz pile tipinden hesaplanıyor; kıvrım sayısı ile kumaş miktarı arasındaki ilişki modelin içinde.</p>\n<h3>Korniş ve rayı da çiziyor mu?</h3>\n<p>Evet, sistem olarak ele alınıyor: perde, korniş ve bağlantıları birlikte kuruluyor.</p>\n<h3>Tül ve fon perde ayrı ayrı yapılabiliyor mu?</h3>\n<p>On dokuz sistem arasından seçiliyor; tül ve fon ayrı katman olarak kurulabiliyor.</p>\n\n<h2>Nereden başlanır?</h2>\n<p>PerdeNeşe Studio şu an <strong>v2.2.1</strong> sürümünde ve SketchUp 2021–2026 ile çalışıyor. Ne yaptığını ayrıntılı anlattığım sayfa burada: <a href=\"/eklenti/curtain-craft.html\">PerdeNeşe Studio</a>.</p>\n<p>Güncel sürüm, uyumluluk tablosu ve satın alma için eklentinin mağazadaki kendi sayfası: <a href=\"https://www.bestsketchupplugins.com/tr/plugins/curtain-craft/\" target=\"_blank\" rel=\"noopener\">PerdeNeşe Studio — bestsketchupplugins.com</a>.</p>\n<p>Diğer eklentiler, disipline göre paketler ve ücretsiz araçlar için <a href=\"https://www.bestsketchupplugins.com/tr/\" target=\"_blank\" rel=\"noopener\">Best SketchUp Plugins</a> sayfasına bakabilirsiniz. Tanıtım yazısı: <a href=\"/sketchup-eklentileri-best-sketchup-plugins.html\">SketchUp Eklentilerimiz Tek Adreste</a>.</p>\n<p>SketchUp'ı baştan öğrenmek isterseniz <a href=\"/sketchup-2026-profesyonel-egitim.html\">SketchUp 2026 profesyonel eğitim rehberi</a>, render tarafı için <a href=\"/egitimler\">eğitim setleri</a> sayfasına bakabilirsiniz.</p>\n\n<h2>İlgili yazılar</h2>\n<ul>\n  <li><a href=\"/sketchup-zemin-kaplama-metraji.html\">SketchUp'ta Zemin Kaplaması Metrajı Nasıl Çıkarılır?</a></li>\n  <li><a href=\"/sketchup-dolap-cizimi-cnc-kesim-listesi.html\">Ölçüden CNC'ye: SketchUp'ta Gömme Dolap Çizimi</a></li>\n  <li><a href=\"/pencere-teklifini-cizimden-cikarmak.html\">Pencere Teklifini Çizimden Çıkarmak</a></li>\n  <li><a href=\"/plan-degisti-modeli-bastan-cizmemek.html\">Müşteri Duvarı Kaydırdı: Modeli Baştan Çizmemek</a></li>\n</ul>",
+  "publishedAt": "2026-10-17 11:00:00",
+  "modifiedAt": "2026-10-17 11:00:00",
+  "status": "publish",
+  "featuredImage": null,
+  "inlineMedia": [],
+  "embeds": [],
+  "seo": {
+    "title": "Perde Modellemek Neden Bu Kadar Uzun Sürüyor? | Ufuk Şen",
+    "description": "Kıvrımlı perdeyi elle modellemenin maliyeti ve kumaş metrajını çizimden almanın yolu.",
+    "focusKeyword": "sketchup perde modelleme",
+    "canonicalUrl": "https://www.ufuksen.com/perde-modelleme-ve-kumas-metraji.html",
+    "ogImage": null,
+    "noindex": false
+  },
+  "readingMinutes": 2,
+  "migrationChecksum": "cda8818cebf6be1d0bfc67d0a19097741491d81443848aff0e56ace7c6a18afd",
+  "author": {
+    "legacyId": 1,
+    "name": "UFUK ŞEN",
+    "slug": "ufuk",
+    "isGuest": false
+  },
+  "categories": [
+    {
+      "legacyId": 1172,
+      "name": "Sketchup",
+      "slug": "sketchup"
+    },
+    {
+      "legacyId": 518,
+      "name": "3D Görselleştirme",
+      "slug": "3d-gorsellestirme"
+    }
+  ],
+  "tags": []
+}

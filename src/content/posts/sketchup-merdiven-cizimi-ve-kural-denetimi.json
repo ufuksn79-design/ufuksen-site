@@ -1,0 +1,44 @@
+{
+  "legacyId": 90015,
+  "slug": "sketchup-merdiven-cizimi-ve-kural-denetimi",
+  "legacyUrl": "/sketchup-merdiven-cizimi-ve-kural-denetimi.html",
+  "url": "/sketchup-merdiven-cizimi-ve-kural-denetimi.html",
+  "title": "SketchUp'ta Merdiven Çizimi ve Kural Denetimi",
+  "excerpt": "Rıht ve basamak hesabını elle yapmadan merdiven kurmak; kat yüksekliği değişince merdivenin kendini güncellemesi.",
+  "contentHtml": "<p>Merdiven, mimari projede en çok yeniden çizilen elemanlardan biri. Sebebi basit: kat yüksekliği proje boyunca birkaç kez değişiyor ve her değişiklikte rıht sayısı da, basamak genişliği de değişiyor.</p>\n\n<h2>Elle hesabın sorunu</h2>\n\n<p>Kat yüksekliğini rıht sayısına bölüyorsunuz, çıkan değer uygun aralıkta mı diye bakıyorsunuz, sonra her basamağı çizip çoğaltıyorsunuz. Rıhtları hesaplayıp her basamağı elle çizmek yaklaşık <strong>75 dakika</strong>.</p>\n\n<p>Asıl sıkıntı bu süre değil. Kat yüksekliği 2,90'dan 3,05'e çıktığında işlemin tamamını tekrarlamak — ve çoğu zaman projede eski merdivenin unutulması.</p>\n\n<h2>Kuralı modelin içine koymak</h2>\n\n<p>StairFun Studio merdiveni kurarken <strong>44 canlı yönetmelik kuralı</strong> çalıştırıyor. Yani rıht ve basamak ilişkisi, sahanlık gereksinimi gibi konular siz hesaplamadan denetleniyor; bir değer uygun aralığın dışına çıktığında bunu size söylüyor.</p>\n\n<p><strong>Önemli not:</strong> yönetmelik sınırları projeye, yapı sınıfına ve yürürlükteki mevzuata göre değişir. Eklentinin denetimi işinizi kolaylaştırır ama <em>sorumluluğu üstlenmez</em>; nihai kontrol her zaman projeyi imzalayanındır.</p>\n\n<p>Form tarafında <strong>8 form + rampa</strong> var — düz, L, U ve döner çeşitleriyle birlikte.</p>\n\n<p class=\"kazanc\"><strong>Ölçülen fark:</strong> rıhtları hesaplayıp her basamağı elle çizmek <strong>75 dakika</strong> sürüyor; formu seç, iki kez tıkla, kat yüksekliğini yaz <strong>40 saniye</strong>. Yaklaşık <strong>113 kat</strong>.</p>\n\n<h2>Değiştirilebilir kalması</h2>\n\n<p>Merdiven kurulduktan sonra kapanıp \"kütük\" hâline gelmiyor; kat yüksekliğini değiştirdiğinizde kendini yeniden kuruyor. <strong>30 rıht, 1 sn'nin altında</strong> ölçülmüş bir değer — yani bekleme olmuyor.</p>\n\n<h2>Durumu</h2>\n\n<p>StairFun Studio şu an <strong>beta</strong> olarak işaretli: çalışıyor ama hâlâ gelişiyor. Bunu gizlemiyoruz; kritik bir projede kullanacaksanız çıktıyı kontrol edin.</p>\n\n<h2>Sık sorulan sorular</h2>\n<h3>Eklenti yönetmeliğe uygunluğu garanti eder mi?</h3>\n<p>Etmez. Kural denetimi işinizi kolaylaştırır ama sorumluluk projeyi imzalayandadır; yürürlükteki mevzuat ve yapı sınıfı belirleyicidir.</p>\n<h3>Kat yüksekliği değişince merdiven güncellenir mi?</h3>\n<p>Evet, merdiven kapanıp kütük hâline gelmiyor; değeri değiştirdiğinizde kendini yeniden kuruyor.</p>\n<h3>Döner ve U merdiven var mı?</h3>\n<p>Sekiz form destekleniyor: düz, L, U ve döner çeşitleriyle birlikte, rampa dahil.</p>\n\n<h2>Nereden başlanır?</h2>\n<p>StairFun Studio şu an <strong>v1.0.12</strong> sürümünde ve SketchUp 2021–2026 ile çalışıyor. Ne yaptığını ayrıntılı anlattığım sayfa burada: <a href=\"/eklenti/stairfun-studio.html\">StairFun Studio</a>.</p>\n<p>Güncel sürüm, uyumluluk tablosu ve satın alma için eklentinin mağazadaki kendi sayfası: <a href=\"https://www.bestsketchupplugins.com/tr/plugins/stairfun-studio/\" target=\"_blank\" rel=\"noopener\">StairFun Studio — bestsketchupplugins.com</a>.</p>\n<p>Diğer eklentiler, disipline göre paketler ve ücretsiz araçlar için <a href=\"https://www.bestsketchupplugins.com/tr/\" target=\"_blank\" rel=\"noopener\">Best SketchUp Plugins</a> sayfasına bakabilirsiniz. Tanıtım yazısı: <a href=\"/sketchup-eklentileri-best-sketchup-plugins.html\">SketchUp Eklentilerimiz Tek Adreste</a>.</p>\n<p>SketchUp'ı baştan öğrenmek isterseniz <a href=\"/sketchup-2026-profesyonel-egitim.html\">SketchUp 2026 profesyonel eğitim rehberi</a>, render tarafı için <a href=\"/egitimler\">eğitim setleri</a> sayfasına bakabilirsiniz.</p>\n\n<h2>İlgili yazılar</h2>\n<ul>\n  <li><a href=\"/sketchup-zemin-kaplama-metraji.html\">SketchUp'ta Zemin Kaplaması Metrajı Nasıl Çıkarılır?</a></li>\n  <li><a href=\"/sketchup-dolap-cizimi-cnc-kesim-listesi.html\">Ölçüden CNC'ye: SketchUp'ta Gömme Dolap Çizimi</a></li>\n  <li><a href=\"/pencere-teklifini-cizimden-cikarmak.html\">Pencere Teklifini Çizimden Çıkarmak</a></li>\n  <li><a href=\"/plan-degisti-modeli-bastan-cizmemek.html\">Müşteri Duvarı Kaydırdı: Modeli Baştan Çizmemek</a></li>\n</ul>",
+  "publishedAt": "2026-10-17 11:00:00",
+  "modifiedAt": "2026-10-17 11:00:00",
+  "status": "publish",
+  "featuredImage": null,
+  "inlineMedia": [],
+  "embeds": [],
+  "seo": {
+    "title": "SketchUp'ta Merdiven Çizimi ve Kural Denetimi | Ufuk Şen",
+    "description": "Rıht ve basamak hesabını elle yapmadan merdiven kurmak; kat yüksekliği değişince merdivenin kendini güncellemesi.",
+    "focusKeyword": "sketchup merdiven çizimi",
+    "canonicalUrl": "https://www.ufuksen.com/sketchup-merdiven-cizimi-ve-kural-denetimi.html",
+    "ogImage": null,
+    "noindex": false
+  },
+  "readingMinutes": 2,
+  "migrationChecksum": "535ddbd48d77737ff27f179393d8cf420aec304fabc0e9a494cc75585b0cad6b",
+  "author": {
+    "legacyId": 1,
+    "name": "UFUK ŞEN",
+    "slug": "ufuk",
+    "isGuest": false
+  },
+  "categories": [
+    {
+      "legacyId": 1172,
+      "name": "Sketchup",
+      "slug": "sketchup"
+    },
+    {
+      "legacyId": 1169,
+      "name": "3D Programlar",
+      "slug": "3d-programlar"
+    }
+  ],
+  "tags": []
+}

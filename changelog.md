@@ -28,6 +28,47 @@ Format, Keep a Changelog yaklaşımına yakındır. Tarihler `YYYY-MM-DD` biçim
 - Kaynak WordPress sistemi migration boyunca salt okunur kabul edildi.
 - Dry-run, yedek ve rollback zorunlulukları eklendi.
 
+## [1.6.0] — 2026-10-17
+
+Mağaza odaklı içerik kümesi.
+
+### Added
+
+- **10 ihtiyaç odaklı makale**, her biri bestsketchupplugins.com'a bağlanıyor:
+
+  | Yazı | Eklenti |
+  |---|---|
+  | SketchUp'ta Zemin Kaplaması Metrajı Nasıl Çıkarılır? | FloorStudio |
+  | Ölçüden CNC'ye: SketchUp'ta Gömme Dolap Çizimi | Dolap Sihirbazı |
+  | Pencere Teklifini Çizimden Çıkarmak | WindowFun Studio |
+  | Müşteri Duvarı Kaydırdı: Modeli Baştan Çizmemek | ArchiFlow Studio |
+  | Render'daki Boş Çevre Sorunu Nasıl Çözülür? | CityFill |
+  | SketchUp'ta Merdiven Çizimi ve Kural Denetimi | StairFun Studio |
+  | Rampa Çizimi: Eğim, Sahanlık ve Korkuluk | Rampa Stüdyosu |
+  | Süpürgelik ve Kartonpiyerde Gönye Sorunu | Dynamic Skirting |
+  | Perde Modellemek Neden Bu Kadar Uzun Sürüyor? | PerdeNeşe Studio |
+  | Kompozit Cephe Metrajı ve Panel Bölümleme | Kompozit Studio |
+
+- Her yazıda **3 soruluk S.S.S.** (uzun kuyruklu aramalar için) ve
+  **küme içi çapraz bağlantı** — on yazı birbirine bağlı, arama motoru
+  bunları tek konu kümesi olarak görüyor.
+
+### Changed
+
+- Tanıtım yazısındaki ürün tanımları kendi cümleleriyle yeniden yazıldı.
+  Önce  alanı birebir kullanılıyordu; aynı cümle ürün kartında,
+  detay sayfasında, ana sayfada ve yazıda olmak üzere dört yerdeydi.
+
+### Doğrulama
+
+- 10 yazı, ortalama 379 kelime, **mağaza bağlantısı olmayan yazı: 0**
+- Kopya denetimi (8 kelimelik pencere, ürün sayfalarına karşı):
+  tanıtım yazısı **45 → 0**; toplam örtüşme 53 → 8. Kalan 8, dört yazıda
+  alıntılanan ölçüm etiketleri () — aynı işi
+  adlandırdıkları için aynılar.
+- Mağazaya bağlanan sayfa sayısı: **44 → 59**
+- 589 sayfa;  0 hata; yeni kırık link / eksik medya: 0
+
 ## [1.5.3] — 2026-10-15
 
 ### Fixed

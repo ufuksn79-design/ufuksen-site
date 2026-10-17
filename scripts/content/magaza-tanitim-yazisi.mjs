@@ -43,6 +43,27 @@ function bul(slug) {
   return u;
 }
 
+/** Yazıya özel kısa görev tanımları — ürün `ozet` alanının tekrarı değil. */
+const GOREV = {
+  "archiflow": "plan üzerinde duvarı kaydırdığınızda binayı yeniden kurar",
+  "roadflow": "güzergâh çizgisinden yolu, şevi ve metrajı üretir",
+  "cityfill": "vaziyet planındaki boş alanı dolgu yapılarıyla doldurur",
+  "stairfun-studio": "kat yüksekliğinden merdiveni kurar ve kural denetimi yapar",
+  "ramp-studio": "güzergâhtan eğimi kontrollü rampayı korkuluğuyla çıkarır",
+  "floorstudio": "zemin kaplamasını odaya göre keser ve metrajını listeler",
+  "wardrobe-studio": "ölçüden dolabı, teklifi ve CNC dosyalarını üretir",
+  "furnifun": "odayı ölçüsü değiştirilebilir mobilyayla donatır",
+  "curtain-craft": "perdeyi sistem olarak kurar, kumaş metrajını birlikte verir",
+  "dynamic-skirting": "süpürgelik ve kartonpiyeri köşeleriyle birlikte yerleştirir",
+  "windowfun-studio": "ölçüden pencereyi ve teklif çıktılarını birlikte üretir",
+  "door-studio": "seçtiğiniz kapıyı duvarı oyarak yerine oturtur",
+  "kompozit-studio": "cepheyi panel ızgarasına böler ve metrajını çıkarır",
+  "landscape-studio": "araziyi şekillendirir, bitkilendirmeyi alana dağıtır",
+  "garden-wall-studio": "eğimi izleyen bahçe duvarını kapısıyla birlikte kurar",
+  "soft-edge": "kenarları yuvarlar ve pah kırar, sonradan değiştirilebilir",
+  "universal-converter": "dış formatları temizlenmiş geometriyle içeri alır"
+};
+
 /** Disipline göre öbekler — hangi işi yapan hangi eklentiye baksın. */
 const OBEKLER = [
   {
@@ -71,7 +92,13 @@ const obekHtml = OBEKLER.map((o) => {
   const satir = o.slugs
     .map((s) => {
       const u = bul(s);
-      return `<li><strong>${ic(u)}</strong> — ${u.ozet}</li>`;
+      /**
+       * Ürünün kendi `ozet` cümlesi KULLANILMIYOR: o cümle ürün kartında,
+       * detay sayfasında ve ana sayfada zaten geçiyor. Burada aynı işi
+       * anlatan ayrı bir cümle var — aynı sitede dört yerde aynı metin
+       * hem okura hem arama motoruna kötü geliyor.
+       */
+      return `<li><strong>${ic(u)}</strong> — ${GOREV[s]}.</li>`;
     })
     .join("\n    ");
   return `<h3>${o.ad}</h3>\n  <ul>\n    ${satir}\n  </ul>`;

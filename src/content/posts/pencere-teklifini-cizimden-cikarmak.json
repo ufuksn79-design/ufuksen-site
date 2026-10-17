@@ -1,0 +1,44 @@
+{
+  "legacyId": 90012,
+  "slug": "pencere-teklifini-cizimden-cikarmak",
+  "legacyUrl": "/pencere-teklifini-cizimden-cikarmak.html",
+  "url": "/pencere-teklifini-cizimden-cikarmak.html",
+  "title": "Pencere Teklifini Çizimden Çıkarmak",
+  "excerpt": "PVC ve alüminyum doğramada teklif hazırlarken ölçü neden kayıyor? Pencereyi modelden teklife bağlamanın yolu.",
+  "contentHtml": "<p>Doğrama işinde teklif hızı iş alıp alamamayı belirliyor. Müşteri üç yerden fiyat istiyor; ilk dönen genelde avantajlı başlıyor. Ama hızlı teklif, yanlış teklif olmamalı.</p>\n\n<h2>Neden bu kadar uzun sürüyor?</h2>\n\n<p>Bir pencereyi SketchUp'ta elle çizmek, kasayı, kanadı, camı ve varsa kayıt profilini ayrı kutulardan kurmak demek. Ardından profil metrajını, cam alanını ve aksesuar adedini okuyup fiyat tablosuna geçirmek gerekiyor. Bir pencereyi elle kutulardan çizip fiyatlamak yaklaşık <strong>40 dakika</strong>.</p>\n\n<p>Beş pencerelik bir daire için bu süre kabul edilebilir. Otuz pencerelik bir apartman için değil.</p>\n\n<h2>Modelden teklife tek yol</h2>\n\n<p>WindowFun Studio ölçüyü alıp pencereyi kuruyor ve aynı anda teklifi üretiyor. Elinizde <strong>51 model, 6 kategori</strong> var; tip seçiliyor, ölçü giriliyor, model ve fiyat birlikte çıkıyor.</p>\n\n<p>Çıktı tarafı önemli: <strong>CSV + DXF + PDF teklif</strong>. CSV teklife, DXF üretime, PDF müşteriye gidiyor. Üçü de aynı modelden türediği için aralarında fark olmuyor.</p>\n\n<p class=\"kazanc\"><strong>Ölçülen fark:</strong> bir pencereyi elle kutulardan çizip fiyatlamak <strong>40 dakika</strong> sürüyor; ölçü girilir, pencere ve teklif çıkar <strong>25 saniye</strong>. Yaklaşık <strong>96 kat</strong>.</p>\n\n<h2>Üretime giden dosya</h2>\n\n<p>DXF çıktısı, teklifin kabul edilmesi durumunda işin devamını da çözüyor. Teklif için çizdiğiniz model, üretim için yeniden çizilmek zorunda kalmıyor. Doğrama sektöründe en sık görülen çifte iş burada ortadan kalkıyor.</p>\n\n<h2>Sınırları</h2>\n\n<p>Sürüm 1.1.0 şu an <strong>SketchUp 2024–2026</strong> ile çalışıyor; daha eski SketchUp sürümlerinde kurulmuyor. Özel geometrili, kemerli ya da standart dışı doğramalarda hazır modeller yetmeyebilir — orada elle çizim hâlâ gerekli.</p>\n\n<h2>Sık sorulan sorular</h2>\n<h3>PVC ve alüminyum için ayrı ayrı çalışıyor mu?</h3>\n<p>Model kütüphanesi tip bazlı; kasa ve kanat geometrisi seçilen tipe göre kuruluyor. Profil sistemine özgü ayrıntılarda elle müdahale gerekebiliyor.</p>\n<h3>Teklif fiyatları nereden geliyor?</h3>\n<p>Birim fiyatları siz tanımlıyorsunuz; eklenti metrajı ve adedi üretiyor, fiyatı sizin verdiğiniz değerlerle çarpıyor.</p>\n<h3>DXF çıktısını doğrudan üretime gönderebilir miyim?</h3>\n<p>Çıktı üretim için hazırlanıyor, ama her atölyenin kendi şablonu var. İlk işte çıktıyı kendi standardınızla karşılaştırmak doğru olur.</p>\n\n<h2>Nereden başlanır?</h2>\n<p>WindowFun Studio şu an <strong>v1.1.0</strong> sürümünde ve SketchUp 2024–2026 ile çalışıyor. Ne yaptığını ayrıntılı anlattığım sayfa burada: <a href=\"/eklenti/windowfun-studio.html\">WindowFun Studio</a>.</p>\n<p>Güncel sürüm, uyumluluk tablosu ve satın alma için eklentinin mağazadaki kendi sayfası: <a href=\"https://www.bestsketchupplugins.com/tr/plugins/windowfun-studio/\" target=\"_blank\" rel=\"noopener\">WindowFun Studio — bestsketchupplugins.com</a>.</p>\n<p>Diğer eklentiler, disipline göre paketler ve ücretsiz araçlar için <a href=\"https://www.bestsketchupplugins.com/tr/\" target=\"_blank\" rel=\"noopener\">Best SketchUp Plugins</a> sayfasına bakabilirsiniz. Tanıtım yazısı: <a href=\"/sketchup-eklentileri-best-sketchup-plugins.html\">SketchUp Eklentilerimiz Tek Adreste</a>.</p>\n<p>SketchUp'ı baştan öğrenmek isterseniz <a href=\"/sketchup-2026-profesyonel-egitim.html\">SketchUp 2026 profesyonel eğitim rehberi</a>, render tarafı için <a href=\"/egitimler\">eğitim setleri</a> sayfasına bakabilirsiniz.</p>\n\n<h2>İlgili yazılar</h2>\n<ul>\n  <li><a href=\"/sketchup-zemin-kaplama-metraji.html\">SketchUp'ta Zemin Kaplaması Metrajı Nasıl Çıkarılır?</a></li>\n  <li><a href=\"/sketchup-dolap-cizimi-cnc-kesim-listesi.html\">Ölçüden CNC'ye: SketchUp'ta Gömme Dolap Çizimi</a></li>\n  <li><a href=\"/plan-degisti-modeli-bastan-cizmemek.html\">Müşteri Duvarı Kaydırdı: Modeli Baştan Çizmemek</a></li>\n  <li><a href=\"/render-cevre-binalari-nasil-doldurulur.html\">Render'daki Boş Çevre Sorunu Nasıl Çözülür?</a></li>\n</ul>",
+  "publishedAt": "2026-10-17 11:00:00",
+  "modifiedAt": "2026-10-17 11:00:00",
+  "status": "publish",
+  "featuredImage": null,
+  "inlineMedia": [],
+  "embeds": [],
+  "seo": {
+    "title": "Pencere Teklifini Çizimden Çıkarmak | Ufuk Şen",
+    "description": "PVC ve alüminyum doğramada teklif hazırlarken ölçü neden kayıyor? Pencereyi modelden teklife bağlamanın yolu.",
+    "focusKeyword": "sketchup pencere çizimi teklif",
+    "canonicalUrl": "https://www.ufuksen.com/pencere-teklifini-cizimden-cikarmak.html",
+    "ogImage": null,
+    "noindex": false
+  },
+  "readingMinutes": 2,
+  "migrationChecksum": "dee26550040475cbc582b40023a643e139aaf6313585846bd63f8fc6008803f0",
+  "author": {
+    "legacyId": 1,
+    "name": "UFUK ŞEN",
+    "slug": "ufuk",
+    "isGuest": false
+  },
+  "categories": [
+    {
+      "legacyId": 1172,
+      "name": "Sketchup",
+      "slug": "sketchup"
+    },
+    {
+      "legacyId": 1169,
+      "name": "3D Programlar",
+      "slug": "3d-programlar"
+    }
+  ],
+  "tags": []
+}

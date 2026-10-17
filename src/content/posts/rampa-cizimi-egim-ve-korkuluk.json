@@ -1,0 +1,44 @@
+{
+  "legacyId": 90016,
+  "slug": "rampa-cizimi-egim-ve-korkuluk",
+  "legacyUrl": "/rampa-cizimi-egim-ve-korkuluk.html",
+  "url": "/rampa-cizimi-egim-ve-korkuluk.html",
+  "title": "Rampa Çizimi: Eğim, Sahanlık ve Korkuluk",
+  "excerpt": "Erişilebilirlik rampasını SketchUp'ta modellemek: eğimi kontrol altında tutmak ve korkuluğu otomatik kurmak.",
+  "contentHtml": "<p>Rampa, küçük görünen ama elle modellendiğinde şaşırtıcı derecede uzun süren bir eleman. Çünkü iş yalnızca eğimli bir yüzey çizmekten ibaret değil: sahanlık, korkuluk, küpeşte ve dönüş geometrisi var.</p>\n\n<h2>Neden bu kadar uğraştırıyor?</h2>\n\n<p>Korkuluk, rampanın eğimini takip etmek zorunda. Elle çizdiğinizde her dikme farklı yükseklikte oluyor ve küpeşte eğimle birlikte dönüyor. Bir dikmeyi kaydırdığınızda zincirin tamamı bozuluyor. Korkuluklu bir rampayı elle modellemek yaklaşık <strong>45 dakika</strong>.</p>\n\n<h2>Güzergâhtan rampa üretmek</h2>\n\n<p>Rampa Stüdyosu rampayı çizgiden kuruyor: güzergâhı çiziyorsunuz, eğim ve genişlik parametrelerini veriyorsunuz, korkuluk kendini yerleştiriyor. <strong>50 hazır ayar, 5 kategori</strong> hazır olarak geliyor; sık kullanılan durumlar için baştan ayar yapmanız gerekmiyor.</p>\n\n<p>Korkuluk tarafında <strong>8 korkuluk tipi</strong> seçeneği var.</p>\n\n<p class=\"kazanc\"><strong>Ölçülen fark:</strong> korkuluklu bir rampayı elle modellemek <strong>45 dakika</strong> sürüyor; hazır ayarı seç, iki kez tıkla <strong>40 saniye</strong>. Yaklaşık <strong>68 kat</strong>.</p>\n\n<h2>Eğim konusunda doğru beklenti</h2>\n\n<p>Eklenti seçtiğiniz eğimi uyguluyor ve değeri gözünüzün önünde tutuyor. Ama <strong>hangi eğimin zorunlu olduğu</strong> yapının türüne, kullanıcısına ve yürürlükteki erişilebilirlik mevzuatına bağlı. O sınırı buradan yazmıyorum; projeyi veren kurumun şartnamesine ve güncel yönetmeliğe bakmak gerekiyor. Eklentinin işi, karar verdiğiniz eğimi doğru uygulamak.</p>\n\n<h2>Test durumu</h2>\n\n<p>Sürüm 1.0.0 için <strong>363 test, su 2021-2026</strong>. Rampa Stüdyosu şu an beta; geometri üretimi çalışıyor, arayüz hâlâ gelişiyor.</p>\n\n<h2>Sık sorulan sorular</h2>\n<h3>Rampa eğimi kaç olmalı?</h3>\n<p>Bu, yapının türüne ve yürürlükteki erişilebilirlik mevzuatına bağlı; tek bir sayı vermek doğru olmaz. Eklenti sizin belirlediğiniz eğimi uygular ve değeri görünür tutar.</p>\n<h3>Korkuluk rampanın eğimini takip ediyor mu?</h3>\n<p>Evet, küpeşte ve dikmeler eğime göre kuruluyor; elle çizimde en çok vakit alan kısım bu.</p>\n<h3>Sahanlıklı rampa yapılabiliyor mu?</h3>\n<p>Güzergâhı sahanlıklı çizdiğinizde rampa ona göre bölünüyor.</p>\n\n<h2>Nereden başlanır?</h2>\n<p>Rampa Stüdyosu şu an <strong>v1.0.0</strong> sürümünde ve SketchUp 2021–2026 ile çalışıyor. Ne yaptığını ayrıntılı anlattığım sayfa burada: <a href=\"/eklenti/ramp-studio.html\">Rampa Stüdyosu</a>.</p>\n<p>Güncel sürüm, uyumluluk tablosu ve satın alma için eklentinin mağazadaki kendi sayfası: <a href=\"https://www.bestsketchupplugins.com/tr/plugins/ramp-studio/\" target=\"_blank\" rel=\"noopener\">Rampa Stüdyosu — bestsketchupplugins.com</a>.</p>\n<p>Diğer eklentiler, disipline göre paketler ve ücretsiz araçlar için <a href=\"https://www.bestsketchupplugins.com/tr/\" target=\"_blank\" rel=\"noopener\">Best SketchUp Plugins</a> sayfasına bakabilirsiniz. Tanıtım yazısı: <a href=\"/sketchup-eklentileri-best-sketchup-plugins.html\">SketchUp Eklentilerimiz Tek Adreste</a>.</p>\n<p>SketchUp'ı baştan öğrenmek isterseniz <a href=\"/sketchup-2026-profesyonel-egitim.html\">SketchUp 2026 profesyonel eğitim rehberi</a>, render tarafı için <a href=\"/egitimler\">eğitim setleri</a> sayfasına bakabilirsiniz.</p>\n\n<h2>İlgili yazılar</h2>\n<ul>\n  <li><a href=\"/sketchup-zemin-kaplama-metraji.html\">SketchUp'ta Zemin Kaplaması Metrajı Nasıl Çıkarılır?</a></li>\n  <li><a href=\"/sketchup-dolap-cizimi-cnc-kesim-listesi.html\">Ölçüden CNC'ye: SketchUp'ta Gömme Dolap Çizimi</a></li>\n  <li><a href=\"/pencere-teklifini-cizimden-cikarmak.html\">Pencere Teklifini Çizimden Çıkarmak</a></li>\n  <li><a href=\"/plan-degisti-modeli-bastan-cizmemek.html\">Müşteri Duvarı Kaydırdı: Modeli Baştan Çizmemek</a></li>\n</ul>",
+  "publishedAt": "2026-10-17 11:00:00",
+  "modifiedAt": "2026-10-17 11:00:00",
+  "status": "publish",
+  "featuredImage": null,
+  "inlineMedia": [],
+  "embeds": [],
+  "seo": {
+    "title": "Rampa Çizimi: Eğim, Sahanlık ve Korkuluk | Ufuk Şen",
+    "description": "Erişilebilirlik rampasını SketchUp'ta modellemek: eğimi kontrol altında tutmak ve korkuluğu otomatik kurmak.",
+    "focusKeyword": "sketchup rampa çizimi",
+    "canonicalUrl": "https://www.ufuksen.com/rampa-cizimi-egim-ve-korkuluk.html",
+    "ogImage": null,
+    "noindex": false
+  },
+  "readingMinutes": 2,
+  "migrationChecksum": "ce7bc244b031a2ab974acbcc54ce2fbd5117f719045524f9b4b28c571cfb31f0",
+  "author": {
+    "legacyId": 1,
+    "name": "UFUK ŞEN",
+    "slug": "ufuk",
+    "isGuest": false
+  },
+  "categories": [
+    {
+      "legacyId": 1172,
+      "name": "Sketchup",
+      "slug": "sketchup"
+    },
+    {
+      "legacyId": 1169,
+      "name": "3D Programlar",
+      "slug": "3d-programlar"
+    }
+  ],
+  "tags": []
+}

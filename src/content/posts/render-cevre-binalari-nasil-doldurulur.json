@@ -1,0 +1,44 @@
+{
+  "legacyId": 90014,
+  "slug": "render-cevre-binalari-nasil-doldurulur",
+  "legacyUrl": "/render-cevre-binalari-nasil-doldurulur.html",
+  "url": "/render-cevre-binalari-nasil-doldurulur.html",
+  "title": "Render'daki Boş Çevre Sorunu Nasıl Çözülür?",
+  "excerpt": "Binanız güzel ama çevresi bomboş. Vaziyet planını gerçekçi kılan dolgu yapıları hızlıca nasıl yerleştirilir?",
+  "contentHtml": "<p>Tasarladığınız bina bitmiş, malzemeleri oturmuş, ışık doğru. Render alıyorsunuz ve bir tuhaflık var: bina <em>boşlukta duruyor</em>. Çevresinde hiçbir şey yok. Göz bunu hemen yakalıyor ve görsel inandırıcılığını kaybediyor.</p>\n\n<h2>Boş çevre neden bu kadar göze batıyor?</h2>\n\n<p>Çünkü gerçek hayatta hiçbir bina tek başına durmuyor. Beyin, binanın ölçeğini çevresindeki yapılarla karşılaştırarak anlıyor. Komşu yapı yoksa ölçek algısı da yok — bina maket gibi görünüyor.</p>\n\n<p>İkinci sebep ışık: komşu binalar gölge düşürür, yansıma verir. Onlar olmayınca aydınlatma fazla temiz, fazla stüdyo kalıyor.</p>\n\n<h2>Tek tek model aramanın bedeli</h2>\n\n<p>Alışılmış çözüm, internetten dolgu binası indirip yerleştirmek. Her biri için arama, indirme, ölçek düzeltme, malzeme temizliği gerekiyor. Dolgu binalarını tek tek avlamak yaklaşık <strong>150 dakika</strong> — ve indirilen modeller çoğu zaman gereksiz ağır, sahneyi yavaşlatıyor.</p>\n\n<h2>Dağıtıcı mantığı</h2>\n\n<p>CityFill adayı ya da alanı sınırlandırıp içini dolduruyor. <strong>154 hazır bina</strong> arasından seçim yapıyor, <strong>3 yerleştirme modu</strong> ile dizilimi belirliyorsunuz.</p>\n\n<p class=\"kazanc\"><strong>Ölçülen fark:</strong> dolgu binalarını tek tek avlamak <strong>150 dakika</strong> sürüyor; adanın tamamını tek serpiştirmede doldurmak <strong>25 saniye</strong>. Yaklaşık <strong>360 kat</strong>.</p>\n\n<h2>Dolgu yapısı ne kadar detaylı olmalı?</h2>\n\n<p>Olabildiğince az. Çevre binaları arka planda, çoğu zaman gölgede ve bulanık kalıyor. Detay koymak sahneyi ağırlaştırmaktan başka işe yaramıyor. Doğru dolgu, kütleyi ve ölçeği veren, detayı olmayan yapıdır.</p>\n\n<p>Bu eklenti ücretsiz — çevre sorununu çözmek için para harcamanıza gerek yok.</p>\n\n<h2>Sık sorulan sorular</h2>\n<h3>Çevre binaları sahneyi ağırlaştırır mı?</h3>\n<p>Dolgu yapıları düşük detaylı tutuluyor. İnternetten indirilen ağır modellerle karşılaştırıldığında sahne çok daha hafif kalıyor.</p>\n<h3>Gerçek imar durumuna uygun mu?</h3>\n<p>Hayır, bunlar görsel dolgu. Vaziyet planı ve imar durumu gerektiren işlerde gerçek veriyle çalışmak gerekiyor.</p>\n<h3>CityFill ücretsiz mi?</h3>\n<p>Evet, ücretsiz. Çevre sorununu çözmek için ödeme yapmanız gerekmiyor.</p>\n\n<h2>Nereden başlanır?</h2>\n<p>CityFill şu an <strong>v2.0.0</strong> sürümünde ve SketchUp 2021–2026 ile çalışıyor. Ne yaptığını ayrıntılı anlattığım sayfa burada: <a href=\"/eklenti/cityfill.html\">CityFill</a>.</p>\n<p>Güncel sürüm, uyumluluk tablosu ve satın alma için eklentinin mağazadaki kendi sayfası: <a href=\"https://www.bestsketchupplugins.com/tr/plugins/cityfill/\" target=\"_blank\" rel=\"noopener\">CityFill — bestsketchupplugins.com</a>.</p>\n<p>Diğer eklentiler, disipline göre paketler ve ücretsiz araçlar için <a href=\"https://www.bestsketchupplugins.com/tr/\" target=\"_blank\" rel=\"noopener\">Best SketchUp Plugins</a> sayfasına bakabilirsiniz. Tanıtım yazısı: <a href=\"/sketchup-eklentileri-best-sketchup-plugins.html\">SketchUp Eklentilerimiz Tek Adreste</a>.</p>\n<p>SketchUp'ı baştan öğrenmek isterseniz <a href=\"/sketchup-2026-profesyonel-egitim.html\">SketchUp 2026 profesyonel eğitim rehberi</a>, render tarafı için <a href=\"/egitimler\">eğitim setleri</a> sayfasına bakabilirsiniz.</p>\n\n<h2>İlgili yazılar</h2>\n<ul>\n  <li><a href=\"/sketchup-zemin-kaplama-metraji.html\">SketchUp'ta Zemin Kaplaması Metrajı Nasıl Çıkarılır?</a></li>\n  <li><a href=\"/sketchup-dolap-cizimi-cnc-kesim-listesi.html\">Ölçüden CNC'ye: SketchUp'ta Gömme Dolap Çizimi</a></li>\n  <li><a href=\"/pencere-teklifini-cizimden-cikarmak.html\">Pencere Teklifini Çizimden Çıkarmak</a></li>\n  <li><a href=\"/plan-degisti-modeli-bastan-cizmemek.html\">Müşteri Duvarı Kaydırdı: Modeli Baştan Çizmemek</a></li>\n</ul>",
+  "publishedAt": "2026-10-17 11:00:00",
+  "modifiedAt": "2026-10-17 11:00:00",
+  "status": "publish",
+  "featuredImage": null,
+  "inlineMedia": [],
+  "embeds": [],
+  "seo": {
+    "title": "Render'daki Boş Çevre Sorunu Nasıl Çözülür? | Ufuk Şen",
+    "description": "Binanız güzel ama çevresi bomboş. Vaziyet planını gerçekçi kılan dolgu yapıları hızlıca nasıl yerleştirilir?",
+    "focusKeyword": "render çevre binaları",
+    "canonicalUrl": "https://www.ufuksen.com/render-cevre-binalari-nasil-doldurulur.html",
+    "ogImage": null,
+    "noindex": false
+  },
+  "readingMinutes": 2,
+  "migrationChecksum": "4f3af9bbe33ead3d322c57e848e6c301f0bd388e76bfc33a42547e2b13789bc6",
+  "author": {
+    "legacyId": 1,
+    "name": "UFUK ŞEN",
+    "slug": "ufuk",
+    "isGuest": false
+  },
+  "categories": [
+    {
+      "legacyId": 1172,
+      "name": "Sketchup",
+      "slug": "sketchup"
+    },
+    {
+      "legacyId": 518,
+      "name": "3D Görselleştirme",
+      "slug": "3d-gorsellestirme"
+    }
+  ],
+  "tags": []
+}

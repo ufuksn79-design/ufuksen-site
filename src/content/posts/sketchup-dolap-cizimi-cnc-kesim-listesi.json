@@ -1,0 +1,44 @@
+{
+  "legacyId": 90011,
+  "slug": "sketchup-dolap-cizimi-cnc-kesim-listesi",
+  "legacyUrl": "/sketchup-dolap-cizimi-cnc-kesim-listesi.html",
+  "url": "/sketchup-dolap-cizimi-cnc-kesim-listesi.html",
+  "title": "Ölçüden CNC'ye: SketchUp'ta Gömme Dolap Çizimi",
+  "excerpt": "Gömme dolabı panel panel çizmeden modellemek, teklifi ve CNC kesim dosyalarını aynı çizimden almak.",
+  "contentHtml": "<p>Mobilyacının iki ayrı derdi var: müşteriye gösterilecek bir görsel ve atölyeye gidecek bir kesim listesi. Çoğu yerde bu ikisi ayrı ayrı üretiliyor — biri SketchUp'ta, diğeri Excel'de. Arada bir yerde ölçü kayıyor ve panel yanlış kesiliyor.</p>\n\n<h2>Panel panel çizmenin maliyeti</h2>\n\n<p>Bir gömme dolabı elle modellemek, her yan paneli, rafı, kapağı ve sırtı ayrı ayrı çizmek demek. Sonra her birinin ölçüsünü okuyup listeye yazmak gerekiyor. İki sorun:</p>\n\n<ul>\n  <li><strong>Süre.</strong> Her paneli elle çizmek, sonra kesim listesini yazmak yaklaşık <strong>120 dakika</strong> alıyor.</li>\n  <li><strong>Revizyon.</strong> Müşteri \"dolap 20 cm daha geniş olsun\" dediğinde iş baştan başlıyor; çünkü paneller birbirine bağlı değil, sadece yan yana duran kutular.</li>\n</ul>\n\n<h2>Parametrik kurgu ne değiştiriyor?</h2>\n\n<p>Paneller birbirini bilirse, genişliği değiştirdiğinizde raf da kapak da sırt da kendini güncelliyor. Dolap Sihirbazı dolabı <strong>20 bileşenden 131 katı</strong> olarak kuruyor; yani ölçüyü yazdığınızda gövde gerçek parçalardan oluşuyor, blok bir kutudan değil.</p>\n\n<p>Kaplama ve kapak tarafında <strong>12 kaplama, 7 kapak stili</strong> seçeneği var. Sürüm <strong>164 test, SketchUp 2017+</strong> ile çalışıyor — eski SketchUp sürümünde kalmış atölyeler için önemli bir ayrıntı.</p>\n\n<p class=\"kazanc\"><strong>Ölçülen fark:</strong> her paneli elle çizmek, sonra kesim listesini yazmak <strong>120 dakika</strong> sürüyor; ölçüyü yaz, modele ekle'ye bas <strong>90 saniye</strong>. Yaklaşık <strong>80 kat</strong>.</p>\n\n<h2>Kesim listesi ve CNC</h2>\n\n<p>Asıl kazanç çıktıda. Dolap parçalardan kurulduğu için kesim listesi sayımdan değil, parçaların kendisinden çıkıyor. Teklif ve CNC dosyaları aynı modelden üretiliyor; atölyeye giden ölçü ile müşteriye gösterilen görsel aynı kaynaktan besleniyor.</p>\n\n<h2>Gerçekçi beklenti</h2>\n\n<p>Eklenti size tasarım yapmıyor — dolabın nereye konacağına, kaç kapaklı olacağına siz karar veriyorsunuz. Yaptığı şey, o kararı verdikten sonraki mekanik işi üstlenmek. Tasarımın kendisi hâlâ sizin işiniz.</p>\n\n<h2>Sık sorulan sorular</h2>\n<h3>Kesim listesi hangi formatta çıkıyor?</h3>\n<p>Teklif için tablo, üretim için CNC'ye gidebilen dosya olarak. İkisi de aynı modelden türediği için aralarında ölçü farkı olmuyor.</p>\n<h3>Dolabın ölçüsünü sonradan değiştirebilir miyim?</h3>\n<p>Evet. Gövde parçalardan kurulduğu ve parçalar birbirini bildiği için genişliği değiştirdiğinizde raf, kapak ve sırt kendini güncelliyor.</p>\n<h3>Eski SketchUp sürümünde çalışır mı?</h3>\n<p>Dolap Sihirbazı SketchUp 2017 ve sonrasını destekliyor — atölyelerde sık görülen eski sürümler de kapsamda.</p>\n\n<h2>Nereden başlanır?</h2>\n<p>Dolap Sihirbazı şu an <strong>v1.19.0</strong> sürümünde ve SketchUp 2017 ve üzeri–2026 ile çalışıyor. Ne yaptığını ayrıntılı anlattığım sayfa burada: <a href=\"/eklenti/wardrobe-studio.html\">Dolap Sihirbazı</a>.</p>\n<p>Güncel sürüm, uyumluluk tablosu ve satın alma için eklentinin mağazadaki kendi sayfası: <a href=\"https://www.bestsketchupplugins.com/tr/plugins/wardrobe-studio/\" target=\"_blank\" rel=\"noopener\">Dolap Sihirbazı — bestsketchupplugins.com</a>.</p>\n<p>Diğer eklentiler, disipline göre paketler ve ücretsiz araçlar için <a href=\"https://www.bestsketchupplugins.com/tr/\" target=\"_blank\" rel=\"noopener\">Best SketchUp Plugins</a> sayfasına bakabilirsiniz. Tanıtım yazısı: <a href=\"/sketchup-eklentileri-best-sketchup-plugins.html\">SketchUp Eklentilerimiz Tek Adreste</a>.</p>\n<p>SketchUp'ı baştan öğrenmek isterseniz <a href=\"/sketchup-2026-profesyonel-egitim.html\">SketchUp 2026 profesyonel eğitim rehberi</a>, render tarafı için <a href=\"/egitimler\">eğitim setleri</a> sayfasına bakabilirsiniz.</p>\n\n<h2>İlgili yazılar</h2>\n<ul>\n  <li><a href=\"/sketchup-zemin-kaplama-metraji.html\">SketchUp'ta Zemin Kaplaması Metrajı Nasıl Çıkarılır?</a></li>\n  <li><a href=\"/pencere-teklifini-cizimden-cikarmak.html\">Pencere Teklifini Çizimden Çıkarmak</a></li>\n  <li><a href=\"/plan-degisti-modeli-bastan-cizmemek.html\">Müşteri Duvarı Kaydırdı: Modeli Baştan Çizmemek</a></li>\n  <li><a href=\"/render-cevre-binalari-nasil-doldurulur.html\">Render'daki Boş Çevre Sorunu Nasıl Çözülür?</a></li>\n</ul>",
+  "publishedAt": "2026-10-17 11:00:00",
+  "modifiedAt": "2026-10-17 11:00:00",
+  "status": "publish",
+  "featuredImage": null,
+  "inlineMedia": [],
+  "embeds": [],
+  "seo": {
+    "title": "Ölçüden CNC'ye: SketchUp'ta Gömme Dolap Çizimi | Ufuk Şen",
+    "description": "Gömme dolabı panel panel çizmeden modellemek, teklifi ve CNC kesim dosyalarını aynı çizimden almak.",
+    "focusKeyword": "sketchup dolap çizimi",
+    "canonicalUrl": "https://www.ufuksen.com/sketchup-dolap-cizimi-cnc-kesim-listesi.html",
+    "ogImage": null,
+    "noindex": false
+  },
+  "readingMinutes": 2,
+  "migrationChecksum": "6c6e4e03c3fe60a8617e6865a98209dd0b6a72542d397ea952d6bd92dc9a9b2a",
+  "author": {
+    "legacyId": 1,
+    "name": "UFUK ŞEN",
+    "slug": "ufuk",
+    "isGuest": false
+  },
+  "categories": [
+    {
+      "legacyId": 1172,
+      "name": "Sketchup",
+      "slug": "sketchup"
+    },
+    {
+      "legacyId": 1169,
+      "name": "3D Programlar",
+      "slug": "3d-programlar"
+    }
+  ],
+  "tags": []
+}

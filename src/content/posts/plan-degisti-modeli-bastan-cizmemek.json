@@ -1,0 +1,44 @@
+{
+  "legacyId": 90013,
+  "slug": "plan-degisti-modeli-bastan-cizmemek",
+  "legacyUrl": "/plan-degisti-modeli-bastan-cizmemek.html",
+  "url": "/plan-degisti-modeli-bastan-cizmemek.html",
+  "title": "Müşteri Duvarı Kaydırdı: Modeli Baştan Çizmemek",
+  "excerpt": "Plan revizyonunda modelin bozulmaması için duvar, kapı ve döşemenin birbirini bilmesi gerekiyor. Reaktif model nedir?",
+  "contentHtml": "<p>Mimari projede değişmeyen tek şey, planın değişeceği. Sorun değişikliğin kendisi değil — <strong>değişikliğin maliyeti</strong>. Bir duvarı 40 cm kaydırmak beş saniyelik iş; o duvara bağlı döşemeyi, tavanı, kapı boşluğunu ve süpürgeliği onarmak yarım saat.</p>\n\n<h2>SketchUp neden bu konuda zorlar?</h2>\n\n<p>SketchUp bir yüzey modelleyicisi. Çizdiğiniz duvar \"duvar\" değil, altı yüzeyden oluşan bir kutu. Kutunun yanındaki döşeme, o kutunun orada olduğunu bilmiyor. Dolayısıyla kutuyu taşıdığınızda döşeme olduğu yerde kalıyor ve siz elle onarıyorsunuz.</p>\n\n<p>Bu, SketchUp'ın kusuru değil; hızlı olmasının sebebi. Ama proje büyüdükçe bedeli büyüyor.</p>\n\n<h2>Reaktif model ne demek?</h2>\n\n<p>Öğeler arasındaki ilişkiyi modelin kendisi tutarsa, duvarı taşıdığınızda ona bağlı olan her şey kendini yeniden kuruyor. ArchiFlow Studio bunu yapıyor: <strong>150 ms'de yeniden kurar</strong> — yani değişikliğin ardından bekleme süresi fark edilmiyor.</p>\n\n<p>İçinde <strong>5 stüdyo gömülü</strong> var; duvar, döşeme, çatı gibi başlıklar ayrı ayrı ele alınıyor.</p>\n\n<p class=\"kazanc\"><strong>Ölçülen fark:</strong> bir duvarı taşı, sonra bütün modeli elle onar <strong>30 dakika</strong> sürüyor; duvarı taşı — model kendini onarır <strong>2 saniye</strong>. Yaklaşık <strong>900 kat</strong>.</p>\n\n<h2>Bunun gerçek kazancı nerede?</h2>\n\n<p>Tek bir revizyonda değil, <strong>revizyon korkusunun kalkmasında</strong>. Modeli bozmaktan çekinmediğinizde müşterinin \"şöyle de bir deneyelim\" isteğine evet diyebiliyorsunuz. Tasarım kararları daha çok denenmiş oluyor.</p>\n\n<h2>Öğrenme eğrisi</h2>\n\n<p>Parametrik çalışmak, serbest çizmekten farklı bir alışkanlık. İlk projede daha yavaş ilerlersiniz; kazanç ikinci projeden itibaren başlıyor. Bunu baştan söylemek daha doğru.</p>\n\n<h2>Sık sorulan sorular</h2>\n<h3>Parametrik çalışmak SketchUp'ı yavaşlatır mı?</h3>\n<p>Yeniden kurma süresi ölçülmüş: yaklaşık 150 ms. Pratikte duvarı taşıdığınızda bekleme hissetmiyorsunuz.</p>\n<h3>Mevcut modelimi parametrik hâle çevirebilir miyim?</h3>\n<p>Hayır; mantık, modelin baştan ilişkili kurulmasına dayanıyor. Devam eden bir projeyi dönüştürmek yerine yeni projede başlamak daha verimli.</p>\n<h3>Bu bir BIM yazılımı mı?</h3>\n<p>Değil. BIM'in veri katmanını hedeflemiyor; amacı SketchUp'ta plan revizyonunun maliyetini düşürmek.</p>\n\n<h2>Nereden başlanır?</h2>\n<p>ArchiFlow Studio şu an <strong>v1.72.0</strong> sürümünde ve SketchUp 2021–2026 ile çalışıyor. Ne yaptığını ayrıntılı anlattığım sayfa burada: <a href=\"/eklenti/archiflow.html\">ArchiFlow Studio</a>.</p>\n<p>Güncel sürüm, uyumluluk tablosu ve satın alma için eklentinin mağazadaki kendi sayfası: <a href=\"https://www.bestsketchupplugins.com/tr/plugins/archiflow/\" target=\"_blank\" rel=\"noopener\">ArchiFlow Studio — bestsketchupplugins.com</a>.</p>\n<p>Diğer eklentiler, disipline göre paketler ve ücretsiz araçlar için <a href=\"https://www.bestsketchupplugins.com/tr/\" target=\"_blank\" rel=\"noopener\">Best SketchUp Plugins</a> sayfasına bakabilirsiniz. Tanıtım yazısı: <a href=\"/sketchup-eklentileri-best-sketchup-plugins.html\">SketchUp Eklentilerimiz Tek Adreste</a>.</p>\n<p>SketchUp'ı baştan öğrenmek isterseniz <a href=\"/sketchup-2026-profesyonel-egitim.html\">SketchUp 2026 profesyonel eğitim rehberi</a>, render tarafı için <a href=\"/egitimler\">eğitim setleri</a> sayfasına bakabilirsiniz.</p>\n\n<h2>İlgili yazılar</h2>\n<ul>\n  <li><a href=\"/sketchup-zemin-kaplama-metraji.html\">SketchUp'ta Zemin Kaplaması Metrajı Nasıl Çıkarılır?</a></li>\n  <li><a href=\"/sketchup-dolap-cizimi-cnc-kesim-listesi.html\">Ölçüden CNC'ye: SketchUp'ta Gömme Dolap Çizimi</a></li>\n  <li><a href=\"/pencere-teklifini-cizimden-cikarmak.html\">Pencere Teklifini Çizimden Çıkarmak</a></li>\n  <li><a href=\"/render-cevre-binalari-nasil-doldurulur.html\">Render'daki Boş Çevre Sorunu Nasıl Çözülür?</a></li>\n</ul>",
+  "publishedAt": "2026-10-17 11:00:00",
+  "modifiedAt": "2026-10-17 11:00:00",
+  "status": "publish",
+  "featuredImage": null,
+  "inlineMedia": [],
+  "embeds": [],
+  "seo": {
+    "title": "Müşteri Duvarı Kaydırdı: Modeli Baştan Çizmemek | Ufuk Şen",
+    "description": "Plan revizyonunda modelin bozulmaması için duvar, kapı ve döşemenin birbirini bilmesi gerekiyor. Reaktif model nedir?",
+    "focusKeyword": "sketchup parametrik mimari model",
+    "canonicalUrl": "https://www.ufuksen.com/plan-degisti-modeli-bastan-cizmemek.html",
+    "ogImage": null,
+    "noindex": false
+  },
+  "readingMinutes": 2,
+  "migrationChecksum": "b7c068a0b29ad7e9abbcf19a5186904d47f9c8d35c4db13bf3068caf2382ec34",
+  "author": {
+    "legacyId": 1,
+    "name": "UFUK ŞEN",
+    "slug": "ufuk",
+    "isGuest": false
+  },
+  "categories": [
+    {
+      "legacyId": 1172,
+      "name": "Sketchup",
+      "slug": "sketchup"
+    },
+    {
+      "legacyId": 1169,
+      "name": "3D Programlar",
+      "slug": "3d-programlar"
+    }
+  ],
+  "tags": []
+}

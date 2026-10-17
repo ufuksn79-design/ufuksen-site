@@ -1,0 +1,44 @@
+{
+  "legacyId": 90019,
+  "slug": "kompozit-cephe-metraji-ve-panel-bolumleme",
+  "legacyUrl": "/kompozit-cephe-metraji-ve-panel-bolumleme.html",
+  "url": "/kompozit-cephe-metraji-ve-panel-bolumleme.html",
+  "title": "Kompozit Cephe Metrajı ve Panel Bölümleme",
+  "excerpt": "ACM cephede panel bölümlemesini ve metrajı elle yapmanın maliyeti; cepheyi yüzeyden panele çevirmenin yolu.",
+  "contentHtml": "<p>Kompozit cephe teklifinde iki sayı belirleyici: kaç m² panel ve kaç adet parça. İkisi aynı şey değil. Alan aynı kalsa bile bölümleme değiştiğinde parça adedi, dolayısıyla işçilik ve fire değişiyor.</p>\n\n<h2>Elle bölümlemenin sorunu</h2>\n\n<p>Cepheyi panel panel modellemek, levha ölçüsünü cephe yüzeyine oturtup kalan parçaları tek tek çizmek demek. Cepheyi panel panel modelleyip metrajı tabloda saymak yaklaşık <strong>150 dakika</strong>.</p>\n\n<p>Üstelik pencere boşlukları ve köşe dönüşleri bölümlemeyi bozuyor; o bölgelerde parça sayısı elle saymayla tutmuyor.</p>\n\n<h2>Izgarayı yüzeye oturtmak</h2>\n\n<p>Kompozit Studio cephe yüzeylerini seçip üzerine panel ızgarasını kuruyor. Izgara <strong>1250×2500 mm panel ızgarası</strong> ölçüsü üzerinden çalışıyor — sektörde standart levha ölçüsü.</p>\n\n<p>Çıktı olarak <strong>m² + adet csv metrajı</strong> veriyor; yani hem alan hem adet aynı modelden geliyor.</p>\n\n<p class=\"kazanc\"><strong>Ölçülen fark:</strong> cepheyi panel panel modelleyip metrajı tabloda saymak <strong>150 dakika</strong> sürüyor; yüzeyleri seçip oluştur'a basmak <strong>45 saniye</strong>. Yaklaşık <strong>200 kat</strong>.</p>\n\n<h2>Neden adet önemli?</h2>\n\n<p>Çünkü maliyetin bir kısmı alanla değil, parça sayısıyla ölçekleniyor: kesim, büküm, montaj ve taşıyıcı profil. Yalnızca m² üzerinden verilen teklif, karmaşık cephelerde eksik kalıyor.</p>\n\n<h2>Durumu</h2>\n\n<p>Kompozit Studio <strong>beta</strong>; geometri ve metraj çalışıyor, ayrıntılar gelişmeye devam ediyor. SketchUp 2021–2026 ile uyumlu.</p>\n\n<h2>Sık sorulan sorular</h2>\n<h3>Metraj m² olarak mı adet olarak mı çıkıyor?</h3>\n<p>İkisi birden. Maliyetin bir kısmı alanla, bir kısmı parça sayısıyla ölçeklendiği için yalnızca m² yeterli olmuyor.</p>\n<h3>Pencere boşlukları bölümlemeye dahil mi?</h3>\n<p>Izgara yüzeye oturtulurken boşluklar hesaba katılıyor; elle saymada en çok hata yapılan yer burasıydı.</p>\n<h3>Panel ölçüsünü değiştirebilir miyim?</h3>\n<p>Izgara 1250×2500 mm standart levha üzerinden çalışıyor; farklı levha ölçüleriyle çalışıyorsanız bunu baştan kontrol edin.</p>\n\n<h2>Nereden başlanır?</h2>\n<p>Kompozit Studio şu an <strong>v1.3.1</strong> sürümünde ve SketchUp 2021–2026 ile çalışıyor. Ne yaptığını ayrıntılı anlattığım sayfa burada: <a href=\"/eklenti/kompozit-studio.html\">Kompozit Studio</a>.</p>\n<p>Güncel sürüm, uyumluluk tablosu ve satın alma için eklentinin mağazadaki kendi sayfası: <a href=\"https://www.bestsketchupplugins.com/tr/plugins/kompozit-studio/\" target=\"_blank\" rel=\"noopener\">Kompozit Studio — bestsketchupplugins.com</a>.</p>\n<p>Diğer eklentiler, disipline göre paketler ve ücretsiz araçlar için <a href=\"https://www.bestsketchupplugins.com/tr/\" target=\"_blank\" rel=\"noopener\">Best SketchUp Plugins</a> sayfasına bakabilirsiniz. Tanıtım yazısı: <a href=\"/sketchup-eklentileri-best-sketchup-plugins.html\">SketchUp Eklentilerimiz Tek Adreste</a>.</p>\n<p>SketchUp'ı baştan öğrenmek isterseniz <a href=\"/sketchup-2026-profesyonel-egitim.html\">SketchUp 2026 profesyonel eğitim rehberi</a>, render tarafı için <a href=\"/egitimler\">eğitim setleri</a> sayfasına bakabilirsiniz.</p>\n\n<h2>İlgili yazılar</h2>\n<ul>\n  <li><a href=\"/sketchup-zemin-kaplama-metraji.html\">SketchUp'ta Zemin Kaplaması Metrajı Nasıl Çıkarılır?</a></li>\n  <li><a href=\"/sketchup-dolap-cizimi-cnc-kesim-listesi.html\">Ölçüden CNC'ye: SketchUp'ta Gömme Dolap Çizimi</a></li>\n  <li><a href=\"/pencere-teklifini-cizimden-cikarmak.html\">Pencere Teklifini Çizimden Çıkarmak</a></li>\n  <li><a href=\"/plan-degisti-modeli-bastan-cizmemek.html\">Müşteri Duvarı Kaydırdı: Modeli Baştan Çizmemek</a></li>\n</ul>",
+  "publishedAt": "2026-10-17 11:00:00",
+  "modifiedAt": "2026-10-17 11:00:00",
+  "status": "publish",
+  "featuredImage": null,
+  "inlineMedia": [],
+  "embeds": [],
+  "seo": {
+    "title": "Kompozit Cephe Metrajı ve Panel Bölümleme | Ufuk Şen",
+    "description": "ACM cephede panel bölümlemesini ve metrajı elle yapmanın maliyeti; cepheyi yüzeyden panele çevirmenin yolu.",
+    "focusKeyword": "acm kompozit cephe metrajı",
+    "canonicalUrl": "https://www.ufuksen.com/kompozit-cephe-metraji-ve-panel-bolumleme.html",
+    "ogImage": null,
+    "noindex": false
+  },
+  "readingMinutes": 2,
+  "migrationChecksum": "6f521c9d4b553aa10b64036a1b16bcd663d55a3f9b64c55bb95ef889b0795949",
+  "author": {
+    "legacyId": 1,
+    "name": "UFUK ŞEN",
+    "slug": "ufuk",
+    "isGuest": false
+  },
+  "categories": [
+    {
+      "legacyId": 1172,
+      "name": "Sketchup",
+      "slug": "sketchup"
+    },
+    {
+      "legacyId": 1169,
+      "name": "3D Programlar",
+      "slug": "3d-programlar"
+    }
+  ],
+  "tags": []
+}
