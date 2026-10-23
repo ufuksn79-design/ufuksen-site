@@ -28,6 +28,113 @@ Format, Keep a Changelog yaklaşımına yakındır. Tarihler `YYYY-MM-DD` biçim
 - Kaynak WordPress sistemi migration boyunca salt okunur kabul edildi.
 - Dry-run, yedek ve rollback zorunlulukları eklendi.
 
+## [1.7.0] — 2026-10-23
+
+### Added
+
+- **Google AdSense** (`ca-pub-2726096165235328`). Yükleyici betiği
+  `Base.astro` içinde, **koşullu** olarak basılıyor.
+- `public/ads.txt` — yayıncı doğrulaması.
+- `src/content/reklam.json` — reklamsız kalacak yollar ve **her birinin
+  gerekçesi**. Kural tek yerde; sayfa bileşenlerine dağılmadı.
+
+### Reklam HER SAYFADA YOK — gerekçeleriyle
+
+| Reklamsız | Neden |
+|---|---|
+| `/eklenti/*`, `/plugin/*` | Ürün satış sayfaları; reklam satın alma düğmesiyle yarışır |
+| Eklenti liste sayfaları (TR+EN) | Ziyaretçiyi ürün yerine reklama göndermek kayıp |
+| `/iletisim`, `/en/contact` | Buraya gelen zaten yazmak üzere; dikkat dağıtmak kayıp |
+| `/ne-demisler` | Güven veren sayfaya reklam koymak güveni düşürür |
+| Ana sayfa (TR+EN) | İlk izlenim; reklam markayı ucuzlatır |
+| 404 | Hata sayfası |
+| `noindex` sayfalar | Aramaya kapalı sayfada reklam döndürmenin anlamı yok |
+
+Reklam **gösterilen** yerler: blog yazıları ve listesi, kategoriler, yazılım
+hub'ları, videolar, eğitimler — yani trafiğin indiği içerik sayfaları.
+
+### Doğrulama
+
+- Derlenen site tarandı: **457 sayfada reklam var, 151'inde yok**,
+  `noindex` olup reklam gösteren sayfa **0**
+- Kural listesi tek tek sınandı; reklamsız olması gereken 11 yolun hepsinde
+  reklam yok, olması gereken 8 yolun hepsinde var
+- `astro check` 0 hata
+
+### Düzeltilen
+
+- İlk denemede **İngilizce ana sayfada reklam çıkıyordu**. Yol karşılaştırması
+  sondaki eğik çizgiyi atıyor (`/en/` → `/en`), kalıp ise `^/(en/)?# Değişiklik Günlüğü
+
+Format, Keep a Changelog yaklaşımına yakındır. Tarihler `YYYY-MM-DD` biçiminde tutulur.
+
+## [Unreleased]
+
+### Added
+
+- Proje kapsamı ve hedef kitlesi
+- Faz bazlı geliştirme planı
+- 10 haftalık başlangıç yol haritası
+- Aktif faz mimarisi
+- İlk görev listesi
+- Claude Code çalışma kuralları
+- Mimari karar kayıtları
+- Öğrenilen dersler sistemi
+- WordPress migration güvenlik kuralları
+- Premium tasarım brief'i
+- Mobil, performans, SEO ve erişilebilirlik kriterleri
+
+### Changed
+
+- “Tek sayfa” gereksinimi, ana sayfa deneyimi ile sınırlandırıldı.
+- Üretim teknik yapısı için HTML-only zorunluluğu kaldırıldı; karar keşif fazına bırakıldı.
+
+### Security
+
+- Kaynak WordPress sistemi migration boyunca salt okunur kabul edildi.
+- Dry-run, yedek ve rollback zorunlulukları eklendi.
+
+
+  yazılmıştı; eşleşmiyordu. Kalıp `^/(en)?# Değişiklik Günlüğü
+
+Format, Keep a Changelog yaklaşımına yakındır. Tarihler `YYYY-MM-DD` biçiminde tutulur.
+
+## [Unreleased]
+
+### Added
+
+- Proje kapsamı ve hedef kitlesi
+- Faz bazlı geliştirme planı
+- 10 haftalık başlangıç yol haritası
+- Aktif faz mimarisi
+- İlk görev listesi
+- Claude Code çalışma kuralları
+- Mimari karar kayıtları
+- Öğrenilen dersler sistemi
+- WordPress migration güvenlik kuralları
+- Premium tasarım brief'i
+- Mobil, performans, SEO ve erişilebilirlik kriterleri
+
+### Changed
+
+- “Tek sayfa” gereksinimi, ana sayfa deneyimi ile sınırlandırıldı.
+- Üretim teknik yapısı için HTML-only zorunluluğu kaldırıldı; karar keşif fazına bırakıldı.
+
+### Security
+
+- Kaynak WordPress sistemi migration boyunca salt okunur kabul edildi.
+- Dry-run, yedek ve rollback zorunlulukları eklendi.
+
+ olarak düzeltildi.
+
+### AÇIK KONU — AB/İngiltere onayı (CMP)
+
+AdSense, Avrupa Ekonomik Alanı ve İngiltere'den gelen ziyaretçiler için bir
+**onay yönetim platformu (CMP)** istiyor. Sitede şu an böyle bir mekanizma
+**yok**. Türkiye trafiği için sorun değil, ama site İngilizce sürümü ve yurt
+dışı yönlendirmesiyle Avrupa'dan da ziyaretçi alıyor. Karar kullanıcıda;
+not `reklam.json` içinde de duruyor.
+
 ## [1.6.0] — 2026-10-17
 
 Mağaza odaklı içerik kümesi.

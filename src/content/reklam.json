@@ -1,0 +1,46 @@
+{
+  "aciklama": "Google AdSense yapılandırması. Yayıncı kimliği kullanıcıdan geldi (2026-10-23).",
+  "acik": true,
+  "yayinciId": "ca-pub-2726096165235328",
+  "kaynak": "Kullanıcının verdiği AdSense yükleyici betiği.",
+
+  "notReklamsizSayfalar": [
+    "Reklam HER SAYFAYA konmaz. Aşağıdaki yollarda reklam gösterilmez;",
+    "sebepleri tek tek yazıldı ki ileride 'neden burada yok' diye sorulmasın."
+  ],
+  "reklamsiz": [
+    {
+      "kalip": "^/(eklenti|plugin)/",
+      "sebep": "Ürün satış sayfaları. Reklam, satın alma düğmesiyle yarışır ve dönüşümü düşürür."
+    },
+    {
+      "kalip": "^/(sketchup-en-iyi-pluginleri|sketchup-best-plugins)\\.html$",
+      "sebep": "Ürün liste sayfaları. Ziyaretçiyi ürün yerine reklama göndermek istemiyoruz."
+    },
+    {
+      "kalip": "^/(iletisim|en/contact)/?$",
+      "sebep": "İletişim sayfası. Buraya gelen kişi zaten yazmak üzere; dikkat dağıtmak kayıp."
+    },
+    {
+      "kalip": "^/ne-demisler/?$",
+      "sebep": "Referans sayfası. Güven veren bir sayfaya reklam koymak güveni düşürür."
+    },
+    {
+      "kalip": "^/(en)?$",
+      "sebep": "Ana sayfa (TR ve EN). İlk izlenim; reklam markayı ucuzlatır. Yol sondaki eğik çizgiden arındırılarak karşılaştırılır, bu yüzden kalıpta 'en/' değil 'en' yazar."
+    },
+    {
+      "kalip": "^/(404|en/404)/?$",
+      "sebep": "Hata sayfası."
+    }
+  ],
+
+  "notOnay": [
+    "AÇIK KONU — AB/İngiltere onayı (CMP):",
+    "AdSense, Avrupa Ekonomik Alanı ve İngiltere'den gelen ziyaretçiler için",
+    "onay yönetim platformu (CMP) ister. Sitede şu an böyle bir mekanizma YOK.",
+    "Türkiye trafiği için sorun değil, ama site İngilizce sürümü ve yurt dışı",
+    "yönlendirmesiyle Avrupa'dan da ziyaretçi alıyor. Kullanıcı karar verene",
+    "kadar bu not burada duruyor."
+  ]
+}

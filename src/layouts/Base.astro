@@ -5,6 +5,7 @@ import Rail from "../components/Rail.astro";
 import Footer from "../components/Footer.astro";
 import seo from "../content/seo.json";
 import { METIN, digerDil, type Dil } from "../lib/i18n";
+import reklam from "../content/reklam.json";
 import { SAYFA } from "../lib/i18n-sayfalar";
 
 interface Props {
@@ -47,6 +48,18 @@ const {
 
 const site = Astro.site ?? new URL("https://www.ufuksen.com");
 const canonical = new URL(path, site).href;
+
+/**
+ * Bu sayfada reklam gösterilsin mi?
+ *
+ * Kural tek yerde duruyor: yol `src/content/reklam.json` içindeki
+ * kalıplardan birine uyuyorsa reklam yok. Her kalıbın sebebi o dosyada
+ * tek tek yazılı. `noindex` sayfalar da kapsam dışı — arama motoruna
+ * kapattığımız bir sayfada reklam döndürmenin anlamı yok.
+ */
+const reklamYolu = path.replace(/\/+$/, "") || "/";
+const reklamGoster =
+  reklam.acik && !noindex && !reklam.reklamsiz.some((k) => new RegExp(k.kalip).test(reklamYolu));
 
 /**
  * Site geneli SEO ayarları panelden (src/content/seo.json) gelir.
@@ -132,6 +145,27 @@ const gaId = (seo.googleAnalyticsId || "").trim();
     <ClientRouter />
 
     {jsonLd && <script type="application/ld+json" set:html={JSON.stringify(jsonLd)} />}
+
+    {
+      /**
+       * Google AdSense yükleyicisi.
+       *
+       * HER SAYFAYA KONMAZ. Ürün satış sayfaları, ürün listesi, iletişim,
+       * referanslar ve ana sayfa reklamsız — gerekçeleri `reklam.json`
+       * içinde tek tek yazılı. Reklam, satın alma düğmesiyle yarışmasın
+       * ve ilk izlenimi ucuzlatmasın diye.
+       *
+       * `noindex` sayfalarda da gösterilmiyor: arama motoruna kapattığımız
+       * bir sayfada reklam döndürmenin anlamı yok.
+       */
+      reklamGoster && (
+        <script
+          async
+          src={`https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${reklam.yayinciId}`}
+          crossorigin="anonymous"
+        />
+      )
+    }
 
     {/*
       Google Analytics — YALNIZCA panelde ID girilmişse yüklenir.
