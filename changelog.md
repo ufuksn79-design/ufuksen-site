@@ -36,26 +36,26 @@ Format, Keep a Changelog yaklaşımına yakındır. Tarihler `YYYY-MM-DD` biçim
   "otomatik reklamlar" çalışıyor ve Google yerleşimi kendi seçiyor —
   pratikte kenarlara koyuyor, yazının içine koymuyor. Yazı içine koymak
   için gövdeye **manuel reklam birimi** yerleştirmek gerekiyordu.
--  — birimleri gövdeye yerleştiren yardımcı.
-  Birimler bölüm sonlarına, bir sonraki H2 başlığından hemen önce giriyor;
-  reklam bir bölümü ortasından bölmüyor.
-- Başlatma betiği:  ile basılan gövdedeki birimler kendi
-  başlarına dolmaz, her biri için  gerekir. Site sayfa
-  geçişlerini ClientRouter ile yaptığı için  olayında da
+- `src/lib/reklam.ts` — birimleri gövdeye yerleştiren yardımcı. Birimler
+  bölüm sonlarına, bir sonraki H2 başlığından hemen önce giriyor; reklam
+  bir bölümü ortasından bölmüyor.
+- Başlatma betiği: `set:html` ile basılan gövdedeki birimler kendi
+  başlarına dolmaz, her biri için `push({})` gerekir. Site sayfa
+  geçişlerini ClientRouter ile yaptığı için `astro:page-load` olayında da
   yeniden deneniyor.
--  stili: üstte "Reklam" etiketi ve ayırıcı çizgi (reklamı
+- `.reklam-ici` stili: üstte "Reklam" etiketi ve ayırıcı çizgi (reklamı
   içerik gibi göstermek hem yanlış hem AdSense kuralına aykırı),
-   ile yer tutma (CLS yok).
+  `min-height: 120px` ile yer tutma (CLS yok).
 
-### Ayarlar —  → 
+### Ayarlar — `reklam.json` → `icerikBirimi`
 
 | Ayar | Değer | Ne yapar |
 |---|---|---|
-|  | **boş** | AdSense birim kimliği. Boşken hiçbir şey basılmaz. |
-|  | 2 | Yazı başına birim sayısı |
-|  | 2 | İlk birim 2. H2 başlığından önce |
-|  | 3 | Birimler arası en az 3 başlık |
-|  | 400 | Bu uzunluğun altındaki yazıya reklam konmaz |
+| `slot` | **boş** | AdSense birim kimliği. Boşken hiçbir şey basılmaz. |
+| `adet` | 2 | Yazı başına birim sayısı |
+| `ilkBaslik` | 2 | İlk birim 2. H2 başlığından önce |
+| `baslikAraligi` | 3 | Birimler arası en az 3 başlık |
+| `enAzKelime` | 400 | Bu uzunluğun altındaki yazıya reklam konmaz |
 
 ### Doğrulama
 
@@ -69,14 +69,14 @@ Geçici bir kimlikle sınandı, sonra temizlendi:
 | Mağaza tanıtımı | 12 | 2 |
 
 Tarayıcıda ölçüldü: birimler bölüm sonlarında, "Reklam" etiketi görünüyor,
-her biri 120px yer tutuyor. Park edilmiş ve  yazılarda birim
+her biri 120px yer tutuyor. Park edilmiş ve `noindex` yazılarda birim
 eklenmiyor — Base o sayfalarda yükleyiciyi zaten basmıyor.
 
 ### Bekleyen
 
- boş olduğu için yazı içi reklam **henüz yayında değil**. AdSense
-panelinden "Yazı içi" (in-article) biçiminde birim oluşturulup kimliği
- içine yazılması gerekiyor.
+`slot` boş olduğu için yazı içi reklam **henüz yayında değil**. AdSense
+panelinden "Yazı içi" (in-article) biçiminde birim oluşturulup kimliğin
+`reklam.json` içine yazılması gerekiyor.
 
 ## [1.7.0] — 2026-10-23
 
