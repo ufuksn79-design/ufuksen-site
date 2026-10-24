@@ -167,6 +167,48 @@ const gaId = (seo.googleAnalyticsId || "").trim();
       )
     }
 
+    {
+      /**
+       * Yazı içi reklam birimlerini başlatır.
+       *
+       * Manuel birimler (`<ins class="adsbygoogle">`) kendi başlarına
+       * dolmaz; her biri için bir kez `push({})` gerekir. Normalde bunu
+       * birimin yanındaki satır içi betik yapar — ama bizde gövde
+       * `set:html` ile basılıyor ve o yolla gelen betikler çalışmıyor.
+       *
+       * Ayrıca site sayfa geçişlerini ClientRouter ile yapıyor (ADR-020):
+       * sekme değiştirildiğinde tam sayfa yüklenmiyor, bu yüzden
+       * `astro:page-load` olayında yeniden denemek gerekiyor.
+       *
+       * `data-adsbygoogle-status` niteliğini AdSense dolan birime kendisi
+       * koyuyor; ona bakarak aynı birimi iki kez itmiyoruz.
+       */
+      reklamGoster && (
+        <script is:inline>
+          {`
+          (function () {
+            function basla() {
+              var birimler = document.querySelectorAll(
+                "ins.adsbygoogle:not([data-adsbygoogle-status])"
+              );
+              for (var i = 0; i < birimler.length; i++) {
+                try {
+                  (window.adsbygoogle = window.adsbygoogle || []).push({});
+                } catch (e) {
+                  /* reklam engelleyici ya da betik yüklenmedi — sayfa çalışmaya devam etsin */
+                  break;
+                }
+              }
+            }
+            document.addEventListener("astro:page-load", basla);
+            if (document.readyState !== "loading") basla();
+            else document.addEventListener("DOMContentLoaded", basla);
+          })();
+          `}
+        </script>
+      )
+    }
+
     {/*
       Google Analytics — YALNIZCA panelde ID girilmişse yüklenir.
       Boş (varsayılan) hâlde hiçbir izleme kodu, hiçbir çerez yok.

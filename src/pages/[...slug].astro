@@ -3,6 +3,7 @@ import Base from "../layouts/Base.astro";
 import Sidebar from "../components/Sidebar.astro";
 import SectionTitle from "../components/SectionTitle.astro";
 import { buildToc, prepareBody, softwareOf } from "../lib/discover";
+import { icerikReklamiEkle } from "../lib/reklam";
 import {
   getPosts,
   getPages,
@@ -201,7 +202,20 @@ const tools = props.kind === "post" ? softwareOf(props.post) : [];
             </nav>
           )}
 
-          <div class="prose" data-lightbox set:html={article.html} />
+          {/**
+           * Yazı içi reklam, gövdeye burada giriyor. Park edilmiş ya da
+           * noindex yazıda eklenmiyor: Base o sayfalarda AdSense
+           * yükleyicisini zaten basmıyor, birim boşuna durur.
+           */}
+          <div
+            class="prose"
+            data-lightbox
+            set:html={
+              props.parked || props.post.data.seo.noindex === true
+                ? article.html
+                : icerikReklamiEkle(article.html)
+            }
+          />
 
           {relatedPosts(props.post, props.posts).length > 0 && (
             <section class="block" style="margin-top:var(--s-12)">

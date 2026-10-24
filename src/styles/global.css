@@ -1155,3 +1155,37 @@ body {
   text-decoration: underline;
   text-underline-offset: 3px;
 }
+
+/* --------------------------------------------------------------------- */
+/* Yazı içi reklam                                                        */
+/* --------------------------------------------------------------------- */
+
+/**
+ * Reklam, yazının bir parçası gibi görünmemeli.
+ *
+ * Üstte küçük bir "Reklam" etiketi ve ince ayırıcı var: okur neyin içerik
+ * neyin reklam olduğunu karıştırmasın. Bu hem dürüstlük hem de AdSense'in
+ * kendi kuralı — reklamı içerik gibi göstermek yasak.
+ *
+ * `min-height` boş birimde yer tutar; reklam geç yüklendiğinde sayfa
+ * zıplamaz (CLS).
+ */
+.prose .reklam-ici {
+  display: block;
+  margin: var(--s-8) 0;
+  padding-top: var(--s-3);
+  border-top: 1px solid var(--c-line);
+  min-height: 120px;
+}
+.prose .reklam-ici__etiket {
+  display: block;
+  margin-bottom: var(--s-2);
+  color: var(--c-text-faint);
+  font-family: var(--font-mono);
+  font-size: var(--t-micro);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+.prose .reklam-ici ins {
+  display: block;
+}

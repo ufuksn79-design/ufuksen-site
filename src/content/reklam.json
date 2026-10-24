@@ -3,7 +3,21 @@
   "acik": true,
   "yayinciId": "ca-pub-2726096165235328",
   "kaynak": "Kullanıcının verdiği AdSense yükleyici betiği.",
-
+  "notIcerikBirimi": [
+    "YAZI İÇİ REKLAM — slot boş olduğu sürece hiçbir şey basılmaz.",
+    "Yalnızca yükleyici betiği konulduğunda 'otomatik reklamlar' çalışır ve",
+    "Google yerleşimi kendi seçer; pratikte kenarlara koyar, yazının içine",
+    "koymaz. Yazı içine koymak için AdSense panelinden 'Yazı içi' (in-article)",
+    "biçiminde bir reklam birimi oluşturup birim kimliğini aşağıya yazmak",
+    "gerekiyor. Kimlik yalnızca rakamlardan oluşur, örnek: 1234567890."
+  ],
+  "icerikBirimi": {
+    "slot": "",
+    "adet": 2,
+    "ilkBaslik": 2,
+    "baslikAraligi": 3,
+    "enAzKelime": 400
+  },
   "notReklamsizSayfalar": [
     "Reklam HER SAYFAYA konmaz. Aşağıdaki yollarda reklam gösterilmez;",
     "sebepleri tek tek yazıldı ki ileride 'neden burada yok' diye sorulmasın."
@@ -34,7 +48,6 @@
       "sebep": "Hata sayfası."
     }
   ],
-
   "notOnay": [
     "AÇIK KONU — AB/İngiltere onayı (CMP):",
     "AdSense, Avrupa Ekonomik Alanı ve İngiltere'den gelen ziyaretçiler için",

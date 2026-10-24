@@ -28,6 +28,56 @@ Format, Keep a Changelog yaklaşımına yakındır. Tarihler `YYYY-MM-DD` biçim
 - Kaynak WordPress sistemi migration boyunca salt okunur kabul edildi.
 - Dry-run, yedek ve rollback zorunlulukları eklendi.
 
+## [1.7.1] — 2026-10-24
+
+### Added
+
+- **Yazı içi reklam altyapısı.** Yalnızca yükleyici betiği konulduğunda
+  "otomatik reklamlar" çalışıyor ve Google yerleşimi kendi seçiyor —
+  pratikte kenarlara koyuyor, yazının içine koymuyor. Yazı içine koymak
+  için gövdeye **manuel reklam birimi** yerleştirmek gerekiyordu.
+-  — birimleri gövdeye yerleştiren yardımcı.
+  Birimler bölüm sonlarına, bir sonraki H2 başlığından hemen önce giriyor;
+  reklam bir bölümü ortasından bölmüyor.
+- Başlatma betiği:  ile basılan gövdedeki birimler kendi
+  başlarına dolmaz, her biri için  gerekir. Site sayfa
+  geçişlerini ClientRouter ile yaptığı için  olayında da
+  yeniden deneniyor.
+-  stili: üstte "Reklam" etiketi ve ayırıcı çizgi (reklamı
+  içerik gibi göstermek hem yanlış hem AdSense kuralına aykırı),
+   ile yer tutma (CLS yok).
+
+### Ayarlar —  → 
+
+| Ayar | Değer | Ne yapar |
+|---|---|---|
+|  | **boş** | AdSense birim kimliği. Boşken hiçbir şey basılmaz. |
+|  | 2 | Yazı başına birim sayısı |
+|  | 2 | İlk birim 2. H2 başlığından önce |
+|  | 3 | Birimler arası en az 3 başlık |
+|  | 400 | Bu uzunluğun altındaki yazıya reklam konmaz |
+
+### Doğrulama
+
+Geçici bir kimlikle sınandı, sonra temizlendi:
+
+| Yazı | H2 | Birim |
+|---|---|---|
+| SketchUp 2026 rehberi | 14 | 2 |
+| Zemin metrajı | 11 | 2 |
+| Perde (333 kelime) | 11 | **0** — eşik çalışıyor |
+| Mağaza tanıtımı | 12 | 2 |
+
+Tarayıcıda ölçüldü: birimler bölüm sonlarında, "Reklam" etiketi görünüyor,
+her biri 120px yer tutuyor. Park edilmiş ve  yazılarda birim
+eklenmiyor — Base o sayfalarda yükleyiciyi zaten basmıyor.
+
+### Bekleyen
+
+ boş olduğu için yazı içi reklam **henüz yayında değil**. AdSense
+panelinden "Yazı içi" (in-article) biçiminde birim oluşturulup kimliği
+ içine yazılması gerekiyor.
+
 ## [1.7.0] — 2026-10-23
 
 ### Added
