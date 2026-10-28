@@ -10,8 +10,8 @@
   "ozet": "Boş beyaz zemin yok: binanızın çevresi birkaç tıkla şehirle dolsun.",
   "aciklama": null,
   "slogan": null,
-  "baslik": "Binanız boş bir parseli değil, bir sokağı hak ediyor.",
-  "sunum": "Gri zeminde tek başına duran bir kule ürün fotoğrafı gibi görünür. Etrafında yaşayan bir sokak olan aynı kule, bir yere ait olan bir proje gibi görünür. Çoğu sunumun çevreyi atlamasının sebebi maliyettir: dolgu binalarını tek tek avlayıp yerleştirmek yaklaşık 150 dakika sürer. CityFill bir adanın tamamını yaklaşık 25 saniyede doldurur; 154 hazır bina, üç yerleştirme modu, SketchUp 2021-2026.",
+  "baslik": "Boş Beyaz Arka Planlar Müşteri Kaçırır: Bina Etrafındaki Şehri 3 Tıkla Ücretsiz Şekilde Doldurun",
+  "sunum": "Tasarımınız boşlukta yüzen bir kutu gibi değil, yaşayan bir sokağın içinde görünsün. 154 parametrik hazır bina: serpiştir, fırçayla boya ya da tıkladıkça asfalt, bordür, kaldırım ve bina büyüten yol aracına diz. Tek grup, tek geri alma.",
   "kanit": {
     "oncekiEtiket": "Dolgu binalarını tek tek avlamak",
     "oncekiDakika": 150,
@@ -20,16 +20,16 @@
   },
   "hikayeler": [
     {
-      "baslik": "Zaman aramaya değil tasarıma",
-      "metin": "Kütüphane zaten orada; ölçeği tutmayan ve 400 bin poligonla gelen bir modeli internette aramıyorsunuz. Serpiştirirsiniz, bakarsınız, ayarlarsınız."
+      "baslik": "Aramaya Değil, Tasarıma Zaman",
+      "metin": "Binalar SketchUp'ın içinde, gerçek metrik ölçüde üretilir. Warehouse araması yok, ağır içe aktarma yok, temizlenecek artık yok. Zamanınız projenize kalır."
     },
     {
-      "baslik": "Bir sokağı yaşayan yapan nedir?",
-      "metin": "Çeşitlilik. Yükseklikler, genişlikler ve cepheler gerçek bir sıradaki gibi değişir; böylece çevre kopyalanmış bir blok değil, bir mahalle gibi okunur — sunum görselinde gözün ilk kontrol ettiği şey tam olarak budur."
+      "baslik": "Her Tıkta Yaşayan Bir Sokak",
+      "metin": "Yol aracı her tıkta asfalt, bordür, kaldırım, bahçe duvarı ve binaları birlikte büyütür; cepheler yola dönük gelir. Sunumunuz gerçek bir mahalle gibi okunur."
     },
     {
-      "baslik": "Beğenmediğinizi yerinde değiştirin",
-      "metin": "Yerleşmiş herhangi bir bina, çevresindeki sırayı yeniden kurmadan değiştirilebilir ya da kaydırılabilir. Çevre, mahkûm olduğunuz bir karar değil, yönettiğiniz bir fon olarak kalır."
+      "baslik": "Beğenmediğinizi Yerinde Değiştirin",
+      "metin": "Yerleştirdiğin binaya sağ tıkla: başka bir hazır binaya çevir, kat ekle, yeniden karıştır. Koca bir serpiştirme tek Ctrl+Z; başka bir görünümü denemekten çekinmezsin."
     }
   ],
   "magazaUrl": "https://www.bestsketchupplugins.com/tr/plugins/cityfill/",
@@ -77,15 +77,15 @@
   "yazilim": [
     "sketchup"
   ],
-  "icNot": "Mağazadan senkronlandı (plugin-store/data/plugins.json, 2026-10-14). Metinleri burada elle değiştirmeyin — mağazada değiştirip senkronu tekrar çalıştırın.",
+  "icNot": "Mağazadan senkronlandı (plugin-store/data/plugins.json, 2026-10-28). Metinleri burada elle değiştirmeyin — mağazada değiştirip senkronu tekrar çalıştırın.",
   "en": {
     "ad": "CityFill",
     "ozet": "No white void around your design: fill the city in a few clicks.",
     "aciklama": null,
     "slogan": null,
     "fiyatNot": null,
-    "baslik": "Your building deserves a street, not an empty plot.",
-    "sunum": "A tower standing alone on grey ground looks like a product shot. The same tower with a living street around it looks like a project that belongs somewhere. The reason most presentations skip the context is cost: hunting down and placing filler buildings one by one runs about 150 minutes. CityFill fills an entire block in roughly 25 seconds, from 154 ready buildings, with three placement modes, on SketchUp 2021 through 2026.",
+    "baslik": "Empty White Backgrounds Lose Clients: Fill the City Around Your Building in 3 Clicks, for Free",
+    "sunum": "Your design stops floating in a white void and stands in a living street. 154 parametric presets you can scatter, paint or line up along a road tool that grows asphalt, curb, sidewalk and buildings per click. One group, one undo.",
     "kanit": {
       "oncekiEtiket": "Hunting filler buildings one by one",
       "oncekiDakika": 150,
@@ -94,16 +94,16 @@
     },
     "hikayeler": [
       {
-        "baslik": "Time on design, not on searching",
-        "metin": "The library is already there, so you are not trawling for a model that is the wrong scale and arrives with 400,000 polygons. You scatter, you look, you adjust."
+        "baslik": "Time for Design, Not for Searching",
+        "metin": "Buildings are generated at real metric size inside SketchUp. No Warehouse search, no heavy imports, no purging what you never placed. Your time goes to the project."
       },
       {
-        "baslik": "What makes a street look alive?",
-        "metin": "Variation. Heights, widths and frontages differ the way a real row does, so the context reads as a neighbourhood rather than a copied block — which is exactly what the eye checks first in a presentation image."
+        "baslik": "A Living Street With Every Click",
+        "metin": "The road tool grows asphalt, curb, sidewalk, garden wall and buildings together per click, facades already turned toward the road. Your presentation reads like a real neighbourhood."
       },
       {
-        "baslik": "Change the one you do not like, where it stands",
-        "metin": "Any placed building can be swapped or adjusted in position without rebuilding the row around it. The context stays a background you control, not a decision you are stuck with."
+        "baslik": "Don't Like It? Change It in Place",
+        "metin": "Right-click a placed building to swap its preset, add floors or re-roll it. A whole scatter is still a single Ctrl+Z, so you can try another look freely."
       }
     ],
     "magazaUrl": "https://www.bestsketchupplugins.com/en/plugins/cityfill/",

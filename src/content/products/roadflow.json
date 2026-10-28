@@ -5,13 +5,13 @@
   "durum": "aktif",
   "ilerleme": null,
   "surum": "1.16.0",
-  "sira": 11,
+  "sira": 14,
   "yayinda": true,
   "ozet": "Koridoru elle oturtmadan: güzergâhı tıkla; yol, arazi ve metraj hazır.",
   "aciklama": null,
   "slogan": null,
-  "baslik": "Yol hiçbir zaman tasarım değildir. Tasarımdan önceki haftayı yiyen şeydir.",
-  "sunum": "İşi binalar için aldınız. Sonra arsa 400 metrelik bir ulaşım yoluyla, uslanmayan bir eğimle ve cumaya kadar bunu arazide görmek isteyen bir müşteriyle geldi. Bir koridoru elle modelleyip araziye oturtmak yaklaşık 240 dakika. Bu SketchUp parametrik yol eklentisiyle güzergâhı tıklar, kesiti girer, Uygula'ya basarsınız: 90 saniye. Test setinde elle modellemeye göre 13-35 kat hızlı üretim ölçüldü ve her sürümde 408 otomatik test yeşil koşuyor.",
+  "baslik": "Araziye Uymayan Yollarla Boğuşmayı Bırakın: Güzergâhı Tıklayın, Yol, Arazi ve Metraj Hazır",
+  "sunum": "Sunumunda havada asılı değil, araziye oturmuş bir yol görünür. Arazinin üstüne güzergâhı çiz; RoadFlow koridorun tamamını kursun — dever, kazı/dolgu şevleri, hendekler, kavşaklar ve CSV metraj raporu.",
   "kanit": {
     "oncekiEtiket": "Koridoru elle modelleyip araziye oturtmak",
     "oncekiDakika": 240,
@@ -20,16 +20,16 @@
   },
   "hikayeler": [
     {
-      "baslik": "Tek eksen, koca bir koridor",
-      "metin": "Güzergâhı çizersiniz; kaplama, bordür, banket ve şevler onu takip eder — dever, yarma ve dolgu dahil. Yedi hazır yol tipi alışılmış durumları karşılar, yani yol çizmek yerine yol ayarlarsınız."
+      "baslik": "Bir Eksen, Koca Bir Koridor",
+      "metin": "Arazinin üstünde noktaları tıkla. Tek bir eksen çizgisi platforma, bankete, bordüre, devere, kazı/dolgu şevine ve hendeğe dönüşsün; sen güzergâhın kendisine odaklan."
     },
     {
-      "baslik": "Güzergâh değişirse ne olur?",
-      "metin": "Değiştirirsiniz. Koridor baştan çizilmek yerine yeni hat boyunca kendini yeniden kurar. Bir revizyonun size on dakikaya mı yoksa bir akşama mı mal olacağı farkı budur."
+      "baslik": "Revizyon, Baştan Çizim Değil",
+      "metin": "Sağ tık, Düzenle, turuncu tutamakları sürükle. Koridor, arazi uyumu, kavşaklar ve rapor tek geri alma adımında yeniden kurulsun; güzergâh değişse de emeğin yerinde kalır."
     },
     {
-      "baslik": "Saymak zorunda kalmadığınız metraj",
-      "metin": "Asfalt alanı, bordür uzunluğu ve hafriyat hacimleri zaten ekranda duran modelden çıkar. Kesitleri tabloya aktarıp elle toplayan kimse olmaz."
+      "baslik": "Metrajı Saymak Sana Kalmaz",
+      "metin": "Her yüzey üretilirken sayılır: alanlar, kazı-dolgu hacimleri, asfalt ve temel, korkuluk metresi, donatı adetleri — tek bir CSV. Rakamlar doğrudan modelden gelir."
     }
   ],
   "magazaUrl": "https://www.bestsketchupplugins.com/tr/plugins/roadflow/",
@@ -76,15 +76,15 @@
   "yazilim": [
     "sketchup"
   ],
-  "icNot": "Mağazadan senkronlandı (plugin-store/data/plugins.json, 2026-10-14). Metinleri burada elle değiştirmeyin — mağazada değiştirip senkronu tekrar çalıştırın.",
+  "icNot": "Mağazadan senkronlandı (plugin-store/data/plugins.json, 2026-10-28). Metinleri burada elle değiştirmeyin — mağazada değiştirip senkronu tekrar çalıştırın.",
   "en": {
     "ad": "RoadFlow",
     "ozet": "Click a route; road, terrain fit and quantities follow, no hand-fitting.",
     "aciklama": null,
     "slogan": null,
     "fiyatNot": null,
-    "baslik": "The road is never the design. It is the thing that eats the week before the design.",
-    "sunum": "You took the job for the buildings. Then the site came with a 400-metre access road, a slope that will not behave, and a client who wants to see it on the terrain by Friday. Modelling one corridor by hand and cutting it into the terrain runs about 240 minutes. With this parametric road plugin for SketchUp you click the route, set the cross-section and press Apply: 90 seconds. Across the test suite it builds 13 to 35 times faster than hand modelling, and 408 automated tests run green on every release.",
+    "baslik": "Stop Fighting Roads That Won’t Fit the Terrain: Click the Route, and the Road, Terrain and Quantities Are Ready",
+    "sunum": "Your presentation shows a road that sits on the land, not one floating above it. Draw a centerline on any terrain and RoadFlow builds the whole corridor — superelevation, cut/fill slopes, ditches, junctions and a CSV quantity report.",
     "kanit": {
       "oncekiEtiket": "Hand-modelling one corridor and cutting it into the terrain",
       "oncekiDakika": 240,
@@ -93,16 +93,16 @@
     },
     "hikayeler": [
       {
-        "baslik": "One centreline, a whole corridor",
-        "metin": "Draw the alignment and the carriageway, kerbs, shoulders and batters follow it — superelevation, cut and fill included. Seven ready road types cover the usual cases, so you are configuring a road rather than drafting one."
+        "baslik": "One Line, a Whole Corridor",
+        "metin": "Click points on the terrain. One centerline becomes carriageway, shoulders, curb, superelevation, cut-fill slopes and ditches, while you stay focused on the route itself."
       },
       {
-        "baslik": "What happens when the alignment moves?",
-        "metin": "You move it. The corridor rebuilds along the new line instead of being redrawn from scratch. That is the difference between a revision costing you ten minutes and costing you an evening."
+        "baslik": "A Revision Is Not a Redraw",
+        "metin": "Right-click, Edit, drag the orange handles. Corridor, terrain fit, junctions and report rebuild in a single undo step, so a moved route never costs you the work behind it."
       },
       {
-        "baslik": "Quantities you did not have to count",
-        "metin": "Asphalt area, kerb length and earthwork volumes come out of the model that is already on screen. Nobody is exporting sections into a spreadsheet to add them up by hand."
+        "baslik": "The Count Is Never on You",
+        "metin": "Every face is counted as it is built: areas, cut-fill volumes, asphalt and base, guardrail metres, accessory counts — one CSV, straight from the model."
       }
     ],
     "magazaUrl": "https://www.bestsketchupplugins.com/en/plugins/roadflow/",

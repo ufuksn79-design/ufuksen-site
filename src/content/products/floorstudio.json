@@ -5,13 +5,13 @@
   "durum": "aktif",
   "ilerleme": null,
   "surum": "3.3.0",
-  "sira": 6,
+  "sira": 7,
   "yayinda": true,
   "ozet": "Tek tek çoğaltmadan: her parça odaya kesilir, sayılır, CSV'ye çıkar.",
   "aciklama": null,
   "slogan": null,
-  "baslik": "Zemini kimse övmez. Yanlış olduğunda fark ederler.",
-  "sunum": "Müşteri size parkenin güzel olduğunu söylemez. Ama duvarda kırılan bir balıksırtı ya da her sırada iki milimetre kayan bir derz, gözünün ilk takıldığı yerdir — ve bütün görseli sessizce ucuzlatan şeydir. Bu SketchUp zemin kaplama eklentisi, zemini bir parke ustasının döşeyeceği gibi döşer: yüzeyi seçersiniz, deseni seçersiniz, tahtalar odaya göre kesilmiş olarak yerine oturur. Aynı zemini elle çizip çoğaltıp tek tek kesmek yaklaşık 45 dakika sürer. Burada 45 saniye.",
+  "baslik": "45 Dakikalık Derz ve Parke Döşeme İşini 45 Saniyeye İndirin",
+  "sunum": "Müşteri önce zemine bakar: kayık bir derz bütün sunumu ucuzlatır, kusursuz bir derz ise detaya önem verdiğini ilk bakışta söyler. Bir yüzey seç, deseni seç. 13 yerleşim, gerçek fiziksel derz, duvara ve boşluklara kesilmiş her parça, üstüne metraj ve CSV.",
   "kanit": {
     "oncekiEtiket": "Zemini elle çizip çoğaltıp tek tek kesmek",
     "oncekiDakika": 45,
@@ -20,16 +20,16 @@
   },
   "hikayeler": [
     {
-      "baslik": "Elle döşenen parke neden hep kenarda bozulur?",
-      "metin": "Çünkü kopyala-çoğalt duvarın nerede olduğunu bilmez. FloorStudio her tahtayı yüzeyin gerçek sınırına göre keser; süpürgeliğin üstüne taşan parça da, köşede yarım kalan üçgen de olmaz. Ekranda gördüğünüz şey, bir ustanın gerçekten döşeyebileceği şeydir."
+      "baslik": "Kenardan Taşan Tek Parça Yok",
+      "metin": "Her parça gerçek sınıra göre kesilir: duvarlar, merdiven boşlukları, şaftlar, kolonlar. Kenardan taşan da boşluğa giren de kalmaz; zemin her açıdan tertemiz görünür."
     },
     {
-      "baslik": "Derz, tam yazdığınız ölçüde",
-      "metin": "Burada derz aralığı gerçek bir ölçüdür, doku hilesi değil. 3 mm yazarsınız, on iki metrelik koridorun öbür ucunda da 3 mm ölçer. Oda V-Ray ya da Enscape'te render edilip ışık zemine yalayarak düştüğünde bunun değeri anlaşılır."
+      "baslik": "Derz, Tam Yazdığın Ölçüde",
+      "metin": "Derz X ve derz Y, ölçek numarası değil, yazdığın gerçek fiziksel mesafedir. Birini değiştir, zemin baştan dizilir; elle düzeltmeye akşamını vermezsin."
     },
     {
-      "baslik": "Sipariş listesi zeminle birlikte çıkar",
-      "metin": "Her üretim, geometriyle beraber CSV metraj da yazar: tahta adedi ve alan, az önce kurduğunuz modelden. Gece yarısı ekranda sıra sayıp fiyat çıkarmak zorunda kalmazsınız."
+      "baslik": "Sipariş Listesi Zeminle Birlikte Hazır",
+      "metin": "Tam parça, kesik parça, derz alanı, fire payı, kutu adedi: zemin kurulurken ölçülür, tek tıkla CSV olarak dışarı çıkar. Siparişten önce kutuları yeniden saymazsın."
     }
   ],
   "magazaUrl": "https://www.bestsketchupplugins.com/tr/plugins/floorstudio/",
@@ -75,15 +75,15 @@
   "yazilim": [
     "sketchup"
   ],
-  "icNot": "Mağazadan senkronlandı (plugin-store/data/plugins.json, 2026-10-14). Metinleri burada elle değiştirmeyin — mağazada değiştirip senkronu tekrar çalıştırın.",
+  "icNot": "Mağazadan senkronlandı (plugin-store/data/plugins.json, 2026-10-28). Metinleri burada elle değiştirmeyin — mağazada değiştirip senkronu tekrar çalıştırın.",
   "en": {
     "ad": "FloorStudio",
     "ozet": "Skip the tile-by-tile copying: every board cut, counted, out as CSV.",
     "aciklama": null,
     "slogan": null,
     "fiyatNot": null,
-    "baslik": "Nobody praises a floor. They notice it when it is wrong.",
-    "sunum": "A client will not tell you the parquet looks right. But a herringbone that breaks at the wall, or a joint that drifts two millimetres per row, is the first thing their eye catches — and the thing that quietly makes the whole render feel cheap. This parametric floor pattern plugin for SketchUp lays the floor the way a flooring contractor would: you pick the face, pick the pattern, and the boards fall into place already cut to the room. Drawing, array-copying and trimming that floor by hand takes about 45 minutes. Here it takes 45 seconds.",
+    "baslik": "Cut 45 Minutes of Tile Joints and Parquet Laying Down to 45 Seconds",
+    "sunum": "Clients look at the floor first: one crooked joint cheapens the whole presentation, a true one tells them you care about detail before you say a word. Pick a face, pick a pattern. 13 layouts, real physical grout, every board clipped to walls, holes and columns, plus the take-off and a CSV.",
     "kanit": {
       "oncekiEtiket": "Drawing, array-copying and trimming a floor by hand",
       "oncekiDakika": 45,
@@ -92,16 +92,16 @@
     },
     "hikayeler": [
       {
-        "baslik": "Why does hand-laid parquet always break at the edges?",
-        "metin": "Because copy-and-array does not know where the wall is. FloorStudio cuts every board against the real boundary of the face, so no piece hangs over the skirting and no triangle is left half-drawn in a corner. What you see in the viewport is what a fitter could actually lay."
+        "baslik": "Not One Board Past the Edge",
+        "metin": "Every board is trimmed to the real outline: walls, stairwells, shafts, columns. Nothing hangs past the edge, nothing crosses a hole, so the floor reads clean from every angle."
       },
       {
-        "baslik": "The joint is exactly the width you typed",
-        "metin": "Gap width is a real dimension here, not a texture trick. Type 3 mm and the gap measures 3 mm at the far end of a twelve-metre corridor too. That matters the moment someone renders the room in V-Ray or Enscape and the grazing light falls across the floor."
+        "baslik": "Grout at Exactly Your Size",
+        "metin": "Grout X and Grout Y are physical distances you type, not a scale trick. Change one and the whole floor lays itself out again, with no evening spent fixing it by hand."
       },
       {
-        "baslik": "The order list comes out with the floor",
-        "metin": "Every run writes a CSV take-off alongside the geometry — board count and area, straight from the model you just built. You are not counting rows on screen at midnight to price the job."
+        "baslik": "The Order List Comes With the Floor",
+        "metin": "Full pieces, cut pieces, grout area, waste allowance, box count: measured while the floor is built, out as CSV in one click. No recounting boxes before you order."
       }
     ],
     "magazaUrl": "https://www.bestsketchupplugins.com/en/plugins/floorstudio/",

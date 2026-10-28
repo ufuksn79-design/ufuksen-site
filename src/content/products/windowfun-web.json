@@ -5,13 +5,13 @@
   "durum": "aktif",
   "ilerleme": null,
   "surum": "1.0.0",
-  "sira": 13,
+  "sira": 16,
   "yayinda": true,
   "ozet": "Saatlerce hesap yok: pencereyi çiz, teklif ve kesim listesi hazır.",
   "aciklama": null,
   "slogan": null,
-  "baslik": "Ölçü sahada alınır. Teklif siz dönmeden istenir.",
-  "sunum": "Modelle, yeniden çiz, bir daha yaz: aynı pencereyi üç ayrı yerde üç kez yapmanın yaklaşık 35 dakikası. WindowFun Studio Web parametreleri bir kez alır ve her şeyi yaklaşık 45 saniyede dışa aktarır. 6 kategoride 55 model, 105 test geçiyor, Türkçe, İngilizce ve Almanca çevrimdışı PWA — ve SketchUp'a gidiş-dönüş için GLB ile DXF çıktısı.",
+  "baslik": "Teklif İçin Saatlerce Hesap Yapmadan: Pencereyi Çizin, Teklif ve Kesim Listesi Anında Hazır",
+  "sunum": "Müşteri teklif beklerken hesap makinesine değil, ekrana bakarsın. Tarayıcıda 55 parametrik pencere modeli: canlı 3B, ölçülü 2B, metraj, fiyatlı teklif, boy optimizasyonlu kesim listesi. Sunucusuz, çevrimdışı çalışır.",
   "kanit": {
     "oncekiEtiket": "Modelle, yeniden çiz, tekrar yaz",
     "oncekiDakika": 35,
@@ -20,16 +20,16 @@
   },
   "hikayeler": [
     {
-      "baslik": "Tek parametre seti, bütün belgeler",
-      "metin": "3B görünüm, teknik çizim, metraj ve teklif aynı tanımı okur; birbirinden azıcık farklı üç pencereyi anlatmaları mümkün değildir."
+      "baslik": "Tek Parametre Seti, Bütün Belgeler",
+      "metin": "Tek bir parametre seti 3B modeli, ölçülü görünüşü, malzeme listesini, fiyatlı teklifi ve kesim listesini birlikte üretir. Modelleyip yeniden çizip tekrar yazmazsın."
     },
     {
-      "baslik": "Bir değişiklik sizi tabloya geri gönderir mi?",
-      "metin": "Hayır. Parametreyi değiştirirsiniz, bütün çıktılar onu izler. E-postayla gönderdiğiniz sürüm çizdiğiniz sürümdür; bir teklifin bir haftalık revizyondan sağ çıkmasının tek yolu da budur."
+      "baslik": "Değişiklik Excel Kovalatmaz",
+      "metin": "Orta kaydı kaydır ya da kanadı büyüt; metreler, cam m², teklif ve boy optimizasyonu birlikte güncellenir. Peşinden koşulacak Excel yok."
     },
     {
-      "baslik": "Sahadan teklife kesintisiz",
-      "metin": "Çevrimdışı çalışan bir PWA olduğu için, çekmeyen boş bir dairede alınan ölçü siz arabaya döndüğünüzde teklif olmuş olur."
+      "baslik": "Sahadan Teklife Kesintisiz",
+      "metin": "Keşif modu duvar boşluklarını oda oda kaydeder, boy optimizasyonu fireyi bildirir, Uw değeri profil ve cam paketinden çıkar. Sahada aldığın ölçü doğrudan teklife akar."
     }
   ],
   "magazaUrl": "https://www.bestsketchupplugins.com/tr/plugins/windowfun-web/",
@@ -73,15 +73,15 @@
   "denemeUrl": null,
   "iletisimEposta": "ufuksn79@gmail.com",
   "yazilim": [],
-  "icNot": "Mağazadan senkronlandı (plugin-store/data/plugins.json, 2026-10-14). Metinleri burada elle değiştirmeyin — mağazada değiştirip senkronu tekrar çalıştırın.",
+  "icNot": "Mağazadan senkronlandı (plugin-store/data/plugins.json, 2026-10-28). Metinleri burada elle değiştirmeyin — mağazada değiştirip senkronu tekrar çalıştırın.",
   "en": {
     "ad": "WindowFun Studio Web",
     "ozet": "No hours of quote maths: design the window, get quote and cut list.",
     "aciklama": null,
     "slogan": null,
     "fiyatNot": null,
-    "baslik": "The measurement is taken on site. The quote is needed before you get back.",
-    "sunum": "Model it, redraw it, then type it out again: about 35 minutes of doing the same window three times in three places. WindowFun Studio Web takes the parameters once and exports everything in roughly 45 seconds. 55 models across 6 categories, 105 tests passing, an offline PWA in Turkish, English and German — and GLB and DXF export for the round trip back into SketchUp.",
+    "baslik": "No Hours of Quote Maths: Draw the Window, and the Quote and Cut List Are Ready Instantly",
+    "sunum": "While the client waits for the quote, you look at the screen, not a calculator. 55 parametric window models in the browser: live 3D, dimensioned 2D, take-off, priced quote, cut list with bar optimisation. Offline, no server.",
     "kanit": {
       "oncekiEtiket": "Model it, redraw it, retype it",
       "oncekiDakika": 35,
@@ -90,16 +90,16 @@
     },
     "hikayeler": [
       {
-        "baslik": "One parameter set, every document",
-        "metin": "The 3D view, the technical drawing, the take-off and the quote all read the same definition, so they cannot describe three slightly different windows."
+        "baslik": "One Set of Parameters, Every Document",
+        "metin": "One parameter set builds the 3D model, the dimensioned elevation, the bill of materials, the priced quote and the cut list. No modelling, redrawing and retyping."
       },
       {
-        "baslik": "Does a change send you back to the spreadsheet?",
-        "metin": "No. Edit the parameter and every output follows. The version you email is the version you drew, which is the only way a quote survives a week of revisions."
+        "baslik": "Changes Without Chasing a Spreadsheet",
+        "metin": "Move a mullion or resize a sash and the metres, glass m2, quote and bar optimisation follow. No spreadsheet to chase."
       },
       {
-        "baslik": "From the site to the quote without a gap",
-        "metin": "It works offline as a PWA, so the measurement taken in an empty flat with no signal is still a quote by the time you are back in the car."
+        "baslik": "From Site to Quote Without a Gap",
+        "metin": "Survey mode logs openings room by room, bar optimisation reports the waste, and Uw comes off the profile and glazing. What you measure on site flows straight into the quote."
       }
     ],
     "magazaUrl": "https://www.bestsketchupplugins.com/en/plugins/windowfun-web/",

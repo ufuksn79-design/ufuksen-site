@@ -5,13 +5,13 @@
   "durum": "beta",
   "ilerleme": null,
   "surum": "1.0.12",
-  "sira": 18,
+  "sira": 20,
   "yayinda": true,
   "ozet": "Merdiven hesabı yok: iki tıkla yönetmeliğe uygun, hep düzenlenebilir.",
   "aciklama": null,
   "slogan": null,
-  "baslik": "Her ofiste üç kez çizilmiş merdivenlerin durduğu bir çekmece vardır.",
-  "sunum": "Merdiven, kat yüksekliklerinin, yönetmeliğin ve geometrinin birbiriyle tartıştığı yerdir; tartışma da genelde bir hesap makinesi ve uzun bir akşamla biter. Rıhtları hesaplayıp her basamağı elle çizmek yaklaşık 75 dakika sürer. StairFun Studio bunu yaklaşık 40 saniyede yapar: formu seçin, iki kez tıklayın, kat yüksekliğini yazın. 8 form ve rampa, 44 canlı yönetmelik kuralı ve saniyenin altında üretilen 30 rıht — SketchUp 2021-2026.",
+  "baslik": "Merdiven Hesabı İçin Vakit Kaybetmeyin: Kat Yüksekliğini Girin, Yönetmeliğe Uygun Merdiveni Anında Çizin",
+  "sunum": "Rıht saymak yerine kat yüksekliğini yazar, tasarıma dönersin. Formu seç, başlangıç noktası ve yön için tıkla, kat yüksekliğini yaz. Taşıyıcı, korkuluk, etiketler ve R-kodlu rapor tek düzenlenebilir bileşen olarak çıkar.",
   "kanit": {
     "oncekiEtiket": "Rıhtları hesaplayıp her basamağı elle çizmek",
     "oncekiDakika": 75,
@@ -20,16 +20,16 @@
   },
   "hikayeler": [
     {
-      "baslik": "İki tık, bitmiş bir merdiven",
-      "metin": "Basamaklar, rıhtlar, limonluklar ve sahanlıklar tek bir takım olarak birlikte gelir; sonradan temizleyeceğiniz itilip çekilmiş kutular yığını olarak değil."
+      "baslik": "İki tık, bitmiş bir merdiven.",
+      "metin": "Başlangıç noktası, yön, ölçü kutusuna kat yüksekliği. Basamak, limon kirişi, korkuluk ve numaralı etiketler tek bileşen olarak gelir. Basamakları tek tek çizmezsin."
     },
     {
-      "baslik": "Yönetmeliği ezbere bilmek gerekir mi?",
-      "metin": "Hayır. 44 kural siz yazarken canlı denetlenir; fazla yüksek bir rıht ya da kısa bir basamak genişliği size toplantıda değil o anda söylenir."
+      "baslik": "Yönetmeliği ezberlemene gerek yok.",
+      "metin": "Sen tasarla, kuralları o izlesin: merdiveni kurarken 44 kural canlı çalışır. Sapan her şey kırmızı ya da sarı yanar; tek tık merdiveni kurala döndürür."
     },
     {
-      "baslik": "Değişiklik tek bir sayıdır",
-      "metin": "Kat yüksekliği 12 cm mi değişti? Yazarsınız. Merdiven rıhtlarını yeniden dağıtır ve kendini kurar; düzeltme ile yeniden çizim arasındaki bütün fark budur."
+      "baslik": "Değişiklik tek bir sayıya bakar.",
+      "metin": "Bileşeni aç, tek bir sayıyı değiştir; merdiven tek Ctrl+Z ile yeniden kurulur. Rıht cetveli ve kesim listesi kendiliğinden çıkar; atölyeye giden listeyi elle yazmazsın."
     }
   ],
   "magazaUrl": "https://www.bestsketchupplugins.com/tr/plugins/stairfun-studio/",
@@ -75,15 +75,15 @@
   "yazilim": [
     "sketchup"
   ],
-  "icNot": "Mağazadan senkronlandı (plugin-store/data/plugins.json, 2026-10-14). Metinleri burada elle değiştirmeyin — mağazada değiştirip senkronu tekrar çalıştırın.",
+  "icNot": "Mağazadan senkronlandı (plugin-store/data/plugins.json, 2026-10-28). Metinleri burada elle değiştirmeyin — mağazada değiştirip senkronu tekrar çalıştırın.",
   "en": {
     "ad": "StairFun Studio",
     "ozet": "No stair maths: code-compliant stairs in two clicks, editable forever.",
     "aciklama": null,
     "slogan": null,
     "fiyatNot": null,
-    "baslik": "Every office has one drawer of stairs that were drawn three times.",
-    "sunum": "Stairs are where floor heights, regulations and geometry argue with each other, and the argument is usually settled with a calculator and a long evening. Working out the risers and drawing every tread by hand takes about 75 minutes. StairFun Studio does it in roughly 40 seconds: choose a form, click twice, type the floor height. 8 forms plus a ramp, 44 live regulation checks, and 30 risers generated in under a second — SketchUp 2021 through 2026.",
+    "baslik": "Don’t Lose Time on Stair Maths: Enter the Floor Height and Draw a Code-Compliant Stair Instantly",
+    "sunum": "Instead of counting risers, you type the floor height and get back to design. Pick a form, click a start point and a direction, type the floor height. Structure, railing, labels and the R-code report come out as one editable component.",
     "kanit": {
       "oncekiEtiket": "Counting risers, then drawing every tread by hand",
       "oncekiDakika": 75,
@@ -92,16 +92,16 @@
     },
     "hikayeler": [
       {
-        "baslik": "Two clicks, a finished staircase",
-        "metin": "Treads, risers, stringers and landings arrive together as one assembly, not as a pile of pushed-and-pulled boxes you will be cleaning up later."
+        "baslik": "Two Clicks, a Finished Stair",
+        "metin": "Start point, direction, floor height in the VCB. Treads, stringer, railing and numbered labels arrive as one component. No drawing treads one by one."
       },
       {
-        "baslik": "Do you need to remember the regulation by heart?",
-        "metin": "No. 44 rules are checked live as you type, so a riser that is too tall or a going that is too short tells you on the spot instead of in the review meeting."
+        "baslik": "No Need to Memorise the Code",
+        "metin": "You design, it watches the code: 44 rule IDs run live while you set the stair. Anything off turns red or yellow, and one click pulls it back into line."
       },
       {
-        "baslik": "A change is just one number",
-        "metin": "Floor-to-floor height moved by 12 cm? Type it. The stair redistributes its risers and rebuilds, which is the whole difference between a correction and a redraw."
+        "baslik": "A Change Is One Number Away",
+        "metin": "Reopen the component, change one number, and the stair rebuilds in a single Ctrl+Z. Riser schedule and cut list export themselves, so nobody types the shop list by hand."
       }
     ],
     "magazaUrl": "https://www.bestsketchupplugins.com/en/plugins/stairfun-studio/",

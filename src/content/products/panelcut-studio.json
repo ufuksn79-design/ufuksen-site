@@ -5,13 +5,13 @@
   "durum": "alfa",
   "ilerleme": null,
   "surum": "0.26.0-alpha",
-  "sira": 21,
+  "sira": 23,
   "yayinda": true,
   "ozet": "Kesim listesini elle çıkarmadan: paneli çiz, liste ve CNC DXF gelsin.",
   "aciklama": null,
   "slogan": null,
-  "baslik": "Hata çizimde olmaz. Testerede olur.",
-  "sunum": "Elle yazılan bir kesim listesi ve CAD'de baştan çizilen bir resim arasında yaklaşık 55 dakika vardır — ve bunlar birbiriyle çelişebilecek iki belgedir; bir plakanın yanlış kesilmesi de böyle olur. PanelCut Studio paneli kurar ve iki DXF'i birden yaklaşık 30 saniyede verir. 236 otomatik test yeşil, 2 yerleşim motoru, 25 doğrulama kuralı. Tarayıcı aracıdır: statik barındırma yeter, Node.js, PHP ya da veritabanı gerekmez.",
+  "baslik": "Kesim Listesini Elle Çıkarmadan: Paneli Bir Kez Çizin, Kesim Listesi ve CNC DXF Dosyası Gelsin",
+  "sunum": "Atölyede elle yazılmış bir liste değil, çizimden doğrudan makineye giden dosya konuşur. Gövdeyi kur ya da DXF'i içe aktar; testere payı ve kenar bandıyla plakaya yerleşsin, makine DXF'i de ölçülü atölye çizimi de aynı anda çıksın.",
   "kanit": {
     "oncekiEtiket": "Kesim listesi elde, çizim CAD'de baştan",
     "oncekiDakika": 55,
@@ -20,16 +20,16 @@
   },
   "hikayeler": [
     {
-      "baslik": "Tek çizim, bütün atölye belgeleri",
-      "metin": "Kesim listesi, yerleşim planı ve DXF aynı panel tanımından çıkar; duvardaki kâğıtla makinedeki dosya birbirinden ayrışamaz."
+      "baslik": "Tek Çizim, Bütün Atölye Belgeleri",
+      "metin": "Tek bir gövde ya da içe aktardığın tek kontur; plaka yerleşimi, kesim listesi, makine DXF'i ve ölçülü atölye çizimi hep ondan çıkar. Aynı ölçüyü iki kez yazmazsın."
     },
     {
-      "baslik": "Bir ölçü değişince ne oluyor?",
-      "metin": "Yerleşim yamanmaz, yeniden hesaplanır. Geç gelen bir değişiklik, dolaşımda eski bir fire planı bırakmaz."
+      "baslik": "Değişiklik Kesimi Bozmaz",
+      "metin": "Kalınlığı, testere payını, birleşim tipini değiştir. Yerleşim de etiketler de iki DXF de yeniden doğru gelir; parça notların yerinde kalır."
     },
     {
-      "baslik": "Hatalı plaka testereye hiç ulaşmaz",
-      "metin": "25 doğrulama kuralı, hiçbir şey dışa aktarılmadan paneli denetler; malzemeye mal olan hatalar makinede değil ekranda yakalanır."
+      "baslik": "Hatalı Plaka Testereye Ulaşmaz",
+      "metin": "Testere payı, kenar bandı, V-kanal açılımı, K-faktörü bükümü hesaplanır. 25 kural, hatalı plakayı kesilmeden önce durdurur; malzeme fireye değil işe gider."
     }
   ],
   "magazaUrl": "https://www.bestsketchupplugins.com/tr/plugins/panelcut-studio/",
@@ -73,15 +73,15 @@
   "denemeUrl": null,
   "iletisimEposta": "ufuksn79@gmail.com",
   "yazilim": [],
-  "icNot": "Mağazadan senkronlandı (plugin-store/data/plugins.json, 2026-10-14). Metinleri burada elle değiştirmeyin — mağazada değiştirip senkronu tekrar çalıştırın.",
+  "icNot": "Mağazadan senkronlandı (plugin-store/data/plugins.json, 2026-10-28). Metinleri burada elle değiştirmeyin — mağazada değiştirip senkronu tekrar çalıştırın.",
   "en": {
     "ad": "PanelCut Studio",
     "ozet": "No cut lists by hand: draw the panel once, cut list and CNC DXF follow.",
     "aciklama": null,
     "slogan": null,
     "fiyatNot": null,
-    "baslik": "The mistake does not happen at the drawing. It happens at the saw.",
-    "sunum": "A cutting list written by hand and a drawing redone in CAD take about 55 minutes between them — and they are two documents that can disagree, which is how a sheet gets cut wrong. PanelCut Studio builds the panel and gives you both DXF files in roughly 30 seconds. 236 automated tests green, 2 nesting engines, 25 validation rules. It is a browser tool: static hosting, no Node.js, PHP or database required.",
+    "baslik": "No Cut Lists by Hand: Draw the Panel Once, and the Cut List and CNC DXF Arrive",
+    "sunum": "In the workshop, the file goes straight from the drawing to the machine, not via a hand-typed list. Build the carcass or import a DXF, and PanelCut nests it, adds kerf and edge banding, then exports both the machine DXF and the dimensioned shop drawing.",
     "kanit": {
       "oncekiEtiket": "Cut list by hand, then redraw it in CAD",
       "oncekiDakika": 55,
@@ -90,16 +90,16 @@
     },
     "hikayeler": [
       {
-        "baslik": "One drawing, every workshop document",
-        "metin": "The cutting list, the nesting layout and the DXF come from the same panel definition, so the paper on the wall and the file on the machine cannot drift apart."
+        "baslik": "One Drawing, Every Shop Document",
+        "metin": "One carcass, or one imported contour, feeds the nesting, the cut list, the machine DXF and the dimensioned shop drawing. You never type the same size twice."
       },
       {
-        "baslik": "What happens when a dimension changes?",
-        "metin": "The nesting is recalculated rather than patched. A late change does not quietly leave an old offcut plan in circulation."
+        "baslik": "A Change Never Breaks the Cut",
+        "metin": "Move a thickness, a kerf, a joint mode. The layout, the labels and both DXF files come back correct - your part notes stay put."
       },
       {
-        "baslik": "A bad sheet never reaches the saw",
-        "metin": "25 validation rules check the panel before anything is exported, so the errors that cost material are caught on screen instead of on the machine."
+        "baslik": "A Bad Sheet Never Reaches the Saw",
+        "metin": "Saw kerf, edge banding, V-groove unfolding, K-factor bends - computed. 25 rules stop a bad sheet before anyone cuts it, so material goes into the job, not the scrap bin."
       }
     ],
     "magazaUrl": "https://www.bestsketchupplugins.com/en/plugins/panelcut-studio/",

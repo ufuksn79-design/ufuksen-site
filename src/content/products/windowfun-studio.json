@@ -5,13 +5,13 @@
   "durum": "aktif",
   "ilerleme": null,
   "surum": "1.1.0",
-  "sira": 12,
+  "sira": 15,
   "yayinda": true,
   "ozet": "Pencereyi tek tek çizmeden: ölçüyü yaz, pencere de teklif de hazır.",
   "aciklama": null,
   "slogan": null,
-  "baslik": "Kutu olarak çizilmiş bir pencere, müşteriye yakından bakmadığınızı söyler.",
-  "sunum": "Cepheler pencereden yargılanır. Boşluğa konmuş düz bir dikdörtgen yer tutucu gibi durur; gerçek kasası, kanadı, çıtası ve kulpuyla bir pencere ise üzerinde düşünülmüş bir bina gibi. Bir pencereyi elle kutulardan çizip sonra fiyatlamak yaklaşık 40 dakika sürer. Bu SketchUp parametrik pencere eklentisi ölçüyü ikisine birden çevirir — pencere ve teklif — yaklaşık 25 saniyede; 6 kategoride 51 modellik katalogdan, çıkışta CSV, DXF ve PDF teklifle birlikte.",
+  "baslik": "Pencere ve Doğramaları Tek Tek Çizmeyin: Projedeki Tüm Doğrama Metrajını Sıfır Hata İle İmalata Gönderin",
+  "sunum": "İşiniz kasayı ve kanadı kutulardan çizmek değil, doğru doğramayı imalata göndermek. 51 katalog modeli, serbest ya da seçili plan kenarları boyunca yerleşir; ardından CSV, DXF ve yazdırılabilir teklif. Tamamı çevrimdışı, SketchUp içinde.",
   "kanit": {
     "oncekiEtiket": "Bir pencereyi elle kutulardan çizip fiyatlamak",
     "oncekiDakika": 40,
@@ -20,16 +20,16 @@
   },
   "hikayeler": [
     {
-      "baslik": "Ölçüyü yazın, pencere kendini kursun",
-      "metin": "Kasa, kanat, kayıt, cam ve donanım girdiğiniz ölçülerden, gerçek profil kalınlığında üretilir. 70 mm'lik profil, pencere ister 400 mm ister 4 metre olsun 70 mm kalır — doğramadan nasıl gelecekse öyle."
+      "baslik": "Ölçüyü Yaz, Pencere Kendini Kursun",
+      "metin": "Kasa, kanat, orta kayıt, fitil, kol, sürme rayı... 51 katalog modeli, zaten elinizde olan ölçülerden kendi kendini kurar. Kutu kutu çizmeye giden zaman size kalır."
     },
     {
-      "baslik": "Boşluk akşam altıda değişti. Akşamınız gitti mi?",
-      "metin": "Hayır. Sayıyı değiştirirsiniz, pencere yerinde yeniden kurulur, katalog seçimi de durur. Revizyon, günün sonunda telefonun çalmasından korkma sebebi olmaktan çıkar."
+      "baslik": "Değişen Boşluk Akşamınızı Almaz",
+      "metin": "Yerleştirilmiş pencereyi seçin; ayarları geri gelir, yerinde yeniden kurulur, tek geri alma adımı. Değişen bir boşluk bir akşamı değil, bir dakikayı alır."
     },
     {
-      "baslik": "Teklif, model bittiğinde hazır",
-      "metin": "Profil boyları, cam alanı ve donanım adetleri baktığınız geometriden gelir; verdiğiniz fiyat modelin desteklediği fiyattır. SketchUp 2024, 2025 ve 2026 ile çalışır."
+      "baslik": "Teklif, Modelle Birlikte Hazır",
+      "metin": "Profil metresi, cam m²'si, fitil ve donanım model büyürken sayılır. Yanında CSV, DXF ve yazdırılabilir teklif de çıkar; müşteriniz rakamı beklemez."
     }
   ],
   "magazaUrl": "https://www.bestsketchupplugins.com/tr/plugins/windowfun-studio/",
@@ -72,15 +72,15 @@
   "yazilim": [
     "sketchup"
   ],
-  "icNot": "Mağazadan senkronlandı (plugin-store/data/plugins.json, 2026-10-14). Metinleri burada elle değiştirmeyin — mağazada değiştirip senkronu tekrar çalıştırın.",
+  "icNot": "Mağazadan senkronlandı (plugin-store/data/plugins.json, 2026-10-28). Metinleri burada elle değiştirmeyin — mağazada değiştirip senkronu tekrar çalıştırın.",
   "en": {
     "ad": "WindowFun Studio",
     "ozet": "Don't draw windows one by one: type the size, get window and quote.",
     "aciklama": null,
     "slogan": null,
     "fiyatNot": null,
-    "baslik": "A window drawn as a box tells the client you did not look closely.",
-    "sunum": "Facades are judged on windows. A flat rectangle in the opening reads as a placeholder; a window with a real frame, sash, bead and handle reads as a building somebody thought about. Boxing one window by hand and then pricing it takes around 40 minutes. This parametric window plugin for SketchUp turns dimensions into both at once — window and quote — in about 25 seconds, from a catalogue of 51 models across 6 categories, with CSV, DXF and PDF quotes on the way out.",
+    "baslik": "Stop Drawing Windows One by One: Send Every Frame in the Project to Production With Zero Errors",
+    "sunum": "Your job is sending the right frames to production, not boxing out sashes by hand. 51 catalogue models, placed freely or along selected plan edges, then CSV, DXF and a printable quote. All offline, inside SketchUp.",
     "kanit": {
       "oncekiEtiket": "Boxing out one window by hand, then pricing it",
       "oncekiDakika": 40,
@@ -89,16 +89,16 @@
     },
     "hikayeler": [
       {
-        "baslik": "Type the dimension, let the window build itself",
-        "metin": "Frame, sash, mullion, glazing and hardware are generated from the sizes you enter, at their real profile thickness. A 70 mm profile stays 70 mm whether the window is 400 mm or 4 metres wide — exactly as it would arrive from the joinery."
+        "baslik": "Type the Size, the Window Builds Itself",
+        "metin": "Frame, sash, mullion, gasket, handle, track — 51 catalogue models build themselves from dimensions you already know. The time you used to spend boxing them out stays yours."
       },
       {
-        "baslik": "The opening changed at 6pm. Does that cost you the evening?",
-        "metin": "No. Change the number and the window rebuilds in place, catalogue choice intact. Revisions stop being a reason to dread the phone ringing late in the day."
+        "baslik": "A Changed Opening Won't Take Your Evening",
+        "metin": "Select a placed window and its settings come back; it rebuilds in place in one undo step. A changed opening costs a minute, not an evening."
       },
       {
-        "baslik": "The quote is ready when the model is",
-        "metin": "Profile lengths, glass area and hardware counts come from the same geometry you are looking at, so the price you give is the price the model supports. Works on SketchUp 2024, 2025 and 2026."
+        "baslik": "The Quote Is Ready When the Model Is",
+        "metin": "Profile metres, glass m², gaskets and hardware are counted as the model grows. CSV, DXF and a printable quote come out with it, so your client never waits for the number."
       }
     ],
     "magazaUrl": "https://www.bestsketchupplugins.com/en/plugins/windowfun-studio/",

@@ -28,6 +28,54 @@ Format, Keep a Changelog yaklaşımına yakındır. Tarihler `YYYY-MM-DD` biçim
 - Kaynak WordPress sistemi migration boyunca salt okunur kabul edildi.
 - Dry-run, yedek ve rollback zorunlulukları eklendi.
 
+## [1.8.0] — 2026-10-28
+
+### Changed
+
+- **Ürün kataloğu mağazadan eşitlendi: 22 → 24 ürün.** Sitede eksik olan
+  **KitchenFun Studio** ve **CuisineFun** geldi; mevcut 22 ürünün metinleri
+  ve sürüm numaraları da tazelendi (`sync-magaza.mjs`, ADR-024).
+  Durum dağılımı: 16 aktif, 6 beta, 2 alfa.
+
+- **Mağaza tanıtım yazısı ayrıntılı rehbere dönüştü.**
+  `/sketchup-eklentileri-best-sketchup-plugins.html` — **678 → 1.131 kelime**.
+  Aynı konuda ikinci yazı açılmadı: iki sayfa birbirini zayıflatırdı,
+  bağlantı değeri de bölünürdü.
+
+### Yazıda ne var
+
+| Bölüm | İçerik |
+|---|---|
+| Neden ayrı site | Arşiv ile yazılımın farklı bakım ihtiyacı |
+| Rakamlarla | 24 araç, 22'si SketchUp eklentisi, 5'i ücretsiz |
+| Ücretsiz araçlar | CityFill, Yumuşak Kenar, Metraj, PanelCut, Sunum Stüdyosu + Render Fun + web hesaplayıcılar |
+| Ücretli eklentiler | Beş disiplin öbeğinde, her biri tek cümlelik görev tanımıyla |
+| Ne kazandırıyor | Dört eklentinin önce/sonra ölçümü tabloda |
+| Paketler | Üç paket, mantığıyla; tutar yazılmadı |
+| Eklenti Laboratuvarı | Prefabrik Stüdyo, PanelCut Studio |
+| Dersler ve blog | Mağazadaki video dersler ve kılavuzlar |
+| Kurulum | .rbz yolu, SketchUp 2026 rehberine bağlanıyor |
+| Nereden başlamalı | Üç adımlı karar sırası |
+| S.S.S. | 5 soru (sürüm, lisans, ücretsizlerin kapsamı, Mac, güncelleme) |
+| Bağlantılar | Mağaza, Render Fun, iç sayfalar |
+
+### Doğrulama
+
+- 1.131 kelime, **12 H2 + 10 H3**, 22 maddelik içindekiler
+- **34 iç eklenti bağlantısı**, **4 mağaza bağlantısı** (backlink)
+- Ücretsiz/ücretli ayrımı mağazanın kendi veri dosyasından doğrulandı
+  (`plugin-store/data/plugins.json` → `price.amount`): 5 ücretsiz, 19 ücretli
+- Kopya denetimi: ürün sayfalarıyla örtüşen 8 kelimelik dizi **3**
+  (alıntılanan teknik rakamlar) — önceki sürümde 45'ti
+- 493 sayfa; `astro check` 0 hata; yeni kırık link / eksik medya: 0
+
+### Fiyat neden yazılmadı
+
+Kullanıcı "ücretli ve ücretsiz araçlardan bahset" dedi; hangisinin ücretsiz
+olduğu yazıldı ama **tutarlar yazılmadı**. Fiyatlar kampanyaya ve kura göre
+değişiyor, sabit yazmak kısa sürede yanlış bilgiye dönüşür. Tutar mağazadaki
+ürün sayfasında — yazı oraya yönlendiriyor.
+
 ## [1.7.1] — 2026-10-24
 
 ### Added

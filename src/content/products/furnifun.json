@@ -5,13 +5,13 @@
   "durum": "aktif",
   "ilerleme": null,
   "surum": "1.14.0",
-  "sira": 7,
+  "sira": 8,
   "yayinda": true,
   "ozet": "Boş oda yok: iki tıkla gerçek mobilya; mavi topu çekin, uzasın.",
   "aciklama": null,
   "slogan": null,
-  "baslik": "Boş oda satmaz. Döşenmiş oda satar.",
-  "sunum": "Müşteri plan okuyamaz ama oturma odası okur. Sorun şu ki odayı dürüstçe döşemek ya kanepeyi, TV ünitesini ve kitaplığı kendiniz modellemek ya da ölçeği tutmayan ve arkasında yarım milyon poligon sürükleyen modelleri indirmek demektir — her iki yol da yaklaşık 60 dakika. FurniFun bir parçayı iki tıkla yerleştirir ve mavi topu çekerek istediğiniz ölçüye getirmenizi sağlar: yaklaşık 60 saniye, 18 mobilya türü, SketchUp 2021-2026.",
+  "baslik": "Müşterin Boş Bir Kutu Değil, Yaşanan Bir Oda Görsün",
+  "sunum": "Müşteriniz kendini o kanepede oturur hayal etsin: boş oda sunumda soğuk durur, döşenmiş oda satar. 18 mobilya türünden birini seçin, duvar boyunca başlangıca ve bitişe tıklayın; mobilya ölçüsüne göre kendini kursun: kanepe, yatak odası, TV ünitesi, kitaplık, banyo dolabı. Mavi topu çekin, aynı tasarımla uzasın; zarı atın, bambaşka bir tasarım gelsin.",
   "kanit": {
     "oncekiEtiket": "Kanepeyi, TV ünitesini ve kitaplığı elle modellemek ya da indirilen modelleri arayıp temizlemek",
     "oncekiDakika": 60,
@@ -20,16 +20,16 @@
   },
   "hikayeler": [
     {
-      "baslik": "İki tık ve yerinde",
-      "metin": "Türü seçin, nereye gideceğine tıklayın. İçe aktarma yok; indirilen bir bileşeni inç cinsinden modellenmiş olduğunu anlamak için patlatmak da yok."
+      "baslik": "İki Tıkla Yerinde",
+      "metin": "Panelden mobilyayı seçin, başlangıca ve bitişe tıklayın. Duvara yaslanır, zemine oturur, odaya bakar; ilk tıktan sonra 180 yazarsanız tam 180 cm olur. Model aramaya ve temizlemeye giden zaman size kalır."
     },
     {
-      "baslik": "Oda küçülünce ne oluyor?",
-      "metin": "Mavi topu çekersiniz. Parça bir mobilya gibi yeniden ölçeklenir; karikatüre dönüşecek şekilde esnemez — ki indirilen bir bloğu ölçeklediğinizde olan tam da budur."
+      "baslik": "Ölçü Değişir, Tasarım Bozulmaz",
+      "metin": "Uçtaki topu çekin ya da \"+40\" yazın: tasarım aynı kalır, bölmeler, kapaklar, kanepe oturumları ve sandalyeler yeniden dağılır. SketchUp'ın Ölçek aracı bile temiz bir yeniden boyutlandırmaya dönüşür. Müşteri \"biraz daha uzun\" dediğinde hazırsınız."
     },
     {
-      "baslik": "Müşteriye seçenek, size ek iş yok",
-      "metin": "Üç farklı yerleşim göstermek 'hayır' deme sebebi olmaktan çıkar. İkinci seçeneğin maliyeti birkaç tıka iner ve konuşma 'yapabilir misiniz'den 'hangisi' olsuna kayar."
+      "baslik": "Müşteriye Seçenek, Size Ek İş Yok",
+      "metin": "Her çizim yeni bir tasarımdır; zar aynı yerde başka bir sürüm getirir. Sekiz renk paleti ahşabı, taşı, kumaşı ve metali birlikte değiştirir. Toplantıya tek seçenekle değil, birkaçıyla gidersiniz."
     }
   ],
   "magazaUrl": "https://www.bestsketchupplugins.com/tr/plugins/furnifun/",
@@ -76,15 +76,15 @@
   "yazilim": [
     "sketchup"
   ],
-  "icNot": "Mağazadan senkronlandı (plugin-store/data/plugins.json, 2026-10-14). Metinleri burada elle değiştirmeyin — mağazada değiştirip senkronu tekrar çalıştırın.",
+  "icNot": "Mağazadan senkronlandı (plugin-store/data/plugins.json, 2026-10-28). Metinleri burada elle değiştirmeyin — mağazada değiştirip senkronu tekrar çalıştırın.",
   "en": {
     "ad": "FurniFun",
     "ozet": "No empty boxes: two clicks, real furniture; pull the ball, it grows.",
     "aciklama": null,
     "slogan": null,
     "fiyatNot": null,
-    "baslik": "An empty room does not sell. A furnished one does.",
-    "sunum": "The client cannot read a plan, but they can read a living room. The problem is that furnishing one honestly means either modelling a sofa, a TV unit and a bookcase yourself, or downloading models that arrive at the wrong scale and drag half a million polygons behind them — about 60 minutes either way. FurniFun places a piece in two clicks and lets you drag the blue handle to the size you need: around 60 seconds, from 18 furniture types, on SketchUp 2021 through 2026.",
+    "baslik": "Let Clients See a Lived-In Room, Not an Empty Box",
+    "sunum": "Let your client picture themselves on that sofa: an empty room looks cold in a presentation; a furnished one sells. Pick one of 18 furniture types, click the start and the end along a wall and the piece builds itself to size: sofas, bedrooms, TV units, bookcases, bathroom vanities. Pull the blue ball and it grows with the same design; roll the dice and a completely different one appears.",
     "kanit": {
       "oncekiEtiket": "Modelling a sofa, a TV unit and a bookcase by hand, or hunting and cleaning up downloaded models",
       "oncekiDakika": 60,
@@ -93,16 +93,16 @@
     },
     "hikayeler": [
       {
-        "baslik": "Two clicks and it is in place",
-        "metin": "Pick the type, click where it goes. No importing, no exploding a downloaded component to find out it was modelled in inches."
+        "baslik": "In Place in Two Clicks",
+        "metin": "Pick a piece in the panel, click the start, click the end. It backs onto the wall, sits on the floor and faces the room; type 180 after the first click for exactly 180 cm. The time you spent hunting and cleaning downloaded models stays yours."
       },
       {
-        "baslik": "What happens when the room gets smaller?",
-        "metin": "You pull the blue handle. The piece resizes as furniture, keeping its proportions sensible rather than stretching into a cartoon — which is exactly what scaling a downloaded block does to it."
+        "baslik": "New Size, Same Design",
+        "metin": "Drag the ball on the end, or type \"+40\": the design stays the same while bays, doors, sofa seats and chairs re-arrange. Even SketchUp's Scale tool turns into a clean resize. When the client asks for it a little longer, you're ready."
       },
       {
-        "baslik": "Options for the client, no extra work for you",
-        "metin": "Showing three layouts stops being a reason to say no. The cost of a second option drops to a couple of clicks, and the conversation moves from 'can you?' to 'which one?'."
+        "baslik": "Options for the Client, No Extra Work",
+        "metin": "Every drawing is a new design, and the dice gives you another version in the same place. Eight colour palettes change wood, stone, fabric and metal together. You walk into the meeting with options, not just one."
       }
     ],
     "magazaUrl": "https://www.bestsketchupplugins.com/en/plugins/furnifun/",

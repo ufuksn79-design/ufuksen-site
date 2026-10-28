@@ -5,13 +5,13 @@
   "durum": "aktif",
   "ilerleme": null,
   "surum": "1.3.2",
-  "sira": 4,
+  "sira": 5,
   "yayinda": true,
   "ozet": "Gönye kesmeden: süpürgelik ve kartonpiyer tek tıkla yerinde.",
   "aciklama": null,
   "slogan": null,
-  "baslik": "Süpürgelik, kimsenin çizmediği ve herkesin gördüğü detaydır.",
-  "sunum": "Yakın plan bir iç mekân görselinde duvarla döşemenin birleştiği çizgi sürekli kadraj içindedir. Koymazsanız oda bitmemiş okunur; elle çizerseniz tek oda yaklaşık 14 dakikaya mal olur — her oda, her revizyon. Dynamic Skirting bunu yaklaşık 25 saniyede yapar: döşemeye tıklayın, profili seçin. 24 profil, Türkçe, İngilizce ve İspanyolca, SketchUp 2024-2026.",
+  "baslik": "Gönye Kesimiyle Saatler Harcamadan: Süpürgelik ve Kartonpiyeri Tek Tıkla Yerine Oturtun",
+  "sunum": "Süpürgelik ve kartonpiyer odaya son dokunuşu verir; gönyesi kaçmış tek bir köşe ise ilk bakışta göze batar. Bir döşeme ya da tavan yüzeyine tıklayın, merdivende 3B yol çizin. 24 profilden seçin; gönyeli geometri, boşluk kesimleri ve CSV metrajı düzenlenebilir kalsın.",
   "kanit": {
     "oncekiEtiket": "Bir odanın süpürgeliği elle",
     "oncekiDakika": 14,
@@ -20,16 +20,16 @@
   },
   "hikayeler": [
     {
-      "baslik": "İlk geçişte temiz köşe",
-      "metin": "İç ve dış köşeler üretim sırasında gönyelenir; sonradan köşeye yakınlaşıp ters dönmüş bir profili düzeltmeye çalışmazsınız."
+      "baslik": "İlk Seferde Temiz Köşe",
+      "metin": "Bir döşeme yüzeyine tıklayın ya da merdivenin üstünden yolu çizin. Bütün köşeler gönyeli, bütün kapı boşlukları kesilmiş gelir; düzeltmeye dönmezsiniz."
     },
     {
-      "baslik": "Profil mi değişti? Bu yeniden çizim değil",
-      "metin": "Başka bir kesit seçersiniz, aynı yol boyunca üretim güncellenir. 60'lık yerine 80'liği denemek, işten kaçındığınız bir şey değil gerçekten verebileceğiniz bir karar olur."
+      "baslik": "Profil Değişir, Yeniden Çizim Yok",
+      "metin": "İmalatı seçin; profili, yüksekliği ya da malzemeyi panelden değiştirin. Model tek geri alma adımında yeniden kurulur; müşterinin her tercihine hazırsınız."
     },
     {
-      "baslik": "Sipariş metrajı modelden gelir",
-      "metin": "Uzunluklar ve parça adetleri az önce ürettiğiniz üretimden CSV olarak çıkar; sipariş ettiğiniz metre duvardaki metreyle örtüşür."
+      "baslik": "Sipariş Metrajı Modelden",
+      "metin": "Metretül tablodan değil modelden çıkar. İşaretlenen boşluklar zaten düşülmüştür. CSV olarak dışa aktarın; sipariş için tahmine gerek kalmaz."
     }
   ],
   "magazaUrl": "https://www.bestsketchupplugins.com/tr/plugins/dynamic-skirting/",
@@ -72,15 +72,15 @@
   "yazilim": [
     "sketchup"
   ],
-  "icNot": "Mağazadan senkronlandı (plugin-store/data/plugins.json, 2026-10-14). Metinleri burada elle değiştirmeyin — mağazada değiştirip senkronu tekrar çalıştırın.",
+  "icNot": "Mağazadan senkronlandı (plugin-store/data/plugins.json, 2026-10-28). Metinleri burada elle değiştirmeyin — mağazada değiştirip senkronu tekrar çalıştırın.",
   "en": {
     "ad": "Dynamic Skirting",
     "ozet": "No hand-cut mitres: skirting and cornice, one click per room.",
     "aciklama": null,
     "slogan": null,
     "fiyatNot": null,
-    "baslik": "Skirting is the detail nobody draws and everybody sees.",
-    "sunum": "In a close-up interior render, the line where the wall meets the floor is in frame constantly. Leave it out and the room reads as unfinished; draw it by hand and one room costs about 14 minutes, every room, every revision. Dynamic Skirting runs it in roughly 25 seconds: click the floor, pick the profile. 24 profiles, Turkish, English and Spanish, SketchUp 2024 through 2026.",
+    "baslik": "No Hours Lost on Mitre Cuts: Put Skirting and Cornices in Place in One Click",
+    "sunum": "Skirting and cornice are a room's finishing touch; one corner with a bad mitre is the first thing anyone notices. Click a floor or ceiling face, or draw a 3D path over stairs. Pick from 24 profiles and get mitred geometry, gap cutouts and a CSV take-off that stay editable.",
     "kanit": {
       "oncekiEtiket": "Skirting one room by hand",
       "oncekiDakika": 14,
@@ -89,16 +89,16 @@
     },
     "hikayeler": [
       {
-        "baslik": "Clean corners on the first pass",
-        "metin": "Internal and external corners are mitred as it runs, so you are not zooming into a corner afterwards to fix a profile that twisted the wrong way."
+        "baslik": "Clean Corners the First Time",
+        "metin": "Click a floor face, or trace a path over stairs. Every corner arrives mitred and every door gap cut, the first time, with nothing to go back and fix."
       },
       {
-        "baslik": "Changed the profile? That is not a redraw",
-        "metin": "Pick a different section and the run updates along the same path. Trying the 80 mm instead of the 60 mm becomes a decision you can actually make, not one you avoid because of the work."
+        "baslik": "New Profile, No Redraw",
+        "metin": "Select a run and change profile, height or material in the panel. The model rebuilds itself in a single Undo step, ready for whatever the client picks."
       },
       {
-        "baslik": "The order length comes from the model",
-        "metin": "Lengths and part counts export as CSV from the run you just generated, so the metres you order match the metres on the wall."
+        "baslik": "Order Metres Straight From the Model",
+        "metin": "Running metres come out of the model, not a spreadsheet. Marked gaps are already subtracted. Export CSV, and the order needs no guesswork."
       }
     ],
     "magazaUrl": "https://www.bestsketchupplugins.com/en/plugins/dynamic-skirting/",

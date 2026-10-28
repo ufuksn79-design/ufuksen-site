@@ -5,13 +5,13 @@
   "durum": "beta",
   "ilerleme": null,
   "surum": "0.8.1",
-  "sira": 20,
+  "sira": 22,
   "yayinda": true,
   "ozet": "Elle uğraşmadan tek tıkla yuvarlatın, pah kırın; hep düzenlenebilir.",
   "aciklama": null,
   "slogan": null,
-  "baslik": "Gerçek bir odada hiçbir şeyin bıçak gibi keskin kenarı yoktur. Modelinizde var.",
-  "sunum": "Köşesi tam dik olan bir tabla, görselin CAD'den çıktığını ele veren şeydir. Gerçek kenarlar ince bir ışık çizgisi yakalar ve bir malzemeyi dokunulabilir gösteren şeyin çoğu o tek parlamadır. Bir tablanın kenarını elle yuvarlamak yaklaşık 20 dakika sürer; bu yüzden genelde atlanır. Yumuşak Kenar bunu yaklaşık 10 saniyede yapar: seçin, yarıçapı yazın, tıklayın. Yuvarlak ve pah, SketchUp 2021-2026 — ve ücretsiz.",
+  "baslik": "Sert ve Yapay Köşeler Çizimin Kalitesini Düşürür: Tek Tıkla Düzenlenebilir Yumuşak Köşeler Oluşturun",
+  "sunum": "Yumuşak bir kenar modelin özenle tasarlandığını söyler; sert köşe onu sıradan bir bilgisayar çizimine indirger. Bir grup, bir yüz ya da yalnızca istediğiniz bir, iki veya üç kenarı seçin. Yarıçapı yazıp Yuvarla deyin: her kenar aynı gerçek yarıçapı alır, köşeler temiz kapanır ve özgün katı saklanır; yeniden kurabilir ya da ilk hâline döndürebilirsiniz.",
   "kanit": {
     "oncekiEtiket": "Bir tablanın kenarını elle yuvarlamak",
     "oncekiDakika": 20,
@@ -20,16 +20,16 @@
   },
   "hikayeler": [
     {
-      "baslik": "Her köşe aynı özeni görür",
-      "metin": "Yazdığınız yarıçap seçimin tamamına tutarlı uygulanır; bir köşesi güzel, üçü gün bittiği için dik kalmış bir parçayla baş başa kalmazsınız."
+      "baslik": "Her Köşe Aynı Özenle",
+      "metin": "Dik açılar, keskin yıldız uçları ve iç köşeler aynı kavisi alır. Üç kenarın buluştuğu yerde küre köşe, ikisinin buluştuğu yerde temiz gönye; yakın planda bile temiz kalır."
     },
     {
-      "baslik": "Yuvarlamak kararı kilitler mi?",
-      "metin": "Hayır. Şimdi istediğiniz yarıçapla çalışır, tasarım değişince değiştirirsiniz. Kenar işçiliği, sona sakladığınız geri dönüşsüz adım olmaktan çıkar."
+      "baslik": "Kararınız Hiç Kilitlenmez",
+      "metin": "Özgün katı grupla birlikte saklanır. Yarıçapı ya da kaliteyi değiştirip yeniden kurun, sonradan kenar ekleyin, bir kenarı yeniden keskinleştirin ya da ilk hâline döndürün. Hiçbir deneme modeli bozmaz."
     },
     {
-      "baslik": "Malzeme sonunda gerçek gibi davranır",
-      "metin": "Yuvarlatılmış ya da pahlanmış kenar, render motoruna yakalayacak bir şey verir; V-Ray ya da Enscape'te ahşap ahşap, metal metal gibi okunur — tek bir doku ayarına dokunmadan."
+      "baslik": "Malzeme Gerçek Gibi Kalır",
+      "metin": "Ahşap, taş ya da kumaş yeni kavise gerilmeden oturur: her yüz yerleşimini korur, damar kaplama gibi kenarın üstünden akar ya da üç eksenden yansıtılır. Sunumda malzeme inandırıcı kalır."
     }
   ],
   "magazaUrl": "https://www.bestsketchupplugins.com/tr/plugins/soft-edge/",
@@ -75,15 +75,15 @@
   "yazilim": [
     "sketchup"
   ],
-  "icNot": "Mağazadan senkronlandı (plugin-store/data/plugins.json, 2026-10-14). Metinleri burada elle değiştirmeyin — mağazada değiştirip senkronu tekrar çalıştırın.",
+  "icNot": "Mağazadan senkronlandı (plugin-store/data/plugins.json, 2026-10-28). Metinleri burada elle değiştirmeyin — mağazada değiştirip senkronu tekrar çalıştırın.",
   "en": {
     "ad": "Soft Edge",
     "ozet": "Skip hand filleting: round or chamfer in one click, always editable.",
     "aciklama": null,
     "slogan": null,
     "fiyatNot": null,
-    "baslik": "Nothing in a real room has a knife-sharp edge. Your model does.",
-    "sunum": "A table top with a perfectly square corner is the giveaway that a render came out of CAD. Real edges catch a thin line of light, and that single highlight is most of what makes a material look touchable. Rounding one table edge by hand takes around 20 minutes, which is why it usually gets skipped. Soft Edge does it in about 10 seconds: select, type the radius, click. Rounds and chamfers, SketchUp 2021 through 2026 — and it is free.",
+    "baslik": "Hard, Artificial Corners Cheapen Your Model: Create Editable Soft Edges in One Click",
+    "sunum": "A soft edge says the model was shaped with care; a hard corner reduces it to an ordinary computer drawing. Select a group, a face, or just the one, two or three edges you want. Type a radius and click Round edges: every edge gets the same true radius, corners close cleanly, and the original solid is kept so you can rebuild or restore it.",
     "kanit": {
       "oncekiEtiket": "Filleting a table top by hand",
       "oncekiDakika": 20,
@@ -92,16 +92,16 @@
     },
     "hikayeler": [
       {
-        "baslik": "Every corner gets the same care",
-        "metin": "The radius you type is applied consistently around the selection, so you do not end up with one beautiful corner and three that were left square because the day ran out."
+        "baslik": "Every Corner, the Same Care",
+        "metin": "Right angles, sharp star tips and inner corners all get the same curve. Where three edges meet, a sphere corner; where two meet, a clean mitre. Clean even in a close-up."
       },
       {
-        "baslik": "Does rounding lock you into a decision?",
-        "metin": "No. Work at the radius you want now and change it when the design moves. Edge treatment stops being the irreversible last step you put off until the end."
+        "baslik": "Never Locked Into a Decision",
+        "metin": "The original solid is saved with the group. Change the radius or quality and rebuild, add an edge later, make one edge sharp again, or restore the original. No experiment ever ruins the model."
       },
       {
-        "baslik": "The material finally behaves",
-        "metin": "A rounded or chamfered edge gives the renderer something to catch, so wood reads as wood and metal reads as metal in V-Ray or Enscape — without touching a single texture setting."
+        "baslik": "Materials Stay True",
+        "metin": "Wood, stone or fabric sits on the new curve without stretching: keep each face as it was, wrap the grain over the edge like a veneer, or project it from three axes. The material stays convincing in the presentation."
       }
     ],
     "magazaUrl": "https://www.bestsketchupplugins.com/en/plugins/soft-edge/",

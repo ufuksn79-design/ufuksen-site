@@ -1,0 +1,143 @@
+{
+  "slug": "kitchenfun-studio",
+  "ad": "KitchenFun Studio",
+  "tur": "eklenti",
+  "durum": "aktif",
+  "ilerleme": null,
+  "surum": "1.28.1",
+  "sira": 10,
+  "yayinda": true,
+  "ozet": "Yeniden çizmek yok, yeniden yazmak yok: dolapları duvara sürükle; mutfak, kesim listesi ve CNC dosyası hazır.",
+  "aciklama": null,
+  "slogan": null,
+  "baslik": "Müşterine Bir Mutfak Söz Verdin, Şimdi Üretilecek: Duvarları Çiz, Dolapları Sürükle, Üretim Paketi Hazır Olsun",
+  "sunum": "KitchenFun Studio usta gibi düşünür. Duvar ölçülerini yazarsın, dolapları duvara sürüklersin ve SketchUp’ta oluştur dersin: her panel, kapak, çekmece, menteşe, ray, ayak, baza ve tezgâh gerçek parça olarak kurulur; aynı parçalar kesim listen, etiketlerin ve makine dosyaların olur.",
+  "kanit": {
+    "oncekiEtiket": "Mutfağı dolap dolap çizmek, sonra kesim listesini yazmak",
+    "oncekiDakika": 240,
+    "sonrakiEtiket": "Dolapları duvara sürükleyip Oluştur’a basmak",
+    "sonrakiSaniye": 120
+  },
+  "hikayeler": [
+    {
+      "baslik": "Hızlı ve esnek tasarım",
+      "metin": "Düz, L ya da U mutfak üç adımda; ya da kolonlu, nişli, her açıdan kendi duvarın. Dolapları paletten sürükle, iki dolap arasındaki çizgiyi çek, kendi dolabını tasarla ve paletine kaydet."
+    },
+    {
+      "baslik": "Unutulmayan usta kuralları",
+      "metin": "Tezgâh ile üst dolap arası hiçbir zaman 58 cm’nin altına inmez, tezgâh altı en az 87 cm’dir, 19 cm’den dar kapak olmaz ve dolaplar düzensiz köşelerde ya da kiriş altında bile iç içe girmez."
+    },
+    {
+      "baslik": "Atölyenin seveceği kısım",
+      "metin": "Kesim listesi, giyotin kesim sıralı levha yerleşimi, barkodlu etiket, hırdavat listesi, CNC delik dosyaları ve kendi fiyatlarınla müşteri teklifi: tek tıkla üretim paketi, her şey tek klasörde."
+    }
+  ],
+  "magazaUrl": "https://www.bestsketchupplugins.com/tr/plugins/kitchenfun-studio/",
+  "kapak": null,
+  "galeri": [],
+  "video": null,
+  "uyumluluk": [
+    "SketchUp 2021",
+    "SketchUp 2022",
+    "SketchUp 2023",
+    "SketchUp 2024",
+    "SketchUp 2025",
+    "SketchUp 2026",
+    "Windows"
+  ],
+  "ozellikler": [
+    {
+      "baslik": "Sürükle-bırak mutfak sihirbazı",
+      "not": "",
+      "ikon": "grid"
+    },
+    {
+      "baslik": "Kesim listesi + CNC (DXF / MPR / TCN)",
+      "not": "",
+      "ikon": "grid"
+    },
+    {
+      "baslik": "SketchUp 2021–2026",
+      "not": "",
+      "ikon": "grid"
+    }
+  ],
+  "listeler": [],
+  "vurgular": [
+    "Sürükle-bırak mutfak sihirbazı",
+    "Kesim listesi + CNC (DXF / MPR / TCN)",
+    "SketchUp 2021–2026"
+  ],
+  "sss": [],
+  "fiyat": null,
+  "satinAlmaUrl": null,
+  "denemeUrl": null,
+  "iletisimEposta": "ufuksn79@gmail.com",
+  "yazilim": [
+    "sketchup"
+  ],
+  "icNot": "Mağazadan senkronlandı (plugin-store/data/plugins.json, 2026-10-28). Metinleri burada elle değiştirmeyin — mağazada değiştirip senkronu tekrar çalıştırın.",
+  "en": {
+    "ad": "KitchenFun Studio",
+    "ozet": "No re-drawing, no re-typing: drag the cabinets onto the wall, get the kitchen, cut list and CNC files.",
+    "aciklama": null,
+    "slogan": null,
+    "fiyatNot": null,
+    "baslik": "You Promised Your Client a Kitchen. Now It Has to Be Built: Draw the Walls, Drag the Cabinets, Get the Production Package",
+    "sunum": "KitchenFun Studio thinks like a master cabinet maker. Type the wall lengths, drag cabinets onto the wall and press Build in SketchUp: every panel, door, drawer, hinge, runner, leg, plinth and worktop is created as a real part, and the same parts become your cut list, labels and machine files.",
+    "kanit": {
+      "oncekiEtiket": "Drawing a kitchen cabinet by cabinet, then typing the cut list",
+      "oncekiDakika": 240,
+      "sonrakiEtiket": "Dragging the cabinets onto the wall and pressing Build",
+      "sonrakiSaniye": 120
+    },
+    "hikayeler": [
+      {
+        "baslik": "Fast and flexible design",
+        "metin": "A straight, L or U kitchen in three steps, or your own walls with columns, niches and any angle. Drag cabinets from the palette, pull the joint between two units, design your own cabinet and save it to your palette."
+      },
+      {
+        "baslik": "Craftsman rules you can’t forget",
+        "metin": "The worktop-to-wall-cabinet gap never drops below 58 cm, the under-worktop height is at least 87 cm, no door is narrower than 19 cm and cabinets never overlap, not even in irregular corners or under a beam."
+      },
+      {
+        "baslik": "The part your workshop will love",
+        "metin": "Cut list, sheet nesting with guillotine cut sequence, barcode labels, hardware list, CNC drilling files and a customer quote with your prices: one-click production package, everything in one folder."
+      }
+    ],
+    "magazaUrl": "https://www.bestsketchupplugins.com/en/plugins/kitchenfun-studio/",
+    "uyumluluk": [
+      "SketchUp 2021",
+      "SketchUp 2022",
+      "SketchUp 2023",
+      "SketchUp 2024",
+      "SketchUp 2025",
+      "SketchUp 2026",
+      "Windows"
+    ],
+    "ozellikler": [
+      {
+        "baslik": "Drag & drop Kitchen Wizard",
+        "not": "",
+        "ikon": "grid"
+      },
+      {
+        "baslik": "Cut list + CNC (DXF / MPR / TCN)",
+        "not": "",
+        "ikon": "grid"
+      },
+      {
+        "baslik": "SketchUp 2021–2026",
+        "not": "",
+        "ikon": "grid"
+      }
+    ],
+    "listeler": [],
+    "vurgular": [
+      "Drag & drop Kitchen Wizard",
+      "Cut list + CNC (DXF / MPR / TCN)",
+      "SketchUp 2021–2026"
+    ],
+    "sss": []
+  }
+}

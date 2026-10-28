@@ -1189,3 +1189,21 @@ body {
 .prose .reklam-ici ins {
   display: block;
 }
+
+/**
+ * "ücretsiz" rozeti — tanıtım yazısındaki eklenti listesinde.
+ * Ücretli/ücretsiz ayrımı okurun ilk merak ettiği şey; metnin içinde
+ * kaybolmasın diye vurgulanıyor.
+ */
+.prose em.bedava {
+  display: inline-block;
+  margin-left: var(--s-1);
+  padding: 1px var(--s-2);
+  border: 1px solid var(--c-accent);
+  border-radius: var(--r-pill);
+  color: var(--c-accent);
+  font-family: var(--font-mono);
+  font-size: var(--t-micro);
+  font-style: normal;
+  letter-spacing: 0.04em;
+}

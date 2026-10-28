@@ -5,13 +5,13 @@
   "durum": "aktif",
   "ilerleme": null,
   "surum": "1.6.0",
-  "sira": 8,
+  "sira": 9,
   "yayinda": true,
   "ozet": "Duvarı elle oymadan: kapıyı seç, duvara tıkla, kendini yerleştirsin.",
   "aciklama": null,
   "slogan": null,
-  "baslik": "Kapı, müşterinin yanına gelip yakından baktığı yerdir.",
-  "sunum": "Geri kalan her şey odanın öbür ucundan görülür. Kapı kırk santimden görülür — ve üzerine doku giydirilmiş bir kutunun dağıldığı yer tam orasıdır. Bir panelli kapıyı elde modellemek yaklaşık 25 dakika sürer; çoğu modelde koridor boyunca aynı düz levhanın tekrarlanmasının sebebi de budur. Bu SketchUp parametrik kapı eklentisi gerçek bir kapıyı yaklaşık 20 saniyede yerleştirir: 4 kategorideki 51 modelden birini seçin, duvara tıklayın; dikme, kayıt, lambalı kasa, gönyeli pervaz, kabartma panel, cam çıtası, menteşe ve kilit gerçek geometri olarak oradadır. 572 otomatik test yeşil; SketchUp 2021-2026.",
+  "baslik": "Duvarı Elle Oymadan ve Kasayı Tek Tek Çizmeden: Kapıyı Seçin, Duvara Tıklayın, Kendini Yerleştirsin",
+  "sunum": "Kutudan bir kapı sunumu ucuzlatır; gerçek kasası, pervazı ve menteşesiyle bir kapı gösterdiğiniz özeni anlatır. 51 parametrik kapı modeli duvarın yönünü, kalınlığını ve döşeme kotunu kendi okur; kayıt, kuşak, kasa ve donanımı tek geri alınabilir adımda gerçek geometri olarak kurar.",
   "kanit": {
     "oncekiEtiket": "Bir panelli kapıyı elde modellemek",
     "oncekiDakika": 25,
@@ -20,16 +20,16 @@
   },
   "hikayeler": [
     {
-      "baslik": "Hizalamakla hiç uğraşmazsınız",
-      "metin": "Duvarın yönünü, kalınlığını ve döşeme kotunu ışın testiyle okur; kapı ilk tıkta hizalanmış gelir. Üstten bakarken iki köşe tıklaması da aynı bilgiyi verir."
+      "baslik": "Hizalamakla Uğraşmazsın",
+      "metin": "Duvarın yönünü, kalınlığını ve döşeme kotunu ışın testiyle kendi okur. Üstten bakarken iki köşe tıklaması aynı bilgiyi verir; kapı ilk seferde yerine oturur."
     },
     {
-      "baslik": "Bırakın müşteri fikir değiştirsin",
-      "metin": "Yerleşmiş bir kapıya tıklarsınız, panel ayarlarını yükler, istediğinizi değiştirirsiniz, kapı yerinde yeniden kurulur. Tüm oturum tek Ctrl+Z ile geri alınır; üç seçeneği denemenin maliyeti meraktan ibarettir."
+      "baslik": "Müşteri Fikir Değiştirsin, Sen Hazırsın",
+      "metin": "Yerleştirdiğin kapıya tıkla, ayarları panele geri gelsin. Ölçüyü değiştir, yerinde yenilensin; tüm oturum tek Ctrl+Z. Revizyon, kapıyı baştan modellemek demek değil."
     },
     {
-      "baslik": "Yakınlaşıldığında ne ayakta kalır?",
-      "metin": "Gerçek profiller. Aynı ölçüdeki profiller tek bileşen tanımını paylaşır; projedeki yüz kapı birkaç tanıma iner — birini düzenlersiniz, hepsi güncellenir ve dosya çalışılabilir hafiflikte kalır."
+      "baslik": "Yakından Bakılsa da Gerçek",
+      "metin": "Kayıt, kuşak, kasa, gönyeli pervaz, cam çıtası, menteşe, kilit. 100 kapılık projede 3.964 parça 119 tanımı paylaşır: detay çok, tanım az."
     }
   ],
   "magazaUrl": "https://www.bestsketchupplugins.com/tr/plugins/door-studio/",
@@ -75,15 +75,15 @@
   "yazilim": [
     "sketchup"
   ],
-  "icNot": "Mağazadan senkronlandı (plugin-store/data/plugins.json, 2026-10-14). Metinleri burada elle değiştirmeyin — mağazada değiştirip senkronu tekrar çalıştırın.",
+  "icNot": "Mağazadan senkronlandı (plugin-store/data/plugins.json, 2026-10-28). Metinleri burada elle değiştirmeyin — mağazada değiştirip senkronu tekrar çalıştırın.",
   "en": {
     "ad": "Door Studio",
     "ozet": "No walls cut by hand: pick a door, click the wall, it fits itself.",
     "aciklama": null,
     "slogan": null,
     "fiyatNot": null,
-    "baslik": "The door is where the client walks up and looks closely.",
-    "sunum": "Everything else is seen from across the room. The door is seen from forty centimetres — and that is where a box with a texture on it falls apart. Modelling one panelled door by hand takes about 25 minutes, which is why most models end up with the same flat slab repeated down the corridor. This parametric door plugin for SketchUp places a real door in about 20 seconds: pick from 51 models in 4 categories, click the wall, and the stiles, rails, rebated frame, mitred architrave, raised panel, glazing bead, hinge and lock are there as actual geometry. 572 automated tests run green, on SketchUp 2021 through 2026.",
+    "baslik": "Without Cutting Walls by Hand or Drawing Frames One by One: Pick the Door, Click the Wall, It Places Itself",
+    "sunum": "A box for a door cheapens the presentation; a door with a real frame, architrave and hinges shows the care you put in. 51 parametric door models that read the wall's direction, thickness and floor level, then build real stiles, rails, frames and hardware in one undoable step.",
     "kanit": {
       "oncekiEtiket": "Modelling one panelled door by hand",
       "oncekiDakika": 25,
@@ -92,16 +92,16 @@
     },
     "hikayeler": [
       {
-        "baslik": "You never line it up by hand",
-        "metin": "It raytests the wall for direction, thickness and floor level, so the door arrives aligned on the first click. Seen from above, two corner clicks give it the same answer."
+        "baslik": "No Lining It Up by Hand",
+        "metin": "It raytests the wall for direction, thickness and floor level. Seen from above, two corner clicks give it the same answer, and the door sits right the first time."
       },
       {
-        "baslik": "Let the client change their mind",
-        "metin": "Click a placed door, the panel loads its settings, change what you want and it rebuilds in place. The whole session undoes with one Ctrl+Z, so trying three options costs you nothing but curiosity."
+        "baslik": "Let the Client Change Their Mind",
+        "metin": "Click a door you placed and its settings return to the panel. Change a size, it rebuilds in place — the session is one Ctrl+Z. A revision never means modelling the door again."
       },
       {
-        "baslik": "What holds up when someone zooms in?",
-        "metin": "Real profiles do. Identical profiles share one component definition, so a hundred doors across a project collapse into a handful of definitions — edit one, they all update, and the file stays light enough to keep working in."
+        "baslik": "Real Even Up Close",
+        "metin": "Stiles, rails, rebated frame, mitred architrave, beads, hinges, lock. In a 100-door project 3,964 parts share 119 definitions: plenty of detail, few definitions."
       }
     ],
     "magazaUrl": "https://www.bestsketchupplugins.com/en/plugins/door-studio/",

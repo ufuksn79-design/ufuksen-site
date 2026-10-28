@@ -2,16 +2,16 @@
   "slug": "kompozit-studio",
   "ad": "Kompozit Studio",
   "tur": "eklenti",
-  "durum": "beta",
+  "durum": "aktif",
   "ilerleme": null,
-  "surum": "1.3.1",
-  "sira": 15,
+  "surum": "1.22.1",
+  "sira": 11,
   "yayinda": true,
-  "ozet": "Panel panel çizmeden: cepheyi seç, ACM sistemi metrajıyla gelsin.",
+  "ozet": "Panel panel ölçü almadan: duvarı seçin, kompozit cephe, metraj, CNC ve pafta gelsin.",
   "aciklama": null,
   "slogan": null,
-  "baslik": "Cephe, müşterinin aklında kalan çizimdir. Aynı zamanda haftanızı yiyen çizim.",
-  "sunum": "Kompozit cephe, döşemeye başlayana kadar basit görünür: her panel 1250×2500 mm ızgarada, her boşluk etrafından kesilmiş, her parça sipariş için sayılmış. Cepheyi panel panel modelleyip metrajı tabloda saymak yaklaşık 150 dakika sürer. Kompozit Studio bunu yaklaşık 45 saniyede yapar — yüzeyleri seçin, oluştur'a basın — ve m² ile adet CSV metrajını da birlikte yazar. SketchUp 2021-2026.",
+  "baslik": "Cephenizi Çizin, Gerisini O Halletsin: Kompozit Cephe, Metraj, CNC ve Pafta Tek Seçimle",
+  "sunum": "Bir cephe işinde asıl zaman modellemeye değil, o modeli üretime çevirmeye gider. SketchUp’ta duvarlarınızı seçin, cephe kompozitçinin gözüyle kurulsun: bükümlü kasetler, binayı dolaşan derzler, alt konstrüksiyon, bütün bitişler, metraj, CNC dosyaları ve paftalar.",
   "kanit": {
     "oncekiEtiket": "Cepheyi panel panel modelleyip metrajı tabloda saymak",
     "oncekiDakika": 150,
@@ -20,16 +20,16 @@
   },
   "hikayeler": [
     {
-      "baslik": "Bir kez seçin, cephe yerine otursun",
-      "metin": "Panel ızgarası seçtiğiniz yüzeyler boyunca üretilir; tedarikçinin gerçekten teslim ettiği levha ölçüsüne hizalı olarak, satın alınamayacak dekoratif bir desene göre değil."
+      "baslik": "Gerçekten üretilecek gibi çizer.",
+      "metin": "Katlama payı dıştan dışa hesaplanan bükümlü kasetler, her köşeyi aynı kotta dönen derzler, derz arkasında kutu profil ve dört dübelli konsol. Gördüğünüz, atölyenin üreteceğidir."
     },
     {
-      "baslik": "Revizyon cepheyi baştan çizdirir mi?",
-      "metin": "Hayır. Yüzeyi değiştirirsiniz, panel bölüntüsü onu takip eder. Cephe, sunuma iki gün kala kimsenin dokunmak istemediği kısım olmaktan çıkar."
+      "baslik": "Kompozit de, sandviç de.",
+      "metin": "Tek tıkla sandviç panele geçilir, dikey ya da yatay; çatının eğimi kendiliğinden tanınır. Mahya, saçak, bordür, dere ve alın duvarları otomatik gelir."
     },
     {
-      "baslik": "Sipariş rakamı modelden gelir",
-      "metin": "Metrekare ve adetler, az önce ürettiğiniz geometriden doğrudan CSV olarak çıkar; sipariş ettiğiniz şey çizilen şeyle örtüşür."
+      "baslik": "Model biter, dosyalar da biter.",
+      "metin": "Net ve sipariş m², levha adedi ve fire, profil metresi, konsol, dübel ve silikon; her kasetin açınımı ve levhaya yerleşimiyle kesim DXF’i; antetinizle sistematik PDF ve DXF pafta seti."
     }
   ],
   "magazaUrl": "https://www.bestsketchupplugins.com/tr/plugins/kompozit-studio/",
@@ -47,12 +47,12 @@
   ],
   "ozellikler": [
     {
-      "baslik": "1250×2500 mm panel ızgarası",
+      "baslik": "Bükümlü kaset + CNC DXF",
       "not": "",
       "ikon": "grid"
     },
     {
-      "baslik": "m² + adet CSV metrajı",
+      "baslik": "PDF / DXF pafta seti",
       "not": "",
       "ikon": "grid"
     },
@@ -64,8 +64,8 @@
   ],
   "listeler": [],
   "vurgular": [
-    "1250×2500 mm panel ızgarası",
-    "m² + adet CSV metrajı",
+    "Bükümlü kaset + CNC DXF",
+    "PDF / DXF pafta seti",
     "SketchUp 2021–2026"
   ],
   "sss": [],
@@ -76,15 +76,15 @@
   "yazilim": [
     "sketchup"
   ],
-  "icNot": "Mağazadan senkronlandı (plugin-store/data/plugins.json, 2026-10-14). Metinleri burada elle değiştirmeyin — mağazada değiştirip senkronu tekrar çalıştırın.",
+  "icNot": "Mağazadan senkronlandı (plugin-store/data/plugins.json, 2026-10-28). Metinleri burada elle değiştirmeyin — mağazada değiştirip senkronu tekrar çalıştırın.",
   "en": {
     "ad": "Kompozit Studio",
-    "ozet": "No panel-by-panel work: click the facade, get the ACM system, counted.",
+    "ozet": "No sizing panel by panel: select the walls, get the ACM facade, take-off, CNC and drawings.",
     "aciklama": null,
     "slogan": null,
     "fiyatNot": null,
-    "baslik": "The facade is the drawing the client remembers. It is also the one that eats your week.",
-    "sunum": "Composite cladding looks simple until you start laying it: every panel on a 1250×2500 mm grid, every opening cut around, every piece counted for the order. Modelling a facade panel by panel and then counting the take-off in a spreadsheet runs about 150 minutes. Kompozit Studio does it in roughly 45 seconds — select the faces, press build — and writes the m² and piece-count CSV with it. SketchUp 2021 through 2026.",
+    "baslik": "ACM Facade Design for SketchUp, Ready for Fabrication: Draw the Facade, It Handles the Rest",
+    "sunum": "On an ACM cladding job, the modelling isn’t what eats your time; turning the model into production is. Select your walls in SketchUp and the facade is built the way a cladding installer would build it: folded cassettes, joints that wrap the building, the substructure, every trim, the take-off, CNC files and the shop drawings.",
     "kanit": {
       "oncekiEtiket": "Modelling the facade panel by panel, then counting it in a spreadsheet",
       "oncekiDakika": 150,
@@ -93,16 +93,16 @@
     },
     "hikayeler": [
       {
-        "baslik": "Select once, let the facade land",
-        "metin": "The panel grid is generated across the surfaces you picked, aligned to the sheet size the supplier actually delivers rather than a decorative pattern that cannot be bought."
+        "baslik": "Drawn the way it will be fabricated",
+        "metin": "Folded cassettes with the fold allowance measured outside to outside, joints that turn every corner at the same level, box profiles behind the joints and four-anchor brackets. What you see is what the workshop builds."
       },
       {
-        "baslik": "Does a revision mean redrawing the elevation?",
-        "metin": "No. Change the surface and the panelisation follows it. The facade stops being the part of the model nobody wants to touch two days before the presentation."
+        "baslik": "ACM and sandwich panels",
+        "metin": "One click switches the facade to insulated sandwich panels, vertical or horizontal, and roofs are recognised with their pitch; ridges, eaves, verges, valleys and gable walls come by themselves."
       },
       {
-        "baslik": "The order figure comes from the model",
-        "metin": "Square metres and piece counts are exported as CSV straight from the geometry you just generated, so what you order matches what is drawn."
+        "baslik": "When the model is done, so are the files",
+        "metin": "Net and order m², sheet count and waste, profile metres, brackets, anchors and sealant; every cassette unfolded and nested as routing DXF; and a structured shop-drawing set in PDF and DXF with your title block."
       }
     ],
     "magazaUrl": "https://www.bestsketchupplugins.com/en/plugins/kompozit-studio/",
@@ -117,12 +117,12 @@
     ],
     "ozellikler": [
       {
-        "baslik": "1250×2500 mm panel grid",
+        "baslik": "Folded ACM cassettes + CNC DXF",
         "not": "",
         "ikon": "grid"
       },
       {
-        "baslik": "m² + piece CSV take-off",
+        "baslik": "PDF / DXF shop-drawing set",
         "not": "",
         "ikon": "grid"
       },
@@ -134,8 +134,8 @@
     ],
     "listeler": [],
     "vurgular": [
-      "1250×2500 mm panel grid",
-      "m² + piece CSV take-off",
+      "Folded ACM cassettes + CNC DXF",
+      "PDF / DXF shop-drawing set",
       "SketchUp 2021–2026"
     ],
     "sss": []

@@ -5,13 +5,13 @@
   "durum": "beta",
   "ilerleme": null,
   "surum": "",
-  "sira": 16,
+  "sira": 18,
   "yayinda": true,
   "ozet": "Hesap hatasıyla teklif vermeden: ölçüyü gir, malzeme ve maliyet çıksın.",
   "aciklama": null,
   "slogan": null,
-  "baslik": "Metre, kâğıt, sonra gece yarısı yanlış hesaplayan tablo.",
-  "sunum": "Bir odayı ölçmek, kâğıda yazmak ve sonra Excel'de yeniden kurmak yaklaşık 35 dakika sürer — ve size para kaybettiren hata her zaman ölçmede değil aktarmada olur. Metraj bunu yaklaşık 90 saniyeye indirir: odayı yazın, toplamı okuyun. 11 malzeme türü, 119 otomatik test yeşil; PDF, CSV, JSON ve PNG çıktısı. Tarayıcıda çalışır, kurulum ve hesap istemez, veriler cihazınızda kalır.",
+  "baslik": "Müşteriye Yanlış Fiyat Verip Zarar Etmeye Son: Ölçüyü Girdiğiniz An Metraj, Malzeme Hesabı ve PDF Teklifi Otomatik Alın",
+  "sunum": "Metre, kağıt ve Excel arasında kaybolmak yerine rakamı müşterinin önünde verirsin. Oda ölçüsünü yaz; boşluklar ve kolonlar otomatik düşülür. Net alan 11 malzemeye, paket sayısına, malzeme + işçilik maliyetine ve rapora dönüşür.",
   "kanit": {
     "oncekiEtiket": "Metre, kağıt, sonra Excel",
     "oncekiDakika": 35,
@@ -20,16 +20,16 @@
   },
   "hikayeler": [
     {
-      "baslik": "Bir kez yazın, gerisi ölçülü gelsin",
-      "metin": "Oda ölçüleri kendiliğinden zemin, tavan ve duvar alanlarına dönüşür; elle çarpılan bir şey olmaz, kâğıtla tablo arasında yanlış yazılan bir sayı da."
+      "baslik": "Bir Kez Yaz, Gerisi Ölçülü Gelsin",
+      "metin": "Genişlik, uzunluk, yükseklik bir kez girilir; zemin, tavan ve dört duvar 2B ve 3B'de ölçülü olarak karşınıza gelir. Fiyatlamaya hazır."
     },
     {
-      "baslik": "Fiyatladığınız brüt alan mı, net mi?",
-      "metin": "Net. Kapı ve pencereler yerleştirildikçe duvar alanından düşülür; tutan bir teklifle sonradan açıklamak zorunda kaldığınız teklif arasındaki fark budur."
+      "baslik": "Net Alan, Sağlam Teklif",
+      "metin": "Kapı, pencere, kolon ve kiriş kaba alandan kendiliğinden düşer. Her malzeme aynı net alan üzerinden hesaplanır; teklif kaba tahmine dayanmaz."
     },
     {
-      "baslik": "Rakam değişti. Toplam da döner",
-      "metin": "Bir ölçüyü değiştirirsiniz, ona bağlı bütün değerler yeniden hesaplanır. Müşterinin 'oda 40 cm geniş olsa ne olurdu' sorusu baştan başlama sebebi olmaktan çıkar."
+      "baslik": "Rakam Değişir, Toplam Döner",
+      "metin": "Pazarlık masasında bile hazırsın: bir ölçü ya da fiyat değişsin; miktar, paket, işçilik ve proje toplamı anında döner. Rapor PDF, CSV, JSON, PNG çıkar."
     }
   ],
   "magazaUrl": "https://www.bestsketchupplugins.com/tr/plugins/metraj/",
@@ -72,15 +72,15 @@
   "denemeUrl": null,
   "iletisimEposta": "ufuksn79@gmail.com",
   "yazilim": [],
-  "icNot": "Mağazadan senkronlandı (plugin-store/data/plugins.json, 2026-10-14). Metinleri burada elle değiştirmeyin — mağazada değiştirip senkronu tekrar çalıştırın.",
+  "icNot": "Mağazadan senkronlandı (plugin-store/data/plugins.json, 2026-10-28). Metinleri burada elle değiştirmeyin — mağazada değiştirip senkronu tekrar çalıştırın.",
   "en": {
     "ad": "Metraj",
     "ozet": "No hand maths behind the quote: room sizes in, materials and costs out.",
     "aciklama": null,
     "slogan": null,
     "fiyatNot": null,
-    "baslik": "The tape measure, the notepad, then the spreadsheet that gets it wrong at midnight.",
-    "sunum": "Measuring a room, writing it on paper and then rebuilding it in Excel takes about 35 minutes — and the error that costs you money is always in the transcription, not the measuring. Metraj turns it into roughly 90 seconds: type the room, read the total. 11 material types, 119 automated tests green, with PDF, CSV, JSON and PNG output. It runs in the browser with no installation and no account, and your data stays on your device.",
+    "baslik": "No More Losing Money on a Wrong Quote: Get Quantities, Materials and a PDF Quote the Moment You Enter the Sizes",
+    "sunum": "Instead of juggling a tape, a notepad and Excel, you give the client the figure on the spot. Type room sizes; openings and columns come off automatically. Net areas become 11 materials, packs, material and labour cost, and a printable report.",
     "kanit": {
       "oncekiEtiket": "Tape measure, notepad, then Excel",
       "oncekiDakika": 35,
@@ -89,16 +89,16 @@
     },
     "hikayeler": [
       {
-        "baslik": "Type it once, let the rest be measured",
-        "metin": "Room dimensions become floor, ceiling and wall areas automatically, so nothing is multiplied by hand and nothing is mistyped between the notepad and the sheet."
+        "baslik": "Type It Once, the Rest Comes Measured",
+        "metin": "Width, length, height — once. Floor, ceiling and four walls come back measured, in 2D and 3D, ready to price."
       },
       {
-        "baslik": "Is it the gross area or the net you are pricing?",
-        "metin": "The net. Doors and windows are deducted from the wall area as you place them, which is the difference between a quote that holds and one you have to explain later."
+        "baslik": "Net Area, a Sound Quote",
+        "metin": "Doors, windows, columns and beams come off the gross area on their own. Every material works from the same net figure, so the quote never rests on a rough guess."
       },
       {
-        "baslik": "The number changed. So does the total",
-        "metin": "Change a dimension and every dependent figure recalculates. A client asking 'what if the room were 40 cm wider' stops being a reason to start again."
+        "baslik": "Change One Number, the Totals Follow",
+        "metin": "Ready even at the negotiating table: move a wall or edit a price, and quantity, packs, labour and project totals follow — then leave as PDF, CSV, JSON or PNG."
       }
     ],
     "magazaUrl": "https://www.bestsketchupplugins.com/en/plugins/metraj/",

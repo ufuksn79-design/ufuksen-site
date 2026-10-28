@@ -5,13 +5,13 @@
   "durum": "aktif",
   "ilerleme": null,
   "surum": "2.2.1",
-  "sira": 9,
+  "sira": 12,
   "yayinda": true,
   "ozet": "Kıvrım kıvrım modellemeden: üç tıkla perde, korniş ve teklif.",
   "aciklama": null,
   "slogan": null,
-  "baslik": "Perdesiz pencere bir deliktir. Perdeliyse, birinin yaşadığı bir odadır.",
-  "sunum": "Bir iç mekân görselini CAD çiziminden ayıran şey tekstildir ve neredeyse her zaman atlanan şey de odur — çünkü bir perdeyi elle modelleyip kumaşını ölçmek yaklaşık 35 dakika sürer. PerdeNeşe Studio ikisini birden yaklaşık 40 saniyede yapar: üç tık, metraj içinde. 19 sistem, 826 otomatik test yeşil, Türkçe, İngilizce ve İspanyolca, SketchUp 2021-2026.",
+  "baslik": "Kumaş Kıvrımlarını Tek Tek Modellemeden: Üç Tıkla Perde, Korniş ve Teklif Hazır",
+  "sunum": "Perdesi takılı bir pencere odayı bitmiş gösterir; çıplak cam sunumu yarım bırakır. 19 parametrik perde ve stor sistemi: hepsi düzenlenebilir kalır, kumaşını m² olarak kendi ölçer, oda oda CSV ve yazdırılabilir HTML teklif çıkarır.",
   "kanit": {
     "oncekiEtiket": "Bir perdeyi elle modelleyip kumaşını ölçmek",
     "oncekiDakika": 35,
@@ -20,16 +20,16 @@
   },
   "hikayeler": [
     {
-      "baslik": "Üç tık, giyinmiş bir pencere",
-      "metin": "Başlangıç, genişlik, yükseklik — perde kendini gerçek kıvrımlarla kurar; kumaş dokusu giydirilmiş düz bir yüzeyle değil. Görsele derinliğini veren şey de budur."
+      "baslik": "Üç Tık, Giyinmiş Bir Pencere",
+      "metin": "Başlangıç noktası, genişlik, Z yüksekliği. Üç sol tık ve pencere giyinir: pile, ray, dirsek, halka — tek geri alma adımında. Kıvrımları tek tek modellemezsin."
     },
     {
-      "baslik": "Bırakın müşteri yine fikir değiştirsin",
-      "metin": "Tülden roman perdeye ya da dikeye geçersiniz, perde yerinde yeniden kurulur. On dokuz sistem, konuşmanın 'hangisi' üzerine olması demektir; 'vakit var mı' üzerine değil."
+      "baslik": "Müşteri Fikir Değiştirsin, Perde Yerinde Kalsın",
+      "metin": "Perde parametrik kalır. Sağ tık, ayarları düzenle; yerinde yeniden kurulur: yeni kat sıklığı, yeni pile, yeni ray, aynı yerde. Her yeni istek bir ayar kadar uzakta."
     },
     {
-      "baslik": "Teklif modelle birlikte hazır",
-      "metin": "Kumaş, donanım, kornişi ve birleşim miktarları üretim sırasında hesaplanır; verdiğiniz fiyat az önce gösterdiğiniz perdeye dayanır."
+      "baslik": "Teklif, Modelle Birlikte Hazır",
+      "metin": "Kumaş m²'si ve 80'den fazla donanım kalemi, oda oda — modellerken ölçülür, Excel'e hazır CSV ve yazdırılabilir teklif olur. Kumaşı ayrıca ölçmezsin."
     }
   ],
   "magazaUrl": "https://www.bestsketchupplugins.com/tr/plugins/curtain-craft/",
@@ -75,15 +75,15 @@
   "yazilim": [
     "sketchup"
   ],
-  "icNot": "Mağazadan senkronlandı (plugin-store/data/plugins.json, 2026-10-14). Metinleri burada elle değiştirmeyin — mağazada değiştirip senkronu tekrar çalıştırın.",
+  "icNot": "Mağazadan senkronlandı (plugin-store/data/plugins.json, 2026-10-28). Metinleri burada elle değiştirmeyin — mağazada değiştirip senkronu tekrar çalıştırın.",
   "en": {
     "ad": "PerdeNeşe Studio",
     "ozet": "No fold-by-fold modelling: three clicks, curtain, rail and quote.",
     "aciklama": null,
     "slogan": null,
     "fiyatNot": null,
-    "baslik": "A window without curtains is a hole. With them, it is a room someone lives in.",
-    "sunum": "Soft furnishing is what separates an interior visual from a CAD drawing, and it is almost always the thing left out — because modelling one curtain by hand and then measuring its fabric takes about 35 minutes. PerdeNeşe Studio does both in roughly 40 seconds: three clicks, take-off included. 19 systems, 826 automated tests green, Turkish, English and Spanish, SketchUp 2021 through 2026.",
+    "baslik": "Without Modelling Every Fold: Curtain, Rail and Quote Ready in Three Clicks",
+    "sunum": "A dressed window makes the room look finished; bare glass leaves the presentation half done. 19 parametric curtain and blind systems that stay editable, measure their own fabric in m², and export a room-by-room CSV plus a printable HTML quote.",
     "kanit": {
       "oncekiEtiket": "Modelling one curtain by hand, then measuring its fabric",
       "oncekiDakika": 35,
@@ -92,16 +92,16 @@
     },
     "hikayeler": [
       {
-        "baslik": "Three clicks, a dressed window",
-        "metin": "Start point, width, height — the curtain builds itself with real folds rather than a flat plane wearing a fabric texture, which is what gives the render its depth."
+        "baslik": "Three Clicks, a Dressed Window",
+        "metin": "Start point, width, Z height. Three left clicks and the window is dressed — pleats, rail, brackets, rings — in a single undo step. No modelling folds one by one."
       },
       {
-        "baslik": "Let the client change their mind, again",
-        "metin": "Switch from sheer to roman or vertical and the curtain rebuilds in place. Nineteen systems means the conversation is about which one, not about whether there is time."
+        "baslik": "Let the Client Change Their Mind",
+        "metin": "The curtain stays parametric. Right-click, edit settings, and it rebuilds in place — new fullness, new heading, new rail, same spot. Every new request is one setting away."
       },
       {
-        "baslik": "The quote is ready with the model",
-        "metin": "Fabric, hardware, track and joint quantities are calculated as it builds, so the price you quote is grounded in the curtain you just showed them."
+        "baslik": "The Quote Is Ready With the Model",
+        "metin": "Fabric m² and 80+ hardware lines, room by room — measured as you model, exported as Excel-ready CSV and a printable quote. No measuring fabric separately."
       }
     ],
     "magazaUrl": "https://www.bestsketchupplugins.com/en/plugins/curtain-craft/",

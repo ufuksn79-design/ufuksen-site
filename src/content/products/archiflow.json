@@ -10,8 +10,8 @@
   "ozet": "Planı bir kez çiz; duvarı kaydır, bina kendini yeniden kursun.",
   "aciklama": null,
   "slogan": null,
-  "baslik": "Bir duvarı taşıyın, model günün geri kalanında sizi cezalandırsın.",
-  "sunum": "Her mimari modelin sessiz vergisi budur: duvar taşınır, sonra döşeme, tavan, süpürgelik, kapılar ve metrajlar elle onarılır — tek duvar için yaklaşık 30 dakika. ArchiFlow Studio bunun yerine modeli tepkili yapar. Duvarı taşırsınız, model yaklaşık 2 saniyede kendini onarır; yeniden kurulum yaklaşık 150 ms, beş stüdyo gömülü ve başka eklentiye bağımlılık yok. SketchUp 2021-2026.",
+  "baslik": "Tek Bir Duvar Kaydı Diye Bütün Modeli Baştan Çizmek Zorunda Değilsiniz",
+  "sunum": "Müşterin seni tasarımın için seçti, duvar düzeltmen için değil: “bu duvar biraz kaysın” dediğinde baştan çizmezsin. Çizdiğin plan parametrik binaya dönüşür: duvar, boşluk, kolon, kiriş, merdiven, döşeme ve çatı, bir duvarı oynattıktan 150 ms sonra birbirini yeniden kurar.",
   "kanit": {
     "oncekiEtiket": "Bir duvarı taşı, sonra bütün modeli elle onar",
     "oncekiDakika": 30,
@@ -20,16 +20,16 @@
   },
   "hikayeler": [
     {
-      "baslik": "Plandan binaya, tek tuşla",
-      "metin": "Duvarlar, döşemeler, çatılar, merdivenler ve boşluklar birbirine bağlı bir bina olarak üretilir; yalnızca ilişkili görünen ayrı gruplar olarak değil. Onları bir arada tutan şey modelin kendisidir, nasıl çizdiğinizi hatırlamanız değil."
+      "baslik": "Plandan Binaya, Tek Tuşla",
+      "metin": "Planı çiz, 2B→3B'ye bas. Duvarlar gönyelenir, odalar kapanır, döşeme ve çatı kendiliğinden gelir. İt/Çek yok, elle delik açmak yok; akşamın modellemeye değil fikre kalır."
     },
     {
-      "baslik": "Revizyonlar neden gece yapılır?",
-      "metin": "Çünkü modeli elle onarmak, biri sizinle konuşurken yapılabilecek bir iş değildir. Bina değişikliğe kendi tepki verdiğinde revizyon toplantıdan sonra değil toplantının içinde olur."
+      "baslik": "Revizyon Geceleri Bitti",
+      "metin": "Duvarı SketchUp'ın kendi Taşı aracıyla oynat. 150 ms sonra köşeler, boşluklar, döşeme, çatı ve süpürgelik tek Ctrl+Z içinde yeniden kurulur; sen sunuma geçersin."
     },
     {
-      "baslik": "Bina kadar güncel metraj",
-      "metin": "Alanlar ve hacimler canlı modelden okunur; siz bu haftanın tasarımını sunarken cetvel sessizce geçen haftanınkini anlatmaz."
+      "baslik": "Metraj, Bina Kadar Güncel",
+      "metin": "Duvar, kapı, pencere, oda, döşeme, çatı, kolon ve perde; beton m³'üyle birlikte modelden CSV metraj olarak çıkar. Revizyondan sonra yeniden saymazsın."
     }
   ],
   "magazaUrl": "https://www.bestsketchupplugins.com/tr/plugins/archiflow/",
@@ -75,15 +75,15 @@
   "yazilim": [
     "sketchup"
   ],
-  "icNot": "Mağazadan senkronlandı (plugin-store/data/plugins.json, 2026-10-14). Metinleri burada elle değiştirmeyin — mağazada değiştirip senkronu tekrar çalıştırın.",
+  "icNot": "Mağazadan senkronlandı (plugin-store/data/plugins.json, 2026-10-28). Metinleri burada elle değiştirmeyin — mağazada değiştirip senkronu tekrar çalıştırın.",
   "en": {
     "ad": "ArchiFlow Studio",
     "ozet": "Draw the plan once; move a wall and the building rebuilds itself.",
     "aciklama": null,
     "slogan": null,
     "fiyatNot": null,
-    "baslik": "Move one wall and the model punishes you for the rest of the day.",
-    "sunum": "That is the quiet tax on every architectural model: the wall moves, and then the floor, the ceiling, the skirting, the doors and the quantities all have to be repaired by hand — about 30 minutes for one wall. ArchiFlow Studio makes the model reactive instead. You move the wall and it repairs itself in roughly 2 seconds, rebuilding in about 150 ms, with five studios built in and no dependency on other extensions. SketchUp 2021 through 2026.",
+    "baslik": "One Wall Moved Doesn’t Mean Redrawing the Whole Model",
+    "sunum": "Your client chose you for your design, not for fixing walls: when they say “move this wall a little”, you don’t redraw. A drawn plan becomes a parametric building: walls, openings, columns, beams, stairs, slabs and roofs rebuild each other 150 ms after you move anything.",
     "kanit": {
       "oncekiEtiket": "Move one wall, then repair the whole model by hand",
       "oncekiDakika": 30,
@@ -92,16 +92,16 @@
     },
     "hikayeler": [
       {
-        "baslik": "From plan to building, in one press",
-        "metin": "Walls, slabs, roofs, stairs and openings are generated as a connected building rather than as separate groups that only look related. What holds them together is the model, not your memory of how you drew it."
+        "baslik": "From Plan to Building in One Press",
+        "metin": "Draw the plan, press 2D→3D. Walls miter, rooms close, slab and roof arrive. No push/pull, no holes cut by hand, so your evening goes to ideas, not modelling."
       },
       {
-        "baslik": "Why do revisions happen at night?",
-        "metin": "Because repairing a model by hand cannot be done while someone is talking to you. When the building reacts to the change itself, the revision happens in the meeting instead of after it."
+        "baslik": "No More Revision Nights",
+        "metin": "Move a wall with SketchUp's own Move tool. 150 ms later corners, openings, slab, roof and skirting rebuild — inside one Ctrl+Z — and you move on to the presentation."
       },
       {
-        "baslik": "Quantities as current as the building",
-        "metin": "Areas and volumes are read from the live model, so the schedule does not quietly describe last week's design while you present this week's."
+        "baslik": "A Take-Off as Current as the Building",
+        "metin": "Walls, doors, windows, rooms, slab, roof, columns and curtains leave the model as a CSV take-off — concrete m³ included. No recounting after a revision."
       }
     ],
     "magazaUrl": "https://www.bestsketchupplugins.com/en/plugins/archiflow/",

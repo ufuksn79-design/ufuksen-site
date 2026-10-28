@@ -5,13 +5,13 @@
   "durum": "aktif",
   "ilerleme": null,
   "surum": "1.17.0",
-  "sira": 5,
+  "sira": 6,
   "yayinda": true,
   "ozet": "Temizlikle uğraşmadan: her format içeri, tertemiz geometri dışarı.",
   "aciklama": null,
   "slogan": null,
-  "baslik": "Size gönderilen model sorun değil. Onu temizlemeye harcadığınız saat sorun.",
-  "sunum": "Tedarikçi FBX gönderir, müşteri OBJ gönderir, mobilya GLB olarak gelir — ve her biri SketchUp'a ters yüzlü, malzemesi kaybolmuş ve binanızın tamamından fazla üçgen taşıyan bir ağ olarak düşer. İçe aktarılan bir modeli elle temizlemek yaklaşık 35 dakika sürer. Evrensel Dönüştürücü dosyayı kuyruğa bırakır ve yaklaşık 45 saniyede size bir rapor verir: 16 aşamalı hat, 7 giriş biçimi, 819 bin üçgenlik bir modelde yaklaşık 3 kat hız. SketchUp 2024-2027, Windows ve Mac.",
+  "baslik": "Bozuk Geometri ve Saatlerce Temizlikle Uğraşmadan: Her Formatı Tertemiz SketchUp Modeline Çevirin",
+  "sunum": "Aldığın model sunuma hazır gelir; kırık yüzlerle ve dağınık kenarlarla geceni harcamazsın. FBX, OBJ, 3DS, DAE, STL ve GLTF/GLB dosyaları kapatılamayan 16 aşamalı optimizasyon hattından geçer; modele tertemiz, kaynaklı, dokulu geometri olarak iner.",
   "kanit": {
     "oncekiEtiket": "İçe aktarılan bir modeli elle temizlemek",
     "oncekiDakika": 35,
@@ -20,16 +20,16 @@
   },
   "hikayeler": [
     {
-      "baslik": "Hangi biçim gelirse gelsin",
-      "metin": "FBX, OBJ, 3DS, DAE, STL ve glTF/GLB aynı hattan geçer; hangi tedarikçi için hangi dönüştürücüyü açacağınızı akılda tutmayı bırakırsınız."
+      "baslik": "Hangi Format Gelirse Gelsin",
+      "metin": "FBX, OBJ, 3DS, DAE, STL, GLTF/GLB. Altı format ailesi, altı okuyucu, tek ortak mesh modeli: metre, Z yukarı. Dosya nereden gelirse gelsin, SketchUp'ta aynı düzende açılır."
     },
     {
-      "baslik": "Temizliği her seferinde kim yapıyor?",
-      "metin": "O yapıyor. Burada optimizasyon isteğe bağlı değildir — hiçbir model ham geometri olarak aktarılmaz — yani modelinize düşen dosya, hayatta kalmanız gereken bir şey değil, içinde çalışabileceğiniz bir şeydir."
+      "baslik": "Temizliği O Yapar, Her Seferinde",
+      "metin": "Her dosya 16 aşamadan geçer: kaynak, temizlik, sadeleştirme, yumuşatma, son kontrol. Profil yalnızca şiddeti değiştirir; hiçbir dosya temizlenmeden modeline girmez."
     },
     {
-      "baslik": "Dokular ait olduğu yere oturur",
-      "metin": "Malzemeler ve UV'ler çeviride kaybolmak yerine taşınır; içe aktarılan bir sandalyenin gri gelip elle yeniden kaplanmasının olağan sebebi de budur."
+      "baslik": "Dokular Yerine Oturur",
+      "metin": "Yan klasörleri tarar, her parçaya diffuse dokusunu eşler, UV'siz gelen parçalara kutu/silindir/düzlem izdüşümü uygular. Malzemeleri elle yeniden atamakla uğraşmazsın."
     }
   ],
   "magazaUrl": "https://www.bestsketchupplugins.com/tr/plugins/universal-converter/",
@@ -75,15 +75,15 @@
   "yazilim": [
     "sketchup"
   ],
-  "icNot": "Mağazadan senkronlandı (plugin-store/data/plugins.json, 2026-10-14). Metinleri burada elle değiştirmeyin — mağazada değiştirip senkronu tekrar çalıştırın.",
+  "icNot": "Mağazadan senkronlandı (plugin-store/data/plugins.json, 2026-10-28). Metinleri burada elle değiştirmeyin — mağazada değiştirip senkronu tekrar çalıştırın.",
   "en": {
     "ad": "Universal Converter",
     "ozet": "No hours of clean-up: any mesh in, clean SketchUp geometry out.",
     "aciklama": null,
     "slogan": null,
     "fiyatNot": null,
-    "baslik": "The model you were sent is not the problem. The hour you spend cleaning it is.",
-    "sunum": "A supplier sends an FBX, a client sends an OBJ, the furniture arrives as GLB — and each one lands in SketchUp as a mesh with flipped faces, lost materials and more triangles than the rest of your building put together. Cleaning one imported model by hand runs about 35 minutes. Universal Converter drops the file into a queue and hands you a report in roughly 45 seconds: a 16-stage pipeline, 7 input formats, around 3x faster on an 819,000-triangle model. SketchUp 2024 through 2027, Windows and Mac.",
+    "baslik": "No Broken Geometry, No Hours of Clean-Up: Turn Any Format Into a Clean SketchUp Model",
+    "sunum": "The model you bring in arrives ready for the presentation, with no night lost to broken faces and stray edges. FBX, OBJ, 3DS, DAE, STL and GLTF/GLB run through a 16-stage pipeline you cannot switch off, and land in your model as clean, welded, textured geometry.",
     "kanit": {
       "oncekiEtiket": "Hand-cleaning one imported mesh",
       "oncekiDakika": 35,
@@ -92,16 +92,16 @@
     },
     "hikayeler": [
       {
-        "baslik": "Whatever format turns up",
-        "metin": "FBX, OBJ, 3DS, DAE, STL and glTF/GLB all go through the same pipeline, so you stop keeping a mental list of which converter to open for which supplier."
+        "baslik": "Whatever Format Arrives",
+        "metin": "FBX, OBJ, 3DS, DAE, STL, GLTF/GLB. Six format families, six readers, one common mesh model in metres, Z-up. Wherever the file comes from, it lands in SketchUp the same orderly way."
       },
       {
-        "baslik": "Who does the cleanup, every time?",
-        "metin": "It does. Optimisation is not optional here — no model is imported as raw geometry — so the file that lands in your model is already something you can work in rather than something you must survive."
+        "baslik": "Clean-Up Done for You, Every Time",
+        "metin": "Sixteen stages run on every file: weld, clean, simplify, smooth, QC. Profiles change the pressure, never the pipeline, so no file reaches your model uncleaned."
       },
       {
-        "baslik": "Textures end up where they belong",
-        "metin": "Materials and UVs are carried through instead of being lost in translation, which is the usual reason an imported chair arrives grey and has to be re-textured by hand."
+        "baslik": "Textures Land Where They Belong",
+        "metin": "It scans the maps and textures folders, matches a diffuse image per part, and projects UVs onto parts that arrived with none. No reassigning materials by hand."
       }
     ],
     "magazaUrl": "https://www.bestsketchupplugins.com/en/plugins/universal-converter/",

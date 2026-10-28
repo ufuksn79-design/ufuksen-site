@@ -5,13 +5,13 @@
   "durum": "aktif",
   "ilerleme": null,
   "surum": "1.19.0",
-  "sira": 3,
+  "sira": 4,
   "yayinda": true,
   "ozet": "Panel panel çizmeden: ölçüyü yaz; dolap, teklif, CNC dosyaları hazır.",
   "aciklama": null,
   "slogan": null,
-  "baslik": "Dolap oturma odasında satılır, atölyede kaybedilir.",
-  "sunum": "İşi, müşteriye kendini kullanırken görebileceği bir dolabı göstererek alırsınız. Kârı üç hafta sonra, çizimle kesim listesini iki ayrı el yazdığı için bir panel 18 mm kısa kesildiğinde kaybedersiniz. Her paneli elle çizip sonra kesim listesini yazmak yaklaşık 120 dakika sürer. Dolap Sihirbazı, ölçüden Modele Ekle'ye yaklaşık 90 saniyede gider; 20 bileşeni 131 katıya çevirir, 12 kaplama ve 7 kapak stiliyle — 164 test yeşil, SketchUp 2017 ve üzeri, Windows ve macOS.",
+  "baslik": "Müşteri Karşısındayken 2 Dakikada Mutfak/Dolap Çizin, Aynı Saniyede CNC Kesim Listesini ve Teklifi Oluşturun",
+  "sunum": "Müşteri karşındayken ölçüyü yazarsın; o masadan kalkmadan dolabı ve teklifi görür, atölyeye giden kesim ölçüsü çizimdekiyle aynıdır. Ölçü, model, teklif, CNC tek SketchUp penceresinde. Bir sayıyı değiştir; her parça formülden yeniden kurulur ve modele gerçek katı olarak iner.",
   "kanit": {
     "oncekiEtiket": "Her paneli elle çizmek, sonra kesim listesini yazmak",
     "oncekiDakika": 120,
@@ -20,16 +20,16 @@
   },
   "hikayeler": [
     {
-      "baslik": "Bir kez çizin, atölye zaten almış olsun",
-      "metin": "Model, teklif ve kesim listesi aynı hesaptan çıkar; testeredeki panel, görseldeki paneldir. Delik konumları kopyalanmaz, tek yerde hesaplanır."
+      "baslik": "Bir Kez Çiz, Atölyeye Hazır",
+      "metin": "Tek tıkla bütün dolap SketchUp'a gerçek katı olarak iner: gruplu, etiketli, her parça kendi kesim ölçüsüyle adlandırılmış. Atölyede \"bu parça hangisi\" sorusu kalmaz."
     },
     {
-      "baslik": "Niş yerinde 2 cm dar çıktı. Şimdi ne olacak?",
-      "metin": "Yeni genişliği yazarsınız. Bölmeler, kapaklar, çekmeceler ve kesim listesi birlikte uyarlanır; bir akşamlık çizimi baştan yapmazsınız. Sahadaki gerçeklik bir ceza olmaktan çıkar."
+      "baslik": "Ölçü Değişir, Emeğin Boşa Gitmez",
+      "metin": "Bir ölçüyü değiştir; her parça formülden yeniden kurulur, hiçbir şey ölçeklenmez. Seçiliyi Güncelle yerinde yeniler, kamera oynamaz; müşteri fikir değiştirse de sen hazırsın."
     },
     {
-      "baslik": "Teklif masada, kesim listesi makinede",
-      "metin": "Plaka, bant, donanım ve işçilik gerçek miktarlardan fiyatlanır; kesim verisi makinenizin beklediği biçimde çıkar. Tek iş, tek doğruluk kaynağı."
+      "baslik": "Teklif Masada, Kesim Listesi Makinede",
+      "metin": "Aynı hesaptan teklif, kesim planı, kesim listesi, delik şeması ve DXF çıkar. Hiçbir şeyi yeniden ölçmezsin; konuşulan fire değil, kazanç olur."
     }
   ],
   "magazaUrl": "https://www.bestsketchupplugins.com/tr/plugins/wardrobe-studio/",
@@ -75,15 +75,15 @@
   "yazilim": [
     "sketchup"
   ],
-  "icNot": "Mağazadan senkronlandı (plugin-store/data/plugins.json, 2026-10-14). Metinleri burada elle değiştirmeyin — mağazada değiştirip senkronu tekrar çalıştırın.",
+  "icNot": "Mağazadan senkronlandı (plugin-store/data/plugins.json, 2026-10-28). Metinleri burada elle değiştirmeyin — mağazada değiştirip senkronu tekrar çalıştırın.",
   "en": {
     "ad": "CabinetWizard",
     "ozet": "No panel-by-panel drawing: type the size, get quote and CNC files.",
     "aciklama": null,
     "slogan": null,
     "fiyatNot": null,
-    "baslik": "The wardrobe is sold in the living room and lost in the workshop.",
-    "sunum": "You win the job by showing the client a wardrobe they can see themselves using. You lose the margin three weeks later, when a panel is cut 18 mm short because the drawing and the cutting list were written by two different hands. Drawing every panel and then typing the cutting list takes about 120 minutes. CabinetWizard goes from dimensions to Add to Model in roughly 90 seconds, turning 20 components into 131 solids, with 12 finishes and 7 door styles — 164 tests green, SketchUp 2017 and newer, Windows and macOS.",
+    "baslik": "Draw a Kitchen or Wardrobe in 2 Minutes in Front of Your Client, and Get the CNC Cut List and Quote in the Same Second",
+    "sunum": "You type the size with the client sitting across from you; they see the wardrobe and the quote before they leave the table, and the cut sizes that reach the workshop match the drawing. Dimensions, model, quote, CNC in one SketchUp window. Change a number and every part rebuilds from formulas, then lands in your model as real solids.",
     "kanit": {
       "oncekiEtiket": "Modelling every panel by hand, then typing the cutting list",
       "oncekiDakika": 120,
@@ -92,16 +92,16 @@
     },
     "hikayeler": [
       {
-        "baslik": "Draw once, and the workshop already has it",
-        "metin": "The model, the quote and the cutting list come out of the same calculation, so the panel on the saw is the panel in the render. Hole positions are computed in one place rather than transcribed."
+        "baslik": "Drawn Once, Ready for the Workshop",
+        "metin": "One click drops the whole wardrobe into SketchUp as real solids — grouped, tagged, every part named with its own cut size. Nobody in the workshop has to ask which part is which."
       },
       {
-        "baslik": "The alcove measured 2 cm narrower on site. Now what?",
-        "metin": "You type the new width. Bays, doors, drawers and the cut list adapt together instead of you reworking an evening's drawing. Site reality stops being a punishment."
+        "baslik": "Change a Number, Lose Nothing",
+        "metin": "Change a dimension and every part is rebuilt from formulas — nothing is scaled. Update Selected refits it in place, camera untouched, so a client's change of mind finds you ready."
       },
       {
-        "baslik": "Quote on the table, cut list on the machine",
-        "metin": "Board, edge banding, hardware and labour are priced from real quantities, and the cutting data leaves as the format your machine expects. One job, one source of truth."
+        "baslik": "Quote on the Table, Cut List at the Machine",
+        "metin": "The same build result produces the quote, the nesting layout, the cutting list, the drilling schedule and the DXF. Nothing gets re-measured, so the talk is about profit, not waste."
       }
     ],
     "magazaUrl": "https://www.bestsketchupplugins.com/en/plugins/wardrobe-studio/",

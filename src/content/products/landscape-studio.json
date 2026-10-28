@@ -5,13 +5,13 @@
   "durum": "aktif",
   "ilerleme": null,
   "surum": "1.6.0",
-  "sira": 10,
+  "sira": 13,
   "yayinda": true,
   "ozet": "Bir kez şekillendir, tüm alan uysun: her değişiklikte düzeltmek yok.",
   "aciklama": null,
   "slogan": null,
-  "baslik": "Peyzaj, projeyi bitmiş gösteren şeydir — ve ilk kesilen şeydir.",
-  "sunum": "Araziyi Sandbox'la kurup sonra 300 bitkiyi tek tek yerleştirmek yaklaşık 210 dakika sürer; bu yüzden bitkilendirme genelde üç kopya ağaç ve yeşil bir yüzeye dönüşür. Peyzaj Stüdyosu bunu yaklaşık 45 saniyeye indirir: ızgarayı şekillendirin, zonu boyayın, karışımı dağıtın. Türkiye'ye özgü 151 bitki, 12 arazi fırçası, 571 otomatik test yeşil — SketchUp 2021-2026.",
+  "baslik": "Araziyi Her Değişiklikte Baştan Düzeltmeden: Bir Kez Şekillendirin, Bütün Alan Peşinden Gelsin",
+  "sunum": "Projen gri bir kutu gibi değil; bitkisi, yolu ve suyuyla yaşayan bir yer gibi görünür. Arazi, zonlar, bitkiler, yollar, duvarlar, su ve sulama aynı yükseklik ızgarasını okur; metraj raporu da kendiliğinden çıkar.",
   "kanit": {
     "oncekiEtiket": "Araziyi Sandbox'la kur, sonra 300 bitkiyi tek tek yerleştir",
     "oncekiDakika": 210,
@@ -20,16 +20,16 @@
   },
   "hikayeler": [
     {
-      "baslik": "Tek zemin, bütünlüklü bir alan",
-      "metin": "Arazi, yollar, duvarlar ve bitkilendirme aynı yüzey üzerinde durur; model, bir düzlemin üstünde yüzen nesneler değil bir yer gibi okunur."
+      "baslik": "Tek Zemin, Uyumlu Bir Alan",
+      "metin": "On iki fırça tek bir yükseklik ızgarasını yoğurur. Yollar, duvarlar, su ve her bitki aynı zemini okur; hiçbir şey havada kalmaz."
     },
     {
-      "baslik": "Yerleşim bir gün önce değişirse?",
-      "metin": "Zonu yeniden boyarsınız. Bitkilendirme silinip baştan yerleştirilmek yerine yeniden dağılır; geç gelen peyzaj revizyonlarının korkutucu olmaktan çıkmasının tek sebebi budur."
+      "baslik": "Son Dakika Revizyonu Korkutmaz",
+      "metin": "Eğimi işin sonunda bile değiştir. Rampalar %8'de kalır, duvarlar yeni yüksekliğe göre büyür, yollar araziye yeniden oturur; emeğin bozulmaz."
     },
     {
-      "baslik": "Bitki listesi sayılmaz, yazılır",
-      "metin": "Türlere göre bitki adetleri modelden rapor olarak çıkar; teslim ettiğiniz miktarlar çizimde gerçekten duran şeyle örtüşür."
+      "baslik": "Rapor Hazır, Tablo Yok",
+      "metin": "Sayım senin işin değil: alanlar, bitki adetleri, kazı ve dolgu HTML veya CSV raporu olarak çıkar. Tabloya elle hiçbir şey yazılmaz."
     }
   ],
   "magazaUrl": "https://www.bestsketchupplugins.com/tr/plugins/landscape-studio/",
@@ -76,15 +76,15 @@
   "yazilim": [
     "sketchup"
   ],
-  "icNot": "Mağazadan senkronlandı (plugin-store/data/plugins.json, 2026-10-14). Metinleri burada elle değiştirmeyin — mağazada değiştirip senkronu tekrar çalıştırın.",
+  "icNot": "Mağazadan senkronlandı (plugin-store/data/plugins.json, 2026-10-28). Metinleri burada elle değiştirmeyin — mağazada değiştirip senkronu tekrar çalıştırın.",
   "en": {
     "ad": "Landscape Studio",
     "ozet": "No fixing after every edit: shape the ground once, the site follows.",
     "aciklama": null,
     "slogan": null,
     "fiyatNot": null,
-    "baslik": "The landscape is what makes a project look finished — and it is what gets cut first.",
-    "sunum": "Shaping the terrain in Sandbox and then placing 300 plants one by one takes about 210 minutes, so the planting usually ends up as three copied trees and a green surface. Landscape Studio turns that into roughly 45 seconds: shape the grid, paint the zone, scatter the mix. 151 plants native to Türkiye, 12 terrain brushes, 571 automated tests green — SketchUp 2021 through 2026.",
+    "baslik": "No Fixing the Terrain After Every Change: Shape It Once, and the Whole Site Follows",
+    "sunum": "Your project stops looking like a grey box and reads like a lived-in place, with planting, paths and water. Terrain, zones, plants, paths, walls, water and irrigation all read the same heightfield grid — and the quantities report writes itself.",
     "kanit": {
       "oncekiEtiket": "Sandbox the terrain, then place 300 plants one by one",
       "oncekiDakika": 210,
@@ -93,16 +93,16 @@
     },
     "hikayeler": [
       {
-        "baslik": "One ground, one coherent site",
-        "metin": "Terrain, paths, walls and planting sit on the same surface, so the model reads as a place rather than as objects floating above a plane."
+        "baslik": "One Ground, One Coherent Site",
+        "metin": "Twelve brushes shape one heightfield grid. Paths, walls, water and every plant read that same ground, so nothing is left floating."
       },
       {
-        "baslik": "What if the layout changes the day before?",
-        "metin": "Repaint the zone. The planting redistributes instead of being deleted and placed again, which is the only reason late landscape revisions stop being frightening."
+        "baslik": "Late Changes Don't Scare You",
+        "metin": "Raise the slope late in the job. Ramps hold 8%, walls regrow to the new height, paths re-drape on the ground, and your work stays intact."
       },
       {
-        "baslik": "The schedule is written, not counted",
-        "metin": "Plant counts by species come out of the model as a report, so the quantities you hand over match what is actually on the drawing."
+        "baslik": "The Report Is Ready, No Spreadsheet",
+        "metin": "Counting is not your job: areas, plant counts, cut and fill leave as an HTML or CSV report. Nothing gets retyped into a spreadsheet."
       }
     ],
     "magazaUrl": "https://www.bestsketchupplugins.com/en/plugins/landscape-studio/",

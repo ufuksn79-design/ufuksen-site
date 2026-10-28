@@ -5,13 +5,13 @@
   "durum": "beta",
   "ilerleme": null,
   "surum": "1.0.0",
-  "sira": 17,
+  "sira": 19,
   "yayinda": true,
   "ozet": "Eğim hesabı yok: çizgiyi çiz, korkuluklu ve eğimi kontrollü rampa hazır.",
   "aciklama": null,
   "slogan": null,
-  "baslik": "Rampa hiçbir zaman eskizde olmaz. Her zaman denetlemede olur.",
-  "sunum": "Kimse binayı rampasının etrafında tasarlamaz, kimse de rampasız onaylamaz. Bu yüzden rampa genelde geç gelir, aceleyle çizilir ve korkuluğu eğimi tam takip etmez. Korkuluklu bir rampayı elle modellemek yaklaşık 45 dakika sürer. Rampa Stüdyosu bunu yaklaşık 40 saniyede kurar; 5 kategoride 50 hazır ayar, 8 korkuluk tipi ve 363 otomatik test yeşil, SketchUp 2021-2026.",
+  "baslik": "Eğim Hesabıyla Uğraşmadan: Çizgiyi Çizin, Korkuluklu ve Eğimi Kontrollü Rampa Anında Hazır",
+  "sunum": "Eğim sorulduğunda hesap makinesine değil, ekrandaki rakama bakarsınız. Yol tabanlı rampalar: düz, L/U/Z, dairesel, spiral, helis. 8 korkuluk tipi, bordür ve kaymaz şeritler; her sayı değiştiğinde anında yeniden çözülür.",
   "kanit": {
     "oncekiEtiket": "Korkuluklu bir rampayı elle modellemek",
     "oncekiDakika": 45,
@@ -20,16 +20,16 @@
   },
   "hikayeler": [
     {
-      "baslik": "Eğri hangisi olursa olsun",
-      "metin": "Düz kollar, dönüşlü rampalar ve helis rampalar aynı araçtan çıkar; sahanlıklar ve korkuluklar geometriyi takip eder, sonradan göz kararı oturtulmaz."
+      "baslik": "Hangi Eğri Olursa Olsun",
+      "metin": "Herhangi bir çizgi, yay ya da eğri rampaya dönüşür. Süpürme, tam helis üzerinde bile döşemeyi düz ve genişliği sabit tutar; en iddialı form bile çizdiğin gibi kalır."
     },
     {
-      "baslik": "Rampayı değiştirmeyi kimse neden istemez?",
-      "metin": "Çünkü elle yapınca korkuluğu da yeniden çizmek demektir. Burada eğim, genişlik ya da sahanlık değişir ve bütün takım yeniden kurulur; geç gelen bir düzeltme bir öğleden sonraya değil bir dakikaya mal olur."
+      "baslik": "Değişiklikten Çekinme",
+      "metin": "Rampayı seç, panel ona bağlanır. Eğim, genişlik, korkuluk, bordür — her değişiklik anında yeniden çözülür, tek Ctrl+Z geri alır. Denemek serbest."
     },
     {
-      "baslik": "Hesap yapmadan kurala uygun",
-      "metin": "Hazır ayarlar makul eğim ve sahanlık ilişkilerini taşır; rampa hesaplamak yerine rampa seçersiniz — ve ortaya içiniz rahat gösterebileceğiniz bir şey çıkar."
+      "baslik": "Kurala Uygun, Hesapsız",
+      "metin": "Hesabı siz yapmazsınız: eğim, oran, açı, yükseklik, yatay mesafe ve yürüme boyu siz çizerken okunur; %8'i aşınca uyarı, 9 m'yi aşınca sahanlık ister."
     }
   ],
   "magazaUrl": "https://www.bestsketchupplugins.com/tr/plugins/ramp-studio/",
@@ -76,15 +76,15 @@
   "yazilim": [
     "sketchup"
   ],
-  "icNot": "Mağazadan senkronlandı (plugin-store/data/plugins.json, 2026-10-14). Metinleri burada elle değiştirmeyin — mağazada değiştirip senkronu tekrar çalıştırın.",
+  "icNot": "Mağazadan senkronlandı (plugin-store/data/plugins.json, 2026-10-28). Metinleri burada elle değiştirmeyin — mağazada değiştirip senkronu tekrar çalıştırın.",
   "en": {
     "ad": "Ramp Studio",
     "ozet": "No slope maths: draw a line, get a code-checked ramp, railings included.",
     "aciklama": null,
     "slogan": null,
     "fiyatNot": null,
-    "baslik": "The ramp is never on the sketch. It is always on the inspection.",
-    "sunum": "Nobody designs a building around its ramp, and nobody signs one off without it. That is why it tends to arrive late, drawn in a hurry, with a handrail that does not quite follow the slope. Modelling one ramp with handrails by hand takes about 45 minutes. Ramp Studio builds it in roughly 40 seconds from 50 presets across 5 categories, with 8 handrail types and 363 automated tests green, on SketchUp 2021 through 2026.",
+    "baslik": "No Slope Maths: Draw a Line, and a Railed Ramp With a Checked Slope Is Ready Instantly",
+    "sunum": "When someone asks about the slope, you point to the number on screen, not a calculator. Path-based ramps — straight, L/U/Z, circular, spiral, helical — with 8 railing types, kerbs and anti-slip strips, re-solved live when any number changes.",
     "kanit": {
       "oncekiEtiket": "Hand-modelling one ramp with railings",
       "oncekiDakika": 45,
@@ -93,16 +93,16 @@
     },
     "hikayeler": [
       {
-        "baslik": "Whatever the curve is",
-        "metin": "Straight runs, switchbacks and helical ramps come out of the same tool, with landings and handrails following the geometry instead of being fitted afterwards by eye."
+        "baslik": "Any Curve, a Clean Ramp",
+        "metin": "Any line, arc or curve becomes the ramp. The sweep keeps the deck upright and the width constant — even on a full helix. Even the boldest form stays as you drew it."
       },
       {
-        "baslik": "Why does nobody want to change a ramp?",
-        "metin": "Because by hand it means redrawing the rail too. Here the slope, width or landing changes and the whole assembly rebuilds, so a late correction costs a minute rather than an afternoon."
+        "baslik": "No Fear of Changes",
+        "metin": "Select the ramp and the panel binds to it. Slope, width, railings, kerbs — every change re-solves live, one Ctrl+Z undoes it. Try anything."
       },
       {
-        "baslik": "Compliant without doing the arithmetic",
-        "metin": "Presets carry sensible slope and landing relationships, so you are choosing a ramp rather than calculating one — and the result is something you can show without a knot in your stomach."
+        "baslik": "Inside the Rules, Without the Maths",
+        "metin": "You never do the maths: slope, ratio, angle, rise, run and walking distance are read out as you build — a warning past 8%, a landing past 9 m."
       }
     ],
     "magazaUrl": "https://www.bestsketchupplugins.com/en/plugins/ramp-studio/",

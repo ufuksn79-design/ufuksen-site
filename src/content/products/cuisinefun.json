@@ -1,0 +1,143 @@
+{
+  "slug": "cuisinefun",
+  "ad": "CuisineFun",
+  "tur": "eklenti",
+  "durum": "aktif",
+  "ilerleme": null,
+  "surum": "0.5.0",
+  "sira": 3,
+  "yayinda": true,
+  "ozet": "Kartı seç, duvar boyunca çiz: her seferinde yepyeni, tam döşenmiş bir mutfak.",
+  "aciklama": null,
+  "slogan": null,
+  "baslik": "Toplantıya Müşterinin Âşık Olacağı Bir Mutfakla Gir: Duvara İki Tık, SketchUp’ta Tam Döşenmiş Mutfak",
+  "sunum": "Mutfağı ekranda hazır getiren tasarımcı sen ol. Düz, L, adalı ya da adalı L mutfağı seç, duvarın iki ucuna tıkla; CuisineFun mutfağın tamamını SketchUp’ta kurar: dolaplar, mermer ya da kuvars tezgâh, fayans, Boy modül, ocak ve davlumbaz, evye ve batarya, bar tabureli ve sarkıt lambalı ada, LED şeritler, hatta kahve makinesi. Her çizim yepyeni bir tasarım; çizim biter bitmez kesim listesi, levha yerleşimi ve CNC dosyaları hazır.",
+  "kanit": {
+    "oncekiEtiket": "Mutfağı parça parça modelleyip döşemek, sonra kesim listesini yazmak",
+    "oncekiDakika": 240,
+    "sonrakiEtiket": "Kartı seçip duvarın iki ucuna tıklamak",
+    "sonrakiSaniye": 120
+  },
+  "hikayeler": [
+    {
+      "baslik": "Her çizimde yeni bir mutfak",
+      "metin": "Altı kapak ailesi, on iki renk paleti ve bir stil satırı: Oto, Modern, Klasik, Minimal, İskandinav ya da Lüks. Aynı duvar, yeni çizim, bambaşka bir mutfak; mavi topu çek, mutfak aynı tasarımla uzasın, dolaplar bir usta gibi yeniden dizilsin."
+    },
+    {
+      "baslik": "Son kavanozuna kadar döşenmiş",
+      "metin": "Parçalar arasında kesintisiz akan mermer ve fayans damarları, Boy modülde ankastre fırın ve mikrodalga, ocaklı fırın, altı davlumbaz tipi, seramik evye, şelale tablalı ada, keten ya da deri bar tabureleri, sarkıt lambalar, LED şeritler ve raflarda aromatik bitkiler, kavanozlar, yemek kitapları."
+    },
+    {
+      "baslik": "Bugün çiz, yarın atölyede",
+      "metin": "Çizilen mutfak kesim listesinin ta kendisi: kesim sıralı levha yerleşimi, barkodlu etiket, hırdavat ve kapak listesi, montaj ve mermerci föyü, teklif, CNC dosyaları ve kareli kâğıtta kalemle çizilmiş gibi ölçülü eskiz; hepsi açıp kapatabildiğin, sınırını değiştirebildiğin 16 üretim öncesi kontrolden geçer."
+    }
+  ],
+  "magazaUrl": "https://www.bestsketchupplugins.com/tr/plugins/cuisinefun/",
+  "kapak": null,
+  "galeri": [],
+  "video": null,
+  "uyumluluk": [
+    "SketchUp 2021",
+    "SketchUp 2022",
+    "SketchUp 2023",
+    "SketchUp 2024",
+    "SketchUp 2025",
+    "SketchUp 2026",
+    "Windows"
+  ],
+  "ozellikler": [
+    {
+      "baslik": "Düz, L ve adalı mutfak",
+      "not": "",
+      "ikon": "grid"
+    },
+    {
+      "baslik": "Kesim listesi + CNC + el eskizi",
+      "not": "",
+      "ikon": "grid"
+    },
+    {
+      "baslik": "SketchUp 2021–2026",
+      "not": "",
+      "ikon": "grid"
+    }
+  ],
+  "listeler": [],
+  "vurgular": [
+    "Düz, L ve adalı mutfak",
+    "Kesim listesi + CNC + el eskizi",
+    "SketchUp 2021–2026"
+  ],
+  "sss": [],
+  "fiyat": null,
+  "satinAlmaUrl": null,
+  "denemeUrl": null,
+  "iletisimEposta": "ufuksn79@gmail.com",
+  "yazilim": [
+    "sketchup"
+  ],
+  "icNot": "Mağazadan senkronlandı (plugin-store/data/plugins.json, 2026-10-28). Metinleri burada elle değiştirmeyin — mağazada değiştirip senkronu tekrar çalıştırın.",
+  "en": {
+    "ad": "CuisineFun",
+    "ozet": "Pick a card, draw along the wall: a fully furnished kitchen, new every time.",
+    "aciklama": null,
+    "slogan": null,
+    "fiyatNot": null,
+    "baslik": "Walk Into the Meeting With a Kitchen Your Client Falls For: Two Clicks on the Wall, a Fully Furnished SketchUp Kitchen",
+    "sunum": "Be the designer who arrives with the kitchen already on screen. Pick a straight, L, island or L-with-island kitchen, click the two ends of the wall, and CuisineFun builds all of it in SketchUp: cabinets, marble or quartz worktop, tiles, tall appliance unit, hob and hood, sink and tap, an island with bar stools and pendant lights, LED strips, even the coffee machine. Every drawing is a brand-new design, and the moment it is drawn the cut list, sheet layout and CNC files are ready.",
+    "kanit": {
+      "oncekiEtiket": "Modelling and furnishing a kitchen piece by piece, then typing the cut list",
+      "oncekiDakika": 240,
+      "sonrakiEtiket": "Picking a card and clicking the two ends of the wall",
+      "sonrakiSaniye": 120
+    },
+    "hikayeler": [
+      {
+        "baslik": "A new kitchen with every drawing",
+        "metin": "Six door families, twelve colour palettes and a style row: Auto, Modern, Classic, Minimal, Scandi or Luxe. Same wall, new drawing, a different kitchen; pull the blue ball and it stretches with the same design while the cabinets rearrange like a craftsman would."
+      },
+      {
+        "baslik": "Furnished to the last jar",
+        "metin": "Marble and tile veins that run seamlessly across pieces, built-in oven and microwave in the tall appliance unit, range cooker, six hood types, ceramic farmhouse sink, an island with a waterfall top, bar stools in linen or leather, pendant lights, LED strips and herbs, jars and cookbooks on the shelves."
+      },
+      {
+        "baslik": "Drawn today, in the workshop tomorrow",
+        "metin": "The drawn kitchen is the cut list: sheet layout with cutting order, barcode labels, hardware and door lists, assembly and worktop sheets, a quote, CNC files and a pencil-style dimensioned sketch on squared paper, checked by 16 pre-production checks you can switch and tune."
+      }
+    ],
+    "magazaUrl": "https://www.bestsketchupplugins.com/en/plugins/cuisinefun/",
+    "uyumluluk": [
+      "SketchUp 2021",
+      "SketchUp 2022",
+      "SketchUp 2023",
+      "SketchUp 2024",
+      "SketchUp 2025",
+      "SketchUp 2026",
+      "Windows"
+    ],
+    "ozellikler": [
+      {
+        "baslik": "Straight, L and island kitchens",
+        "not": "",
+        "ikon": "grid"
+      },
+      {
+        "baslik": "Cut list + CNC + hand sketch",
+        "not": "",
+        "ikon": "grid"
+      },
+      {
+        "baslik": "SketchUp 2021–2026",
+        "not": "",
+        "ikon": "grid"
+      }
+    ],
+    "listeler": [],
+    "vurgular": [
+      "Straight, L and island kitchens",
+      "Cut list + CNC + hand sketch",
+      "SketchUp 2021–2026"
+    ],
+    "sss": []
+  }
+}

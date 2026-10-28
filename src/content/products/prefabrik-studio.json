@@ -5,13 +5,13 @@
   "durum": "alfa",
   "ilerleme": null,
   "surum": "0.1.0",
-  "sira": 22,
+  "sira": 24,
   "yayinda": true,
   "ozet": "Çeliği elle saymadan: kaydırıcıyı çek, yapı da metraj da güncellensin.",
   "aciklama": null,
   "slogan": null,
-  "baslik": "Müşteri, ortada bina yokken fiyat sorar.",
-  "sunum": "Prefabrik çelik iş bir rakam üzerinden satılır ve o rakam henüz kimsenin çizmediği bir karkasa bağlıdır. Açıklık her değiştiğinde karkası yeniden kurup metrajı baştan saymak yaklaşık 90 dakika sürer. Prefabrik Stüdyo genişliği çekmenize ve metrajın peşinden gelmesine izin verir — yaklaşık 20 saniye. 3,6-15 m x 4,8-24 m açıklıklar, otomatik seçilen 3 makas tipi, canlı çelik kg ve panel m². Masaüstü tarayıcıda çalışır, SketchUp içinde değil; GLB olarak dışa aktarır.",
+  "baslik": "Çeliği ve Metrajı Elle Hesaplamadan: Kaydırıcıyı Çekin, Prefabrik Yapı ve Metraj Anında Güncellensin",
+  "sunum": "Müşteri “biraz daha geniş olsun” dediğinde yeni rakamları oracıkta görür. Her kaydırıcı; karkası, makasları, aşıkları, kaplamayı ve temeli anında yeniden kurar; çelik kilosunu, panel m²'sini, vida ve M16 dübel sayısını hesaplar.",
   "kanit": {
     "oncekiEtiket": "Karkası yeniden kurup metrajı baştan saymak",
     "oncekiDakika": 90,
@@ -20,16 +20,16 @@
   },
   "hikayeler": [
     {
-      "baslik": "Üç kaydırıcı, hazır bir bina",
-      "metin": "Genişlik, uzunluk ve yükseklik arayüzün tamamı. Beliren şey bir karkastır, eskiz değil — yani fiyatladığınız şey gerçekten imal edilebilecek bir şeydir."
+      "baslik": "Üç Kaydırıcı, Hazır Bir Bina",
+      "metin": "Genişlik, uzunluk, yükseklik. Her çekişte dikme ızgarası, makaslar, aşıklar, paneller ve döşeme yeniden kurulur: 3,6-15 m x 4,8-24 m. Karkası baştan modellemezsin."
     },
     {
-      "baslik": "Hangi makas olmalı?",
-      "metin": "Açıklık karar verir. Makas tipi alışkanlıktan değil geometriden otomatik seçilir; hızlı bir etüdün sessizce yapılamaz bir şeye dönüşmesini engelleyen de budur."
+      "baslik": "Makas Seçimini Açıklık Yapar",
+      "metin": "6,5 m'ye kadar Fink, 8 m'ye kadar Pratt, üstü Howe; 9,5 m'yi geçince öngermeli C40 prekast makas. Kesit ve cıvata yükü izler; hangi makasın nereye gittiğini senin hatırlaman gerekmez."
     },
     {
-      "baslik": "Hiç bayatlamayan metraj",
-      "metin": "Çelik ağırlığı ve panel alanı siz çekerken güncellenir; ekrandaki rakam her zaman ekrandaki binaya aittir — gönderdiğiniz teklif gösterdiğiniz şeyle örtüşür."
+      "baslik": "Metraj Hep Güncel",
+      "metin": "Çelik kg, panel m², çatı vidası, 1,35 m'de M16 dübel, makas adedi; her çekişte yeniden hesaplanır. Tümünü GLB olarak dışa aktar. Teklif verirken baştan saymazsın."
     }
   ],
   "magazaUrl": "https://www.bestsketchupplugins.com/tr/plugins/prefabrik-studio/",
@@ -72,15 +72,15 @@
   "yazilim": [
     "sketchup"
   ],
-  "icNot": "Mağazadan senkronlandı (plugin-store/data/plugins.json, 2026-10-14). Metinleri burada elle değiştirmeyin — mağazada değiştirip senkronu tekrar çalıştırın.",
+  "icNot": "Mağazadan senkronlandı (plugin-store/data/plugins.json, 2026-10-28). Metinleri burada elle değiştirmeyin — mağazada değiştirip senkronu tekrar çalıştırın.",
   "en": {
     "ad": "Prefab Studio",
     "ozet": "No hand-counted steel: drag a slider, the prefab and takeoff update.",
     "aciklama": null,
     "slogan": null,
     "fiyatNot": null,
-    "baslik": "The client asks for a price before you have a building.",
-    "sunum": "Prefabricated steel work is sold on a number, and the number depends on a frame nobody has drawn yet. Rebuilding the frame and recounting the take-off each time the span changes runs about 90 minutes. Prefab Studio lets you drag the width and watch the quantities follow — roughly 20 seconds. Spans from 3.6 to 15 m by 4.8 to 24 m, 3 truss types chosen automatically, live steel kg and panel m². It runs in a desktop browser, not inside SketchUp, and exports GLB.",
+    "baslik": "Without Working Out Steel and Quantities by Hand: Drag the Slider, the Prefab and Its Take-Off Update Instantly",
+    "sunum": "When the client says “make it a bit wider”, they see the new numbers right there. Every slider rebuilds the frame, trusses, purlins, cladding and foundation live — and recounts steel kg, panel m², screws and M16 anchors as you drag.",
     "kanit": {
       "oncekiEtiket": "Re-modelling the frame, then recounting the takeoff",
       "oncekiDakika": 90,
@@ -89,16 +89,16 @@
     },
     "hikayeler": [
       {
-        "baslik": "Three sliders, a ready building",
-        "metin": "Width, length and height are the whole interface. The frame that appears is a frame, not a sketch — so what you are pricing is something that could actually be fabricated."
+        "baslik": "Three Sliders, a Ready Building",
+        "metin": "Width, length, height. The stud grid, trusses, purlins, panels and slab rebuild themselves at every drag — 3.6–15 m by 4.8–24 m. No re-modelling the frame."
       },
       {
-        "baslik": "Which truss should it be?",
-        "metin": "The span decides. The truss type is selected automatically from the geometry rather than from habit, which is what keeps a quick study from quietly becoming an unbuildable one."
+        "baslik": "The Span Picks the Truss",
+        "metin": "Fink under 6.5 m, Pratt to 8 m, Howe above — and past 9.5 m a prestressed C40 precast truss. Section and bolts follow the load, so you never have to remember which truss goes where."
       },
       {
-        "baslik": "Quantities that are never stale",
-        "metin": "Steel weight and panel area update as you drag, so the figure on screen always belongs to the building on screen — and the quote you send matches what you showed."
+        "baslik": "A Take-Off That Never Falls Behind",
+        "metin": "Steel kg, panel m², roof screws, M16 anchors at 1.35 m, truss count — recomputed on every drag. Export the lot as GLB. No recounting before you quote."
       }
     ],
     "magazaUrl": "https://www.bestsketchupplugins.com/en/plugins/prefabrik-studio/",

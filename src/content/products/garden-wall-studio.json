@@ -5,13 +5,13 @@
   "durum": "beta",
   "ilerleme": null,
   "surum": "1.5.0",
-  "sira": 14,
+  "sira": 17,
   "yayinda": true,
   "ozet": "Kademe hesabı yok: eğimi izleyen bahçe duvarı, kapısıyla birlikte.",
   "aciklama": null,
   "slogan": null,
-  "baslik": "Bahçe duvarı ilk inşa edilen, en son çizilen şeydir.",
-  "sunum": "Arsa boyunca uzanır, eğimle kademelenir ve genelde projenin sonunda, vakit kalmamışken direk direk çizilir — yaklaşık 180 dakika, sonra bir de metrajı elle saymak. Bahçe Duvarı Stüdyosu yaklaşık 90 saniye alır: kenarları seçin, karakteri seçin, raporu okuyun. 13 duvar karakteri, 6 kapı hazır ayarı, CSV'li metraj raporu, SketchUp 2021-2026.",
+  "baslik": "Eğimli Arazide Kademe Hesabıyla Boğuşmadan: Bahçe Duvarını Kapısıyla Birlikte Dakikalar İçinde Kurun",
+  "sunum": "Eğimli arsada bile projeniz araziye kotu kotuna oturan, gerçekçi bir sınırla görünür. Parsel kenarlarını seçin, 13 duvar karakterinden birini seçin; araziyi izleyen kademeli duvar, kapıları ve metraj raporu tek grup halinde gelir.",
   "kanit": {
     "oncekiEtiket": "Duvarı direk direk modellemek, sonra metrajı elle saymak",
     "oncekiDakika": 180,
@@ -20,16 +20,16 @@
   },
   "hikayeler": [
     {
-      "baslik": "Sınırı bir kez çizin, duvar tamam",
-      "metin": "Direkler, paneller, harpuştalar ve kapılar seçtiğiniz hattı takip eder; duvar, güncellemeyi hep unuttuğunuz ayrı bir çizim değil arsanın bir özelliği olur."
+      "baslik": "Sınırı Bir Kez Çiz, Duvar Tamam",
+      "metin": "Parsel kenarlarını seç ya da köşeleri kendin tıkla. Direkler, paneller, kademeli temeller ve kapılar tek grup, tek geri alma adımı olarak gelir. Direk direk modellemek yok."
     },
     {
-      "baslik": "Eğimdeki kademeyi kim hesaplıyor?",
-      "metin": "Arazi. Duvar zeminle birlikte kademelenir; bir ucunda havada kalıp öbür ucunda toprağa gömülmez — düz çizilmiş bir duvarı ele veren tek detay da budur."
+      "baslik": "Kademe Hesabını Arazi Yapar",
+      "metin": "Işınlar araziyi okur; her aks kendi kotuna kademelenir, paneller şaşmadan yatay kalır, temel altta eğimi izler. Kotu sen hesaplamazsın."
     },
     {
-      "baslik": "Maliyet modelle birlikte hazır",
-      "metin": "Uzunluklar, direk adetleri ve alanlar rapor ve CSV olarak çıkar; müşteriye verdiğiniz rakam çizimin desteklediği rakamdır."
+      "baslik": "Maliyet Modelle Birlikte Hazır",
+      "metin": "Teklife hazır gidersin. Uzunluk, panel alanı, direk ve taş adedi, temel betonu, fire ve kendi birim fiyatların: maliyetli rapor ve CSV; çetele tutmak yok."
     }
   ],
   "magazaUrl": "https://www.bestsketchupplugins.com/tr/plugins/garden-wall-studio/",
@@ -75,15 +75,15 @@
   "yazilim": [
     "sketchup"
   ],
-  "icNot": "Mağazadan senkronlandı (plugin-store/data/plugins.json, 2026-10-14). Metinleri burada elle değiştirmeyin — mağazada değiştirip senkronu tekrar çalıştırın.",
+  "icNot": "Mağazadan senkronlandı (plugin-store/data/plugins.json, 2026-10-28). Metinleri burada elle değiştirmeyin — mağazada değiştirip senkronu tekrar çalıştırın.",
   "en": {
     "ad": "Garden Wall Studio",
     "ozet": "No step maths on a slope: stepped garden walls, gates included.",
     "aciklama": null,
     "slogan": null,
     "fiyatNot": null,
-    "baslik": "The boundary wall is the first thing built and the last thing drawn.",
-    "sunum": "It runs the length of the site, it steps with the slope, and it is usually drawn post by post at the end of the project when there is no time left — about 180 minutes, then counting the take-off by hand. Garden Wall Studio takes roughly 90 seconds: select the edges, choose the character, read the report. 13 wall characters, 6 gate presets, take-off report with CSV, SketchUp 2021 through 2026.",
+    "baslik": "No Wrestling With Steps on a Slope: Build the Garden Wall, Gate Included, in Minutes",
+    "sunum": "Even on a sloping plot, your project shows a boundary that sits true to the ground. Select the parcel edges, pick one of 13 wall characters, and get a stepped, terrain-following wall with gates and a quantity report in one group.",
     "kanit": {
       "oncekiEtiket": "Modelling the wall post by post, then counting it by hand",
       "oncekiDakika": 180,
@@ -92,16 +92,16 @@
     },
     "hikayeler": [
       {
-        "baslik": "Draw the boundary once and the wall is done",
-        "metin": "Posts, panels, caps and gates follow the line you selected, so the wall is a property of the site rather than a separate drawing you keep forgetting to update."
+        "baslik": "Draw the Boundary Once, the Wall Is Done",
+        "metin": "Select the parcel edges, or click the corners yourself. Posts, panels, stepped footings and gates arrive as one group, one undo. No modelling post by post."
       },
       {
-        "baslik": "Who works out the stepping on a slope?",
-        "metin": "The terrain does. The wall steps with the ground instead of floating above it at one end and burying itself at the other — the single detail that gives away a wall drawn flat."
+        "baslik": "The Ground Does the Step Maths",
+        "metin": "Rays read the terrain, every bay steps to its own level, panels stay square and true, and the footing follows the grade underneath. You never work out the levels."
       },
       {
-        "baslik": "Cost ready with the model",
-        "metin": "Lengths, post counts and areas come out as a report and CSV, so the figure you give the client is the one the drawing supports."
+        "baslik": "The Cost Comes With the Model",
+        "metin": "You walk into the quote prepared: length, panel area, post and stone counts, footing concrete, waste and your unit prices give a costed report and a CSV, not a tally sheet."
       }
     ],
     "magazaUrl": "https://www.bestsketchupplugins.com/en/plugins/garden-wall-studio/",
