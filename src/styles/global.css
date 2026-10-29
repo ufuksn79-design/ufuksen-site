@@ -1207,3 +1207,18 @@ body {
   font-style: normal;
   letter-spacing: 0.04em;
 }
+
+/* Ana sayfadaki "Ufuk Şen kimdir?" çıkış bağlantısı. */
+.uzmanlik__cikis-bag {
+  display: inline-flex;
+  align-items: center;
+  min-height: var(--tap-min);
+  color: var(--c-accent);
+  font-size: var(--t-small);
+  text-decoration: none;
+}
+.uzmanlik__cikis-bag:hover,
+.uzmanlik__cikis-bag:focus-visible {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}

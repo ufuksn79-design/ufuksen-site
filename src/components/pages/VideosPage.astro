@@ -1,5 +1,10 @@
 ---
 /**
+ * Video küçük resimlerinin alt metni videonun anlatıldığı yazının
+ * başlığından gelir. Önce boştu; 282 küçük resim ekran okuyucuya ve
+ * görsel aramasına görünmüyordu.
+ */
+/**
  * Video galerisi — iki dilli (ADR-025).
  *
  * Videolar Türkçe anlatımlıdır; İngilizce sürümde bu açıkça söylenir
@@ -38,7 +43,7 @@ const yol = dil === "en" ? "/en/videos" : "/videolar";
           <a class="vcard__thumb" href={video.postUrl}>
             <img
               src={videoThumb(video.id)}
-              alt=""
+              alt={`${video.postTitle} — video`}
               loading="lazy"
               decoding="async"
               width="480"

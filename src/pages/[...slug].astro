@@ -63,7 +63,7 @@ export async function getStaticPaths() {
     .filter((page) => !OZEL_SAYFALAR.has(page.data.slug))
     .map((page) => ({
       params: { slug: decodeSlug(page.data.slug) },
-      props: { kind: "page" as const, page, posts },
+      props: { kind: "page" as const, page, posts, parked: isParked(page.data.slug) },
     }));
 
   const categoryRoutes = categories.map((category) => ({
@@ -81,9 +81,16 @@ export async function getStaticPaths() {
   return [...postRoutes, ...pageRoutes, ...categoryRoutes];
 }
 
+/* Park edilmiş sayfa (boş gövde ya da WordPress artığı) noindex taşır. */
 const props = Astro.props as
   | { kind: "post"; post: Post; posts: Post[]; parked: boolean }
-  | { kind: "page"; page: Awaited<ReturnType<typeof getPages>>[number]; posts: Post[] }
+  | {
+      kind: "page";
+      page: Awaited<ReturnType<typeof getPages>>[number];
+      posts: Post[];
+      /** Park edilmiş sayfa: URL yaşar ama noindex taşır. */
+      parked: boolean;
+    }
   | {
       kind: "category";
       category: Awaited<ReturnType<typeof getVisibleCategories>>[number];
@@ -252,6 +259,7 @@ const tools = props.kind === "post" ? softwareOf(props.post) : [];
       description={props.page.data.seo.description}
       path={props.page.data.url}
       ogImage={props.page.data.featuredImage?.localPath ?? props.page.data.seo.ogImage}
+      noindex={props.parked}
       jsonLd={{
         "@context": "https://schema.org",
         "@type": "WebPage",
@@ -272,9 +280,17 @@ const tools = props.kind === "post" ? softwareOf(props.post) : [];
     <Base
       title={`${props.category.name} — ${props.category.postCount} yazı | Ufuk Şen`}
       description={kisaAciklama(
-        props.category.description ??
-          `${props.category.name} kategorisindeki ${props.category.postCount} yazı. ` +
-            `SketchUp, V-Ray, D5 Render ve Twinmotion üzerine rehberler.`,
+        /**
+         * Kaynaktan gelen kategori açıklaması çoğu zaman yalnızca kategori
+         * adının tekrarı ("Hakkımda" = 8 karakter). Bu kadar kısa açıklamayı
+         * Google kendi yazdığıyla değiştiriyor. 60 karakterin altındaysa
+         * sayıyla birlikte anlamlı bir metin üretiliyor.
+         */
+        (props.category.description ?? "").trim().length >= 60
+          ? props.category.description!
+          : `${props.category.name} kategorisinde ${props.category.postCount} yazı: ` +
+            `rehberler, karşılaştırmalar ve uygulama örnekleri. ` +
+            `SketchUp, V-Ray, D5 Render, Enscape ve Twinmotion üzerine arşiv.`,
       )}
       path={categoryPath(props.category)}
       noindex={props.parked}

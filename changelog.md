@@ -28,6 +28,84 @@ Format, Keep a Changelog yaklaşımına yakındır. Tarihler `YYYY-MM-DD` biçim
 - Kaynak WordPress sistemi migration boyunca salt okunur kabul edildi.
 - Dry-run, yedek ve rollback zorunlulukları eklendi.
 
+## [1.9.0] — 2026-10-29
+
+Tam iç SEO geçişi. Önce ölçüldü, sonra düzeltildi.
+
+### Added
+
+- `scripts/build/ic-seo-denetim.mjs` — kapsamlı iç SEO tarayıcı.
+  Mevcut `audit-seo.mjs` yalnızca başlık/açıklama uzunluğuna ve görsel
+  ölçüsüne bakıyordu. Yeni araç şunları da tarıyor: benzersizlik, H1
+  sayısı, başlık hiyerarşisi, öksüz sayfa, metin içi bağlantı, görsel alt
+  metni, canonical, JSON-LD, Open Graph, ince içerik, zayıf bağlantı metni.
+- `scripts/content/seo-baslik-aciklama.mjs` — başlık/açıklama düzeltici.
+- `scripts/content/seo-gorsel-alt.mjs` — görsel alt metni doldurucu.
+
+### Düzeltilenler
+
+| Bulgu | Önce | Sonra |
+|---|---|---|
+| Öksüz sayfa (hiç bağlantı almayan) | 9 | **0** |
+| 60 karakteri aşan başlık | 31 | **0** |
+| 158 karakteri aşan açıklama | 16 | **0** |
+| 70 karakterin altında açıklama | 34 | **0** |
+| Tekrar eden başlık | 5 | **0** |
+| Tekrar eden açıklama | 6 | **0** |
+| Alt metni olmayan görsel (sayfa) | 46 | **0** |
+| Yalnızca menüden bağlantı alan sayfa | 3 | **0** |
+
+### Neler yapıldı
+
+**Öksüz sayfalar.** Dokuz sayfa hiçbir yerden bağlantı almıyordu. İçeriği
+olanlar bağlam içinden bağlandı: `/ufuk-sen-kimdir` ana sayfadan,
+`/sketchup-kurs` ve `/sketchup-ozel-ders` eğitimler sayfasından,
+`/projelerinizi-yapalim` ile `/3d-mimari-gorsellestirme` iletişim
+sayfasından, `/amac` özgeçmiş sayfasından.
+
+İçeriği olmayan üçü (`/projeler`, `/tiehome`, `/contact-form`) park
+edildi: URL yaşamaya devam ediyor ama `noindex` taşıyor. İlk ikisi sıfır
+kelimeydi, `/tiehome` ayrıca canonical olarak ana sayfayı gösteriyordu.
+
+**Görsel alt metni.** 83 görsel `alt=""` taşıyordu. Metin uydurulmadı:
+dosya adı anlamlıysa ondan (76 adet), değilse yazı başlığından (7 adet)
+türetildi. Bitişik yazılmış dosya adları ("3dgorsellestirme") ve gürültü
+ekleri ("min", "1x", "scaled") elendi. Ayrıca bileşenlerden gelen 296
+küçük resim de alt metnine kavuştu — 282'si video sayfasındaydı.
+
+**Meta açıklamalar.** Yazılım hub sayfalarında açıklama 36 karakterdi
+("V-Ray üzerine 81 yazı ve 45 video."); Google bu kadar kısa açıklamayı
+çoğu zaman kendi yazdığıyla değiştiriyor. Kategori sayfalarında ise
+açıklama yalnızca kategori adının tekrarıydı ("Hakkımda" = 8 karakter).
+İkisi de sayfada gerçekten var olan bilgiyle uzatıldı.
+
+**E-posta temizliği.** Dört meta açıklamada e-posta adresi geçiyordu;
+arama sonucunda adres göstermek hem tuhaf hem de hasat riski. O cümleler
+atlanarak açıklamalar yeniden üretildi.
+
+### Düzeltilen yan hatalar
+
+- **Park etme sayfalarda işlemiyordu.** `[...slug].astro` yalnızca
+  yazılara `parked` bayrağı geçiriyordu; sayfa dalının `<Base>` çağrısında
+  `noindex` propu hiç yoktu. Park edilen sayfa indekslenmeye devam ediyordu.
+- **Denetimin kendi iki ölçüm hatası** bulundu ve düzeltildi: sondaki eğik
+  çizgi normalleştirilmediği için her kategori sayfası "öksüz" görünüyordu;
+  yüzde kodlaması çözülmediği için Türkçe karakterli adresteki yazı da öyle.
+
+### Kalan — bilinçli olarak
+
+- **İnce içerik: 84 sayfa** (300 kelimenin altında). Bunlar 2014–2019
+  arası miras yazılar. Otomatik "uzatma" uydurma içerik üretmek olurdu;
+  gerçek çözüm tek tek yeniden yazmak ya da birleştirmek.
+- **Kısa başlık: 75 sayfa** (30 karakterin altında). Çoğu zaten yeterli —
+  "3D Eğitim Setleri | Ufuk Şen" 28 karakter ve sorun değil. Düşük öncelik.
+
+### Doğrulama
+
+- 612 HTML, 509 indekslenebilir, 103 `noindex`
+- `astro check` **0 hata**; yeni kırık link / eksik medya: **0**
+- Denetimde kalan KRİTİK ve YÜKSEK bulgu: **0**
+
 ## [1.8.0] — 2026-10-28
 
 ### Changed

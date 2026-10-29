@@ -164,6 +164,17 @@ const counters = [
         <p style="color:var(--c-text-muted)">
           {t.tanitim(totalPosts, categories.length)}
         </p>
+        {
+          /* Ayrıntılı özgeçmiş sayfası yalnızca Türkçe var; denetimde hiçbir
+             yerden bağlantı almadığı için (öksüz sayfa) buradan bağlanıyor. */
+          dil === "tr" && (
+            <p style="margin-top:var(--s-3)">
+              <a class="uzmanlik__cikis-bag" href="/ufuk-sen-kimdir">
+                Ufuk Şen kimdir? →
+              </a>
+            </p>
+          )
+        }
       </div>
       <dl class="facts">
         <div><dt>{t.bilgiKonum}</dt><span class="dots" /><dd>{t.bilgiKonumDeger}</dd></div>
@@ -297,7 +308,14 @@ const counters = [
       {
         videos.map((video) => (
           <a class="vmini" href={video.postUrl}>
-            <img src={videoThumb(video.id)} alt="" loading="lazy" decoding="async" width="320" height="180" />
+            <img
+              src={videoThumb(video.id)}
+              alt={`${video.postTitle} — video`}
+              loading="lazy"
+              decoding="async"
+              width="320"
+              height="180"
+            />
             <span class="vmini__title">{video.postTitle}</span>
           </a>
         ))
@@ -311,6 +329,11 @@ const counters = [
   <!-- KONULAR -->
   <section class="block u-reveal">
     <SectionTitle title={t.konularBaslik} note={t.konularNot(totalPosts, categories.length)} />
+    <p style="margin-bottom:var(--s-4)">
+      <a class="uzmanlik__cikis-bag" href={dil === "en" ? "/en/software" : "/yazilim"}>
+        {dil === "en" ? "Browse by software →" : "Programa göre gez →"}
+      </a>
+    </p>
     <div class="tiles">
       {
         categories.slice(0, 4).map((category) => (

@@ -337,7 +337,7 @@ export const SAYFA: Record<Dil, SayfaMetinleri> = {
 
     videolar: {
       metaBaslik: (n) => `Videolar — ${n} eğitim ve anlatı videosu | Ufuk Şen`,
-      metaAciklama: (n) => `3D görselleştirme, render ve SketchUp üzerine ${n} video.`,
+      metaAciklama: (n) => `3D görselleştirme, render ve SketchUp üzerine ${n} video: ders anlatımları, program tanıtımları, render karşılaştırmaları ve proje incelemeleri.`,
       baslik: "Videolar",
       not: (n) => `Arşivdeki ${n} video. Her biri ilgili yazıya bağlı.`,
       youtube: "YouTube ↗",
@@ -362,7 +362,14 @@ export const SAYFA: Record<Dil, SayfaMetinleri> = {
       yaziVeVideo: (yazi, video) => `${yazi} yazı · ${video} video`,
       koleksiyonAdi: (ad) => `${ad} yazıları`,
       detayBaslik: (ad, yazi) => `${ad} — ${yazi} yazı ve rehber | Ufuk Şen`,
-      detayAciklama: (ad, yazi, video) => `${ad} üzerine ${yazi} yazı ve ${video} video.`,
+      /**
+       * Meta açıklama 70 karakterin altında kalıyordu ("V-Ray üzerine 81 yazı
+       * ve 45 video." = 36 karakter). Google bu kadar kısa açıklamayı çoğu
+       * zaman kendi yazdığıyla değiştiriyor. Uzatıldı — eklenen her şey
+       * sayfada gerçekten var.
+       */
+      detayAciklama: (ad, yazi, video) =>
+        `${ad} üzerine ${yazi} yazı ve ${video} video: rehberler, karşılaştırmalar, ayar önerileri ve gerçek proje örnekleri. Arşivin tamamı bu sayfada.`,
     },
 
     ortak: { dakika: "dk", devami: "Devamı" },
@@ -517,7 +524,7 @@ export const SAYFA: Record<Dil, SayfaMetinleri> = {
 
     videolar: {
       metaBaslik: (n) => `Videos — ${n} tutorial and walkthrough videos | Ufuk Şen`,
-      metaAciklama: (n) => `${n} videos on 3D visualisation, rendering and SketchUp.`,
+      metaAciklama: (n) => `${n} videos on 3D visualisation, rendering and SketchUp: lessons, software walkthroughs, render comparisons and project reviews. Narrated in Turkish.`,
       baslik: "Videos",
       not: (n) => `${n} videos from the archive, each linked to its article. Narrated in Turkish.`,
       youtube: "YouTube ↗",
@@ -543,7 +550,7 @@ export const SAYFA: Record<Dil, SayfaMetinleri> = {
       koleksiyonAdi: (ad) => `${ad} articles`,
       detayBaslik: (ad, yazi) => `${ad} — ${yazi} articles and guides | Ufuk Şen`,
       detayAciklama: (ad, yazi, video) =>
-        `${yazi} articles and ${video} videos on ${ad}, written in Turkish.`,
+        `${yazi} articles and ${video} videos on ${ad}: guides, comparisons, settings advice and real project work. The full archive, written in Turkish.`,
     },
 
     ortak: { dakika: "min", devami: "Read on" },
