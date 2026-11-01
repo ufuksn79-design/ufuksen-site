@@ -40,6 +40,10 @@
       "sebep": "Referans sayfası. Güven veren bir sayfaya reklam koymak güveni düşürür."
     },
     {
+      "kalip": "^/ufuk-sen-kimdir/?$",
+      "sebep": "Özgeçmiş sayfası. Kişisel güven sayfası; reklam ciddiyeti düşürür (kullanıcı isteği, 1 Kasım 2026)."
+    },
+    {
       "kalip": "^/(en)?$",
       "sebep": "Ana sayfa (TR ve EN). İlk izlenim; reklam markayı ucuzlatır. Yol sondaki eğik çizgiden arındırılarak karşılaştırılır, bu yüzden kalıpta 'en/' değil 'en' yazar."
     },

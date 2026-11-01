@@ -1222,3 +1222,31 @@ body {
   text-decoration: underline;
   text-underline-offset: 3px;
 }
+
+/* --------------------------------------------------------------------- */
+/* Özgeçmiş sayfası (/ufuk-sen-kimdir)                                    */
+/* --------------------------------------------------------------------- */
+
+/**
+ * Portre, metnin başında yan tarafta durur; dar ekranda üste geçer.
+ * Eski sayfada 202px'lik 2018 fotoğrafı vardı ve ortalanmıştı — yeni
+ * stüdyo çekimi kullanılıyor.
+ */
+/* Özgeçmiş sayfasının üstündeki geniş ofis fotoğrafı — ortalanmış, tam genişlik. */
+.prose .kimdir-ofis {
+  margin: 0 0 var(--s-6);
+  text-align: center;
+}
+.prose .kimdir-ofis img {
+  width: 100%;
+  height: auto;
+  border-radius: var(--r-md);
+  border: 1px solid var(--c-line);
+}
+
+/* Giriş paragrafı gövdeden biraz büyük — sayfanın özeti burada. */
+.prose .kimdir-ozet {
+  font-size: var(--t-body-lg);
+  color: var(--c-text);
+  line-height: 1.6;
+}
