@@ -28,6 +28,57 @@ Format, Keep a Changelog yaklaşımına yakındır. Tarihler `YYYY-MM-DD` biçim
 - Kaynak WordPress sistemi migration boyunca salt okunur kabul edildi.
 - Dry-run, yedek ve rollback zorunlulukları eklendi.
 
+## [1.10.0] — 2026-11-03
+
+Dolap Sihirbazı masaüstü uygulaması için ürün tanıtım yazısı.
+
+### Added
+
+- `scripts/content/dolap-sihirbazi-yazisi.mjs` — yazıyı üreten betik.
+  Yazı: `/dolap-sihirbazi-masaustu-dolap-mutfak-tasarim-programi.html`,
+  1.789 kelime, 8 H2 / 13 H3, 2 video, 2 görsel, 3 mağaza bağlantısı.
+- `public/media/dolap-sihirbazi/` — 960 ve 1280 px WebP: mutfak render'ı
+  (öne çıkan görsel), plaka yerleşimi, sürükle-bırak paleti. Üçü de gerçek
+  program kayıtlarından alınmış karelerdir (ffmpeg ile çıkarıldı).
+
+### Yazının kurgusu
+
+Kullanıcının istediği sıra: önce sürükle-bırak (üretim için anında hazır),
+sonra kesim optimizasyonu (plaka yerleşimi + kullanım yüzdesi), sonra
+"hiçbir programa bağlı değil — masaüstü uygulaması", sonra "yapboz kadar
+basit". Geri kalan özellikler tek başlık altında alt başlıklara bölündü.
+
+Videolar: kullanıcının verdiği sürükle-bırak filmi (`HyXdUio3BSY`) ve
+Üretim Ders 14, kesim listesi + plaka yerleşimi (`9Mjf89HfMWQ`).
+
+### Kaynaklar
+
+Teknik cümleler iki yerden doğrulandı: projenin kendi belgeleri
+(`dolap-sihirbazi-masaustu/docs/*`, `dolap-sihirbazi/docs/*`) ve ürünün
+mağaza sayfası `bestsketchupplugins.com/tr/dolap-sihirbazi/` (kullanıcı
+"diğer bilgiler için bu linki kullan" dedi).
+
+Mağaza sayfası iki sayıyı tazeledi: Modül Kütüphanesi **65 değil 245**
+modül (proje belgesi 2.3.0 dönemindeydi), render motorunun adı
+**Render Fun** ve program içinde çalışıyor.
+
+### Bilerek yazılmayanlar
+
+- **Fiyat.** Mağaza sayfasında lansman fiyatı var; sitede fiyat yazılmıyor,
+  değiştiğinde yazı yanlış bilgiye dönüşür.
+- **SketchUp'a aktarım.** Masaüstü sürümde SketchUp köprüsü henüz karara
+  bağlanmadı (`dolap-sihirbazi-masaustu/docs/OZELLIKLER.md`, "Kalan").
+  Yazıda yalnız ayrı ürün olan SketchUp eklentisine bağlantı verildi.
+- **macOS.** Masaüstü kurucu NSIS + WebView2, yani Windows.
+
+### Doğrulama
+
+- `astro check` 0 hata; 612 sayfa derlendi.
+- Sayfadaki iç bağlantıların hepsi `dist` içinde var (`/iletisim.html`
+  kırıktı, `/iletisim/` ile düzeltildi); görsellerin hepsi yerinde.
+- Tarayıcıda ölçüldü: `scrollWidth == clientWidth` (yatay taşma yok),
+  videolar 16:9 (427 × 240), tek H1.
+
 ## [1.9.0] — 2026-10-29
 
 Tam iç SEO geçişi. Önce ölçüldü, sonra düzeltildi.
