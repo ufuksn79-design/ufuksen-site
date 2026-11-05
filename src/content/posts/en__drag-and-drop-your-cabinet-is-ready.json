@@ -1,0 +1,35 @@
+{
+  "legacyId": 90120,
+  "slug": "en/drag-and-drop-your-cabinet-is-ready",
+  "legacyUrl": "/en/drag-and-drop-your-cabinet-is-ready.html",
+  "url": "/en/drag-and-drop-your-cabinet-is-ready.html",
+  "dil": "en",
+  "alternatif": "/surukle-birak-dolabin-hazir.html",
+  "title": "Drag, Drop — Your Cabinet Is Ready",
+  "excerpt": "Grab a module from the palette and drop it on the wall: it becomes real panels with doors, hinges and holes. The cut list is ready at the same moment.",
+  "contentHtml": "<p>The most tiring part of a joiner's day is explaining to software a cabinet that is already finished in their head. You know the sizes, you know what goes where — and yet building the panels one by one takes half an hour.</p>\n\n<p>In <strong>Cabinet Wizard</strong> (Dolap Sihirbazı) that half hour is gone. You grab a module from the palette on the left and drop it on the wall. That is the whole operation.</p>\n\n\n<figure class=\"yazi-video\">\n  <iframe src=\"https://www.youtube-nocookie.com/embed/HyXdUio3BSY\" title=\"Drag and drop, then send to CNC — Cabinet Wizard\" loading=\"lazy\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" referrerpolicy=\"strict-origin-when-cross-origin\" allowfullscreen></iframe>\n  <figcaption>A whole kitchen built by dragging and dropping; the CNC files come from the same model. Narrated in Turkish.</figcaption>\n</figure>\n\n<h2>What you drop is not a picture — it is a real cabinet</h2>\n\n<p>This is the difference. The module you drop is not an image or a frozen block: its side panels, tops, shelves, back, door and plinth are separate <strong>real parts</strong>. Hinge cups, shelf pins, cam locks and dowel holes are drilled automatically, positioned against the neighbouring panels.</p>\n\n<p>So the moment you drop it, the cabinet is manufacturable. The cut list shows exactly the sizes on screen — the old gap between \"what the drawing says\" and \"what the workshop cuts\" disappears.</p>\n\n\n<figure>\n  <img src=\"/media/dolap-sihirbazi/surukle-birak-960.webp\" srcset=\"/media/dolap-sihirbazi/surukle-birak-960.webp 960w, /media/dolap-sihirbazi/surukle-birak-1280.webp 1280w\" sizes=\"(min-width: 860px) 800px, 100vw\" alt=\"The drag-and-drop palette and kitchen plan in Cabinet Wizard\" width=\"960\" height=\"540\" loading=\"lazy\" decoding=\"async\" />\n  <figcaption>Module palette on the left, plan in the middle: the module seats itself on the wall you drop it on.</figcaption>\n</figure>\n\n<h2>245 ready modules, found by typing</h2>\n\n<p>The palette is not a short list. The Module Library holds <strong>245 ready modules</strong>: 49 kitchen base, 48 kitchen wall, 28 kitchen tall, 59 bathroom, 37 panel / filler, 8 wardrobe, 5 bedroom, 5 living / TV, 3 hallway, 3 study.</p>\n\n<ul>\n  <li>Type \"drawer\", \"60\" or \"sink\" in the search box and the cards narrow down.</li>\n  <li>The yellow <strong>+</strong> adds the module and keeps the window open, so you line modules up one after another.</li>\n  <li>Lift-up doors, drawer units and corner modules are in the library too.</li>\n  <li>Star a cabinet you built yourself and it waits in your favourites — with its interior layout — for the next job.</li>\n</ul>\n\n<h2>After the drop: the millimetres are yours</h2>\n\n<ul>\n  <li>Type the <strong>width and the distance from the left wall</strong>; the module slides there from where you dropped it.</li>\n  <li>The <strong>hinge side</strong> is one click away.</li>\n  <li>Modules butt against their neighbours, and the software reports the leftover gap in millimetres.</li>\n  <li>Pull a handle and the size changes live; Ctrl+Z puts it back.</li>\n  <li>🔧 <strong>Edit in assembly</strong> takes you into the Production screen, down to that module's individual panels.</li>\n</ul>\n\n<p>It works the same way on a touch screen — you can even drag a card onto a different wall.</p>\n\n<h2>And production?</h2>\n\n<p>Drag and drop would be half a tool if it only sped up drawing. The real gain is that the module you dropped <em>is</em> the production file: cut list, sheet nesting, drilling table, labels, DXF and the CNC program all come out of the same model.</p>\n\n<h2>Frequently asked</h2>\n\n<h3>Can I change a module after dropping it?</h3>\n<p>Yes, down to every part. A module is built from the same parts you would place yourself: carcass, shelf, divider, drawer set, door, lift-up door, hanging rail. Size, hinge side, drawer count and runner model can all be changed later, and \"Ungroup\" releases the parts.</p>\n\n<h3>Do I have to use ready modules?</h3>\n<p>No. The panel palette lets you place bottom and top panels, sides, dividers, shelves, backs, doors, plinths and feet one by one and build from scratch. Both methods live side by side in one project.</p>\n\n<h3>Is this a SketchUp plugin?</h3>\n<p>No. Cabinet Wizard is a standalone Windows desktop application; it runs with no other drawing software installed.</p>\n\n<p>Every feature, the lesson series and the trial version are on the product page: <a href=\"https://www.bestsketchupplugins.com/en/dolap-sihirbazi/\" target=\"_blank\" rel=\"noopener\"><strong>Cabinet Wizard — Best SketchUp Plugins</strong></a>.</p>",
+  "publishedAt": "2026-11-05 09:00:00",
+  "modifiedAt": "2026-11-05 09:00:00",
+  "status": "publish",
+  "featuredImage": null,
+  "inlineMedia": [],
+  "embeds": [],
+  "seo": {
+    "title": "Drag and Drop Cabinet Software: Drop It, It's Ready",
+    "description": "Drag a module onto the wall in Cabinet Wizard: the carcass is built from real panels, you type millimetre sizes, and the cut list comes out at once.",
+    "focusKeyword": "drag and drop cabinet software",
+    "canonicalUrl": "https://www.ufuksen.com/en/drag-and-drop-your-cabinet-is-ready.html",
+    "ogImage": null,
+    "noindex": false
+  },
+  "readingMinutes": 3,
+  "migrationChecksum": "8d19c3a1f91a7e2f7eb0c83accb6ddda2025466c2010a7ae53f22f90a1885f15",
+  "author": {
+    "legacyId": 1,
+    "name": "UFUK ŞEN",
+    "slug": "ufuk",
+    "isGuest": false
+  },
+  "categories": [],
+  "tags": []
+}

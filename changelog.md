@@ -28,6 +28,53 @@ Format, Keep a Changelog yaklaşımına yakındır. Tarihler `YYYY-MM-DD` biçim
 - Kaynak WordPress sistemi migration boyunca salt okunur kabul edildi.
 - Dry-run, yedek ve rollback zorunlulukları eklendi.
 
+## [1.11.0] — 2026-11-05
+
+Dolap Sihirbazı yazı dizisi (4 başlık × 2 dil) ve İngilizce yazı altyapısı.
+
+### Added
+
+- `scripts/content/dolap-sihirbazi-serisi.mjs` — kullanıcının verdiği dört
+  başlığı iki dilde üretir. Türkçe yazılar `/`, İngilizce karşılıkları
+  `/en/` altında; yayın saatleri gün içine yayıldı (09:00, 12:00, 15:00,
+  18:00).
+
+  | Saat | Türkçe | İngilizce |
+  |---|---|---|
+  | 09:00 | Sürükle Bırak, Dolabın Hazır | Drag, Drop — Your Cabinet Is Ready |
+  | 12:00 | 1 Dakikada Mutfak Tasarla, Üretime Geç | Design a Kitchen in One Minute… |
+  | 15:00 | Kertik, Kiriş Sorun Değil! | Beams and Notches Are Not a Problem |
+  | 18:00 | Sadece Ölçüyü Gir, Gerisini Mutfak Programı Halletsin | Just Enter the Dimensions… |
+
+- **İngilizce yazı altyapısı (ADR-027)**: `dil` ve `alternatif` alanları,
+  `getPosts(dil)`, `/en/blog` listesi (önce İngilizce, sonra Türkçe arşiv),
+  iki dilli yazı şablonu ve kenar çubuğu, dile duyarlı `formatDate`.
+- `public/media/dolap-sihirbazi/` — üç yeni görsel (mutfak planı, duvar +
+  kiriş alanları, kabin hızlı düzenle). Üçü de gerçek program kayıtlarından
+  çıkarılmış karelerdir.
+
+### Kaynaklar
+
+Teknik cümleler ürün sayfasından (`bestsketchupplugins.com/tr/dolap-sihirbazi/`,
+kullanıcı "diğer bilgiler için bu linki kullan" dedi) ve projenin kendi
+belgelerinden doğrulandı. Kiriş davranışı Ders 12'deki "Duvarlar ve kirişler"
+panelinin kendi notundan alındı: ince kirişte gövde kertiklenir ve kirişin
+üstüne biner, kalın kirişte üst dolap kısalır, yer kalmazsa kurulmaz.
+
+### Bilerek yazılmayanlar
+
+Fiyat (değişiyor; ürün sayfasında), SketchUp'a aktarım (masaüstünde köprü
+karara bağlanmadı), macOS (kurucu Windows).
+
+### Doğrulama
+
+- `astro check` 0 hata; 620 sayfa derlendi.
+- Türkçe blog, RSS ve arama İngilizce yazıları göstermiyor; `/en/blog` dördünü
+  de listeliyor.
+- İngilizce sayfada Türkçe metin kalmadı (şablon, tarih, kenar çubuğu tarandı).
+- Yazılardaki iç bağlantıların hepsi `dist` içinde var; `hreflang` çiftleri
+  karşılıklı.
+
 ## [1.10.0] — 2026-11-03
 
 Dolap Sihirbazı masaüstü uygulaması için ürün tanıtım yazısı.

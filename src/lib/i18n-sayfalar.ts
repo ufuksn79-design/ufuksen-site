@@ -505,7 +505,7 @@ export const SAYFA: Record<Dil, SayfaMetinleri> = {
       onceki: "← Previous",
       sonraki: "Next →",
       turkceUyari:
-        "These articles are written in Turkish. Your browser's translate function handles them well if you'd like to read along.",
+        "The English articles come first; the rest of the archive is written in Turkish. Your browser's translate function handles those well if you'd like to read along.",
     },
 
     egitimler: {

@@ -28,6 +28,9 @@ import {
  */
 export async function getStaticPaths() {
   const posts = await getPosts();
+  /** İngilizce yazılar ayrı liste: "benzer yazılar" ve kenar çubuğu
+   *  okura kendi dilinde yazı önersin (ADR-027). */
+  const postsEn = await getPosts("en");
   const pages = await getPages();
   const categories = await getRoutableCategories();
 
@@ -46,7 +49,12 @@ export async function getStaticPaths() {
   // Park edilen yazıların da sayfası üretilir (URL ölmesin) ama noindex olur.
   const postRoutes = (await getAllPosts()).map((post) => ({
     params: { slug: `${decodeSlug(post.data.slug)}.html` },
-    props: { kind: "post" as const, post, posts, parked: isParked(post.data.slug) },
+    props: {
+      kind: "post" as const,
+      post,
+      posts: (post.data.dil ?? "tr") === "en" ? postsEn : posts,
+      parked: isParked(post.data.slug),
+    },
   }));
 
   /**
@@ -126,6 +134,29 @@ const article =
     ? buildToc(props.post.data.contentHtml)
     : { html: "", toc: [] };
 const tools = props.kind === "post" ? softwareOf(props.post) : [];
+
+/** Yazı dalının dili ve o dildeki birkaç sabit metin (ADR-027). */
+const yaziDili = props.kind === "post" ? (props.post.data.dil ?? "tr") : "tr";
+const YAZI_METIN = {
+  tr: {
+    okuma: "dk okuma",
+    dakika: "dk",
+    icindekiler: "İçindekiler",
+    benzer: "Benzer yazılar",
+    yazilimlar: "İlgili yazılımlar",
+    arsiv:
+      "Bu yazı sitenin ana konusu dışında kaldığı için arşive alındı ve listelerde görünmüyor. Yakında ayrı bir siteye taşınacak.",
+  },
+  en: {
+    okuma: "min read",
+    dakika: "min",
+    icindekiler: "Contents",
+    benzer: "Related articles",
+    yazilimlar: "Related software",
+    arsiv:
+      "This article sits outside the site's main subject, so it has been archived and does not appear in the listings.",
+  },
+}[yaziDili];
 ---
 
 {
@@ -136,6 +167,8 @@ const tools = props.kind === "post" ? softwareOf(props.post) : [];
       path={props.post.data.url}
       ogImage={props.post.data.featuredImage?.localPath ?? props.post.data.seo.ogImage}
       noindex={props.parked || props.post.data.seo.noindex === true}
+      dil={yaziDili}
+      alternateUrl={props.post.data.alternatif}
       type="article"
       publishedAt={isoDate(props.post.data.publishedAt)}
       modifiedAt={isoDate(props.post.data.modifiedAt)}
@@ -158,18 +191,17 @@ const tools = props.kind === "post" ? softwareOf(props.post) : [];
         <div>
           {props.parked && (
             <p class="parked-note">
-              Bu yazı sitenin ana konusu dışında kaldığı için arşive alındı ve
-              listelerde görünmüyor. Yakında ayrı bir siteye taşınacak.
+              {YAZI_METIN.arsiv}
             </p>
           )}
 
           <header class="entry">
             <p class="post-item__meta">
               <time datetime={isoDate(props.post.data.publishedAt)}>
-                {formatDate(props.post.data.publishedAt)}
+                {formatDate(props.post.data.publishedAt, yaziDili)}
               </time>
-              <span>{props.post.data.readingMinutes} dk okuma</span>
-              {props.post.data.categories.map((category) => (
+              <span>{props.post.data.readingMinutes} {YAZI_METIN.okuma}</span>
+              {yaziDili === "tr" && props.post.data.categories.map((category) => (
                 <a href={categoryPathBySlug(category.slug)}>{category.name}</a>
               ))}
             </p>
@@ -189,7 +221,7 @@ const tools = props.kind === "post" ? softwareOf(props.post) : [];
           )}
 
           {tools.length > 0 && (
-            <p class="tools" aria-label="İlgili yazılımlar">
+            <p class="tools" aria-label={YAZI_METIN.yazilimlar}>
               {tools.map((tool) => (
                 <a href={`/yazilim/${tool.slug}`}>{tool.name}</a>
               ))}
@@ -197,8 +229,8 @@ const tools = props.kind === "post" ? softwareOf(props.post) : [];
           )}
 
           {article.toc.length >= 3 && (
-            <nav class="toc" aria-label="İçindekiler">
-              <p class="toc__title">İçindekiler</p>
+            <nav class="toc" aria-label={YAZI_METIN.icindekiler}>
+              <p class="toc__title">{YAZI_METIN.icindekiler}</p>
               <ol>
                 {article.toc.map((item) => (
                   <li data-level={item.level}>
@@ -226,15 +258,15 @@ const tools = props.kind === "post" ? softwareOf(props.post) : [];
 
           {relatedPosts(props.post, props.posts).length > 0 && (
             <section class="block" style="margin-top:var(--s-12)">
-              <SectionTitle title="Benzer yazılar" />
+              <SectionTitle title={YAZI_METIN.benzer} />
               <div>
                 {relatedPosts(props.post, props.posts).map((related) => (
                   <article class="post-item">
                     <div class="post-item__meta">
                       <time datetime={isoDate(related.data.publishedAt)}>
-                        {formatDate(related.data.publishedAt)}
+                        {formatDate(related.data.publishedAt, yaziDili)}
                       </time>
-                      <span>{related.data.readingMinutes} dk</span>
+                      <span>{related.data.readingMinutes} {YAZI_METIN.dakika}</span>
                     </div>
                     <h3>
                       <a href={related.data.url}>{related.data.title}</a>
@@ -246,7 +278,7 @@ const tools = props.kind === "post" ? softwareOf(props.post) : [];
             </section>
           )}
         </div>
-        <Sidebar recent={recent} />
+        <Sidebar recent={recent} dil={yaziDili} />
       </article>
     </Base>
   )

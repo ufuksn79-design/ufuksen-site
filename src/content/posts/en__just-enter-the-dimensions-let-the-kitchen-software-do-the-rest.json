@@ -1,0 +1,35 @@
+{
+  "legacyId": 90123,
+  "slug": "en/just-enter-the-dimensions-let-the-kitchen-software-do-the-rest",
+  "legacyUrl": "/en/just-enter-the-dimensions-let-the-kitchen-software-do-the-rest.html",
+  "url": "/en/just-enter-the-dimensions-let-the-kitchen-software-do-the-rest.html",
+  "dil": "en",
+  "alternatif": "/olcuyu-gir-gerisini-mutfak-programi-halletsin.html",
+  "title": "Just Enter the Dimensions — Let the Software Do the Rest",
+  "excerpt": "Change one number: the parts, the holes, the hinge count, the edge-banding metres and the quote are all recalculated together.",
+  "contentHtml": "<p>The client calls: \"Let's take ten centimetres off that cabinet.\" That sentence used to mean reworking the drawing, rewriting the cut list and recalculating the quote — and worst of all, one of those three usually stayed out of date.</p>\n\n<p>In Cabinet Wizard the size lives in one place. You type it; the software does the rest.</p>\n\n\n<figure>\n  <img src=\"/media/dolap-sihirbazi/kabin-olcu-960.webp\" srcset=\"/media/dolap-sihirbazi/kabin-olcu-960.webp 960w, /media/dolap-sihirbazi/kabin-olcu-1280.webp 1280w\" sizes=\"(min-width: 860px) 800px, 100vw\" alt=\"The quick cabinet edit card and 3D view in Cabinet Wizard\" width=\"960\" height=\"540\" loading=\"lazy\" decoding=\"async\" />\n  <figcaption>The cabinet card: width, carcass height, depth and height off the floor, with the 3D view answering immediately.</figcaption>\n</figure>\n\n<h2>One card for the whole cabinet</h2>\n\n<ul>\n  <li><strong>Size:</strong> width, carcass height, depth, height off the floor.</li>\n  <li><strong>Bottom:</strong> feet, plinth, or plinth with feet.</li>\n  <li><strong>Top:</strong> a full top panel, or front and back rails.</li>\n  <li><strong>Lower back rail:</strong> double rail on or off.</li>\n  <li><strong>Gola:</strong> the handleless profile — with a handle, or a J profile on top.</li>\n</ul>\n\n\n<figure class=\"yazi-video\">\n  <iframe src=\"https://www.youtube-nocookie.com/embed/0zubGt32Oh0\" title=\"Change cabinet size from one card: Quick Cabinet Edit — Lesson 4\" loading=\"lazy\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" referrerpolicy=\"strict-origin-when-cross-origin\" allowfullscreen></iframe>\n  <figcaption>The lesson on changing sizes from a single card. Narrated in Turkish.</figcaption>\n</figure>\n\n<h2>What is recalculated when one number changes</h2>\n\n<ul>\n  <li>Cut sizes of every panel (finished size and cut size sit side by side on the card).</li>\n  <li>Shelf, divider and drawer layout.</li>\n  <li>Holes: hinge cups and plates, shelf pins, cam locks, dowels, handle screws.</li>\n  <li><strong>Hinge count</strong> — derived from the door height, overridable from the right-click menu.</li>\n  <li>Edge-banding metres, as you switch each of the four edges on or off.</li>\n  <li>Sheet nesting, usage percentage and the CNC program.</li>\n  <li>The quote — material, hardware, labour, margin and VAT, line by line.</li>\n</ul>\n\n<p>The live counter at the bottom of the screen makes this visible: <strong>part count, square metres of board and metres of banding</strong> update on every change.</p>\n\n<h2>The software also pushes back</h2>\n\n<p>\"Enter the size and let it handle the rest\" does not mean accepting every number in silence. Before anything reaches production you get warnings such as:</p>\n\n<ul>\n  <li>\"Door 2147 × 597 mm: heavy door, 5 hinges or a 22 mm door is advised.\"</li>\n  <li>\"Side 2132 mm, back 8 mm: add a middle rail or use a thicker back on a tall carcass.\"</li>\n</ul>\n\n<p>If the issue is serious, a <strong>production block</strong> appears at the CNC step and no output is produced until you acknowledge it.</p>\n\n<h2>When the client changes their mind</h2>\n\n<p>This is the best part: after a change you do not recut the job. You cut only the parts that actually changed, and the quote is already waiting with its new total.</p>\n\n<h2>Frequently asked</h2>\n\n<h3>Do I type sizes on the panel or on the cabinet?</h3>\n<p>Either. The cabinet card changes the whole unit; click a single panel and its own card opens with height, width, thickness, position, edge allowance, banding, connector direction, cut-outs and pockets.</p>\n\n<h3>Do my manual edits survive a size change?</h3>\n<p>Panels you edited or removed by hand are kept in their own lists, so the software knows what you changed. If something goes wrong, ↶ and Ctrl+Z undo it in one step.</p>\n\n<h3>Can I see the difference between finished size and cut size?</h3>\n<p>Yes, they sit side by side at the top of the card — for example a 2147 × 597 door with a cut size of 2143 × 593 mm.</p>\n\n<p>Every feature, the lesson series and the trial version are on the product page: <a href=\"https://www.bestsketchupplugins.com/en/dolap-sihirbazi/\" target=\"_blank\" rel=\"noopener\"><strong>Cabinet Wizard — Best SketchUp Plugins</strong></a>.</p>",
+  "publishedAt": "2026-11-05 18:00:00",
+  "modifiedAt": "2026-11-05 18:00:00",
+  "status": "publish",
+  "featuredImage": null,
+  "inlineMedia": [],
+  "embeds": [],
+  "seo": {
+    "title": "Enter the Size, Let the Cabinet Software Calculate",
+    "description": "Type width, height and depth on the cabinet card: panels, holes, hinge count, banding metres and the quote total are recalculated automatically.",
+    "focusKeyword": "cabinet calculation software",
+    "canonicalUrl": "https://www.ufuksen.com/en/just-enter-the-dimensions-let-the-kitchen-software-do-the-rest.html",
+    "ogImage": null,
+    "noindex": false
+  },
+  "readingMinutes": 3,
+  "migrationChecksum": "2bc213a95f81c8fcb3350d50165354166f2fe9b3c202f6dc4fddac1a1f22ce2a",
+  "author": {
+    "legacyId": 1,
+    "name": "UFUK ŞEN",
+    "slug": "ufuk",
+    "isGuest": false
+  },
+  "categories": [],
+  "tags": []
+}

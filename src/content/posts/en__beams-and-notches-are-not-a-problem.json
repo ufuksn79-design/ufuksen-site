@@ -1,0 +1,35 @@
+{
+  "legacyId": 90122,
+  "slug": "en/beams-and-notches-are-not-a-problem",
+  "legacyUrl": "/en/beams-and-notches-are-not-a-problem.html",
+  "url": "/en/beams-and-notches-are-not-a-problem.html",
+  "dil": "en",
+  "alternatif": "/kertik-kiris-sorun-degil.html",
+  "title": "Beams and Notches Are Not a Problem",
+  "excerpt": "The beam drops from the ceiling, the column cuts into the cabinet. The software works out the notch itself — and that notch goes into the CNC and DXF output too.",
+  "contentHtml": "<p>Every fitter knows the scene: the kitchen is measured, drawn and built — and then, on site, the ceiling beam or the corner column appears. The saw comes out on the floor, the notch is cut by hand, and the edge banding is ruined.</p>\n\n<p>In Cabinet Wizard, columns and beams are <strong>part of the design</strong>. You type their sizes; the cabinets adapt by themselves, and that adaptation carries through to the production files.</p>\n\n\n<figure>\n  <img src=\"/media/dolap-sihirbazi/duvar-kiris-960.webp\" srcset=\"/media/dolap-sihirbazi/duvar-kiris-960.webp 960w, /media/dolap-sihirbazi/duvar-kiris-1280.webp 1280w\" sizes=\"(min-width: 860px) 800px, 100vw\" alt=\"Wall, beam drop and beam projection fields in Cabinet Wizard\" width=\"960\" height=\"540\" loading=\"lazy\" decoding=\"async\" />\n  <figcaption>Beam drop and projection are entered per wall in millimetres; the note underneath states exactly what the software will do.</figcaption>\n</figure>\n\n<h2>Beams: three behaviours, all automatic</h2>\n\n<ul>\n  <li>With a <strong>thin beam</strong> the carcass is notched and the cabinet rides over the beam — full height is kept, only the beam's volume is cut away.</li>\n  <li>With a <strong>thick beam</strong> notching makes no sense, so the wall cabinet is shortened instead.</li>\n  <li><strong>If there is no room left</strong>, the software does not build that cabinet and tells you so. You do not find out on site.</li>\n</ul>\n\n<h2>Columns: notched where they touch</h2>\n\n<p>A column goes into the plan with its <strong>width, depth, distance from the left, bottom level, top level and clearance</strong>. In L and U plans a corner column is dragged into place from the top view. The moment a cabinet touches it, the carcass is notched.</p>\n\n<ul>\n  <li><strong>150 mm or more</strong> left in front of the beam: the cabinet wraps it (a notch is cut).</li>\n  <li>Otherwise, <strong>250 mm or more</strong> below the beam: the wall cabinet is shortened.</li>\n  <li>Less than <strong>80 mm</strong> left under the notch: the carcass stops in front of the beam.</li>\n  <li>A projection under <strong>5 mm</strong> is ignored — no pointless notch is cut.</li>\n</ul>\n\n<p>The exception stays in your hands: set \"do not cut for the column\" on a module and its carcass is left alone.</p>\n\n<h2>The real point: the notch reaches the CNC</h2>\n\n<p>Seeing a notch on screen is pleasant but useless on its own. What matters is that <strong>the cut is written into the CNC and DXF output</strong>. The notched side panel leaves the machine already notched; nobody fights it with a hand saw during installation and the edge banding survives.</p>\n\n\n<figure class=\"yazi-video\">\n  <iframe src=\"https://www.youtube-nocookie.com/embed/eQ9hdiFhfIo\" title=\"The easiest cabinet design and production software — Cabinet Wizard\" loading=\"lazy\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" referrerpolicy=\"strict-origin-when-cross-origin\" allowfullscreen></iframe>\n  <figcaption>A general tour of the program: one flow from design to CNC. Narrated in Turkish.</figcaption>\n</figure>\n\n<h2>Why it matters</h2>\n\n<p>Because a notch is one of those small errors that eat a job's margin. A mismeasured notch means recutting a panel; a notch cut on site means labour, dust and usually a damaged edge. Solved in the design, neither happens.</p>\n\n<h2>Frequently asked</h2>\n\n<h3>What do I measure on a beam?</h3>\n<p>Two numbers are enough: how far it drops from the ceiling and how far it projects from the wall. The software works out the rest together with the wall-cabinet height.</p>\n\n<h3>What if the column lands in the middle of a cabinet?</h3>\n<p>The carcass is notched where it touches; if less than 80 mm is left under the notch, the carcass stops in front of the column instead. You can also switch notching off for that module and cover the column with a filler panel.</p>\n\n<h3>And a cabinet full of drawers?</h3>\n<p>A drawer unit that meets a column is not notched; it is brought forward and its depth adapts, so nothing is cut that would stop a drawer working.</p>\n\n<p>Every feature, the lesson series and the trial version are on the product page: <a href=\"https://www.bestsketchupplugins.com/en/dolap-sihirbazi/\" target=\"_blank\" rel=\"noopener\"><strong>Cabinet Wizard — Best SketchUp Plugins</strong></a>.</p>",
+  "publishedAt": "2026-11-05 15:00:00",
+  "modifiedAt": "2026-11-05 15:00:00",
+  "status": "publish",
+  "featuredImage": null,
+  "inlineMedia": [],
+  "embeds": [],
+  "seo": {
+    "title": "Beams and Columns in a Kitchen: Let the Software Notch",
+    "description": "A thin beam notches the carcass, a thick one shortens the wall cabinet, and a column notches whatever it touches — with the notch carried into CNC and DXF.",
+    "focusKeyword": "kitchen cabinet column notch",
+    "canonicalUrl": "https://www.ufuksen.com/en/beams-and-notches-are-not-a-problem.html",
+    "ogImage": null,
+    "noindex": false
+  },
+  "readingMinutes": 3,
+  "migrationChecksum": "c6a1d942e1462292ceb715e16c27a629ea137351b6f55cac7e308b0057e21d7b",
+  "author": {
+    "legacyId": 1,
+    "name": "UFUK ŞEN",
+    "slug": "ufuk",
+    "isGuest": false
+  },
+  "categories": [],
+  "tags": []
+}

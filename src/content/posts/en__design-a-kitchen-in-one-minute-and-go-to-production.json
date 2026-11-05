@@ -1,0 +1,35 @@
+{
+  "legacyId": 90121,
+  "slug": "en/design-a-kitchen-in-one-minute-and-go-to-production",
+  "legacyUrl": "/en/design-a-kitchen-in-one-minute-and-go-to-production.html",
+  "url": "/en/design-a-kitchen-in-one-minute-and-go-to-production.html",
+  "dil": "en",
+  "alternatif": "/1-dakikada-mutfak-tasarla-uretime-gec.html",
+  "title": "Design a Kitchen in One Minute, Then Go Straight to Production",
+  "excerpt": "Type the wall sizes, press Auto-arrange: the kitchen lays itself out around the fridge, oven, sink, dishwasher and hob. What follows is the production file.",
+  "contentHtml": "<p>You have just left the client's flat with three wall measurements in your notebook. When will they get the quote? The old answer was \"I'll draw it tonight.\" The new answer is: <strong>in the car, in a minute.</strong></p>\n\n<p>That is what the Kitchen Plan section of Cabinet Wizard is for: type the sizes, let the software lay the kitchen out.</p>\n\n\n<figure class=\"yazi-video\">\n  <iframe src=\"https://www.youtube-nocookie.com/embed/O3HWo0a0AQo\" title=\"Kitchen plan: draw the wall, drag the cabinets — Cabinet Wizard Lesson 12\" loading=\"lazy\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" referrerpolicy=\"strict-origin-when-cross-origin\" allowfullscreen></iframe>\n  <figcaption>The lesson that starts from a wall measurement and ends with a kitchen. Narrated in Turkish.</figcaption>\n</figure>\n\n<h2>The walls first: straight, L or U</h2>\n\n<p>You type the wall lengths into the boxes — \"Wall 1: 3000 mm, Wall 2: 4200 mm\" — and press <strong>Build walls with these sizes</strong>. You can also draw them freely in 3D. Straight, L-shaped and U-shaped kitchens all start here.</p>\n\n\n<figure>\n  <img src=\"/media/dolap-sihirbazi/mutfak-plani-960.webp\" srcset=\"/media/dolap-sihirbazi/mutfak-plani-960.webp 960w, /media/dolap-sihirbazi/mutfak-plani-1280.webp 1280w\" sizes=\"(min-width: 860px) 800px, 100vw\" alt=\"Cabinets laid out on the kitchen plan in Cabinet Wizard\" width=\"960\" height=\"540\" loading=\"lazy\" decoding=\"async\" />\n  <figcaption>The kitchen plan: once the walls are entered, modules line up along them.</figcaption>\n</figure>\n\n<h2>Then ⚡ Auto-arrange</h2>\n\n<p>You do not have to place every cabinet. Auto-arrange lines them up around the <strong>fridge, oven, sink, dishwasher and hob</strong>. Worktop height, plinth and clearances come from the standards a workshop already works to:</p>\n\n<ul>\n  <li>Worktop at <strong>870 mm</strong> (770 carcass + 100 leg)</li>\n  <li>Wall cabinets <strong>1490 mm</strong> from the floor</li>\n  <li><strong>580 mm</strong> between worktop and wall cabinet</li>\n</ul>\n\n<p>What appears is not a layout the software invented, but the one your workshop builds anyway. Any module you dislike is dragged and swapped.</p>\n\n<h2>The client-facing output is ready too</h2>\n\n<ul>\n  <li><strong>Plan, section and elevation</strong> are generated.</li>\n  <li>🖨️ prints an <strong>A4 client sheet</strong> or a PDF.</li>\n  <li>Press Render and you get an image to show the client without opening a second program.</li>\n  <li>The quote is calculated from the design: material, hardware, labour, margin and VAT, line by line.</li>\n</ul>\n\n<h2>What \"go to production\" means</h2>\n\n<p>When the plan is done you are not holding a picture, you are holding a job that can be cut. The same model produces the cut list (CSV), the sheet nesting with its usage percentage, the drilling table, DXF, per-part DXF, the CNC router program (NC / G-code), 50 × 30 mm part labels, the hardware schedule and module-by-module assembly sheets.</p>\n\n<p>Change one module and all of it is recalculated. The chore of \"I updated the drawing, now I have to update the list\" is gone.</p>\n\n<h2>Frequently asked</h2>\n\n<h3>Is it really one minute?</h3>\n<p>Typing the wall sizes and pressing Auto-arrange takes seconds, and what comes out respects real dimensions and standards. The client's own layout, door style and materials are your decisions and they take longer — but going from an empty screen to a kitchen full of cabinets really is under a minute.</p>\n\n<h3>What happens at the corner in an L or U kitchen?</h3>\n<p>Corner modules are in the library; the blind panel and corner filler appear automatically and the doors never clash. In an L plan the corner worktop is built with them.</p>\n\n<h3>What about the column and the beam in the room?</h3>\n<p>Those go into the plan as well, and the cabinets adapt to them by themselves.</p>\n\n<p>Every feature, the lesson series and the trial version are on the product page: <a href=\"https://www.bestsketchupplugins.com/en/dolap-sihirbazi/\" target=\"_blank\" rel=\"noopener\"><strong>Cabinet Wizard — Best SketchUp Plugins</strong></a>.</p>",
+  "publishedAt": "2026-11-05 12:00:00",
+  "modifiedAt": "2026-11-05 12:00:00",
+  "status": "publish",
+  "featuredImage": null,
+  "inlineMedia": [],
+  "embeds": [],
+  "seo": {
+    "title": "Kitchen Design Software: A Kitchen in One Minute",
+    "description": "Type the wall dimensions you measured at the client's home and let the kitchen software lay out a straight, L- or U-shaped kitchen around the appliances.",
+    "focusKeyword": "kitchen design software",
+    "canonicalUrl": "https://www.ufuksen.com/en/design-a-kitchen-in-one-minute-and-go-to-production.html",
+    "ogImage": null,
+    "noindex": false
+  },
+  "readingMinutes": 3,
+  "migrationChecksum": "47ac4a3c6156d272e4d7a5b7dbeadd20154cc7540d6ae07ff02f04680857eb9f",
+  "author": {
+    "legacyId": 1,
+    "name": "UFUK ŞEN",
+    "slug": "ufuk",
+    "isGuest": false
+  },
+  "categories": [],
+  "tags": []
+}

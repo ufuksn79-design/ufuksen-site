@@ -1,37 +1,43 @@
 ---
 import { getVisibleCategories, categoryPath, formatDate, type Post } from "../lib/content";
 
-interface Props { recent: Post[] }
-const { recent } = Astro.props;
-const categories = (await getVisibleCategories()).slice(0, 8);
+interface Props { recent: Post[]; dil?: "tr" | "en" }
+const { recent, dil = "tr" } = Astro.props;
+/** Kategori sayfaları yalnız Türkçe; İngilizce kenar çubuğunda gösterilmez. */
+const categories = dil === "tr" ? (await getVisibleCategories()).slice(0, 8) : [];
+const M = {
+  tr: { cubuk: "Blog kenar çubuğu", ara: "Ara", arama: "Arama", yerTutucu: "Yazılarda ara…", son: "Son yazılar", kategoriler: "Kategoriler" },
+  en: { cubuk: "Blog sidebar", ara: "Search", arama: "Search", yerTutucu: "Search the articles…", son: "Latest articles", kategoriler: "Categories" },
+}[dil];
 ---
-<aside class="aside" aria-label="Blog kenar çubuğu">
+<aside class="aside" aria-label={M.cubuk}>
   <section class="widget">
-    <h2>Ara</h2>
-    <form class="search-form" role="search" action="/arama" method="get">
-      <label class="u-eyebrow" for="sidebar-q" style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)">Arama</label>
-      <input id="sidebar-q" name="q" type="search" placeholder="Yazılarda ara…" />
-      <button class="btn btn--primary" type="submit">Ara</button>
+    <h2>{M.ara}</h2>
+    <form class="search-form" role="search" action={dil === "en" ? "/en/search" : "/arama"} method="get">
+      <label class="u-eyebrow" for="sidebar-q" style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)">{M.arama}</label>
+      <input id="sidebar-q" name="q" type="search" placeholder={M.yerTutucu} />
+      <button class="btn btn--primary" type="submit">{M.ara}</button>
     </form>
   </section>
 
   <section class="widget">
-    <h2>Son yazılar</h2>
+    <h2>{M.son}</h2>
     {/* Uzun başlıklar: tarih altta, başlık tam genişlikte (bkz. global.css) */}
     <ul class="widget__list--stacked">
       {recent.map((post) => (
         <li>
           <a href={post.data.url}>
             <span>{post.data.title}</span>
-            <em>{formatDate(post.data.publishedAt)}</em>
+            <em>{formatDate(post.data.publishedAt, dil)}</em>
           </a>
         </li>
       ))}
     </ul>
   </section>
 
+  {categories.length > 0 && (
   <section class="widget">
-    <h2>Kategoriler</h2>
+    <h2>{M.kategoriler}</h2>
     <ul>
       {categories.map((category) => (
         <li>
@@ -43,4 +49,5 @@ const categories = (await getVisibleCategories()).slice(0, 8);
       ))}
     </ul>
   </section>
+  )}
 </aside>

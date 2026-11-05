@@ -893,3 +893,45 @@ söyleniyor. İngilizce karşılığı istenirse ayrı bir karar gerekir.
 
 593 sayfa, `astro check` 0 hata, yeni kırık link ya da eksik medya yok.
 Şekiller telefonda dokununca tam ekran açılıyor; ölçüldü.
+
+## ADR-027 — Bazı yazıların İngilizce karşılığı yayımlanır
+
+**Durum:** Kabul edildi
+**Tarih:** 2026-11-05
+
+### Bağlam
+
+ADR-025 "430 blog yazısı çevrilmez" dedi ve şunu ekledi: *"İngilizce karşılığı
+istenirse ayrı bir karar gerekir."* Kullanıcı 5 Kasım 2026'da Dolap Sihirbazı
+için dört yazı isterken "tüm dillerde" dedi. Karar şimdi veriliyor.
+
+### Karar
+
+**1. Miras arşiv hâlâ çevrilmiyor.** 430 Türkçe yazı olduğu gibi kalır.
+Çeviri yalnız yeni, ürün anlatan yazılarda ve elle yapılır (makine çevirisi
+değil, uyarlama).
+
+**2. Dil, yazının kendi alanı.** `dil: "tr" | "en"` (varsayılan `tr`, eski
+dosyalarda alan yok) ve `alternatif` (öbür dildeki adres). `alternatif`
+verildiğinde `Base` `hreflang` çiftini basar.
+
+**3. Adres şeması.** İngilizce yazının `slug`ı `en/` ile başlar; tek
+catch-all rota onu `/en/<ad>.html` olarak üretir. Yeni rota dosyası
+gerekmedi.
+
+**4. Listeler dile göre süzülür.** `getPosts(dil)` varsayılan olarak Türkçe
+döner — yani Türkçe blog, RSS, arama ve kategori sayfaları eskisi gibi
+çalışır, İngilizce yazılar oraya düşmez. `/en/blog` önce İngilizce yazıları,
+sonra Türkçe arşivi listeler; uyarı kutusunun metni buna göre değişti.
+
+**5. İngilizce yazıda Türkçe artık kalmaz.** Yazı şablonunun sabit metinleri
+("dk okuma", "İçindekiler", "Benzer yazılar"), tarih biçimi (`formatDate`
+artık dil alıyor) ve kenar çubuğu iki dilli. Kategori sayfaları Türkçe
+olduğu için İngilizce yazıya kategori verilmez ve kenar çubuğunda kategori
+bölümü basılmaz.
+
+### Sonuç
+
+620 sayfa, `astro check` 0 hata. İlk uygulama: Dolap Sihirbazı dizisi —
+dört başlık × iki dil.
+

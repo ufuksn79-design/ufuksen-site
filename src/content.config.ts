@@ -67,6 +67,15 @@ const posts = defineCollection({
   loader: glob({ pattern: "**/*.json", base: "./src/content/posts" }),
   schema: z.object({
     ...base,
+    /**
+     * Yazının dili (ADR-027). Varsayılan Türkçe: 430 miras yazının hepsi
+     * Türkçe ve dosyalarında bu alan yok. İngilizce yazının `slug`ı
+     * `en/` ile başlar, böylece tek catch-all rota onu `/en/...html`
+     * olarak üretir.
+     */
+    dil: z.enum(["tr", "en"]).default("tr"),
+    /** Öbür dildeki karşılığının adresi — `hreflang` çifti için. */
+    alternatif: z.string().nullable().default(null),
     author: z.object({
       legacyId: z.number().nullable(),
       name: z.string(),

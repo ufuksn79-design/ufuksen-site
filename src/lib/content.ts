@@ -28,10 +28,11 @@ export function isParked(slug: string): boolean {
 }
 
 /** Sitede görünen yazılar — park edilenler hariç, yeniden eskiye. */
-export async function getPosts(): Promise<Post[]> {
+export async function getPosts(dil: "tr" | "en" = "tr"): Promise<Post[]> {
   const posts = await getCollection("posts");
   return posts
     .filter((post) => !PARKED.has(post.data.slug))
+    .filter((post) => (post.data.dil ?? "tr") === dil)
     .sort((a, b) => Date.parse(b.data.publishedAt) - Date.parse(a.data.publishedAt));
 }
 
@@ -113,14 +114,14 @@ export function categoryPathBySlug(slug: string): string {
   return CATEGORY_URL_BY_SLUG.get(slug) ?? `/kategori/${slug}`;
 }
 
-const DATE_FORMAT = new Intl.DateTimeFormat("tr-TR", {
-  day: "2-digit",
-  month: "long",
-  year: "numeric",
-});
+const DATE_FORMAT = {
+  tr: new Intl.DateTimeFormat("tr-TR", { day: "2-digit", month: "long", year: "numeric" }),
+  en: new Intl.DateTimeFormat("en-GB", { day: "2-digit", month: "long", year: "numeric" }),
+};
 
-export function formatDate(value: string): string {
-  return DATE_FORMAT.format(new Date(value));
+/** Tarih, sayfanın dilinde yazılır (ADR-027); varsayılan Türkçe. */
+export function formatDate(value: string, dil: "tr" | "en" = "tr"): string {
+  return DATE_FORMAT[dil].format(new Date(value));
 }
 
 export function isoDate(value: string): string {
