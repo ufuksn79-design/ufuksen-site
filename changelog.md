@@ -28,6 +28,45 @@ Format, Keep a Changelog yaklaşımına yakındır. Tarihler `YYYY-MM-DD` biçim
 - Kaynak WordPress sistemi migration boyunca salt okunur kabul edildi.
 - Dry-run, yedek ve rollback zorunlulukları eklendi.
 
+## [1.12.0] — 2026-11-13
+
+3D render rehberi — uzun kuyruklu anahtar kelimelerle yazılmış hub yazısı.
+
+### Added
+
+- `scripts/content/3d-render-rehberi.mjs` — yazıyı üreten betik.
+  `/3d-render-nasil-alinir-mimari-gorsellestirme-rehberi.html`, 1.141 kelime,
+  10 H2 / 5 H3, 4 soruluk SSS.
+
+### Nasıl kuruldu
+
+Kullanıcı isteği: "3d render konusunda blog yazısı yazalım, uzun kuyruklu
+kelimelerden oluşsun, iç kısımda 3d render kelimesine mimari3d.com link
+çıkışı verelim."
+
+Arşivde 111 render yazısı zaten var; bu yüzden yazı yeni bir konu değil,
+**süreç hub'ı** olarak kuruldu: model hazırlığı → malzeme → ışık → kamera →
+süre → renk düzeltme. Başlıklar uzun kuyruklu ifadelerden seçildi (3d render
+nasıl alınır, iç mekân ışık ayarı, gece renderi nasıl alınır, render süresi
+neden uzar, 3d render fiyatı neye göre belirlenir, sketchup ile gerçekçi
+render almak).
+
+Bağlantı çıkışı: gövdedeki **"3d render"** ifadesi `mimari3d.com`'a bağlanıyor
+(istenen çıpa metni birebir), kapanışta ikinci bir bağlantı daha var.
+İç bağlantılar mevcut render yazılarına: render hataları, D5 Render nedir,
+10 dakikada gerçekçi render, dış mekânda gerçekçi render.
+
+### Bilerek yazılmayanlar
+
+- **Fiyat rakamı.** Yalnız fiyatı belirleyen etkenler yazıldı.
+- **Öne çıkan görsel.** Arşivdeki render görsellerinin hepsi üstünde yazı olan
+  video kapakları; bu yazıya uymuyorlar, uydurma kapak konmadı.
+
+### Doğrulama
+
+- `astro check` 0 hata; 621 sayfa derlendi.
+- Tek H1; iç bağlantıların hepsi `dist` içinde var; çıpa metni "3d render".
+
 ## [1.11.0] — 2026-11-05
 
 Dolap Sihirbazı yazı dizisi (4 başlık × 2 dil) ve İngilizce yazı altyapısı.
