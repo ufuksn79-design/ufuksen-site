@@ -1,0 +1,41 @@
+{
+  "legacyId": 90040,
+  "slug": "dolap-sihirbazini-neden-yazdim",
+  "legacyUrl": "/dolap-sihirbazini-neden-yazdim.html",
+  "url": "/dolap-sihirbazini-neden-yazdim.html",
+  "dil": "tr",
+  "alternatif": null,
+  "title": "Dolap Sihirbazı'nı Neden Yazdım?",
+  "excerpt": "Atölyede yanlış kesilen paneller hep aynı üç yerden çıkıyordu: elle yazılan liste, unutulan kenar bandı payı, listede olmayan damar yönü. Program bu yüzden var.",
+  "contentHtml": "<p>Yıllardır 3B çiziyorum ve anlatıyorum. Mutfak dolabı tasarımı tarafında da epey iş gördüm; ama beni bir program yazmaya iten şey çizim değil, çizimden sonrası oldu.</p>\n\n<p>Çizim biter, model güzeldir, müşteri beğenir. Sonra o güzel model atölyeye bir şekilde \"aktarılır\": biri oturur, ölçüleri tek tek tabloya yazar. Kayıp tam burada başlar. Ekrandaki dolap ile kesilen dolap artık iki ayrı şeydir ve aralarındaki fark yalnızca kimsenin hata yapmamasına bağlıdır.</p>\n\n<h2>Atölyede hatalar hep aynı üç yerden çıkıyor</h2>\n\n<p>Yıllar içinde şunu gördüm: yanlış kesilen panellerin sebebi neredeyse hiç \"ustanın beceriksizliği\" değil. Üç yerden çıkıyor.</p>\n\n<ol>\n  <li><strong>Listeyi elle yazmak.</strong> Dolap doğrudur, kesim listesi yazılırken bir rakam kayar. 720 yerine 702 yazılır ve kimse fark etmez — ta ki panel tezgâha gelene kadar.</li>\n  <li><strong>Kenar bandı payının unutulması.</strong> Bant düşülmemiş bir panel, kapak takılınca birkaç milim fazla gelir. Küçük bir sayı, görünür bir hata.</li>\n  <li><strong>Damar yönünün listede olmaması.</strong> Kesimi yapan kişi damar yönünü bilmiyorsa, iki kapak yan yana geldiğinde desen tutmaz. Malzeme sağlamdır, ölçü doğrudur, ama iş göze batar.</li>\n</ol>\n\n<p>Üçü de \"dikkat\" meselesi gibi görünür. Değil. Üçü de <strong>bilgi taşıma</strong> meselesidir: bilgi bir yerden başka yere elle taşınıyorsa, er geç bir tanesi yolda düşer.</p>\n\n<p>Yazmak istediğim şey bu yüzden bir çizim programı değildi. Bilgiyi hiç taşımayan bir program istedim: dolabı kurduğun yerle, kesimin çıktığı yer aynı olsun.</p>\n\n<h2>Parametrik olmasının asıl sebebi: müşteri fikir değiştiriyor</h2>\n\n<p>Programın temeline <a href=\"https://dolapsihirbazi.com/\" target=\"_blank\" rel=\"noopener\">parametrik dolap tasarımı</a> koymamın sebebi teknik bir heves değil, hayatın kendisi: müşteri fikir değiştirir. Dolap 10 cm kısalır, çekmece sayısı ikiden üçe çıkar, kapak modeli değişir.</p>\n\n<p>Elle çalışırken bu cümlelerin her biri ayrı bir iştir. Parametrik ölçüyle çalışırken sadece bir sayıdır: yazarsın, dolap kendini yeniden kurar. Panellerin kesim ölçüsü, delik yerleri, menteşe adedi, bant metrajı — hepsi o sayıdan yeniden hesaplanır.</p>\n\n<p>İşin özeti şu: hızlı dolap tasarımı dediğimiz şey aslında \"ikinci kez çizmemek\"tir. Zamandan tasarruf ettiren dolap tasarımı da bundan ibarettir — ilk çizimi hızlandırmaktan çok, revizyonu bedava hâle getirmek.</p>\n\n<h2>\"Program öğrenmeyelim, sürükleyip bırakalım\"</h2>\n\n<p>Geliştirirken öğrendiğim ikinci şey şu oldu: usta, program öğrenmek istemiyor. Haklı da. Onun işi dolap yapmak.</p>\n\n<p>Bu yüzden en çok uğraştığım kısım, boş ekrandan dolaplı bir mutfağa geçişi kısaltmak oldu. Bugün program <a href=\"https://dolapsihirbazi.com/\" target=\"_blank\" rel=\"noopener\">sürükle-bırak modüller</a> ile çalışıyor: 245 hazır modülden birini tutup duvara bırakıyorsun. Bıraktığın şey bir resim değil — yan paneli, tablası, rafı, kapağı ayrı ayrı gerçek parçalar. Yani bıraktığın anda kesilebilir hâle geliyor.</p>\n\n<p>Kapak tarafında 386 kapak modeli var; kapak stilleri arasında gezinirken ölçü değişmiyor, tasarım kapağın kendi ölçüsüne oturuyor. Kulp seçimi, kaplama değişimi, gövde ve kapak rengi — hiçbiri modeli bozmuyor, çünkü hepsi aynı parametrik yapının üstünde duruyor.</p>\n\n<p>Buna dinamik mutfak demek de mümkün, akıllı mutfak demek de. Ben daha çok şöyle düşünüyorum: mutfağın kendisi programın içinde canlı duruyor, dokunduğun her yer kendi sonucunu biliyor.</p>\n\n<h2>Ayarların bir kez girilmesi</h2>\n\n<p>Üçüncü öğrendiğim şey, her atölyenin kendi standardı olduğuydu. Birinin kullandığı bant kalınlığı, diğerinin raf payı, bir başkasının gövde bağlantısı aynı değil.</p>\n\n<p>O yüzden programda atölyenin kendi değerlerini girdiği bir dinamik ayarlar sayfası var: oraya bir kez yazıyorsun, bütün projelerde o değerler geçerli oluyor. Fiyat tarafı da aynı mantıkla çalışıyor — birim fiyatları sen giriyorsun, teklif senin rakamlarınla çıkıyor.</p>\n\n<h2>Esas mesele: CNC'ye nasıl gittiği</h2>\n\n<p>Program bir dolap tasarım stüdyosu olarak kalsaydı yarım iş olurdu. Benim derdim en baştan beri şuydu: ekrandaki dolap, makineden aynı şekilde çıksın. Bugün tek projeden şunlar çıkıyor:</p>\n\n<ul>\n  <li><strong>Otomatik kesim listesi</strong> — kenar bandı ve damar yönü sütunlarıyla birlikte. Yukarıda saydığım üç hatadan ikisi, listeyi elle yazmayı bıraktığın anda ortadan kalkıyor.</li>\n  <li><strong>Otomatik levha yerleşim şeması</strong> — <a href=\"https://dolapsihirbazi.com/\" target=\"_blank\" rel=\"noopener\">levha nesting</a> işini program yapıyor; hangi parçanın hangi levhadan çıktığını ve levhanın ne kadarının kullanıldığını gösteriyor.</li>\n  <li><strong>CNC/DXF ve NC dosyaları</strong> — makineye gidecek hâliyle. \"CNC'ye aktar\" dediğinde aradaki çeviri adımı yok.</li>\n  <li><strong>Etiket ve teklif</strong> — montajcıya ve müşteriye giden kâğıtlar da aynı projeden.</li>\n</ul>\n\n<p>CNC ile dolap üretimi yapan bir atölye için kritik olan şey hatasız CNC kesimi, yani listedeki ölçüyle makinedeki ölçünün birbirini tutması. Dolap Sihirbazı'na özel CNC kesim işleme sistemi tam olarak bunun için var: parçayı program kendisi diziyor, delikleri kendisi sıralıyor, ters çevrilmesi gereken parçayı kendisi aynalıyor. Ayrı bir CNC yazılımı (CAM) öğrenip aradaki dosyayı elden geçirmek zorunda değilsin.</p>\n\n<h2>Bir de şunu öğrendim: program başka programa muhtaç olmamalı</h2>\n\n<p>İlk sürümler SketchUp içinde çalışıyordu. Oradan aldığım en net geri bildirim şuydu: \"ben SketchUp kullanmıyorum ki.\"</p>\n\n<p>Bugün Dolap Sihirbazı kendi başına çalışan bir Windows masaüstü programı. Bilgisayarında başka bir çizim programının kurulu olması gerekmiyor. Render de içinde — müşteriye gösterilecek görsel için ikinci bir program açmıyorsun.</p>\n\n<h2>Denemek isteyene</h2>\n\n<p>Programı anlatmanın en kötü yolu anlatmak; en iyisi açıp bir dolap kurmak. Onun için <a href=\"https://dolapsihirbazi.com/demo/\" target=\"_blank\" rel=\"noopener\">5 günlük ücretsiz demo</a> var: tasarım, 3B ve render tarafı açık, üretim çıktıları tam sürümde. Fiyat bilgisi ve sürümler için de aynı sitedeki ürün sayfasına bakabilirsin.</p>",
+  "publishedAt": "2026-11-16 10:00:00",
+  "modifiedAt": "2026-11-16 10:00:00",
+  "status": "publish",
+  "featuredImage": null,
+  "inlineMedia": [],
+  "embeds": [],
+  "seo": {
+    "title": "Dolap Sihirbazı'nı Neden Yazdım? | Ufuk Şen",
+    "description": "Elle yazılan kesim listesi, unutulan kenar bandı payı, listede olmayan damar yönü: bir dolap tasarım programını yazmaya iten üç hata ve öğrendiklerim.",
+    "focusKeyword": "parametrik dolap tasarımı",
+    "canonicalUrl": "https://www.ufuksen.com/dolap-sihirbazini-neden-yazdim.html",
+    "ogImage": null,
+    "noindex": false
+  },
+  "readingMinutes": 4,
+  "migrationChecksum": "0e12f922053b366518a52f1591541aa1a08313c50b4693623a004e30e0fe411f",
+  "author": {
+    "legacyId": 1,
+    "name": "UFUK ŞEN",
+    "slug": "ufuk",
+    "isGuest": false
+  },
+  "categories": [
+    {
+      "legacyId": 1169,
+      "name": "3D Programlar",
+      "slug": "3d-programlar"
+    }
+  ],
+  "tags": []
+}
