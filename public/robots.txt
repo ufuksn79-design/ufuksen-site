@@ -1,4 +1,15 @@
 User-agent: *
 Allow: /
 
+# WordPress mirası yollar (2026-11-18).
+#
+# Search Console'da "Sunucu hatası (5xx)" altında 85 adres duruyordu; hepsi
+# eski hosting'den kalan /wp-includes/*.php dosyalarıydı. Site Cloudflare'a
+# taşındıktan sonra bu adresler 404 dönüyor, yani sorun kendiliğinden
+# kapandı. Yine de taranmalarının bir faydası yok: tarama bütçesini
+# harcıyorlar ve eski kurulumun iç yapısını gösteriyorlar.
+Disallow: /wp-includes/
+Disallow: /wp-admin/
+Disallow: /wp-json/
+
 Sitemap: https://www.ufuksen.com/sitemap-index.xml
