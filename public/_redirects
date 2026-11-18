@@ -83,6 +83,8 @@
 /urunler/windowfun-studio-web  /eklenti/windowfun-studio-web.html  301
 /urunler/windowfun-studio  /eklenti/windowfun-studio.html  301
 /urunler/kitchen-studio  /eklenti/kitchenflow.html  301
+/sketchup-ders  /sketchup-ozel-ders  301
+/sketchup-kurs  /sketchup-ozel-ders  301
 
 # --- AMP / attachment / eski arama ---------------------------------------
 # Bu kalıplar BİLEREK burada değil: Cloudflare _redirects orta-yol splat

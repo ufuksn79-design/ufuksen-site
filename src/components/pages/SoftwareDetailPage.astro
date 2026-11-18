@@ -54,6 +54,19 @@ const yol = dil === "en" ? `/en/software/${entry.tag.slug}` : `/yazilim/${entry.
         note={t.yaziVeVideo(posts.length, entry.videoCount)}
       />
       {
+        /* SketchUp hub'ı sitenin en çok yazı taşıyan sayfası; ana hizmet
+           sayfasına buradan bağlanıyor (SEO görevi 2026-11-18). */
+        dil === "tr" && entry.tag.slug === "sketchup" && (
+          <aside class="ders-kutusu">
+            <p>
+              <strong>Birebir öğrenmek ister misiniz?</strong> Yazıları tek tek
+              takip etmek yerine kendi projeniz üzerinde ilerleyin:{" "}
+              <a href="/sketchup-ozel-ders">SketchUp özel ders</a>
+            </p>
+          </aside>
+        )
+      }
+      {
         courses.length > 0 && (
           <section style="margin-bottom:var(--s-12)">
             <h2 style="font-size:var(--t-body-lg);margin-bottom:var(--s-4)">

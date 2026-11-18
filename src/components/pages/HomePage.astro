@@ -143,11 +143,17 @@ const counters = [
           )
         }
       </div>
-      <h1 class="profile__name">Ufuk Şen</h1>
+      {/* H1 yalnız markaydı; hizmet adı eklendi (SEO görevi 2026-11-18).
+          Görsel düzen değişmiyor: ikinci satır küçük punto. */}
+      <h1 class="profile__name">
+        Ufuk Şen
+        {dil === "tr" && <span class="profile__h1alt">SketchUp Özel Ders ve 3D Görselleştirme Eğitimleri</span>}
+      </h1>
       <p class="profile__role">{t.rol}</p>
       <SocialLinks variant="row" />
     </div>
     <div class="profile__cta">
+      {dil === "tr" && <a href="/sketchup-ozel-ders">SketchUp Özel Ders</a>}
       <a href={blogYolu}>{t.yazilariOku}</a>
       <a href={iletisimYolu}>{t.iletisimeGec}</a>
     </div>

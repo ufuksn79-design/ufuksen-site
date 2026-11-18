@@ -89,7 +89,15 @@ const posts = defineCollection({
 
 const pages = defineCollection({
   loader: glob({ pattern: "**/*.json", base: "./src/content/pages" }),
-  schema: z.object(base),
+  schema: z.object({
+    ...base,
+    /**
+     * Sayfaya özel yapılandırılmış veri (JSON-LD). Verilmezse şablon kendi
+     * WebPage şemasını yazar. Hizmet sayfalarında Service + FAQPage +
+     * BreadcrumbList + Person tek @graph olarak buradan geliyor.
+     */
+    jsonLd: z.record(z.any()).nullable().optional(),
+  }),
 });
 
 /* ------------------------------------------------------------------ */

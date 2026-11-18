@@ -69,6 +69,8 @@ interface SayfaMetinleri {
     blog: string;
     pluginler: string;
     egitim: string;
+    /** Ana satış sayfası: /sketchup-ozel-ders (SEO görevi, 2026-11-18). */
+    ozelDers: string;
     video: string;
     yazilim: string;
     ara: string;
@@ -227,6 +229,7 @@ export const SAYFA: Record<Dil, SayfaMetinleri> = {
       blog: "Blog",
       pluginler: "Pluginler",
       egitim: "Eğitim",
+      ozelDers: "Özel Ders",
       video: "Video",
       yazilim: "Yazılım",
       ara: "Ara",
@@ -408,6 +411,7 @@ export const SAYFA: Record<Dil, SayfaMetinleri> = {
   en: {
     menu: {
       profil: "Profile",
+      ozelDers: "Private Lesson",
       blog: "Blog",
       pluginler: "Plugins",
       egitim: "Courses",

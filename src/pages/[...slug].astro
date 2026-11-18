@@ -135,6 +135,31 @@ const article =
     : { html: "", toc: [] };
 const tools = props.kind === "post" ? softwareOf(props.post) : [];
 
+/**
+ * SketchUp yazılarının sonundaki ders kutusunun bağlantı metni.
+ *
+ * Aynı çıpa 170 sayfada tekrarlanırsa doğal durmuyor; metin yazının
+ * slug'ından türeyen sabit bir sayıyla seçiliyor. Dizide tam eşleşme
+ * ("SketchUp özel ders") 10'da 4 kez geçiyor — hedeflenen ~%40 dağılım.
+ */
+const CIPALAR = [
+  "SketchUp özel ders",
+  "online SketchUp dersi",
+  "SketchUp özel ders",
+  "birebir SketchUp eğitimi",
+  "SketchUp özel ders",
+  "SketchUp kursu",
+  "SketchUp özel ders",
+  "SketchUp özel dersleri hakkında bilgi",
+  "Ufuk Şen ile SketchUp dersi",
+  "online birebir SketchUp dersi",
+];
+function cipaSec(slug: string): string {
+  let toplam = 0;
+  for (const ch of slug) toplam = (toplam * 31 + ch.charCodeAt(0)) % 100000;
+  return CIPALAR[toplam % CIPALAR.length];
+}
+
 /** Yazı dalının dili ve o dildeki birkaç sabit metin (ADR-027). */
 const yaziDili = props.kind === "post" ? (props.post.data.dil ?? "tr") : "tr";
 const YAZI_METIN = {
@@ -256,6 +281,21 @@ const YAZI_METIN = {
             }
           />
 
+          {
+            /* SketchUp yazılarının sonunda tek "birebir ders" kutusu
+               (SEO görevi 2026-11-18). Sayfa başına tek bağlantı; İngilizce
+               yazılarda yok, çünkü hizmet sayfası Türkçe. */
+            yaziDili === "tr" && tools.some((tool) => tool.slug === "sketchup") && (
+              <aside class="ders-kutusu" style="margin-top:var(--s-12)">
+                <p>
+                  <strong>Birebir öğrenmek ister misiniz?</strong> SketchUp'ı
+                  kendi projeniz üzerinde, online birebir çalışalım:{" "}
+                  <a href="/sketchup-ozel-ders">{cipaSec(props.post.data.slug)}</a>
+                </p>
+              </aside>
+            )
+          }
+
           {relatedPosts(props.post, props.posts).length > 0 && (
             <section class="block" style="margin-top:var(--s-12)">
               <SectionTitle title={YAZI_METIN.benzer} />
@@ -292,12 +332,15 @@ const YAZI_METIN = {
       path={props.page.data.url}
       ogImage={props.page.data.featuredImage?.localPath ?? props.page.data.seo.ogImage}
       noindex={props.parked}
-      jsonLd={{
-        "@context": "https://schema.org",
-        "@type": "WebPage",
-        name: props.page.data.title,
-        url: new URL(props.page.data.url, site).href,
-      }}
+      jsonLd={
+        /* Sayfanın kendi şeması varsa o yazılır; yoksa genel WebPage. */
+        props.page.data.jsonLd ?? {
+          "@context": "https://schema.org",
+          "@type": "WebPage",
+          name: props.page.data.title,
+          url: new URL(props.page.data.url, site).href,
+        }
+      }
     >
       <article>
         <SectionTitle title={props.page.data.title} as="h1" />
@@ -346,6 +389,19 @@ const YAZI_METIN = {
               alındı ve yakında ayrı bir siteye taşınacak.
             </p>
           )}
+          {
+            /* SketchUp kategorilerinden ana hizmet sayfasına bağlantı
+               (SEO görevi 2026-11-18). Kategori sayfaları yalnız Türkçe. */
+            !props.parked && /sketchup/i.test(props.category.slug) && (
+              <aside class="ders-kutusu">
+                <p>
+                  <strong>Birebir öğrenmek ister misiniz?</strong> Bu bölümdeki
+                  yazıları kendi projeniz üzerinde uygulayalım:{" "}
+                  <a href="/sketchup-ozel-ders">SketchUp kursu ve özel ders</a>
+                </p>
+              </aside>
+            )
+          }
           {props.posts.map((post) => (
             <article class={`post-item ${post.data.featuredImage?.localPath ? "post-item--with-thumb" : ""}`}>
               {post.data.featuredImage?.localPath && (

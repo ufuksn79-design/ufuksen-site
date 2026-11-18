@@ -3,6 +3,30 @@ import { defineConfig } from "astro/config";
 import sitemap from "@astrojs/sitemap";
 import tailwind from "@tailwindcss/vite";
 import parked from "./src/content/parked.json" with { type: "json" };
+import { readdirSync, readFileSync } from "node:fs";
+
+/**
+ * Sitemap `lastmod` değerleri — içerik dosyalarının KENDİ `modifiedAt`
+ * alanından okunur, uydurulmaz (SEO görevi 2026-11-18). Tarihi olmayan
+ * adres için satır hiç yazılmaz; yanlış tarih bildirmek, hiç bildirmemekten
+ * kötüdür.
+ */
+const SON_DEGISIM = new Map();
+for (const klasor of ["posts", "pages"]) {
+  const kok = `./src/content/${klasor}`;
+  for (const ad of readdirSync(kok)) {
+    if (!ad.endsWith(".json")) continue;
+    try {
+      const k = JSON.parse(readFileSync(`${kok}/${ad}`, "utf8"));
+      const tarih = k.modifiedAt || k.publishedAt;
+      if (!k.url || !tarih) continue;
+      const d = new Date(tarih.replace(" ", "T") + "Z");
+      if (!Number.isNaN(d.getTime())) SON_DEGISIM.set(k.url.replace(/\/+$/, ""), d.toISOString());
+    } catch {
+      /* bozuk dosya sitemap'i durdurmasın; şema denetimi derlemede zaten yapılıyor */
+    }
+  }
+}
 
 const SITE = process.env.SITE_URL ?? "https://www.ufuksen.com";
 const PARKED = new Set(parked.slugs);
@@ -35,7 +59,8 @@ export default defineConfig({
       serialize: (item) => {
         const url = new URL(item.url);
         if (url.pathname !== "/") url.pathname = url.pathname.replace(/\/+$/, "");
-        return { ...item, url: url.href };
+        const lastmod = SON_DEGISIM.get(url.pathname);
+        return lastmod ? { ...item, url: url.href, lastmod } : { ...item, url: url.href };
       },
       // Park edilen yazılar sitemap'e girmez (ADR-018) ve 404 da çıkmaz.
       filter: (page) => {

@@ -64,6 +64,17 @@ const ICERIDEN = {
   "/urunler/windowfun-studio-web": "/eklenti/windowfun-studio-web.html",
   "/urunler/windowfun-studio": "/eklenti/windowfun-studio.html",
   "/urunler/kitchen-studio": "/eklenti/kitchenflow.html",
+
+  /**
+   * Kanibalizasyon temizliği (2026-11-18). Üç sayfa aynı arama niyetine
+   * ("sketchup özel ders / ders / kurs") hizmet ediyordu ve en zayıfı ana
+   * satış sayfasıydı. İkisinin işe yarar içeriği (12 saatlik temel program,
+   * konu başlıkları, online birebir bilgisi) /sketchup-ozel-ders'e taşındı;
+   * kendileri arşive alındı (docs/migration/arsiv/) ve 301 ile hedefe
+   * yönlendiriliyor. İçerik silinmedi, birleşti.
+   */
+  "/sketchup-ders": "/sketchup-ozel-ders",
+  "/sketchup-kurs": "/sketchup-ozel-ders",
 };
 
 lines.push(

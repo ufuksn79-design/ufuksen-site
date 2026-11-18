@@ -25,6 +25,8 @@ const year = new Date().getFullYear();
       <a href={en ? "/en/blog" : "/blog"}>{m.blog}</a>
       <a href={LISTE_YOLU[dil]}>{METIN[dil].bolumAdi}</a>
       <a href={en ? "/en/courses" : "/egitimler"}>{m.egitim}</a>
+      {/* Türkçe hizmet sayfası; İngilizce karşılığı yok. */}
+      {!en && <a href="/sketchup-ozel-ders">SketchUp Özel Ders</a>}
       {/* Yorum sayfasının İngilizcesi yok; olmayan sayfaya bağlantı basmıyoruz. */}
       {!en && <a href="/ne-demisler">Ne Demişler?</a>}
       <a href={en ? "/en/videos" : "/videolar"}>{m.video}</a>
