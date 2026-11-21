@@ -1,0 +1,212 @@
+{
+  "legacyId": 90052,
+  "slug": "dolap-cizim-programinda-delikleri-kesimden-once-gormek",
+  "legacyUrl": "/dolap-cizim-programinda-delikleri-kesimden-once-gormek.html",
+  "url": "/dolap-cizim-programinda-delikleri-kesimden-once-gormek.html",
+  "dil": "tr",
+  "alternatif": null,
+  "title": "Delikleri Kesimden Önce Görmek: Dolap Çizim Programı",
+  "excerpt": "Yanlış delik, panelin tamamını çöpe atar. Menteşe, raf pimi ve minifiks deliklerini CNC'ye göndermeden önce 3B'de ve delik tablosunda kontrol etmenin yolu.",
+  "contentHtml": "<p>Atölyede en pahalı hata yanlış kesilen panel değildir — yanlış delinen paneldir. Kesimde birkaç milim şaşan parçayı bazen kurtarırsınız; yanlış yerden delinmiş bir yan panel doğrudan çöptür. Bu yüzden <strong>delikleri kesimden önce görmek</strong>, dolap çizim programından beklenecek en somut faydalardan biri.</p>\n\n<p>Bu yazıda deliklerin nereden çıktığını, hangi hataların nerede doğduğunu ve CNC'ye göndermeden önce neyin kontrol edilmesi gerektiğini anlatıyorum.</p>\n\n\n<figure class=\"yazi-video\">\n  <iframe src=\"https://www.youtube-nocookie.com/embed/sb-MzPEZfRc\" title=\"Kesim listesi, donanım metrajı ve delik tablosu tek tıkla\" loading=\"lazy\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" referrerpolicy=\"strict-origin-when-cross-origin\" allowfullscreen></iframe>\n  <figcaption>Delik tablosu, kesim listesi ve donanım metrajı aynı projeden çıkıyor.</figcaption>\n</figure>\n\n<h2>Bir dolapta kaç çeşit delik var?</h2>\n\n<p>Sıradan bir gardırop bile birden çok delik ailesi taşır ve her biri farklı bir kurala tabidir:</p>\n\n<ul>\n  <li><strong>Menteşe yuvası</strong> — kapağın arkasında, genelde Ø35 mm, kör delik.</li>\n  <li><strong>Menteşe plakası vidası</strong> — yan panelde, kapak kenarından belirli bir kotta.</li>\n  <li><strong>Raf pimi</strong> — yan panelde dizi hâlinde, Ø5 mm.</li>\n  <li><strong>Minifiks / kavela</strong> — gövde bağlantısı; biri eksantrik, diğeri dübel mantığıyla çalışır.</li>\n  <li><strong>Kulp vidası</strong> — kapak ve çekmece önünde, kapak detayına hizalı.</li>\n  <li><strong>Tesisat delikleri</strong> — kablo (Ø60), batarya, gider; tezgâh ve arkalıkta.</li>\n</ul>\n\n<p>Bunların her biri ayrı yüzde, ayrı derinlikte ve ayrı takımla işlenir. Bir tanesinin yüzü yanlış yazılırsa panel ters delinir.</p>\n\n<h2>Hatalar nereden doğuyor?</h2>\n\n<h3>1. Elle yazılan liste</h3>\n<p>Delikleri kâğıda ya da tabloya elle yazmak, kaçınılmaz olarak bir gün bir rakamı kaydırır. Üstelik bu hata çizimde görünmez; tezgâhta görünür.</p>\n\n<h3>2. Sonradan yapılan ölçü değişikliği</h3>\n<p>Dolap 10 cm kısalır ama delik listesi eski hâliyle kalır. En sinsi hata budur: parça ölçüsü doğrudur, delikler yanlıştır.</p>\n\n<h3>3. Çakışan delikler</h3>\n<p>Menteşe plakasının vidası, raf pimi deliğine ya da ara tablanın plakasına denk gelir. İki delik birbirine girer, vida tutmaz.</p>\n\n<h3>4. Yüz karışıklığı</h3>\n<p>Aynı ölçüdeki iki yan panelden biri sol, diğeri sağdır. Ayna alınmadan işlenen panel, delikleri ters yüzde taşır.</p>\n\n\n<figure class=\"yazi-video\">\n  <iframe src=\"https://www.youtube-nocookie.com/embed/_t9a0GVLtuQ\" title=\"Gövde Bağlantısı ve Atölye Standartları\" loading=\"lazy\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" referrerpolicy=\"strict-origin-when-cross-origin\" allowfullscreen></iframe>\n  <figcaption>Minifiks mi kavela mı: gövde bağlantısı atölye standardı olarak bir kez seçiliyor.</figcaption>\n</figure>\n\n<h2>Programın bu hataları kesmesi için ne yapması gerekir?</h2>\n\n<p>Dört şey:</p>\n\n<ol>\n  <li><strong>Delikleri kendisi yerleştirmeli.</strong> Panel bırakıldığı anda komşularına göre delikler açılmalı; usta elle kot hesaplamamalı.</li>\n  <li><strong>Çakışmayı kendisi çözmeli.</strong> Menteşe, rafın ve komşu kapağın plakasının olmadığı en yakın boş kota kaymalı.</li>\n  <li><strong>Ölçü değişince delikleri yeniden hesaplamalı.</strong> Panel yeni ölçüsüyle kuruluyorsa delikler de yeni kotuna gitmeli.</li>\n  <li><strong>Göstermeli.</strong> En önemlisi bu: delik, kesimden önce ekranda görülebilmeli.</li>\n</ol>\n\n<h2>Kesimden önce üç kontrol</h2>\n\n<h3>Kontrol 1 — 3B'de deliklere bakın</h3>\n<p>Her delik parçanın yüzünde işaretli ve kendi etiketinde duruyorsa, tek tıkla gösterip gizleyebilirsiniz. X-ray görünümüyle gövdenin içine bakmak, özellikle kolon kertiği olan dolaplarda hata yakalatır.</p>\n\n<h3>Kontrol 2 — Delik tablosunu okuyun</h3>\n<p>Tabloda parça adı, grup, delik türü, <strong>yüz</strong>, X, Y, çap ve derinlik bulunur. Burada bakacağınız şey rakamların doğruluğundan çok tutarlılıktır: aynı tip parçada aynı kotlar tekrarlanıyor mu, sol ve sağ paneller birbirinin aynası mı?</p>\n\n\n<figure class=\"yazi-video\">\n  <iframe src=\"https://www.youtube-nocookie.com/embed/FnSr2DvZs8c\" title=\"Menteşe, ray, kalkar, raf pimi: donanımı program sayar\" loading=\"lazy\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" referrerpolicy=\"strict-origin-when-cross-origin\" allowfullscreen></iframe>\n  <figcaption>Donanım metrajı çizimden hesaplanıyor.</figcaption>\n</figure>\n\n\n<figure>\n  <img src=\"/media/dolap-sihirbazi/kapak/sb-MzPEZfRc.webp\" alt=\"Dolap çizim programında delik tablosu ve kesim listesi çıktısı\" width=\"960\" height=\"540\" loading=\"lazy\" decoding=\"async\" />\n  <figcaption>Delik tablosu, kesim listesi ve donanım metrajı tek projeden alınıyor.</figcaption>\n</figure>\n\n\n<figure>\n  <img src=\"/media/dolap-sihirbazi/kapak/_t9a0GVLtuQ.webp\" alt=\"Gövde bağlantısı ve atölye standartlarının ayarlandığı ekran\" width=\"960\" height=\"540\" loading=\"lazy\" decoding=\"async\" />\n  <figcaption>Gövde bağlantısı ve atölye standartları bir kez tanımlanıyor.</figcaption>\n</figure>\n\n<h3>Kontrol 3 — Uyarıları okuyun, geçiştirmeyin</h3>\n<p>İyi bir program üretime gitmeden önce konuşur: \"ağır kapak, 5 menteşe önerilir\", \"yüksek gövdede orta kayıt ekleyin ya da arkalığı kalınlaştırın\" gibi. Sorun ciddiyse CNC adımında üretim engeli çıkar ve siz görmeden çıktı alınmaz.</p>\n\n\n<figure>\n  <img src=\"/media/dolap-sihirbazi/kapak/mvDG6SuadhE.webp\" alt=\"Kesim listesi, plaka yerleşimi ve CNC çıktılarının alınması\" width=\"960\" height=\"540\" loading=\"lazy\" decoding=\"async\" />\n  <figcaption>Delikler doğrulandıktan sonra kesim listesi, plaka yerleşimi ve CNC çıktıları alınıyor.</figcaption>\n</figure>\n\n<h2>Delik derinliği ve takım seçimi</h2>\n\n<p>Deliğin yeri kadar derinliği de önemlidir. Menteşe yuvası tipik olarak 13 mm derinliğinde kör bir cep olarak işlenir; raf pimi Ø5, gövde bağlantısı Ø8 civarındadır. Boydan boya geçmesi gereken delikler (batarya, gider, kablo) ise sarmal frezeyle, tablaya 0,3 mm pay bırakılarak kesilir.</p>\n\n<p>Bu ayarların programda atölyenize göre tanımlanabilmesi gerekir: freze çapı, matkap takımları, ilerleme, devir, paso ve Z sıfırı. Hazır gelen varsayılan değerlerle çalışmak, ilk işte deneme parçası kesmeyi zorunlu kılar.</p>\n\n<h2>Etiket ve montaj: deliğin görünür hâli</h2>\n\n<p>Delik tablosu CNC operatörü içindir; montajcı içinse etiket ve montaj sayfası vardır. Parça etiketinde parçanın adı, ölçüsü ve bant şeması bulunur; montaj sayfasında modül modül kurulum sırası.</p>\n\n<p>Atölyede en çok vakit kaybettiren şey, benzer ölçüdeki iki panelin karıştırılmasıdır. Etiketli parça bu sorunu doğrudan bitirir: panel elinize geldiğinde hangi dolabın neresine gittiğini okursunuz.</p>\n\n<h2>Delik tablosunu kim okuyor?</h2>\n\n<p>Delik tablosu üç ayrı kişiye aynı anda konuşur ve her biri farklı bir sütuna bakar:</p>\n\n<ul>\n  <li><strong>CNC operatörü</strong> — yüz, X, Y, çap ve derinlik sütunlarına. Onun için en kritik bilgi deliğin hangi yüzde olduğudur.</li>\n  <li><strong>El işlemi yapan usta</strong> — takımı olmayan ya da kenar deliği olarak ayrılmış satırlara.</li>\n  <li><strong>Montajcı</strong> — hangi deliğin hangi donanıma ait olduğuna; menteşe plakası mı, raf pimi mi, minifiks mi.</li>\n</ul>\n\n<p>Bu yüzden tablonun okunabilir olması, içinde doğru rakam bulunması kadar önemlidir. Parça adının modül numarasıyla birlikte yazılması, karışıklığı en baştan keser.</p>\n\n<h2>Delik hatasının gerçek maliyeti</h2>\n\n<p>Yanlış delik yalnız bir panelin maliyeti değildir. Hesaba katılması gerekenler şunlar: levha, kenar bandı, işçilik, makine zamanı, montajın ertelenmesi ve çoğu zaman müşteriye verilen tarihin kayması. Küçük bir atölyede tek bir yanlış yan panel, o işin kârının görünür bir kısmını götürür.</p>\n\n<p>Bu yüzden kontrol adımı \"zaman kaybı\" değil, en ucuz sigortadır: üç dakikalık bir ekran kontrolü, yarım günlük bir yeniden üretimi önler.</p>\n\n<h2>Kapak arkası, çekmece ve özel durumlar</h2>\n\n<p>Birkaç durum vardır ki delik düzenini doğrudan etkiler ve çizimde gözden kaçar:</p>\n\n<ul>\n  <li><strong>Kapak arkasına gelen çekmece.</strong> Menteşe tarafına dolgu çıtası gerekir; yoksa çekmece açılırken menteşeye çarpar.</li>\n  <li><strong>Gömme kapak.</strong> Kapak gövdeyle aynı hizada olduğunda raflar kapağın arkasına çekilir, menteşe kotları değişir.</li>\n  <li><strong>Ağır kapak.</strong> Yüksek ve geniş kapaklarda menteşe adedi artırılır; aksi hâlde kapak zamanla sarkar.</li>\n  <li><strong>Camlı kapak.</strong> Çıta genişliği ve menteşe tipi farklıdır; delik kotları buna göre kayar.</li>\n  <li><strong>Kolon kertiği olan panel.</strong> Kertik, delik dizisiyle çakışabilir; 3B'de X-ray ile bakmak en hızlı kontroldür.</li>\n</ul>\n\n<h2>Revizyon: ölçü değişince delikler ne olacak?</h2>\n\n<p>Müşteri ölçü değiştirdiğinde iki kötü seçenek vardır: ya bütün işi yeniden kesersiniz ya da eski listeyle devam edip hata yaparsınız. Doğru olan üçüncü yol: yalnız değişen parçaları yeniden kesmek.</p>\n\n<p>Bunun şartı, programın ölçü değişince parçaları ve delikleri yeniden hesaplaması ve eski hâliyle farkı gösterebilmesidir. Böylece atölye hem levha hem zaman kazanır; yeniden kesilen parça sayısı ikiyi üçü geçmez.</p>\n\n<h2>Kısa kontrol listesi</h2>\n\n<ol>\n  <li>3B'de delikleri aç, X-ray ile gövdenin içine bak.</li>\n  <li>Delik tablosunda sol ve sağ panellerin aynası doğru mu, kontrol et.</li>\n  <li>Program uyarılarını oku; üretim engeli varsa sebebini çöz, geçiştirme.</li>\n  <li>El işlemi olarak ayrılan delikleri montajcıya ayrıca bildir.</li>\n  <li>Yeni makinede ilk NC programını deneme parçasıyla doğrula.</li>\n</ol>\n\n<h2>CNC'ye giderken ne çıkıyor?</h2>\n\n<p>Delik kontrolü bittiğinde aynı projeden üretim dosyalarının tamamı çıkar: kesim listesi (kenar bandı ve damar yönü sütunlarıyla), plaka yerleşimi ve kullanım yüzdesi, delik tablosu, DXF ve parça başına DXF, NC programı (G-kodu), 50 × 30 mm etiketler, donanım metrajı ve montaj sayfaları.</p>\n\n<p>Bu akışın CNC tarafındaki ayrıntısı için <a href=\"https://dolapsihirbazi.com/blog/cnc-dolap-imalat-programi/\" target=\"_blank\">CNC dolap imalat programı</a> yazısına, kabin üretiminin tamamı için <a href=\"https://sketchupturkiye.com/kabin-uretim-programi/\" target=\"_blank\">kabin üretimi</a> yazısına bakabilirsiniz. Tasarımdan üretime giden yolun bütününü <a href=\"https://www.mimari3d.com/dolabini-tasarla-detaylandir-uretime-hazirla/\" target=\"_blank\">tasarla, detaylandır, üretime hazırla</a> yazısında topladık.</p>\n\n<h2>Delik hatasını önlemenin atölye tarafındaki karşılığı</h2>\n\n<ul>\n  <li><strong>Atölye standardınızı bir kez girin.</strong> Bant kalınlığı, raf payı, gövde bağlantısı ve delik kotları her atölyede farklıdır; bir kez girilen değer bütün projelerde geçerli olur.</li>\n  <li><strong>İlk işi deneme parçasıyla doğrulayın.</strong> NC programı sizin makine ayarlarınızla üretilir; yeni bir makinede ilk çalıştırmayı ucuz bir parçayla deneyin.</li>\n  <li><strong>Revizyonda yalnız değişen parçayı kesin.</strong> Müşteri ölçü değiştirdiğinde bütün işi yeniden kesmek yerine farkı almak hem levha hem zaman kazandırır.</li>\n  <li><strong>El işlemlerini ayrı okuyun.</strong> Takımı olmayan ya da kenar deliği gerektiren işler çıktıda ayrı belirtilir; bunları montajcıya ayrıca söyleyin.</li>\n</ul>\n\n<h2>Devamı</h2>\n\n<p>Mutfak tarafındaki çizim akışı için <a href=\"/mutfak-cizim-programi.html\">mutfak çizim programı</a>, mobilya tarafı için <a href=\"/mobilya-cizim-programi.html\">mobilya çizim programı</a> yazılarına bakabilirsiniz. SketchUp'ta modelleme tarafını ilerletmek isterseniz <a href=\"/sketchup-ozel-ders\">SketchUp özel ders</a> sayfası duruyor.</p>\n\n<p>Delik tablosunu ve CNC çıktısını kendi projenizde görmek isterseniz <a href=\"https://dolapsihirbazi.com/\" target=\"_blank\">Dolap Sihirbazı'nın sitesinden</a> 5 günlük ücretsiz demoyu indirebilirsiniz.</p>\n\n<h2>Sık sorulan sorular</h2>\n\n<h3>Delik tablosu nedir, ne işe yarar?</h3>\n<p>Her parçadaki her deliğin listesidir: parça adı, grup, delik türü, hangi yüzde olduğu, X ve Y konumu, çap ve derinlik. CNC operatörü ve el işlemi yapan usta aynı tablodan çalışır.</p>\n\n<h3>Çakışan delikleri program kendisi fark eder mi?</h3>\n<p>Menteşe, rafın, ara tablanın ve komşu kapağın plakasının bulunmadığı en yakın boş kota kendiliğinden kayar; böylece menteşe plakası vidası raf pimi deliğine binmez. Gövde yüksekse ya da kapak ağırsa program ayrıca uyarır.</p>\n\n<h3>Deliği kesimden önce nerede görebilirim?</h3>\n<p>3B sahnede her delik parçanın yüzünde işaretlidir ve kendi etiketindedir; tek tıkla gizlenip gösterilebilir. Ayrıca X-ray görünümüyle gövdenin içine bakılabilir.</p>\n\n<h3>Hangi delikler CNC programına giriyor?</h3>\n<p>Menteşe yuvası ve plaka vidası, raf pimi, minifiks ve kavela, kulp vidası; lavabo, batarya, gider ve kablo delikleri de dahil. Takımı olmayan ya da kenar deliği olan işlemler çıktıda 'el işlemi' olarak ayrılır.</p>\n\n<h3>Minifiks mi kavela mı kullanacağımı sonradan değiştirebilir miyim?</h3>\n<p>Evet, gövde bağlantısı atölye standardı olarak seçiliyor; seçim değişince delik tablosu, DXF ve CNC programı birlikte güncelleniyor.</p>\n\n<h3>Delik hatası en çok nereden çıkıyor?</h3>\n<p>Elle yazılan listelerden ve sonradan yapılan ölçü değişikliklerinden. Ölçü değiştiğinde delikler yeniden hesaplanmıyorsa, doğru panelin üstünde yanlış delik açılır.</p>\n",
+  "publishedAt": "2026-11-21 15:00:00",
+  "modifiedAt": "2026-11-21 15:00:00",
+  "status": "publish",
+  "featuredImage": {
+    "legacyUrl": "/media/dolap-sihirbazi/kapak/sb-MzPEZfRc.webp",
+    "localPath": "/media/dolap-sihirbazi/kapak/sb-MzPEZfRc.webp",
+    "alt": "delikleri kesimden önce görmek — Kesim listesi, donanım metrajı ve delik tablosu tek tıkla",
+    "width": 960,
+    "height": 540,
+    "mimeType": "image/webp"
+  },
+  "inlineMedia": [],
+  "embeds": [
+    {
+      "provider": "youtube",
+      "externalId": "sb-MzPEZfRc",
+      "originalSrc": "https://www.youtube.com/watch?v=sb-MzPEZfRc",
+      "title": "Kesim listesi, donanım metrajı ve delik tablosu tek tıkla"
+    },
+    {
+      "provider": "youtube",
+      "externalId": "FnSr2DvZs8c",
+      "originalSrc": "https://www.youtube.com/watch?v=FnSr2DvZs8c",
+      "title": "Menteşe, ray, kalkar, raf pimi: donanımı program sayar"
+    },
+    {
+      "provider": "youtube",
+      "externalId": "_t9a0GVLtuQ",
+      "originalSrc": "https://www.youtube.com/watch?v=_t9a0GVLtuQ",
+      "title": "Gövde Bağlantısı ve Atölye Standartları"
+    }
+  ],
+  "seo": {
+    "title": "Delikleri Kesimden Önce Görmek | Dolap Çizim Programı",
+    "description": "Menteşe, raf pimi ve minifiks delikleri kesimden önce nasıl kontrol edilir? Delik tablosu, çakışan delik uyarısı ve CNC öncesi 3B kontrol adım adım.",
+    "focusKeyword": "delikleri kesimden önce görmek",
+    "canonicalUrl": "https://www.ufuksen.com/dolap-cizim-programinda-delikleri-kesimden-once-gormek.html",
+    "ogImage": "/media/dolap-sihirbazi/kapak/sb-MzPEZfRc.webp",
+    "noindex": false
+  },
+  "jsonLd": {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "BlogPosting",
+        "@id": "https://www.ufuksen.com/dolap-cizim-programinda-delikleri-kesimden-once-gormek.html#yazi",
+        "headline": "Delikleri Kesimden Önce Görmek: Dolap Çizim Programı",
+        "description": "Menteşe, raf pimi ve minifiks delikleri kesimden önce nasıl kontrol edilir? Delik tablosu, çakışan delik uyarısı ve CNC öncesi 3B kontrol adım adım.",
+        "datePublished": "2026-11-21T15:00:00+03:00",
+        "dateModified": "2026-11-21T15:00:00+03:00",
+        "author": {
+          "@type": "Person",
+          "name": "Ufuk Şen",
+          "url": "https://www.ufuksen.com/ufuk-sen-kimdir"
+        },
+        "publisher": {
+          "@type": "Person",
+          "name": "Ufuk Şen"
+        },
+        "mainEntityOfPage": "https://www.ufuksen.com/dolap-cizim-programinda-delikleri-kesimden-once-gormek.html",
+        "image": "https://i.ytimg.com/vi/sb-MzPEZfRc/maxresdefault.jpg",
+        "inLanguage": "tr-TR"
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://www.ufuksen.com/dolap-cizim-programinda-delikleri-kesimden-once-gormek.html#sss",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Delik tablosu nedir, ne işe yarar?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Her parçadaki her deliğin listesidir: parça adı, grup, delik türü, hangi yüzde olduğu, X ve Y konumu, çap ve derinlik. CNC operatörü ve el işlemi yapan usta aynı tablodan çalışır."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Çakışan delikleri program kendisi fark eder mi?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Menteşe, rafın, ara tablanın ve komşu kapağın plakasının bulunmadığı en yakın boş kota kendiliğinden kayar; böylece menteşe plakası vidası raf pimi deliğine binmez. Gövde yüksekse ya da kapak ağırsa program ayrıca uyarır."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Deliği kesimden önce nerede görebilirim?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "3B sahnede her delik parçanın yüzünde işaretlidir ve kendi etiketindedir; tek tıkla gizlenip gösterilebilir. Ayrıca X-ray görünümüyle gövdenin içine bakılabilir."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Hangi delikler CNC programına giriyor?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Menteşe yuvası ve plaka vidası, raf pimi, minifiks ve kavela, kulp vidası; lavabo, batarya, gider ve kablo delikleri de dahil. Takımı olmayan ya da kenar deliği olan işlemler çıktıda 'el işlemi' olarak ayrılır."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Minifiks mi kavela mı kullanacağımı sonradan değiştirebilir miyim?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Evet, gövde bağlantısı atölye standardı olarak seçiliyor; seçim değişince delik tablosu, DXF ve CNC programı birlikte güncelleniyor."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Delik hatası en çok nereden çıkıyor?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Elle yazılan listelerden ve sonradan yapılan ölçü değişikliklerinden. Ölçü değiştiğinde delikler yeniden hesaplanmıyorsa, doğru panelin üstünde yanlış delik açılır."
+            }
+          }
+        ]
+      },
+      {
+        "@type": "VideoObject",
+        "name": "Kesim listesi, donanım metrajı ve delik tablosu tek tıkla",
+        "description": "Üretim çıktılarının tek projeden alınması.",
+        "thumbnailUrl": "https://i.ytimg.com/vi/sb-MzPEZfRc/maxresdefault.jpg",
+        "uploadDate": "2026-11-01",
+        "contentUrl": "https://www.youtube.com/watch?v=sb-MzPEZfRc",
+        "embedUrl": "https://www.youtube-nocookie.com/embed/sb-MzPEZfRc",
+        "publisher": {
+          "@type": "Person",
+          "name": "Ufuk Şen"
+        },
+        "mainEntityOfPage": "https://www.ufuksen.com/dolap-cizim-programinda-delikleri-kesimden-once-gormek.html"
+      },
+      {
+        "@type": "VideoObject",
+        "name": "Menteşe, ray, kalkar, raf pimi: donanımı program sayar",
+        "description": "Donanım metrajının çizimden hesaplanması.",
+        "thumbnailUrl": "https://i.ytimg.com/vi/FnSr2DvZs8c/maxresdefault.jpg",
+        "uploadDate": "2026-11-01",
+        "contentUrl": "https://www.youtube.com/watch?v=FnSr2DvZs8c",
+        "embedUrl": "https://www.youtube-nocookie.com/embed/FnSr2DvZs8c",
+        "publisher": {
+          "@type": "Person",
+          "name": "Ufuk Şen"
+        },
+        "mainEntityOfPage": "https://www.ufuksen.com/dolap-cizim-programinda-delikleri-kesimden-once-gormek.html"
+      },
+      {
+        "@type": "VideoObject",
+        "name": "Gövde Bağlantısı ve Atölye Standartları",
+        "description": "Minifiks, kavela ve atölye standartlarının ayarlanması.",
+        "thumbnailUrl": "https://i.ytimg.com/vi/_t9a0GVLtuQ/maxresdefault.jpg",
+        "uploadDate": "2026-11-01",
+        "contentUrl": "https://www.youtube.com/watch?v=_t9a0GVLtuQ",
+        "embedUrl": "https://www.youtube-nocookie.com/embed/_t9a0GVLtuQ",
+        "publisher": {
+          "@type": "Person",
+          "name": "Ufuk Şen"
+        },
+        "mainEntityOfPage": "https://www.ufuksen.com/dolap-cizim-programinda-delikleri-kesimden-once-gormek.html"
+      },
+      {
+        "@type": "BreadcrumbList",
+        "@id": "https://www.ufuksen.com/dolap-cizim-programinda-delikleri-kesimden-once-gormek.html#yol",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Ana sayfa",
+            "item": "https://www.ufuksen.com/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Blog",
+            "item": "https://www.ufuksen.com/blog"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Delikleri Kesimden Önce Görmek: Dolap Çizim Programı",
+            "item": "https://www.ufuksen.com/dolap-cizim-programinda-delikleri-kesimden-once-gormek.html"
+          }
+        ]
+      }
+    ]
+  },
+  "readingMinutes": 7,
+  "migrationChecksum": "487f4a0154b4f6aec780ed516417cba33c71e8964d06294b65587b18d0d82930",
+  "author": {
+    "legacyId": 1,
+    "name": "UFUK ŞEN",
+    "slug": "ufuk",
+    "isGuest": false
+  },
+  "categories": [
+    {
+      "legacyId": 1169,
+      "name": "3D Programlar",
+      "slug": "3d-programlar"
+    }
+  ],
+  "tags": []
+}

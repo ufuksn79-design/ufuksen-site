@@ -197,7 +197,7 @@ const YAZI_METIN = {
       type="article"
       publishedAt={isoDate(props.post.data.publishedAt)}
       modifiedAt={isoDate(props.post.data.modifiedAt)}
-      jsonLd={{
+      jsonLd={props.post.data.jsonLd ?? {
         "@context": "https://schema.org",
         "@type": "BlogPosting",
         headline: props.post.data.title,

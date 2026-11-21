@@ -76,6 +76,13 @@ const posts = defineCollection({
     dil: z.enum(["tr", "en"]).default("tr"),
     /** Öbür dildeki karşılığının adresi — `hreflang` çifti için. */
     alternatif: z.string().nullable().default(null),
+    /**
+     * Yazıya özel yapılandırılmış veri (JSON-LD). Verilmezse şablon kendi
+     * BlogPosting şemasını yazar. Video ve SSS taşıyan yazılarda
+     * BlogPosting + FAQPage + VideoObject + BreadcrumbList tek @graph
+     * olarak buradan gelir.
+     */
+    jsonLd: z.record(z.any()).nullable().optional(),
     author: z.object({
       legacyId: z.number().nullable(),
       name: z.string(),
